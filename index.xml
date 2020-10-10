@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on K</title>
-    <link>https://github.com/</link>
+    <link>https://kienngd.github.io/blog/</link>
     <description>Recent content in Home on K</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Sat, 10 Oct 2020 08:56:09 +0700</lastBuildDate><atom:link href="https://github.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Oct 2020 08:56:09 +0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to create linux service</title>
-      <link>https://github.com/howto/how_to_create_linux_service/</link>
+      <link>https://kienngd.github.io/blog/howto/how_to_create_linux_service/</link>
       <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
       
-      <guid>https://github.com/howto/how_to_create_linux_service/</guid>
+      <guid>https://kienngd.github.io/blog/howto/how_to_create_linux_service/</guid>
       <description>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
 Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
 [Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
@@ -22,10 +22,10 @@ Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_ser
     
     <item>
       <title>How to working with JSON in GoLang</title>
-      <link>https://github.com/howto/working_with_json_in_golang/</link>
+      <link>https://kienngd.github.io/blog/howto/working_with_json_in_golang/</link>
       <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
       
-      <guid>https://github.com/howto/working_with_json_in_golang/</guid>
+      <guid>https://kienngd.github.io/blog/howto/working_with_json_in_golang/</guid>
       <description>In this post, we will learn how to parse json data in GoLang. Have fun!
 Working with structed data
 // Import package import ( &amp;#34;encoding/json&amp;#34; ) type Bird struct { Species string Description string } func main() { jsonString := `{	&amp;#34;species&amp;#34;: &amp;#34;pigeon&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&amp;#34; }` var bird Bird err := json.Unmarshal([]byte(jsonString), &amp;amp;bird) if err != nill { // json string is invalid.</description>
@@ -33,30 +33,30 @@ Working with structed data
     
     <item>
       <title>How to build a free blog</title>
-      <link>https://github.com/howto/how_to_build_free_blog/</link>
+      <link>https://kienngd.github.io/blog/howto/how_to_build_free_blog/</link>
       <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
       
-      <guid>https://github.com/howto/how_to_build_free_blog/</guid>
+      <guid>https://kienngd.github.io/blog/howto/how_to_build_free_blog/</guid>
       <description>This post will tell you how to build a free personal blog using Hugo + Github page.
 Have fun!</description>
     </item>
     
     <item>
       <title>How does computer networking work?</title>
-      <link>https://github.com/knowlege/how_does_networking_work/</link>
+      <link>https://kienngd.github.io/blog/knowlege/how_does_networking_work/</link>
       <pubDate>Thu, 08 Oct 2020 09:23:54 +0700</pubDate>
       
-      <guid>https://github.com/knowlege/how_does_networking_work/</guid>
+      <guid>https://kienngd.github.io/blog/knowlege/how_does_networking_work/</guid>
       <description>This post will explain how does computer networking work.
 Have fun!</description>
     </item>
     
     <item>
       <title>About Hugo</title>
-      <link>https://github.com/about/</link>
+      <link>https://kienngd.github.io/blog/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/about/</guid>
+      <guid>https://kienngd.github.io/blog/about/</guid>
       <description>Hugo is the world’s fastest framework for building websites. It is written in Go.
 It makes use of a variety of open source projects including:
  https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</description>
