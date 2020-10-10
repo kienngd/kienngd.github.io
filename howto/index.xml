@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howtos on K</title>
+    <link>https://github.com/howto/</link>
+    <description>Recent content in Howtos on K</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Sat, 10 Oct 2020 08:56:09 +0700</lastBuildDate><atom:link href="https://github.com/howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create linux service</title>
+      <link>https://github.com/howto/how_to_create_linux_service/</link>
+      <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
+      
+      <guid>https://github.com/howto/how_to_create_linux_service/</guid>
+      <description>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
+Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
+[Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
+Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_service.service Step 3: Enable service (so service will start with OS) sudo systemctl enable test_service.</description>
+    </item>
+    
+    <item>
+      <title>How to working with JSON in GoLang</title>
+      <link>https://github.com/howto/working_with_json_in_golang/</link>
+      <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
+      
+      <guid>https://github.com/howto/working_with_json_in_golang/</guid>
+      <description>In this post, we will learn how to parse json data in GoLang. Have fun!
+Working with structed data
+// Import package import ( &amp;#34;encoding/json&amp;#34; ) type Bird struct { Species string Description string } func main() { jsonString := `{	&amp;#34;species&amp;#34;: &amp;#34;pigeon&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&amp;#34; }` var bird Bird err := json.Unmarshal([]byte(jsonString), &amp;amp;bird) if err != nill { // json string is invalid.</description>
+    </item>
+    
+    <item>
+      <title>How to build a free blog</title>
+      <link>https://github.com/howto/how_to_build_free_blog/</link>
+      <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
+      
+      <guid>https://github.com/howto/how_to_build_free_blog/</guid>
+      <description>This post will tell you how to build a free personal blog using Hugo + Github page.
+Have fun!</description>
+    </item>
+    
+  </channel>
+</rss>

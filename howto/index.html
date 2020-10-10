@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Howtos" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/howto/" />
+<meta property="og:updated_time" content="2020-10-10T08:56:09+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Howtos"/>
+<meta name="twitter:description" content=""/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://github.com/howto/">
+
+    
+    <title>Howtos &middot; K</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://github.comcss/materialize.min.css">
+    <link href="https://github.comcss/style.css" rel="stylesheet">    
+
+    
+
+    
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+<nav class="blue" role="navigation">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1">
+            
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                <i class="material-icons">menu</i>
+            </a>
+
+            
+            <ul id="nav-mobile" class="sidenav">
+                
+                
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+
+            </ul>
+
+            
+            <a href="/" class="brand-logo grey-text text-darken-3">K</a>
+
+            
+            <div class="nav-wrapper">
+
+                
+                <ul class="right hide-on-med-and-down">
+                    
+                    
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</nav></div>
+
+    
+
+    
+
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="grey-text text-darken-3" href="/howto/how_to_create_linux_service/">How to create linux service</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 10, 2020</span>
+        </div>
+        <div>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
+Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
+[Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
+Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_service.service Step 3: Enable service (so service will start with OS) sudo systemctl enable test_service.</div>
+    </div>
+</article>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="grey-text text-darken-3" href="/howto/working_with_json_in_golang/">How to working with JSON in GoLang</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+        </div>
+        <div>In this post, we will learn how to parse json data in GoLang. Have fun!
+Working with structed data
+// Import package import ( &#34;encoding/json&#34; ) type Bird struct { Species string Description string } func main() { jsonString := `{	&#34;species&#34;: &#34;pigeon&#34;, &#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34; }` var bird Bird err := json.Unmarshal([]byte(jsonString), &amp;bird) if err != nill { // json string is invalid.</div>
+    </div>
+</article>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="grey-text text-darken-3" href="/howto/how_to_build_free_blog/">How to build a free blog</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+        </div>
+        <div>This post will tell you how to build a free personal blog using Hugo + Github page.
+Have fun!</div>
+    </div>
+</article>
+    
+
+
+
+
+
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Power by <a href="https://gohugo.io/">Hugo</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://github.comjs/jquery-3.2.1.min.js"></script>
+    <script src="https://github.comjs/materialize.min.js"></script>
+    <script src="https://github.comjs/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://github.com/</loc>
+    <lastmod>2020-10-10T08:56:09+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/howto/how_to_create_linux_service/</loc>
+    <lastmod>2020-10-10T08:56:09+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/howto/</loc>
+    <lastmod>2020-10-10T08:56:09+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/howto/working_with_json_in_golang/</loc>
+    <lastmod>2020-10-08T13:34:54+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/howto/how_to_build_free_blog/</loc>
+    <lastmod>2020-10-08T10:34:44+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/knowlege/how_does_networking_work/</loc>
+    <lastmod>2020-10-08T09:23:54+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/knowlege/</loc>
+    <lastmod>2020-10-08T09:23:54+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://github.com/tags/</loc>
+  </url>
+  
+</urlset>
