@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Sun, 11 Oct 2020 23:15:36 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Oct 2020 09:08:18 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to install VIM plugins</title>
+      <link>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</link>
+      <pubDate>Wed, 14 Oct 2020 09:08:18 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</guid>
+      <description>Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!
+If you want to install plugin named nerdtree,
+1st way: Copy plugin files to: ~/.vim/pack/vendor/start and they will be load when you launch VIM
+Example:
+cp -r nerdtree ~/.vim/pack/vendor/start/ Then inside VIM, you can use command: :NERDTree
+2nd way: Copy plugin files to: ~/.vim/pack/vendor/opt and they will be not load until you use command packadd to load it.</description>
+    </item>
+    
     <item>
       <title>How to disable wifi power save Ubuntu 20.04</title>
       <link>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
