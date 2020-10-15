@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Wed, 14 Oct 2020 09:08:18 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 11:08:52 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phpdoc docblock</title>
+      <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>
+      <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/phpdoc_docblock/</guid>
+      <description>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&amp;hellip;
+&amp;lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</description>
+    </item>
+    
+    <item>
+      <title>Create document using phpdoc</title>
+      <link>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</link>
+      <pubDate>Thu, 15 Oct 2020 10:49:07 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</guid>
+      <description>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
+  Install phpdoc
+Using composer
+composer require &amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34; Then run command
+vendor/bin/phpdoc ... Manual: Download file phar from: Github releases
+Then run command
+php phpDocumentor.phar ...   Some simple commands
+vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=TEMPLATE_NAME   &amp;hellip;
+  </description>
+    </item>
+    
     <item>
       <title>How to install VIM plugins</title>
       <link>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</link>
