@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 11:08:52 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2020 11:02:20 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some git commands</title>
+      <link>https://kienngd.98t1.net/notes/some_git_commands/</link>
+      <pubDate>Fri, 16 Oct 2020 11:02:20 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/some_git_commands/</guid>
+      <description>This is some git commands that I usually use.
+Clone a repository
+git clone &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
+git pull origin master Pull code from local DEV branch to remote MASTER branch
+git push origin dev:master (updating &amp;hellip;.)</description>
+    </item>
+    
     <item>
       <title>Phpdoc docblock</title>
       <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>

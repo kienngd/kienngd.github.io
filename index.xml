@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 11:08:52 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2020 11:02:20 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some git commands</title>
+      <link>https://kienngd.98t1.net/notes/some_git_commands/</link>
+      <pubDate>Fri, 16 Oct 2020 11:02:20 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/some_git_commands/</guid>
+      <description>This is some git commands that I usually use.
+Clone a repository
+git clone &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
+git pull origin master Pull code from local DEV branch to remote MASTER branch
+git push origin dev:master (updating &amp;hellip;.)</description>
+    </item>
+    
+    <item>
+      <title>How to check my ip</title>
+      <link>https://kienngd.98t1.net/howto/how_to_check_my_ip/</link>
+      <pubDate>Fri, 16 Oct 2020 10:54:04 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_check_my_ip/</guid>
+      <description>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!
+Open your browser to access this link: https://api.myip.com/. You can see something like this: {&amp;ldquo;ip&amp;rdquo;:&amp;ldquo;115.75.212.27&amp;rdquo;,&amp;ldquo;country&amp;rdquo;:&amp;ldquo;Viet Nam&amp;rdquo;,&amp;ldquo;cc&amp;rdquo;:&amp;ldquo;VN&amp;rdquo;} so your IP is: 115.75.212.27.
+Bonus: You can use curl command to get data too.</description>
+    </item>
+    
     <item>
       <title>Phpdoc docblock</title>
       <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>
