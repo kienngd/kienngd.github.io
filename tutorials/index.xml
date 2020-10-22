@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on K5d</title>
+    <link>https://kienngd.98t1.net/tutorials/</link>
+    <description>Recent content in Tutorials on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Sat, 17 Oct 2020 23:17:57 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React Admin P1</title>
+      <link>https://kienngd.98t1.net/tutorials/react-admin-p1/</link>
+      <pubDate>Sat, 17 Oct 2020 23:17:57 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tutorials/react-admin-p1/</guid>
+      <description>React-Admin tutorial notes Create new project and install packages
+yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
+import * as React from &amp;#34;react&amp;#34;; import { Admin, Resource } from &amp;#39;react-admin&amp;#39;; import jsonServerProvider from &amp;#39;ra-data-json-server&amp;#39;; import { ListGuesser } from &amp;#39;react-admin&amp;#39;; const App = () =&amp;gt; { const dataProvider = jsonServerProvider(&amp;#39;https://jsonplaceholder.typicode.com&amp;#39;); return( &amp;lt;Admin dataProvider={dataProvider}&amp;gt; &amp;lt;Resource name=&amp;#34;users&amp;#34; list={ListGuesser} /&amp;gt; &amp;lt;/Admin&amp;gt; ); } export default App; Add dashboard page  Create dashboard component Set &amp;lt;Admin dashboard={ Dashboard } &amp;hellip;&amp;gt;  Customizing menu icon  Import Icon &amp;lt;Resource icon={ ICON } &amp;hellip;&amp;gt;  Adding login page  Create src/Providers/authProvider (Example code: &amp;hellip;) &amp;lt;Admin authProvider={ authProvider } &amp;hellip;&amp;gt;  Check screen size const isSmall = useMediaQuery(theme =&amp;gt; theme.</description>
+    </item>
+    
+  </channel>
+</rss>

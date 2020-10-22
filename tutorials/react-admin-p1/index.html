@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="React Admin P1" />
+<meta property="og:description" content="React-Admin tutorial notes Create new project and install packages
+yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
+import * as React from &#34;react&#34;; import { Admin, Resource } from &#39;react-admin&#39;; import jsonServerProvider from &#39;ra-data-json-server&#39;; import { ListGuesser } from &#39;react-admin&#39;; const App = () =&gt; { const dataProvider = jsonServerProvider(&#39;https://jsonplaceholder.typicode.com&#39;); return( &lt;Admin dataProvider={dataProvider}&gt; &lt;Resource name=&#34;users&#34; list={ListGuesser} /&gt; &lt;/Admin&gt; ); } export default App; Add dashboard page  Create dashboard component Set &lt;Admin dashboard={ Dashboard } &hellip;&gt;  Customizing menu icon  Import Icon &lt;Resource icon={ ICON } &hellip;&gt;  Adding login page  Create src/Providers/authProvider (Example code: &hellip;) &lt;Admin authProvider={ authProvider } &hellip;&gt;  Check screen size const isSmall = useMediaQuery(theme =&gt; theme." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kienngd.98t1.net/tutorials/react-admin-p1/" />
+<meta property="article:published_time" content="2020-10-17T23:17:57+07:00" />
+<meta property="article:modified_time" content="2020-10-17T23:17:57+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="React Admin P1"/>
+<meta name="twitter:description" content="React-Admin tutorial notes Create new project and install packages
+yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
+import * as React from &#34;react&#34;; import { Admin, Resource } from &#39;react-admin&#39;; import jsonServerProvider from &#39;ra-data-json-server&#39;; import { ListGuesser } from &#39;react-admin&#39;; const App = () =&gt; { const dataProvider = jsonServerProvider(&#39;https://jsonplaceholder.typicode.com&#39;); return( &lt;Admin dataProvider={dataProvider}&gt; &lt;Resource name=&#34;users&#34; list={ListGuesser} /&gt; &lt;/Admin&gt; ); } export default App; Add dashboard page  Create dashboard component Set &lt;Admin dashboard={ Dashboard } &hellip;&gt;  Customizing menu icon  Import Icon &lt;Resource icon={ ICON } &hellip;&gt;  Adding login page  Create src/Providers/authProvider (Example code: &hellip;) &lt;Admin authProvider={ authProvider } &hellip;&gt;  Check screen size const isSmall = useMediaQuery(theme =&gt; theme."/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/tutorials/react-admin-p1/">
+
+    
+    <title>React Admin P1 &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+<nav class="blue" role="navigation">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1">
+            
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                <i class="material-icons">menu</i>
+            </a>
+
+            
+            <ul id="nav-mobile" class="sidenav">
+                
+                
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+
+            </ul>
+
+            
+            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+            
+            <div class="nav-wrapper">
+
+                
+                <ul class="right hide-on-med-and-down">
+                    
+                    
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav></div>
+
+    
+
+    
+
+<article class="max-width">
+    
+    <section class="row">
+        <div class="col s12 m10 offset-m1 l10 offset-l1">
+            <h4>React Admin P1</h4>
+            
+            Kien Nguyen - Oct 17, 2020
+        </div>
+    </section>
+
+    
+    
+
+    
+    <section class="row">
+        <div class="col s12 m12 l10 offset-l1">
+            <h5 id="react-admin-tutorial-notes">React-Admin tutorial notes</h5>
+<p>Create new project and install packages</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">yarn</span> <span style="color:#a6e22e">create</span> <span style="color:#a6e22e">react</span><span style="color:#f92672">-</span><span style="color:#a6e22e">app</span> <span style="color:#a6e22e">test</span><span style="color:#f92672">-</span><span style="color:#a6e22e">admin</span>
+<span style="color:#a6e22e">cd</span> <span style="color:#a6e22e">test</span><span style="color:#f92672">-</span><span style="color:#a6e22e">admin</span><span style="color:#f92672">/</span>
+<span style="color:#a6e22e">yarn</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">react</span><span style="color:#f92672">-</span><span style="color:#a6e22e">admin</span> <span style="color:#a6e22e">ra</span><span style="color:#f92672">-</span><span style="color:#a6e22e">data</span><span style="color:#f92672">-</span><span style="color:#a6e22e">json</span><span style="color:#f92672">-</span><span style="color:#a6e22e">server</span> <span style="color:#a6e22e">prop</span><span style="color:#f92672">-</span><span style="color:#a6e22e">types</span>
+</code></pre></div><p>Edit file src/App.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">React</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Admin</span>, <span style="color:#a6e22e">Resource</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-admin&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">jsonServerProvider</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;ra-data-json-server&#39;</span>;
+
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">ListGuesser</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-admin&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">App</span> <span style="color:#f92672">=</span> () =&gt; {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dataProvider</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jsonServerProvider</span>(<span style="color:#e6db74">&#39;https://jsonplaceholder.typicode.com&#39;</span>);
+  <span style="color:#66d9ef">return</span>(
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Admin</span> <span style="color:#a6e22e">dataProvider</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">dataProvider</span>}<span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Resource</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;users&#34;</span> <span style="color:#a6e22e">list</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">ListGuesser</span>} <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/Admin&gt;</span>
+  );
+}
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
+</code></pre></div><h6 id="add-dashboard-page">Add dashboard page</h6>
+<ol>
+<li>Create dashboard component</li>
+<li>Set &lt;Admin <strong>dashboard</strong>={ Dashboard } &hellip;&gt;</li>
+</ol>
+<h6 id="customizing-menu-icon">Customizing menu icon</h6>
+<ol>
+<li>Import Icon</li>
+<li>&lt;Resource <strong>icon</strong>={ ICON } &hellip;&gt;</li>
+</ol>
+<h6 id="adding-login-page">Adding login page</h6>
+<ol>
+<li>Create src/Providers/authProvider (Example code: &hellip;)</li>
+<li>&lt;Admin authProvider={ authProvider } &hellip;&gt;</li>
+</ol>
+<h6 id="check-screen-size">Check screen size</h6>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isSmall</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useMediaQuery</span>(<span style="color:#a6e22e">theme</span> =&gt; <span style="color:#a6e22e">theme</span>.<span style="color:#a6e22e">breakpoints</span>.<span style="color:#a6e22e">down</span>(<span style="color:#e6db74">&#39;sm&#39;</span>));
+</code></pre></div>
+        </div>
+    </section>
+</article>
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>

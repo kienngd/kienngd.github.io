@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2020-10-16T11:02:20+07:00" />
+<meta property="og:updated_time" content="2020-10-20T10:02:52+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -94,6 +94,105 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_phpclient/">Working With Influxdb Data Using PhpClient</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+        </div>
+        <div>document: https://github.com/influxdata/influxdb-php
+Install via composer composer require influxdb/influxdb-php Create client object $client = new InfluxDB\Client($host, $port); // directly get the database object $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname)); // Fetch the database using a 5 second time out $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname), 5); // get the client to retrieve other databases $client = $database-&gt;getClient(); Reading data // fetch the database $database = $client-&gt;selectDB(&#39;influx_test_db&#39;); // executing a query will yield a resultset object $result = $database-&gt;query(&#39;select * from test_metric LIMIT 5&#39;); // get the points from the resultset yields an array $points = $result-&gt;getPoints(); Use the queryBuilder object // retrieve points with the query builder $result = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;limit(2) -&gt;offset(2) -&gt;getResultSet() -&gt;getPoints(); // get the query from the QueryBuilder $query = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;where([&#34;region = &#39;us-west&#39;&#34;]) -&gt;getQuery(); Get the last executed query from the client // use the getLastQuery() method $lastQuery = $client-&gt;getLastQuery(); // or access the static variable directly: $lastQuery = Client::lastQuery; Writting data // create an array of points $points = array( new Point( &#39;Measurement_Name&#39;, // name of the measurement 	0.</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_api/">Working_with_influxdb_data_using_api</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+        </div>
+        <div></div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_influx/">Working_with_influxdb_data_using_influx</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+        </div>
+        <div></div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/influxdb_docker_with_laradock/">Influxdb Docker With Laradock</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+        </div>
+        <div>In this post we will see how to run influxdb docker container using laradock. Have fun.
+InfluxDB docker document: https://hub.docker.com/_/influxdb
+Edit laradock .env file:
+Add these lines at the end of file
+### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
+Add these lines at the end of file
+### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &#34;${INFLUXDB_HTTP_PORT}:8086&#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/tutorials/react-admin-p1/">React Admin P1</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 17, 2020</span>
+        </div>
+        <div>React-Admin tutorial notes Create new project and install packages
+yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
+import * as React from &#34;react&#34;; import { Admin, Resource } from &#39;react-admin&#39;; import jsonServerProvider from &#39;ra-data-json-server&#39;; import { ListGuesser } from &#39;react-admin&#39;; const App = () =&gt; { const dataProvider = jsonServerProvider(&#39;https://jsonplaceholder.typicode.com&#39;); return( &lt;Admin dataProvider={dataProvider}&gt; &lt;Resource name=&#34;users&#34; list={ListGuesser} /&gt; &lt;/Admin&gt; ); } export default App; Add dashboard page  Create dashboard component Set &lt;Admin dashboard={ Dashboard } &hellip;&gt;  Customizing menu icon  Import Icon &lt;Resource icon={ ICON } &hellip;&gt;  Adding login page  Create src/Providers/authProvider (Example code: &hellip;) &lt;Admin authProvider={ authProvider } &hellip;&gt;  Check screen size const isSmall = useMediaQuery(theme =&gt; theme.</div>
+    </div>
+</article>
+
+    
 
 
 
@@ -200,111 +299,6 @@ If you want to install plugin named nerdtree,
 Example:
 cp -r nerdtree ~/.vim/pack/vendor/start/ Then inside VIM, you can use command: :NERDTree
 2nd way: Copy plugin files to: ~/.vim/pack/vendor/opt and they will be not load until you use command packadd to load it.</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/howto/how_to_disable_wifi_power_save_ubuntu_20.04/">How to disable wifi power save Ubuntu 20.04</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 11, 2020</span>
-        </div>
-        <div>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.
-I see this link and try to edit file /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf change wifi.powersave from 3 (enable power save) to 2 (disable power save).</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/howto/how_to_create_linux_service/">How to create a linux service</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 10, 2020</span>
-        </div>
-        <div>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
-Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
-[Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
-Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_service.service Step 3: Enable service (so service will start with OS) sudo systemctl enable test_service.</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/howto/working_with_json_in_golang/">How to working with JSON in GoLang</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
-        </div>
-        <div>In this post, we will learn how to parse json data in GoLang. Have fun!
-Working with structed data
-// Import package import ( &#34;encoding/json&#34; ) type Bird struct { Species string Description string } func main() { jsonString := `{	&#34;species&#34;: &#34;pigeon&#34;, &#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34; }` var bird Bird err := json.Unmarshal([]byte(jsonString), &amp;bird) if err != nill { // json string is invalid.</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/howto/how_to_build_free_blog/">How to build a free blog</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
-        </div>
-        <div>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
-Step 1: Install hugo.
-Step 2: Create a new site.
-Step 3: Setup your hugo theme.
-Step 4: Create new post.
-Step 5: Test your site in your PC and build site.
-Step 6: Register a new Git Hub Account.
-Step 7: Create a new public repository.
-Step 8: Inside repository setting, enable github pages.</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/knowlege/how_does_networking_work/">How does computer networking work?</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
-        </div>
-        <div>This post will explain how does computer networking work.
-Have fun!</div>
     </div>
 </article>
 

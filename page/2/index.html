@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2020-10-16T11:02:20+07:00" />
+<meta property="og:updated_time" content="2020-10-20T10:02:52+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -94,6 +94,111 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_disable_wifi_power_save_ubuntu_20.04/">How to disable wifi power save Ubuntu 20.04</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 11, 2020</span>
+        </div>
+        <div>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.
+I see this link and try to edit file /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf change wifi.powersave from 3 (enable power save) to 2 (disable power save).</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_create_linux_service/">How to create a linux service</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 10, 2020</span>
+        </div>
+        <div>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
+Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
+[Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
+Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_service.service Step 3: Enable service (so service will start with OS) sudo systemctl enable test_service.</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/working_with_json_in_golang/">How to working with JSON in GoLang</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+        </div>
+        <div>In this post, we will learn how to parse json data in GoLang. Have fun!
+Working with structed data
+// Import package import ( &#34;encoding/json&#34; ) type Bird struct { Species string Description string } func main() { jsonString := `{	&#34;species&#34;: &#34;pigeon&#34;, &#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34; }` var bird Bird err := json.Unmarshal([]byte(jsonString), &amp;bird) if err != nill { // json string is invalid.</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_build_free_blog/">How to build a free blog</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+        </div>
+        <div>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
+Step 1: Install hugo.
+Step 2: Create a new site.
+Step 3: Setup your hugo theme.
+Step 4: Create new post.
+Step 5: Test your site in your PC and build site.
+Step 6: Register a new Git Hub Account.
+Step 7: Create a new public repository.
+Step 8: Inside repository setting, enable github pages.</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/knowlege/how_does_networking_work/">How does computer networking work?</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+        </div>
+        <div>This post will explain how does computer networking work.
+Have fun!</div>
+    </div>
+</article>
+
+    
 
 
 
