@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Tue, 20 Oct 2020 10:02:52 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Oct 2020 09:26:59 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working with openstack api using curl</title>
+      <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>
+      <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
+      <description>Get token curl -s -i -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39; { &amp;#34;auth&amp;#34;: { &amp;#34;identity&amp;#34;: { &amp;#34;methods&amp;#34;: [ &amp;#34;password&amp;#34; ], &amp;#34;password&amp;#34;: { &amp;#34;user&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;{USERNAME}&amp;#34;, &amp;#34;domain&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{DOMAIN_ID}&amp;#34; }, &amp;#34;password&amp;#34;: &amp;#34;{PASSWORD}&amp;#34; } } }, &amp;#34;scope&amp;#34;: { &amp;#34;project&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;PROJECT_ID&amp;#34; } } } }&amp;#39; &amp;#34;https://{BASE URL}:5000/v3/auth/tokens&amp;#34; | grep &amp;#34;X-Subject-Token:&amp;#34; Default keystone port is 5000
+By default, this token will be expired after 6 hours.
+Export token API_TOKEN=&amp;quot;{TOKEN}&amp;quot;
+Get domains curl -s -H &amp;#34;X-Auth-Token: $API_TOKEN&amp;#34; &amp;#34;https://{BASE URL}:5000/v3/domains&amp;#34; | jq &amp;#39;.</description>
+    </item>
+    
     <item>
       <title>Working With Influxdb Data Using PhpClient</title>
       <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</link>
@@ -59,9 +71,12 @@ Add these lines at the end of file
       <guid>https://kienngd.98t1.net/notes/some_git_commands/</guid>
       <description>This is some git commands that I usually use.
 Clone a repository
-git clone &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
+git clone &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Clone from specific branch
+git clone --branch &amp;lt;BRANHCH NAME&amp;gt; &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
 git pull origin master Pull code from local DEV branch to remote MASTER branch
-git push origin dev:master (updating &amp;hellip;.)</description>
+git push origin dev:master View files status
+git status Add files to commit
+. mean all changed files.</description>
     </item>
     
     <item>

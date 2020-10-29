@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Working with openstack api using curl" />
+<meta property="og:description" content="Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;PROJECT_ID&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
+By default, this token will be expired after 6 hours.
+Export token API_TOKEN=&quot;{TOKEN}&quot;
+Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL}:5000/v3/domains&#34; | jq &#39;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/" />
+<meta property="article:published_time" content="2020-10-29T09:26:59+07:00" />
+<meta property="article:modified_time" content="2020-10-29T09:26:59+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Working with openstack api using curl"/>
+<meta name="twitter:description" content="Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;PROJECT_ID&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
+By default, this token will be expired after 6 hours.
+Export token API_TOKEN=&quot;{TOKEN}&quot;
+Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL}:5000/v3/domains&#34; | jq &#39;."/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/">
+
+    
+    <title>Working with openstack api using curl &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+<nav class="blue" role="navigation">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1">
+            
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                <i class="material-icons">menu</i>
+            </a>
+
+            
+            <ul id="nav-mobile" class="sidenav">
+                
+                
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+
+            </ul>
+
+            
+            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+            
+            <div class="nav-wrapper">
+
+                
+                <ul class="right hide-on-med-and-down">
+                    
+                    
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav></div>
+
+    
+
+    
+
+<article class="max-width">
+    
+    <section class="row">
+        <div class="col s12 m10 offset-m1 l10 offset-l1">
+            <h4>Working with openstack api using curl</h4>
+            
+            Kien Nguyen - Oct 29, 2020
+        </div>
+    </section>
+
+    
+    
+
+    
+    <section class="row">
+        <div class="col s12 m12 l10 offset-l1">
+            <h5 id="get-token">Get token</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -i -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span>   -d <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">{
+</span><span style="color:#e6db74">    &#34;auth&#34;: {
+</span><span style="color:#e6db74">        &#34;identity&#34;: {
+</span><span style="color:#e6db74">            &#34;methods&#34;: [
+</span><span style="color:#e6db74">                &#34;password&#34;
+</span><span style="color:#e6db74">            ],
+</span><span style="color:#e6db74">            &#34;password&#34;: {
+</span><span style="color:#e6db74">                &#34;user&#34;: {
+</span><span style="color:#e6db74">                    &#34;name&#34;: &#34;{USERNAME}&#34;,
+</span><span style="color:#e6db74">                    &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; },
+</span><span style="color:#e6db74">                    &#34;password&#34;: &#34;{PASSWORD}&#34;
+</span><span style="color:#e6db74">                }
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        },
+</span><span style="color:#e6db74">        &#34;scope&#34;: {
+</span><span style="color:#e6db74">            &#34;project&#34;: {
+</span><span style="color:#e6db74">                &#34;id&#34;: &#34;PROJECT_ID&#34;
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">    }
+</span><span style="color:#e6db74">}&#39;</span>   <span style="color:#e6db74">&#34;https://{BASE URL}:5000/v3/auth/tokens&#34;</span> | grep <span style="color:#e6db74">&#34;X-Subject-Token:&#34;</span>
+</code></pre></div><p>Default keystone port is <strong>5000</strong></p>
+<p>By default, this token will be expired after 6 hours.</p>
+<h5 id="export-token">Export token</h5>
+<p>API_TOKEN=&quot;{TOKEN}&quot;</p>
+<h5 id="get-domains">Get domains</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -H <span style="color:#e6db74">&#34;X-Auth-Token: </span>$API_TOKEN<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;https://{BASE URL}:5000/v3/domains&#34;</span> | jq <span style="color:#e6db74">&#39;.&#39;</span>
+</code></pre></div><p>Use <strong>jq</strong> command to format return JSON data.</p>
+<h5 id="get-projects">Get projects</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -H <span style="color:#e6db74">&#34;X-Auth-Token: </span>$API_TOKEN<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;https://{BASE URL}:5000/v3/projects&#34;</span> | jq <span style="color:#e6db74">&#39;.&#39;</span>
+</code></pre></div><h5 id="set-storage-policy-quota-for-one-project">Set storage policy quota for one project</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -X PUT -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> -H <span style="color:#e6db74">&#34;X-Auth-Token: </span>$API_TOKEN<span style="color:#e6db74">&#34;</span> -d <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">{
+</span><span style="color:#e6db74">    &#34;gigabytes_{POLICY_1_NAME}&#34;: {QUOTA_1_VALUE},
+</span><span style="color:#e6db74">    &#34;gigabytes_{POLICY_2_NAME}&#34;: {QUOTA_2_VALUE},
+</span><span style="color:#e6db74">    &#34;gigabytes_{POLICY_3_NAME}&#34;: {QUOTA_3_VALUE}
+</span><span style="color:#e6db74">}&#39;</span>   <span style="color:#e6db74">&#34;https://{BASE_URL}:8776/v3/{ADMIN_PROJECT_ID}/os-quota-sets/{PROJECT_ID}&#34;</span>
+</code></pre></div><h5 id="get-all-projects-vms-with-detail">Get all project&rsquo;s vms with detail</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -H <span style="color:#e6db74">&#34;X-Auth-Token: </span>$API_TOKEN<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;https://{BASE_URL}:8774/v2.1/servers/detail&#34;</span> | jq <span style="color:#e6db74">&#39;.&#39;</span>
+</code></pre></div><h5 id="get-all-flavors-with-detail">Get all flavors with detail</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -H <span style="color:#e6db74">&#34;X-Auth-Token: </span>$API_TOKEN<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;https://{BASE_URL}:8774/v2.1/flavors/detail&#34;</span> | jq <span style="color:#e6db74">&#39;.&#39;</span>
+</code></pre></div><h5 id="grant-one-role-on-all-domains-projects-to-one-user">Grant one role on all domain&rsquo;s projects to one user</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -X PUT -H <span style="color:#e6db74">&#34;X-Auth-Token: </span>$API_TOKEN<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;https://{BASE_URL}:5000/v3/OS-INHERIT/domains/{DOMAIN_ID}/users/{USER_ID}/roles/{ROLE_ID}/inherited_to_projects&#34;</span> | jq <span style="color:#e6db74">&#39;.&#39;</span>
+</code></pre></div><h5 id="grant-one-system-role-to-one-user">Grant one system role to one user</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -X PUT -H <span style="color:#e6db74">&#34;X-Auth-Token: </span>$API_TOKEN<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;https://{BASE_URL}:5000/v3/system/users/{USER_ID}/roles/{SYSTEM_ROLE_ID}&#34;</span> | jq <span style="color:#e6db74">&#39;.&#39;</span>
+</code></pre></div><h5 id="set-micro-version-for-api">Set micro version for API</h5>
+<p>Using HTTP header: <strong>X-OpenStack-Nova-API-Version: 2.4</strong> Or <strong>OpenStack-API-Version: compute 2.27</strong> (valid from version 2.27).</p>
+
+        </div>
+    </section>
+</article>
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>
