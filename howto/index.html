@@ -9,7 +9,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/howto/" />
-<meta property="og:updated_time" content="2020-10-16T10:54:04+07:00" />
+<meta property="og:updated_time" content="2020-11-02T15:37:11+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Howtos"/>
@@ -93,6 +93,27 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_use_uuid_as_id_laravel/">How_to_use_uuid_as_id_laravel</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 02, 2020</span>
+        </div>
+        <div>Use UUID as primary key of Laravel Eloquent ORM Install package using composer:
+composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
+// Replace this $table-&gt;increments(&#39;id&#39;); // By this $table-&gt;uuid(&#39;id&#39;)-&gt;primary(); Inside model file
+use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &#39;string&#39;; public $incrementing = false; protected $guarded = []; } </div>
+    </div>
+</article>
+
+    
 
 
 

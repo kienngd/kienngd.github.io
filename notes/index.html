@@ -106,7 +106,7 @@
             
             <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 29, 2020</span>
         </div>
-        <div>Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;PROJECT_ID&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
+        <div>Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;{PROJECT_ID}&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
 By default, this token will be expired after 6 hours.
 Export token API_TOKEN=&quot;{TOKEN}&quot;
 Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL}:5000/v3/domains&#34; | jq &#39;.</div>

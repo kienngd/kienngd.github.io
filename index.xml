@@ -7,14 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Thu, 29 Oct 2020 09:26:59 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Nov 2020 15:37:11 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How_to_use_uuid_as_id_laravel</title>
+      <link>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</link>
+      <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</guid>
+      <description>Use UUID as primary key of Laravel Eloquent ORM Install package using composer:
+composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
+// Replace this $table-&amp;gt;increments(&amp;#39;id&amp;#39;); // By this $table-&amp;gt;uuid(&amp;#39;id&amp;#39;)-&amp;gt;primary(); Inside model file
+use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &amp;#39;string&amp;#39;; public $incrementing = false; protected $guarded = []; } </description>
+    </item>
+    
     <item>
       <title>Working with openstack api using curl</title>
       <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>
       <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
-      <description>Get token curl -s -i -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39; { &amp;#34;auth&amp;#34;: { &amp;#34;identity&amp;#34;: { &amp;#34;methods&amp;#34;: [ &amp;#34;password&amp;#34; ], &amp;#34;password&amp;#34;: { &amp;#34;user&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;{USERNAME}&amp;#34;, &amp;#34;domain&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{DOMAIN_ID}&amp;#34; }, &amp;#34;password&amp;#34;: &amp;#34;{PASSWORD}&amp;#34; } } }, &amp;#34;scope&amp;#34;: { &amp;#34;project&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;PROJECT_ID&amp;#34; } } } }&amp;#39; &amp;#34;https://{BASE URL}:5000/v3/auth/tokens&amp;#34; | grep &amp;#34;X-Subject-Token:&amp;#34; Default keystone port is 5000
+      <description>Get token curl -s -i -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39; { &amp;#34;auth&amp;#34;: { &amp;#34;identity&amp;#34;: { &amp;#34;methods&amp;#34;: [ &amp;#34;password&amp;#34; ], &amp;#34;password&amp;#34;: { &amp;#34;user&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;{USERNAME}&amp;#34;, &amp;#34;domain&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{DOMAIN_ID}&amp;#34; }, &amp;#34;password&amp;#34;: &amp;#34;{PASSWORD}&amp;#34; } } }, &amp;#34;scope&amp;#34;: { &amp;#34;project&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{PROJECT_ID}&amp;#34; } } } }&amp;#39; &amp;#34;https://{BASE URL}:5000/v3/auth/tokens&amp;#34; | grep &amp;#34;X-Subject-Token:&amp;#34; Default keystone port is 5000
 By default, this token will be expired after 6 hours.
 Export token API_TOKEN=&amp;quot;{TOKEN}&amp;quot;
 Get domains curl -s -H &amp;#34;X-Auth-Token: $API_TOKEN&amp;#34; &amp;#34;https://{BASE URL}:5000/v3/domains&amp;#34; | jq &amp;#39;.</description>
