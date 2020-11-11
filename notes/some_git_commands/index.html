@@ -10,10 +10,10 @@
 Clone a repository
 git clone &lt;URL&gt; [&lt;DEST Directory&gt;] Clone from specific branch
 git clone --branch &lt;BRANHCH NAME&gt; &lt;URL&gt; [&lt;DEST Directory&gt;] Pull code from remote master branch and merge to current banch
-git pull origin master Pull code from local DEV branch to remote MASTER branch
-git push origin dev:master View files status
-git status Add files to commit
-. mean all changed files." />
+git pull origin master Push code from local DEV branch to remote MASTER branch
+git push origin dev:master Create local branch
+git checkout -b &lt;BRANHCH NAME&gt; Switch local branch
+git checkout &lt;BRANHCH NAME&gt; List all branch" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kienngd.98t1.net/notes/some_git_commands/" />
 <meta property="article:published_time" content="2020-10-16T11:02:20+07:00" />
@@ -25,10 +25,10 @@ git status Add files to commit
 Clone a repository
 git clone &lt;URL&gt; [&lt;DEST Directory&gt;] Clone from specific branch
 git clone --branch &lt;BRANHCH NAME&gt; &lt;URL&gt; [&lt;DEST Directory&gt;] Pull code from remote master branch and merge to current banch
-git pull origin master Pull code from local DEV branch to remote MASTER branch
-git push origin dev:master View files status
-git status Add files to commit
-. mean all changed files."/>
+git pull origin master Push code from local DEV branch to remote MASTER branch
+git push origin dev:master Create local branch
+git checkout -b &lt;BRANHCH NAME&gt; Switch local branch
+git checkout &lt;BRANHCH NAME&gt; List all branch"/>
 
 
     <meta name="description" content="">
@@ -131,8 +131,18 @@ git status Add files to commit
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone --branch &lt;BRANHCH NAME&gt; &lt;URL&gt; <span style="color:#f92672">[</span>&lt;DEST Directory&gt;<span style="color:#f92672">]</span>
 </code></pre></div><p><strong>Pull code from remote master branch and merge to current banch</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull origin master
-</code></pre></div><p><strong>Pull code from local DEV branch to remote MASTER branch</strong></p>
+</code></pre></div><p><strong>Push code from local DEV branch to remote MASTER branch</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push origin dev:master
+</code></pre></div><p><strong>Create local branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout -b &lt;BRANHCH NAME&gt;
+</code></pre></div><p><strong>Switch local branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout &lt;BRANHCH NAME&gt;
+</code></pre></div><p><strong>List all branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch -a
+</code></pre></div><p><strong>Delete local branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch -d &lt;BRANHCH NAME&gt;
+</code></pre></div><p><strong>Delete remote branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push origin --delete &lt;BRANHCH NAME&gt;
 </code></pre></div><p><strong>View files status</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git status
 </code></pre></div><p><strong>Add files to commit</strong></p>
