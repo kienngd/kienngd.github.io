@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2020-11-02T15:37:11+07:00" />
+<meta property="og:updated_time" content="2020-11-26T08:36:20+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -94,6 +94,33 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/tutorials/apiato/">Apiato</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 26, 2020</span>
+        </div>
+        <div>Home page: http://docs.apiato.io/
+Create project using composer from latest stable
+composer create-project apiato/apiato apiato9 Then edit the .env file.
+Migrate database
+php artisan migrate Create admin user, some permissions, roles
+php artisan db:seed Default account is: admin@admin.com / admin.
+Add all current permissions to admin role.
+php artisan apiato:permissions:toRole admin Install OAuth 2.0
+php artisan passport:install Then edit file .env update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.
+Install ApiDocJs</div>
+    </div>
+</article>
+
+    
 
 
 
@@ -276,25 +303,6 @@ git checkout &lt;BRANHCH NAME&gt; List all branch</div>
         <div>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!
 Open your browser to access this link: https://api.myip.com/. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: 115.75.212.27.
 Bonus: You can use curl command to get data too.</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/notes/phpdoc_docblock/">Phpdoc docblock</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 15, 2020</span>
-        </div>
-        <div>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&hellip;
-&lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</div>
     </div>
 </article>
 

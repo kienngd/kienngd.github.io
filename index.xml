@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Mon, 02 Nov 2020 15:37:11 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 08:36:20 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apiato</title>
+      <link>https://kienngd.98t1.net/tutorials/apiato/</link>
+      <pubDate>Thu, 26 Nov 2020 08:36:20 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tutorials/apiato/</guid>
+      <description>Home page: http://docs.apiato.io/
+Create project using composer from latest stable
+composer create-project apiato/apiato apiato9 Then edit the .env file.
+Migrate database
+php artisan migrate Create admin user, some permissions, roles
+php artisan db:seed Default account is: admin@admin.com / admin.
+Add all current permissions to admin role.
+php artisan apiato:permissions:toRole admin Install OAuth 2.0
+php artisan passport:install Then edit file .env update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.
+Install ApiDocJs</description>
+    </item>
+    
     <item>
       <title>Use UUID as primary key of Laravel Eloquent ORM</title>
       <link>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</link>
@@ -198,10 +216,10 @@ Step 1: Install hugo.
 Step 2: Create a new site.
 Step 3: Setup your hugo theme.
 Step 4: Create new post.
+hugo new &amp;lt;POST TYPE&amp;gt;/&amp;lt;POST_TITLE.md&amp;gt; Then edit the new file.
 Step 5: Test your site in your PC and build site.
-Step 6: Register a new Git Hub Account.
-Step 7: Create a new public repository.
-Step 8: Inside repository setting, enable github pages.</description>
+Start hugo server
+hugo server Default port is 1313 so you can access http://localhost:1313 or http://:1313</description>
     </item>
     
     <item>

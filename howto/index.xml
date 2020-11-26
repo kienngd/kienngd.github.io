@@ -89,10 +89,10 @@ Step 1: Install hugo.
 Step 2: Create a new site.
 Step 3: Setup your hugo theme.
 Step 4: Create new post.
+hugo new &amp;lt;POST TYPE&amp;gt;/&amp;lt;POST_TITLE.md&amp;gt; Then edit the new file.
 Step 5: Test your site in your PC and build site.
-Step 6: Register a new Git Hub Account.
-Step 7: Create a new public repository.
-Step 8: Inside repository setting, enable github pages.</description>
+Start hugo server
+hugo server Default port is 1313 so you can access http://localhost:1313 or http://:1313</description>
     </item>
     
   </channel>

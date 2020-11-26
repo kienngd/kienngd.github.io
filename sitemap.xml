@@ -3,8 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kienngd.98t1.net/tutorials/apiato/</loc>
+    <lastmod>2020-11-26T08:36:20+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/tags/apiato/</loc>
+    <lastmod>2020-11-26T08:36:20+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kienngd.98t1.net/</loc>
-    <lastmod>2020-11-02T15:37:11+07:00</lastmod>
+    <lastmod>2020-11-26T08:36:20+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/tags/laravel/</loc>
+    <lastmod>2020-11-26T08:36:20+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/tags/</loc>
+    <lastmod>2020-11-26T08:36:20+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/tutorials/</loc>
+    <lastmod>2020-11-26T08:36:20+07:00</lastmod>
   </url>
   
   <url>
@@ -49,11 +74,6 @@
   
   <url>
     <loc>https://kienngd.98t1.net/tutorials/react-admin-p1/</loc>
-    <lastmod>2020-10-17T23:17:57+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kienngd.98t1.net/tutorials/</loc>
     <lastmod>2020-10-17T23:17:57+07:00</lastmod>
   </url>
   
@@ -119,10 +139,6 @@
   
   <url>
     <loc>https://kienngd.98t1.net/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kienngd.98t1.net/tags/</loc>
   </url>
   
 </urlset>

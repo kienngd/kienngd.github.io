@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apiato on K5d</title>
+    <link>https://kienngd.98t1.net/tags/apiato/</link>
+    <description>Recent content in apiato on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Thu, 26 Nov 2020 08:36:20 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/apiato/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apiato</title>
+      <link>https://kienngd.98t1.net/tutorials/apiato/</link>
+      <pubDate>Thu, 26 Nov 2020 08:36:20 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tutorials/apiato/</guid>
+      <description>Home page: http://docs.apiato.io/
+Create project using composer from latest stable
+composer create-project apiato/apiato apiato9 Then edit the .env file.
+Migrate database
+php artisan migrate Create admin user, some permissions, roles
+php artisan db:seed Default account is: admin@admin.com / admin.
+Add all current permissions to admin role.
+php artisan apiato:permissions:toRole admin Install OAuth 2.0
+php artisan passport:install Then edit file .env update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.
+Install ApiDocJs</description>
+    </item>
+    
+  </channel>
+</rss>
