@@ -5,22 +5,27 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kienngd.98t1.net/tags/" />
-<meta property="og:updated_time" content="2020-11-27T14:42:16+07:00" />
+<meta property="og:title" content="Laravel logout other devices" />
+<meta property="og:description" content="Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
+&#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
+use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/" />
+<meta property="article:published_time" content="2020-11-27T14:42:16+07:00" />
+<meta property="article:modified_time" content="2020-11-27T14:42:16+07:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Laravel logout other devices"/>
+<meta name="twitter:description" content="Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
+&#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
+use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); "/>
 
 
     <meta name="description" content="">
-    <link rel="canonical" href="https://kienngd.98t1.net/tags/">
+    <link rel="canonical" href="https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/">
 
     
-    <title>Tags &middot; K5d</title>
+    <title>Laravel logout other devices &middot; K5d</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
@@ -93,47 +98,36 @@
 
     
 
-
-
-
+<article class="max-width">
     
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/tags/apiato/">apiato</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
+    <section class="row">
+        <div class="col s12 m10 offset-m1 l10 offset-l1">
+            <h4>Laravel logout other devices</h4>
             
-            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+            Kien Nguyen - Nov 27, 2020
         </div>
-        <div></div>
-    </div>
-</article>
+    </section>
 
     
-
-
+    
 
     
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/tags/laravel/">laravel</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+    <section class="row">
+        <div class="col s12 m12 l10 offset-l1">
+            <p>Check file: <strong>app/Http/Kernel.php</strong> (or file <strong>app/Ship/Kernels/HttpKernel.php</strong> if you use Apiato) and uncomment this line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#e6db74">&#39;web&#39;</span> <span style="color:#f92672">=&gt;</span> [
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">\Illuminate\Session\Middleware\AuthenticateSession</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>,
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>],
+</code></pre></div><p>Logout all other devices:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Illuminate\Support\Facades\Auth</span>;
+<span style="color:#f92672">...</span>
+<span style="color:#a6e22e">Auth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">logoutOtherDevices</span>($password);
+</code></pre></div>
         </div>
-        <div></div>
-    </div>
+    </section>
 </article>
-
-    
-
-
-
-
-
 
 
     

@@ -7,7 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Thu, 26 Nov 2020 08:36:20 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Nov 2020 14:42:16 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laravel logout other devices</title>
+      <link>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</link>
+      <pubDate>Fri, 27 Nov 2020 14:42:16 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</guid>
+      <description>Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
+&amp;#39;web&amp;#39; =&amp;gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
+use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </description>
+    </item>
+    
+    <item>
+      <title>Laravel Roles Permissions</title>
+      <link>https://kienngd.98t1.net/tutorials/laravel_roles_permissions/</link>
+      <pubDate>Fri, 27 Nov 2020 09:44:04 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tutorials/laravel_roles_permissions/</guid>
+      <description>Create role, permission
+use Spatie\Permission\Models\Role; use Spatie\Permission\Models\Permission; $role = Role::create([&amp;#39;name&amp;#39; =&amp;gt; &amp;#39;admin&amp;#39;]); $permission = Permission::create([&amp;#39;name&amp;#39; =&amp;gt; &amp;#39;create-articles&amp;#39;]); Assign / Sync / Revoke permission to role
+// Assign $role-&amp;gt;givePermissionTo($permission); // $permission can be string / object / array of strings / array of objects $permission-&amp;gt;assignRole($role); // Sync $role-&amp;gt;syncPermissions($permissions); $permission-&amp;gt;syncRoles($roles); // Revoke $role-&amp;gt;revokePermissionTo($permission); $permission-&amp;gt;removeRole($role); Check roles permissons
+$role-&amp;gt;hasPermissionTo($permission); $role-&amp;gt;hasAnyPermission($permissions); $role-&amp;gt;hasAllPermissions($permissions); Authenticatable user with roles / permissions
+The model:
+use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Traits\HasRoles; class User extends Authenticatable { use HasRoles; // .</description>
+    </item>
+    
     <item>
       <title>Apiato laravel based framework</title>
       <link>https://kienngd.98t1.net/tutorials/apiato/</link>

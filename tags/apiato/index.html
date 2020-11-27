@@ -9,7 +9,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/tags/apiato/" />
-<meta property="og:updated_time" content="2020-11-26T08:36:20+07:00" />
+<meta property="og:updated_time" content="2020-11-27T14:42:16+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="apiato"/>
@@ -93,6 +93,49 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/tutorials/laravel_logout_other_devices/">Laravel logout other devices</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+        </div>
+        <div>Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
+&#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
+use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/tutorials/laravel_roles_permissions/">Laravel Roles Permissions</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+        </div>
+        <div>Create role, permission
+use Spatie\Permission\Models\Role; use Spatie\Permission\Models\Permission; $role = Role::create([&#39;name&#39; =&gt; &#39;admin&#39;]); $permission = Permission::create([&#39;name&#39; =&gt; &#39;create-articles&#39;]); Assign / Sync / Revoke permission to role
+// Assign $role-&gt;givePermissionTo($permission); // $permission can be string / object / array of strings / array of objects $permission-&gt;assignRole($role); // Sync $role-&gt;syncPermissions($permissions); $permission-&gt;syncRoles($roles); // Revoke $role-&gt;revokePermissionTo($permission); $permission-&gt;removeRole($role); Check roles permissons
+$role-&gt;hasPermissionTo($permission); $role-&gt;hasAnyPermission($permissions); $role-&gt;hasAllPermissions($permissions); Authenticatable user with roles / permissions
+The model:
+use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Traits\HasRoles; class User extends Authenticatable { use HasRoles; // .</div>
+    </div>
+</article>
+
+    
 
 
 
