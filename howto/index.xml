@@ -86,13 +86,9 @@ Working with structed data
       <guid>https://kienngd.98t1.net/howto/how_to_build_free_blog/</guid>
       <description>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
 Step 1: Install hugo.
-Step 2: Create a new site.
-Step 3: Setup your hugo theme.
-Step 4: Create new post.
-hugo new &amp;lt;POST TYPE&amp;gt;/&amp;lt;POST_TITLE.md&amp;gt; Then edit the new file.
-Step 5: Test your site in your PC and build site.
-Start hugo server
-hugo server Default port is 1313 so you can access http://localhost:1313 or http://:1313</description>
+ Download hugo from: https://github.com/gohugoio/hugo/releases Install in your PC.  Step 2: Create a new site.
+ Quick start document: https://gohugo.io/getting-started/ Command:  hugo new site myblog Step 3: Setup your hugo theme.
+ Find a theme from: https://themes.gohugo.io/. Download theme and put into site&amp;rsquo;s themes directory.</description>
     </item>
     
   </channel>
