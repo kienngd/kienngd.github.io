@@ -72,11 +72,11 @@ Add these lines at the end of file
       <description>This is some git commands that I usually use.
 Clone a repository
 git clone &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Clone from specific branch
-git clone --branch &amp;lt;BRANHCH NAME&amp;gt; &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
+git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
 git pull origin master Push code from local DEV branch to remote MASTER branch
 git push origin dev:master Create local branch
-git checkout -b &amp;lt;BRANHCH NAME&amp;gt; Switch local branch
-git checkout &amp;lt;BRANHCH NAME&amp;gt; List all branch</description>
+git checkout -b &amp;lt;BRANCH NAME&amp;gt; Switch local branch
+git checkout &amp;lt;BRANCH NAME&amp;gt; List all branch</description>
     </item>
     
     <item>
