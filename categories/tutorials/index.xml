@@ -14,13 +14,10 @@
       <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/tutorials/apiato_select_language/</guid>
-      <description>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!
-Document: https://docs.apiato.io/features/localization/
-Step 1: Add new language to supported language:
-Edit supported_languages inside file app/Containers/Localization/Configs/localization.php
-Step 2: Check default language and fall back language inside file config/app.php
-Step 3: Define a localization string inside file app/Containers/[Container]/Resources/Languages/[language name]/[file name].php
-Step 4: Get a localization string inside your code (controller, blade&amp;hellip;): trans(&#39;[container]::[filename].[string_key]&#39;) or {{ __(&#39;[container]::[filename].[string_key]&#39;) }}, @lang(&#39;[container]::[filename].</description>
+      <description>&lt;p&gt;Hello, today we will learn how to add select language to an ApiAto web app. Have fun!&lt;/p&gt;
+&lt;p&gt;Document: &lt;a href=&#34;https://docs.apiato.io/features/localization/&#34;&gt;https://docs.apiato.io/features/localization/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Step 1&lt;/u&gt;: Add new language to supported language:&lt;/p&gt;
+&lt;p&gt;Edit &lt;strong&gt;supported_languages&lt;/strong&gt; inside file &lt;strong&gt;app/Containers/Localization/Configs/localization.php&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
