@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="notes" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kienngd.98t1.net/categories/notes/" />
+<meta property="og:updated_time" content="2020-10-29T09:26:59+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="notes"/>
+<meta name="twitter:description" content=""/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/categories/notes/">
+
+    
+    <title>notes &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+<nav class="blue" role="navigation">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1">
+            
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                <i class="material-icons">menu</i>
+            </a>
+
+            
+            <ul id="nav-mobile" class="sidenav">
+                
+                
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+
+            </ul>
+
+            
+            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+            
+            <div class="nav-wrapper">
+
+                
+                <ul class="right hide-on-med-and-down">
+                    
+                    
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav></div>
+
+    
+
+    
+
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_openstack_api_using_curl/">Working with openstack api using curl</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 29, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/openstack/" rel="tag">OpenStack</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/api/" rel="tag">API</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;{PROJECT_ID}&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
+By default, this token will be expired after 6 hours.
+Export token API_TOKEN=&quot;{TOKEN}&quot;
+Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL}:5000/v3/domains&#34; | jq &#39;.</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_phpclient/">Working With Influxdb Data Using PhpClient</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>document: https://github.com/influxdata/influxdb-php
+Install via composer composer require influxdb/influxdb-php Create client object $client = new InfluxDB\Client($host, $port); // directly get the database object $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname)); // Fetch the database using a 5 second time out $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname), 5); // get the client to retrieve other databases $client = $database-&gt;getClient(); Reading data // fetch the database $database = $client-&gt;selectDB(&#39;influx_test_db&#39;); // executing a query will yield a resultset object $result = $database-&gt;query(&#39;select * from test_metric LIMIT 5&#39;); // get the points from the resultset yields an array $points = $result-&gt;getPoints(); Use the queryBuilder object // retrieve points with the query builder $result = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;limit(2) -&gt;offset(2) -&gt;getResultSet() -&gt;getPoints(); // get the query from the QueryBuilder $query = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;where([&#34;region = &#39;us-west&#39;&#34;]) -&gt;getQuery(); Get the last executed query from the client // use the getLastQuery() method $lastQuery = $client-&gt;getLastQuery(); // or access the static variable directly: $lastQuery = Client::lastQuery; Writting data // create an array of points $points = array( new Point( &#39;Measurement_Name&#39;, // name of the measurement 	0.</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_api/">Working_with_influxdb_data_using_api</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div></div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_influx/">Working_with_influxdb_data_using_influx</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div></div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/influxdb_docker_with_laradock/">Influxdb Docker With Laradock</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/docker/" rel="tag">Docker</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/laradock/" rel="tag">Laradock</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>In this post we will see how to run influxdb docker container using laradock. Have fun.
+InfluxDB docker document: https://hub.docker.com/_/influxdb
+Edit laradock .env file:
+Add these lines at the end of file
+### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
+Add these lines at the end of file
+### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &#34;${INFLUXDB_HTTP_PORT}:8086&#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/some_git_commands/">Some git commands</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 16, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/git/" rel="tag">Git</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>This is some git commands that I usually use.
+Clone a repository
+git clone &lt;URL&gt; [&lt;DEST Directory&gt;] Clone from specific branch
+git clone --branch &lt;BRANCH NAME&gt; &lt;URL&gt; [&lt;DEST Directory&gt;] Pull code from remote master branch and merge to current banch
+git pull origin master Push code from local DEV branch to remote MASTER branch
+git push origin dev:master Create local branch
+git checkout -b &lt;BRANCH NAME&gt; Switch local branch
+git checkout &lt;BRANCH NAME&gt; List all branch</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/phpdoc_docblock/">Phpdoc docblock</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 15, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&hellip;
+&lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/create_document_using_phpdoc/">Create document using phpdoc</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 15, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
+  Install phpdoc
+Using composer
+composer require &#34;phpdocumentor/phpdocumentor:2.*&#34; Then run command
+vendor/bin/phpdoc ... Manual: Download file phar from: Github releases
+Then run command
+php phpDocumentor.phar ...   Some simple commands
+vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=TEMPLATE_NAME   &hellip;
+  </div>
+    </div>
+</article>
+
+    
+
+
+
+
+
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>

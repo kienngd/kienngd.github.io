@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on K5d</title>
+    <link>https://kienngd.98t1.net/tags/php/</link>
+    <description>Recent content in PHP on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Thu, 29 Oct 2020 09:26:59 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working with openstack api using curl</title>
+      <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>
+      <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
+      <description>Get token curl -s -i -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39; { &amp;#34;auth&amp;#34;: { &amp;#34;identity&amp;#34;: { &amp;#34;methods&amp;#34;: [ &amp;#34;password&amp;#34; ], &amp;#34;password&amp;#34;: { &amp;#34;user&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;{USERNAME}&amp;#34;, &amp;#34;domain&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{DOMAIN_ID}&amp;#34; }, &amp;#34;password&amp;#34;: &amp;#34;{PASSWORD}&amp;#34; } } }, &amp;#34;scope&amp;#34;: { &amp;#34;project&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{PROJECT_ID}&amp;#34; } } } }&amp;#39; &amp;#34;https://{BASE URL}:5000/v3/auth/tokens&amp;#34; | grep &amp;#34;X-Subject-Token:&amp;#34; Default keystone port is 5000
+By default, this token will be expired after 6 hours.
+Export token API_TOKEN=&amp;quot;{TOKEN}&amp;quot;
+Get domains curl -s -H &amp;#34;X-Auth-Token: $API_TOKEN&amp;#34; &amp;#34;https://{BASE URL}:5000/v3/domains&amp;#34; | jq &amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Phpdoc docblock</title>
+      <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>
+      <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/phpdoc_docblock/</guid>
+      <description>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&amp;hellip;
+&amp;lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</description>
+    </item>
+    
+    <item>
+      <title>Create document using phpdoc</title>
+      <link>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</link>
+      <pubDate>Thu, 15 Oct 2020 10:49:07 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</guid>
+      <description>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
+  Install phpdoc
+Using composer
+composer require &amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34; Then run command
+vendor/bin/phpdoc ... Manual: Download file phar from: Github releases
+Then run command
+php phpDocumentor.phar ...   Some simple commands
+vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=TEMPLATE_NAME   &amp;hellip;
+  </description>
+    </item>
+    
+  </channel>
+</rss>

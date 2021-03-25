@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2020-11-27T14:42:16+07:00" />
+<meta property="og:updated_time" content="2021-03-25T15:36:54+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -101,11 +101,43 @@
         <article class="row max-width">
     <div class="col s12 l10 offset-l1">
         <h4>
+            <a class="orange-text text-darken-3" href="/tutorials/react-admin-p1/">React Admin P1</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 17, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/react-admin/" rel="tag">React-Admin</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/reactjs/" rel="tag">ReactJS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>React-Admin tutorial notes Create new project and install packages
+yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
+import * as React from &#34;react&#34;; import { Admin, Resource } from &#39;react-admin&#39;; import jsonServerProvider from &#39;ra-data-json-server&#39;; import { ListGuesser } from &#39;react-admin&#39;; const App = () =&gt; { const dataProvider = jsonServerProvider(&#39;https://jsonplaceholder.typicode.com&#39;); return( &lt;Admin dataProvider={dataProvider}&gt; &lt;Resource name=&#34;users&#34; list={ListGuesser} /&gt; &lt;/Admin&gt; ); } export default App; Add dashboard page  Create dashboard component Set &lt;Admin dashboard={ Dashboard } &hellip;&gt;  Customizing menu icon  Import Icon &lt;Resource icon={ ICON } &hellip;&gt;  Adding login page  Create src/Providers/authProvider (Example code: &hellip;) &lt;Admin authProvider={ authProvider } &hellip;&gt;  Check screen size const isSmall = useMediaQuery(theme =&gt; theme.</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
             <a class="orange-text text-darken-3" href="/notes/some_git_commands/">Some git commands</a>            
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 16, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 16, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/git/" rel="tag">Git</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>This is some git commands that I usually use.
 Clone a repository
@@ -130,7 +162,11 @@ git checkout &lt;BRANCH NAME&gt; List all branch</div>
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 16, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 16, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
         </div>
         <div>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!
 Open your browser to access this link: https://api.myip.com/. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: 115.75.212.27.
@@ -150,7 +186,13 @@ Bonus: You can use curl command to get data too.</div>
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 15, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 15, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&hellip;
 &lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</div>
@@ -169,7 +211,13 @@ Bonus: You can use curl command to get data too.</div>
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 15, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 15, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
   Install phpdoc
@@ -195,7 +243,13 @@ vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 14, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 14, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/vim/" rel="tag">VIM</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!
 If you want to install plugin named nerdtree,
@@ -218,7 +272,13 @@ cp -r nerdtree ~/.vim/pack/vendor/start/ Then inside VIM, you can use command: :
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 11, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 11, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/ubuntu/" rel="tag">Ubuntu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.
 I see this link and try to edit file /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf change wifi.powersave from 3 (enable power save) to 2 (disable power save).</div>
@@ -237,7 +297,13 @@ I see this link and try to edit file /etc/NetworkManager/conf.d/default-wifi-pow
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 10, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 10, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/service/" rel="tag">Service</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
 Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
@@ -258,7 +324,13 @@ Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_ser
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/golang/" rel="tag">Golang</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/json/" rel="tag">JSON</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>In this post, we will learn how to parse json data in GoLang. Have fun!
 Working with structed data
@@ -278,32 +350,19 @@ Working with structed data
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/hugo/" rel="tag">Hugo</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/github/" rel="tag">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
 Step 1: Install hugo.
  Download hugo from: https://github.com/gohugoio/hugo/releases Install in your PC.  Step 2: Create a new site.
  Quick start document: https://gohugo.io/getting-started/ Command:  hugo new site myblog Step 3: Setup your hugo theme.
  Find a theme from: https://themes.gohugo.io/. Download theme and put into site&rsquo;s themes directory.</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/knowlege/how_does_networking_work/">How does computer networking work?</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
-        </div>
-        <div>This post will explain how does computer networking work.
-Have fun!</div>
     </div>
 </article>
 

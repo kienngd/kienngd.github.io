@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on K5d</title>
+    <link>https://kienngd.98t1.net/tags/github/</link>
+    <description>Recent content in GitHub on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Thu, 08 Oct 2020 10:34:44 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to build a free blog</title>
+      <link>https://kienngd.98t1.net/howto/how_to_build_free_blog/</link>
+      <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_build_free_blog/</guid>
+      <description>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
+Step 1: Install hugo.
+ Download hugo from: https://github.com/gohugoio/hugo/releases Install in your PC.  Step 2: Create a new site.
+ Quick start document: https://gohugo.io/getting-started/ Command:  hugo new site myblog Step 3: Setup your hugo theme.
+ Find a theme from: https://themes.gohugo.io/. Download theme and put into site&amp;rsquo;s themes directory.</description>
+    </item>
+    
+  </channel>
+</rss>

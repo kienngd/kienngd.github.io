@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="API" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kienngd.98t1.net/tags/api/" />
+<meta property="og:updated_time" content="2020-10-29T09:26:59+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="API"/>
+<meta name="twitter:description" content=""/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/tags/api/">
+
+    
+    <title>API &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+<nav class="blue" role="navigation">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1">
+            
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                <i class="material-icons">menu</i>
+            </a>
+
+            
+            <ul id="nav-mobile" class="sidenav">
+                
+                
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+
+            </ul>
+
+            
+            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+            
+            <div class="nav-wrapper">
+
+                
+                <ul class="right hide-on-med-and-down">
+                    
+                    
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav></div>
+
+    
+
+    
+
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_openstack_api_using_curl/">Working with openstack api using curl</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 29, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/openstack/" rel="tag">OpenStack</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/api/" rel="tag">API</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;{PROJECT_ID}&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
+By default, this token will be expired after 6 hours.
+Export token API_TOKEN=&quot;{TOKEN}&quot;
+Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL}:5000/v3/domains&#34; | jq &#39;.</div>
+    </div>
+</article>
+
+    
+
+
+
+
+
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>

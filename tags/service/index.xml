@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service on K5d</title>
+    <link>https://kienngd.98t1.net/tags/service/</link>
+    <description>Recent content in Service on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Sat, 10 Oct 2020 08:56:09 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/service/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create a linux service</title>
+      <link>https://kienngd.98t1.net/howto/how_to_create_linux_service/</link>
+      <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_create_linux_service/</guid>
+      <description>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
+Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
+[Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
+Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_service.service Step 3: Enable service (so service will start with OS) sudo systemctl enable test_service.</description>
+    </item>
+    
+  </channel>
+</rss>

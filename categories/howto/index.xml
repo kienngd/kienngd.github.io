@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>howto on K5d</title>
+    <link>https://kienngd.98t1.net/categories/howto/</link>
+    <description>Recent content in howto on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Mon, 02 Nov 2020 15:37:11 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/categories/howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use UUID as primary key of Laravel Eloquent ORM</title>
+      <link>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</link>
+      <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</guid>
+      <description>Install package using composer:
+composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
+// Replace this $table-&amp;gt;increments(&amp;#39;id&amp;#39;); // By this $table-&amp;gt;uuid(&amp;#39;id&amp;#39;)-&amp;gt;primary(); Inside model file
+use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &amp;#39;string&amp;#39;; public $incrementing = false; protected $guarded = []; } </description>
+    </item>
+    
+    <item>
+      <title>How to check my ip</title>
+      <link>https://kienngd.98t1.net/howto/how_to_check_my_ip/</link>
+      <pubDate>Fri, 16 Oct 2020 10:54:04 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_check_my_ip/</guid>
+      <description>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!
+Open your browser to access this link: https://api.myip.com/. You can see something like this: {&amp;ldquo;ip&amp;rdquo;:&amp;ldquo;115.75.212.27&amp;rdquo;,&amp;ldquo;country&amp;rdquo;:&amp;ldquo;Viet Nam&amp;rdquo;,&amp;ldquo;cc&amp;rdquo;:&amp;ldquo;VN&amp;rdquo;} so your IP is: 115.75.212.27.
+Bonus: You can use curl command to get data too.</description>
+    </item>
+    
+    <item>
+      <title>How to install VIM plugins</title>
+      <link>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</link>
+      <pubDate>Wed, 14 Oct 2020 09:08:18 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</guid>
+      <description>Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!
+If you want to install plugin named nerdtree,
+1st way: Copy plugin files to: ~/.vim/pack/vendor/start and they will be load when you launch VIM
+Example:
+cp -r nerdtree ~/.vim/pack/vendor/start/ Then inside VIM, you can use command: :NERDTree
+2nd way: Copy plugin files to: ~/.vim/pack/vendor/opt and they will be not load until you use command packadd to load it.</description>
+    </item>
+    
+    <item>
+      <title>How to disable wifi power save Ubuntu 20.04</title>
+      <link>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
+      <pubDate>Sun, 11 Oct 2020 23:15:36 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
+      <description>Hello, today I&amp;rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.
+I see this link and try to edit file /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf change wifi.powersave from 3 (enable power save) to 2 (disable power save).</description>
+    </item>
+    
+    <item>
+      <title>How to create a linux service</title>
+      <link>https://kienngd.98t1.net/howto/how_to_create_linux_service/</link>
+      <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_create_linux_service/</guid>
+      <description>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
+Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
+[Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
+Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_service.service Step 3: Enable service (so service will start with OS) sudo systemctl enable test_service.</description>
+    </item>
+    
+    <item>
+      <title>How to working with JSON in GoLang</title>
+      <link>https://kienngd.98t1.net/howto/working_with_json_in_golang/</link>
+      <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/working_with_json_in_golang/</guid>
+      <description>In this post, we will learn how to parse json data in GoLang. Have fun!
+Working with structed data
+// Import package import ( &amp;#34;encoding/json&amp;#34; ) type Bird struct { Species string Description string } func main() { jsonString := `{	&amp;#34;species&amp;#34;: &amp;#34;pigeon&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&amp;#34; }` var bird Bird err := json.Unmarshal([]byte(jsonString), &amp;amp;bird) if err != nill { // json string is invalid.</description>
+    </item>
+    
+    <item>
+      <title>How to build a free blog</title>
+      <link>https://kienngd.98t1.net/howto/how_to_build_free_blog/</link>
+      <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_build_free_blog/</guid>
+      <description>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
+Step 1: Install hugo.
+ Download hugo from: https://github.com/gohugoio/hugo/releases Install in your PC.  Step 2: Create a new site.
+ Quick start document: https://gohugo.io/getting-started/ Command:  hugo new site myblog Step 3: Setup your hugo theme.
+ Find a theme from: https://themes.gohugo.io/. Download theme and put into site&amp;rsquo;s themes directory.</description>
+    </item>
+    
+  </channel>
+</rss>

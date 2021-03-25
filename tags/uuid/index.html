@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="UUID" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kienngd.98t1.net/tags/uuid/" />
+<meta property="og:updated_time" content="2020-11-02T15:37:11+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UUID"/>
+<meta name="twitter:description" content=""/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/tags/uuid/">
+
+    
+    <title>UUID &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+<nav class="blue" role="navigation">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1">
+            
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                <i class="material-icons">menu</i>
+            </a>
+
+            
+            <ul id="nav-mobile" class="sidenav">
+                
+                
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+
+            </ul>
+
+            
+            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+            
+            <div class="nav-wrapper">
+
+                
+                <ul class="right hide-on-med-and-down">
+                    
+                    
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav></div>
+
+    
+
+    
+
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_use_uuid_as_id_laravel/">Use UUID as primary key of Laravel Eloquent ORM</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 02, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/uuid/" rel="tag">UUID</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>Install package using composer:
+composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
+// Replace this $table-&gt;increments(&#39;id&#39;); // By this $table-&gt;uuid(&#39;id&#39;)-&gt;primary(); Inside model file
+use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &#39;string&#39;; public $incrementing = false; protected $guarded = []; } </div>
+    </div>
+</article>
+
+    
+
+
+
+
+
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>

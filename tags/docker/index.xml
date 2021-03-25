@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on K5d</title>
+    <link>https://kienngd.98t1.net/tags/docker/</link>
+    <description>Recent content in Docker on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Tue, 20 Oct 2020 09:09:57 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Influxdb Docker With Laradock</title>
+      <link>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</link>
+      <pubDate>Tue, 20 Oct 2020 09:09:57 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</guid>
+      <description>In this post we will see how to run influxdb docker container using laradock. Have fun.
+InfluxDB docker document: https://hub.docker.com/_/influxdb
+Edit laradock .env file:
+Add these lines at the end of file
+### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
+Add these lines at the end of file
+### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &amp;#34;${INFLUXDB_HTTP_PORT}:8086&amp;#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</description>
+    </item>
+    
+  </channel>
+</rss>

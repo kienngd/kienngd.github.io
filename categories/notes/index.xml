@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on K5d</title>
+    <link>https://kienngd.98t1.net/categories/notes/</link>
+    <description>Recent content in notes on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Thu, 29 Oct 2020 09:26:59 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working with openstack api using curl</title>
+      <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>
+      <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
+      <description>Get token curl -s -i -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39; { &amp;#34;auth&amp;#34;: { &amp;#34;identity&amp;#34;: { &amp;#34;methods&amp;#34;: [ &amp;#34;password&amp;#34; ], &amp;#34;password&amp;#34;: { &amp;#34;user&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;{USERNAME}&amp;#34;, &amp;#34;domain&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{DOMAIN_ID}&amp;#34; }, &amp;#34;password&amp;#34;: &amp;#34;{PASSWORD}&amp;#34; } } }, &amp;#34;scope&amp;#34;: { &amp;#34;project&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{PROJECT_ID}&amp;#34; } } } }&amp;#39; &amp;#34;https://{BASE URL}:5000/v3/auth/tokens&amp;#34; | grep &amp;#34;X-Subject-Token:&amp;#34; Default keystone port is 5000
+By default, this token will be expired after 6 hours.
+Export token API_TOKEN=&amp;quot;{TOKEN}&amp;quot;
+Get domains curl -s -H &amp;#34;X-Auth-Token: $API_TOKEN&amp;#34; &amp;#34;https://{BASE URL}:5000/v3/domains&amp;#34; | jq &amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Working With Influxdb Data Using PhpClient</title>
+      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</link>
+      <pubDate>Tue, 20 Oct 2020 10:02:52 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</guid>
+      <description>document: https://github.com/influxdata/influxdb-php
+Install via composer composer require influxdb/influxdb-php Create client object $client = new InfluxDB\Client($host, $port); // directly get the database object $database = InfluxDB\Client::fromDSN(sprintf(&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;, $host, $port, $dbname)); // Fetch the database using a 5 second time out $database = InfluxDB\Client::fromDSN(sprintf(&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;, $host, $port, $dbname), 5); // get the client to retrieve other databases $client = $database-&amp;gt;getClient(); Reading data // fetch the database $database = $client-&amp;gt;selectDB(&amp;#39;influx_test_db&amp;#39;); // executing a query will yield a resultset object $result = $database-&amp;gt;query(&amp;#39;select * from test_metric LIMIT 5&amp;#39;); // get the points from the resultset yields an array $points = $result-&amp;gt;getPoints(); Use the queryBuilder object // retrieve points with the query builder $result = $database-&amp;gt;getQueryBuilder() -&amp;gt;select(&amp;#39;cpucount&amp;#39;) -&amp;gt;from(&amp;#39;test_metric&amp;#39;) -&amp;gt;limit(2) -&amp;gt;offset(2) -&amp;gt;getResultSet() -&amp;gt;getPoints(); // get the query from the QueryBuilder $query = $database-&amp;gt;getQueryBuilder() -&amp;gt;select(&amp;#39;cpucount&amp;#39;) -&amp;gt;from(&amp;#39;test_metric&amp;#39;) -&amp;gt;where([&amp;#34;region = &amp;#39;us-west&amp;#39;&amp;#34;]) -&amp;gt;getQuery(); Get the last executed query from the client // use the getLastQuery() method $lastQuery = $client-&amp;gt;getLastQuery(); // or access the static variable directly: $lastQuery = Client::lastQuery; Writting data // create an array of points $points = array( new Point( &amp;#39;Measurement_Name&amp;#39;, // name of the measurement 	0.</description>
+    </item>
+    
+    <item>
+      <title>Working_with_influxdb_data_using_api</title>
+      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</link>
+      <pubDate>Tue, 20 Oct 2020 10:02:45 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Working_with_influxdb_data_using_influx</title>
+      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</link>
+      <pubDate>Tue, 20 Oct 2020 10:02:33 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Influxdb Docker With Laradock</title>
+      <link>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</link>
+      <pubDate>Tue, 20 Oct 2020 09:09:57 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</guid>
+      <description>In this post we will see how to run influxdb docker container using laradock. Have fun.
+InfluxDB docker document: https://hub.docker.com/_/influxdb
+Edit laradock .env file:
+Add these lines at the end of file
+### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
+Add these lines at the end of file
+### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &amp;#34;${INFLUXDB_HTTP_PORT}:8086&amp;#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</description>
+    </item>
+    
+    <item>
+      <title>Some git commands</title>
+      <link>https://kienngd.98t1.net/notes/some_git_commands/</link>
+      <pubDate>Fri, 16 Oct 2020 11:02:20 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/some_git_commands/</guid>
+      <description>This is some git commands that I usually use.
+Clone a repository
+git clone &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Clone from specific branch
+git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
+git pull origin master Push code from local DEV branch to remote MASTER branch
+git push origin dev:master Create local branch
+git checkout -b &amp;lt;BRANCH NAME&amp;gt; Switch local branch
+git checkout &amp;lt;BRANCH NAME&amp;gt; List all branch</description>
+    </item>
+    
+    <item>
+      <title>Phpdoc docblock</title>
+      <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>
+      <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/phpdoc_docblock/</guid>
+      <description>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&amp;hellip;
+&amp;lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</description>
+    </item>
+    
+    <item>
+      <title>Create document using phpdoc</title>
+      <link>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</link>
+      <pubDate>Thu, 15 Oct 2020 10:49:07 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</guid>
+      <description>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
+  Install phpdoc
+Using composer
+composer require &amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34; Then run command
+vendor/bin/phpdoc ... Manual: Download file phar from: Github releases
+Then run command
+php phpDocumentor.phar ...   Some simple commands
+vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=TEMPLATE_NAME   &amp;hellip;
+  </description>
+    </item>
+    
+  </channel>
+</rss>

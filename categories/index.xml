@@ -6,6 +6,43 @@
     <description>Recent content in Categories on K5d</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright><atom:link href="https://kienngd.98t1.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Thu, 25 Mar 2021 15:36:54 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tutorials</title>
+      <link>https://kienngd.98t1.net/categories/tutorials/</link>
+      <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>howto</title>
+      <link>https://kienngd.98t1.net/categories/howto/</link>
+      <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/categories/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>https://kienngd.98t1.net/categories/notes/</link>
+      <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>knowlege</title>
+      <link>https://kienngd.98t1.net/categories/knowlege/</link>
+      <pubDate>Thu, 08 Oct 2020 09:23:54 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/categories/knowlege/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Fri, 27 Nov 2020 14:42:16 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Mar 2021 15:36:54 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apiato select language</title>
+      <link>https://kienngd.98t1.net/tutorials/apiato_select_language/</link>
+      <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tutorials/apiato_select_language/</guid>
+      <description>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!
+Document: https://docs.apiato.io/features/localization/
+Step 1: Add new language to supported language:
+Edit supported_languages inside file app/Containers/Localization/Configs/localization.php
+Step 2: Check default language and fall back language inside file config/app.php
+Step 3: Define a localization string inside file app/Containers/[Container]/Resources/Languages/[language name]/[file name].php
+Step 4: Get a localization string inside your code (controller, blade&amp;hellip;): trans(&#39;[container]::[filename].[string_key]&#39;) or {{ __(&#39;[container]::[filename].[string_key]&#39;) }}, @lang(&#39;[container]::[filename].</description>
+    </item>
+    
     <item>
       <title>Laravel logout other devices</title>
       <link>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</link>

@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2020-11-27T14:42:16+07:00" />
+<meta property="og:updated_time" content="2021-03-25T15:36:54+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -101,11 +101,47 @@
         <article class="row max-width">
     <div class="col s12 l10 offset-l1">
         <h4>
+            <a class="orange-text text-darken-3" href="/tutorials/apiato_select_language/">Apiato select language</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Mar 25, 2021</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!
+Document: https://docs.apiato.io/features/localization/
+Step 1: Add new language to supported language:
+Edit supported_languages inside file app/Containers/Localization/Configs/localization.php
+Step 2: Check default language and fall back language inside file config/app.php
+Step 3: Define a localization string inside file app/Containers/[Container]/Resources/Languages/[language name]/[file name].php
+Step 4: Get a localization string inside your code (controller, blade&hellip;): trans('[container]::[filename].[string_key]') or {{ __('[container]::[filename].[string_key]') }}, @lang('[container]::[filename].</div>
+    </div>
+</article>
+
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
             <a class="orange-text text-darken-3" href="/tutorials/laravel_logout_other_devices/">Laravel logout other devices</a>            
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
 &#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
@@ -125,7 +161,13 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Create role, permission
 use Spatie\Permission\Models\Role; use Spatie\Permission\Models\Permission; $role = Role::create([&#39;name&#39; =&gt; &#39;admin&#39;]); $permission = Permission::create([&#39;name&#39; =&gt; &#39;create-articles&#39;]); Assign / Sync / Revoke permission to role
@@ -148,7 +190,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Tr
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 26, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 26, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Home page: http://docs.apiato.io/
 Create project using composer from latest stable
@@ -175,7 +223,13 @@ Install ApiDocJs</div>
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 02, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 02, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/uuid/" rel="tag">UUID</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Install package using composer:
 composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
@@ -196,7 +250,13 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 29, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 29, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/openstack/" rel="tag">OpenStack</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/api/" rel="tag">API</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;{PROJECT_ID}&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
 By default, this token will be expired after 6 hours.
@@ -217,7 +277,13 @@ Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>document: https://github.com/influxdata/influxdb-php
 Install via composer composer require influxdb/influxdb-php Create client object $client = new InfluxDB\Client($host, $port); // directly get the database object $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname)); // Fetch the database using a 5 second time out $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname), 5); // get the client to retrieve other databases $client = $database-&gt;getClient(); Reading data // fetch the database $database = $client-&gt;selectDB(&#39;influx_test_db&#39;); // executing a query will yield a resultset object $result = $database-&gt;query(&#39;select * from test_metric LIMIT 5&#39;); // get the points from the resultset yields an array $points = $result-&gt;getPoints(); Use the queryBuilder object // retrieve points with the query builder $result = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;limit(2) -&gt;offset(2) -&gt;getResultSet() -&gt;getPoints(); // get the query from the QueryBuilder $query = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;where([&#34;region = &#39;us-west&#39;&#34;]) -&gt;getQuery(); Get the last executed query from the client // use the getLastQuery() method $lastQuery = $client-&gt;getLastQuery(); // or access the static variable directly: $lastQuery = Client::lastQuery; Writting data // create an array of points $points = array( new Point( &#39;Measurement_Name&#39;, // name of the measurement 	0.</div>
@@ -236,7 +302,13 @@ Install via composer composer require influxdb/influxdb-php Create client object
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div></div>
     </div>
@@ -254,7 +326,13 @@ Install via composer composer require influxdb/influxdb-php Create client object
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div></div>
     </div>
@@ -272,7 +350,13 @@ Install via composer composer require influxdb/influxdb-php Create client object
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
+            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span><br/>
+            
+                <span class="fas fa-folder" aria-hidden="true">Categories: </span>&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/docker/" rel="tag">Docker</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/laradock/" rel="tag">Laradock</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
         <div>In this post we will see how to run influxdb docker container using laradock. Have fun.
 InfluxDB docker document: https://hub.docker.com/_/influxdb
@@ -281,26 +365,6 @@ Add these lines at the end of file
 ### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
 Add these lines at the end of file
 ### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &#34;${INFLUXDB_HTTP_PORT}:8086&#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/tutorials/react-admin-p1/">React Admin P1</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 17, 2020</span>
-        </div>
-        <div>React-Admin tutorial notes Create new project and install packages
-yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
-import * as React from &#34;react&#34;; import { Admin, Resource } from &#39;react-admin&#39;; import jsonServerProvider from &#39;ra-data-json-server&#39;; import { ListGuesser } from &#39;react-admin&#39;; const App = () =&gt; { const dataProvider = jsonServerProvider(&#39;https://jsonplaceholder.typicode.com&#39;); return( &lt;Admin dataProvider={dataProvider}&gt; &lt;Resource name=&#34;users&#34; list={ListGuesser} /&gt; &lt;/Admin&gt; ); } export default App; Add dashboard page  Create dashboard component Set &lt;Admin dashboard={ Dashboard } &hellip;&gt;  Customizing menu icon  Import Icon &lt;Resource icon={ ICON } &hellip;&gt;  Adding login page  Create src/Providers/authProvider (Example code: &hellip;) &lt;Admin authProvider={ authProvider } &hellip;&gt;  Check screen size const isSmall = useMediaQuery(theme =&gt; theme.</div>
     </div>
 </article>
 
