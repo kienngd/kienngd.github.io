@@ -37,18 +37,19 @@
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -58,20 +59,44 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -81,13 +106,39 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -112,13 +163,35 @@
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/openstack/" rel="tag">OpenStack</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/api/" rel="tag">API</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;{PROJECT_ID}&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
-By default, this token will be expired after 6 hours.
-Export token API_TOKEN=&quot;{TOKEN}&quot;
-Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL}:5000/v3/domains&#34; | jq &#39;.</div>
+        <div><h5 id="get-token">Get token</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -i -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span>   -d <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">{
+</span><span style="color:#e6db74">    &#34;auth&#34;: {
+</span><span style="color:#e6db74">        &#34;identity&#34;: {
+</span><span style="color:#e6db74">            &#34;methods&#34;: [
+</span><span style="color:#e6db74">                &#34;password&#34;
+</span><span style="color:#e6db74">            ],
+</span><span style="color:#e6db74">            &#34;password&#34;: {
+</span><span style="color:#e6db74">                &#34;user&#34;: {
+</span><span style="color:#e6db74">                    &#34;name&#34;: &#34;{USERNAME}&#34;,
+</span><span style="color:#e6db74">                    &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; },
+</span><span style="color:#e6db74">                    &#34;password&#34;: &#34;{PASSWORD}&#34;
+</span><span style="color:#e6db74">                }
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        },
+</span><span style="color:#e6db74">        &#34;scope&#34;: {
+</span><span style="color:#e6db74">            &#34;project&#34;: {
+</span><span style="color:#e6db74">                &#34;id&#34;: &#34;{PROJECT_ID}&#34;
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">    }
+</span><span style="color:#e6db74">}&#39;</span>   <span style="color:#e6db74">&#34;https://{BASE URL}:5000/v3/auth/tokens&#34;</span> | grep <span style="color:#e6db74">&#34;X-Subject-Token:&#34;</span>
+</code></pre></div><p>Default keystone port is <strong>5000</strong></p>
+<p>By default, this token will be expired after 6 hours.</p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -139,11 +212,25 @@ Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>document: https://github.com/influxdata/influxdb-php
-Install via composer composer require influxdb/influxdb-php Create client object $client = new InfluxDB\Client($host, $port); // directly get the database object $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname)); // Fetch the database using a 5 second time out $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname), 5); // get the client to retrieve other databases $client = $database-&gt;getClient(); Reading data // fetch the database $database = $client-&gt;selectDB(&#39;influx_test_db&#39;); // executing a query will yield a resultset object $result = $database-&gt;query(&#39;select * from test_metric LIMIT 5&#39;); // get the points from the resultset yields an array $points = $result-&gt;getPoints(); Use the queryBuilder object // retrieve points with the query builder $result = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;limit(2) -&gt;offset(2) -&gt;getResultSet() -&gt;getPoints(); // get the query from the QueryBuilder $query = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;where([&#34;region = &#39;us-west&#39;&#34;]) -&gt;getQuery(); Get the last executed query from the client // use the getLastQuery() method $lastQuery = $client-&gt;getLastQuery(); // or access the static variable directly: $lastQuery = Client::lastQuery; Writting data // create an array of points $points = array( new Point( &#39;Measurement_Name&#39;, // name of the measurement 	0.</div>
+        <div><p>document: <a href="https://github.com/influxdata/influxdb-php">https://github.com/influxdata/influxdb-php</a></p>
+<h5 id="install-via-composer">Install via composer</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require influxdb/influxdb-php
+</code></pre></div><h5 id="create-client-object">Create client object</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">InfluxDB\Client</span>($host, $port);
+
+<span style="color:#75715e">// directly get the database object
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname));
+
+<span style="color:#75715e">// Fetch the database using a 5 second time out
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname), <span style="color:#ae81ff">5</span>);
+
+<span style="color:#75715e">// get the client to retrieve other databases
+</span><span style="color:#75715e"></span>$client <span style="color:#f92672">=</span> $database<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getClient</span>();
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -168,6 +255,7 @@ Install via composer composer require influxdb/influxdb-php Create client object
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -192,6 +280,7 @@ Install via composer composer require influxdb/influxdb-php Create client object
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -212,16 +301,34 @@ Install via composer composer require influxdb/influxdb-php Create client object
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/docker/" rel="tag">Docker</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/laradock/" rel="tag">Laradock</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>In this post we will see how to run influxdb docker container using laradock. Have fun.
-InfluxDB docker document: https://hub.docker.com/_/influxdb
-Edit laradock .env file:
-Add these lines at the end of file
-### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
-Add these lines at the end of file
-### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &#34;${INFLUXDB_HTTP_PORT}:8086&#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</div>
+        <div><p>In this post we will see how to run influxdb docker container using laradock. Have fun.</p>
+<p>InfluxDB docker document: <a href="https://hub.docker.com/_/influxdb">https://hub.docker.com/_/influxdb</a></p>
+<p>Edit laradock <strong>.env</strong> file:</p>
+<p><strong>Add these lines</strong> at the end of file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">### INFLUXDB ##################################################</span>
+<span style="color:#75715e"># influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest</span>
+INFLUXDB_VERSION<span style="color:#f92672">=</span>1.8
+INFLUXDB_HTTP_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8086</span>
+</code></pre></div><p>Edit <strong>docker-composer.yml</strong> file. Please remember to backup it first :).</p>
+<p><strong>Add these lines</strong> at the end of file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">### influxdb ####################################################</span>
+influxdb:
+  container_name: influxdb
+  hostname: influxdb
+  image: influxdb:<span style="color:#e6db74">${</span>INFLUXDB_VERSION<span style="color:#e6db74">}</span>
+  ports:
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>INFLUXDB_HTTP_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:8086&#34;</span>
+  networks:
+    - backend
+  volumes:
+    - <span style="color:#e6db74">${</span>DATA_PATH_HOST<span style="color:#e6db74">}</span>/influxdb/var/lib/influxdb:/var/lib/influxdb
+</code></pre></div><p><strong>Start influxdb container</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-composer up -d influxdb
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -242,17 +349,24 @@ Add these lines at the end of file
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/git/" rel="tag">Git</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>This is some git commands that I usually use.
-Clone a repository
-git clone &lt;URL&gt; [&lt;DEST Directory&gt;] Clone from specific branch
-git clone --branch &lt;BRANCH NAME&gt; &lt;URL&gt; [&lt;DEST Directory&gt;] Pull code from remote master branch and merge to current banch
-git pull origin master Push code from local DEV branch to remote MASTER branch
-git push origin dev:master Create local branch
-git checkout -b &lt;BRANCH NAME&gt; Switch local branch
-git checkout &lt;BRANCH NAME&gt; List all branch</div>
+        <div><p>This is some git commands that I usually use.</p>
+<p><strong>Clone a repository</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone &lt;URL&gt; <span style="color:#f92672">[</span>&lt;DEST Directory&gt;<span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Clone from specific branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone --branch &lt;BRANCH NAME&gt; &lt;URL&gt; <span style="color:#f92672">[</span>&lt;DEST Directory&gt;<span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Pull code from remote master branch and merge to current banch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull origin master
+</code></pre></div><p><strong>Push code from local DEV branch to remote MASTER branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push origin dev:master
+</code></pre></div><p><strong>Create local branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout -b &lt;BRANCH NAME&gt;
+</code></pre></div><p><strong>Switch local branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout &lt;BRANCH NAME&gt;
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -273,11 +387,27 @@ git checkout &lt;BRANCH NAME&gt; List all branch</div>
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&hellip;
-&lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</div>
+        <div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#e6db74">/** This is a single line DocComment. */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a multi-line DocComment.
+</span><span style="color:#e6db74"> */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a summary
+</span><span style="color:#e6db74"> *
+</span><span style="color:#e6db74"> * This is a description
+</span><span style="color:#e6db74"> */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a summary.
+</span><span style="color:#e6db74"> * This is a description
+</span><span style="color:#e6db74"> */</span>
+</code></pre></div><p><strong>Tags</strong> example: @api, @author, @param, @return&hellip;</p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -298,18 +428,23 @@ git checkout &lt;BRANCH NAME&gt; List all branch</div>
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
-  Install phpdoc
-Using composer
-composer require &#34;phpdocumentor/phpdocumentor:2.*&#34; Then run command
-vendor/bin/phpdoc ... Manual: Download file phar from: Github releases
-Then run command
-php phpDocumentor.phar ...   Some simple commands
-vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=TEMPLATE_NAME   &hellip;
-  </div>
+        <div><p>Hello. In this post, we will learn how to build document using phpdoc. Have fun!</p>
+<ol>
+<li>
+<p>Install phpdoc</p>
+<p><strong>Using composer</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require <span style="color:#e6db74">&#34;phpdocumentor/phpdocumentor:2.*&#34;</span>
+</code></pre></div><p>Then run command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vendor/bin/phpdoc ...
+</code></pre></div><p><strong>Manual</strong>: Download file phar from: <a href="https://github.com/phpDocumentor/phpDocumentor/releases">Github releases</a></p>
+<p>Then run command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php phpDocumentor.phar ...
+</code></pre></div></li>
+</ol></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 

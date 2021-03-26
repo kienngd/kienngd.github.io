@@ -37,18 +37,19 @@
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -58,20 +59,44 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -81,13 +106,39 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -112,12 +163,33 @@
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/react-admin/" rel="tag">React-Admin</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/reactjs/" rel="tag">ReactJS</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>React-Admin tutorial notes Create new project and install packages
-yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
-import * as React from &#34;react&#34;; import { Admin, Resource } from &#39;react-admin&#39;; import jsonServerProvider from &#39;ra-data-json-server&#39;; import { ListGuesser } from &#39;react-admin&#39;; const App = () =&gt; { const dataProvider = jsonServerProvider(&#39;https://jsonplaceholder.typicode.com&#39;); return( &lt;Admin dataProvider={dataProvider}&gt; &lt;Resource name=&#34;users&#34; list={ListGuesser} /&gt; &lt;/Admin&gt; ); } export default App; Add dashboard page  Create dashboard component Set &lt;Admin dashboard={ Dashboard } &hellip;&gt;  Customizing menu icon  Import Icon &lt;Resource icon={ ICON } &hellip;&gt;  Adding login page  Create src/Providers/authProvider (Example code: &hellip;) &lt;Admin authProvider={ authProvider } &hellip;&gt;  Check screen size const isSmall = useMediaQuery(theme =&gt; theme.</div>
+        <div><h5 id="react-admin-tutorial-notes">React-Admin tutorial notes</h5>
+<p>Create new project and install packages</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">yarn</span> <span style="color:#a6e22e">create</span> <span style="color:#a6e22e">react</span><span style="color:#f92672">-</span><span style="color:#a6e22e">app</span> <span style="color:#a6e22e">test</span><span style="color:#f92672">-</span><span style="color:#a6e22e">admin</span>
+<span style="color:#a6e22e">cd</span> <span style="color:#a6e22e">test</span><span style="color:#f92672">-</span><span style="color:#a6e22e">admin</span><span style="color:#f92672">/</span>
+<span style="color:#a6e22e">yarn</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">react</span><span style="color:#f92672">-</span><span style="color:#a6e22e">admin</span> <span style="color:#a6e22e">ra</span><span style="color:#f92672">-</span><span style="color:#a6e22e">data</span><span style="color:#f92672">-</span><span style="color:#a6e22e">json</span><span style="color:#f92672">-</span><span style="color:#a6e22e">server</span> <span style="color:#a6e22e">prop</span><span style="color:#f92672">-</span><span style="color:#a6e22e">types</span>
+</code></pre></div><p>Edit file src/App.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">React</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Admin</span>, <span style="color:#a6e22e">Resource</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-admin&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">jsonServerProvider</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;ra-data-json-server&#39;</span>;
+
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">ListGuesser</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-admin&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">App</span> <span style="color:#f92672">=</span> () =&gt; {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dataProvider</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jsonServerProvider</span>(<span style="color:#e6db74">&#39;https://jsonplaceholder.typicode.com&#39;</span>);
+  <span style="color:#66d9ef">return</span>(
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Admin</span> <span style="color:#a6e22e">dataProvider</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">dataProvider</span>}<span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Resource</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;users&#34;</span> <span style="color:#a6e22e">list</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">ListGuesser</span>} <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/Admin&gt;</span>
+  );
+}
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 

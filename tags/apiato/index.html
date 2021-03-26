@@ -37,18 +37,19 @@
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -58,20 +59,44 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -81,13 +106,39 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -119,6 +170,7 @@
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -139,12 +191,21 @@
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
-&#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
-use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </div>
+        <div><p>Check file: <strong>app/Http/Kernel.php</strong> (or file <strong>app/Ship/Kernels/HttpKernel.php</strong> if you use Apiato) and uncomment this line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#e6db74">&#39;web&#39;</span> <span style="color:#f92672">=&gt;</span> [
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">\Illuminate\Session\Middleware\AuthenticateSession</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>,
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>],
+</code></pre></div><p>Logout all other devices:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Illuminate\Support\Facades\Auth</span>;
+<span style="color:#f92672">...</span>
+<span style="color:#a6e22e">Auth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">logoutOtherDevices</span>($password);
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -165,15 +226,35 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>Create role, permission
-use Spatie\Permission\Models\Role; use Spatie\Permission\Models\Permission; $role = Role::create([&#39;name&#39; =&gt; &#39;admin&#39;]); $permission = Permission::create([&#39;name&#39; =&gt; &#39;create-articles&#39;]); Assign / Sync / Revoke permission to role
-// Assign $role-&gt;givePermissionTo($permission); // $permission can be string / object / array of strings / array of objects $permission-&gt;assignRole($role); // Sync $role-&gt;syncPermissions($permissions); $permission-&gt;syncRoles($roles); // Revoke $role-&gt;revokePermissionTo($permission); $permission-&gt;removeRole($role); Check roles permissons
-$role-&gt;hasPermissionTo($permission); $role-&gt;hasAnyPermission($permissions); $role-&gt;hasAllPermissions($permissions); Authenticatable user with roles / permissions
-The model:
-use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Traits\HasRoles; class User extends Authenticatable { use HasRoles; // .</div>
+        <div><p><strong>Create role, permission</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Spatie\Permission\Models\Role</span>;
+<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Spatie\Permission\Models\Permission</span>;
+
+$role <span style="color:#f92672">=</span> <span style="color:#a6e22e">Role</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([<span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;admin&#39;</span>]);
+$permission <span style="color:#f92672">=</span> <span style="color:#a6e22e">Permission</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([<span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;create-articles&#39;</span>]);
+</code></pre></div><p><strong>Assign / Sync / Revoke permission to role</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Assign
+</span><span style="color:#75715e"></span>$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">givePermissionTo</span>($permission); <span style="color:#75715e">// $permission can be string / object / array of strings / array of objects
+</span><span style="color:#75715e"></span>$permission<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assignRole</span>($role);
+
+<span style="color:#75715e">// Sync
+</span><span style="color:#75715e"></span>$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">syncPermissions</span>($permissions);
+$permission<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">syncRoles</span>($roles);
+
+<span style="color:#75715e">// Revoke
+</span><span style="color:#75715e"></span>$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">revokePermissionTo</span>($permission);
+$permission<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">removeRole</span>($role);
+
+</code></pre></div><p><strong>Check roles permissons</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hasPermissionTo</span>($permission);
+$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hasAnyPermission</span>($permissions);
+$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hasAllPermissions</span>($permissions);
+
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -194,19 +275,30 @@ use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Tr
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>Home page: http://docs.apiato.io/
-Create project using composer from latest stable
-composer create-project apiato/apiato apiato9 Then edit the .env file.
-Migrate database
-php artisan migrate Create admin user, some permissions, roles
-php artisan db:seed Default account is: admin@admin.com / admin.
-Add all current permissions to admin role.
-php artisan apiato:permissions:toRole admin Install OAuth 2.0
-php artisan passport:install Then edit file .env update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.
-Install ApiDocJs</div>
+        <div><p>Home page: <a href="http://docs.apiato.io/">http://docs.apiato.io/</a></p>
+<p><strong>Create project using composer from latest stable</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer create-project apiato/apiato apiato9
+</code></pre></div><p>Then edit the .env file.</p>
+<p><strong>Migrate database</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan migrate
+</code></pre></div><p><strong>Create admin user, some permissions, roles</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan db:seed
+</code></pre></div><p>Default account is: <a href="mailto:admin@admin.com">admin@admin.com</a> / admin.</p>
+<p><strong>Add all current permissions to admin role.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan apiato:permissions:toRole admin
+</code></pre></div><p><strong>Install OAuth 2.0</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan passport:install
+</code></pre></div><p>Then edit file <strong>.env</strong> update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.</p>
+<p><strong>Install ApiDocJs</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yarn install
+</code></pre></div><p><strong>Create api doc</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan apiato:apidoc
+</code></pre></div><p>Your default document url is: http://<Your domain>/api/documentation and http://<Your domain>/api/private/documentation</p>
+<p>Default result is saved in: <strong>public/api/documentation/</strong></p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 

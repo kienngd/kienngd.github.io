@@ -26,9 +26,17 @@
       <pubDate>Fri, 27 Nov 2020 14:42:16 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</guid>
-      <description>Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
-&amp;#39;web&amp;#39; =&amp;gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
-use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </description>
+      <description>&lt;p&gt;Check file: &lt;strong&gt;app/Http/Kernel.php&lt;/strong&gt; (or file &lt;strong&gt;app/Ship/Kernels/HttpKernel.php&lt;/strong&gt; if you use Apiato) and uncomment this line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;web&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; [
+    &lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;\Illuminate\Session\Middleware\AuthenticateSession&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;,
+    &lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;],
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Logout all other devices:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Illuminate\Support\Facades\Auth&lt;/span&gt;;
+&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logoutOtherDevices&lt;/span&gt;($password);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -37,12 +45,31 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </
       <pubDate>Fri, 27 Nov 2020 09:44:04 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/tutorials/laravel_roles_permissions/</guid>
-      <description>Create role, permission
-use Spatie\Permission\Models\Role; use Spatie\Permission\Models\Permission; $role = Role::create([&amp;#39;name&amp;#39; =&amp;gt; &amp;#39;admin&amp;#39;]); $permission = Permission::create([&amp;#39;name&amp;#39; =&amp;gt; &amp;#39;create-articles&amp;#39;]); Assign / Sync / Revoke permission to role
-// Assign $role-&amp;gt;givePermissionTo($permission); // $permission can be string / object / array of strings / array of objects $permission-&amp;gt;assignRole($role); // Sync $role-&amp;gt;syncPermissions($permissions); $permission-&amp;gt;syncRoles($roles); // Revoke $role-&amp;gt;revokePermissionTo($permission); $permission-&amp;gt;removeRole($role); Check roles permissons
-$role-&amp;gt;hasPermissionTo($permission); $role-&amp;gt;hasAnyPermission($permissions); $role-&amp;gt;hasAllPermissions($permissions); Authenticatable user with roles / permissions
-The model:
-use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Traits\HasRoles; class User extends Authenticatable { use HasRoles; // .</description>
+      <description>&lt;p&gt;&lt;strong&gt;Create role, permission&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Role&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Permission&lt;/span&gt;;
+
+$role &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Role&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;admin&amp;#39;&lt;/span&gt;]);
+$permission &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Permission&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;create-articles&amp;#39;&lt;/span&gt;]);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Assign / Sync / Revoke permission to role&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Assign
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;givePermissionTo&lt;/span&gt;($permission); &lt;span style=&#34;color:#75715e&#34;&gt;// $permission can be string / object / array of strings / array of objects
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;assignRole&lt;/span&gt;($role);
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// Sync
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;syncPermissions&lt;/span&gt;($permissions);
+$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;syncRoles&lt;/span&gt;($roles);
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// Revoke
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;revokePermissionTo&lt;/span&gt;($permission);
+$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;removeRole&lt;/span&gt;($role);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Check roles permissons&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPermissionTo&lt;/span&gt;($permission);
+$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAnyPermission&lt;/span&gt;($permissions);
+$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAllPermissions&lt;/span&gt;($permissions);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -51,16 +78,26 @@ use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Tr
       <pubDate>Thu, 26 Nov 2020 08:36:20 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/tutorials/apiato/</guid>
-      <description>Home page: http://docs.apiato.io/
-Create project using composer from latest stable
-composer create-project apiato/apiato apiato9 Then edit the .env file.
-Migrate database
-php artisan migrate Create admin user, some permissions, roles
-php artisan db:seed Default account is: admin@admin.com / admin.
-Add all current permissions to admin role.
-php artisan apiato:permissions:toRole admin Install OAuth 2.0
-php artisan passport:install Then edit file .env update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.
-Install ApiDocJs</description>
+      <description>&lt;p&gt;Home page: &lt;a href=&#34;http://docs.apiato.io/&#34;&gt;http://docs.apiato.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create project using composer from latest stable&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer create-project apiato/apiato apiato9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit the .env file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Migrate database&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan migrate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create admin user, some permissions, roles&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan db:seed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Default account is: &lt;a href=&#34;mailto:admin@admin.com&#34;&gt;admin@admin.com&lt;/a&gt; / admin.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Add all current permissions to admin role.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:permissions:toRole admin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Install OAuth 2.0&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan passport:install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit file &lt;strong&gt;.env&lt;/strong&gt; update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install ApiDocJs&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yarn install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create api doc&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:apidoc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your default document url is: http://&lt;Your domain&gt;/api/documentation and http://&lt;Your domain&gt;/api/private/documentation&lt;/p&gt;
+&lt;p&gt;Default result is saved in: &lt;strong&gt;public/api/documentation/&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

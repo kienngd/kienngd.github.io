@@ -14,10 +14,31 @@
       <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
-      <description>Get token curl -s -i -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39; { &amp;#34;auth&amp;#34;: { &amp;#34;identity&amp;#34;: { &amp;#34;methods&amp;#34;: [ &amp;#34;password&amp;#34; ], &amp;#34;password&amp;#34;: { &amp;#34;user&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;{USERNAME}&amp;#34;, &amp;#34;domain&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{DOMAIN_ID}&amp;#34; }, &amp;#34;password&amp;#34;: &amp;#34;{PASSWORD}&amp;#34; } } }, &amp;#34;scope&amp;#34;: { &amp;#34;project&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{PROJECT_ID}&amp;#34; } } } }&amp;#39; &amp;#34;https://{BASE URL}:5000/v3/auth/tokens&amp;#34; | grep &amp;#34;X-Subject-Token:&amp;#34; Default keystone port is 5000
-By default, this token will be expired after 6 hours.
-Export token API_TOKEN=&amp;quot;{TOKEN}&amp;quot;
-Get domains curl -s -H &amp;#34;X-Auth-Token: $API_TOKEN&amp;#34; &amp;#34;https://{BASE URL}:5000/v3/domains&amp;#34; | jq &amp;#39;.</description>
+      <description>&lt;h5 id=&#34;get-token&#34;&gt;Get token&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s -i -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt;   -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;auth&amp;#34;: {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        &amp;#34;identity&amp;#34;: {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            &amp;#34;methods&amp;#34;: [
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;                &amp;#34;password&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            ],
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            &amp;#34;password&amp;#34;: {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;                &amp;#34;user&amp;#34;: {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;                    &amp;#34;name&amp;#34;: &amp;#34;{USERNAME}&amp;#34;,
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;                    &amp;#34;domain&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;{DOMAIN_ID}&amp;#34; },
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;                    &amp;#34;password&amp;#34;: &amp;#34;{PASSWORD}&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;                }
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            }
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        },
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        &amp;#34;scope&amp;#34;: {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            &amp;#34;project&amp;#34;: {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;                &amp;#34;id&amp;#34;: &amp;#34;{PROJECT_ID}&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            }
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        }
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    }
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&amp;#39;&lt;/span&gt;   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://{BASE URL}:5000/v3/auth/tokens&amp;#34;&lt;/span&gt; | grep &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X-Subject-Token:&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Default keystone port is &lt;strong&gt;5000&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;By default, this token will be expired after 6 hours.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,8 +47,21 @@ Get domains curl -s -H &amp;#34;X-Auth-Token: $API_TOKEN&amp;#34; &amp;#34;https
       <pubDate>Tue, 20 Oct 2020 10:02:52 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</guid>
-      <description>document: https://github.com/influxdata/influxdb-php
-Install via composer composer require influxdb/influxdb-php Create client object $client = new InfluxDB\Client($host, $port); // directly get the database object $database = InfluxDB\Client::fromDSN(sprintf(&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;, $host, $port, $dbname)); // Fetch the database using a 5 second time out $database = InfluxDB\Client::fromDSN(sprintf(&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;, $host, $port, $dbname), 5); // get the client to retrieve other databases $client = $database-&amp;gt;getClient(); Reading data // fetch the database $database = $client-&amp;gt;selectDB(&amp;#39;influx_test_db&amp;#39;); // executing a query will yield a resultset object $result = $database-&amp;gt;query(&amp;#39;select * from test_metric LIMIT 5&amp;#39;); // get the points from the resultset yields an array $points = $result-&amp;gt;getPoints(); Use the queryBuilder object // retrieve points with the query builder $result = $database-&amp;gt;getQueryBuilder() -&amp;gt;select(&amp;#39;cpucount&amp;#39;) -&amp;gt;from(&amp;#39;test_metric&amp;#39;) -&amp;gt;limit(2) -&amp;gt;offset(2) -&amp;gt;getResultSet() -&amp;gt;getPoints(); // get the query from the QueryBuilder $query = $database-&amp;gt;getQueryBuilder() -&amp;gt;select(&amp;#39;cpucount&amp;#39;) -&amp;gt;from(&amp;#39;test_metric&amp;#39;) -&amp;gt;where([&amp;#34;region = &amp;#39;us-west&amp;#39;&amp;#34;]) -&amp;gt;getQuery(); Get the last executed query from the client // use the getLastQuery() method $lastQuery = $client-&amp;gt;getLastQuery(); // or access the static variable directly: $lastQuery = Client::lastQuery; Writting data // create an array of points $points = array( new Point( &amp;#39;Measurement_Name&amp;#39;, // name of the measurement 	0.</description>
+      <description>&lt;p&gt;document: &lt;a href=&#34;https://github.com/influxdata/influxdb-php&#34;&gt;https://github.com/influxdata/influxdb-php&lt;/a&gt;&lt;/p&gt;
+&lt;h5 id=&#34;install-via-composer&#34;&gt;Install via composer&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require influxdb/influxdb-php
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;create-client-object&#34;&gt;Create client object&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;($host, $port);
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// directly get the database object
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$database &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fromDSN&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;&lt;/span&gt;, $host, $port, $dbname));
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// Fetch the database using a 5 second time out
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$database &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fromDSN&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;&lt;/span&gt;, $host, $port, $dbname), &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;);
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// get the client to retrieve other databases
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $database&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getClient&lt;/span&gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -54,13 +88,30 @@ Install via composer composer require influxdb/influxdb-php Create client object
       <pubDate>Tue, 20 Oct 2020 09:09:57 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</guid>
-      <description>In this post we will see how to run influxdb docker container using laradock. Have fun.
-InfluxDB docker document: https://hub.docker.com/_/influxdb
-Edit laradock .env file:
-Add these lines at the end of file
-### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
-Add these lines at the end of file
-### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &amp;#34;${INFLUXDB_HTTP_PORT}:8086&amp;#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</description>
+      <description>&lt;p&gt;In this post we will see how to run influxdb docker container using laradock. Have fun.&lt;/p&gt;
+&lt;p&gt;InfluxDB docker document: &lt;a href=&#34;https://hub.docker.com/_/influxdb&#34;&gt;https://hub.docker.com/_/influxdb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Edit laradock &lt;strong&gt;.env&lt;/strong&gt; file:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### INFLUXDB ##################################################&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest&lt;/span&gt;
+INFLUXDB_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1.8
+INFLUXDB_HTTP_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8086&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit &lt;strong&gt;docker-composer.yml&lt;/strong&gt; file. Please remember to backup it first :).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### influxdb ####################################################&lt;/span&gt;
+influxdb:
+  container_name: influxdb
+  hostname: influxdb
+  image: influxdb:&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;INFLUXDB_VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+  ports:
+    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;INFLUXDB_HTTP_PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:8086&amp;#34;&lt;/span&gt;
+  networks:
+    - backend
+  volumes:
+    - &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;DATA_PATH_HOST&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/influxdb/var/lib/influxdb:/var/lib/influxdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Start influxdb container&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-composer up -d influxdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -69,14 +120,20 @@ Add these lines at the end of file
       <pubDate>Fri, 16 Oct 2020 11:02:20 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/notes/some_git_commands/</guid>
-      <description>This is some git commands that I usually use.
-Clone a repository
-git clone &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Clone from specific branch
-git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; [&amp;lt;DEST Directory&amp;gt;] Pull code from remote master branch and merge to current banch
-git pull origin master Push code from local DEV branch to remote MASTER branch
-git push origin dev:master Create local branch
-git checkout -b &amp;lt;BRANCH NAME&amp;gt; Switch local branch
-git checkout &amp;lt;BRANCH NAME&amp;gt; List all branch</description>
+      <description>&lt;p&gt;This is some git commands that I usually use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Clone a repository&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Clone from specific branch&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pull code from remote master branch and merge to current banch&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git pull origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Push code from local DEV branch to remote MASTER branch&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push origin dev:master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create local branch&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout -b &amp;lt;BRANCH NAME&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Switch local branch&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout &amp;lt;BRANCH NAME&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -85,8 +142,23 @@ git checkout &amp;lt;BRANCH NAME&amp;gt; List all branch</description>
       <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/notes/phpdoc_docblock/</guid>
-      <description>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&amp;hellip;
-&amp;lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/** This is a single line DocComment. */&lt;/span&gt;
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a multi-line DocComment.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; */&lt;/span&gt;
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a summary
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; *
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a description
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; */&lt;/span&gt;
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a summary.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a description
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; */&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt; example: @api, @author, @param, @return&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -95,15 +167,19 @@ git checkout &amp;lt;BRANCH NAME&amp;gt; List all branch</description>
       <pubDate>Thu, 15 Oct 2020 10:49:07 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</guid>
-      <description>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
-  Install phpdoc
-Using composer
-composer require &amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34; Then run command
-vendor/bin/phpdoc ... Manual: Download file phar from: Github releases
-Then run command
-php phpDocumentor.phar ...   Some simple commands
-vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=TEMPLATE_NAME   &amp;hellip;
-  </description>
+      <description>&lt;p&gt;Hello. In this post, we will learn how to build document using phpdoc. Have fun!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install phpdoc&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Using composer&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then run command&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vendor/bin/phpdoc ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Manual&lt;/strong&gt;: Download file phar from: &lt;a href=&#34;https://github.com/phpDocumentor/phpDocumentor/releases&#34;&gt;Github releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then run command&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php phpDocumentor.phar ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
   </channel>

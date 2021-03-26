@@ -37,18 +37,19 @@
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -58,20 +59,44 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -81,13 +106,39 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -112,11 +163,27 @@
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>/** This is a single line DocComment. */ /** * This is a multi-line DocComment. */ /** * This is a summary * * This is a description */ /** * This is a summary. * This is a description */ Tags example: @api, @author, @param, @return&hellip;
-&lt;?php /** * I belong to a file. File summary * * File description. */ /** * I belong to a class. Class summary * * Class description * @author .</div>
+        <div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#e6db74">/** This is a single line DocComment. */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a multi-line DocComment.
+</span><span style="color:#e6db74"> */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a summary
+</span><span style="color:#e6db74"> *
+</span><span style="color:#e6db74"> * This is a description
+</span><span style="color:#e6db74"> */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a summary.
+</span><span style="color:#e6db74"> * This is a description
+</span><span style="color:#e6db74"> */</span>
+</code></pre></div><p><strong>Tags</strong> example: @api, @author, @param, @return&hellip;</p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -137,18 +204,23 @@
                 <span class="fas fa-tag" aria-hidden="true">Tags: </span>&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
         </div>
-        <div>Hello. In this post, we will learn how to build document using phpdoc. Have fun!
-  Install phpdoc
-Using composer
-composer require &#34;phpdocumentor/phpdocumentor:2.*&#34; Then run command
-vendor/bin/phpdoc ... Manual: Download file phar from: Github releases
-Then run command
-php phpDocumentor.phar ...   Some simple commands
-vendor/bin/phpdoc template:list vendor/bin/phpdoc run -d SRC -t DEST --template=TEMPLATE_NAME   &hellip;
-  </div>
+        <div><p>Hello. In this post, we will learn how to build document using phpdoc. Have fun!</p>
+<ol>
+<li>
+<p>Install phpdoc</p>
+<p><strong>Using composer</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require <span style="color:#e6db74">&#34;phpdocumentor/phpdocumentor:2.*&#34;</span>
+</code></pre></div><p>Then run command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vendor/bin/phpdoc ...
+</code></pre></div><p><strong>Manual</strong>: Download file phar from: <a href="https://github.com/phpDocumentor/phpDocumentor/releases">Github releases</a></p>
+<p>Then run command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php phpDocumentor.phar ...
+</code></pre></div></li>
+</ol></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
