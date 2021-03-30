@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Sat, 10 Oct 2020 08:56:09 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Mar 2021 09:34:48 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to connect to a service on the remote server via ssh tunnel</title>
+      <link>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</link>
+      <pubDate>Tue, 30 Mar 2021 09:34:48 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</guid>
+      <description>Hello, today we will talk about connecting to remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!
+Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a ssh account to connect to your server. Normally you can ssh to the server then use mysql client console to interact with the database.</description>
+    </item>
+    
     <item>
       <title>How to create a linux service</title>
       <link>https://kienngd.98t1.net/howto/how_to_create_linux_service/</link>

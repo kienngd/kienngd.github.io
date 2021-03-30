@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kienngd.98t1.net/categories/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/categories/howto/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/howto/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/tags/linux/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/tags/ssh/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kienngd.98t1.net/tags/</loc>
+    <lastmod>2021-03-30T09:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kienngd.98t1.net/tags/apiato/</loc>
     <lastmod>2021-03-25T15:36:54+07:00</lastmod>
   </url>
@@ -13,22 +53,7 @@
   </url>
   
   <url>
-    <loc>https://kienngd.98t1.net/categories/</loc>
-    <lastmod>2021-03-25T15:36:54+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kienngd.98t1.net/</loc>
-    <lastmod>2021-03-25T15:36:54+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kienngd.98t1.net/tags/laravel/</loc>
-    <lastmod>2021-03-25T15:36:54+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kienngd.98t1.net/tags/</loc>
     <lastmod>2021-03-25T15:36:54+07:00</lastmod>
   </url>
   
@@ -55,16 +80,6 @@
   <url>
     <loc>https://kienngd.98t1.net/tutorials/apiato/</loc>
     <lastmod>2020-11-26T08:36:20+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kienngd.98t1.net/categories/howto/</loc>
-    <lastmod>2020-11-02T15:37:11+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kienngd.98t1.net/howto/</loc>
-    <lastmod>2020-11-02T15:37:11+07:00</lastmod>
   </url>
   
   <url>
@@ -209,11 +224,6 @@
   
   <url>
     <loc>https://kienngd.98t1.net/howto/how_to_create_linux_service/</loc>
-    <lastmod>2020-10-10T08:56:09+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kienngd.98t1.net/tags/linux/</loc>
     <lastmod>2020-10-10T08:56:09+07:00</lastmod>
   </url>
   
