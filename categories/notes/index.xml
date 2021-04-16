@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Thu, 29 Oct 2020 09:26:59 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 10:55:04 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
+      <link>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</link>
+      <pubDate>Fri, 16 Apr 2021 10:55:04 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</guid>
+      <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &amp;ldquo;&lt;strong&gt;pass by value&lt;/strong&gt;&amp;rdquo; or &amp;ldquo;&lt;strong&gt;pass by reference&lt;/strong&gt;&amp;rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!&lt;/p&gt;
+&lt;p&gt;We have an example class:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $x;
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $y;
+ 
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; __construct($x, $y) {
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $x;
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $y;
+   }
+ 
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setX&lt;/span&gt;($x)
+   {
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $x;
+   }
+ 
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setY&lt;/span&gt;($y)
+   {
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $y;
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
     <item>
       <title>Working with openstack api using curl</title>
       <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>

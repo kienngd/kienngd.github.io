@@ -7,15 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Tue, 30 Mar 2021 09:34:48 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 10:55:04 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to connect to a service on the remote server via ssh tunnel</title>
+      <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
+      <link>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</link>
+      <pubDate>Fri, 16 Apr 2021 10:55:04 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</guid>
+      <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &amp;ldquo;&lt;strong&gt;pass by value&lt;/strong&gt;&amp;rdquo; or &amp;ldquo;&lt;strong&gt;pass by reference&lt;/strong&gt;&amp;rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!&lt;/p&gt;
+&lt;p&gt;We have an example class:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $x;
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $y;
+ 
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; __construct($x, $y) {
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $x;
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $y;
+   }
+ 
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setX&lt;/span&gt;($x)
+   {
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $x;
+   }
+ 
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setY&lt;/span&gt;($y)
+   {
+       $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $y;
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to connect to a service on the remote server via SSH tunnel</title>
       <link>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</link>
       <pubDate>Tue, 30 Mar 2021 09:34:48 +0700</pubDate>
       
       <guid>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</guid>
-      <description>Hello, today we will talk about connecting to remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!
-Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a ssh account to connect to your server. Normally you can ssh to the server then use mysql client console to interact with the database.</description>
+      <description>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!
+Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</description>
     </item>
     
     <item>

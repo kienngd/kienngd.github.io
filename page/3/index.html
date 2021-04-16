@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2021-03-30T09:34:48+07:00" />
+<meta property="og:updated_time" content="2021-04-16T10:55:04+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -146,6 +146,58 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/working_with_json_in_golang/">How to working with JSON in GoLang</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/golang/" rel="tag">Golang</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/json/" rel="tag">JSON</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
+<p><strong>Working with structed data</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Import package
+</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;encoding/json&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bird</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">Species</span>     <span style="color:#66d9ef">string</span>
+	<span style="color:#a6e22e">Description</span> <span style="color:#66d9ef">string</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">jsonString</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`{	
+</span><span style="color:#e6db74">		&#34;species&#34;: &#34;pigeon&#34;,
+</span><span style="color:#e6db74">		&#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34;
+</span><span style="color:#e6db74">	}`</span>
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bird</span> <span style="color:#a6e22e">Bird</span>
+	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">Unmarshal</span>([]byte(<span style="color:#a6e22e">jsonString</span>), <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">bird</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">nill</span> {
+        <span style="color:#75715e">// json string is invalid.
+</span><span style="color:#75715e"></span>    }
+    <span style="color:#f92672">...</span>
+}
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
 
 
 

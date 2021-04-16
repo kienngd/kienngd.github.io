@@ -9,7 +9,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/notes/" />
-<meta property="og:updated_time" content="2020-10-29T09:26:59+07:00" />
+<meta property="og:updated_time" content="2021-04-16T10:55:04+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Notes"/>
@@ -145,6 +145,55 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/php_pass_by_value_pass_by_reference/">PHP &ldquo;pass by value&rdquo; VS &ldquo;pass by reference&rdquo;</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-16-04</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, it is me again. Today, we will talk about &ldquo;<strong>pass by value</strong>&rdquo; or &ldquo;<strong>pass by reference</strong>&rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!</p>
+<p>We have an example class:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> {
+   <span style="color:#66d9ef">public</span> $x;
+   <span style="color:#66d9ef">public</span> $y;
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __construct($x, $y) {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> $x;
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> $y;
+   }
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setX</span>($x)
+   {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> $x;
+   }
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setY</span>($y)
+   {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> $y;
+   }
+}
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
 
 
 
