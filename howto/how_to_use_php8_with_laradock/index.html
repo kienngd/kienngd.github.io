@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="How to use PHP8 with Laradock" />
+<meta property="og:description" content="Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.
+First of all please remember that it is very important to backup your configuration file: docker-compose.yml.
+Now, edit your files: docker-compose.yml and .env
+.env
+…
+#PHP 8 version
+PHP8_VERSION=8.0
+…
+#Define some new ports to difference from original workspace
+WORKSPACE_PHP8_SSH_PORT=2223
+WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT=4000
+WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT=4001
+WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT=9080
+WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT=9001
+WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT=5200
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/" />
+<meta property="article:published_time" content="2021-04-18T19:31:37+07:00" />
+<meta property="article:modified_time" content="2021-04-18T19:31:37+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to use PHP8 with Laradock"/>
+<meta name="twitter:description" content="Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.
+First of all please remember that it is very important to backup your configuration file: docker-compose.yml.
+Now, edit your files: docker-compose.yml and .env
+.env
+…
+#PHP 8 version
+PHP8_VERSION=8.0
+…
+#Define some new ports to difference from original workspace
+WORKSPACE_PHP8_SSH_PORT=2223
+WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT=4000
+WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT=4001
+WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT=9080
+WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT=9001
+WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT=5200
+
+"/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/">
+
+    
+    <title>How to use PHP8 with Laradock &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
+    
+
+                    </ul>
+
+                    
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+                    
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
+    
+                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    
+
+    
+
+<article class="max-width">
+    
+    <section class="row">
+        <div class="col s12 m10 offset-m1 l10 offset-l1">
+            <h4 class="orange-text text-darken-3">How to use PHP8 with Laradock</h4>
+            
+            <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Kien Nguyen - 
+            <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp; 2021-18-04
+            
+                <br/><i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a>
+            
+            
+                <br/><i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/docker/" rel="tag">Docker</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/laradock/" rel="tag">Laradock</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+    </section>
+
+    
+    
+
+    
+    <section class="row">
+        <div class="col s12 m12 l10 offset-l1">
+            <p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
+<p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
+<p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
+<p><strong>.env</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">…
+<span style="color:#75715e">#PHP 8 version</span>
+PHP8_VERSION<span style="color:#f92672">=</span>8.0
+…
+<span style="color:#75715e">#Define some new ports to difference from original workspace</span>
+WORKSPACE_PHP8_SSH_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">2223</span>
+WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">4000</span>
+WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">4001</span>
+WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">9080</span>
+WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">9001</span>
+WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">5200</span>
+
+</code></pre></div><p><strong>docker-compose.yml</strong></p>
+<ul>
+<li>Copy <strong>workspace</strong> entry and rename to <strong>workspace-php-8</strong></li>
+<li>Inside <strong>workspace-php-8</strong> entry:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#PHP8 version</span>
+- LARADOCK_PHP_VERSION<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>PHP8_VERSION<span style="color:#e6db74">}</span>
+…
+<span style="color:#75715e">#Does not working with PHP8</span>
+- INSTALL_XDEBUG<span style="color:#f92672">=</span>false
+…
+<span style="color:#75715e">#Does not working with PHP8</span>
+- INSTALL_IMAGEMAGICK<span style="color:#f92672">=</span>false
+…
+<span style="color:#75715e">#Does not working with PHP8</span>
+- INSTALL_AST<span style="color:#f92672">=</span>false
+…
+<span style="color:#75715e">#Change some ports to difference from php_workspace</span>
+ports:
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>WORKSPACE_PHP8_SSH_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:22&#34;</span>
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:3000&#34;</span>
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:3001&#34;</span>
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:8080&#34;</span>
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:8000&#34;</span>
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:4200&#34;</span>
+</code></pre></div><ul>
+<li>Copy <strong>php-fpm</strong> entry and rename to <strong>php8-fpm</strong>
+Inside <strong>php8-fpm</strong> entry:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#PHP version 8</span>
+- LARADOCK_PHP_VERSION<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>PHP8_VERSION<span style="color:#e6db74">}</span>
+…
+<span style="color:#75715e">#Does not work with PHP8</span>
+- INSTALL_XDEBUG<span style="color:#f92672">=</span>false
+…
+<span style="color:#75715e">#Does not work with PHP8</span>
+- INSTALL_IMAGEMAGICK<span style="color:#f92672">=</span>false
+
+…
+ports:
+  - <span style="color:#e6db74">&#34;9004:9003&#34;</span>
+
+…
+depends_on:
+  - workspace-php-8
+</code></pre></div><ul>
+<li>Run new container</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose up -d workspace-php-8 php8_fpm
+</code></pre></div><ul>
+<li>Waitting for build and up.</li>
+<li>Access workspace-php-8 and check php version</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose exec workspace-php-8 bash
+<span style="color:#75715e">#Inside docker container</span>
+php -v
+</code></pre></div><ul>
+<li>Access php8-fpm and check php version</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose exec php8-fpm bash
+<span style="color:#75715e">#Inside docker container</span>
+php -v
+</code></pre></div><ul>
+<li>Configure your site to work with php 8
+Inside your site’s nginx configuration file:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">…
+fastcgi_pass php8-fpm:9000;
+….
+</code></pre></div>
+        </div>
+    </section>
+</article>
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>

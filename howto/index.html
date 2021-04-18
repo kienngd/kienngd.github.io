@@ -9,7 +9,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/howto/" />
-<meta property="og:updated_time" content="2020-11-02T15:37:11+07:00" />
+<meta property="og:updated_time" content="2021-04-18T19:31:37+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Howtos"/>
@@ -29,6 +29,7 @@
     
 
     
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -37,18 +38,19 @@
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -58,20 +60,44 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -81,13 +107,39 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -100,19 +152,113 @@
         <article class="row max-width">
     <div class="col s12 l10 offset-l1">
         <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_use_php8_with_laradock/">How to use PHP8 with Laradock</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-18-04</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/docker/" rel="tag">Docker</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/laradock/" rel="tag">Laradock</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
+<p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
+<p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
+<p><strong>.env</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">…
+<span style="color:#75715e">#PHP 8 version</span>
+PHP8_VERSION<span style="color:#f92672">=</span>8.0
+…
+<span style="color:#75715e">#Define some new ports to difference from original workspace</span>
+WORKSPACE_PHP8_SSH_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">2223</span>
+WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">4000</span>
+WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">4001</span>
+WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">9080</span>
+WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">9001</span>
+WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">5200</span>
+
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_connect_service_via_ssh_tunnel/">How to connect to a service on the remote server via SSH tunnel</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-30-03</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/ssh/" rel="tag">ssh</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
+<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
+<p><strong><u>Option 1</u></strong>: Command line
+Create tunnel</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -p<span style="color:#f92672">[</span>SERVER_SSH_PORT<span style="color:#f92672">]</span> -L <span style="color:#f92672">[</span>LOCAL_PORT_TO_LISTEN<span style="color:#f92672">]</span>:<span style="color:#f92672">[</span>LOCAL_ADDRESS_TO_LISTEN<span style="color:#f92672">]</span>:<span style="color:#f92672">[</span>SERVER_PORT_TO_FORWARD<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>SERVER_USER_NAME<span style="color:#f92672">]</span>@<span style="color:#f92672">[</span>SERVER_IP<span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Example</strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
             <a class="orange-text text-darken-3" href="/howto/how_to_use_uuid_as_id_laravel/">Use UUID as primary key of Laravel Eloquent ORM</a>            
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 02, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-02-11</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/uuid/" rel="tag">UUID</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Install package using composer:
-composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
-// Replace this $table-&gt;increments(&#39;id&#39;); // By this $table-&gt;uuid(&#39;id&#39;)-&gt;primary(); Inside model file
-use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &#39;string&#39;; public $incrementing = false; protected $guarded = []; } </div>
+        <div><p>Install package using composer:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+</code></pre></div><p>Inside migration file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Replace this
+</span><span style="color:#75715e"></span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">increments</span>(<span style="color:#e6db74">&#39;id&#39;</span>);
+<span style="color:#75715e">// By this
+</span><span style="color:#75715e"></span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">uuid</span>(<span style="color:#e6db74">&#39;id&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">primary</span>();
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -125,14 +271,22 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 16, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-16-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
         </div>
-        <div>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!
-Open your browser to access this link: https://api.myip.com/. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: 115.75.212.27.
-Bonus: You can use curl command to get data too.</div>
+        <div><p>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!</p>
+<p>Open your browser to access this link: <a href="https://api.myip.com/">https://api.myip.com/</a>. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: <strong>115.75.212.27</strong>.</p>
+<p><strong>Bonus</strong>: You can use curl command to get data too.</p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -145,17 +299,27 @@ Bonus: You can use curl command to get data too.</div>
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 14, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-14-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/vim/" rel="tag">VIM</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!
-If you want to install plugin named nerdtree,
-1st way: Copy plugin files to: ~/.vim/pack/vendor/start and they will be load when you launch VIM
-Example:
-cp -r nerdtree ~/.vim/pack/vendor/start/ Then inside VIM, you can use command: :NERDTree
-2nd way: Copy plugin files to: ~/.vim/pack/vendor/opt and they will be not load until you use command packadd to load it.</div>
+        <div><p>Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>If you want to install plugin named <strong>nerdtree</strong>,</p>
+<p>1st way: Copy plugin files to: <strong>~/.vim/pack/vendor/start</strong> and they will be load when you launch VIM</p>
+<p>Example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp -r nerdtree ~/.vim/pack/vendor/start/
+</code></pre></div><p>Then inside VIM, you can use command: <strong>:NERDTree</strong></p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -168,13 +332,23 @@ cp -r nerdtree ~/.vim/pack/vendor/start/ Then inside VIM, you can use command: :
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 11, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-11-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/ubuntu/" rel="tag">Ubuntu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.
-I see this link and try to edit file /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf change wifi.powersave from 3 (enable power save) to 2 (disable power save).</div>
+        <div><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>
+<p>I see <a href="https://unix.stackexchange.com/questions/269661/how-to-turn-off-wireless-power-management-permanently">this link</a> and try to edit file <em>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf</em> change <strong>wifi.powersave</strong> from 3 (enable power save) to 2 (disable power save). And reboot. Now the wifi works fine.</p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -187,15 +361,40 @@ I see this link and try to edit file /etc/NetworkManager/conf.d/default-wifi-pow
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 10, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/service/" rel="tag">Service</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!
-Step 1: Create new service file /etc/systemd/system/test_service.service Example file content:
-[Unit] Description=Demo test service After=network.target StartLimitIntervalSec=0 [Service] Type=simple Restart=always RestartSec=1 User=**root** ExecStart=**COMMAND TO EXECUTE** [Install] WantedBy=multi-user.target You can see the full service defination here: Will be update
-Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_service.service Step 3: Enable service (so service will start with OS) sudo systemctl enable test_service.</div>
+        <div><p>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!</p>
+<h5 id="step-1-create-new-service-file">Step 1: Create new service file</h5>
+<pre><code>/etc/systemd/system/test_service.service
+</code></pre><p>Example file content:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Unit]</span>
+<span style="color:#a6e22e">Description</span><span style="color:#f92672">=</span><span style="color:#e6db74">Demo test service</span>
+<span style="color:#a6e22e">After</span><span style="color:#f92672">=</span><span style="color:#e6db74">network.target</span>
+<span style="color:#a6e22e">StartLimitIntervalSec</span><span style="color:#f92672">=</span><span style="color:#e6db74">0</span>
+
+<span style="color:#66d9ef">[Service]</span>
+<span style="color:#a6e22e">Type</span><span style="color:#f92672">=</span><span style="color:#e6db74">simple</span>
+<span style="color:#a6e22e">Restart</span><span style="color:#f92672">=</span><span style="color:#e6db74">always</span>
+<span style="color:#a6e22e">RestartSec</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+<span style="color:#a6e22e">User</span><span style="color:#f92672">=</span><span style="color:#e6db74">**root**</span>
+<span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">**COMMAND TO EXECUTE**</span>
+
+<span style="color:#66d9ef">[Install]</span>
+<span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">multi-user.target</span>
+</code></pre></div><p>You can see the full service defination here: <a href="#">Will be update</a></p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -208,14 +407,46 @@ Step 2: Start service sudo systemctl daemon-reload sudo systemctl start test_ser
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/golang/" rel="tag">Golang</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/json/" rel="tag">JSON</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>In this post, we will learn how to parse json data in GoLang. Have fun!
-Working with structed data
-// Import package import ( &#34;encoding/json&#34; ) type Bird struct { Species string Description string } func main() { jsonString := `{	&#34;species&#34;: &#34;pigeon&#34;, &#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34; }` var bird Bird err := json.Unmarshal([]byte(jsonString), &amp;bird) if err != nill { // json string is invalid.</div>
+        <div><p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
+<p><strong>Working with structed data</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Import package
+</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;encoding/json&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bird</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">Species</span>     <span style="color:#66d9ef">string</span>
+	<span style="color:#a6e22e">Description</span> <span style="color:#66d9ef">string</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">jsonString</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`{	
+</span><span style="color:#e6db74">		&#34;species&#34;: &#34;pigeon&#34;,
+</span><span style="color:#e6db74">		&#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34;
+</span><span style="color:#e6db74">	}`</span>
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bird</span> <span style="color:#a6e22e">Bird</span>
+	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">Unmarshal</span>([]byte(<span style="color:#a6e22e">jsonString</span>), <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">bird</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">nill</span> {
+        <span style="color:#75715e">// json string is invalid.
+</span><span style="color:#75715e"></span>    }
+    <span style="color:#f92672">...</span>
+}
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -228,16 +459,47 @@ Working with structed data
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/hugo/" rel="tag">Hugo</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/github/" rel="tag">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
-Step 1: Install hugo.
- Download hugo from: https://github.com/gohugoio/hugo/releases Install in your PC.  Step 2: Create a new site.
- Quick start document: https://gohugo.io/getting-started/ Command:  hugo new site myblog Step 3: Setup your hugo theme.
- Find a theme from: https://themes.gohugo.io/. Download theme and put into site&rsquo;s themes directory.</div>
+        <div><p>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
+<p><strong>Step 1</strong>: Install hugo.</p>
+<ul>
+<li>Download hugo from: <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
+<li>Install in your PC.</li>
+</ul>
+<p><strong>Step 2</strong>: Create a new site.</p>
+<ul>
+<li>Quick start document: <a href="https://gohugo.io/getting-started/">https://gohugo.io/getting-started/</a></li>
+<li>Command:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site myblog
+</code></pre></div><p><strong>Step 3</strong>: Setup your hugo theme.</p>
+<ul>
+<li>Find a theme from: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.</li>
+<li>Download theme and put into site&rsquo;s themes directory.
+Example we want to use Ananke theme:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd myblog
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</code></pre></div><ul>
+<li>Inside file config.toml.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">theme = &#34;ananke&#34;
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 

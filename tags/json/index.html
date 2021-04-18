@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="JSON" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kienngd.98t1.net/tags/json/" />
+<meta property="og:updated_time" content="2020-10-08T13:34:54+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JSON"/>
+<meta name="twitter:description" content=""/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/tags/json/">
+
+    
+    <title>JSON &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
+    
+
+                    </ul>
+
+                    
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+                    
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
+    
+                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    
+
+    
+
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/working_with_json_in_golang/">How to working with JSON in GoLang</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/golang/" rel="tag">Golang</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/json/" rel="tag">JSON</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
+<p><strong>Working with structed data</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Import package
+</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;encoding/json&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bird</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">Species</span>     <span style="color:#66d9ef">string</span>
+	<span style="color:#a6e22e">Description</span> <span style="color:#66d9ef">string</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">jsonString</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`{	
+</span><span style="color:#e6db74">		&#34;species&#34;: &#34;pigeon&#34;,
+</span><span style="color:#e6db74">		&#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34;
+</span><span style="color:#e6db74">	}`</span>
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bird</span> <span style="color:#a6e22e">Bird</span>
+	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">Unmarshal</span>([]byte(<span style="color:#a6e22e">jsonString</span>), <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">bird</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">nill</span> {
+        <span style="color:#75715e">// json string is invalid.
+</span><span style="color:#75715e"></span>    }
+    <span style="color:#f92672">...</span>
+}
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+
+
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>

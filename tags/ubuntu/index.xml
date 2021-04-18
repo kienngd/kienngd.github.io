@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on K5d</title>
+    <link>https://kienngd.98t1.net/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Sun, 11 Oct 2020 23:15:36 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to disable wifi power save Ubuntu 20.04</title>
+      <link>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
+      <pubDate>Sun, 11 Oct 2020 23:15:36 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
+      <description>&lt;p&gt;Hello, today I&amp;rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.&lt;/p&gt;
+&lt;p&gt;I see &lt;a href=&#34;https://unix.stackexchange.com/questions/269661/how-to-turn-off-wireless-power-management-permanently&#34;&gt;this link&lt;/a&gt; and try to edit file &lt;em&gt;/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf&lt;/em&gt; change &lt;strong&gt;wifi.powersave&lt;/strong&gt; from 3 (enable power save) to 2 (disable power save). And reboot. Now the wifi works fine.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

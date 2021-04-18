@@ -5,7 +5,8 @@ body {
 }
 
 .max-width {
-    max-width: 1280px;
+    /* max-width: 1280px; */
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -53,4 +54,9 @@ div.highlight {
     overflow: auto;
     background-color:#272822;
     padding: 10px;
+}
+
+hr.article-spliter {
+    border-top: 1px solid #FFA500 !important;
+    border-bottom: 0px solid #FFA500 !important;
 }

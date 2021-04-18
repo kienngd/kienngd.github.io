@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on K5d</title>
+    <link>https://kienngd.98t1.net/tags/docker/</link>
+    <description>Recent content in Docker on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Sun, 18 Apr 2021 19:31:37 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use PHP8 with Laradock</title>
+      <link>https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/</link>
+      <pubDate>Sun, 18 Apr 2021 19:31:37 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/</guid>
+      <description>&lt;p&gt;Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.&lt;/p&gt;
+&lt;p&gt;First of all please remember that it is very important to &lt;strong&gt;backup&lt;/strong&gt; your configuration file: &lt;strong&gt;docker-compose.yml&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now, edit your files: &lt;strong&gt;docker-compose.yml&lt;/strong&gt; and &lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;…
+&lt;span style=&#34;color:#75715e&#34;&gt;#PHP 8 version&lt;/span&gt;
+PHP8_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;8.0
+…
+&lt;span style=&#34;color:#75715e&#34;&gt;#Define some new ports to difference from original workspace&lt;/span&gt;
+WORKSPACE_PHP8_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2223&lt;/span&gt;
+WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4000&lt;/span&gt;
+WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4001&lt;/span&gt;
+WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;9080&lt;/span&gt;
+WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;9001&lt;/span&gt;
+WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5200&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Influxdb Docker With Laradock</title>
+      <link>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</link>
+      <pubDate>Tue, 20 Oct 2020 09:09:57 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</guid>
+      <description>&lt;p&gt;In this post we will see how to run influxdb docker container using laradock. Have fun.&lt;/p&gt;
+&lt;p&gt;InfluxDB docker document: &lt;a href=&#34;https://hub.docker.com/_/influxdb&#34;&gt;https://hub.docker.com/_/influxdb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Edit laradock &lt;strong&gt;.env&lt;/strong&gt; file:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### INFLUXDB ##################################################&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest&lt;/span&gt;
+INFLUXDB_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1.8
+INFLUXDB_HTTP_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8086&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit &lt;strong&gt;docker-composer.yml&lt;/strong&gt; file. Please remember to backup it first :).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### influxdb ####################################################&lt;/span&gt;
+influxdb:
+  container_name: influxdb
+  hostname: influxdb
+  image: influxdb:&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;INFLUXDB_VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+  ports:
+    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;INFLUXDB_HTTP_PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:8086&amp;#34;&lt;/span&gt;
+  networks:
+    - backend
+  volumes:
+    - &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;DATA_PATH_HOST&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/influxdb/var/lib/influxdb:/var/lib/influxdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Start influxdb container&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-composer up -d influxdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

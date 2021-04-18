@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on K5d</title>
+    <link>https://kienngd.98t1.net/tags/hugo/</link>
+    <description>Recent content in Hugo on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Thu, 08 Oct 2020 10:34:44 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to build a free blog</title>
+      <link>https://kienngd.98t1.net/howto/how_to_build_free_blog/</link>
+      <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_build_free_blog/</guid>
+      <description>&lt;p&gt;Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Install hugo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download hugo from: &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install in your PC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Create a new site.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Quick start document: &lt;a href=&#34;https://gohugo.io/getting-started/&#34;&gt;https://gohugo.io/getting-started/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Command:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site myblog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: Setup your hugo theme.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find a theme from: &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download theme and put into site&amp;rsquo;s themes directory.
+Example we want to use Ananke theme:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd myblog
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Inside file config.toml.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;theme = &amp;#34;ananke&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

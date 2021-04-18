@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.79.0" />
+	<meta name="generator" content="Hugo 0.75.1" />
     <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2020-11-27T14:42:16+07:00" />
+<meta property="og:updated_time" content="2021-04-18T19:31:37+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -30,6 +30,7 @@
     
 
     
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -38,18 +39,19 @@
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -59,20 +61,44 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -82,13 +108,39 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -101,18 +153,196 @@
         <article class="row max-width">
     <div class="col s12 l10 offset-l1">
         <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_use_php8_with_laradock/">How to use PHP8 with Laradock</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-18-04</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/docker/" rel="tag">Docker</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/laradock/" rel="tag">Laradock</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
+<p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
+<p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
+<p><strong>.env</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">…
+<span style="color:#75715e">#PHP 8 version</span>
+PHP8_VERSION<span style="color:#f92672">=</span>8.0
+…
+<span style="color:#75715e">#Define some new ports to difference from original workspace</span>
+WORKSPACE_PHP8_SSH_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">2223</span>
+WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">4000</span>
+WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">4001</span>
+WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">9080</span>
+WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">9001</span>
+WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">5200</span>
+
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/php_pass_by_value_pass_by_reference/">PHP &ldquo;pass by value&rdquo; VS &ldquo;pass by reference&rdquo;</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-16-04</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, it is me again. Today, we will talk about &ldquo;<strong>pass by value</strong>&rdquo; or &ldquo;<strong>pass by reference</strong>&rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!</p>
+<p>We have an example class:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> {
+   <span style="color:#66d9ef">public</span> $x;
+   <span style="color:#66d9ef">public</span> $y;
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __construct($x, $y) {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> $x;
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> $y;
+   }
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setX</span>($x)
+   {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> $x;
+   }
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setY</span>($y)
+   {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> $y;
+   }
+}
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_connect_service_via_ssh_tunnel/">How to connect to a service on the remote server via SSH tunnel</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-30-03</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/ssh/" rel="tag">ssh</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
+<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
+<p><strong><u>Option 1</u></strong>: Command line
+Create tunnel</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -p<span style="color:#f92672">[</span>SERVER_SSH_PORT<span style="color:#f92672">]</span> -L <span style="color:#f92672">[</span>LOCAL_PORT_TO_LISTEN<span style="color:#f92672">]</span>:<span style="color:#f92672">[</span>LOCAL_ADDRESS_TO_LISTEN<span style="color:#f92672">]</span>:<span style="color:#f92672">[</span>SERVER_PORT_TO_FORWARD<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>SERVER_USER_NAME<span style="color:#f92672">]</span>@<span style="color:#f92672">[</span>SERVER_IP<span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Example</strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/tutorials/apiato_select_language/">Apiato select language</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-25-03</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!</p>
+<p>Document: <a href="https://docs.apiato.io/features/localization/">https://docs.apiato.io/features/localization/</a></p>
+<p><u>Step 1</u>: Add new language to supported language:</p>
+<p>Edit <strong>supported_languages</strong> inside file <strong>app/Containers/Localization/Configs/localization.php</strong></p></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
             <a class="orange-text text-darken-3" href="/tutorials/laravel_logout_other_devices/">Laravel logout other devices</a>            
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-27-11</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
-&#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
-use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </div>
+        <div><p>Check file: <strong>app/Http/Kernel.php</strong> (or file <strong>app/Ship/Kernels/HttpKernel.php</strong> if you use Apiato) and uncomment this line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#e6db74">&#39;web&#39;</span> <span style="color:#f92672">=&gt;</span> [
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">\Illuminate\Session\Middleware\AuthenticateSession</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>,
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>],
+</code></pre></div><p>Logout all other devices:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Illuminate\Support\Facades\Auth</span>;
+<span style="color:#f92672">...</span>
+<span style="color:#a6e22e">Auth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">logoutOtherDevices</span>($password);
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -125,17 +355,46 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); </
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 27, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-27-11</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Create role, permission
-use Spatie\Permission\Models\Role; use Spatie\Permission\Models\Permission; $role = Role::create([&#39;name&#39; =&gt; &#39;admin&#39;]); $permission = Permission::create([&#39;name&#39; =&gt; &#39;create-articles&#39;]); Assign / Sync / Revoke permission to role
-// Assign $role-&gt;givePermissionTo($permission); // $permission can be string / object / array of strings / array of objects $permission-&gt;assignRole($role); // Sync $role-&gt;syncPermissions($permissions); $permission-&gt;syncRoles($roles); // Revoke $role-&gt;revokePermissionTo($permission); $permission-&gt;removeRole($role); Check roles permissons
-$role-&gt;hasPermissionTo($permission); $role-&gt;hasAnyPermission($permissions); $role-&gt;hasAllPermissions($permissions); Authenticatable user with roles / permissions
-The model:
-use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Traits\HasRoles; class User extends Authenticatable { use HasRoles; // .</div>
+        <div><p><strong>Create role, permission</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Spatie\Permission\Models\Role</span>;
+<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Spatie\Permission\Models\Permission</span>;
+
+$role <span style="color:#f92672">=</span> <span style="color:#a6e22e">Role</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([<span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;admin&#39;</span>]);
+$permission <span style="color:#f92672">=</span> <span style="color:#a6e22e">Permission</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([<span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;create-articles&#39;</span>]);
+</code></pre></div><p><strong>Assign / Sync / Revoke permission to role</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Assign
+</span><span style="color:#75715e"></span>$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">givePermissionTo</span>($permission); <span style="color:#75715e">// $permission can be string / object / array of strings / array of objects
+</span><span style="color:#75715e"></span>$permission<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assignRole</span>($role);
+
+<span style="color:#75715e">// Sync
+</span><span style="color:#75715e"></span>$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">syncPermissions</span>($permissions);
+$permission<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">syncRoles</span>($roles);
+
+<span style="color:#75715e">// Revoke
+</span><span style="color:#75715e"></span>$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">revokePermissionTo</span>($permission);
+$permission<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">removeRole</span>($role);
+
+</code></pre></div><p><strong>Check roles permissons</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hasPermissionTo</span>($permission);
+$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hasAnyPermission</span>($permissions);
+$role<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hasAllPermissions</span>($permissions);
+
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -148,21 +407,41 @@ use Illuminate\Foundation\Auth\User as Authenticatable; use Spatie\Permission\Tr
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 26, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-26-11</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Home page: http://docs.apiato.io/
-Create project using composer from latest stable
-composer create-project apiato/apiato apiato9 Then edit the .env file.
-Migrate database
-php artisan migrate Create admin user, some permissions, roles
-php artisan db:seed Default account is: admin@admin.com / admin.
-Add all current permissions to admin role.
-php artisan apiato:permissions:toRole admin Install OAuth 2.0
-php artisan passport:install Then edit file .env update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.
-Install ApiDocJs</div>
+        <div><p>Home page: <a href="http://docs.apiato.io/">http://docs.apiato.io/</a></p>
+<p><strong>Create project using composer from latest stable</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer create-project apiato/apiato apiato9
+</code></pre></div><p>Then edit the .env file.</p>
+<p><strong>Migrate database</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan migrate
+</code></pre></div><p><strong>Create admin user, some permissions, roles</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan db:seed
+</code></pre></div><p>Default account is: <a href="mailto:admin@admin.com">admin@admin.com</a> / admin.</p>
+<p><strong>Add all current permissions to admin role.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan apiato:permissions:toRole admin
+</code></pre></div><p><strong>Install OAuth 2.0</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan passport:install
+</code></pre></div><p>Then edit file <strong>.env</strong> update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.</p>
+<p><strong>Install ApiDocJs</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yarn install
+</code></pre></div><p><strong>Create api doc</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php artisan apiato:apidoc
+</code></pre></div><p>Your default document url is: http://<Your domain>/api/documentation and http://<Your domain>/api/private/documentation</p>
+<p>Default result is saved in: <strong>public/api/documentation/</strong></p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -175,15 +454,29 @@ Install ApiDocJs</div>
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Nov 02, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-02-11</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/uuid/" rel="tag">UUID</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Install package using composer:
-composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
-// Replace this $table-&gt;increments(&#39;id&#39;); // By this $table-&gt;uuid(&#39;id&#39;)-&gt;primary(); Inside model file
-use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &#39;string&#39;; public $incrementing = false; protected $guarded = []; } </div>
+        <div><p>Install package using composer:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+</code></pre></div><p>Inside migration file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Replace this
+</span><span style="color:#75715e"></span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">increments</span>(<span style="color:#e6db74">&#39;id&#39;</span>);
+<span style="color:#75715e">// By this
+</span><span style="color:#75715e"></span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">uuid</span>(<span style="color:#e6db74">&#39;id&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">primary</span>();
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -196,15 +489,46 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 29, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-29-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/openstack/" rel="tag">OpenStack</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/api/" rel="tag">API</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
-        <div>Get token curl -s -i -H &#34;Content-Type: application/json&#34; -d &#39; { &#34;auth&#34;: { &#34;identity&#34;: { &#34;methods&#34;: [ &#34;password&#34; ], &#34;password&#34;: { &#34;user&#34;: { &#34;name&#34;: &#34;{USERNAME}&#34;, &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; }, &#34;password&#34;: &#34;{PASSWORD}&#34; } } }, &#34;scope&#34;: { &#34;project&#34;: { &#34;id&#34;: &#34;{PROJECT_ID}&#34; } } } }&#39; &#34;https://{BASE URL}:5000/v3/auth/tokens&#34; | grep &#34;X-Subject-Token:&#34; Default keystone port is 5000
-By default, this token will be expired after 6 hours.
-Export token API_TOKEN=&quot;{TOKEN}&quot;
-Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL}:5000/v3/domains&#34; | jq &#39;.</div>
+        <div><h5 id="get-token">Get token</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -i -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span>   -d <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">{
+</span><span style="color:#e6db74">    &#34;auth&#34;: {
+</span><span style="color:#e6db74">        &#34;identity&#34;: {
+</span><span style="color:#e6db74">            &#34;methods&#34;: [
+</span><span style="color:#e6db74">                &#34;password&#34;
+</span><span style="color:#e6db74">            ],
+</span><span style="color:#e6db74">            &#34;password&#34;: {
+</span><span style="color:#e6db74">                &#34;user&#34;: {
+</span><span style="color:#e6db74">                    &#34;name&#34;: &#34;{USERNAME}&#34;,
+</span><span style="color:#e6db74">                    &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; },
+</span><span style="color:#e6db74">                    &#34;password&#34;: &#34;{PASSWORD}&#34;
+</span><span style="color:#e6db74">                }
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        },
+</span><span style="color:#e6db74">        &#34;scope&#34;: {
+</span><span style="color:#e6db74">            &#34;project&#34;: {
+</span><span style="color:#e6db74">                &#34;id&#34;: &#34;{PROJECT_ID}&#34;
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">    }
+</span><span style="color:#e6db74">}&#39;</span>   <span style="color:#e6db74">&#34;https://{BASE URL}:5000/v3/auth/tokens&#34;</span> | grep <span style="color:#e6db74">&#34;X-Subject-Token:&#34;</span>
+</code></pre></div><p>Default keystone port is <strong>5000</strong></p>
+<p>By default, this token will be expired after 6 hours.</p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 
@@ -217,93 +541,36 @@ Get domains curl -s -H &#34;X-Auth-Token: $API_TOKEN&#34; &#34;https://{BASE URL
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
-        </div>
-        <div>document: https://github.com/influxdata/influxdb-php
-Install via composer composer require influxdb/influxdb-php Create client object $client = new InfluxDB\Client($host, $port); // directly get the database object $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname)); // Fetch the database using a 5 second time out $database = InfluxDB\Client::fromDSN(sprintf(&#39;influxdb://user:pass@%s:%s/%s&#39;, $host, $port, $dbname), 5); // get the client to retrieve other databases $client = $database-&gt;getClient(); Reading data // fetch the database $database = $client-&gt;selectDB(&#39;influx_test_db&#39;); // executing a query will yield a resultset object $result = $database-&gt;query(&#39;select * from test_metric LIMIT 5&#39;); // get the points from the resultset yields an array $points = $result-&gt;getPoints(); Use the queryBuilder object // retrieve points with the query builder $result = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;limit(2) -&gt;offset(2) -&gt;getResultSet() -&gt;getPoints(); // get the query from the QueryBuilder $query = $database-&gt;getQueryBuilder() -&gt;select(&#39;cpucount&#39;) -&gt;from(&#39;test_metric&#39;) -&gt;where([&#34;region = &#39;us-west&#39;&#34;]) -&gt;getQuery(); Get the last executed query from the client // use the getLastQuery() method $lastQuery = $client-&gt;getLastQuery(); // or access the static variable directly: $lastQuery = Client::lastQuery; Writting data // create an array of points $points = array( new Point( &#39;Measurement_Name&#39;, // name of the measurement 	0.</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_api/">Working_with_influxdb_data_using_api</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
             
-            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
-        </div>
-        <div></div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_influx/">Working_with_influxdb_data_using_influx</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
             
-            <span class="article-meta-author-name"></span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
-        </div>
-        <div></div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/notes/influxdb_docker_with_laradock/">Influxdb Docker With Laradock</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 20, 2020</span>
-        </div>
-        <div>In this post we will see how to run influxdb docker container using laradock. Have fun.
-InfluxDB docker document: https://hub.docker.com/_/influxdb
-Edit laradock .env file:
-Add these lines at the end of file
-### INFLUXDB ################################################## # influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest INFLUXDB_VERSION=1.8 INFLUXDB_HTTP_PORT=8086 Edit docker-composer.yml file. Please remember to backup it first :).
-Add these lines at the end of file
-### influxdb #################################################### influxdb: container_name: influxdb hostname: influxdb image: influxdb:${INFLUXDB_VERSION} ports: - &#34;${INFLUXDB_HTTP_PORT}:8086&#34; networks: - backend volumes: - ${DATA_PATH_HOST}/influxdb/var/lib/influxdb:/var/lib/influxdb Start influxdb container</div>
-    </div>
-</article>
-
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/tutorials/react-admin-p1/">React Admin P1</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 17, 2020</span>
         </div>
-        <div>React-Admin tutorial notes Create new project and install packages
-yarn create react-app test-admin cd test-admin/ yarn add react-admin ra-data-json-server prop-types Edit file src/App.js
-import * as React from &#34;react&#34;; import { Admin, Resource } from &#39;react-admin&#39;; import jsonServerProvider from &#39;ra-data-json-server&#39;; import { ListGuesser } from &#39;react-admin&#39;; const App = () =&gt; { const dataProvider = jsonServerProvider(&#39;https://jsonplaceholder.typicode.com&#39;); return( &lt;Admin dataProvider={dataProvider}&gt; &lt;Resource name=&#34;users&#34; list={ListGuesser} /&gt; &lt;/Admin&gt; ); } export default App; Add dashboard page  Create dashboard component Set &lt;Admin dashboard={ Dashboard } &hellip;&gt;  Customizing menu icon  Import Icon &lt;Resource icon={ ICON } &hellip;&gt;  Adding login page  Create src/Providers/authProvider (Example code: &hellip;) &lt;Admin authProvider={ authProvider } &hellip;&gt;  Check screen size const isSmall = useMediaQuery(theme =&gt; theme.</div>
+        <div><p>document: <a href="https://github.com/influxdata/influxdb-php">https://github.com/influxdata/influxdb-php</a></p>
+<h5 id="install-via-composer">Install via composer</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require influxdb/influxdb-php
+</code></pre></div><h5 id="create-client-object">Create client object</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">InfluxDB\Client</span>($host, $port);
+
+<span style="color:#75715e">// directly get the database object
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname));
+
+<span style="color:#75715e">// Fetch the database using a 5 second time out
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname), <span style="color:#ae81ff">5</span>);
+
+<span style="color:#75715e">// get the client to retrieve other databases
+</span><span style="color:#75715e"></span>$client <span style="color:#f92672">=</span> $database<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getClient</span>();
+</code></pre></div></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 

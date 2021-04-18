@@ -7,9 +7,13 @@
 
 <meta property="og:title" content="Use UUID as primary key of Laravel Eloquent ORM" />
 <meta property="og:description" content="Install package using composer:
-composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
-// Replace this $table-&gt;increments(&#39;id&#39;); // By this $table-&gt;uuid(&#39;id&#39;)-&gt;primary(); Inside model file
-use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &#39;string&#39;; public $incrementing = false; protected $guarded = []; } " />
+composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+Inside migration file.
+// Replace this
+$table-&gt;increments(&#39;id&#39;);
+// By this
+$table-&gt;uuid(&#39;id&#39;)-&gt;primary();
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/" />
 <meta property="article:published_time" content="2020-11-02T15:37:11+07:00" />
@@ -18,9 +22,13 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Use UUID as primary key of Laravel Eloquent ORM"/>
 <meta name="twitter:description" content="Install package using composer:
-composer require goldspecdigital/laravel-eloquent-uuid:^7.0 Inside migration file.
-// Replace this $table-&gt;increments(&#39;id&#39;); // By this $table-&gt;uuid(&#39;id&#39;)-&gt;primary(); Inside model file
-use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyModel extends Model { use Uuid; protected $keyType = &#39;string&#39;; public $incrementing = false; protected $guarded = []; } "/>
+composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+Inside migration file.
+// Replace this
+$table-&gt;increments(&#39;id&#39;);
+// By this
+$table-&gt;uuid(&#39;id&#39;)-&gt;primary();
+"/>
 
 
     <meta name="description" content="">
@@ -36,6 +44,7 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
     
 
     
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -44,18 +53,19 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -65,20 +75,44 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -88,13 +122,39 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -104,9 +164,16 @@ use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid; ... class MyMode
     
     <section class="row">
         <div class="col s12 m10 offset-m1 l10 offset-l1">
-            <h4>Use UUID as primary key of Laravel Eloquent ORM</h4>
+            <h4 class="orange-text text-darken-3">Use UUID as primary key of Laravel Eloquent ORM</h4>
             
-            Kien Nguyen - Nov 02, 2020
+            <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Kien Nguyen - 
+            <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp; 2020-02-11
+            
+                <br/><i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a>
+            
+            
+                <br/><i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/uuid/" rel="tag">UUID</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
     </section>
 

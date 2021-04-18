@@ -7,8 +7,16 @@
 
 <meta property="og:title" content="Laravel logout other devices" />
 <meta property="og:description" content="Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
-&#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
-use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); " />
+&#39;web&#39; =&gt; [
+    // ...
+    \Illuminate\Session\Middleware\AuthenticateSession::class,
+    // ...
+],
+Logout all other devices:
+use Illuminate\Support\Facades\Auth;
+...
+Auth::logoutOtherDevices($password);
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/" />
 <meta property="article:published_time" content="2020-11-27T14:42:16+07:00" />
@@ -17,8 +25,16 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); " 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Laravel logout other devices"/>
 <meta name="twitter:description" content="Check file: app/Http/Kernel.php (or file app/Ship/Kernels/HttpKernel.php if you use Apiato) and uncomment this line:
-&#39;web&#39; =&gt; [ // ...  \Illuminate\Session\Middleware\AuthenticateSession::class, // ... ], Logout all other devices:
-use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); "/>
+&#39;web&#39; =&gt; [
+    // ...
+    \Illuminate\Session\Middleware\AuthenticateSession::class,
+    // ...
+],
+Logout all other devices:
+use Illuminate\Support\Facades\Auth;
+...
+Auth::logoutOtherDevices($password);
+"/>
 
 
     <meta name="description" content="">
@@ -34,6 +50,7 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); "/
     
 
     
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -42,18 +59,19 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); "/
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -63,20 +81,44 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); "/
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -86,13 +128,39 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); "/
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -102,9 +170,16 @@ use Illuminate\Support\Facades\Auth; ... Auth::logoutOtherDevices($password); "/
     
     <section class="row">
         <div class="col s12 m10 offset-m1 l10 offset-l1">
-            <h4>Laravel logout other devices</h4>
+            <h4 class="orange-text text-darken-3">Laravel logout other devices</h4>
             
-            Kien Nguyen - Nov 27, 2020
+            <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Kien Nguyen - 
+            <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp; 2020-27-11
+            
+                <br/><i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a>
+            
+            
+                <br/><i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/laravel/" rel="tag">Laravel</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/apiato/" rel="tag">Apiato</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </div>
     </section>
 

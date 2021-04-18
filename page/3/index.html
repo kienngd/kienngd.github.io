@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.79.0" />
+	<meta name="generator" content="Hugo 0.75.1" />
     <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2020-11-27T14:42:16+07:00" />
+<meta property="og:updated_time" content="2021-04-18T19:31:37+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -30,6 +30,7 @@
     
 
     
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -38,18 +39,19 @@
 
 
 <div class="navbar-fixed">
-<nav class="blue" role="navigation">
-    <div class="row max-width">
-        <div class="col s12 l10 offset-l1">
-            
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
-                <i class="material-icons">menu</i>
-            </a>
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-            
-            <ul id="nav-mobile" class="sidenav">
-                
-                
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
     
         
             
@@ -59,20 +61,44 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
 
-            </ul>
+                    </ul>
 
-            
-            <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
-
-            
-            <div class="nav-wrapper">
-
-                
-                <ul class="right hide-on-med-and-down">
                     
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
                     
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
     
         
             
@@ -82,13 +108,39 @@
 
         
     
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
     
                     
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-</nav></div>
+</div>
 
     
 
@@ -101,18 +153,211 @@
         <article class="row max-width">
     <div class="col s12 l10 offset-l1">
         <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_create_linux_service/">How to create a linux service</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/linux/" rel="tag">Linux</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/service/" rel="tag">Service</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!</p>
+<h5 id="step-1-create-new-service-file">Step 1: Create new service file</h5>
+<pre><code>/etc/systemd/system/test_service.service
+</code></pre><p>Example file content:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Unit]</span>
+<span style="color:#a6e22e">Description</span><span style="color:#f92672">=</span><span style="color:#e6db74">Demo test service</span>
+<span style="color:#a6e22e">After</span><span style="color:#f92672">=</span><span style="color:#e6db74">network.target</span>
+<span style="color:#a6e22e">StartLimitIntervalSec</span><span style="color:#f92672">=</span><span style="color:#e6db74">0</span>
+
+<span style="color:#66d9ef">[Service]</span>
+<span style="color:#a6e22e">Type</span><span style="color:#f92672">=</span><span style="color:#e6db74">simple</span>
+<span style="color:#a6e22e">Restart</span><span style="color:#f92672">=</span><span style="color:#e6db74">always</span>
+<span style="color:#a6e22e">RestartSec</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+<span style="color:#a6e22e">User</span><span style="color:#f92672">=</span><span style="color:#e6db74">**root**</span>
+<span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">**COMMAND TO EXECUTE**</span>
+
+<span style="color:#66d9ef">[Install]</span>
+<span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">multi-user.target</span>
+</code></pre></div><p>You can see the full service defination here: <a href="#">Will be update</a></p></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/working_with_json_in_golang/">How to working with JSON in GoLang</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/golang/" rel="tag">Golang</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/json/" rel="tag">JSON</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
+<p><strong>Working with structed data</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Import package
+</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;encoding/json&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bird</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">Species</span>     <span style="color:#66d9ef">string</span>
+	<span style="color:#a6e22e">Description</span> <span style="color:#66d9ef">string</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">jsonString</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`{	
+</span><span style="color:#e6db74">		&#34;species&#34;: &#34;pigeon&#34;,
+</span><span style="color:#e6db74">		&#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34;
+</span><span style="color:#e6db74">	}`</span>
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bird</span> <span style="color:#a6e22e">Bird</span>
+	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">Unmarshal</span>([]byte(<span style="color:#a6e22e">jsonString</span>), <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">bird</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">nill</span> {
+        <span style="color:#75715e">// json string is invalid.
+</span><span style="color:#75715e"></span>    }
+    <span style="color:#f92672">...</span>
+}
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_build_free_blog/">How to build a free blog</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/hugo/" rel="tag">Hugo</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/github/" rel="tag">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
+<p><strong>Step 1</strong>: Install hugo.</p>
+<ul>
+<li>Download hugo from: <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
+<li>Install in your PC.</li>
+</ul>
+<p><strong>Step 2</strong>: Create a new site.</p>
+<ul>
+<li>Quick start document: <a href="https://gohugo.io/getting-started/">https://gohugo.io/getting-started/</a></li>
+<li>Command:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site myblog
+</code></pre></div><p><strong>Step 3</strong>: Setup your hugo theme.</p>
+<ul>
+<li>Find a theme from: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.</li>
+<li>Download theme and put into site&rsquo;s themes directory.
+Example we want to use Ananke theme:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd myblog
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</code></pre></div><ul>
+<li>Inside file config.toml.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">theme = &#34;ananke&#34;
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/knowlege/how_does_networking_work/">How does computer networking work?</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/knowlege/" rel="category tag">knowlege</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/network/" rel="tag">Network</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>This post will explain how does computer networking work.</p>
+<p>Have fun!</p></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
             <a class="orange-text text-darken-3" href="/about/">About Hugo</a>            
         </h4>
         <div style="padding-bottom: 15px;">
             
-            <span class="article-meta-author-name">Kien Nguyen</span> - <span class="article-meta-published-at grey-text text-darken-1">Oct 08, 2020</span>
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-08-10</span><br/>
+            
+            
         </div>
-        <div>Hugo is the world’s fastest framework for building websites. It is written in Go.
-It makes use of a variety of open source projects including:
- https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</div>
+        <div><p>Hugo is the <strong>world’s fastest framework for building websites</strong>. It is written in Go.</p>
+<p>It makes use of a variety of open source projects including:</p>
+<ul>
+<li><a href="https://github.com/russross/blackfriday">https://github.com/russross/blackfriday</a></li>
+<li><a href="https://github.com/alecthomas/chroma">https://github.com/alecthomas/chroma</a></li>
+<li><a href="https://github.com/muesli/smartcrop">https://github.com/muesli/smartcrop</a></li>
+<li><a href="https://github.com/spf13/cobra">https://github.com/spf13/cobra</a></li>
+<li><a href="https://github.com/spf13/viper">https://github.com/spf13/viper</a></li>
+</ul>
+<p>Learn more and contribute on <a href="https://github.com/gohugoio">GitHub</a>.</p></div>
     </div>
 </article>
 
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
 
 

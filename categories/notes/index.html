@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="notes" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kienngd.98t1.net/categories/notes/" />
+<meta property="og:updated_time" content="2021-04-16T10:55:04+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="notes"/>
+<meta name="twitter:description" content=""/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://kienngd.98t1.net/categories/notes/">
+
+    
+    <title>notes &middot; K5d</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://kienngd.98t1.net/css/materialize.min.css">
+    <link href="https://kienngd.98t1.net/css/style.css" rel="stylesheet">    
+
+    
+
+    
+    <script src="https://kit.fontawesome.com/3664f0be26.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+      
+
+
+
+<div class="navbar-fixed">
+    <div class="col s12 l10 offset-l1">
+        <nav class="blue" role="navigation">
+            <div class="row max-width">
+                <div class="col s12 l10 offset-l1">
+                    
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    
+                    <ul id="nav-mobile" class="sidenav">
+                        
+                        
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
+    
+
+                    </ul>
+
+                    
+                    <a href="/" class="brand-logo orange-text text-darken-3">K5d</a>
+
+                    
+                    <div class="nav-wrapper">
+
+                        
+                        <ul class="right hide-on-med-and-down">
+                            
+                            
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/tutorials/">Tutorials</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/notes/">Notes</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/categories/howto/">Howto</a>
+</li>
+
+        
+    
+    
+                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    
+
+    
+
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/php_pass_by_value_pass_by_reference/">PHP &ldquo;pass by value&rdquo; VS &ldquo;pass by reference&rdquo;</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-16-04</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, it is me again. Today, we will talk about &ldquo;<strong>pass by value</strong>&rdquo; or &ldquo;<strong>pass by reference</strong>&rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!</p>
+<p>We have an example class:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> {
+   <span style="color:#66d9ef">public</span> $x;
+   <span style="color:#66d9ef">public</span> $y;
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __construct($x, $y) {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> $x;
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> $y;
+   }
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setX</span>($x)
+   {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> $x;
+   }
+ 
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setY</span>($y)
+   {
+       $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> $y;
+   }
+}
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_openstack_api_using_curl/">Working with openstack api using curl</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-29-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/openstack/" rel="tag">OpenStack</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/api/" rel="tag">API</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><h5 id="get-token">Get token</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -i -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span>   -d <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">{
+</span><span style="color:#e6db74">    &#34;auth&#34;: {
+</span><span style="color:#e6db74">        &#34;identity&#34;: {
+</span><span style="color:#e6db74">            &#34;methods&#34;: [
+</span><span style="color:#e6db74">                &#34;password&#34;
+</span><span style="color:#e6db74">            ],
+</span><span style="color:#e6db74">            &#34;password&#34;: {
+</span><span style="color:#e6db74">                &#34;user&#34;: {
+</span><span style="color:#e6db74">                    &#34;name&#34;: &#34;{USERNAME}&#34;,
+</span><span style="color:#e6db74">                    &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; },
+</span><span style="color:#e6db74">                    &#34;password&#34;: &#34;{PASSWORD}&#34;
+</span><span style="color:#e6db74">                }
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        },
+</span><span style="color:#e6db74">        &#34;scope&#34;: {
+</span><span style="color:#e6db74">            &#34;project&#34;: {
+</span><span style="color:#e6db74">                &#34;id&#34;: &#34;{PROJECT_ID}&#34;
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">    }
+</span><span style="color:#e6db74">}&#39;</span>   <span style="color:#e6db74">&#34;https://{BASE URL}:5000/v3/auth/tokens&#34;</span> | grep <span style="color:#e6db74">&#34;X-Subject-Token:&#34;</span>
+</code></pre></div><p>Default keystone port is <strong>5000</strong></p>
+<p>By default, this token will be expired after 6 hours.</p></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_phpclient/">Working With Influxdb Data Using PhpClient</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>document: <a href="https://github.com/influxdata/influxdb-php">https://github.com/influxdata/influxdb-php</a></p>
+<h5 id="install-via-composer">Install via composer</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require influxdb/influxdb-php
+</code></pre></div><h5 id="create-client-object">Create client object</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">InfluxDB\Client</span>($host, $port);
+
+<span style="color:#75715e">// directly get the database object
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname));
+
+<span style="color:#75715e">// Fetch the database using a 5 second time out
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname), <span style="color:#ae81ff">5</span>);
+
+<span style="color:#75715e">// get the client to retrieve other databases
+</span><span style="color:#75715e"></span>$client <span style="color:#f92672">=</span> $database<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getClient</span>();
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_api/">Working_with_influxdb_data_using_api</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name"></span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_influx/">Working_with_influxdb_data_using_influx</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name"></span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/influxdb_docker_with_laradock/">Influxdb Docker With Laradock</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/docker/" rel="tag">Docker</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/laradock/" rel="tag">Laradock</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>In this post we will see how to run influxdb docker container using laradock. Have fun.</p>
+<p>InfluxDB docker document: <a href="https://hub.docker.com/_/influxdb">https://hub.docker.com/_/influxdb</a></p>
+<p>Edit laradock <strong>.env</strong> file:</p>
+<p><strong>Add these lines</strong> at the end of file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">### INFLUXDB ##################################################</span>
+<span style="color:#75715e"># influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest</span>
+INFLUXDB_VERSION<span style="color:#f92672">=</span>1.8
+INFLUXDB_HTTP_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8086</span>
+</code></pre></div><p>Edit <strong>docker-composer.yml</strong> file. Please remember to backup it first :).</p>
+<p><strong>Add these lines</strong> at the end of file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">### influxdb ####################################################</span>
+influxdb:
+  container_name: influxdb
+  hostname: influxdb
+  image: influxdb:<span style="color:#e6db74">${</span>INFLUXDB_VERSION<span style="color:#e6db74">}</span>
+  ports:
+    - <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>INFLUXDB_HTTP_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">:8086&#34;</span>
+  networks:
+    - backend
+  volumes:
+    - <span style="color:#e6db74">${</span>DATA_PATH_HOST<span style="color:#e6db74">}</span>/influxdb/var/lib/influxdb:/var/lib/influxdb
+</code></pre></div><p><strong>Start influxdb container</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-composer up -d influxdb
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/some_git_commands/">Some git commands</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-16-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/git/" rel="tag">Git</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>This is some git commands that I usually use.</p>
+<p><strong>Clone a repository</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone &lt;URL&gt; <span style="color:#f92672">[</span>&lt;DEST Directory&gt;<span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Clone from specific branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone --branch &lt;BRANCH NAME&gt; &lt;URL&gt; <span style="color:#f92672">[</span>&lt;DEST Directory&gt;<span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Pull code from remote master branch and merge to current banch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull origin master
+</code></pre></div><p><strong>Push code from local DEV branch to remote MASTER branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push origin dev:master
+</code></pre></div><p><strong>Create local branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout -b &lt;BRANCH NAME&gt;
+</code></pre></div><p><strong>Switch local branch</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout &lt;BRANCH NAME&gt;
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/phpdoc_docblock/">Phpdoc docblock</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-15-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#e6db74">/** This is a single line DocComment. */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a multi-line DocComment.
+</span><span style="color:#e6db74"> */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a summary
+</span><span style="color:#e6db74"> *
+</span><span style="color:#e6db74"> * This is a description
+</span><span style="color:#e6db74"> */</span>
+
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * This is a summary.
+</span><span style="color:#e6db74"> * This is a description
+</span><span style="color:#e6db74"> */</span>
+</code></pre></div><p><strong>Tags</strong> example: @api, @author, @param, @return&hellip;</p></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/notes/create_document_using_phpdoc/">Create document using phpdoc</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-15-10</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/php/" rel="tag">PHP</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/phpdocs/" rel="tag">PHPDocs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello. In this post, we will learn how to build document using phpdoc. Have fun!</p>
+<ol>
+<li>
+<p>Install phpdoc</p>
+<p><strong>Using composer</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require <span style="color:#e6db74">&#34;phpdocumentor/phpdocumentor:2.*&#34;</span>
+</code></pre></div><p>Then run command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vendor/bin/phpdoc ...
+</code></pre></div><p><strong>Manual</strong>: Download file phar from: <a href="https://github.com/phpDocumentor/phpDocumentor/releases">Github releases</a></p>
+<p>Then run command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php phpDocumentor.phar ...
+</code></pre></div></li>
+</ol></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+
+
+
+
+    
+    
+      <footer class="page-footer grey lighten-5" style="margin-top: 10px">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l12">
+        
+    </div>
+
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2020 Copyright</span>
+<div class="right grey-text text-darken-4">
+	Built with <a href="https://gohugo.io/">Hugo</a> and host by <a href="https://github.com/">Github</a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+    <script src="https://kienngd.98t1.net/js/jquery-3.2.1.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/materialize.min.js"></script>
+    <script src="https://kienngd.98t1.net/js/script.js"></script>
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180239755-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-180239755-2');
+	</script>
+  </body>
+</html>
