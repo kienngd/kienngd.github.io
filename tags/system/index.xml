@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SYSTEM on K5d</title>
+    <link>https://kienngd.98t1.net/tags/system/</link>
+    <description>Recent content in SYSTEM on K5d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Copyright</copyright>
+    <lastBuildDate>Tue, 08 Jun 2021 10:28:32 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code-Server code in your browser</title>
+      <link>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</link>
+      <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</guid>
+      <description>Hello, it is me again. Today, we will talk about Code-Server an &amp;ldquo;in browser vs code IDE&amp;rdquo;. I use Ubuntu 20.04 to test. Have fun!
+  Download Code-Server from github page: https://github.com/cdr/code-server/releases/
+ You can download rpm or deb file or tar.gz file :).    If you download rpm or deb, use PMS of your OS to install it. I download file tar.gz so I just untar it to an folder.</description>
+    </item>
+    
+  </channel>
+</rss>

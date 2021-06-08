@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/" />
-<meta property="og:updated_time" content="2021-04-18T19:31:37+07:00" />
+<meta property="og:updated_time" content="2021-06-08T10:28:32+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Home"/>
@@ -153,6 +153,48 @@
         <article class="row max-width">
     <div class="col s12 l10 offset-l1">
         <h4>
+            <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_phpclient/">Working With Influxdb Data Using PhpClient</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-20</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/influxdb/" rel="tag">InfluxDB</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>document: <a href="https://github.com/influxdata/influxdb-php">https://github.com/influxdata/influxdb-php</a></p>
+<h5 id="install-via-composer">Install via composer</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">composer require influxdb/influxdb-php
+</code></pre></div><h5 id="create-client-object">Create client object</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">InfluxDB\Client</span>($host, $port);
+
+<span style="color:#75715e">// directly get the database object
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname));
+
+<span style="color:#75715e">// Fetch the database using a 5 second time out
+</span><span style="color:#75715e"></span>$database <span style="color:#f92672">=</span> <span style="color:#a6e22e">InfluxDB\Client</span><span style="color:#f92672">::</span><span style="color:#a6e22e">fromDSN</span>(<span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;influxdb://user:pass@%s:%s/%s&#39;</span>, $host, $port, $dbname), <span style="color:#ae81ff">5</span>);
+
+<span style="color:#75715e">// get the client to retrieve other databases
+</span><span style="color:#75715e"></span>$client <span style="color:#f92672">=</span> $database<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getClient</span>();
+</code></pre></div></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
             <a class="orange-text text-darken-3" href="/notes/working_with_influxdb_data_using_api/">Working_with_influxdb_data_using_api</a>            
         </h4>
         <div style="padding-bottom: 15px;">
@@ -160,7 +202,7 @@
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name"></span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-20</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
             
@@ -188,7 +230,7 @@
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name"></span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-20</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
             
@@ -216,7 +258,7 @@
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name">Kien Nguyen</span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-20-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-20</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
             
@@ -267,7 +309,7 @@ influxdb:
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name">Kien Nguyen</span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-17-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-17</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/tutorials/" rel="category tag">tutorials</a><br/>
             
@@ -317,7 +359,7 @@ influxdb:
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name">Kien Nguyen</span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-16-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-16</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
             
@@ -358,7 +400,7 @@ influxdb:
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name">Kien Nguyen</span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-16-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-16</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
             
@@ -386,7 +428,7 @@ influxdb:
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name">Kien Nguyen</span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-15-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-15</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
             
@@ -430,7 +472,7 @@ influxdb:
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name">Kien Nguyen</span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-15-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-15</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/notes/" rel="category tag">notes</a><br/>
             
@@ -470,7 +512,7 @@ influxdb:
                 <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="article-meta-author-name">Kien Nguyen</span> - 
                 <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-14-10</span><br/>
+                <span class="article-meta-published-at grey-text text-darken-1">2020-10-14</span><br/>
             
                 <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
             
@@ -484,35 +526,6 @@ influxdb:
 <p>Example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp -r nerdtree ~/.vim/pack/vendor/start/
 </code></pre></div><p>Then inside VIM, you can use command: <strong>:NERDTree</strong></p></div>
-    </div>
-</article>
-
-        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
-    
-
-
-
-    
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/howto/how_to_disable_wifi_power_save_ubuntu_20.04/">How to disable wifi power save Ubuntu 20.04</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class="article-meta-author-name">Kien Nguyen</span> - 
-                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-11-10</span><br/>
-            
-                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
-            
-            
-                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/ubuntu/" rel="tag">Ubuntu</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            
-        </div>
-        <div><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>
-<p>I see <a href="https://unix.stackexchange.com/questions/269661/how-to-turn-off-wireless-power-management-permanently">this link</a> and try to edit file <em>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf</em> change <strong>wifi.powersave</strong> from 3 (enable power save) to 2 (disable power save). And reboot. Now the wifi works fine.</p></div>
     </div>
 </article>
 
