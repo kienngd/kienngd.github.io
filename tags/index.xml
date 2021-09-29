@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Sun, 18 Apr 2021 19:31:37 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Sep 2021 07:00:00 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal</title>
+      <link>https://kienngd.98t1.net/tags/personal/</link>
+      <pubDate>Wed, 29 Sep 2021 07:00:00 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time Managerment</title>
+      <link>https://kienngd.98t1.net/tags/time-managerment/</link>
+      <pubDate>Wed, 29 Sep 2021 07:00:00 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tags/time-managerment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code-Server</title>
+      <link>https://kienngd.98t1.net/tags/code-server/</link>
+      <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tags/code-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDE</title>
+      <link>https://kienngd.98t1.net/tags/ide/</link>
+      <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SYSTEM</title>
+      <link>https://kienngd.98t1.net/tags/system/</link>
+      <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/tags/system/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Docker</title>
       <link>https://kienngd.98t1.net/tags/docker/</link>

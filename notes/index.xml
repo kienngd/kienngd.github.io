@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Fri, 16 Apr 2021 10:55:04 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Jun 2021 10:28:32 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code-Server code in your browser</title>
+      <link>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</link>
+      <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</guid>
+      <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &lt;strong&gt;Code-Server&lt;/strong&gt; an &amp;ldquo;in browser vs code IDE&amp;rdquo;. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download &lt;strong&gt;Code-Server&lt;/strong&gt; from github page: &lt;a href=&#34;https://github.com/cdr/code-server/releases/&#34;&gt;https://github.com/cdr/code-server/releases/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;You can download &lt;strong&gt;rpm&lt;/strong&gt; or &lt;strong&gt;deb&lt;/strong&gt; file or &lt;strong&gt;tar.gz&lt;/strong&gt; file :).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you download rpm or deb, use PMS of your OS to install it. I download file &lt;strong&gt;tar.gz&lt;/strong&gt; so I just &lt;strong&gt;untar&lt;/strong&gt; it to an folder.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
     <item>
       <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
       <link>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</link>
