@@ -9,7 +9,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kienngd.98t1.net/categories/howto/" />
-<meta property="og:updated_time" content="2021-09-29T07:00:00+07:00" />
+<meta property="og:updated_time" content="2021-12-20T15:49:05+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="howto"/>
@@ -145,6 +145,42 @@
 
     
 
+
+
+
+    
+        <article class="row max-width">
+    <div class="col s12 l10 offset-l1">
+        <h4>
+            <a class="orange-text text-darken-3" href="/howto/how_to_create_ssl_cert_for_local_test_en/">How to create ssl certificate for local test environment</a>            
+        </h4>
+        <div style="padding-bottom: 15px;">
+            
+                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="article-meta-author-name">Kien Nguyen</span> - 
+                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
+                <span class="article-meta-published-at grey-text text-darken-1">2021-12-20</span><br/>
+            
+                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
+            
+            
+                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/ssl/" rel="tag">SSL</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div><p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>In bash shell, run these commands:</p>
+<p><strong>Create Certificate Authority</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">openssl genrsa -des3 -out rootCA.key <span style="color:#ae81ff">2048</span>
+</code></pre></div><p>Input some information as required. Please notice to save <strong>pass phrase for rootCA.key</strong> in a safe place. You will use this many times later.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">openssl req -x509 -new -nodes -key rootCA.key -sha256 -days <span style="color:#ae81ff">3650</span> -out rootCA.pem
+</code></pre></div><p>Change days as you want. 3650 days mean 10 years. :).</p>
+<p>Now we will have two files: <strong>rootCA.key</strong> and <strong>rootCA.pem</strong>. Now you ara a certificate provider.</p>
+<p>In your client PC, open browser (chrome, firefox&hellip;) and import file <strong>rootCA.pem</strong> to tell browser &ldquo;I am a valid certificate provider&rdquo; :).</p></div>
+    </div>
+</article>
+
+        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
+    
 
 
 
@@ -481,60 +517,44 @@ Create tunnel</p>
 
 
 
+
+
+<ul class="pagination center-align">
+    <li class="disabled">
+        <a  aria-label="Previous"><i class="material-icons">chevron_left</i></a>
+    </li>
     
-        <article class="row max-width">
-    <div class="col s12 l10 offset-l1">
-        <h4>
-            <a class="orange-text text-darken-3" href="/howto/how_to_build_free_blog/">How to build a free blog</a>            
-        </h4>
-        <div style="padding-bottom: 15px;">
-            
-                <i class="fas fa-user" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class="article-meta-author-name">Kien Nguyen</span> - 
-                <i class="fas fa-calendar-alt" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;
-                <span class="article-meta-published-at grey-text text-darken-1">2020-10-08</span><br/>
-            
-                <i class="fas fa-folder" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/categories/howto/" rel="category tag">howto</a><br/>
-            
-            
-                <i class="fas fa-tag" aria-hidden="true" style="font-size: 1.25em; color:orange;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/tags/hugo/" rel="tag">Hugo</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tags/github/" rel="tag">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            
-        </div>
-        <div><p>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
-<p><strong>Step 1</strong>: Install hugo.</p>
-<ul>
-<li>Download hugo from: <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
-<li>Install in your PC.</li>
-</ul>
-<p><strong>Step 2</strong>: Create a new site.</p>
-<ul>
-<li>Quick start document: <a href="https://gohugo.io/getting-started/">https://gohugo.io/getting-started/</a></li>
-<li>Command:</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site myblog
-</code></pre></div><p><strong>Step 3</strong>: Setup your hugo theme.</p>
-<ul>
-<li>Find a theme from: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.</li>
-<li>Download theme and put into site&rsquo;s themes directory.
-Example we want to use Ananke theme:</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd myblog
-git init
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-</code></pre></div><ul>
-<li>Inside file config.toml.</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">theme = &#34;ananke&#34;
-</code></pre></div></div>
-    </div>
-</article>
-
-        <div class="row max-width"><div class="col s12 l10 offset-l1"><hr class="article-spliter"/></div></div>
     
-
-
-
-
+        
+        
+        
+        
+            
+            
+        
+        
+            <li class="waves-effect active grey darken-4 ">
+                <a href="/categories/howto/">1</a>
+            </li>
+        
+    
+        
+        
+        
+        
+            
+            
+        
+        
+            <li class="waves-effect ">
+                <a href="/categories/howto/page/2/">2</a>
+            </li>
+        
+    
+    <li class="waves-effect">
+        <a href="/categories/howto/page/2/" aria-label="Next"><i class="material-icons">chevron_right</i></a>
+    </li>
+</ul>
 
 
 

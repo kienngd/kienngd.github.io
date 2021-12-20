@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Wed, 29 Sep 2021 07:00:00 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Dec 2021 15:49:05 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create ssl certificate for local test environment</title>
+      <link>https://kienngd.98t1.net/howto/how_to_create_ssl_cert_for_local_test_en/</link>
+      <pubDate>Mon, 20 Dec 2021 15:49:05 +0700</pubDate>
+      
+      <guid>https://kienngd.98t1.net/howto/how_to_create_ssl_cert_for_local_test_en/</guid>
+      <description>&lt;p&gt;Hello, it is me again. Today I&amp;rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
+&lt;p&gt;In bash shell, run these commands:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create Certificate Authority&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl genrsa -des3 -out rootCA.key &lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Input some information as required. Please notice to save &lt;strong&gt;pass phrase for rootCA.key&lt;/strong&gt; in a safe place. You will use this many times later.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl req -x509 -new -nodes -key rootCA.key -sha256 -days &lt;span style=&#34;color:#ae81ff&#34;&gt;3650&lt;/span&gt; -out rootCA.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change days as you want. 3650 days mean 10 years. :).&lt;/p&gt;
+&lt;p&gt;Now we will have two files: &lt;strong&gt;rootCA.key&lt;/strong&gt; and &lt;strong&gt;rootCA.pem&lt;/strong&gt;. Now you ara a certificate provider.&lt;/p&gt;
+&lt;p&gt;In your client PC, open browser (chrome, firefox&amp;hellip;) and import file &lt;strong&gt;rootCA.pem&lt;/strong&gt; to tell browser &amp;ldquo;I am a valid certificate provider&amp;rdquo; :).&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to manage your tasks list?</title>
       <link>https://kienngd.98t1.net/howto/how_to_manage_your_tasks_list/</link>
