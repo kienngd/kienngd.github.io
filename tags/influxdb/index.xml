@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>InfluxDB on K5d</title>
-    <link>https://kienngd.98t1.net/tags/influxdb/</link>
-    <description>Recent content in InfluxDB on K5d</description>
+    <title>InfluxDB on K5D</title>
+    <link>/tags/influxdb/</link>
+    <description>Recent content in InfluxDB on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Tue, 20 Oct 2020 10:02:52 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/influxdb/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Tue, 20 Oct 2020 10:02:52 +0700</lastBuildDate><atom:link href="/tags/influxdb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working With Influxdb Data Using PhpClient</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</link>
+      <link>/notes/working_with_influxdb_data_using_phpclient/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</guid>
+      <guid>/notes/working_with_influxdb_data_using_phpclient/</guid>
       <description>&lt;p&gt;document: &lt;a href=&#34;https://github.com/influxdata/influxdb-php&#34;&gt;https://github.com/influxdata/influxdb-php&lt;/a&gt;&lt;/p&gt;
 &lt;h5 id=&#34;install-via-composer&#34;&gt;Install via composer&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require influxdb/influxdb-php
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require influxdb/influxdb-php
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;create-client-object&#34;&gt;Create client object&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;($host, $port);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;($host, $port);
 
 &lt;span style=&#34;color:#75715e&#34;&gt;// directly get the database object
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$database &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fromDSN&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;&lt;/span&gt;, $host, $port, $dbname));
@@ -33,19 +32,19 @@
     
     <item>
       <title>Working_with_influxdb_data_using_api</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</link>
+      <link>/notes/working_with_influxdb_data_using_api/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:45 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</guid>
+      <guid>/notes/working_with_influxdb_data_using_api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Working_with_influxdb_data_using_influx</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</link>
+      <link>/notes/working_with_influxdb_data_using_influx/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:33 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</guid>
+      <guid>/notes/working_with_influxdb_data_using_influx/</guid>
       <description></description>
     </item>
     

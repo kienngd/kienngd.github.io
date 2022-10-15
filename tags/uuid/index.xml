@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>UUID on K5d</title>
-    <link>https://kienngd.98t1.net/tags/uuid/</link>
-    <description>Recent content in UUID on K5d</description>
+    <title>UUID on K5D</title>
+    <link>/tags/uuid/</link>
+    <description>Recent content in UUID on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Mon, 02 Nov 2020 15:37:11 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/uuid/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Mon, 02 Nov 2020 15:37:11 +0700</lastBuildDate><atom:link href="/tags/uuid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use UUID as primary key of Laravel Eloquent ORM</title>
-      <link>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</link>
+      <link>/howto/how_to_use_uuid_as_id_laravel/</link>
       <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</guid>
+      <guid>/howto/how_to_use_uuid_as_id_laravel/</guid>
       <description>&lt;p&gt;Install package using composer:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Inside migration file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;increments&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;);
 &lt;span style=&#34;color:#75715e&#34;&gt;// By this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;uuid&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;primary&lt;/span&gt;();

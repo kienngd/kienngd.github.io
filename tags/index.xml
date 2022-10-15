@@ -1,271 +1,270 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on K5d</title>
-    <link>https://kienngd.98t1.net/tags/</link>
-    <description>Recent content in Tags on K5d</description>
+    <title>Tags on K5D</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Mon, 20 Dec 2021 15:49:05 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Mon, 20 Dec 2021 15:49:05 +0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSL</title>
-      <link>https://kienngd.98t1.net/tags/ssl/</link>
+      <link>/tags/ssl/</link>
       <pubDate>Mon, 20 Dec 2021 15:49:05 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/ssl/</guid>
+      <guid>/tags/ssl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal</title>
-      <link>https://kienngd.98t1.net/tags/personal/</link>
+      <link>/tags/personal/</link>
       <pubDate>Wed, 29 Sep 2021 07:00:00 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/personal/</guid>
+      <guid>/tags/personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Time Managerment</title>
-      <link>https://kienngd.98t1.net/tags/time-managerment/</link>
+      <link>/tags/time-managerment/</link>
       <pubDate>Wed, 29 Sep 2021 07:00:00 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/time-managerment/</guid>
+      <guid>/tags/time-managerment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code-Server</title>
-      <link>https://kienngd.98t1.net/tags/code-server/</link>
+      <link>/tags/code-server/</link>
       <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/code-server/</guid>
+      <guid>/tags/code-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IDE</title>
-      <link>https://kienngd.98t1.net/tags/ide/</link>
+      <link>/tags/ide/</link>
       <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/ide/</guid>
+      <guid>/tags/ide/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SYSTEM</title>
-      <link>https://kienngd.98t1.net/tags/system/</link>
+      <link>/tags/system/</link>
       <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/system/</guid>
+      <guid>/tags/system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://kienngd.98t1.net/tags/docker/</link>
+      <link>/tags/docker/</link>
       <pubDate>Sun, 18 Apr 2021 19:31:37 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/docker/</guid>
+      <guid>/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Laradock</title>
-      <link>https://kienngd.98t1.net/tags/laradock/</link>
+      <link>/tags/laradock/</link>
       <pubDate>Sun, 18 Apr 2021 19:31:37 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/laradock/</guid>
+      <guid>/tags/laradock/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://kienngd.98t1.net/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Sun, 18 Apr 2021 19:31:37 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PHP</title>
-      <link>https://kienngd.98t1.net/tags/php/</link>
+      <link>/tags/php/</link>
       <pubDate>Fri, 16 Apr 2021 10:55:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/php/</guid>
+      <guid>/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://kienngd.98t1.net/tags/ssh/</link>
+      <link>/tags/ssh/</link>
       <pubDate>Tue, 30 Mar 2021 09:34:48 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/ssh/</guid>
+      <guid>/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apiato</title>
-      <link>https://kienngd.98t1.net/tags/apiato/</link>
+      <link>/tags/apiato/</link>
       <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/apiato/</guid>
+      <guid>/tags/apiato/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Laravel</title>
-      <link>https://kienngd.98t1.net/tags/laravel/</link>
+      <link>/tags/laravel/</link>
       <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/laravel/</guid>
+      <guid>/tags/laravel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>UUID</title>
-      <link>https://kienngd.98t1.net/tags/uuid/</link>
+      <link>/tags/uuid/</link>
       <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/uuid/</guid>
+      <guid>/tags/uuid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>API</title>
-      <link>https://kienngd.98t1.net/tags/api/</link>
+      <link>/tags/api/</link>
       <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/api/</guid>
+      <guid>/tags/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OpenStack</title>
-      <link>https://kienngd.98t1.net/tags/openstack/</link>
+      <link>/tags/openstack/</link>
       <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/openstack/</guid>
+      <guid>/tags/openstack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>InfluxDB</title>
-      <link>https://kienngd.98t1.net/tags/influxdb/</link>
+      <link>/tags/influxdb/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/influxdb/</guid>
+      <guid>/tags/influxdb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React-Admin</title>
-      <link>https://kienngd.98t1.net/tags/react-admin/</link>
+      <link>/tags/react-admin/</link>
       <pubDate>Sat, 17 Oct 2020 23:17:57 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/react-admin/</guid>
+      <guid>/tags/react-admin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ReactJS</title>
-      <link>https://kienngd.98t1.net/tags/reactjs/</link>
+      <link>/tags/reactjs/</link>
       <pubDate>Sat, 17 Oct 2020 23:17:57 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/reactjs/</guid>
+      <guid>/tags/reactjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://kienngd.98t1.net/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Fri, 16 Oct 2020 11:02:20 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PHPDocs</title>
-      <link>https://kienngd.98t1.net/tags/phpdocs/</link>
+      <link>/tags/phpdocs/</link>
       <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/phpdocs/</guid>
+      <guid>/tags/phpdocs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VIM</title>
-      <link>https://kienngd.98t1.net/tags/vim/</link>
+      <link>/tags/vim/</link>
       <pubDate>Wed, 14 Oct 2020 09:08:18 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/vim/</guid>
+      <guid>/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>https://kienngd.98t1.net/tags/ubuntu/</link>
+      <link>/tags/ubuntu/</link>
       <pubDate>Sun, 11 Oct 2020 23:15:36 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/ubuntu/</guid>
+      <guid>/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Service</title>
-      <link>https://kienngd.98t1.net/tags/service/</link>
+      <link>/tags/service/</link>
       <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/service/</guid>
+      <guid>/tags/service/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://kienngd.98t1.net/tags/golang/</link>
+      <link>/tags/golang/</link>
       <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/golang/</guid>
+      <guid>/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JSON</title>
-      <link>https://kienngd.98t1.net/tags/json/</link>
+      <link>/tags/json/</link>
       <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/json/</guid>
+      <guid>/tags/json/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub</title>
-      <link>https://kienngd.98t1.net/tags/github/</link>
+      <link>/tags/github/</link>
       <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/github/</guid>
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://kienngd.98t1.net/tags/hugo/</link>
+      <link>/tags/hugo/</link>
       <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/hugo/</guid>
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network</title>
-      <link>https://kienngd.98t1.net/tags/network/</link>
+      <link>/tags/network/</link>
       <pubDate>Thu, 08 Oct 2020 09:23:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tags/network/</guid>
+      <guid>/tags/network/</guid>
       <description></description>
     </item>
     

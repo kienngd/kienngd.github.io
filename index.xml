@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on K5d</title>
-    <link>https://kienngd.98t1.net/</link>
-    <description>Recent content in Home on K5d</description>
+    <title>Home on K5D</title>
+    <link>/</link>
+    <description>Recent content in Home on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Mon, 20 Dec 2021 15:49:05 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Mon, 20 Dec 2021 15:49:05 +0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to create ssl certificate for local test environment</title>
-      <link>https://kienngd.98t1.net/howto/how_to_create_ssl_cert_for_local_test_en/</link>
+      <link>/howto/how_to_create_ssl_cert_for_local_test_en/</link>
       <pubDate>Mon, 20 Dec 2021 15:49:05 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_create_ssl_cert_for_local_test_en/</guid>
+      <guid>/howto/how_to_create_ssl_cert_for_local_test_en/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today I&amp;rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;p&gt;In bash shell, run these commands:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Create Certificate Authority&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl genrsa -des3 -out rootCA.key &lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl genrsa -des3 -out rootCA.key &lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Input some information as required. Please notice to save &lt;strong&gt;pass phrase for rootCA.key&lt;/strong&gt; in a safe place. You will use this many times later.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl req -x509 -new -nodes -key rootCA.key -sha256 -days &lt;span style=&#34;color:#ae81ff&#34;&gt;3650&lt;/span&gt; -out rootCA.pem
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl req -x509 -new -nodes -key rootCA.key -sha256 -days &lt;span style=&#34;color:#ae81ff&#34;&gt;3650&lt;/span&gt; -out rootCA.pem
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change days as you want. 3650 days mean 10 years. :).&lt;/p&gt;
 &lt;p&gt;Now we will have two files: &lt;strong&gt;rootCA.key&lt;/strong&gt; and &lt;strong&gt;rootCA.pem&lt;/strong&gt;. Now you ara a certificate provider.&lt;/p&gt;
 &lt;p&gt;In your client PC, open browser (chrome, firefox&amp;hellip;) and import file &lt;strong&gt;rootCA.pem&lt;/strong&gt; to tell browser &amp;ldquo;I am a valid certificate provider&amp;rdquo; :).&lt;/p&gt;</description>
@@ -27,21 +26,21 @@
     
     <item>
       <title>How to manage your tasks list?</title>
-      <link>https://kienngd.98t1.net/howto/how_to_manage_your_tasks_list/</link>
+      <link>/howto/how_to_manage_your_tasks_list/</link>
       <pubDate>Wed, 29 Sep 2021 07:00:00 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_manage_your_tasks_list/</guid>
+      <guid>/howto/how_to_manage_your_tasks_list/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today I&amp;rsquo;ll tell you how I manage my tasks.&lt;/p&gt;
 &lt;p&gt;When I take a task, first of all I&amp;rsquo;ll set it one (or more) &lt;strong&gt;tags&lt;/strong&gt;. Then I set it a &lt;strong&gt;due date&lt;/strong&gt;. And finally put it in to a list. Very simple :).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kienngd.98t1.net/images/tasks_list.png&#34; alt=&#34;tasks list management&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;/images/tasks_list.png&#34; alt=&#34;tasks list management&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Code-Server code in your browser</title>
-      <link>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</link>
+      <link>/notes/code_server_code_in_your_browser/</link>
       <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</guid>
+      <guid>/notes/code_server_code_in_your_browser/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &lt;strong&gt;Code-Server&lt;/strong&gt; an &amp;ldquo;in browser vs code IDE&amp;rdquo;. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Download &lt;strong&gt;Code-Server&lt;/strong&gt; from github page: &lt;a href=&#34;https://github.com/cdr/code-server/releases/&#34;&gt;https://github.com/cdr/code-server/releases/&lt;/a&gt;
@@ -55,15 +54,15 @@
     
     <item>
       <title>How to use PHP8 with Laradock</title>
-      <link>https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/</link>
+      <link>/howto/how_to_use_php8_with_laradock/</link>
       <pubDate>Sun, 18 Apr 2021 19:31:37 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/</guid>
+      <guid>/howto/how_to_use_php8_with_laradock/</guid>
       <description>&lt;p&gt;Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.&lt;/p&gt;
 &lt;p&gt;First of all please remember that it is very important to &lt;strong&gt;backup&lt;/strong&gt; your configuration file: &lt;strong&gt;docker-compose.yml&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Now, edit your files: &lt;strong&gt;docker-compose.yml&lt;/strong&gt; and &lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;…
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;…
 &lt;span style=&#34;color:#75715e&#34;&gt;#PHP 8 version&lt;/span&gt;
 PHP8_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;8.0
 …
@@ -80,13 +79,13 @@ WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT&lt;span style=&#34;color:#f92672&#34;
     
     <item>
       <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
-      <link>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</link>
+      <link>/notes/php_pass_by_value_pass_by_reference/</link>
       <pubDate>Fri, 16 Apr 2021 10:55:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</guid>
+      <guid>/notes/php_pass_by_value_pass_by_reference/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &amp;ldquo;&lt;strong&gt;pass by value&lt;/strong&gt;&amp;rdquo; or &amp;ldquo;&lt;strong&gt;pass by reference&lt;/strong&gt;&amp;rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!&lt;/p&gt;
 &lt;p&gt;We have an example class:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $x;
    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $y;
  
@@ -110,47 +109,47 @@ WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT&lt;span style=&#34;color:#f92672&#34;
     
     <item>
       <title>How to connect to a service on the remote server via SSH tunnel</title>
-      <link>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</link>
+      <link>/howto/how_to_connect_service_via_ssh_tunnel/</link>
       <pubDate>Tue, 30 Mar 2021 09:34:48 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</guid>
+      <guid>/howto/how_to_connect_service_via_ssh_tunnel/</guid>
       <description>&lt;p&gt;Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;p&gt;Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.&lt;/p&gt;
 &lt;p&gt;But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&amp;hellip;). In these cases you can create a SSH tunnel then connect via tunnel.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;u&gt;Option 1&lt;/u&gt;&lt;/strong&gt;: Command line
+&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;Option 1&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;: Command line
 Create tunnel&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_PORT_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_ADDRESS_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_PORT_TO_FORWARD&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_USER_NAME&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;@&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_IP&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_PORT_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_ADDRESS_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_PORT_TO_FORWARD&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_USER_NAME&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;@&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_IP&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Apiato select language</title>
-      <link>https://kienngd.98t1.net/tutorials/apiato_select_language/</link>
+      <link>/tutorials/apiato_select_language/</link>
       <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/apiato_select_language/</guid>
+      <guid>/tutorials/apiato_select_language/</guid>
       <description>&lt;p&gt;Hello, today we will learn how to add select language to an ApiAto web app. Have fun!&lt;/p&gt;
 &lt;p&gt;Document: &lt;a href=&#34;https://docs.apiato.io/features/localization/&#34;&gt;https://docs.apiato.io/features/localization/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Step 1&lt;/u&gt;: Add new language to supported language:&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Step 1&lt;!-- raw HTML omitted --&gt;: Add new language to supported language:&lt;/p&gt;
 &lt;p&gt;Edit &lt;strong&gt;supported_languages&lt;/strong&gt; inside file &lt;strong&gt;app/Containers/Localization/Configs/localization.php&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Laravel logout other devices</title>
-      <link>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</link>
+      <link>/tutorials/laravel_logout_other_devices/</link>
       <pubDate>Fri, 27 Nov 2020 14:42:16 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</guid>
+      <guid>/tutorials/laravel_logout_other_devices/</guid>
       <description>&lt;p&gt;Check file: &lt;strong&gt;app/Http/Kernel.php&lt;/strong&gt; (or file &lt;strong&gt;app/Ship/Kernels/HttpKernel.php&lt;/strong&gt; if you use Apiato) and uncomment this line:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;web&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; [
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;web&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; [
     &lt;span style=&#34;color:#75715e&#34;&gt;// ...
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;\Illuminate\Session\Middleware\AuthenticateSession&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;,
     &lt;span style=&#34;color:#75715e&#34;&gt;// ...
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;],
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Logout all other devices:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Illuminate\Support\Facades\Auth&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Illuminate\Support\Facades\Auth&lt;/span&gt;;
 &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logoutOtherDevices&lt;/span&gt;($password);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
@@ -158,18 +157,18 @@ Create tunnel&lt;/p&gt;
     
     <item>
       <title>Laravel Roles Permissions</title>
-      <link>https://kienngd.98t1.net/tutorials/laravel_roles_permissions/</link>
+      <link>/tutorials/laravel_roles_permissions/</link>
       <pubDate>Fri, 27 Nov 2020 09:44:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/laravel_roles_permissions/</guid>
+      <guid>/tutorials/laravel_roles_permissions/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Create role, permission&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Role&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Role&lt;/span&gt;;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Permission&lt;/span&gt;;
 
 $role &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Role&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;admin&amp;#39;&lt;/span&gt;]);
 $permission &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Permission&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;create-articles&amp;#39;&lt;/span&gt;]);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Assign / Sync / Revoke permission to role&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Assign
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Assign
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;givePermissionTo&lt;/span&gt;($permission); &lt;span style=&#34;color:#75715e&#34;&gt;// $permission can be string / object / array of strings / array of objects
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;assignRole&lt;/span&gt;($role);
 
@@ -182,7 +181,7 @@ $permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;s
 $permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;removeRole&lt;/span&gt;($role);
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Check roles permissons&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPermissionTo&lt;/span&gt;($permission);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPermissionTo&lt;/span&gt;($permission);
 $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAnyPermission&lt;/span&gt;($permissions);
 $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAllPermissions&lt;/span&gt;($permissions);
 
@@ -191,42 +190,42 @@ $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span st
     
     <item>
       <title>Apiato laravel based framework</title>
-      <link>https://kienngd.98t1.net/tutorials/apiato/</link>
+      <link>/tutorials/apiato/</link>
       <pubDate>Thu, 26 Nov 2020 08:36:20 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/apiato/</guid>
+      <guid>/tutorials/apiato/</guid>
       <description>&lt;p&gt;Home page: &lt;a href=&#34;http://docs.apiato.io/&#34;&gt;http://docs.apiato.io/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Create project using composer from latest stable&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer create-project apiato/apiato apiato9
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer create-project apiato/apiato apiato9
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit the .env file.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Migrate database&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan migrate
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan migrate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create admin user, some permissions, roles&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan db:seed
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan db:seed
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Default account is: &lt;a href=&#34;mailto:admin@admin.com&#34;&gt;admin@admin.com&lt;/a&gt; / admin.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add all current permissions to admin role.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:permissions:toRole admin
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:permissions:toRole admin
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Install OAuth 2.0&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan passport:install
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan passport:install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit file &lt;strong&gt;.env&lt;/strong&gt; update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Install ApiDocJs&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yarn install
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yarn install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create api doc&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:apidoc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your default document url is: http://&lt;Your domain&gt;/api/documentation and http://&lt;Your domain&gt;/api/private/documentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:apidoc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your default document url is: http://&lt;!-- raw HTML omitted --&gt;/api/documentation and http://&lt;!-- raw HTML omitted --&gt;/api/private/documentation&lt;/p&gt;
 &lt;p&gt;Default result is saved in: &lt;strong&gt;public/api/documentation/&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Use UUID as primary key of Laravel Eloquent ORM</title>
-      <link>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</link>
+      <link>/howto/how_to_use_uuid_as_id_laravel/</link>
       <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</guid>
+      <guid>/howto/how_to_use_uuid_as_id_laravel/</guid>
       <description>&lt;p&gt;Install package using composer:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Inside migration file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;increments&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;);
 &lt;span style=&#34;color:#75715e&#34;&gt;// By this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;uuid&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;primary&lt;/span&gt;();
@@ -235,12 +234,12 @@ $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span st
     
     <item>
       <title>Working with openstack api using curl</title>
-      <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>
+      <link>/notes/working_with_openstack_api_using_curl/</link>
       <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
+      <guid>/notes/working_with_openstack_api_using_curl/</guid>
       <description>&lt;h5 id=&#34;get-token&#34;&gt;Get token&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s -i -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt;   -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s -i -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt;   -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;auth&amp;#34;: {
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        &amp;#34;identity&amp;#34;: {
@@ -268,15 +267,15 @@ $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span st
     
     <item>
       <title>Working With Influxdb Data Using PhpClient</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</link>
+      <link>/notes/working_with_influxdb_data_using_phpclient/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</guid>
+      <guid>/notes/working_with_influxdb_data_using_phpclient/</guid>
       <description>&lt;p&gt;document: &lt;a href=&#34;https://github.com/influxdata/influxdb-php&#34;&gt;https://github.com/influxdata/influxdb-php&lt;/a&gt;&lt;/p&gt;
 &lt;h5 id=&#34;install-via-composer&#34;&gt;Install via composer&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require influxdb/influxdb-php
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require influxdb/influxdb-php
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;create-client-object&#34;&gt;Create client object&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;($host, $port);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;($host, $port);
 
 &lt;span style=&#34;color:#75715e&#34;&gt;// directly get the database object
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$database &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fromDSN&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;&lt;/span&gt;, $host, $port, $dbname));
@@ -291,39 +290,39 @@ $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span st
     
     <item>
       <title>Working_with_influxdb_data_using_api</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</link>
+      <link>/notes/working_with_influxdb_data_using_api/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:45 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</guid>
+      <guid>/notes/working_with_influxdb_data_using_api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Working_with_influxdb_data_using_influx</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</link>
+      <link>/notes/working_with_influxdb_data_using_influx/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:33 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</guid>
+      <guid>/notes/working_with_influxdb_data_using_influx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Influxdb Docker With Laradock</title>
-      <link>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</link>
+      <link>/notes/influxdb_docker_with_laradock/</link>
       <pubDate>Tue, 20 Oct 2020 09:09:57 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</guid>
+      <guid>/notes/influxdb_docker_with_laradock/</guid>
       <description>&lt;p&gt;In this post we will see how to run influxdb docker container using laradock. Have fun.&lt;/p&gt;
 &lt;p&gt;InfluxDB docker document: &lt;a href=&#34;https://hub.docker.com/_/influxdb&#34;&gt;https://hub.docker.com/_/influxdb&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edit laradock &lt;strong&gt;.env&lt;/strong&gt; file:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### INFLUXDB ##################################################&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### INFLUXDB ##################################################&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest&lt;/span&gt;
 INFLUXDB_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1.8
 INFLUXDB_HTTP_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8086&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit &lt;strong&gt;docker-composer.yml&lt;/strong&gt; file. Please remember to backup it first :).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### influxdb ####################################################&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### influxdb ####################################################&lt;/span&gt;
 influxdb:
   container_name: influxdb
   hostname: influxdb
@@ -335,23 +334,23 @@ influxdb:
   volumes:
     - &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;DATA_PATH_HOST&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/influxdb/var/lib/influxdb:/var/lib/influxdb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Start influxdb container&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-composer up -d influxdb
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-composer up -d influxdb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>React Admin P1</title>
-      <link>https://kienngd.98t1.net/tutorials/react-admin-p1/</link>
+      <link>/tutorials/react-admin-p1/</link>
       <pubDate>Sat, 17 Oct 2020 23:17:57 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/react-admin-p1/</guid>
+      <guid>/tutorials/react-admin-p1/</guid>
       <description>&lt;h5 id=&#34;react-admin-tutorial-notes&#34;&gt;React-Admin tutorial notes&lt;/h5&gt;
 &lt;p&gt;Create new project and install packages&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;yarn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;react&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;admin&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;yarn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;react&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;admin&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;admin&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;yarn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;react&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;admin&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ra&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;server&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prop&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;types&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit file src/App.js&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;react&amp;#34;&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;react&amp;#34;&lt;/span&gt;;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;Admin&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Resource&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;react-admin&amp;#39;&lt;/span&gt;;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;jsonServerProvider&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ra-data-json-server&amp;#39;&lt;/span&gt;;
 
@@ -372,32 +371,32 @@ influxdb:
     
     <item>
       <title>Some git commands</title>
-      <link>https://kienngd.98t1.net/notes/some_git_commands/</link>
+      <link>/notes/some_git_commands/</link>
       <pubDate>Fri, 16 Oct 2020 11:02:20 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/some_git_commands/</guid>
+      <guid>/notes/some_git_commands/</guid>
       <description>&lt;p&gt;This is some git commands that I usually use.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Clone a repository&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Clone from specific branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pull code from remote master branch and merge to current banch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git pull origin master
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git pull origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Push code from local DEV branch to remote MASTER branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push origin dev:master
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push origin dev:master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create local branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout -b &amp;lt;BRANCH NAME&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout -b &amp;lt;BRANCH NAME&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Switch local branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout &amp;lt;BRANCH NAME&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout &amp;lt;BRANCH NAME&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>How to check my ip</title>
-      <link>https://kienngd.98t1.net/howto/how_to_check_my_ip/</link>
+      <link>/howto/how_to_check_my_ip/</link>
       <pubDate>Fri, 16 Oct 2020 10:54:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_check_my_ip/</guid>
+      <guid>/howto/how_to_check_my_ip/</guid>
       <description>&lt;p&gt;Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!&lt;/p&gt;
 &lt;p&gt;Open your browser to access this link: &lt;a href=&#34;https://api.myip.com/&#34;&gt;https://api.myip.com/&lt;/a&gt;. You can see something like this: {&amp;ldquo;ip&amp;rdquo;:&amp;ldquo;115.75.212.27&amp;rdquo;,&amp;ldquo;country&amp;rdquo;:&amp;ldquo;Viet Nam&amp;rdquo;,&amp;ldquo;cc&amp;rdquo;:&amp;ldquo;VN&amp;rdquo;} so your IP is: &lt;strong&gt;115.75.212.27&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bonus&lt;/strong&gt;: You can use curl command to get data too.&lt;/p&gt;</description>
@@ -405,11 +404,11 @@ influxdb:
     
     <item>
       <title>Phpdoc docblock</title>
-      <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>
+      <link>/notes/phpdoc_docblock/</link>
       <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/phpdoc_docblock/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/** This is a single line DocComment. */&lt;/span&gt;
+      <guid>/notes/phpdoc_docblock/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/** This is a single line DocComment. */&lt;/span&gt;
 
 &lt;span style=&#34;color:#e6db74&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a multi-line DocComment.
@@ -430,60 +429,60 @@ influxdb:
     
     <item>
       <title>Create document using phpdoc</title>
-      <link>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</link>
+      <link>/notes/create_document_using_phpdoc/</link>
       <pubDate>Thu, 15 Oct 2020 10:49:07 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</guid>
+      <guid>/notes/create_document_using_phpdoc/</guid>
       <description>&lt;p&gt;Hello. In this post, we will learn how to build document using phpdoc. Have fun!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install phpdoc&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Using composer&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then run command&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vendor/bin/phpdoc ...
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vendor/bin/phpdoc ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Manual&lt;/strong&gt;: Download file phar from: &lt;a href=&#34;https://github.com/phpDocumentor/phpDocumentor/releases&#34;&gt;Github releases&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Then run command&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php phpDocumentor.phar ...
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php phpDocumentor.phar ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
     
     <item>
       <title>How to install VIM plugins</title>
-      <link>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</link>
+      <link>/howto/how_to_install_vim_plugins/</link>
       <pubDate>Wed, 14 Oct 2020 09:08:18 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</guid>
+      <guid>/howto/how_to_install_vim_plugins/</guid>
       <description>&lt;p&gt;Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;p&gt;If you want to install plugin named &lt;strong&gt;nerdtree&lt;/strong&gt;,&lt;/p&gt;
 &lt;p&gt;1st way: Copy plugin files to: &lt;strong&gt;~/.vim/pack/vendor/start&lt;/strong&gt; and they will be load when you launch VIM&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cp -r nerdtree ~/.vim/pack/vendor/start/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cp -r nerdtree ~/.vim/pack/vendor/start/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then inside VIM, you can use command: &lt;strong&gt;:NERDTree&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to disable wifi power save Ubuntu 20.04</title>
-      <link>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
+      <link>/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
       <pubDate>Sun, 11 Oct 2020 23:15:36 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
+      <guid>/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
       <description>&lt;p&gt;Hello, today I&amp;rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.&lt;/p&gt;
 &lt;p&gt;I see &lt;a href=&#34;https://unix.stackexchange.com/questions/269661/how-to-turn-off-wireless-power-management-permanently&#34;&gt;this link&lt;/a&gt; and try to edit file &lt;em&gt;/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf&lt;/em&gt; change &lt;strong&gt;wifi.powersave&lt;/strong&gt; from 3 (enable power save) to 2 (disable power save). And reboot. Now the wifi works fine.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to create a linux service</title>
-      <link>https://kienngd.98t1.net/howto/how_to_create_linux_service/</link>
+      <link>/howto/how_to_create_linux_service/</link>
       <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_create_linux_service/</guid>
+      <guid>/howto/how_to_create_linux_service/</guid>
       <description>&lt;p&gt;Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;h5 id=&#34;step-1-create-new-service-file&#34;&gt;Step 1: Create new service file&lt;/h5&gt;
-&lt;pre&gt;&lt;code&gt;/etc/systemd/system/test_service.service
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example file content:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Unit]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;/etc/systemd/system/test_service.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example file content:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Unit]&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;Description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Demo test service&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;After&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;network.target&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;StartLimitIntervalSec&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;0&lt;/span&gt;
@@ -502,13 +501,13 @@ influxdb:
     
     <item>
       <title>How to working with JSON in GoLang</title>
-      <link>https://kienngd.98t1.net/howto/working_with_json_in_golang/</link>
+      <link>/howto/working_with_json_in_golang/</link>
       <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/working_with_json_in_golang/</guid>
+      <guid>/howto/working_with_json_in_golang/</guid>
       <description>&lt;p&gt;In this post, we will learn how to parse json data in GoLang. Have fun!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Working with structed data&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Import package
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Import package
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; (
 	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;encoding/json&amp;#34;&lt;/span&gt;
 )
@@ -535,10 +534,10 @@ influxdb:
     
     <item>
       <title>How to build a free blog</title>
-      <link>https://kienngd.98t1.net/howto/how_to_build_free_blog/</link>
+      <link>/howto/how_to_build_free_blog/</link>
       <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_build_free_blog/</guid>
+      <guid>/howto/how_to_build_free_blog/</guid>
       <description>&lt;p&gt;Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Install hugo.&lt;/p&gt;
 &lt;ul&gt;
@@ -550,39 +549,39 @@ influxdb:
 &lt;li&gt;Quick start document: &lt;a href=&#34;https://gohugo.io/getting-started/&#34;&gt;https://gohugo.io/getting-started/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Command:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site myblog
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site myblog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: Setup your hugo theme.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Find a theme from: &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Download theme and put into site&amp;rsquo;s themes directory.
 Example we want to use Ananke theme:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd myblog
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd myblog
 git init
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Inside file config.toml.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;theme = &amp;#34;ananke&amp;#34;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;theme = &amp;#34;ananke&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>How does computer networking work?</title>
-      <link>https://kienngd.98t1.net/knowlege/how_does_networking_work/</link>
+      <link>/knowlege/how_does_networking_work/</link>
       <pubDate>Thu, 08 Oct 2020 09:23:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/knowlege/how_does_networking_work/</guid>
+      <guid>/knowlege/how_does_networking_work/</guid>
       <description>&lt;p&gt;This post will explain how does computer networking work.&lt;/p&gt;
 &lt;p&gt;Have fun!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About Hugo</title>
-      <link>https://kienngd.98t1.net/about/</link>
+      <link>/about/</link>
       <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kienngd.98t1.net/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;Hugo is the &lt;strong&gt;world’s fastest framework for building websites&lt;/strong&gt;. It is written in Go.&lt;/p&gt;
 &lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
 &lt;ul&gt;

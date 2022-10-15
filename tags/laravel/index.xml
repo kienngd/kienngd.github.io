@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Laravel on K5d</title>
-    <link>https://kienngd.98t1.net/tags/laravel/</link>
-    <description>Recent content in Laravel on K5d</description>
+    <title>Laravel on K5D</title>
+    <link>/tags/laravel/</link>
+    <description>Recent content in Laravel on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Thu, 25 Mar 2021 15:36:54 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Thu, 25 Mar 2021 15:36:54 +0700</lastBuildDate><atom:link href="/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apiato select language</title>
-      <link>https://kienngd.98t1.net/tutorials/apiato_select_language/</link>
+      <link>/tutorials/apiato_select_language/</link>
       <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/apiato_select_language/</guid>
+      <guid>/tutorials/apiato_select_language/</guid>
       <description>&lt;p&gt;Hello, today we will learn how to add select language to an ApiAto web app. Have fun!&lt;/p&gt;
 &lt;p&gt;Document: &lt;a href=&#34;https://docs.apiato.io/features/localization/&#34;&gt;https://docs.apiato.io/features/localization/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Step 1&lt;/u&gt;: Add new language to supported language:&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Step 1&lt;!-- raw HTML omitted --&gt;: Add new language to supported language:&lt;/p&gt;
 &lt;p&gt;Edit &lt;strong&gt;supported_languages&lt;/strong&gt; inside file &lt;strong&gt;app/Containers/Localization/Configs/localization.php&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Laravel logout other devices</title>
-      <link>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</link>
+      <link>/tutorials/laravel_logout_other_devices/</link>
       <pubDate>Fri, 27 Nov 2020 14:42:16 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/laravel_logout_other_devices/</guid>
+      <guid>/tutorials/laravel_logout_other_devices/</guid>
       <description>&lt;p&gt;Check file: &lt;strong&gt;app/Http/Kernel.php&lt;/strong&gt; (or file &lt;strong&gt;app/Ship/Kernels/HttpKernel.php&lt;/strong&gt; if you use Apiato) and uncomment this line:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;web&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; [
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;web&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; [
     &lt;span style=&#34;color:#75715e&#34;&gt;// ...
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;\Illuminate\Session\Middleware\AuthenticateSession&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;,
     &lt;span style=&#34;color:#75715e&#34;&gt;// ...
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;],
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Logout all other devices:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Illuminate\Support\Facades\Auth&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Illuminate\Support\Facades\Auth&lt;/span&gt;;
 &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logoutOtherDevices&lt;/span&gt;($password);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
@@ -41,18 +40,18 @@
     
     <item>
       <title>Laravel Roles Permissions</title>
-      <link>https://kienngd.98t1.net/tutorials/laravel_roles_permissions/</link>
+      <link>/tutorials/laravel_roles_permissions/</link>
       <pubDate>Fri, 27 Nov 2020 09:44:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/laravel_roles_permissions/</guid>
+      <guid>/tutorials/laravel_roles_permissions/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Create role, permission&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Role&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Role&lt;/span&gt;;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Permission&lt;/span&gt;;
 
 $role &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Role&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;admin&amp;#39;&lt;/span&gt;]);
 $permission &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Permission&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;create-articles&amp;#39;&lt;/span&gt;]);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Assign / Sync / Revoke permission to role&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Assign
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Assign
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;givePermissionTo&lt;/span&gt;($permission); &lt;span style=&#34;color:#75715e&#34;&gt;// $permission can be string / object / array of strings / array of objects
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;assignRole&lt;/span&gt;($role);
 
@@ -65,7 +64,7 @@ $permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;s
 $permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;removeRole&lt;/span&gt;($role);
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Check roles permissons&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPermissionTo&lt;/span&gt;($permission);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPermissionTo&lt;/span&gt;($permission);
 $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAnyPermission&lt;/span&gt;($permissions);
 $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAllPermissions&lt;/span&gt;($permissions);
 
@@ -74,42 +73,42 @@ $role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span st
     
     <item>
       <title>Apiato laravel based framework</title>
-      <link>https://kienngd.98t1.net/tutorials/apiato/</link>
+      <link>/tutorials/apiato/</link>
       <pubDate>Thu, 26 Nov 2020 08:36:20 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/tutorials/apiato/</guid>
+      <guid>/tutorials/apiato/</guid>
       <description>&lt;p&gt;Home page: &lt;a href=&#34;http://docs.apiato.io/&#34;&gt;http://docs.apiato.io/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Create project using composer from latest stable&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer create-project apiato/apiato apiato9
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer create-project apiato/apiato apiato9
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit the .env file.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Migrate database&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan migrate
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan migrate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create admin user, some permissions, roles&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan db:seed
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan db:seed
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Default account is: &lt;a href=&#34;mailto:admin@admin.com&#34;&gt;admin@admin.com&lt;/a&gt; / admin.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add all current permissions to admin role.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:permissions:toRole admin
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:permissions:toRole admin
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Install OAuth 2.0&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan passport:install
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan passport:install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit file &lt;strong&gt;.env&lt;/strong&gt; update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Install ApiDocJs&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yarn install
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yarn install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create api doc&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:apidoc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your default document url is: http://&lt;Your domain&gt;/api/documentation and http://&lt;Your domain&gt;/api/private/documentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:apidoc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your default document url is: http://&lt;!-- raw HTML omitted --&gt;/api/documentation and http://&lt;!-- raw HTML omitted --&gt;/api/private/documentation&lt;/p&gt;
 &lt;p&gt;Default result is saved in: &lt;strong&gt;public/api/documentation/&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Use UUID as primary key of Laravel Eloquent ORM</title>
-      <link>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</link>
+      <link>/howto/how_to_use_uuid_as_id_laravel/</link>
       <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</guid>
+      <guid>/howto/how_to_use_uuid_as_id_laravel/</guid>
       <description>&lt;p&gt;Install package using composer:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Inside migration file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;increments&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;);
 &lt;span style=&#34;color:#75715e&#34;&gt;// By this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;uuid&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;primary&lt;/span&gt;();

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JSON on K5d</title>
-    <link>https://kienngd.98t1.net/tags/json/</link>
-    <description>Recent content in JSON on K5d</description>
+    <title>JSON on K5D</title>
+    <link>/tags/json/</link>
+    <description>Recent content in JSON on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Thu, 08 Oct 2020 13:34:54 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Thu, 08 Oct 2020 13:34:54 +0700</lastBuildDate><atom:link href="/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to working with JSON in GoLang</title>
-      <link>https://kienngd.98t1.net/howto/working_with_json_in_golang/</link>
+      <link>/howto/working_with_json_in_golang/</link>
       <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/working_with_json_in_golang/</guid>
+      <guid>/howto/working_with_json_in_golang/</guid>
       <description>&lt;p&gt;In this post, we will learn how to parse json data in GoLang. Have fun!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Working with structed data&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Import package
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Import package
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; (
 	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;encoding/json&amp;#34;&lt;/span&gt;
 )

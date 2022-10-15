@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>howto on K5d</title>
-    <link>https://kienngd.98t1.net/categories/howto/</link>
-    <description>Recent content in howto on K5d</description>
+    <title>howto on K5D</title>
+    <link>/categories/howto/</link>
+    <description>Recent content in howto on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Mon, 20 Dec 2021 15:49:05 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/categories/howto/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Mon, 20 Dec 2021 15:49:05 +0700</lastBuildDate><atom:link href="/categories/howto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to create ssl certificate for local test environment</title>
-      <link>https://kienngd.98t1.net/howto/how_to_create_ssl_cert_for_local_test_en/</link>
+      <link>/howto/how_to_create_ssl_cert_for_local_test_en/</link>
       <pubDate>Mon, 20 Dec 2021 15:49:05 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_create_ssl_cert_for_local_test_en/</guid>
+      <guid>/howto/how_to_create_ssl_cert_for_local_test_en/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today I&amp;rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;p&gt;In bash shell, run these commands:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Create Certificate Authority&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl genrsa -des3 -out rootCA.key &lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl genrsa -des3 -out rootCA.key &lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Input some information as required. Please notice to save &lt;strong&gt;pass phrase for rootCA.key&lt;/strong&gt; in a safe place. You will use this many times later.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl req -x509 -new -nodes -key rootCA.key -sha256 -days &lt;span style=&#34;color:#ae81ff&#34;&gt;3650&lt;/span&gt; -out rootCA.pem
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl req -x509 -new -nodes -key rootCA.key -sha256 -days &lt;span style=&#34;color:#ae81ff&#34;&gt;3650&lt;/span&gt; -out rootCA.pem
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change days as you want. 3650 days mean 10 years. :).&lt;/p&gt;
 &lt;p&gt;Now we will have two files: &lt;strong&gt;rootCA.key&lt;/strong&gt; and &lt;strong&gt;rootCA.pem&lt;/strong&gt;. Now you ara a certificate provider.&lt;/p&gt;
 &lt;p&gt;In your client PC, open browser (chrome, firefox&amp;hellip;) and import file &lt;strong&gt;rootCA.pem&lt;/strong&gt; to tell browser &amp;ldquo;I am a valid certificate provider&amp;rdquo; :).&lt;/p&gt;</description>
@@ -27,26 +26,26 @@
     
     <item>
       <title>How to manage your tasks list?</title>
-      <link>https://kienngd.98t1.net/howto/how_to_manage_your_tasks_list/</link>
+      <link>/howto/how_to_manage_your_tasks_list/</link>
       <pubDate>Wed, 29 Sep 2021 07:00:00 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_manage_your_tasks_list/</guid>
+      <guid>/howto/how_to_manage_your_tasks_list/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today I&amp;rsquo;ll tell you how I manage my tasks.&lt;/p&gt;
 &lt;p&gt;When I take a task, first of all I&amp;rsquo;ll set it one (or more) &lt;strong&gt;tags&lt;/strong&gt;. Then I set it a &lt;strong&gt;due date&lt;/strong&gt;. And finally put it in to a list. Very simple :).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kienngd.98t1.net/images/tasks_list.png&#34; alt=&#34;tasks list management&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;/images/tasks_list.png&#34; alt=&#34;tasks list management&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to use PHP8 with Laradock</title>
-      <link>https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/</link>
+      <link>/howto/how_to_use_php8_with_laradock/</link>
       <pubDate>Sun, 18 Apr 2021 19:31:37 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_use_php8_with_laradock/</guid>
+      <guid>/howto/how_to_use_php8_with_laradock/</guid>
       <description>&lt;p&gt;Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.&lt;/p&gt;
 &lt;p&gt;First of all please remember that it is very important to &lt;strong&gt;backup&lt;/strong&gt; your configuration file: &lt;strong&gt;docker-compose.yml&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Now, edit your files: &lt;strong&gt;docker-compose.yml&lt;/strong&gt; and &lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;…
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;…
 &lt;span style=&#34;color:#75715e&#34;&gt;#PHP 8 version&lt;/span&gt;
 PHP8_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;8.0
 …
@@ -63,31 +62,31 @@ WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT&lt;span style=&#34;color:#f92672&#34;
     
     <item>
       <title>How to connect to a service on the remote server via SSH tunnel</title>
-      <link>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</link>
+      <link>/howto/how_to_connect_service_via_ssh_tunnel/</link>
       <pubDate>Tue, 30 Mar 2021 09:34:48 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_connect_service_via_ssh_tunnel/</guid>
+      <guid>/howto/how_to_connect_service_via_ssh_tunnel/</guid>
       <description>&lt;p&gt;Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;p&gt;Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.&lt;/p&gt;
 &lt;p&gt;But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&amp;hellip;). In these cases you can create a SSH tunnel then connect via tunnel.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;u&gt;Option 1&lt;/u&gt;&lt;/strong&gt;: Command line
+&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;Option 1&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;: Command line
 Create tunnel&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_PORT_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_ADDRESS_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_PORT_TO_FORWARD&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_USER_NAME&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;@&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_IP&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_PORT_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_ADDRESS_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_PORT_TO_FORWARD&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_USER_NAME&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;@&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_IP&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Use UUID as primary key of Laravel Eloquent ORM</title>
-      <link>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</link>
+      <link>/howto/how_to_use_uuid_as_id_laravel/</link>
       <pubDate>Mon, 02 Nov 2020 15:37:11 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_use_uuid_as_id_laravel/</guid>
+      <guid>/howto/how_to_use_uuid_as_id_laravel/</guid>
       <description>&lt;p&gt;Install package using composer:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require goldspecdigital/laravel-eloquent-uuid:^7.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Inside migration file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Replace this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;increments&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;);
 &lt;span style=&#34;color:#75715e&#34;&gt;// By this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$table&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;uuid&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;primary&lt;/span&gt;();
@@ -96,10 +95,10 @@ Create tunnel&lt;/p&gt;
     
     <item>
       <title>How to check my ip</title>
-      <link>https://kienngd.98t1.net/howto/how_to_check_my_ip/</link>
+      <link>/howto/how_to_check_my_ip/</link>
       <pubDate>Fri, 16 Oct 2020 10:54:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_check_my_ip/</guid>
+      <guid>/howto/how_to_check_my_ip/</guid>
       <description>&lt;p&gt;Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!&lt;/p&gt;
 &lt;p&gt;Open your browser to access this link: &lt;a href=&#34;https://api.myip.com/&#34;&gt;https://api.myip.com/&lt;/a&gt;. You can see something like this: {&amp;ldquo;ip&amp;rdquo;:&amp;ldquo;115.75.212.27&amp;rdquo;,&amp;ldquo;country&amp;rdquo;:&amp;ldquo;Viet Nam&amp;rdquo;,&amp;ldquo;cc&amp;rdquo;:&amp;ldquo;VN&amp;rdquo;} so your IP is: &lt;strong&gt;115.75.212.27&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bonus&lt;/strong&gt;: You can use curl command to get data too.&lt;/p&gt;</description>
@@ -107,39 +106,39 @@ Create tunnel&lt;/p&gt;
     
     <item>
       <title>How to install VIM plugins</title>
-      <link>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</link>
+      <link>/howto/how_to_install_vim_plugins/</link>
       <pubDate>Wed, 14 Oct 2020 09:08:18 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_install_vim_plugins/</guid>
+      <guid>/howto/how_to_install_vim_plugins/</guid>
       <description>&lt;p&gt;Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;p&gt;If you want to install plugin named &lt;strong&gt;nerdtree&lt;/strong&gt;,&lt;/p&gt;
 &lt;p&gt;1st way: Copy plugin files to: &lt;strong&gt;~/.vim/pack/vendor/start&lt;/strong&gt; and they will be load when you launch VIM&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cp -r nerdtree ~/.vim/pack/vendor/start/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cp -r nerdtree ~/.vim/pack/vendor/start/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then inside VIM, you can use command: &lt;strong&gt;:NERDTree&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to disable wifi power save Ubuntu 20.04</title>
-      <link>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
+      <link>/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
       <pubDate>Sun, 11 Oct 2020 23:15:36 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
+      <guid>/howto/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
       <description>&lt;p&gt;Hello, today I&amp;rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.&lt;/p&gt;
 &lt;p&gt;I see &lt;a href=&#34;https://unix.stackexchange.com/questions/269661/how-to-turn-off-wireless-power-management-permanently&#34;&gt;this link&lt;/a&gt; and try to edit file &lt;em&gt;/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf&lt;/em&gt; change &lt;strong&gt;wifi.powersave&lt;/strong&gt; from 3 (enable power save) to 2 (disable power save). And reboot. Now the wifi works fine.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to create a linux service</title>
-      <link>https://kienngd.98t1.net/howto/how_to_create_linux_service/</link>
+      <link>/howto/how_to_create_linux_service/</link>
       <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_create_linux_service/</guid>
+      <guid>/howto/how_to_create_linux_service/</guid>
       <description>&lt;p&gt;Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;h5 id=&#34;step-1-create-new-service-file&#34;&gt;Step 1: Create new service file&lt;/h5&gt;
-&lt;pre&gt;&lt;code&gt;/etc/systemd/system/test_service.service
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example file content:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Unit]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;/etc/systemd/system/test_service.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example file content:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Unit]&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;Description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Demo test service&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;After&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;network.target&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;StartLimitIntervalSec&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;0&lt;/span&gt;
@@ -158,13 +157,13 @@ Create tunnel&lt;/p&gt;
     
     <item>
       <title>How to working with JSON in GoLang</title>
-      <link>https://kienngd.98t1.net/howto/working_with_json_in_golang/</link>
+      <link>/howto/working_with_json_in_golang/</link>
       <pubDate>Thu, 08 Oct 2020 13:34:54 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/working_with_json_in_golang/</guid>
+      <guid>/howto/working_with_json_in_golang/</guid>
       <description>&lt;p&gt;In this post, we will learn how to parse json data in GoLang. Have fun!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Working with structed data&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Import package
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Import package
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; (
 	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;encoding/json&amp;#34;&lt;/span&gt;
 )
@@ -191,10 +190,10 @@ Create tunnel&lt;/p&gt;
     
     <item>
       <title>How to build a free blog</title>
-      <link>https://kienngd.98t1.net/howto/how_to_build_free_blog/</link>
+      <link>/howto/how_to_build_free_blog/</link>
       <pubDate>Thu, 08 Oct 2020 10:34:44 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/howto/how_to_build_free_blog/</guid>
+      <guid>/howto/how_to_build_free_blog/</guid>
       <description>&lt;p&gt;Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Install hugo.&lt;/p&gt;
 &lt;ul&gt;
@@ -206,20 +205,20 @@ Create tunnel&lt;/p&gt;
 &lt;li&gt;Quick start document: &lt;a href=&#34;https://gohugo.io/getting-started/&#34;&gt;https://gohugo.io/getting-started/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Command:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site myblog
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site myblog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: Setup your hugo theme.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Find a theme from: &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Download theme and put into site&amp;rsquo;s themes directory.
 Example we want to use Ananke theme:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd myblog
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd myblog
 git init
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Inside file config.toml.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;theme = &amp;#34;ananke&amp;#34;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;theme = &amp;#34;ananke&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     

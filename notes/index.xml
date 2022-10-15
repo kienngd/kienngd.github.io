@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on K5d</title>
-    <link>https://kienngd.98t1.net/notes/</link>
-    <description>Recent content in Notes on K5d</description>
+    <title>Notes on K5D</title>
+    <link>/notes/</link>
+    <description>Recent content in Notes on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Tue, 08 Jun 2021 10:28:32 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/notes/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Tue, 08 Jun 2021 10:28:32 +0700</lastBuildDate><atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code-Server code in your browser</title>
-      <link>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</link>
+      <link>/notes/code_server_code_in_your_browser/</link>
       <pubDate>Tue, 08 Jun 2021 10:28:32 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/code_server_code_in_your_browser/</guid>
+      <guid>/notes/code_server_code_in_your_browser/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &lt;strong&gt;Code-Server&lt;/strong&gt; an &amp;ldquo;in browser vs code IDE&amp;rdquo;. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Download &lt;strong&gt;Code-Server&lt;/strong&gt; from github page: &lt;a href=&#34;https://github.com/cdr/code-server/releases/&#34;&gt;https://github.com/cdr/code-server/releases/&lt;/a&gt;
@@ -27,13 +26,13 @@
     
     <item>
       <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
-      <link>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</link>
+      <link>/notes/php_pass_by_value_pass_by_reference/</link>
       <pubDate>Fri, 16 Apr 2021 10:55:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</guid>
+      <guid>/notes/php_pass_by_value_pass_by_reference/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &amp;ldquo;&lt;strong&gt;pass by value&lt;/strong&gt;&amp;rdquo; or &amp;ldquo;&lt;strong&gt;pass by reference&lt;/strong&gt;&amp;rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!&lt;/p&gt;
 &lt;p&gt;We have an example class:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $x;
    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $y;
  
@@ -57,12 +56,12 @@
     
     <item>
       <title>Working with openstack api using curl</title>
-      <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>
+      <link>/notes/working_with_openstack_api_using_curl/</link>
       <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
+      <guid>/notes/working_with_openstack_api_using_curl/</guid>
       <description>&lt;h5 id=&#34;get-token&#34;&gt;Get token&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s -i -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt;   -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s -i -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt;   -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;auth&amp;#34;: {
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        &amp;#34;identity&amp;#34;: {
@@ -90,15 +89,15 @@
     
     <item>
       <title>Working With Influxdb Data Using PhpClient</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</link>
+      <link>/notes/working_with_influxdb_data_using_phpclient/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_phpclient/</guid>
+      <guid>/notes/working_with_influxdb_data_using_phpclient/</guid>
       <description>&lt;p&gt;document: &lt;a href=&#34;https://github.com/influxdata/influxdb-php&#34;&gt;https://github.com/influxdata/influxdb-php&lt;/a&gt;&lt;/p&gt;
 &lt;h5 id=&#34;install-via-composer&#34;&gt;Install via composer&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require influxdb/influxdb-php
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require influxdb/influxdb-php
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;create-client-object&#34;&gt;Create client object&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;($host, $port);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;($host, $port);
 
 &lt;span style=&#34;color:#75715e&#34;&gt;// directly get the database object
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$database &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;InfluxDB\Client&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fromDSN&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;influxdb://user:pass@%s:%s/%s&amp;#39;&lt;/span&gt;, $host, $port, $dbname));
@@ -113,39 +112,39 @@
     
     <item>
       <title>Working_with_influxdb_data_using_api</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</link>
+      <link>/notes/working_with_influxdb_data_using_api/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:45 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_api/</guid>
+      <guid>/notes/working_with_influxdb_data_using_api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Working_with_influxdb_data_using_influx</title>
-      <link>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</link>
+      <link>/notes/working_with_influxdb_data_using_influx/</link>
       <pubDate>Tue, 20 Oct 2020 10:02:33 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_influxdb_data_using_influx/</guid>
+      <guid>/notes/working_with_influxdb_data_using_influx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Influxdb Docker With Laradock</title>
-      <link>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</link>
+      <link>/notes/influxdb_docker_with_laradock/</link>
       <pubDate>Tue, 20 Oct 2020 09:09:57 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/influxdb_docker_with_laradock/</guid>
+      <guid>/notes/influxdb_docker_with_laradock/</guid>
       <description>&lt;p&gt;In this post we will see how to run influxdb docker container using laradock. Have fun.&lt;/p&gt;
 &lt;p&gt;InfluxDB docker document: &lt;a href=&#34;https://hub.docker.com/_/influxdb&#34;&gt;https://hub.docker.com/_/influxdb&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edit laradock &lt;strong&gt;.env&lt;/strong&gt; file:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### INFLUXDB ##################################################&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### INFLUXDB ##################################################&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest&lt;/span&gt;
 INFLUXDB_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1.8
 INFLUXDB_HTTP_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8086&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit &lt;strong&gt;docker-composer.yml&lt;/strong&gt; file. Please remember to backup it first :).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add these lines&lt;/strong&gt; at the end of file&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### influxdb ####################################################&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### influxdb ####################################################&lt;/span&gt;
 influxdb:
   container_name: influxdb
   hostname: influxdb
@@ -157,39 +156,39 @@ influxdb:
   volumes:
     - &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;DATA_PATH_HOST&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/influxdb/var/lib/influxdb:/var/lib/influxdb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Start influxdb container&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-composer up -d influxdb
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-composer up -d influxdb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Some git commands</title>
-      <link>https://kienngd.98t1.net/notes/some_git_commands/</link>
+      <link>/notes/some_git_commands/</link>
       <pubDate>Fri, 16 Oct 2020 11:02:20 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/some_git_commands/</guid>
+      <guid>/notes/some_git_commands/</guid>
       <description>&lt;p&gt;This is some git commands that I usually use.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Clone a repository&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Clone from specific branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone --branch &amp;lt;BRANCH NAME&amp;gt; &amp;lt;URL&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;DEST Directory&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pull code from remote master branch and merge to current banch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git pull origin master
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git pull origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Push code from local DEV branch to remote MASTER branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push origin dev:master
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push origin dev:master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create local branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout -b &amp;lt;BRANCH NAME&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout -b &amp;lt;BRANCH NAME&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Switch local branch&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout &amp;lt;BRANCH NAME&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout &amp;lt;BRANCH NAME&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Phpdoc docblock</title>
-      <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>
+      <link>/notes/phpdoc_docblock/</link>
       <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/phpdoc_docblock/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/** This is a single line DocComment. */&lt;/span&gt;
+      <guid>/notes/phpdoc_docblock/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/** This is a single line DocComment. */&lt;/span&gt;
 
 &lt;span style=&#34;color:#e6db74&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a multi-line DocComment.
@@ -210,21 +209,21 @@ influxdb:
     
     <item>
       <title>Create document using phpdoc</title>
-      <link>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</link>
+      <link>/notes/create_document_using_phpdoc/</link>
       <pubDate>Thu, 15 Oct 2020 10:49:07 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</guid>
+      <guid>/notes/create_document_using_phpdoc/</guid>
       <description>&lt;p&gt;Hello. In this post, we will learn how to build document using phpdoc. Have fun!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install phpdoc&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Using composer&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then run command&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vendor/bin/phpdoc ...
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vendor/bin/phpdoc ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Manual&lt;/strong&gt;: Download file phar from: &lt;a href=&#34;https://github.com/phpDocumentor/phpDocumentor/releases&#34;&gt;Github releases&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Then run command&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php phpDocumentor.phar ...
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php phpDocumentor.phar ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>

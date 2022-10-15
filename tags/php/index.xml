@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PHP on K5d</title>
-    <link>https://kienngd.98t1.net/tags/php/</link>
-    <description>Recent content in PHP on K5d</description>
+    <title>PHP on K5D</title>
+    <link>/tags/php/</link>
+    <description>Recent content in PHP on K5D</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Copyright</copyright>
-    <lastBuildDate>Fri, 16 Apr 2021 10:55:04 +0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
+    <lastBuildDate>Fri, 16 Apr 2021 10:55:04 +0700</lastBuildDate><atom:link href="/tags/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
-      <link>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</link>
+      <link>/notes/php_pass_by_value_pass_by_reference/</link>
       <pubDate>Fri, 16 Apr 2021 10:55:04 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/php_pass_by_value_pass_by_reference/</guid>
+      <guid>/notes/php_pass_by_value_pass_by_reference/</guid>
       <description>&lt;p&gt;Hello, it is me again. Today, we will talk about &amp;ldquo;&lt;strong&gt;pass by value&lt;/strong&gt;&amp;rdquo; or &amp;ldquo;&lt;strong&gt;pass by reference&lt;/strong&gt;&amp;rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!&lt;/p&gt;
 &lt;p&gt;We have an example class:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyClass&lt;/span&gt; {
    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $x;
    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; $y;
  
@@ -40,12 +39,12 @@
     
     <item>
       <title>Working with openstack api using curl</title>
-      <link>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</link>
+      <link>/notes/working_with_openstack_api_using_curl/</link>
       <pubDate>Thu, 29 Oct 2020 09:26:59 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/working_with_openstack_api_using_curl/</guid>
+      <guid>/notes/working_with_openstack_api_using_curl/</guid>
       <description>&lt;h5 id=&#34;get-token&#34;&gt;Get token&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s -i -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt;   -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s -i -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt;   -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;auth&amp;#34;: {
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        &amp;#34;identity&amp;#34;: {
@@ -73,11 +72,11 @@
     
     <item>
       <title>Phpdoc docblock</title>
-      <link>https://kienngd.98t1.net/notes/phpdoc_docblock/</link>
+      <link>/notes/phpdoc_docblock/</link>
       <pubDate>Thu, 15 Oct 2020 11:08:52 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/phpdoc_docblock/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/** This is a single line DocComment. */&lt;/span&gt;
+      <guid>/notes/phpdoc_docblock/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/** This is a single line DocComment. */&lt;/span&gt;
 
 &lt;span style=&#34;color:#e6db74&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * This is a multi-line DocComment.
@@ -98,21 +97,21 @@
     
     <item>
       <title>Create document using phpdoc</title>
-      <link>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</link>
+      <link>/notes/create_document_using_phpdoc/</link>
       <pubDate>Thu, 15 Oct 2020 10:49:07 +0700</pubDate>
       
-      <guid>https://kienngd.98t1.net/notes/create_document_using_phpdoc/</guid>
+      <guid>/notes/create_document_using_phpdoc/</guid>
       <description>&lt;p&gt;Hello. In this post, we will learn how to build document using phpdoc. Have fun!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install phpdoc&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Using composer&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;phpdocumentor/phpdocumentor:2.*&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then run command&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vendor/bin/phpdoc ...
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vendor/bin/phpdoc ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Manual&lt;/strong&gt;: Download file phar from: &lt;a href=&#34;https://github.com/phpDocumentor/phpDocumentor/releases&#34;&gt;Github releases&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Then run command&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php phpDocumentor.phar ...
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php phpDocumentor.phar ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
