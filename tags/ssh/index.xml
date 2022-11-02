@@ -1,28 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ssh on K5D</title>
-    <link>/tags/ssh/</link>
-    <description>Recent content in ssh on K5D</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
-    <lastBuildDate>Tue, 30 Mar 2021 09:34:48 +0700</lastBuildDate><atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to connect to a service on the remote server via SSH tunnel</title>
-      <link>/howto/how_to_connect_service_via_ssh_tunnel/</link>
-      <pubDate>Tue, 30 Mar 2021 09:34:48 +0700</pubDate>
-      
-      <guid>/howto/how_to_connect_service_via_ssh_tunnel/</guid>
-      <description>&lt;p&gt;Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
-&lt;p&gt;Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.&lt;/p&gt;
-&lt;p&gt;But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&amp;hellip;). In these cases you can create a SSH tunnel then connect via tunnel.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;Option 1&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;: Command line
-Create tunnel&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_PORT_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_ADDRESS_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_PORT_TO_FORWARD&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_USER_NAME&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;@&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_IP&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ssh - Tag - K5D</title>
+        <link>https://kienngd.98t1.net/tags/ssh/</link>
+        <description>ssh - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/ssh/" rel="self" type="application/rss+xml" /><item>
+    <title>How to connect to a service on the remote server via SSH tunnel</title>
+    <link>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</link>
+    <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</guid>
+    <description><![CDATA[<p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
+<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
+<p><strong><u>Option 1</u></strong>: Command line
+Create tunnel</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p<span class="o">[</span>SERVER_SSH_PORT<span class="o">]</span> -L <span class="o">[</span>LOCAL_PORT_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>LOCAL_ADDRESS_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>SERVER_PORT_TO_FORWARD<span class="o">]</span> <span class="o">[</span>SERVER_USER_NAME<span class="o">]</span>@<span class="o">[</span>SERVER_IP<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item></channel>
 </rss>

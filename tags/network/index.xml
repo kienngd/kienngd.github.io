@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Network on K5D</title>
-    <link>/tags/network/</link>
-    <description>Recent content in Network on K5D</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
-    <lastBuildDate>Thu, 08 Oct 2020 09:23:54 +0700</lastBuildDate><atom:link href="/tags/network/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How does computer networking work?</title>
-      <link>/knowlege/how_does_networking_work/</link>
-      <pubDate>Thu, 08 Oct 2020 09:23:54 +0700</pubDate>
-      
-      <guid>/knowlege/how_does_networking_work/</guid>
-      <description>&lt;p&gt;This post will explain how does computer networking work.&lt;/p&gt;
-&lt;p&gt;Have fun!&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Network - Tag - K5D</title>
+        <link>https://kienngd.98t1.net/tags/network/</link>
+        <description>Network - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 09:23:54 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/network/" rel="self" type="application/rss+xml" /><item>
+    <title>How does computer networking work?</title>
+    <link>https://kienngd.98t1.net/how_does_networking_work/</link>
+    <pubDate>Thu, 08 Oct 2020 09:23:54 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_does_networking_work/</guid>
+    <description><![CDATA[<p>This post will explain how does computer networking work.</p>
+<p>Have fun!</p>]]></description>
+</item></channel>
 </rss>

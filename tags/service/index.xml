@@ -1,38 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Service on K5D</title>
-    <link>/tags/service/</link>
-    <description>Recent content in Service on K5D</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
-    <lastBuildDate>Sat, 10 Oct 2020 08:56:09 +0700</lastBuildDate><atom:link href="/tags/service/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to create a linux service</title>
-      <link>/howto/how_to_create_linux_service/</link>
-      <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
-      
-      <guid>/howto/how_to_create_linux_service/</guid>
-      <description>&lt;p&gt;Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
-&lt;h5 id=&#34;step-1-create-new-service-file&#34;&gt;Step 1: Create new service file&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;/etc/systemd/system/test_service.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example file content:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Unit]&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Demo test service&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;After&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;network.target&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;StartLimitIntervalSec&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;0&lt;/span&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Service - Tag - K5D</title>
+        <link>https://kienngd.98t1.net/tags/service/</link>
+        <description>Service - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/service/" rel="self" type="application/rss+xml" /><item>
+    <title>How to create a linux service</title>
+    <link>https://kienngd.98t1.net/how_to_create_linux_service/</link>
+    <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_to_create_linux_service/</guid>
+    <description><![CDATA[<p>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!</p>
+<h5 id="step-1-create-new-service-file" class="headerLink">
+    <a href="#step-1-create-new-service-file" class="header-mark"></a>0.0.0.1 Step 1: Create new service file</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/etc/systemd/system/test_service.service
+</code></pre></td></tr></table>
+</div>
+</div><p>Example file content:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Unit]</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">Demo test service</span>
+<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+<span class="na">StartLimitIntervalSec</span><span class="o">=</span><span class="s">0</span>
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;[Service]&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;simple&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Restart&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;always&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;RestartSec&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;**root**&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;ExecStart&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;**COMMAND TO EXECUTE**&lt;/span&gt;
+<span class="k">[Service]</span>
+<span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
+<span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+<span class="na">RestartSec</span><span class="o">=</span><span class="s">1</span>
+<span class="na">User</span><span class="o">=</span><span class="s">**root**</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">**COMMAND TO EXECUTE**</span>
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;[Install]&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;WantedBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;multi-user.target&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can see the full service defination here: &lt;a href=&#34;#&#34;&gt;Will be update&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<span class="k">[Install]</span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>You can see the full service defination here: <a href="#" rel="">Will be update</a></p>]]></description>
+</item></channel>
 </rss>

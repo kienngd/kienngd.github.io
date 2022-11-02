@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Personal on K5D</title>
-    <link>/tags/personal/</link>
-    <description>Recent content in Personal on K5D</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Sep 2021 07:00:00 +0700</lastBuildDate><atom:link href="/tags/personal/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to manage your tasks list?</title>
-      <link>/howto/how_to_manage_your_tasks_list/</link>
-      <pubDate>Wed, 29 Sep 2021 07:00:00 +0700</pubDate>
-      
-      <guid>/howto/how_to_manage_your_tasks_list/</guid>
-      <description>&lt;p&gt;Hello, it is me again. Today I&amp;rsquo;ll tell you how I manage my tasks.&lt;/p&gt;
-&lt;p&gt;When I take a task, first of all I&amp;rsquo;ll set it one (or more) &lt;strong&gt;tags&lt;/strong&gt;. Then I set it a &lt;strong&gt;due date&lt;/strong&gt;. And finally put it in to a list. Very simple :).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/tasks_list.png&#34; alt=&#34;tasks list management&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Personal - Tag - K5D</title>
+        <link>https://kienngd.98t1.net/tags/personal/</link>
+        <description>Personal - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 29 Sep 2021 07:00:00 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/personal/" rel="self" type="application/rss+xml" /><item>
+    <title>How to manage your tasks list?</title>
+    <link>https://kienngd.98t1.net/how_to_manage_your_tasks_list/</link>
+    <pubDate>Wed, 29 Sep 2021 07:00:00 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_to_manage_your_tasks_list/</guid>
+    <description><![CDATA[<p>Hello, it is me again. Today I&rsquo;ll tell you how I manage my tasks.</p>
+<p>When I take a task, first of all I&rsquo;ll set it one (or more) <strong>tags</strong>. Then I set it a <strong>due date</strong>. And finally put it in to a list. Very simple :).</p>
+<p><a class="lightgallery" href="/images/tasks_list.png" title="tasks list management" data-thumbnail="/images/tasks_list.png">
+        
+    </a></p>]]></description>
+</item></channel>
 </rss>

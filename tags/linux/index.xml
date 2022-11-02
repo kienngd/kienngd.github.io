@@ -1,80 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Linux on K5D</title>
-    <link>/tags/linux/</link>
-    <description>Recent content in Linux on K5D</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
-    <lastBuildDate>Sun, 18 Apr 2021 19:31:37 +0700</lastBuildDate><atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to use PHP8 with Laradock</title>
-      <link>/howto/how_to_use_php8_with_laradock/</link>
-      <pubDate>Sun, 18 Apr 2021 19:31:37 +0700</pubDate>
-      
-      <guid>/howto/how_to_use_php8_with_laradock/</guid>
-      <description>&lt;p&gt;Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.&lt;/p&gt;
-&lt;p&gt;First of all please remember that it is very important to &lt;strong&gt;backup&lt;/strong&gt; your configuration file: &lt;strong&gt;docker-compose.yml&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Now, edit your files: &lt;strong&gt;docker-compose.yml&lt;/strong&gt; and &lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;.env&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;…
-&lt;span style=&#34;color:#75715e&#34;&gt;#PHP 8 version&lt;/span&gt;
-PHP8_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;8.0
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Linux - Tag - K5D</title>
+        <link>https://kienngd.98t1.net/tags/linux/</link>
+        <description>Linux - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>How to use PHP8 with Laradock</title>
+    <link>https://kienngd.98t1.net/how_to_use_php8_with_laradock/</link>
+    <pubDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_to_use_php8_with_laradock/</guid>
+    <description><![CDATA[<p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
+<p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
+<p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
+<p><strong>.env</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">…
+<span class="c1">#PHP 8 version</span>
+<span class="nv">PHP8_VERSION</span><span class="o">=</span>8.0
 …
-&lt;span style=&#34;color:#75715e&#34;&gt;#Define some new ports to difference from original workspace&lt;/span&gt;
-WORKSPACE_PHP8_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2223&lt;/span&gt;
-WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4000&lt;/span&gt;
-WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4001&lt;/span&gt;
-WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;9080&lt;/span&gt;
-WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;9001&lt;/span&gt;
-WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5200&lt;/span&gt;
+<span class="c1">#Define some new ports to difference from original workspace</span>
+<span class="nv">WORKSPACE_PHP8_SSH_PORT</span><span class="o">=</span><span class="m">2223</span>
+<span class="nv">WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT</span><span class="o">=</span><span class="m">4000</span>
+<span class="nv">WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT</span><span class="o">=</span><span class="m">4001</span>
+<span class="nv">WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT</span><span class="o">=</span><span class="m">9080</span>
+<span class="nv">WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT</span><span class="o">=</span><span class="m">9001</span>
+<span class="nv">WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT</span><span class="o">=</span><span class="m">5200</span>
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to connect to a service on the remote server via SSH tunnel</title>
-      <link>/howto/how_to_connect_service_via_ssh_tunnel/</link>
-      <pubDate>Tue, 30 Mar 2021 09:34:48 +0700</pubDate>
-      
-      <guid>/howto/how_to_connect_service_via_ssh_tunnel/</guid>
-      <description>&lt;p&gt;Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
-&lt;p&gt;Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.&lt;/p&gt;
-&lt;p&gt;But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&amp;hellip;). In these cases you can create a SSH tunnel then connect via tunnel.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;Option 1&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;: Command line
-Create tunnel&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_SSH_PORT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_PORT_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;LOCAL_ADDRESS_TO_LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_PORT_TO_FORWARD&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_USER_NAME&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;@&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;SERVER_IP&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to create a linux service</title>
-      <link>/howto/how_to_create_linux_service/</link>
-      <pubDate>Sat, 10 Oct 2020 08:56:09 +0700</pubDate>
-      
-      <guid>/howto/how_to_create_linux_service/</guid>
-      <description>&lt;p&gt;Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!&lt;/p&gt;
-&lt;h5 id=&#34;step-1-create-new-service-file&#34;&gt;Step 1: Create new service file&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;/etc/systemd/system/test_service.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example file content:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Unit]&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Demo test service&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;After&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;network.target&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;StartLimitIntervalSec&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;0&lt;/span&gt;
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>How to connect to a service on the remote server via SSH tunnel</title>
+    <link>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</link>
+    <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</guid>
+    <description><![CDATA[<p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
+<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
+<p><strong><u>Option 1</u></strong>: Command line
+Create tunnel</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p<span class="o">[</span>SERVER_SSH_PORT<span class="o">]</span> -L <span class="o">[</span>LOCAL_PORT_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>LOCAL_ADDRESS_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>SERVER_PORT_TO_FORWARD<span class="o">]</span> <span class="o">[</span>SERVER_USER_NAME<span class="o">]</span>@<span class="o">[</span>SERVER_IP<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>How to create a linux service</title>
+    <link>https://kienngd.98t1.net/how_to_create_linux_service/</link>
+    <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_to_create_linux_service/</guid>
+    <description><![CDATA[<p>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!</p>
+<h5 id="step-1-create-new-service-file" class="headerLink">
+    <a href="#step-1-create-new-service-file" class="header-mark"></a>0.0.0.1 Step 1: Create new service file</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/etc/systemd/system/test_service.service
+</code></pre></td></tr></table>
+</div>
+</div><p>Example file content:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Unit]</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">Demo test service</span>
+<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+<span class="na">StartLimitIntervalSec</span><span class="o">=</span><span class="s">0</span>
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;[Service]&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;simple&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Restart&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;always&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;RestartSec&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;**root**&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;ExecStart&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;**COMMAND TO EXECUTE**&lt;/span&gt;
+<span class="k">[Service]</span>
+<span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
+<span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+<span class="na">RestartSec</span><span class="o">=</span><span class="s">1</span>
+<span class="na">User</span><span class="o">=</span><span class="s">**root**</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">**COMMAND TO EXECUTE**</span>
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;[Install]&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;WantedBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;multi-user.target&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can see the full service defination here: &lt;a href=&#34;#&#34;&gt;Will be update&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<span class="k">[Install]</span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>You can see the full service defination here: <a href="#" rel="">Will be update</a></p>]]></description>
+</item></channel>
 </rss>

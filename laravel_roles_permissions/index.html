@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">Laravel Roles Permissions - K5D</title><meta name="Description" content="The official documentation for the Hugo DoIt theme"><meta property="og:title" content="Laravel Roles Permissions" />
+<meta property="og:description" content="Create role, permission
+
+
+1
+2
+3
+4
+5
+
+
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+
+$role = Role::create([&#39;name&#39; =&gt; &#39;admin&#39;]);
+$permission = Permission::create([&#39;name&#39; =&gt; &#39;create-articles&#39;]);
+
+
+Assign / Sync / Revoke permission to role
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+
+
+// Assign
+$role-&gt;givePermissionTo($permission); // $permission can be string / object / array of strings / array of objects
+$permission-&gt;assignRole($role);
+
+// Sync
+$role-&gt;syncPermissions($permissions);
+$permission-&gt;syncRoles($roles);
+
+// Revoke
+$role-&gt;revokePermissionTo($permission);
+$permission-&gt;removeRole($role);
+
+
+
+Check roles permissons
+
+
+1
+2
+3
+4
+
+
+$role-&gt;hasPermissionTo($permission);
+$role-&gt;hasAnyPermission($permissions);
+$role-&gt;hasAllPermissions($permissions);
+
+
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kienngd.98t1.net/laravel_roles_permissions/" /><meta property="og:image" content="https://kienngd.98t1.net/images/avatar.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-11-27T09:44:04+07:00" />
+<meta property="article:modified_time" content="2020-11-27T09:44:04+07:00" /><meta property="og:site_name" content="K5D blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kienngd.98t1.net/images/avatar.webp"/>
+
+<meta name="twitter:title" content="Laravel Roles Permissions"/>
+<meta name="twitter:description" content="Create role, permission
+
+
+1
+2
+3
+4
+5
+
+
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+
+$role = Role::create([&#39;name&#39; =&gt; &#39;admin&#39;]);
+$permission = Permission::create([&#39;name&#39; =&gt; &#39;create-articles&#39;]);
+
+
+Assign / Sync / Revoke permission to role
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+
+
+// Assign
+$role-&gt;givePermissionTo($permission); // $permission can be string / object / array of strings / array of objects
+$permission-&gt;assignRole($role);
+
+// Sync
+$role-&gt;syncPermissions($permissions);
+$permission-&gt;syncRoles($roles);
+
+// Revoke
+$role-&gt;revokePermissionTo($permission);
+$permission-&gt;removeRole($role);
+
+
+
+Check roles permissons
+
+
+1
+2
+3
+4
+
+
+$role-&gt;hasPermissionTo($permission);
+$role-&gt;hasAnyPermission($permissions);
+$role-&gt;hasAllPermissions($permissions);
+
+
+
+"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://kienngd.98t1.net/laravel_roles_permissions/" /><link rel="prev" href="https://kienngd.98t1.net/apiato/" /><link rel="next" href="https://kienngd.98t1.net/laravel_logout_other_devices/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
+    
+    
+    
+    <meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Laravel Roles Permissions",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/kienngd.98t1.net\/laravel_roles_permissions\/"
+        },"image": ["https:\/\/kienngd.98t1.net\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Laravel, Apiato","wordcount":  282 ,
+        "url": "https:\/\/kienngd.98t1.net\/laravel_roles_permissions\/","datePublished": "2020-11-27T09:44:04+07:00","dateModified": "2020-11-27T09:44:04+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/kienngd.98t1.net\/images\/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "Kien Nguyen"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span>K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/series/"> Series </a><a class="menu-item" href="/categories/documentation/"> Docs </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span>K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/series/" title="">Series</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents"></nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Laravel Roles Permissions</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/tutorials/"><i class="far fa-folder fa-fw"></i>tutorials</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-27">2020-11-27</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2020-11-27">2020-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;282 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/laravel_roles_permissions/" class="leancloud_visitors" data-flag-title="Laravel Roles Permissions">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class="leancloud-visitors-count" id=twikoo_visitors></span>&nbsp;views
+                    </span>&nbsp;<span id="/laravel_roles_permissions/" class="comment_count" data-flag-title="Laravel Roles Permissions">
+                        <i class="far fa-comments fa-fw"></i>&nbsp;<span class="twikoo-comment-count" id="twikoo-comment-count"></span>&nbsp;comments
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p><strong>Create role, permission</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">use</span> <span class="nx">Spatie\Permission\Models\Role</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\Permission\Models\Permission</span><span class="p">;</span>
+
+<span class="nv">$role</span> <span class="o">=</span> <span class="nx">Role</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;admin&#39;</span><span class="p">]);</span>
+<span class="nv">$permission</span> <span class="o">=</span> <span class="nx">Permission</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;create-articles&#39;</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Assign / Sync / Revoke permission to role</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="c1">// Assign
+</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">givePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span> <span class="c1">// $permission can be string / object / array of strings / array of objects
+</span><span class="c1"></span><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">assignRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
+
+<span class="c1">// Sync
+</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">syncPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+<span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">syncRoles</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+
+<span class="c1">// Revoke
+</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">revokePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+<span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">removeRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Check roles permissons</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasPermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+<span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAnyPermission</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+<span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAllPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Authenticatable user with roles / permissions</strong></p>
+<p>The model:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">use</span> <span class="nx">Illuminate\Foundation\Auth\User</span> <span class="k">as</span> <span class="nx">Authenticatable</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\Permission\Traits\HasRoles</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">User</span> <span class="k">extends</span> <span class="nx">Authenticatable</span>
+<span class="p">{</span>
+    <span class="k">use</span> <span class="nx">HasRoles</span><span class="p">;</span>
+
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Assign / Sync / Revoke permission / role to user</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="c1">// Direct permission
+</span><span class="c1"></span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">givePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span> <span class="c1">// $permission: string / multiple strings / array of strings
+</span><span class="c1"></span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">revokePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">syncPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span> <span class="c1">// $permissions: Array of permissions name
+</span><span class="c1"></span>
+<span class="c1">// Via role
+</span><span class="c1"></span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">assignRole</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">removeRole</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">syncRoles</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Check user permissions / roles</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="c1">// Permissions
+</span><span class="c1"></span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">hasPermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">hasAnyPermission</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">hasAllPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">can</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+
+<span class="c1">// Roles
+</span><span class="c1"></span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">hasRole</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">hasAnyRole</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">hasAllRoles</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Get permission / role</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nv">$permissionNames</span> <span class="o">=</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">getPermissionNames</span><span class="p">();</span>
+<span class="nv">$permissions</span> <span class="o">=</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">permissions</span><span class="p">;</span>
+<span class="nv">$permissions</span> <span class="o">=</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">getDirectPermissions</span><span class="p">();</span>
+<span class="nv">$permissions</span> <span class="o">=</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">getPermissionsViaRoles</span><span class="p">();</span>
+<span class="nv">$permissions</span> <span class="o">=</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">getAllPermissions</span><span class="p">();</span>
+<span class="nv">$roles</span> <span class="o">=</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">getRoleNames</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Model scope</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nv">$users</span> <span class="o">=</span> <span class="nx">User</span><span class="o">::</span><span class="na">role</span><span class="p">(</span><span class="s1">&#39;admin&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span> <span class="c1">// Will return all users with role admin. role parameter can be: String / Array of strings / Object / Array of objects
+</span><span class="c1"></span><span class="nv">$users</span> <span class="o">=</span> <span class="nx">User</span><span class="o">::</span><span class="na">permission</span><span class="p">(</span><span class="s1">&#39;edit-users&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span> <span class="c1">// Returns only users with the permission &#39;edit-users&#39; (inherited or directly)
+</span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Eloquent</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nv">$all_users_with_all_their_roles</span> <span class="o">=</span> <span class="nx">User</span><span class="o">::</span><span class="na">with</span><span class="p">(</span><span class="s1">&#39;roles&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span>
+<span class="nv">$all_users_with_all_direct_permissions</span> <span class="o">=</span> <span class="nx">User</span><span class="o">::</span><span class="na">with</span><span class="p">(</span><span class="s1">&#39;permissions&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span>
+<span class="nv">$all_roles_in_database</span> <span class="o">=</span> <span class="nx">Role</span><span class="o">::</span><span class="na">all</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">pluck</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+<span class="nv">$users_without_any_roles</span> <span class="o">=</span> <span class="nx">User</span><span class="o">::</span><span class="na">doesntHave</span><span class="p">(</span><span class="s1">&#39;roles&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span>
+<span class="nv">$all_roles_except_a_and_b</span> <span class="o">=</span> <span class="nx">Role</span><span class="o">::</span><span class="na">whereNotIn</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;role A&#39;</span><span class="p">,</span> <span class="s1">&#39;role B&#39;</span><span class="p">])</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div></div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/apiato_select_language/">Apiato select language</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/laravel_logout_other_devices/">Laravel logout other devices</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/apiato/">Apiato laravel based framework</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/how_to_use_uuid_as_id_laravel/">Use UUID as primary key of Laravel Eloquent ORM</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-11-27</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.98t1.net/laravel_roles_permissions/" data-title="Laravel Roles Permissions" data-hashtags="Laravel,Apiato"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.98t1.net/laravel_roles_permissions/" data-hashtag="Laravel"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Hacker News" data-sharer="hackernews" data-url="https://kienngd.98t1.net/laravel_roles_permissions/" data-title="Laravel Roles Permissions"><i class="fab fa-hacker-news fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Line" data-sharer="line" data-url="https://kienngd.98t1.net/laravel_roles_permissions/" data-title="Laravel Roles Permissions"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="#" onclick="return false;" title="Share on 微博" data-sharer="weibo" data-url="https://kienngd.98t1.net/laravel_roles_permissions/" data-title="Laravel Roles Permissions"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.98t1.net/laravel_roles_permissions/" data-title="Laravel Roles Permissions" data-web><i class="fab fa-telegram-plane fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/laravel/">Laravel</a>,&nbsp;<a href="/tags/apiato/">Apiato</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/apiato/" class="prev" rel="prev" title="Apiato laravel based framework"><i class="fas fa-angle-left fa-fw"></i>Apiato laravel based framework</a>
+            <a href="/laravel_logout_other_devices/" class="next" rel="next" title="Laravel logout other devices">Laravel logout other devices<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="twikoo"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://twikoo.js.org/">Twikoo</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.92.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">KienND</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div><script>
+                    if('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('/sw.min.js', { scope: '/' })
+                            .then(function(registration) {
+                            });
+                
+                        navigator.serviceWorker
+                            .ready
+                            .then(function(registration) {
+                            });
+                    }
+                </script></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"twikoo":{"commentCount":true,"el":"#twikoo","envId":"https://twikoo-comments-doit.vercel.app/","lang":"en"}},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/twikoo/twikoo.all.min.js" defer></script><script type="text/javascript" src="/js/twikoo.min.js" defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script></div>
+</body>
+
+</html>

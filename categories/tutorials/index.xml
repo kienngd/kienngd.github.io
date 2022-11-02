@@ -1,134 +1,260 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tutorials on K5D</title>
-    <link>/categories/tutorials/</link>
-    <description>Recent content in tutorials on K5D</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2022, Kiên Nguyễn all rights reserved.</copyright>
-    <lastBuildDate>Thu, 25 Mar 2021 15:36:54 +0700</lastBuildDate><atom:link href="/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Apiato select language</title>
-      <link>/tutorials/apiato_select_language/</link>
-      <pubDate>Thu, 25 Mar 2021 15:36:54 +0700</pubDate>
-      
-      <guid>/tutorials/apiato_select_language/</guid>
-      <description>&lt;p&gt;Hello, today we will learn how to add select language to an ApiAto web app. Have fun!&lt;/p&gt;
-&lt;p&gt;Document: &lt;a href=&#34;https://docs.apiato.io/features/localization/&#34;&gt;https://docs.apiato.io/features/localization/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Step 1&lt;!-- raw HTML omitted --&gt;: Add new language to supported language:&lt;/p&gt;
-&lt;p&gt;Edit &lt;strong&gt;supported_languages&lt;/strong&gt; inside file &lt;strong&gt;app/Containers/Localization/Configs/localization.php&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Laravel logout other devices</title>
-      <link>/tutorials/laravel_logout_other_devices/</link>
-      <pubDate>Fri, 27 Nov 2020 14:42:16 +0700</pubDate>
-      
-      <guid>/tutorials/laravel_logout_other_devices/</guid>
-      <description>&lt;p&gt;Check file: &lt;strong&gt;app/Http/Kernel.php&lt;/strong&gt; (or file &lt;strong&gt;app/Ship/Kernels/HttpKernel.php&lt;/strong&gt; if you use Apiato) and uncomment this line:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;web&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; [
-    &lt;span style=&#34;color:#75715e&#34;&gt;// ...
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;\Illuminate\Session\Middleware\AuthenticateSession&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;,
-    &lt;span style=&#34;color:#75715e&#34;&gt;// ...
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;],
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Logout all other devices:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Illuminate\Support\Facades\Auth&lt;/span&gt;;
-&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logoutOtherDevices&lt;/span&gt;($password);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Laravel Roles Permissions</title>
-      <link>/tutorials/laravel_roles_permissions/</link>
-      <pubDate>Fri, 27 Nov 2020 09:44:04 +0700</pubDate>
-      
-      <guid>/tutorials/laravel_roles_permissions/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Create role, permission&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Role&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Spatie\Permission\Models\Permission&lt;/span&gt;;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>tutorials - Category - K5D</title>
+        <link>https://kienngd.98t1.net/categories/tutorials/</link>
+        <description>tutorials - Category - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/categories/tutorials/" rel="self" type="application/rss+xml" /><item>
+    <title>Apiato select language</title>
+    <link>https://kienngd.98t1.net/apiato_select_language/</link>
+    <pubDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/apiato_select_language/</guid>
+    <description><![CDATA[<p>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!</p>
+<p>Document: <a href="https://docs.apiato.io/features/localization/" target="_blank" rel="noopener noreferrer">https://docs.apiato.io/features/localization/</a></p>
+<p><u>Step 1</u>: Add new language to supported language:</p>
+<p>Edit <strong>supported_languages</strong> inside file <strong>app/Containers/Localization/Configs/localization.php</strong></p>]]></description>
+</item><item>
+    <title>Laravel logout other devices</title>
+    <link>https://kienngd.98t1.net/laravel_logout_other_devices/</link>
+    <pubDate>Fri, 27 Nov 2020 14:42:16 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/laravel_logout_other_devices/</guid>
+    <description><![CDATA[<p>Check file: <strong>app/Http/Kernel.php</strong> (or file <strong>app/Ship/Kernels/HttpKernel.php</strong> if you use Apiato) and uncomment this line:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="s1">&#39;web&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
+    <span class="c1">// ...
+</span><span class="c1"></span>    <span class="nx">\Illuminate\Session\Middleware\AuthenticateSession</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="p">],</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Logout all other devices:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">use</span> <span class="nx">Illuminate\Support\Facades\Auth</span><span class="p">;</span>
+<span class="o">...</span>
+<span class="nx">Auth</span><span class="o">::</span><span class="na">logoutOtherDevices</span><span class="p">(</span><span class="nv">$password</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>Laravel Roles Permissions</title>
+    <link>https://kienngd.98t1.net/laravel_roles_permissions/</link>
+    <pubDate>Fri, 27 Nov 2020 09:44:04 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/laravel_roles_permissions/</guid>
+    <description><![CDATA[<p><strong>Create role, permission</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">use</span> <span class="nx">Spatie\Permission\Models\Role</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\Permission\Models\Permission</span><span class="p">;</span>
 
-$role &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Role&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;admin&amp;#39;&lt;/span&gt;]);
-$permission &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Permission&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;create-articles&amp;#39;&lt;/span&gt;]);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Assign / Sync / Revoke permission to role&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Assign
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;givePermissionTo&lt;/span&gt;($permission); &lt;span style=&#34;color:#75715e&#34;&gt;// $permission can be string / object / array of strings / array of objects
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;assignRole&lt;/span&gt;($role);
+<span class="nv">$role</span> <span class="o">=</span> <span class="nx">Role</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;admin&#39;</span><span class="p">]);</span>
+<span class="nv">$permission</span> <span class="o">=</span> <span class="nx">Permission</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;create-articles&#39;</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Assign / Sync / Revoke permission to role</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="c1">// Assign
+</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">givePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span> <span class="c1">// $permission can be string / object / array of strings / array of objects
+</span><span class="c1"></span><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">assignRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
 
-&lt;span style=&#34;color:#75715e&#34;&gt;// Sync
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;syncPermissions&lt;/span&gt;($permissions);
-$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;syncRoles&lt;/span&gt;($roles);
+<span class="c1">// Sync
+</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">syncPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+<span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">syncRoles</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
 
-&lt;span style=&#34;color:#75715e&#34;&gt;// Revoke
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;revokePermissionTo&lt;/span&gt;($permission);
-$permission&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;removeRole&lt;/span&gt;($role);
+<span class="c1">// Revoke
+</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">revokePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+<span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">removeRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Check roles permissons&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPermissionTo&lt;/span&gt;($permission);
-$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAnyPermission&lt;/span&gt;($permissions);
-$role&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasAllPermissions&lt;/span&gt;($permissions);
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Check roles permissons</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasPermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+<span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAnyPermission</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+<span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAllPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Apiato laravel based framework</title>
-      <link>/tutorials/apiato/</link>
-      <pubDate>Thu, 26 Nov 2020 08:36:20 +0700</pubDate>
-      
-      <guid>/tutorials/apiato/</guid>
-      <description>&lt;p&gt;Home page: &lt;a href=&#34;http://docs.apiato.io/&#34;&gt;http://docs.apiato.io/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Create project using composer from latest stable&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;composer create-project apiato/apiato apiato9
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit the .env file.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Migrate database&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan migrate
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create admin user, some permissions, roles&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan db:seed
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Default account is: &lt;a href=&#34;mailto:admin@admin.com&#34;&gt;admin@admin.com&lt;/a&gt; / admin.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Add all current permissions to admin role.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:permissions:toRole admin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Install OAuth 2.0&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan passport:install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit file &lt;strong&gt;.env&lt;/strong&gt; update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Install ApiDocJs&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yarn install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Create api doc&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;php artisan apiato:apidoc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your default document url is: http://&lt;!-- raw HTML omitted --&gt;/api/documentation and http://&lt;!-- raw HTML omitted --&gt;/api/private/documentation&lt;/p&gt;
-&lt;p&gt;Default result is saved in: &lt;strong&gt;public/api/documentation/&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>React Admin P1</title>
-      <link>/tutorials/react-admin-p1/</link>
-      <pubDate>Sat, 17 Oct 2020 23:17:57 +0700</pubDate>
-      
-      <guid>/tutorials/react-admin-p1/</guid>
-      <description>&lt;h5 id=&#34;react-admin-tutorial-notes&#34;&gt;React-Admin tutorial notes&lt;/h5&gt;
-&lt;p&gt;Create new project and install packages&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;yarn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;react&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;admin&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;admin&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;yarn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;react&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;admin&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ra&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;server&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prop&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;types&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit file src/App.js&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;react&amp;#34;&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;Admin&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Resource&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;react-admin&amp;#39;&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;jsonServerProvider&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ra-data-json-server&amp;#39;&lt;/span&gt;;
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>Apiato laravel based framework</title>
+    <link>https://kienngd.98t1.net/apiato/</link>
+    <pubDate>Thu, 26 Nov 2020 08:36:20 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/apiato/</guid>
+    <description><![CDATA[<p>Home page: <a href="http://docs.apiato.io/" target="_blank" rel="noopener noreferrer">http://docs.apiato.io/</a></p>
+<p><strong>Create project using composer from latest stable</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">composer create-project apiato/apiato apiato9
+</code></pre></td></tr></table>
+</div>
+</div><p>Then edit the .env file.</p>
+<p><strong>Migrate database</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan migrate
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Create admin user, some permissions, roles</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan db:seed
+</code></pre></td></tr></table>
+</div>
+</div><p>Default account is: <a href="mailto:admin@admin.com" rel="">admin@admin.com</a> / admin.</p>
+<p><strong>Add all current permissions to admin role.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan apiato:permissions:toRole admin
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Install OAuth 2.0</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan passport:install
+</code></pre></td></tr></table>
+</div>
+</div><p>Then edit file <strong>.env</strong> update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.</p>
+<p><strong>Install ApiDocJs</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yarn install
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Create api doc</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan apiato:apidoc
+</code></pre></td></tr></table>
+</div>
+</div><p>Your default document url is: http://<Your domain>/api/documentation and http://<Your domain>/api/private/documentation</p>
+<p>Default result is saved in: <strong>public/api/documentation/</strong></p>]]></description>
+</item><item>
+    <title>React Admin P1</title>
+    <link>https://kienngd.98t1.net/react-admin-p1/</link>
+    <pubDate>Sat, 17 Oct 2020 23:17:57 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/react-admin-p1/</guid>
+    <description><![CDATA[<h5 id="react-admin-tutorial-notes" class="headerLink">
+    <a href="#react-admin-tutorial-notes" class="header-mark"></a>0.0.0.1 React-Admin tutorial notes</h5><p>Create new project and install packages</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">yarn</span> <span class="nx">create</span> <span class="nx">react</span><span class="o">-</span><span class="nx">app</span> <span class="nx">test</span><span class="o">-</span><span class="nx">admin</span>
+<span class="nx">cd</span> <span class="nx">test</span><span class="o">-</span><span class="nx">admin</span><span class="o">/</span>
+<span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="nx">admin</span> <span class="nx">ra</span><span class="o">-</span><span class="nx">data</span><span class="o">-</span><span class="nx">json</span><span class="o">-</span><span class="nx">server</span> <span class="nx">prop</span><span class="o">-</span><span class="nx">types</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Edit file src/App.js</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Admin</span><span class="p">,</span> <span class="nx">Resource</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-admin&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">jsonServerProvider</span> <span class="nx">from</span> <span class="s1">&#39;ra-data-json-server&#39;</span><span class="p">;</span>
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;ListGuesser&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;react-admin&amp;#39;&lt;/span&gt;;
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">ListGuesser</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-admin&#39;</span><span class="p">;</span>
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;App&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; () =&amp;gt; {
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dataProvider&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;jsonServerProvider&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://jsonplaceholder.typicode.com&amp;#39;&lt;/span&gt;);
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;(
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Admin&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dataProvider&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{&lt;span style=&#34;color:#a6e22e&#34;&gt;dataProvider&lt;/span&gt;}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Resource&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;users&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;list&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{&lt;span style=&#34;color:#a6e22e&#34;&gt;ListGuesser&lt;/span&gt;} &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/Admin&amp;gt;&lt;/span&gt;
-  );
-}
+<span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">dataProvider</span> <span class="o">=</span> <span class="nx">jsonServerProvider</span><span class="p">(</span><span class="s1">&#39;https://jsonplaceholder.typicode.com&#39;</span><span class="p">);</span>
+  <span class="k">return</span><span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Admin</span> <span class="nx">dataProvider</span><span class="o">=</span><span class="p">{</span><span class="nx">dataProvider</span><span class="p">}</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Resource</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;users&#34;</span> <span class="nx">list</span><span class="o">=</span><span class="p">{</span><span class="nx">ListGuesser</span><span class="p">}</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="err">/Admin&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;App&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-  </channel>
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item></channel>
 </rss>
