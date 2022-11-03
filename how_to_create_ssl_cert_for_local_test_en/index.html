@@ -7,66 +7,24 @@
     <meta name="robots" content="noodp" />
     <title class="pjax-title">How to create ssl certificate for local test environment - K5D</title><meta name="Description" content="The official documentation for the Hugo DoIt theme"><meta property="og:title" content="How to create ssl certificate for local test environment" />
 <meta property="og:description" content="Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!
-In bash shell, run these commands:
-
-    1 Create Certificate Authority
-
-1
-
-
-openssl genrsa -des3 -out rootCA.key 2048
-
-
-Input some information as required. Please notice to save pass phrase for rootCA.key in a safe place. You will use this many times later.
-
-
-1
-
-
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 3650 -out rootCA.pem
-
-
-Change days as you want. 3650 days mean 10 years. :).
-Now we will have two files: rootCA.key and rootCA.pem. Now you ara a certificate provider.
-In your client PC, open browser (chrome, firefox&hellip;) and import file rootCA.pem to tell browser &ldquo;I am a valid certificate provider&rdquo; :)." />
+In bash shell, run these commands:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" /><meta property="og:image" content="https://kienngd.98t1.net/images/avatar.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-20T15:49:05+07:00" />
-<meta property="article:modified_time" content="2021-12-20T15:49:05+07:00" /><meta property="og:site_name" content="K5D blog" />
+<meta property="article:published_time" content="2021-12-20T15:49:05+00:00" />
+<meta property="article:modified_time" content="2021-12-20T15:49:05+00:00" /><meta property="og:site_name" content="K5D blog" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://kienngd.98t1.net/images/avatar.webp"/>
 
 <meta name="twitter:title" content="How to create ssl certificate for local test environment"/>
 <meta name="twitter:description" content="Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!
-In bash shell, run these commands:
-
-    1 Create Certificate Authority
-
-1
-
-
-openssl genrsa -des3 -out rootCA.key 2048
-
-
-Input some information as required. Please notice to save pass phrase for rootCA.key in a safe place. You will use this many times later.
-
-
-1
-
-
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 3650 -out rootCA.pem
-
-
-Change days as you want. 3650 days mean 10 years. :).
-Now we will have two files: rootCA.key and rootCA.pem. Now you ara a certificate provider.
-In your client PC, open browser (chrome, firefox&hellip;) and import file rootCA.pem to tell browser &ldquo;I am a valid certificate provider&rdquo; :)."/>
+In bash shell, run these commands:"/>
 <meta name="application-name" content="DoIt">
 <meta name="apple-mobile-web-app-title" content="DoIt">
 
 <meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" /><link rel="prev" href="https://kienngd.98t1.net/how_to_manage_your_tasks_list/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" /><link rel="prev" href="https://kienngd.98t1.net/code_server_code_in_your_browser/" /><link rel="next" href="https://kienngd.98t1.net/how_to_manage_your_tasks_list/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
     
@@ -82,7 +40,7 @@ In your client PC, open browser (chrome, firefox&hellip;) and import file rootCA
             "@type": "WebPage",
             "@id": "https:\/\/kienngd.98t1.net\/how_to_create_ssl_cert_for_local_test_en\/"
         },"image": ["https:\/\/kienngd.98t1.net\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "SSL","wordcount":  255 ,
-        "url": "https:\/\/kienngd.98t1.net\/how_to_create_ssl_cert_for_local_test_en\/","datePublished": "2021-12-20T15:49:05+07:00","dateModified": "2021-12-20T15:49:05+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/kienngd.98t1.net\/how_to_create_ssl_cert_for_local_test_en\/","datePublished": "2021-12-20T15:49:05+00:00","dateModified": "2021-12-20T15:49:05+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -198,7 +156,13 @@ In your client PC, open browser (chrome, firefox&hellip;) and import file rootCA
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-12-20">2021-12-20</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2021-12-20">2021-12-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;255 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  kept="">
+        </div><div class="featured-image"><img
+        class="lazyload"
+        data-src="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png"
+        data-srcset="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png, https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png 1.5x, https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png 2x"
+        data-sizes="auto"
+        alt="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png"
+        title="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png" height="auto" width="auto"></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
@@ -239,6 +203,7 @@ In your client PC, open browser (chrome, firefox&hellip;) and import file rootCA
 </div><p>Change days as you want. 3650 days mean 10 years. :).</p>
 <p>Now we will have two files: <strong>rootCA.key</strong> and <strong>rootCA.pem</strong>. Now you ara a certificate provider.</p>
 <p>In your client PC, open browser (chrome, firefox&hellip;) and import file <strong>rootCA.pem</strong> to tell browser &ldquo;I am a valid certificate provider&rdquo; :).</p>
+<!--more-->
 <h2 id="generate-rsa-for-domain" class="headerLink">
     <a href="#generate-rsa-for-domain" class="header-mark"></a>2 Generate rsa for domain</h2><h3 id="create-private-key" class="headerLink">
     <a href="#create-private-key" class="header-mark"></a>2.1 Create private key</h3><div class="highlight"><div class="chroma">
@@ -316,7 +281,7 @@ DNS.2 <span class="o">=</span> &lt;YOUR DOMAIN <span class="m">2</span> HERE&gt;
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment" data-hashtags="SSL"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-hashtag="SSL"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Hacker News" data-sharer="hackernews" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment"><i class="fab fa-hacker-news fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Line" data-sharer="line" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="#" onclick="return false;" title="Share on 微博" data-sharer="weibo" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment" data-web><i class="fab fa-telegram-plane fa-fw"></i></a></span>
+                <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment" data-hashtags="SSL"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-hashtag="SSL"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Hacker News" data-sharer="hackernews" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment"><i class="fab fa-hacker-news fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Line" data-sharer="line" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="#" onclick="return false;" title="Share on 微博" data-sharer="weibo" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment" data-image="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/" data-title="How to create ssl certificate for local test environment" data-web><i class="fab fa-telegram-plane fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -328,7 +293,8 @@ DNS.2 <span class="o">=</span> &lt;YOUR DOMAIN <span class="m">2</span> HERE&gt;
         </section>
     </div>
 
-    <div class="post-nav"><a href="/how_to_manage_your_tasks_list/" class="prev" rel="prev" title="How to manage your tasks list?"><i class="fas fa-angle-left fa-fw"></i>How to manage your tasks list?</a></div>
+    <div class="post-nav"><a href="/code_server_code_in_your_browser/" class="prev" rel="prev" title="Code-Server code in your browser"><i class="fas fa-angle-left fa-fw"></i>Code-Server code in your browser</a>
+            <a href="/how_to_manage_your_tasks_list/" class="next" rel="next" title="How to manage your tasks list?">How to manage your tasks list?<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
         </main><footer class="footer">

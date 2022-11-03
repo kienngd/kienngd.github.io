@@ -4,48 +4,45 @@
         <link>https://kienngd.98t1.net/</link>
         <description>The official documentation for the Hugo DoIt theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 20 Dec 2021 15:49:05 &#43;0700</lastBuildDate>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Nov 2022 01:10:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.98t1.net/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>How to create ssl certificate for local test environment</title>
-    <link>https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/</link>
-    <pubDate>Mon, 20 Dec 2021 15:49:05 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/</guid>
-    <description><![CDATA[<p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
-<p>In bash shell, run these commands:</p>
-<h2 id="create-certificate-authority" class="headerLink">
-    <a href="#create-certificate-authority" class="header-mark"></a>1 Create Certificate Authority</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl genrsa -des3 -out rootCA.key <span class="m">2048</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Input some information as required. Please notice to save <strong>pass phrase for rootCA.key</strong> in a safe place. You will use this many times later.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl req -x509 -new -nodes -key rootCA.key -sha256 -days <span class="m">3650</span> -out rootCA.pem
-</code></pre></td></tr></table>
-</div>
-</div><p>Change days as you want. 3650 days mean 10 years. :).</p>
-<p>Now we will have two files: <strong>rootCA.key</strong> and <strong>rootCA.pem</strong>. Now you ara a certificate provider.</p>
-<p>In your client PC, open browser (chrome, firefox&hellip;) and import file <strong>rootCA.pem</strong> to tell browser &ldquo;I am a valid certificate provider&rdquo; :).</p>]]></description>
+    <title>Basic Markdown Syntax</title>
+    <link>https://kienngd.98t1.net/202211030810_markdown_basic/</link>
+    <pubDate>Thu, 03 Nov 2022 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.98t1.net/202211030810_markdown_basic/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/static/images/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
+</item><item>
+    <title>Some softwares I use</title>
+    <link>https://kienngd.98t1.net/20221103080000_some_softwares_i_use/</link>
+    <pubDate>Thu, 03 Nov 2022 01:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.98t1.net/20221103080000_some_softwares_i_use/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://i.ytimg.com/vi/BTB86HeZVwk/sddefault.jpg" referrerpolicy="no-referrer">
+            </div>Some softwares I use
+1 OS Ubuntu 22.04 Microsoft Window 7, 10 (seldom)  2 Web browser Google chrome Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com Dropbox Project management Trello - Jira: https://www.atlassian.com/ Mindmap: https://gitmind.com/  7 Others Laradock  Nginx PHP 7, 8 MySQL PostgreSQL 12 TimeScaleDB 2.]]></description>
 </item><item>
     <title>How to manage your tasks list?</title>
     <link>https://kienngd.98t1.net/how_to_manage_your_tasks_list/</link>
-    <pubDate>Wed, 29 Sep 2021 07:00:00 &#43;0700</pubDate><author>
+    <pubDate>Thu, 29 Sep 2022 07:00:00 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.98t1.net/how_to_manage_your_tasks_list/</guid>
     <description><![CDATA[<p>Hello, it is me again. Today I&rsquo;ll tell you how I manage my tasks.</p>
-<p>When I take a task, first of all I&rsquo;ll set it one (or more) <strong>tags</strong>. Then I set it a <strong>due date</strong>. And finally put it in to a list. Very simple :).</p>
-<p><a class="lightgallery" href="/images/tasks_list.png" title="tasks list management" data-thumbnail="/images/tasks_list.png">
-        
-    </a></p>]]></description>
+<p>When I take a task, first of all I&rsquo;ll set it one (or more) <strong>tags</strong>. Then I set it a <strong>due date</strong>. And finally put it in to a list. Very simple :).</p>]]></description>
+</item><item>
+    <title>How to create ssl certificate for local test environment</title>
+    <link>https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/</link>
+    <pubDate>Mon, 20 Dec 2021 15:49:05 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.98t1.net/how_to_create_ssl_cert_for_local_test_en/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png" referrerpolicy="no-referrer">
+            </div><p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>In bash shell, run these commands:</p>]]></description>
 </item><item>
     <title>Code-Server code in your browser</title>
     <link>https://kienngd.98t1.net/code_server_code_in_your_browser/</link>
@@ -231,150 +228,5 @@ Create tunnel</p>
 </code></pre></td></tr></table>
 </div>
 </div>]]></description>
-</item><item>
-    <title>Laravel Roles Permissions</title>
-    <link>https://kienngd.98t1.net/laravel_roles_permissions/</link>
-    <pubDate>Fri, 27 Nov 2020 09:44:04 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/laravel_roles_permissions/</guid>
-    <description><![CDATA[<p><strong>Create role, permission</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">use</span> <span class="nx">Spatie\Permission\Models\Role</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">Spatie\Permission\Models\Permission</span><span class="p">;</span>
-
-<span class="nv">$role</span> <span class="o">=</span> <span class="nx">Role</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;admin&#39;</span><span class="p">]);</span>
-<span class="nv">$permission</span> <span class="o">=</span> <span class="nx">Permission</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;create-articles&#39;</span><span class="p">]);</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Assign / Sync / Revoke permission to role</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="c1">// Assign
-</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">givePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span> <span class="c1">// $permission can be string / object / array of strings / array of objects
-</span><span class="c1"></span><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">assignRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
-
-<span class="c1">// Sync
-</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">syncPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
-<span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">syncRoles</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
-
-<span class="c1">// Revoke
-</span><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">revokePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
-<span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">removeRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
-
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Check roles permissons</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasPermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
-<span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAnyPermission</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
-<span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAllPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
-
-</code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>Apiato laravel based framework</title>
-    <link>https://kienngd.98t1.net/apiato/</link>
-    <pubDate>Thu, 26 Nov 2020 08:36:20 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/apiato/</guid>
-    <description><![CDATA[<p>Home page: <a href="http://docs.apiato.io/" target="_blank" rel="noopener noreferrer">http://docs.apiato.io/</a></p>
-<p><strong>Create project using composer from latest stable</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">composer create-project apiato/apiato apiato9
-</code></pre></td></tr></table>
-</div>
-</div><p>Then edit the .env file.</p>
-<p><strong>Migrate database</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan migrate
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Create admin user, some permissions, roles</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan db:seed
-</code></pre></td></tr></table>
-</div>
-</div><p>Default account is: <a href="mailto:admin@admin.com" rel="">admin@admin.com</a> / admin.</p>
-<p><strong>Add all current permissions to admin role.</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan apiato:permissions:toRole admin
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Install OAuth 2.0</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan passport:install
-</code></pre></td></tr></table>
-</div>
-</div><p>Then edit file <strong>.env</strong> update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.</p>
-<p><strong>Install ApiDocJs</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yarn install
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Create api doc</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan apiato:apidoc
-</code></pre></td></tr></table>
-</div>
-</div><p>Your default document url is: http://<Your domain>/api/documentation and http://<Your domain>/api/private/documentation</p>
-<p>Default result is saved in: <strong>public/api/documentation/</strong></p>]]></description>
 </item></channel>
 </rss>
