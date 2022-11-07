@@ -14,15 +14,15 @@
                 <img src="/static/images/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
             </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
 </item><item>
-    <title>Some softwares I use</title>
-    <link>https://kienngd.98t1.net/20221103080000_some_softwares_i_use/</link>
+    <title>Some softwares I use everyday</title>
+    <link>https://kienngd.98t1.net/some_softwares_i_use/</link>
     <pubDate>Thu, 03 Nov 2022 01:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.98t1.net/20221103080000_some_softwares_i_use/</guid>
+                </author><guid>https://kienngd.98t1.net/some_softwares_i_use/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="https://i.ytimg.com/vi/BTB86HeZVwk/sddefault.jpg" referrerpolicy="no-referrer">
             </div>Some softwares I use
-1 OS Ubuntu 22.04 Microsoft Window 7, 10 (seldom)  2 Web browser Google chrome Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com Dropbox Project management Trello - Jira: https://www.atlassian.com/ Mindmap: https://gitmind.com/  7 Others Laradock  Nginx PHP 7, 8 MySQL PostgreSQL 12 TimeScaleDB 2.]]></description>
+1 OS Ubuntu 22.04 Microsoft Windows 7 &amp; 10 (seldom)  2 Web browser Google chrome  Extendsion:  Google translate Google docs offline     Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com DrawIO Dropbox Project management Trello - Jira: https://www.]]></description>
 </item><item>
     <title>Code-Server code in your browser</title>
     <link>https://kienngd.98t1.net/code_server_code_in_your_browser/</link>
