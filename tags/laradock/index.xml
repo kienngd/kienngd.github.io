@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Laradock - Tag - K5D</title>
-        <link>https://kienngd.98t1.net/tags/laradock/</link>
+        <link>https://blog.kiennd.cf/tags/laradock/</link>
         <description>Laradock - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/laradock/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/laradock/" rel="self" type="application/rss+xml" /><item>
     <title>How to use PHP8 with Laradock</title>
-    <link>https://kienngd.98t1.net/how_to_use_php8_with_laradock/</link>
+    <link>https://blog.kiennd.cf/how_to_use_php8_with_laradock/</link>
     <pubDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/how_to_use_php8_with_laradock/</guid>
+    </author><guid>https://blog.kiennd.cf/how_to_use_php8_with_laradock/</guid>
     <description><![CDATA[<p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
 <p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
 <p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
@@ -47,10 +47,10 @@
 </div>]]></description>
 </item><item>
     <title>Influxdb Docker With Laradock</title>
-    <link>https://kienngd.98t1.net/influxdb_docker_with_laradock/</link>
+    <link>https://blog.kiennd.cf/influxdb_docker_with_laradock/</link>
     <pubDate>Tue, 20 Oct 2020 09:09:57 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/influxdb_docker_with_laradock/</guid>
+    </author><guid>https://blog.kiennd.cf/influxdb_docker_with_laradock/</guid>
     <description><![CDATA[<p>In this post we will see how to run influxdb docker container using laradock. Have fun.</p>
 <p>InfluxDB docker document: <a href="https://hub.docker.com/_/influxdb" target="_blank" rel="noopener noreferrer">https://hub.docker.com/_/influxdb</a></p>
 <p>Edit laradock <strong>.env</strong> file:</p>

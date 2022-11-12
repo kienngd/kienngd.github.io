@@ -4,6 +4,7 @@
 Hello, it is me again. Today I'll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!
 
 In bash shell, run these commands:
+<!--more-->
 
 ## Create Certificate Authority
 ```bash

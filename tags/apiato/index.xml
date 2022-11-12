@@ -1,25 +1,25 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Apiato - Tag - K5D</title>
-        <link>https://kienngd.98t1.net/tags/apiato/</link>
+        <link>https://blog.kiennd.cf/tags/apiato/</link>
         <description>Apiato - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/apiato/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/apiato/" rel="self" type="application/rss+xml" /><item>
     <title>Apiato select language</title>
-    <link>https://kienngd.98t1.net/apiato_select_language/</link>
+    <link>https://blog.kiennd.cf/apiato_select_language/</link>
     <pubDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/apiato_select_language/</guid>
+    </author><guid>https://blog.kiennd.cf/apiato_select_language/</guid>
     <description><![CDATA[<p>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!</p>
 <p>Document: <a href="https://docs.apiato.io/features/localization/" target="_blank" rel="noopener noreferrer">https://docs.apiato.io/features/localization/</a></p>
 <p><u>Step 1</u>: Add new language to supported language:</p>
 <p>Edit <strong>supported_languages</strong> inside file <strong>app/Containers/Localization/Configs/localization.php</strong></p>]]></description>
 </item><item>
     <title>Laravel logout other devices</title>
-    <link>https://kienngd.98t1.net/laravel_logout_other_devices/</link>
+    <link>https://blog.kiennd.cf/laravel_logout_other_devices/</link>
     <pubDate>Fri, 27 Nov 2020 14:42:16 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/laravel_logout_other_devices/</guid>
+    </author><guid>https://blog.kiennd.cf/laravel_logout_other_devices/</guid>
     <description><![CDATA[<p>Check file: <strong>app/Http/Kernel.php</strong> (or file <strong>app/Ship/Kernels/HttpKernel.php</strong> if you use Apiato) and uncomment this line:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -53,10 +53,10 @@
 </div>]]></description>
 </item><item>
     <title>Laravel Roles Permissions</title>
-    <link>https://kienngd.98t1.net/laravel_roles_permissions/</link>
+    <link>https://blog.kiennd.cf/laravel_roles_permissions/</link>
     <pubDate>Fri, 27 Nov 2020 09:44:04 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/laravel_roles_permissions/</guid>
+    </author><guid>https://blog.kiennd.cf/laravel_roles_permissions/</guid>
     <description><![CDATA[<p><strong>Create role, permission</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -123,10 +123,10 @@
 </div>]]></description>
 </item><item>
     <title>Apiato laravel based framework</title>
-    <link>https://kienngd.98t1.net/apiato/</link>
+    <link>https://blog.kiennd.cf/apiato/</link>
     <pubDate>Thu, 26 Nov 2020 08:36:20 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/apiato/</guid>
+    </author><guid>https://blog.kiennd.cf/apiato/</guid>
     <description><![CDATA[<p>Home page: <a href="http://docs.apiato.io/" target="_blank" rel="noopener noreferrer">http://docs.apiato.io/</a></p>
 <p><strong>Create project using composer from latest stable</strong></p>
 <div class="highlight"><div class="chroma">

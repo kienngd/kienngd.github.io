@@ -9,10 +9,10 @@
     <title class="pjax-title">K5D</title><meta name="Description" content="The official documentation for the Hugo DoIt theme"><meta property="og:title" content="Home" />
 <meta property="og:description" content="The official documentation for the Hugo DoIt theme" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://kienngd.98t1.net/" /><meta property="og:image" content="https://kienngd.98t1.net/images/avatar.webp"/><meta property="og:site_name" content="K5D blog" />
+<meta property="og:url" content="https://blog.kiennd.cf/" /><meta property="og:image" content="https://blog.kiennd.cf/images/avatar.webp"/><meta property="og:site_name" content="K5D blog" />
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://kienngd.98t1.net/images/avatar.webp"/>
+<meta name="twitter:image" content="https://blog.kiennd.cf/images/avatar.webp"/>
 
 <meta name="twitter:title" content="Home"/>
 <meta name="twitter:description" content="The official documentation for the Hugo DoIt theme"/>
@@ -21,7 +21,7 @@
 
 <meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://kienngd.98t1.net/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="K5D">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.kiennd.cf/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="K5D">
     <link rel="feed" href="/index.xml" type="application/rss+xml" title="K5D"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
@@ -32,10 +32,10 @@
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "url": "https:\/\/kienngd.98t1.net\/","inLanguage": "en","author": {
+        "url": "https:\/\/blog.kiennd.cf\/","inLanguage": "en","author": {
                 "@type": "Person",
                 "name": "KienND"
-            },"description": "The official documentation for the Hugo DoIt theme","image": "https:\/\/kienngd.98t1.net\/images\/Apple-Devices-Preview.png","thumbnailUrl": "https:\/\/kienngd.98t1.net\/images\/screenshot.png","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","name": "K5D"
+            },"description": "The official documentation for the Hugo DoIt theme","image": "https:\/\/blog.kiennd.cf\/images\/Apple-Devices-Preview.png","thumbnailUrl": "https:\/\/blog.kiennd.cf\/images\/screenshot.png","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","name": "K5D"
     }
     </script></head>
 
@@ -127,51 +127,61 @@
         data-sizes="auto"
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/how_to_create_ssl_cert_for_local_test_en/">How to create ssl certificate for local test environment</a>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/202211030810_markdown_basic/" aria-label=Basic&#32;Markdown&#32;Syntax><img
+        class="lazyload"
+        data-src="/static/images/basic-markdown-featured-image.webp"
+        data-srcset="/static/images/basic-markdown-featured-image.webp, /static/images/basic-markdown-featured-image.webp 1.5x, /static/images/basic-markdown-featured-image.webp 2x"
+        data-sizes="auto"
+        alt="/static/images/basic-markdown-featured-image.webp"
+        title="This article shows the basic Markdown syntax and format." height="auto" width="auto"></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/202211030810_markdown_basic/">Basic Markdown Syntax</a>
     </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-12-20">2021-12-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
-<p>In bash shell, run these commands:</p>
-<h2 id="create-certificate-authority" class="headerLink">
-    <a href="#create-certificate-authority" class="header-mark"></a>1 Create Certificate Authority</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl genrsa -des3 -out rootCA.key <span class="m">2048</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Input some information as required. Please notice to save <strong>pass phrase for rootCA.key</strong> in a safe place. You will use this many times later.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl req -x509 -new -nodes -key rootCA.key -sha256 -days <span class="m">3650</span> -out rootCA.pem
-</code></pre></td></tr></table>
-</div>
-</div><p>Change days as you want. 3650 days mean 10 years. :).</p>
-<p>Now we will have two files: <strong>rootCA.key</strong> and <strong>rootCA.pem</strong>. Now you ara a certificate provider.</p>
-<p>In your client PC, open browser (chrome, firefox&hellip;) and import file <strong>rootCA.pem</strong> to tell browser &ldquo;I am a valid certificate provider&rdquo; :).</p></div><div class="post-footer">
-        <a href="/how_to_create_ssl_cert_for_local_test_en/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ssl/">SSL</a></div></div>
+        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://blog.kiennd.cf/authors/kien-nguyen'>Kien Nguyen</a></span>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-11-03">2022-11-03</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/series-1/"><i class="far fa-list-alt fa-fw"></i>series-1</a>&nbsp;<a href="/series/series-2/"><i class="far fa-list-alt fa-fw"></i>series-2</a></span></div><div class="content"><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p></div><div class="post-footer">
+        <a href="/202211030810_markdown_basic/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/markdown/">Markdown</a>,&nbsp;<a href="/tags/html/">HTML</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/some_softwares_i_use/" aria-label=Some&#32;softwares&#32;I&#32;use&#32;everyday><img
+        class="lazyload"
+        data-src="https://i.ytimg.com/vi/BTB86HeZVwk/sddefault.jpg"
+        data-srcset="https://i.ytimg.com/vi/BTB86HeZVwk/sddefault.jpg, https://i.ytimg.com/vi/BTB86HeZVwk/sddefault.jpg 1.5x, https://i.ytimg.com/vi/BTB86HeZVwk/sddefault.jpg 2x"
+        data-sizes="auto"
+        alt="https://i.ytimg.com/vi/BTB86HeZVwk/sddefault.jpg"
+        title="Some softwares I use" height="auto" width="auto"></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/some_softwares_i_use/">Some softwares I use everyday</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://blog.kiennd.cf/authors/kien-nguyen'>Kien Nguyen</a></span>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-11-03">2022-11-03</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span></div><div class="content">Some softwares I use
+1 OS Ubuntu 22.04 Microsoft Windows 7 &amp; 10 (seldom)  2 Web browser Google chrome  Extendsion:  Google translate Google docs offline     Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com DrawIO Dropbox Project management Trello - Jira: https://www.</div><div class="post-footer">
+        <a href="/some_softwares_i_use/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/softwares/">softwares</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/how_to_manage_your_tasks_list/">How to manage your tasks list?</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-09-29">2021-09-29</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, it is me again. Today I&rsquo;ll tell you how I manage my tasks.</p>
-<p>When I take a task, first of all I&rsquo;ll set it one (or more) <strong>tags</strong>. Then I set it a <strong>due date</strong>. And finally put it in to a list. Very simple :).</p>
-<p><a class="lightgallery" href="/images/tasks_list.png" title="tasks list management" data-thumbnail="/images/tasks_list.png">
-        <img
-            class="lazyload"
-            data-src="/images/tasks_list.png"
-            data-srcset="/images/tasks_list.png, /images/tasks_list.png 1.5x, /images/tasks_list.png 2x"
-            data-sizes="auto"
-            alt="/images/tasks_list.png">
-    </a></p></div><div class="post-footer">
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-29">2022-09-29</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, it is me again. Today I&rsquo;ll tell you how I manage my tasks.</p>
+<p>When I take a task, first of all I&rsquo;ll set it one (or more) <strong>tags</strong>. Then I set it a <strong>due date</strong>. And finally put it in to a list. Very simple :).</p></div><div class="post-footer">
         <a href="/how_to_manage_your_tasks_list/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/personal/">Personal</a>,&nbsp;<a href="/tags/time-managerment/">Time Managerment</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/how_to_create_ssl_cert_for_local_test_en/" aria-label=How&#32;to&#32;create&#32;ssl&#32;certificate&#32;for&#32;local&#32;test&#32;environment><img
+        class="lazyload"
+        data-src="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png"
+        data-srcset="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png, https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png 1.5x, https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png 2x"
+        data-sizes="auto"
+        alt="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png"
+        title="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png" height="auto" width="auto"></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/how_to_create_ssl_cert_for_local_test_en/">How to create ssl certificate for local test environment</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-12-20">2021-12-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>In bash shell, run these commands:</p></div><div class="post-footer">
+        <a href="/how_to_create_ssl_cert_for_local_test_en/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ssl/">SSL</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/code_server_code_in_your_browser/">Code-Server code in your browser</a>
     </h1><div class="post-meta">
@@ -281,45 +291,6 @@
 </div></div><div class="post-footer">
         <a href="/php_pass_by_value_pass_by_reference/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/php/">PHP</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/how_to_connect_service_via_ssh_tunnel/">How to connect to a service on the remote server via SSH tunnel</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-03-30">2021-03-30</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
-<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
-<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
-<p><strong><u>Option 1</u></strong>: Command line
-Create tunnel</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p<span class="o">[</span>SERVER_SSH_PORT<span class="o">]</span> -L <span class="o">[</span>LOCAL_PORT_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>LOCAL_ADDRESS_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>SERVER_PORT_TO_FORWARD<span class="o">]</span> <span class="o">[</span>SERVER_USER_NAME<span class="o">]</span>@<span class="o">[</span>SERVER_IP<span class="o">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Example</strong>:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
-</code></pre></td></tr></table>
-</div>
-</div></div><div class="post-footer">
-        <a href="/how_to_connect_service_via_ssh_tunnel/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/ssh/">ssh</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/apiato_select_language/">Apiato select language</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-03-25">2021-03-25</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/tutorials/"><i class="far fa-folder fa-fw"></i>tutorials</a></span></div><div class="content"><p>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!</p>
-<p>Document: <a href="https://docs.apiato.io/features/localization/" target="_blank" rel="noopener noreferrer">https://docs.apiato.io/features/localization/</a></p>
-<p><u>Step 1</u>: Add new language to supported language:</p>
-<p>Edit <strong>supported_languages</strong> inside file <strong>app/Containers/Localization/Configs/localization.php</strong></p></div><div class="post-footer">
-        <a href="/apiato_select_language/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/laravel/">Laravel</a>,&nbsp;<a href="/tags/apiato/">Apiato</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -333,8 +304,10 @@ Create tunnel</p>
                         <a href="/page/3/">3</a>
                     </span>
                 </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/4/">4</a>
+                        <a href="/page/5/">5</a>
                     </span>
                 </li></ul></div></div>
         </main><footer class="footer">

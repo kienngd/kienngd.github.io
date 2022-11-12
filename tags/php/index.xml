@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>PHP - Tag - K5D</title>
-        <link>https://kienngd.98t1.net/tags/php/</link>
+        <link>https://blog.kiennd.cf/tags/php/</link>
         <description>PHP - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Apr 2021 10:55:04 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/php/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Apr 2021 10:55:04 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/php/" rel="self" type="application/rss+xml" /><item>
     <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
-    <link>https://kienngd.98t1.net/php_pass_by_value_pass_by_reference/</link>
+    <link>https://blog.kiennd.cf/php_pass_by_value_pass_by_reference/</link>
     <pubDate>Fri, 16 Apr 2021 10:55:04 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/php_pass_by_value_pass_by_reference/</guid>
+    </author><guid>https://blog.kiennd.cf/php_pass_by_value_pass_by_reference/</guid>
     <description><![CDATA[<p>Hello, it is me again. Today, we will talk about &ldquo;<strong>pass by value</strong>&rdquo; or &ldquo;<strong>pass by reference</strong>&rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!</p>
 <p>We have an example class:</p>
 <div class="highlight"><div class="chroma">
@@ -59,10 +59,10 @@
 </div>]]></description>
 </item><item>
     <title>Working with openstack api using curl</title>
-    <link>https://kienngd.98t1.net/working_with_openstack_api_using_curl/</link>
+    <link>https://blog.kiennd.cf/working_with_openstack_api_using_curl/</link>
     <pubDate>Thu, 29 Oct 2020 09:26:59 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/working_with_openstack_api_using_curl/</guid>
+    </author><guid>https://blog.kiennd.cf/working_with_openstack_api_using_curl/</guid>
     <description><![CDATA[<h5 id="get-token" class="headerLink">
     <a href="#get-token" class="header-mark"></a>0.0.0.1 Get token</h5><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -118,10 +118,10 @@
 <p>By default, this token will be expired after 6 hours.</p>]]></description>
 </item><item>
     <title>Phpdoc docblock</title>
-    <link>https://kienngd.98t1.net/phpdoc_docblock/</link>
+    <link>https://blog.kiennd.cf/phpdoc_docblock/</link>
     <pubDate>Thu, 15 Oct 2020 11:08:52 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/phpdoc_docblock/</guid>
+    </author><guid>https://blog.kiennd.cf/phpdoc_docblock/</guid>
     <description><![CDATA[<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -163,10 +163,10 @@
 </div><p><strong>Tags</strong> example: @api, @author, @param, @return&hellip;</p>]]></description>
 </item><item>
     <title>Create document using phpdoc</title>
-    <link>https://kienngd.98t1.net/create_document_using_phpdoc/</link>
+    <link>https://blog.kiennd.cf/create_document_using_phpdoc/</link>
     <pubDate>Thu, 15 Oct 2020 10:49:07 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/create_document_using_phpdoc/</guid>
+    </author><guid>https://blog.kiennd.cf/create_document_using_phpdoc/</guid>
     <description><![CDATA[<p>Hello. In this post, we will learn how to build document using phpdoc. Have fun!</p>
 <ol>
 <li>
