@@ -464,7 +464,6 @@ fastcgi_pass php8-fpm:9000<span class="p">;</span>
                 deferredInstallPrompt = event;
             });
             function downloadButtonClicked() {
-                alert('Install pwa');
                 deferredInstallPrompt.prompt();
                 deferredInstallPrompt.userChoice
                     .then(function (choiceResult) {

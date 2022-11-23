@@ -195,7 +195,6 @@ Bonus: You can use curl command to get data too."/>
                 deferredInstallPrompt = event;
             });
             function downloadButtonClicked() {
-                alert('Install pwa');
                 deferredInstallPrompt.prompt();
                 deferredInstallPrompt.userChoice
                     .then(function (choiceResult) {

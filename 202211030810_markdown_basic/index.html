@@ -1425,7 +1425,6 @@ This is a footnote with &#34;label&#34;[^label]
                 deferredInstallPrompt = event;
             });
             function downloadButtonClicked() {
-                alert('Install pwa');
                 deferredInstallPrompt.prompt();
                 deferredInstallPrompt.userChoice
                     .then(function (choiceResult) {

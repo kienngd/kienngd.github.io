@@ -242,7 +242,6 @@ If you download rpm or deb, use PMS of your OS to install it. I download file ta
                 deferredInstallPrompt = event;
             });
             function downloadButtonClicked() {
-                alert('Install pwa');
                 deferredInstallPrompt.prompt();
                 deferredInstallPrompt.userChoice
                     .then(function (choiceResult) {

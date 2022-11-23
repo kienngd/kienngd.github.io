@@ -124,7 +124,6 @@
                 deferredInstallPrompt = event;
             });
             function downloadButtonClicked() {
-                alert('Install pwa');
                 deferredInstallPrompt.prompt();
                 deferredInstallPrompt.userChoice
                     .then(function (choiceResult) {
