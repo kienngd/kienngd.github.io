@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>ssh - Tag - K5D</title>
-        <link>https://kienngd.98t1.net/tags/ssh/</link>
+        <link>https://blog.kiennd.cf/tags/ssh/</link>
         <description>ssh - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/ssh/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/ssh/" rel="self" type="application/rss+xml" /><item>
     <title>How to connect to a service on the remote server via SSH tunnel</title>
-    <link>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</link>
+    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
     <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</guid>
+    </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
     <description><![CDATA[<p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
 <p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
 <p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>

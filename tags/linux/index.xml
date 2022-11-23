@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Linux - Tag - K5D</title>
-        <link>https://kienngd.98t1.net/tags/linux/</link>
+        <link>https://blog.kiennd.cf/tags/linux/</link>
         <description>Linux - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/linux/" rel="self" type="application/rss+xml" /><item>
     <title>How to use PHP8 with Laradock</title>
-    <link>https://kienngd.98t1.net/how_to_use_php8_with_laradock/</link>
+    <link>https://blog.kiennd.cf/how_to_use_php8_with_laradock/</link>
     <pubDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/how_to_use_php8_with_laradock/</guid>
+    </author><guid>https://blog.kiennd.cf/how_to_use_php8_with_laradock/</guid>
     <description><![CDATA[<p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
 <p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
 <p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
@@ -47,10 +47,10 @@
 </div>]]></description>
 </item><item>
     <title>How to connect to a service on the remote server via SSH tunnel</title>
-    <link>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</link>
+    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
     <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/how_to_connect_service_via_ssh_tunnel/</guid>
+    </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
     <description><![CDATA[<p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
 <p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
 <p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
@@ -76,10 +76,10 @@ Create tunnel</p>
 </div>]]></description>
 </item><item>
     <title>How to create a linux service</title>
-    <link>https://kienngd.98t1.net/how_to_create_linux_service/</link>
+    <link>https://blog.kiennd.cf/how_to_create_linux_service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/how_to_create_linux_service/</guid>
+    </author><guid>https://blog.kiennd.cf/how_to_create_linux_service/</guid>
     <description><![CDATA[<p>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!</p>
 <h5 id="step-1-create-new-service-file" class="headerLink">
     <a href="#step-1-create-new-service-file" class="header-mark"></a>0.0.0.1 Step 1: Create new service file</h5><div class="highlight"><div class="chroma">

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Git - Tag - K5D</title>
-        <link>https://kienngd.98t1.net/tags/git/</link>
+        <link>https://blog.kiennd.cf/tags/git/</link>
         <description>Git - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Oct 2020 11:02:20 &#43;0700</lastBuildDate><atom:link href="https://kienngd.98t1.net/tags/git/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Oct 2020 11:02:20 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/git/" rel="self" type="application/rss+xml" /><item>
     <title>Some git commands</title>
-    <link>https://kienngd.98t1.net/some_git_commands/</link>
+    <link>https://blog.kiennd.cf/some_git_commands/</link>
     <pubDate>Fri, 16 Oct 2020 11:02:20 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.98t1.net/some_git_commands/</guid>
+    </author><guid>https://blog.kiennd.cf/some_git_commands/</guid>
     <description><![CDATA[<p>This is some git commands that I usually use.</p>
 <p><strong>Clone a repository</strong></p>
 <div class="highlight"><div class="chroma">
