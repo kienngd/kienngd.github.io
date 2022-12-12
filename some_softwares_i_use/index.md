@@ -47,8 +47,8 @@ Some softwares I use
 - LibreOffice
 - Text editor: Geany, Gedit
 - Image processor: GIMP
-- Thunderbird: Email client
+- Thunderbird - Email client
 - OpenVPN
-- FreePlane: mindmap editor
+- FreePlan - mindmap editor
 - DrawIO
-- Postman: Rest API client
+- Postman

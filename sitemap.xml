@@ -2,17 +2,21 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://blog.kiennd.cf/working_with_hexadog_laravel_theme_manager/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.kiennd.cf/202211030810_markdown_basic/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/some_softwares_i_use/</loc><lastmod>2022-11-03T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/authors/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/categories/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.kiennd.cf/authors/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/categories/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/authors/kien-nguyen/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/tags/laravel/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/tags/laravel-theme-magager/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/posts/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/tags/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.kiennd.cf/categories/tutorials/</loc><lastmod>2022-12-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.kiennd.cf/tags/html/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/authors/kien-nguyen/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/tags/markdown/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/categories/notes/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/posts/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/tags/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/tags/softwares/</loc><lastmod>2022-11-03T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/how_to_manage_your_tasks_list/</loc><lastmod>2022-09-29T07:00:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/categories/howto/</loc><lastmod>2022-09-29T07:00:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -34,8 +38,6 @@
             <loc>https://blog.kiennd.cf/tags/ssh/</loc><lastmod>2021-03-30T09:34:48&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/tags/apiato/</loc><lastmod>2021-03-25T15:36:54&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/apiato_select_language/</loc><lastmod>2021-03-25T15:36:54&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/tags/laravel/</loc><lastmod>2021-03-25T15:36:54&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.kiennd.cf/categories/tutorials/</loc><lastmod>2021-03-25T15:36:54&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/laravel_logout_other_devices/</loc><lastmod>2020-11-27T14:42:16&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/laravel_roles_permissions/</loc><lastmod>2020-11-27T09:44:04&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.kiennd.cf/apiato/</loc><lastmod>2020-11-26T08:36:20&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

@@ -101,6 +101,65 @@
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/working_with_openstack_api_using_curl/">Working with openstack api using curl</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-29">2020-10-29</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span></div><div class="content"><h5 id="get-token" class="headerLink">
+    <a href="#get-token" class="header-mark"></a>0.0.0.1 Get token</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -i -H <span class="s2">&#34;Content-Type: application/json&#34;</span>   -d <span class="s1">&#39;
+</span><span class="s1">{
+</span><span class="s1">    &#34;auth&#34;: {
+</span><span class="s1">        &#34;identity&#34;: {
+</span><span class="s1">            &#34;methods&#34;: [
+</span><span class="s1">                &#34;password&#34;
+</span><span class="s1">            ],
+</span><span class="s1">            &#34;password&#34;: {
+</span><span class="s1">                &#34;user&#34;: {
+</span><span class="s1">                    &#34;name&#34;: &#34;{USERNAME}&#34;,
+</span><span class="s1">                    &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; },
+</span><span class="s1">                    &#34;password&#34;: &#34;{PASSWORD}&#34;
+</span><span class="s1">                }
+</span><span class="s1">            }
+</span><span class="s1">        },
+</span><span class="s1">        &#34;scope&#34;: {
+</span><span class="s1">            &#34;project&#34;: {
+</span><span class="s1">                &#34;id&#34;: &#34;{PROJECT_ID}&#34;
+</span><span class="s1">            }
+</span><span class="s1">        }
+</span><span class="s1">    }
+</span><span class="s1">}&#39;</span>   <span class="s2">&#34;https://{BASE URL}:5000/v3/auth/tokens&#34;</span> <span class="p">|</span> grep <span class="s2">&#34;X-Subject-Token:&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Default keystone port is <strong>5000</strong></p>
+<p>By default, this token will be expired after 6 hours.</p></div><div class="post-footer">
+        <a href="/working_with_openstack_api_using_curl/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/php/">PHP</a>,&nbsp;<a href="/tags/openstack/">OpenStack</a>,&nbsp;<a href="/tags/api/">API</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/working_with_influxdb_data_using_phpclient/">Working With Influxdb Data Using PhpClient</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
@@ -344,14 +403,6 @@ influxdb:
 </div></div><div class="post-footer">
         <a href="/some_git_commands/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/git/">Git</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/how_to_check_my_ip/">How to check my ip</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-16">2020-10-16</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!</p>
-<p>Open your browser to access this link: <a href="https://api.myip.com/" target="_blank" rel="noopener noreferrer">https://api.myip.com/</a>. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: <strong>115.75.212.27</strong>.</p>
-<p><strong>Bonus</strong>: You can use curl command to get data too.</p></div><div class="post-footer">
-        <a href="/how_to_check_my_ip/">Read more...</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

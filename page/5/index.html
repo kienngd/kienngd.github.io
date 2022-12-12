@@ -101,6 +101,61 @@
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/how_to_build_free_blog/">How to build a free blog</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-08">2020-10-08</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
+<p><strong>Step 1</strong>: Install hugo.</p>
+<ul>
+<li>Download hugo from: <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreferrer">https://github.com/gohugoio/hugo/releases</a></li>
+<li>Install in your PC.</li>
+</ul>
+<p><strong>Step 2</strong>: Create a new site.</p>
+<ul>
+<li>Quick start document: <a href="https://gohugo.io/getting-started/" target="_blank" rel="noopener noreferrer">https://gohugo.io/getting-started/</a></li>
+<li>Command:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo new site myblog
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Step 3</strong>: Setup your hugo theme.</p>
+<ul>
+<li>Find a theme from: <a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreferrer">https://themes.gohugo.io/</a>.</li>
+<li>Download theme and put into site&rsquo;s themes directory.
+Example we want to use Ananke theme:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> myblog
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Inside file config.toml.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">theme = &#34;ananke&#34;
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer">
+        <a href="/how_to_build_free_blog/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/github/">GitHub</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/how_does_networking_work/">How does computer networking work?</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
