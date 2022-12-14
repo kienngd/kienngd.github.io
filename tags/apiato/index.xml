@@ -4,7 +4,14 @@
         <link>https://blog.kiennd.cf/tags/apiato/</link>
         <description>Apiato - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/apiato/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/apiato/" rel="self" type="application/rss+xml" /><item>
+    <title>Add new guard to an Apiato11 project</title>
+    <link>https://blog.kiennd.cf/apiato11_add_new_guard/</link>
+    <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/apiato11_add_new_guard/</guid>
+    <description><![CDATA[Add new guard to an Apiato11 project]]></description>
+</item><item>
     <title>Apiato select language</title>
     <link>https://blog.kiennd.cf/apiato_select_language/</link>
     <pubDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</pubDate><author>

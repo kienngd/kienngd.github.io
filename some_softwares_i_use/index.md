@@ -49,6 +49,6 @@ Some softwares I use
 - Image processor: GIMP
 - Thunderbird - Email client
 - OpenVPN
-- FreePlan - mindmap editor
+- FreePlane - mindmap editor
 - DrawIO
 - Postman

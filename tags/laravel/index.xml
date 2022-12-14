@@ -4,7 +4,14 @@
         <link>https://blog.kiennd.cf/tags/laravel/</link>
         <description>Laravel - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/laravel/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/laravel/" rel="self" type="application/rss+xml" /><item>
+    <title>Add new guard to an Apiato11 project</title>
+    <link>https://blog.kiennd.cf/apiato11_add_new_guard/</link>
+    <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/apiato11_add_new_guard/</guid>
+    <description><![CDATA[Add new guard to an Apiato11 project]]></description>
+</item><item>
     <title>Working with HexaDog Laravel-Theme-Manager</title>
     <link>https://blog.kiennd.cf/working_with_hexadog_laravel_theme_manager/</link>
     <pubDate>Mon, 12 Dec 2022 00:00:00 &#43;0000</pubDate><author>
