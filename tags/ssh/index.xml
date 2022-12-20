@@ -1,37 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>ssh - Tag - K5D</title>
+        <title>SSH - Tag - K5D</title>
         <link>https://blog.kiennd.cf/tags/ssh/</link>
-        <description>ssh - Tag - K5D</description>
+        <description>SSH - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
             <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/ssh/" rel="self" type="application/rss+xml" /><item>
     <title>How to connect to a service on the remote server via SSH tunnel</title>
     <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
     <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
-    <description><![CDATA[<p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
-<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
-<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
-<p><strong><u>Option 1</u></strong>: Command line
-Create tunnel</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p<span class="o">[</span>SERVER_SSH_PORT<span class="o">]</span> -L <span class="o">[</span>LOCAL_PORT_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>LOCAL_ADDRESS_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>SERVER_PORT_TO_FORWARD<span class="o">]</span> <span class="o">[</span>SERVER_USER_NAME<span class="o">]</span>@<span class="o">[</span>SERVER_IP<span class="o">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Example</strong>:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
-</code></pre></td></tr></table>
-</div>
-</div>]]></description>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/howto/how_to_connect_service_via_ssh_tunnel.webp" referrerpolicy="no-referrer">
+            </div>How to connect to a service on the remote server via SSH tunnel]]></description>
 </item></channel>
 </rss>

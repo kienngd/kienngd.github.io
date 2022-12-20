@@ -1,5 +1,7 @@
 # How to connect to a service on the remote server via SSH tunnel
 
+
+<!--more-->
 Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!
 
 Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.
@@ -28,14 +30,14 @@ When you create or edit a connection, you can create a tunnel
 
 **Create tunnel**
 
-![ssh_tunnel_01](/images/ssh_tunnel_01.png)
+![ssh_tunnel_01](/images/howto/ssh_tunnel_01.png)
 
 **Create connection**
 
-![ssh_tunnel_02](/images/ssh_tunnel_02.png)
+![ssh_tunnel_02](/images/howto/ssh_tunnel_02.png)
 
 Thank you for reading. Further information from ssh manual:
 ```bash
 man ssh
 ```
-![ssh_tunnel_03](/images/ssh_tunnel_03.png)
+![ssh_tunnel_03](/images/howto/ssh_tunnel_03.png)

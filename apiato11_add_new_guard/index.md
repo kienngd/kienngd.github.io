@@ -4,7 +4,7 @@
 <!--more-->
 ## Edit config
 - `config/auth.php` section `guards` and `providers`
-  ```php
+  ```php {hl_lines=["4-7"]}
     // ...
     'guards' => [
       // ...

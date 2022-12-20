@@ -5,6 +5,15 @@
         <description>howto - Category - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
             <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Sep 2022 07:00:00 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/howto/" rel="self" type="application/rss+xml" /><item>
+    <title>How to connect to a service on the remote server via SSH tunnel</title>
+    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
+    <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/howto/how_to_connect_service_via_ssh_tunnel.webp" referrerpolicy="no-referrer">
+            </div>How to connect to a service on the remote server via SSH tunnel]]></description>
+</item><item>
     <title>How to manage your tasks list?</title>
     <link>https://blog.kiennd.cf/how_to_manage_your_tasks_list/</link>
     <pubDate>Thu, 29 Sep 2022 07:00:00 &#43;0700</pubDate><author>
@@ -60,35 +69,6 @@
 <span class="nv">WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT</span><span class="o">=</span><span class="m">9001</span>
 <span class="nv">WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT</span><span class="o">=</span><span class="m">5200</span>
 
-</code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>How to connect to a service on the remote server via SSH tunnel</title>
-    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
-    <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
-    <description><![CDATA[<p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
-<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
-<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
-<p><strong><u>Option 1</u></strong>: Command line
-Create tunnel</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p<span class="o">[</span>SERVER_SSH_PORT<span class="o">]</span> -L <span class="o">[</span>LOCAL_PORT_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>LOCAL_ADDRESS_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>SERVER_PORT_TO_FORWARD<span class="o">]</span> <span class="o">[</span>SERVER_USER_NAME<span class="o">]</span>@<span class="o">[</span>SERVER_IP<span class="o">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Example</strong>:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
 </code></pre></td></tr></table>
 </div>
 </div>]]></description>
@@ -163,54 +143,11 @@ Create tunnel</p>
     <title>How to create a linux service</title>
     <link>https://blog.kiennd.cf/how_to_create_linux_service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_create_linux_service/</guid>
-    <description><![CDATA[<p>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!</p>
-<h5 id="step-1-create-new-service-file" class="headerLink">
-    <a href="#step-1-create-new-service-file" class="header-mark"></a>0.0.0.1 Step 1: Create new service file</h5><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/etc/systemd/system/test_service.service
-</code></pre></td></tr></table>
-</div>
-</div><p>Example file content:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Unit]</span>
-<span class="na">Description</span><span class="o">=</span><span class="s">Demo test service</span>
-<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
-<span class="na">StartLimitIntervalSec</span><span class="o">=</span><span class="s">0</span>
-
-<span class="k">[Service]</span>
-<span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
-<span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
-<span class="na">RestartSec</span><span class="o">=</span><span class="s">1</span>
-<span class="na">User</span><span class="o">=</span><span class="s">**root**</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">**COMMAND TO EXECUTE**</span>
-
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>You can see the full service defination here: <a href="#" rel="">Will be update</a></p>]]></description>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/how_to_create_linux_service/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/howto/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
+            </div>How to create a linux service]]></description>
 </item><item>
     <title>How to working with JSON in GoLang</title>
     <link>https://blog.kiennd.cf/working_with_json_in_golang/</link>

@@ -8,53 +8,10 @@
     <title>How to create a linux service</title>
     <link>https://blog.kiennd.cf/how_to_create_linux_service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_create_linux_service/</guid>
-    <description><![CDATA[<p>Hi, today we will learn how to create a linux service. I use Ubuntu 20.04 to test. Have fun!</p>
-<h5 id="step-1-create-new-service-file" class="headerLink">
-    <a href="#step-1-create-new-service-file" class="header-mark"></a>0.0.0.1 Step 1: Create new service file</h5><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/etc/systemd/system/test_service.service
-</code></pre></td></tr></table>
-</div>
-</div><p>Example file content:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Unit]</span>
-<span class="na">Description</span><span class="o">=</span><span class="s">Demo test service</span>
-<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
-<span class="na">StartLimitIntervalSec</span><span class="o">=</span><span class="s">0</span>
-
-<span class="k">[Service]</span>
-<span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
-<span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
-<span class="na">RestartSec</span><span class="o">=</span><span class="s">1</span>
-<span class="na">User</span><span class="o">=</span><span class="s">**root**</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">**COMMAND TO EXECUTE**</span>
-
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>You can see the full service defination here: <a href="#" rel="">Will be update</a></p>]]></description>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/how_to_create_linux_service/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/howto/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
+            </div>How to create a linux service]]></description>
 </item></channel>
 </rss>

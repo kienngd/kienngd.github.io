@@ -12,16 +12,27 @@
     <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
                 </author><guid>https://blog.kiennd.cf/apiato11_add_new_guard/</guid>
-    <description><![CDATA[Add new guard to an Apiato11 project]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/tutorial/laravel_guard.png" referrerpolicy="no-referrer">
+            </div>Add new guard to an Apiato11 project]]></description>
 </item><item>
-    <title>Working with HexaDog Laravel-Theme-Manager</title>
-    <link>https://blog.kiennd.cf/working_with_hexadog_laravel_theme_manager/</link>
+    <title>Working with HexaDog Laravel-Themes-Manager</title>
+    <link>https://blog.kiennd.cf/working_with_hexadog_laravel_themes_manager/</link>
     <pubDate>Mon, 12 Dec 2022 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/working_with_hexadog_laravel_theme_manager/</guid>
+                </author><guid>https://blog.kiennd.cf/working_with_hexadog_laravel_themes_manager/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/tutorial/laravel-themes-manager.png" referrerpolicy="no-referrer">
-            </div>Working with HexaDog Laravel-Theme-Manager]]></description>
+            </div>Working with HexaDog Laravel-Themes-Manager]]></description>
+</item><item>
+    <title>How to connect to a service on the remote server via SSH tunnel</title>
+    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
+    <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/howto/how_to_connect_service_via_ssh_tunnel.webp" referrerpolicy="no-referrer">
+            </div>How to connect to a service on the remote server via SSH tunnel]]></description>
 </item><item>
     <title>Basic Markdown Syntax</title>
     <link>https://blog.kiennd.cf/202211030810_markdown_basic/</link>
@@ -165,35 +176,6 @@
        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">y</span> <span class="o">=</span> <span class="nv">$y</span><span class="p">;</span>
    <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>How to connect to a service on the remote server via SSH tunnel</title>
-    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
-    <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
-    <description><![CDATA[<p>Hello, today we will talk about connecting to a remote service via SSH tunnel. I use Ubuntu 20.04 to test. Have fun!</p>
-<p>Imagine that you have a MySQL server listen on port 3306. For security reasons, your firewall denies port 3306 from the internet. And you have a SSH account to connect to your server. Normally you can SSH to the server then use mysql client console to interact with the database.</p>
-<p>But sometimes you want to connect to a database using a third party application (Example navicat or DBeaver&hellip;). In these cases you can create a SSH tunnel then connect via tunnel.</p>
-<p><strong><u>Option 1</u></strong>: Command line
-Create tunnel</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p<span class="o">[</span>SERVER_SSH_PORT<span class="o">]</span> -L <span class="o">[</span>LOCAL_PORT_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>LOCAL_ADDRESS_TO_LISTEN<span class="o">]</span>:<span class="o">[</span>SERVER_PORT_TO_FORWARD<span class="o">]</span> <span class="o">[</span>SERVER_USER_NAME<span class="o">]</span>@<span class="o">[</span>SERVER_IP<span class="o">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Example</strong>:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
 </code></pre></td></tr></table>
 </div>
 </div>]]></description>

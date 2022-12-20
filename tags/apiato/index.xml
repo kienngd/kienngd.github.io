@@ -10,7 +10,9 @@
     <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
                 </author><guid>https://blog.kiennd.cf/apiato11_add_new_guard/</guid>
-    <description><![CDATA[Add new guard to an Apiato11 project]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/tutorial/laravel_guard.png" referrerpolicy="no-referrer">
+            </div>Add new guard to an Apiato11 project]]></description>
 </item><item>
     <title>Apiato select language</title>
     <link>https://blog.kiennd.cf/apiato_select_language/</link>
