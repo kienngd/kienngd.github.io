@@ -4,7 +4,15 @@
         <link>https://blog.kiennd.cf/categories/notes/</link>
         <description>notes - Category - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Nov 2022 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Strategy Pattern in PHP with examples</title>
+    <link>https://blog.kiennd.cf/202304211000_strategy_pattern/</link>
+    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/202304211000_strategy_pattern/</guid>
+    <description><![CDATA[1 ExampleWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
+1.1 Without pattern1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort  } public function quickSort(array $arr) { // Implementation of Quick Sort  } public function mergeSort(array $arr) { // Implementation of Merge Sort  } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)   1.]]></description>
+</item><item>
     <title>Basic Markdown Syntax</title>
     <link>https://blog.kiennd.cf/202211030810_markdown_basic/</link>
     <pubDate>Thu, 03 Nov 2022 01:10:00 &#43;0000</pubDate><author>
@@ -269,68 +277,6 @@ influxdb:
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">docker-composer up -d influxdb
-</code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>Some git commands</title>
-    <link>https://blog.kiennd.cf/some_git_commands/</link>
-    <pubDate>Fri, 16 Oct 2020 11:02:20 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/some_git_commands/</guid>
-    <description><![CDATA[<p>This is some git commands that I usually use.</p>
-<p><strong>Clone a repository</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git clone &lt;URL&gt; <span class="o">[</span>&lt;DEST Directory&gt;<span class="o">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Clone from specific branch</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git clone --branch &lt;BRANCH NAME&gt; &lt;URL&gt; <span class="o">[</span>&lt;DEST Directory&gt;<span class="o">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Pull code from remote master branch and merge to current banch</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git pull origin master
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Push code from local DEV branch to remote MASTER branch</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git push origin dev:master
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Create local branch</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git checkout -b &lt;BRANCH NAME&gt;
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Switch local branch</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git checkout &lt;BRANCH NAME&gt;
 </code></pre></td></tr></table>
 </div>
 </div>]]></description>

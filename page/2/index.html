@@ -100,7 +100,23 @@
         data-sizes="auto"
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/how_to_create_ssl_cert_for_local_test_en/" aria-label=How&#32;to&#32;create&#32;ssl&#32;certificate&#32;for&#32;local&#32;test&#32;environment><img
+        class="lazyload"
+        data-src="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png"
+        data-srcset="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png, https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png 1.5x, https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png 2x"
+        data-sizes="auto"
+        alt="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png"
+        title="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png" height="auto" width="auto"></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/how_to_create_ssl_cert_for_local_test_en/">How to create ssl certificate for local test environment</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-12-20">2021-12-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
+<p>In bash shell, run these commands:</p></div><div class="post-footer">
+        <a href="/how_to_create_ssl_cert_for_local_test_en/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ssl/">SSL</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/code_server_code_in_your_browser/">Code-Server code in your browser</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
@@ -326,81 +342,6 @@
 </div></div><div class="post-footer">
         <a href="/laravel_roles_permissions/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/laravel/">Laravel</a>,&nbsp;<a href="/tags/apiato/">Apiato</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/apiato/">Apiato laravel based framework</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-11-26">2020-11-26</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/tutorials/"><i class="far fa-folder fa-fw"></i>Tutorials</a></span></div><div class="content"><p>Home page: <a href="http://docs.apiato.io/" target="_blank" rel="noopener noreferrer">http://docs.apiato.io/</a></p>
-<p><strong>Create project using composer from latest stable</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">composer create-project apiato/apiato apiato9
-</code></pre></td></tr></table>
-</div>
-</div><p>Then edit the .env file.</p>
-<p><strong>Migrate database</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan migrate
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Create admin user, some permissions, roles</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan db:seed
-</code></pre></td></tr></table>
-</div>
-</div><p>Default account is: <a href="mailto:admin@admin.com" rel="">admin@admin.com</a> / admin.</p>
-<p><strong>Add all current permissions to admin role.</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan apiato:permissions:toRole admin
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Install OAuth 2.0</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan passport:install
-</code></pre></td></tr></table>
-</div>
-</div><p>Then edit file <strong>.env</strong> update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.</p>
-<p><strong>Install ApiDocJs</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yarn install
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Create api doc</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php artisan apiato:apidoc
-</code></pre></td></tr></table>
-</div>
-</div><p>Your default document url is: http://<Your domain>/api/documentation and http://<Your domain>/api/private/documentation</p>
-<p>Default result is saved in: <strong>public/api/documentation/</strong></p></div><div class="post-footer">
-        <a href="/apiato/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/laravel/">Laravel</a>,&nbsp;<a href="/tags/apiato/">Apiato</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -425,7 +366,7 @@
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
                     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.92.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">KienND</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">KienND</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
             </div>

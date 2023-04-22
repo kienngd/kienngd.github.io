@@ -4,7 +4,7 @@
         <link>https://blog.kiennd.cf/</link>
         <description>The official documentation for the Hugo DoIt theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate>
             <atom:link href="https://blog.kiennd.cf/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Add new guard to an Apiato11 project</title>
@@ -33,6 +33,14 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/howto/how_to_connect_service_via_ssh_tunnel.webp" referrerpolicy="no-referrer">
             </div>How to connect to a service on the remote server via SSH tunnel]]></description>
+</item><item>
+    <title>Strategy Pattern in PHP with examples</title>
+    <link>https://blog.kiennd.cf/202304211000_strategy_pattern/</link>
+    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/202304211000_strategy_pattern/</guid>
+    <description><![CDATA[1 ExampleWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
+1.1 Without pattern1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort  } public function quickSort(array $arr) { // Implementation of Quick Sort  } public function mergeSort(array $arr) { // Implementation of Merge Sort  } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)   1.]]></description>
 </item><item>
     <title>Basic Markdown Syntax</title>
     <link>https://blog.kiennd.cf/202211030810_markdown_basic/</link>
@@ -123,59 +131,6 @@
 <span class="nv">WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT</span><span class="o">=</span><span class="m">9001</span>
 <span class="nv">WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT</span><span class="o">=</span><span class="m">5200</span>
 
-</code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
-    <link>https://blog.kiennd.cf/php_pass_by_value_pass_by_reference/</link>
-    <pubDate>Fri, 16 Apr 2021 10:55:04 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/php_pass_by_value_pass_by_reference/</guid>
-    <description><![CDATA[<p>Hello, it is me again. Today, we will talk about &ldquo;<strong>pass by value</strong>&rdquo; or &ldquo;<strong>pass by reference</strong>&rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!</p>
-<p>We have an example class:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
-   <span class="k">public</span> <span class="nv">$x</span><span class="p">;</span>
-   <span class="k">public</span> <span class="nv">$y</span><span class="p">;</span>
- 
-   <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$x</span><span class="p">,</span> <span class="nv">$y</span><span class="p">)</span> <span class="p">{</span>
-       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">x</span> <span class="o">=</span> <span class="nv">$x</span><span class="p">;</span>
-       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">y</span> <span class="o">=</span> <span class="nv">$y</span><span class="p">;</span>
-   <span class="p">}</span>
- 
-   <span class="k">public</span> <span class="k">function</span> <span class="nf">setX</span><span class="p">(</span><span class="nv">$x</span><span class="p">)</span>
-   <span class="p">{</span>
-       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">x</span> <span class="o">=</span> <span class="nv">$x</span><span class="p">;</span>
-   <span class="p">}</span>
- 
-   <span class="k">public</span> <span class="k">function</span> <span class="nf">setY</span><span class="p">(</span><span class="nv">$y</span><span class="p">)</span>
-   <span class="p">{</span>
-       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">y</span> <span class="o">=</span> <span class="nv">$y</span><span class="p">;</span>
-   <span class="p">}</span>
-<span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
 </div>]]></description>

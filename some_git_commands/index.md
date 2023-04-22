@@ -59,5 +59,11 @@ git status
 git add .
 ```
 
+**Rename a branch**
+
+```bash
+git branch -m "new-branch-name"
+git branch -m "old-branch-name" "new-branch-name"
+```
 (updating ....)
 
