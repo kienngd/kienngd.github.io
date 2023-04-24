@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>InfluxDB - Tag - K5D</title>
-        <link>https://blog.kiennd.cf/tags/influxdb/</link>
+        <link>https://kienngd.github.io/blog/tags/influxdb/</link>
         <description>InfluxDB - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Oct 2020 10:02:52 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/influxdb/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Oct 2020 10:02:52 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/influxdb/" rel="self" type="application/rss+xml" /><item>
     <title>Working With Influxdb Data Using PhpClient</title>
-    <link>https://blog.kiennd.cf/working_with_influxdb_data_using_phpclient/</link>
+    <link>https://kienngd.github.io/blog/working_with_influxdb_data_using_phpclient/</link>
     <pubDate>Tue, 20 Oct 2020 10:02:52 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/working_with_influxdb_data_using_phpclient/</guid>
+    </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_phpclient/</guid>
     <description><![CDATA[<p>document: <a href="https://github.com/influxdata/influxdb-php" target="_blank" rel="noopener noreferrer">https://github.com/influxdata/influxdb-php</a></p>
 <h5 id="install-via-composer" class="headerLink">
     <a href="#install-via-composer" class="header-mark"></a>0.0.0.1 Install via composer</h5><div class="highlight"><div class="chroma">
@@ -50,17 +50,17 @@
 </div>]]></description>
 </item><item>
     <title>Working_with_influxdb_data_using_api</title>
-    <link>https://blog.kiennd.cf/working_with_influxdb_data_using_api/</link>
+    <link>https://kienngd.github.io/blog/working_with_influxdb_data_using_api/</link>
     <pubDate>Tue, 20 Oct 2020 10:02:45 &#43;0700</pubDate><author>
         <name>KienND</name>
-    </author><guid>https://blog.kiennd.cf/working_with_influxdb_data_using_api/</guid>
+    </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_api/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Working_with_influxdb_data_using_influx</title>
-    <link>https://blog.kiennd.cf/working_with_influxdb_data_using_influx/</link>
+    <link>https://kienngd.github.io/blog/working_with_influxdb_data_using_influx/</link>
     <pubDate>Tue, 20 Oct 2020 10:02:33 &#43;0700</pubDate><author>
         <name>KienND</name>
-    </author><guid>https://blog.kiennd.cf/working_with_influxdb_data_using_influx/</guid>
+    </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_influx/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

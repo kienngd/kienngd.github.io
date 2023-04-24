@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>PHPDocs - Tag - K5D</title>
-        <link>https://blog.kiennd.cf/tags/phpdocs/</link>
+        <link>https://kienngd.github.io/blog/tags/phpdocs/</link>
         <description>PHPDocs - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Oct 2020 11:08:52 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/phpdocs/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Oct 2020 11:08:52 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/phpdocs/" rel="self" type="application/rss+xml" /><item>
     <title>Phpdoc docblock</title>
-    <link>https://blog.kiennd.cf/phpdoc_docblock/</link>
+    <link>https://kienngd.github.io/blog/phpdoc_docblock/</link>
     <pubDate>Thu, 15 Oct 2020 11:08:52 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/phpdoc_docblock/</guid>
+    </author><guid>https://kienngd.github.io/blog/phpdoc_docblock/</guid>
     <description><![CDATA[<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -51,10 +51,10 @@
 </div><p><strong>Tags</strong> example: @api, @author, @param, @return&hellip;</p>]]></description>
 </item><item>
     <title>Create document using phpdoc</title>
-    <link>https://blog.kiennd.cf/create_document_using_phpdoc/</link>
+    <link>https://kienngd.github.io/blog/create_document_using_phpdoc/</link>
     <pubDate>Thu, 15 Oct 2020 10:49:07 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/create_document_using_phpdoc/</guid>
+    </author><guid>https://kienngd.github.io/blog/create_document_using_phpdoc/</guid>
     <description><![CDATA[<p>Hello. In this post, we will learn how to build document using phpdoc. Have fun!</p>
 <ol>
 <li>

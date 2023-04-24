@@ -1,42 +1,42 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>howto - Category - K5D</title>
-        <link>https://blog.kiennd.cf/categories/howto/</link>
+        <link>https://kienngd.github.io/blog/categories/howto/</link>
         <description>howto - Category - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Sep 2022 07:00:00 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/howto/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Sep 2022 07:00:00 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/howto/" rel="self" type="application/rss+xml" /><item>
     <title>How to connect to a service on the remote server via SSH tunnel</title>
-    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
+    <link>https://kienngd.github.io/blog/how_to_connect_service_via_ssh_tunnel/</link>
     <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
+                </author><guid>https://kienngd.github.io/blog/how_to_connect_service_via_ssh_tunnel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/howto/how_to_connect_service_via_ssh_tunnel.webp" referrerpolicy="no-referrer">
             </div>How to connect to a service on the remote server via SSH tunnel]]></description>
 </item><item>
     <title>How to manage your tasks list?</title>
-    <link>https://blog.kiennd.cf/how_to_manage_your_tasks_list/</link>
+    <link>https://kienngd.github.io/blog/how_to_manage_your_tasks_list/</link>
     <pubDate>Thu, 29 Sep 2022 07:00:00 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_manage_your_tasks_list/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_manage_your_tasks_list/</guid>
     <description><![CDATA[<p>Hello, it is me again. Today I&rsquo;ll tell you how I manage my tasks.</p>
 <p>When I take a task, first of all I&rsquo;ll set it one (or more) <strong>tags</strong>. Then I set it a <strong>due date</strong>. And finally put it in to a list. Very simple :).</p>]]></description>
 </item><item>
     <title>How to create ssl certificate for local test environment</title>
-    <link>https://blog.kiennd.cf/how_to_create_ssl_cert_for_local_test_en/</link>
+    <link>https://kienngd.github.io/blog/how_to_create_ssl_cert_for_local_test_en/</link>
     <pubDate>Mon, 20 Dec 2021 15:49:05 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_create_ssl_cert_for_local_test_en/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_create_ssl_cert_for_local_test_en/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png" referrerpolicy="no-referrer">
             </div><p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
 <p>In bash shell, run these commands:</p>]]></description>
 </item><item>
     <title>How to use PHP8 with Laradock</title>
-    <link>https://blog.kiennd.cf/how_to_use_php8_with_laradock/</link>
+    <link>https://kienngd.github.io/blog/how_to_use_php8_with_laradock/</link>
     <pubDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_use_php8_with_laradock/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_use_php8_with_laradock/</guid>
     <description><![CDATA[<p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
 <p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
 <p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
@@ -74,10 +74,10 @@
 </div>]]></description>
 </item><item>
     <title>Use UUID as primary key of Laravel Eloquent ORM</title>
-    <link>https://blog.kiennd.cf/how_to_use_uuid_as_id_laravel/</link>
+    <link>https://kienngd.github.io/blog/how_to_use_uuid_as_id_laravel/</link>
     <pubDate>Mon, 02 Nov 2020 15:37:11 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_use_uuid_as_id_laravel/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_use_uuid_as_id_laravel/</guid>
     <description><![CDATA[<p>Install package using composer:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -105,19 +105,19 @@
 </div>]]></description>
 </item><item>
     <title>How to check my ip</title>
-    <link>https://blog.kiennd.cf/how_to_check_my_ip/</link>
+    <link>https://kienngd.github.io/blog/how_to_check_my_ip/</link>
     <pubDate>Fri, 16 Oct 2020 10:54:04 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_check_my_ip/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_check_my_ip/</guid>
     <description><![CDATA[<p>Hello, sometimes you need to know what is my IP. In this post we will learn one way to check public IP. Have fun!</p>
 <p>Open your browser to access this link: <a href="https://api.myip.com/" target="_blank" rel="noopener noreferrer">https://api.myip.com/</a>. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: <strong>115.75.212.27</strong>.</p>
 <p><strong>Bonus</strong>: You can use curl command to get data too.</p>]]></description>
 </item><item>
     <title>How to install VIM plugins</title>
-    <link>https://blog.kiennd.cf/how_to_install_vim_plugins/</link>
+    <link>https://kienngd.github.io/blog/how_to_install_vim_plugins/</link>
     <pubDate>Wed, 14 Oct 2020 09:08:18 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_install_vim_plugins/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_install_vim_plugins/</guid>
     <description><![CDATA[<p>Hello, today we will to learn 2 of many ways to install and use VIM plugins. I use Ubuntu 20.04 to test. Have fun!</p>
 <p>If you want to install plugin named <strong>nerdtree</strong>,</p>
 <p>1st way: Copy plugin files to: <strong>~/.vim/pack/vendor/start</strong> and they will be load when you launch VIM</p>
@@ -133,27 +133,27 @@
 </div><p>Then inside VIM, you can use command: <strong>:NERDTree</strong></p>]]></description>
 </item><item>
     <title>How to disable wifi power save Ubuntu 20.04</title>
-    <link>https://blog.kiennd.cf/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
+    <link>https://kienngd.github.io/blog/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
     <pubDate>Sun, 11 Oct 2020 23:15:36 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_disable_wifi_power_save_ubuntu_20.04/</guid>
     <description><![CDATA[<p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>
 <p>I see <a href="https://unix.stackexchange.com/questions/269661/how-to-turn-off-wireless-power-management-permanently" target="_blank" rel="noopener noreferrer">this link</a> and try to edit file <em>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf</em> change <strong>wifi.powersave</strong> from 3 (enable power save) to 2 (disable power save). And reboot. Now the wifi works fine.</p>]]></description>
 </item><item>
     <title>How to create a linux service</title>
-    <link>https://blog.kiennd.cf/how_to_create_linux_service/</link>
+    <link>https://kienngd.github.io/blog/how_to_create_linux_service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/how_to_create_linux_service/</guid>
+                </author><guid>https://kienngd.github.io/blog/how_to_create_linux_service/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/howto/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
             </div>How to create a linux service]]></description>
 </item><item>
     <title>How to working with JSON in GoLang</title>
-    <link>https://blog.kiennd.cf/working_with_json_in_golang/</link>
+    <link>https://kienngd.github.io/blog/working_with_json_in_golang/</link>
     <pubDate>Thu, 08 Oct 2020 13:34:54 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/working_with_json_in_golang/</guid>
+    </author><guid>https://kienngd.github.io/blog/working_with_json_in_golang/</guid>
     <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
 <p><strong>Working with structed data</strong></p>
 <div class="highlight"><div class="chroma">
