@@ -1,50 +1,50 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>notes - Category - K5D</title>
-        <link>https://kienngd.github.io/blog/categories/notes/</link>
+        <link>https://blog.kiennd.cf/categories/notes/</link>
         <description>notes - Category - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/notes/" rel="self" type="application/rss+xml" /><item>
     <title>Naming: Every Developer&#39;s Nightmare</title>
-    <link>https://kienngd.github.io/blog/202304241000_naming/</link>
+    <link>https://blog.kiennd.cf/202304241000_naming/</link>
     <pubDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/202304241000_naming/</guid>
+                </author><guid>https://blog.kiennd.cf/202304241000_naming/</guid>
     <description><![CDATA[consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
 1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
 </item><item>
     <title>Strategy Pattern in PHP with examples</title>
-    <link>https://kienngd.github.io/blog/202304211000_strategy_pattern/</link>
+    <link>https://blog.kiennd.cf/202304211000_strategy_pattern/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/202304211000_strategy_pattern/</guid>
+                </author><guid>https://blog.kiennd.cf/202304211000_strategy_pattern/</guid>
     <description><![CDATA[1 Example 1: SortWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
 1.1 Without pattern1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort  } public function quickSort(array $arr) { // Implementation of Quick Sort  } public function mergeSort(array $arr) { // Implementation of Merge Sort  } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)   1.]]></description>
 </item><item>
     <title>Basic Markdown Syntax</title>
-    <link>https://kienngd.github.io/blog/202211030810_markdown_basic/</link>
+    <link>https://blog.kiennd.cf/202211030810_markdown_basic/</link>
     <pubDate>Thu, 03 Nov 2022 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/202211030810_markdown_basic/</guid>
+                </author><guid>https://blog.kiennd.cf/202211030810_markdown_basic/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/static/images/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
             </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
 </item><item>
     <title>Some softwares I use everyday</title>
-    <link>https://kienngd.github.io/blog/some_softwares_i_use/</link>
+    <link>https://blog.kiennd.cf/some_softwares_i_use/</link>
     <pubDate>Thu, 03 Nov 2022 01:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/some_softwares_i_use/</guid>
+                </author><guid>https://blog.kiennd.cf/some_softwares_i_use/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/notes/some_softwares_i_use.jpg" referrerpolicy="no-referrer">
             </div>Some softwares I use
 1 OS Ubuntu 22.04 Microsoft Windows 7 &amp; 10 (seldom)  2 Web browser Google chrome  Extendsion:  Google translate Google docs offline     Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com DrawIO Dropbox Project management Trello - Jira: https://www.]]></description>
 </item><item>
     <title>Code-Server code in your browser</title>
-    <link>https://kienngd.github.io/blog/code_server_code_in_your_browser/</link>
+    <link>https://blog.kiennd.cf/code_server_code_in_your_browser/</link>
     <pubDate>Tue, 08 Jun 2021 10:28:32 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/code_server_code_in_your_browser/</guid>
+    </author><guid>https://blog.kiennd.cf/code_server_code_in_your_browser/</guid>
     <description><![CDATA[<p>Hello, it is me again. Today, we will talk about <strong>Code-Server</strong> an &ldquo;in browser vs code IDE&rdquo;. I use Ubuntu 20.04 to test. Have fun!</p>
 <ol>
 <li>Download <strong>Code-Server</strong> from github page: <a href="https://github.com/cdr/code-server/releases/" target="_blank" rel="noopener noreferrer">https://github.com/cdr/code-server/releases/</a>
@@ -56,10 +56,10 @@
 </ol>]]></description>
 </item><item>
     <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
-    <link>https://kienngd.github.io/blog/php_pass_by_value_pass_by_reference/</link>
+    <link>https://blog.kiennd.cf/php_pass_by_value_pass_by_reference/</link>
     <pubDate>Fri, 16 Apr 2021 10:55:04 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/php_pass_by_value_pass_by_reference/</guid>
+    </author><guid>https://blog.kiennd.cf/php_pass_by_value_pass_by_reference/</guid>
     <description><![CDATA[<p>Hello, it is me again. Today, we will talk about &ldquo;<strong>pass by value</strong>&rdquo; or &ldquo;<strong>pass by reference</strong>&rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!</p>
 <p>We have an example class:</p>
 <div class="highlight"><div class="chroma">
@@ -109,10 +109,10 @@
 </div>]]></description>
 </item><item>
     <title>Working with openstack api using curl</title>
-    <link>https://kienngd.github.io/blog/working_with_openstack_api_using_curl/</link>
+    <link>https://blog.kiennd.cf/working_with_openstack_api_using_curl/</link>
     <pubDate>Thu, 29 Oct 2020 09:26:59 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/working_with_openstack_api_using_curl/</guid>
+    </author><guid>https://blog.kiennd.cf/working_with_openstack_api_using_curl/</guid>
     <description><![CDATA[<h5 id="get-token" class="headerLink">
     <a href="#get-token" class="header-mark"></a>0.0.0.1 Get token</h5><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -168,10 +168,10 @@
 <p>By default, this token will be expired after 6 hours.</p>]]></description>
 </item><item>
     <title>Working With Influxdb Data Using PhpClient</title>
-    <link>https://kienngd.github.io/blog/working_with_influxdb_data_using_phpclient/</link>
+    <link>https://blog.kiennd.cf/working_with_influxdb_data_using_phpclient/</link>
     <pubDate>Tue, 20 Oct 2020 10:02:52 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_phpclient/</guid>
+    </author><guid>https://blog.kiennd.cf/working_with_influxdb_data_using_phpclient/</guid>
     <description><![CDATA[<p>document: <a href="https://github.com/influxdata/influxdb-php" target="_blank" rel="noopener noreferrer">https://github.com/influxdata/influxdb-php</a></p>
 <h5 id="install-via-composer" class="headerLink">
     <a href="#install-via-composer" class="header-mark"></a>0.0.0.1 Install via composer</h5><div class="highlight"><div class="chroma">
@@ -212,17 +212,17 @@
 </div>]]></description>
 </item><item>
     <title>Working_with_influxdb_data_using_api</title>
-    <link>https://kienngd.github.io/blog/working_with_influxdb_data_using_api/</link>
+    <link>https://blog.kiennd.cf/working_with_influxdb_data_using_api/</link>
     <pubDate>Tue, 20 Oct 2020 10:02:45 &#43;0700</pubDate><author>
         <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_api/</guid>
+    </author><guid>https://blog.kiennd.cf/working_with_influxdb_data_using_api/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Working_with_influxdb_data_using_influx</title>
-    <link>https://kienngd.github.io/blog/working_with_influxdb_data_using_influx/</link>
+    <link>https://blog.kiennd.cf/working_with_influxdb_data_using_influx/</link>
     <pubDate>Tue, 20 Oct 2020 10:02:33 &#43;0700</pubDate><author>
         <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_influx/</guid>
+    </author><guid>https://blog.kiennd.cf/working_with_influxdb_data_using_influx/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

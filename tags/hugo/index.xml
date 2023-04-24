@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Hugo - Tag - K5D</title>
-        <link>https://kienngd.github.io/blog/tags/hugo/</link>
+        <link>https://blog.kiennd.cf/tags/hugo/</link>
         <description>Hugo - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 10:34:44 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 10:34:44 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/hugo/" rel="self" type="application/rss+xml" /><item>
     <title>How to build a free blog</title>
-    <link>https://kienngd.github.io/blog/how_to_build_free_blog/</link>
+    <link>https://blog.kiennd.cf/how_to_build_free_blog/</link>
     <pubDate>Thu, 08 Oct 2020 10:34:44 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/how_to_build_free_blog/</guid>
+    </author><guid>https://blog.kiennd.cf/how_to_build_free_blog/</guid>
     <description><![CDATA[<p>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
 <p><strong>Step 1</strong>: Install hugo.</p>
 <ul>

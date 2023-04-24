@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Knowlege - Category - K5D</title>
-        <link>https://kienngd.github.io/blog/categories/knowlege/</link>
+        <link>https://blog.kiennd.cf/categories/knowlege/</link>
         <description>Knowlege - Category - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 09:23:54 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/knowlege/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 09:23:54 &#43;0700</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/knowlege/" rel="self" type="application/rss+xml" /><item>
     <title>How does computer networking work?</title>
-    <link>https://kienngd.github.io/blog/how_does_networking_work/</link>
+    <link>https://blog.kiennd.cf/how_does_networking_work/</link>
     <pubDate>Thu, 08 Oct 2020 09:23:54 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/how_does_networking_work/</guid>
+                </author><guid>https://blog.kiennd.cf/how_does_networking_work/</guid>
     <description><![CDATA[<p>This post will explain how does computer networking work.</p>
 <p>Have fun!</p>]]></description>
 </item></channel>
