@@ -1,6 +1,6 @@
 # Strategy Pattern in PHP with examples
 
-## Example 
+## Example 1: Sort
 We need to implement a sorting system that sorts an array of numbers in ascending or descending order
 
 ### Without pattern
@@ -61,7 +61,7 @@ $sorter = new Sorter(new BubbleSort());
 $sortedArr = $sorter->sort($arr); // or new Sorter(new QuickSort())->sort($arr) or new Sorter(new MergeSort())->sort($arr)
 ```
 
-## Example 
+## Example 2: Discount Product
 We want to implement the discount system
 
 ### Without pattern

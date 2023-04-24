@@ -22,7 +22,7 @@
 
 <meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.kiennd.cf/202304211000_strategy_pattern/" /><link rel="prev" href="https://blog.kiennd.cf/202211030810_markdown_basic/" /><link rel="next" href="https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.kiennd.cf/202304211000_strategy_pattern/" /><link rel="prev" href="https://blog.kiennd.cf/202211030810_markdown_basic/" /><link rel="next" href="https://blog.kiennd.cf/202304241000_naming/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
     
@@ -37,7 +37,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.kiennd.cf\/202304211000_strategy_pattern\/"
-        },"image": ["https:\/\/blog.kiennd.cf\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Design-Pattern, PHP","wordcount":  486 ,
+        },"image": ["https:\/\/blog.kiennd.cf\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Design-Pattern, PHP","wordcount":  491 ,
         "url": "https:\/\/blog.kiennd.cf\/202304211000_strategy_pattern\/","datePublished": "2023-04-21T01:10:00+00:00","dateModified": "2023-04-21T01:10:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -110,13 +110,13 @@
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a>
+    <li><a href="#example-1-sort">Example 1: Sort</a>
       <ul>
         <li><a href="#without-pattern">Without pattern</a></li>
         <li><a href="#with-pattern">With pattern</a></li>
       </ul>
     </li>
-    <li><a href="#example-1">Example</a>
+    <li><a href="#example-2-discount-product">Example 2: Discount Product</a>
       <ul>
         <li><a href="#without-pattern-1">Without pattern</a></li>
         <li><a href="#with-pattern-1">With pattern</a></li>
@@ -129,7 +129,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://blog.kiennd.cf/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-04-21">2023-04-21</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-04-21">2023-04-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;486 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-04-21">2023-04-21</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-04-21">2023-04-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;491 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -138,13 +138,13 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a>
+    <li><a href="#example-1-sort">Example 1: Sort</a>
       <ul>
         <li><a href="#without-pattern">Without pattern</a></li>
         <li><a href="#with-pattern">With pattern</a></li>
       </ul>
     </li>
-    <li><a href="#example-1">Example</a>
+    <li><a href="#example-2-discount-product">Example 2: Discount Product</a>
       <ul>
         <li><a href="#without-pattern-1">Without pattern</a></li>
         <li><a href="#with-pattern-1">With pattern</a></li>
@@ -153,8 +153,8 @@
     <li><a href="#best-practices-for-implementing-strategy-pattern-in-php">Best Practices for Implementing Strategy Pattern in PHP:</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="example" class="headerLink">
-    <a href="#example" class="header-mark"></a>1 Example</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
+            </div><div class="content" id="content"><h2 id="example-1-sort" class="headerLink">
+    <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
 <h3 id="without-pattern" class="headerLink">
     <a href="#without-pattern" class="header-mark"></a>1.1 Without pattern</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -269,8 +269,8 @@
 <span class="nv">$sortedArr</span> <span class="o">=</span> <span class="nv">$sorter</span><span class="o">-&gt;</span><span class="na">sort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// or new Sorter(new QuickSort())-&gt;sort($arr) or new Sorter(new MergeSort())-&gt;sort($arr)
 </span></code></pre></td></tr></table>
 </div>
-</div><h2 id="example-1" class="headerLink">
-    <a href="#example-1" class="header-mark"></a>2 Example</h2><p>We want to implement the discount system</p>
+</div><h2 id="example-2-discount-product" class="headerLink">
+    <a href="#example-2-discount-product" class="header-mark"></a>2 Example 2: Discount Product</h2><p>We want to implement the discount system</p>
 <h3 id="without-pattern-1" class="headerLink">
     <a href="#without-pattern-1" class="header-mark"></a>2.1 Without pattern</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -454,7 +454,7 @@
     </div>
 
     <div class="post-nav"><a href="/202211030810_markdown_basic/" class="prev" rel="prev" title="Basic Markdown Syntax"><i class="fas fa-angle-left fa-fw"></i>Basic Markdown Syntax</a>
-            <a href="/how_to_connect_service_via_ssh_tunnel/" class="next" rel="next" title="How to connect to a service on the remote server via SSH tunnel">How to connect to a service on the remote server via SSH tunnel<i class="fas fa-angle-right fa-fw"></i></a></div>
+            <a href="/202304241000_naming/" class="next" rel="next" title="Naming: Every Developer&#39;s Nightmare">Naming: Every Developer&#39;s Nightmare<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
         </main><footer class="footer">

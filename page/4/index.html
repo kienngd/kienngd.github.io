@@ -101,6 +101,70 @@
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/influxdb_docker_with_laradock/">Influxdb Docker With Laradock</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-20">2020-10-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span></div><div class="content"><p>In this post we will see how to run influxdb docker container using laradock. Have fun.</p>
+<p>InfluxDB docker document: <a href="https://hub.docker.com/_/influxdb" target="_blank" rel="noopener noreferrer">https://hub.docker.com/_/influxdb</a></p>
+<p>Edit laradock <strong>.env</strong> file:</p>
+<p><strong>Add these lines</strong> at the end of file</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">### INFLUXDB ##################################################</span>
+<span class="c1"># influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest</span>
+<span class="nv">INFLUXDB_VERSION</span><span class="o">=</span>1.8
+<span class="nv">INFLUXDB_HTTP_PORT</span><span class="o">=</span><span class="m">8086</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Edit <strong>docker-composer.yml</strong> file. Please remember to backup it first :).</p>
+<p><strong>Add these lines</strong> at the end of file</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">### influxdb ####################################################</span>
+influxdb:
+  container_name: influxdb
+  hostname: influxdb
+  image: influxdb:<span class="si">${</span><span class="nv">INFLUXDB_VERSION</span><span class="si">}</span>
+  ports:
+    - <span class="s2">&#34;</span><span class="si">${</span><span class="nv">INFLUXDB_HTTP_PORT</span><span class="si">}</span><span class="s2">:8086&#34;</span>
+  networks:
+    - backend
+  volumes:
+    - <span class="si">${</span><span class="nv">DATA_PATH_HOST</span><span class="si">}</span>/influxdb/var/lib/influxdb:/var/lib/influxdb
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Start influxdb container</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">docker-composer up -d influxdb
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer">
+        <a href="/influxdb_docker_with_laradock/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/laradock/">Laradock</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/react-admin-p1/">React Admin P1</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
@@ -334,14 +398,6 @@
 </div><p>Then inside VIM, you can use command: <strong>:NERDTree</strong></p></div><div class="post-footer">
         <a href="/how_to_install_vim_plugins/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/vim/">VIM</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/how_to_disable_wifi_power_save_ubuntu_20.04/">How to disable wifi power save Ubuntu 20.04</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-11">2020-10-11</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/howto/"><i class="far fa-folder fa-fw"></i>howto</a></span></div><div class="content"><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>
-<p>I see <a href="https://unix.stackexchange.com/questions/269661/how-to-turn-off-wireless-power-management-permanently" target="_blank" rel="noopener noreferrer">this link</a> and try to edit file <em>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf</em> change <strong>wifi.powersave</strong> from 3 (enable power save) to 2 (disable power save). And reboot. Now the wifi works fine.</p></div><div class="post-footer">
-        <a href="/how_to_disable_wifi_power_save_ubuntu_20.04/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ubuntu/">Ubuntu</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

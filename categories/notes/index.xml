@@ -4,13 +4,21 @@
         <link>https://blog.kiennd.cf/categories/notes/</link>
         <description>notes - Category - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Naming: Every Developer&#39;s Nightmare</title>
+    <link>https://blog.kiennd.cf/202304241000_naming/</link>
+    <pubDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/202304241000_naming/</guid>
+    <description><![CDATA[consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
+1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
+</item><item>
     <title>Strategy Pattern in PHP with examples</title>
     <link>https://blog.kiennd.cf/202304211000_strategy_pattern/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
                 </author><guid>https://blog.kiennd.cf/202304211000_strategy_pattern/</guid>
-    <description><![CDATA[1 ExampleWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
+    <description><![CDATA[1 Example 1: SortWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
 1.1 Without pattern1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort  } public function quickSort(array $arr) { // Implementation of Quick Sort  } public function mergeSort(array $arr) { // Implementation of Merge Sort  } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)   1.]]></description>
 </item><item>
     <title>Basic Markdown Syntax</title>
@@ -216,69 +224,5 @@
         <name>KienND</name>
     </author><guid>https://blog.kiennd.cf/working_with_influxdb_data_using_influx/</guid>
     <description><![CDATA[]]></description>
-</item><item>
-    <title>Influxdb Docker With Laradock</title>
-    <link>https://blog.kiennd.cf/influxdb_docker_with_laradock/</link>
-    <pubDate>Tue, 20 Oct 2020 09:09:57 &#43;0700</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/influxdb_docker_with_laradock/</guid>
-    <description><![CDATA[<p>In this post we will see how to run influxdb docker container using laradock. Have fun.</p>
-<p>InfluxDB docker document: <a href="https://hub.docker.com/_/influxdb" target="_blank" rel="noopener noreferrer">https://hub.docker.com/_/influxdb</a></p>
-<p>Edit laradock <strong>.env</strong> file:</p>
-<p><strong>Add these lines</strong> at the end of file</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">### INFLUXDB ##################################################</span>
-<span class="c1"># influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest</span>
-<span class="nv">INFLUXDB_VERSION</span><span class="o">=</span>1.8
-<span class="nv">INFLUXDB_HTTP_PORT</span><span class="o">=</span><span class="m">8086</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Edit <strong>docker-composer.yml</strong> file. Please remember to backup it first :).</p>
-<p><strong>Add these lines</strong> at the end of file</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">### influxdb ####################################################</span>
-influxdb:
-  container_name: influxdb
-  hostname: influxdb
-  image: influxdb:<span class="si">${</span><span class="nv">INFLUXDB_VERSION</span><span class="si">}</span>
-  ports:
-    - <span class="s2">&#34;</span><span class="si">${</span><span class="nv">INFLUXDB_HTTP_PORT</span><span class="si">}</span><span class="s2">:8086&#34;</span>
-  networks:
-    - backend
-  volumes:
-    - <span class="si">${</span><span class="nv">DATA_PATH_HOST</span><span class="si">}</span>/influxdb/var/lib/influxdb:/var/lib/influxdb
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Start influxdb container</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">docker-composer up -d influxdb
-</code></pre></td></tr></table>
-</div>
-</div>]]></description>
 </item></channel>
 </rss>

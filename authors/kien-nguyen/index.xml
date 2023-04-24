@@ -4,7 +4,7 @@
         <link>https://blog.kiennd.cf/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
     <title>Add new guard to an Apiato11 project</title>
     <link>https://blog.kiennd.cf/apiato11_add_new_guard/</link>
     <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
@@ -32,12 +32,20 @@
                 <img src="/images/howto/how_to_connect_service_via_ssh_tunnel.webp" referrerpolicy="no-referrer">
             </div>How to connect to a service on the remote server via SSH tunnel]]></description>
 </item><item>
+    <title>Naming: Every Developer&#39;s Nightmare</title>
+    <link>https://blog.kiennd.cf/202304241000_naming/</link>
+    <pubDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/202304241000_naming/</guid>
+    <description><![CDATA[consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
+1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
+</item><item>
     <title>Strategy Pattern in PHP with examples</title>
     <link>https://blog.kiennd.cf/202304211000_strategy_pattern/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
                 </author><guid>https://blog.kiennd.cf/202304211000_strategy_pattern/</guid>
-    <description><![CDATA[1 ExampleWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
+    <description><![CDATA[1 Example 1: SortWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
 1.1 Without pattern1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort  } public function quickSort(array $arr) { // Implementation of Quick Sort  } public function mergeSort(array $arr) { // Implementation of Merge Sort  } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)   1.]]></description>
 </item><item>
     <title>Basic Markdown Syntax</title>

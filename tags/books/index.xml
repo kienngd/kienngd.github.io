@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Books - Tag - K5D</title>
+        <link>https://blog.kiennd.cf/tags/books/</link>
+        <description>Books - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/books/" rel="self" type="application/rss+xml" /><item>
+    <title>Naming: Every Developer&#39;s Nightmare</title>
+    <link>https://blog.kiennd.cf/202304241000_naming/</link>
+    <pubDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://blog.kiennd.cf/202304241000_naming/</guid>
+    <description><![CDATA[consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
+1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
+</item></channel>
+</rss>
