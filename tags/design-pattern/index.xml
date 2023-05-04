@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Design-Pattern - Tag - K5D</title>
-        <link>https://blog.kiennd.cf/tags/design-pattern/</link>
+        <link>https://kienngd.github.io/blog/tags/design-pattern/</link>
         <description>Design-Pattern - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/design-pattern/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/design-pattern/" rel="self" type="application/rss+xml" /><item>
     <title>Strategy Pattern in PHP with examples</title>
-    <link>https://blog.kiennd.cf/202304211000_strategy_pattern/</link>
+    <link>https://kienngd.github.io/blog/202304211000_strategy_pattern/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/202304211000_strategy_pattern/</guid>
+                </author><guid>https://kienngd.github.io/blog/202304211000_strategy_pattern/</guid>
     <description><![CDATA[1 Example 1: SortWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
 1.1 Without pattern1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort  } public function quickSort(array $arr) { // Implementation of Quick Sort  } public function mergeSort(array $arr) { // Implementation of Merge Sort  } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)   1.]]></description>
 </item></channel>

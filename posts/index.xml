@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - K5D</title>
-        <link>https://blog.kiennd.cf/posts/</link>
+        <link>https://kienngd.github.io/blog/posts/</link>
         <description>All Posts | K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/posts/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/posts/" rel="self" type="application/rss+xml" /></channel>
 </rss>

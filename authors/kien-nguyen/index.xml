@@ -1,86 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Kien Nguyen - Author - K5D</title>
-        <link>https://blog.kiennd.cf/authors/kien-nguyen/</link>
+        <link>https://kienngd.github.io/blog/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
     <title>Add new guard to an Apiato11 project</title>
-    <link>https://blog.kiennd.cf/apiato11_add_new_guard/</link>
+    <link>https://kienngd.github.io/blog/apiato11_add_new_guard/</link>
     <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/apiato11_add_new_guard/</guid>
+                </author><guid>https://kienngd.github.io/blog/apiato11_add_new_guard/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/tutorial/laravel_guard.png" referrerpolicy="no-referrer">
             </div>Add new guard to an Apiato11 project]]></description>
 </item><item>
     <title>Working with HexaDog Laravel-Themes-Manager</title>
-    <link>https://blog.kiennd.cf/working_with_hexadog_laravel_themes_manager/</link>
+    <link>https://kienngd.github.io/blog/working_with_hexadog_laravel_themes_manager/</link>
     <pubDate>Mon, 12 Dec 2022 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/working_with_hexadog_laravel_themes_manager/</guid>
+                </author><guid>https://kienngd.github.io/blog/working_with_hexadog_laravel_themes_manager/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/tutorial/laravel-themes-manager.png" referrerpolicy="no-referrer">
             </div>Working with HexaDog Laravel-Themes-Manager]]></description>
 </item><item>
     <title>How to connect to a service on the remote server via SSH tunnel</title>
-    <link>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</link>
+    <link>https://kienngd.github.io/blog/how_to_connect_service_via_ssh_tunnel/</link>
     <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/how_to_connect_service_via_ssh_tunnel/</guid>
+                </author><guid>https://kienngd.github.io/blog/how_to_connect_service_via_ssh_tunnel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/howto/how_to_connect_service_via_ssh_tunnel.webp" referrerpolicy="no-referrer">
             </div>How to connect to a service on the remote server via SSH tunnel]]></description>
 </item><item>
     <title>Naming: Every Developer&#39;s Nightmare</title>
-    <link>https://blog.kiennd.cf/202304241000_naming/</link>
+    <link>https://kienngd.github.io/blog/202304241000_naming/</link>
     <pubDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/202304241000_naming/</guid>
+                </author><guid>https://kienngd.github.io/blog/202304241000_naming/</guid>
     <description><![CDATA[consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
 1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
 </item><item>
     <title>Strategy Pattern in PHP with examples</title>
-    <link>https://blog.kiennd.cf/202304211000_strategy_pattern/</link>
+    <link>https://kienngd.github.io/blog/202304211000_strategy_pattern/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/202304211000_strategy_pattern/</guid>
+                </author><guid>https://kienngd.github.io/blog/202304211000_strategy_pattern/</guid>
     <description><![CDATA[1 Example 1: SortWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
 1.1 Without pattern1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort  } public function quickSort(array $arr) { // Implementation of Quick Sort  } public function mergeSort(array $arr) { // Implementation of Merge Sort  } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)   1.]]></description>
 </item><item>
     <title>Basic Markdown Syntax</title>
-    <link>https://blog.kiennd.cf/202211030810_markdown_basic/</link>
+    <link>https://kienngd.github.io/blog/202211030810_markdown_basic/</link>
     <pubDate>Thu, 03 Nov 2022 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/202211030810_markdown_basic/</guid>
+                </author><guid>https://kienngd.github.io/blog/202211030810_markdown_basic/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/static/images/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
             </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
 </item><item>
     <title>Some softwares I use everyday</title>
-    <link>https://blog.kiennd.cf/some_softwares_i_use/</link>
+    <link>https://kienngd.github.io/blog/some_softwares_i_use/</link>
     <pubDate>Thu, 03 Nov 2022 01:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/some_softwares_i_use/</guid>
+                </author><guid>https://kienngd.github.io/blog/some_softwares_i_use/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/notes/some_softwares_i_use.jpg" referrerpolicy="no-referrer">
             </div>Some softwares I use
 1 OS Ubuntu 22.04 Microsoft Windows 7 &amp; 10 (seldom)  2 Web browser Google chrome  Extendsion:  Google translate Google docs offline     Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com DrawIO Dropbox Project management Trello - Jira: https://www.]]></description>
 </item><item>
     <title>How to create a linux service</title>
-    <link>https://blog.kiennd.cf/how_to_create_linux_service/</link>
+    <link>https://kienngd.github.io/blog/how_to_create_linux_service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/how_to_create_linux_service/</guid>
+                </author><guid>https://kienngd.github.io/blog/how_to_create_linux_service/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/howto/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
             </div>How to create a linux service]]></description>
 </item><item>
     <title>How does computer networking work?</title>
-    <link>https://blog.kiennd.cf/how_does_networking_work/</link>
+    <link>https://kienngd.github.io/blog/how_does_networking_work/</link>
     <pubDate>Thu, 08 Oct 2020 09:23:54 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://blog.kiennd.cf/how_does_networking_work/</guid>
+                </author><guid>https://kienngd.github.io/blog/how_does_networking_work/</guid>
     <description><![CDATA[<p>This post will explain how does computer networking work.</p>
 <p>Have fun!</p>]]></description>
 </item></channel>

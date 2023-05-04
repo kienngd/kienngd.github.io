@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>SSL - Tag - K5D</title>
-        <link>https://blog.kiennd.cf/tags/ssl/</link>
+        <link>https://kienngd.github.io/blog/tags/ssl/</link>
         <description>SSL - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 20 Dec 2021 15:49:05 &#43;0000</lastBuildDate><atom:link href="https://blog.kiennd.cf/tags/ssl/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 20 Dec 2021 15:49:05 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/ssl/" rel="self" type="application/rss+xml" /><item>
     <title>How to create ssl certificate for local test environment</title>
-    <link>https://blog.kiennd.cf/how_to_create_ssl_cert_for_local_test_en/</link>
+    <link>https://kienngd.github.io/blog/how_to_create_ssl_cert_for_local_test_en/</link>
     <pubDate>Mon, 20 Dec 2021 15:49:05 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://blog.kiennd.cf/how_to_create_ssl_cert_for_local_test_en/</guid>
+    </author><guid>https://kienngd.github.io/blog/how_to_create_ssl_cert_for_local_test_en/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="https://www.kindpng.com/picc/m/27-279458_ssl-secured-ssl-certificate-banner-hd-png-download.png" referrerpolicy="no-referrer">
             </div><p>Hello, it is me again. Today I&rsquo;ll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!</p>
