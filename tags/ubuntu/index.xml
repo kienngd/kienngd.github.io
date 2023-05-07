@@ -4,7 +4,14 @@
         <link>https://kienngd.github.io/blog/tags/ubuntu/</link>
         <description>Ubuntu - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Oct 2020 23:15:36 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/ubuntu/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/ubuntu/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Manage Software with Snap on Ubuntu 22.04</title>
+    <link>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</link>
+    <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</guid>
+    <description><![CDATA[Manage Software with Snap on Ubuntu 22.04]]></description>
+</item><item>
     <title>How to disable wifi power save Ubuntu 20.04</title>
     <link>https://kienngd.github.io/blog/how_to_disable_wifi_power_save_ubuntu_20.04/</link>
     <pubDate>Sun, 11 Oct 2020 23:15:36 &#43;0700</pubDate><author>

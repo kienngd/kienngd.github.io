@@ -4,7 +4,14 @@
         <link>https://kienngd.github.io/blog/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Manage Software with Snap on Ubuntu 22.04</title>
+    <link>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</link>
+    <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</guid>
+    <description><![CDATA[Manage Software with Snap on Ubuntu 22.04]]></description>
+</item><item>
     <title>Add new guard to an Apiato11 project</title>
     <link>https://kienngd.github.io/blog/apiato11_add_new_guard/</link>
     <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
@@ -54,7 +61,7 @@
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/blog/202211030810_markdown_basic/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/static/images/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
+                <img src="/images/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
             </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
 </item><item>
     <title>Some softwares I use everyday</title>
