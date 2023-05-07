@@ -10,7 +10,9 @@
     <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</guid>
-    <description><![CDATA[Manage Software with Snap on Ubuntu 22.04]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/snapcraft_green-red_hex.png" referrerpolicy="no-referrer">
+            </div>Manage Software with Snap on Ubuntu 22.04]]></description>
 </item><item>
     <title>How to disable wifi power save Ubuntu 20.04</title>
     <link>https://kienngd.github.io/blog/how_to_disable_wifi_power_save_ubuntu_20.04/</link>

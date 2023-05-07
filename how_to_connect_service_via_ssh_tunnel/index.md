@@ -19,6 +19,11 @@ ssh -p[SERVER_SSH_PORT] -L [LOCAL_PORT_TO_LISTEN]:[LOCAL_ADDRESS_TO_LISTEN]:[SER
 ssh -p22 -L 3307:127.0.0.1:3306 test@192.168.11.204
 ```
 <!--more-->
+
+Incase you want to **listen on all your local NIC**.
+```bash
+ssh -p22 -L 0.0.0.0:3307:localhost:3306 test@192.168.11.204
+```
 Then you can connect to database
 ```bash
 mysql -P3307 -uroot -p -h127.0.0.1
