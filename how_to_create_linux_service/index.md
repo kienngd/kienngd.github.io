@@ -26,7 +26,7 @@ ExecStart=**COMMAND TO EXECUTE**
 [Install]
 WantedBy=multi-user.target
 ```
-You can see the full service defination here: [Will be update](#)
+You can see the full [service defination](https://www.freedesktop.org/software/systemd/man/systemd.service.html) here.
 
 ## Start service
 ```bash
