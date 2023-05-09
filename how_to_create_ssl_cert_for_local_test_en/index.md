@@ -1,7 +1,7 @@
 # How to create ssl certificate for local test environment
 
 
-Hello, it is me again. Today I'll tell you how to create a ssl certificate for local test environment. I use Ubuntu 20.04 to test. Have fun!
+Hi there, it's me again! Today, I'll guide you through the process of creating an SSL certificate for your local test environment on Ubuntu 20.04. It's going to be a fun ride, so let's get started!
 
 In bash shell, run these commands:
 <!--more-->
