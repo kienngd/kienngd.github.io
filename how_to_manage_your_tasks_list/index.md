@@ -1,10 +1,12 @@
 # How to manage your tasks list?
 
 
-Hello, it is me again. Today I'll tell you how I manage my tasks.
+Hello, it's me again. Today, I'd like to share with you how I manage my tasks effectively.
 
-When I take a task, first of all I'll set it one (or more) **tags**. Then I set it a **due date**. And finally put it in to a list. Very simple :).
+When I receive a new task, the first thing I do is assign one or more tags to it. This helps me to categorize and prioritize my tasks based on their level of importance or urgency. Next, I set a due date for the task and add it to my list. It might seem simple, but this method has proven to be very effective for me.
 <!--more-->
 ![tasks list management](tasks_list.png)
-But remember that **not urgent** task will be **urgent** task very soon. And important, urgent tasks will make you exhausted very soon too. So take care your **not urgent** task carefully before it to be **urgent**.
 
+However, it's important to note that tasks that are not urgent can quickly become urgent if they're not handled promptly. That's why it's crucial to carefully prioritize your non-urgent tasks and ensure they don't become urgent tasks later on. Additionally, when dealing with important and urgent tasks, it's essential to take breaks and avoid getting burnt out.
+
+Overall, by following these simple steps, I'm able to stay organized and handle my tasks efficiently. Remember, prioritizing and strategizing are key to managing your workload effectively.

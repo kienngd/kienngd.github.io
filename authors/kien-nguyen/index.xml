@@ -4,7 +4,21 @@
         <link>https://kienngd.github.io/blog/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+    <title>Some websites to draw online</title>
+    <link>https://kienngd.github.io/blog/20230509-some-websites-to-draw-online/</link>
+    <pubDate>Tue, 09 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230509-some-websites-to-draw-online/</guid>
+    <description><![CDATA[<p><strong>Some website to draw online</strong></p>]]></description>
+</item><item>
+    <title>Ten coder bad habits</title>
+    <link>https://kienngd.github.io/blog/20230509-ten-coder-bad-habits/</link>
+    <pubDate>Tue, 09 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230509-ten-coder-bad-habits/</guid>
+    <description><![CDATA[Ten coder bad habits]]></description>
+</item><item>
     <title>How to Manage Software with Snap on Ubuntu 22.04</title>
     <link>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</link>
     <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
@@ -75,22 +89,5 @@
                 <img src="/images/notes/some_softwares_i_use.jpg" referrerpolicy="no-referrer">
             </div>Some softwares I use
 1 OS Ubuntu 22.04 Microsoft Windows 7 &amp; 10 (seldom)  2 Web browser Google chrome  Extendsion:  Google translate Google docs offline     Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com DrawIO Dropbox Project management Trello - Jira: https://www.]]></description>
-</item><item>
-    <title>How to create a linux service</title>
-    <link>https://kienngd.github.io/blog/how_to_create_linux_service/</link>
-    <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/how_to_create_linux_service/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/howto/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
-            </div>How to create a linux service]]></description>
-</item><item>
-    <title>How does computer networking work?</title>
-    <link>https://kienngd.github.io/blog/how_does_networking_work/</link>
-    <pubDate>Thu, 08 Oct 2020 09:23:54 &#43;0700</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/how_does_networking_work/</guid>
-    <description><![CDATA[<p>This post will explain how does computer networking work.</p>
-<p>Have fun!</p>]]></description>
 </item></channel>
 </rss>
