@@ -94,3 +94,4 @@ $result = $database->writePoints($points, Database::PRECISION_SECONDS);
     PRECISION_HOURS
 */
 ```
+

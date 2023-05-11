@@ -10,3 +10,4 @@ When I receive a new task, the first thing I do is assign one or more tags to it
 However, it's important to note that tasks that are not urgent can quickly become urgent if they're not handled promptly. That's why it's crucial to carefully prioritize your non-urgent tasks and ensure they don't become urgent tasks later on. Additionally, when dealing with important and urgent tasks, it's essential to take breaks and avoid getting burnt out.
 
 Overall, by following these simple steps, I'm able to stay organized and handle my tasks efficiently. Remember, prioritizing and strategizing are key to managing your workload effectively.
+

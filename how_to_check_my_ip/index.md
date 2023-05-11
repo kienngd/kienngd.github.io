@@ -6,3 +6,4 @@ Open your browser to access this link: [https://api.myip.com/](https://api.myip.
 
 **Bonus**: You can use curl command to get data too.
 <!--more-->
+

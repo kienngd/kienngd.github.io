@@ -25,3 +25,4 @@ class MyModel extends Model
     protected $guarded = [];
 }
 ```
+

@@ -124,3 +124,4 @@ $discountedPrice = $product->getPrice() - $discountCalculator->calculateDiscount
 - Use meaningful names for the Concrete Strategies to make the code more readable and maintainable.
 - Use dependency injection to provide the Concrete Strategies to the Context class.
 - Avoid coupling the Concrete Strategies to the Context class to make the code more flexible and reusable.
+

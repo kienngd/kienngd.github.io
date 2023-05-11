@@ -64,3 +64,4 @@ Result is saved in folder **public**.
  1. Create cname record for your custom domain to github page domain.
  2. Update setting, use custom domain.
  3. Wait for a moment (sometimes to 24 hours) and check Enforce HTTPS
+

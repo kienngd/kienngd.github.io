@@ -45,3 +45,4 @@ docker-compose exec influxdb influx -precision rfc3339
 ```
 
 **API URI is**: http://localhost:8086
+

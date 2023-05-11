@@ -50,3 +50,4 @@ consider using the following pattern and ask yourself the corresponding question
 - typePrefix: get (function)
 - qualifier: LoggedIn
 - baseName: User
+

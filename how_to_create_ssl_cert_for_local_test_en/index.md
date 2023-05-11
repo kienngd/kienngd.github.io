@@ -61,3 +61,4 @@ openssl x509 -req -in YOUR_DOMAIN_NAME.csr -CA rootCA.pem -CAkey rootCA.key -CAc
 Change the days as you want. 3650 days mean about 10 years.
 
 Now you have **crt, csr, key** files for domain. Copy these files to web server (example nginx) and config.
+
