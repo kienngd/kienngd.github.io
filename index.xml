@@ -4,9 +4,16 @@
         <link>https://kienngd.github.io/blog/</link>
         <description>The official documentation for the Hugo DoIt theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 May 2023 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 May 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Best practices for coder</title>
+    <link>https://kienngd.github.io/blog/20230512-best-practices-for-coder/</link>
+    <pubDate>Fri, 12 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230512-best-practices-for-coder/</guid>
+    <description><![CDATA[Best practices for coder]]></description>
+</item><item>
     <title>Some websites to draw online</title>
     <link>https://kienngd.github.io/blog/20230509-some-websites-to-draw-online/</link>
     <pubDate>Tue, 09 May 2023 00:00:00 &#43;0000</pubDate><author>
@@ -81,15 +88,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
             </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
-</item><item>
-    <title>Some softwares I use everyday</title>
-    <link>https://kienngd.github.io/blog/some_softwares_i_use/</link>
-    <pubDate>Thu, 03 Nov 2022 01:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/some_softwares_i_use/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/notes/some_softwares_i_use.jpg" referrerpolicy="no-referrer">
-            </div>Some softwares I use
-1 OS Ubuntu 22.04 Microsoft Windows 7 &amp; 10 (seldom)  2 Web browser Google chrome  Extendsion:  Google translate Google docs offline     Firefox Opera  3 IDEs VS Code Code-Server - Browser based VS Code IDE  4 Database clients DBeaver MySQL client console PSQL console  5 Chat clients Telegram Zalo Skype  6 Online services Google suite: https://gmail.com DrawIO Dropbox Project management Trello - Jira: https://www.]]></description>
 </item></channel>
 </rss>
