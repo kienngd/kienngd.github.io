@@ -4,7 +4,16 @@
         <link>https://kienngd.github.io/blog/tags/linux/</link>
         <description>Linux - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Apr 2021 19:31:37 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>How To Use Screen Command In Linux: A Beginner’s Guide</title>
+    <link>https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/</link>
+    <pubDate>Thu, 18 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/LinuxCommands.png" referrerpolicy="no-referrer">
+            </div>How To Use Screen Command In Linux: A Beginner’s Guide]]></description>
+</item><item>
     <title>How to connect to a service on the remote server via SSH tunnel</title>
     <link>https://kienngd.github.io/blog/how_to_connect_service_via_ssh_tunnel/</link>
     <pubDate>Tue, 30 Mar 2021 09:34:48 &#43;0700</pubDate><author>

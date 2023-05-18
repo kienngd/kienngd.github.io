@@ -4,7 +4,16 @@
         <link>https://kienngd.github.io/blog/tags/miscellaneous/</link>
         <description>Miscellaneous - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/miscellaneous/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/miscellaneous/" rel="self" type="application/rss+xml" /><item>
+    <title>How To Use Screen Command In Linux: A Beginner’s Guide</title>
+    <link>https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/</link>
+    <pubDate>Thu, 18 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/LinuxCommands.png" referrerpolicy="no-referrer">
+            </div>How To Use Screen Command In Linux: A Beginner’s Guide]]></description>
+</item><item>
     <title>Best practices for coder</title>
     <link>https://kienngd.github.io/blog/20230512-best-practices-for-coder/</link>
     <pubDate>Fri, 12 May 2023 00:00:00 &#43;0000</pubDate><author>
