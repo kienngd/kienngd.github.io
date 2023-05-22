@@ -1,4 +1,5 @@
-# Naming: Every Developer's Nightmare
+# GIT Commit message conventions
+
 
 Consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
 
