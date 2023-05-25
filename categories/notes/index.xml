@@ -4,14 +4,20 @@
         <link>https://kienngd.github.io/blog/categories/notes/</link>
         <description>Notes - Category - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>TimescaleDB working with continuous aggregate</title>
+    <link>https://kienngd.github.io/blog/20230525-timescaledb-working-with-continuous-aggregate/</link>
+    <pubDate>Thu, 25 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230525-timescaledb-working-with-continuous-aggregate/</guid>
+    <description><![CDATA[TimescaleDB working with continuous aggregate]]></description>
+</item><item>
     <title>Naming: Every Developer&#39;s Nightmare</title>
     <link>https://kienngd.github.io/blog/202304241000_naming/</link>
     <pubDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/blog/202304241000_naming/</guid>
-    <description><![CDATA[Consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
-1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
+    <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item><item>
     <title>Strategy Pattern in PHP with examples</title>
     <link>https://kienngd.github.io/blog/202304211000_strategy_pattern/</link>
@@ -216,13 +222,6 @@
     <pubDate>Tue, 20 Oct 2020 10:02:45 &#43;0700</pubDate><author>
         <name>KienND</name>
     </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_api/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Working_with_influxdb_data_using_influx</title>
-    <link>https://kienngd.github.io/blog/working_with_influxdb_data_using_influx/</link>
-    <pubDate>Tue, 20 Oct 2020 10:02:33 &#43;0700</pubDate><author>
-        <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/working_with_influxdb_data_using_influx/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

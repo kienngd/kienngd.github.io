@@ -1,6 +1,9 @@
 # Naming: Every Developer's Nightmare
 
-Consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
+
+<!--more-->
+
+Consider using the following pattern and ask yourself the corresponding questions: `[scope][typePrefix][baseName][qualifier][typeSuffix]`.
 
 ## Scope:
 

@@ -10,7 +10,6 @@
     <pubDate>Mon, 24 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/blog/202304241000_naming/</guid>
-    <description><![CDATA[Consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
-1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
+    <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item></channel>
 </rss>

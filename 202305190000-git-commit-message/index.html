@@ -22,7 +22,7 @@
 
 <meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="https://kienngd.github.io/blog/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://kienngd.github.io/blog/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://kienngd.github.io/blog/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="https://kienngd.github.io/blog/apple-touch-icon.png"><link rel="mask-icon" href="https://kienngd.github.io/blog/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://kienngd.github.io/blog/site.webmanifest"><link rel="canonical" href="https://kienngd.github.io/blog/202305190000-git-commit-message/" /><link rel="prev" href="https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/" /><link rel="stylesheet" href="https://kienngd.github.io/blog/lib/normalize/normalize.min.css"><link rel="stylesheet" href="https://kienngd.github.io/blog/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://kienngd.github.io/blog/lib/fontawesome-free/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://kienngd.github.io/blog/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="https://kienngd.github.io/blog/apple-touch-icon.png"><link rel="mask-icon" href="https://kienngd.github.io/blog/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://kienngd.github.io/blog/site.webmanifest"><link rel="canonical" href="https://kienngd.github.io/blog/202305190000-git-commit-message/" /><link rel="prev" href="https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/" /><link rel="next" href="https://kienngd.github.io/blog/20230525-timescaledb-working-with-continuous-aggregate/" /><link rel="stylesheet" href="https://kienngd.github.io/blog/lib/normalize/normalize.min.css"><link rel="stylesheet" href="https://kienngd.github.io/blog/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://kienngd.github.io/blog/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="https://kienngd.github.io/blog/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://kienngd.github.io/blog/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="https://kienngd.github.io/blog/lib/animate/animate.min.css"></noscript>
     
@@ -37,7 +37,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kienngd.github.io\/blog\/202305190000-git-commit-message\/"
-        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, GIT, Convention","wordcount":  366 ,
+        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, GIT, Convention","wordcount":  107 ,
         "url": "https:\/\/kienngd.github.io\/blog\/202305190000-git-commit-message\/","datePublished": "2023-05-19T00:00:00+00:00","dateModified": "2023-05-19T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -110,71 +110,92 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="https://kienngd.github.io/blog/categories/miscellaneous/"><i class="far fa-folder fa-fw"></i>Miscellaneous</a>&nbsp;<a href="https://kienngd.github.io/blog/categories/git/"><i class="far fa-folder fa-fw"></i>GIT</a>&nbsp;<a href="https://kienngd.github.io/blog/categories/convention/"><i class="far fa-folder fa-fw"></i>Convention</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-19">2023-05-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-05-19">2023-05-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;366 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-19">2023-05-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-05-19">2023-05-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;107 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         data-src="https://kienngd.github.io/blog/images/Git-Banner.png"
         data-srcset="https://kienngd.github.io/blog/images/Git-Banner.png, https://kienngd.github.io/blog/images/Git-Banner.png 1.5x, https://kienngd.github.io/blog/images/Git-Banner.png 2x"
         data-sizes="auto"
         alt="/images/Git-Banner.png"
-        title="GIT Commit message conventions" height="auto" width="auto"></div><div class="content" id="content"><p>Consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].</p>
-<h2 id="scope" class="headerLink">
-    <a href="#scope" class="header-mark"></a>1 Scope:</h2><ul>
-<li>What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private)</li>
-<li>Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby)</li>
-<li>Is this variable part of a framework or library that requires a specific naming pattern? (e.g., Angular&rsquo;s &lsquo;ng&rsquo; prefix for directives, React&rsquo;s &lsquo;use&rsquo; prefix for hooks)</li>
+        title="GIT Commit message conventions" height="auto" width="auto"></div><div class="content" id="content"><h2 id="commit-message-conventions" class="headerLink">
+    <a href="#commit-message-conventions" class="header-mark"></a>1 Commit message conventions</h2><p>Ref-Url: <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener noreferrer">https://www.conventionalcommits.org/en/v1.0.0/</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;type&gt;[optional scope]: &lt;description&gt;
+
+[optional body]
+
+[optional footer]
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="types-list" class="headerLink">
+    <a href="#types-list" class="header-mark"></a>2 Types list</h2><ul>
+<li>feat: add new feature</li>
+<li>fix: fix bug</li>
+<li>refactor:</li>
+<li>docs: documents</li>
+<li>chore: small bugs not-relevant to code</li>
+<li>style</li>
+<li>perf: performance</li>
+<li>vendor: Update dependencies', packages' &hellip; version
+&hellip;</li>
 </ul>
-<h2 id="typeprefix" class="headerLink">
-    <a href="#typeprefix" class="header-mark"></a>2 TypePrefix</h2><ul>
-<li>Is this variable a boolean or a function that returns a boolean? (e.g., is, has, contains, are, integrates)</li>
-<li>Does the variable represent a state, condition, or action that can be described with words like &ldquo;is,&rdquo; &ldquo;has,&rdquo; &ldquo;contains,&rdquo; or &ldquo;integrates&rdquo;? (e.g., isEnabled, hasAccess, containsItem)</li>
-<li>Is this a function responsible for getting, setting, fetching, or updating data? (e.g., get, set, fetch, update, retrieve, store, save)</li>
-</ul>
-<h2 id="basename" class="headerLink">
-    <a href="#basename" class="header-mark"></a>3 BaseName:</h2><ul>
-<li>What is the primary purpose of this variable? (e.g., user, distance, payment, errorMessage)</li>
-<li>Can I describe the variable&rsquo;s role in the code with a clear, concise word or phrase? (e.g., registrationStatus, totalPrice, elapsedTime)</li>
-</ul>
-<h2 id="qualifier" class="headerLink">
-    <a href="#qualifier" class="header-mark"></a>4 Qualifier:</h2><ul>
-<li>Are there any additional details or context that would help distinguish this variable from others with a similar purpose? (e.g., firstName, lastName, phoneNumber)</li>
-<li>Does the variable have specific units or properties that should be included in the name, such as &ldquo;InMeters&rdquo; or &ldquo;InSeconds&rdquo;? (e.g., distanceInMiles, timeInSeconds)</li>
-<li>Is there a specific state or condition that this variable represents, such as &ldquo;Valid&rdquo; or &ldquo;Removable&rdquo;? (e.g., isValidEmail, isRemovableItem)</li>
-</ul>
-<h2 id="typesuffix" class="headerLink">
-    <a href="#typesuffix" class="header-mark"></a>5 TypeSuffix:</h2><ul>
-<li>What is the fundamental purpose or structure of this variable? (e.g., Count, Index, Sum, Average, List, Map, Array, Set, Queue)</li>
-<li>Can the variable&rsquo;s role be clarified by adding a suffix for the structure like &ldquo;Count,&rdquo; &ldquo;Index,&rdquo; &ldquo;Sum,&rdquo; &ldquo;Average,&rdquo; &ldquo;List,&rdquo; or &ldquo;Map&rdquo;? (e.g., itemCount, currentIndex, totalPriceSum, ratingAverage, userList, settingsMap)</li>
+<h2 id="notes" class="headerLink">
+    <a href="#notes" class="header-mark"></a>3 Notes:</h2><ul>
+<li>BREAKING CHANGE in body.</li>
 </ul>
 <h2 id="examples" class="headerLink">
-    <a href="#examples" class="header-mark"></a>6 Examples:</h2><p><strong>fetchProductById</strong>:</p>
-<ul>
-<li>scope: “” (Public methods dont have a specific prefix in most languages)</li>
-<li>typePrefix: fetch (function)</li>
-<li>baseName: Product</li>
-<li>qualifier: ById</li>
-</ul>
-<p><strong>updateEmailPreference</strong>:</p>
-<ul>
-<li>scope: &quot;&quot; (public)</li>
-<li>typePrefix: update (function)</li>
-<li>baseName: Email</li>
-<li>qualifier: Preference</li>
-</ul>
-<p><strong>getUserByEmail</strong>:</p>
-<ul>
-<li>typePrefix: get (function)</li>
-<li>baseName: User</li>
-<li>qualifier: ByEmail</li>
-</ul>
-<p><del>getUserLoggedIn</del> <strong>getLoggedInUser</strong> <span style="color: #FF0000">(swap the base name and qualifier in order to give the variable a more appropriate and meaningful name)</span></p>
-<ul>
-<li>typePrefix: get (function)</li>
-<li>qualifier: LoggedIn</li>
-<li>baseName: User</li>
-</ul>
+    <a href="#examples" class="header-mark"></a>4 Examples</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Example 1:
+feat!: implement multi-languages
+
+BREAKING CHANGE!: PHP Version change.
+
+Example 2:
+fix: homepage&#39;s bug 
+
+Long long long description of bug 
+
+Some other data.
+
+Reviewed-by: Z
+Ref: #123
+
+
+Example 3:
+fix(player): Video player can not initialize
+</code></pre></td></tr></table>
 </div>
+</div></div>
 
         
 
@@ -236,7 +257,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/" class="prev" rel="prev" title="How To Use Screen Command In Linux: A Beginner’s Guide"><i class="fas fa-angle-left fa-fw"></i>How To Use Screen Command In Linux: A Beginner’s Guide</a></div>
+    <div class="post-nav"><a href="https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/" class="prev" rel="prev" title="How To Use Screen Command In Linux: A Beginner’s Guide"><i class="fas fa-angle-left fa-fw"></i>How To Use Screen Command In Linux: A Beginner’s Guide</a>
+            <a href="https://kienngd.github.io/blog/20230525-timescaledb-working-with-continuous-aggregate/" class="next" rel="next" title="TimescaleDB working with continuous aggregate">TimescaleDB working with continuous aggregate<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
         </main><footer class="footer">

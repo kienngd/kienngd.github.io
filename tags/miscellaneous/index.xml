@@ -12,8 +12,7 @@
                 </author><guid>https://kienngd.github.io/blog/202305190000-git-commit-message/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/Git-Banner.png" referrerpolicy="no-referrer">
-            </div>Consider using the following pattern and ask yourself the corresponding questions: [scope][typePrefix][baseName][qualifier][typeSuffix].
-1 Scope: What is the visibility or accessibility of this variable? (e.g., private, public, protected, internal, package-private) Is this variable specific to any programming language features or conventions? (e.g., double underscore prefix in Python, dollar sign in jQuery, &lsquo;@&rsquo; for instance variables in Ruby) Is this variable part of a framework or library that requires a specific naming pattern?]]></description>
+            </div>GIT Commit message conventions]]></description>
 </item><item>
     <title>How To Use Screen Command In Linux: A Beginner’s Guide</title>
     <link>https://kienngd.github.io/blog/20230518-how-to-use-screen-command-in-linux/</link>
