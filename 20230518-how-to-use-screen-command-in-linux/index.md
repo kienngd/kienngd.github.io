@@ -25,3 +25,5 @@ To use `screen`, you need to install it first. On Ubuntu, you can do this by typ
 
 Screen is a powerful tool that can help you manage multiple processes and sessions on a single terminal. Explore its features and options and have fun!
 
+**Tips**
+- By default, the shortcut key to detach from a **screen session**  is **CTRL + A followed by D**. However, if you want to customize this shortcut key, you can create a file called **./.screenrc** with the contents `escape ^Bb`. Then you run command: `screen -S My-Screen -c .screenrc`. With this setup, you can now detach from a **screen session** by pressing **CTRL + B followed by D**.
