@@ -101,6 +101,50 @@
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="https://kienngd.github.io/blog/working_with_influxdb_data_using_phpclient/">Working With Influxdb Data Using PhpClient</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-20">2020-10-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div><div class="content"><p>document: <a href="https://github.com/influxdata/influxdb-php" target="_blank" rel="noopener noreferrer">https://github.com/influxdata/influxdb-php</a></p>
+<h5 id="install-via-composer" class="headerLink">
+    <a href="#install-via-composer" class="header-mark"></a>0.0.0.1 Install via composer</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">composer require influxdb/influxdb-php
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="create-client-object" class="headerLink">
+    <a href="#create-client-object" class="header-mark"></a>0.0.0.2 Create client object</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nv">$client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">InfluxDB\Client</span><span class="p">(</span><span class="nv">$host</span><span class="p">,</span> <span class="nv">$port</span><span class="p">);</span>
+
+<span class="c1">// directly get the database object
+</span><span class="c1"></span><span class="nv">$database</span> <span class="o">=</span> <span class="nx">InfluxDB\Client</span><span class="o">::</span><span class="na">fromDSN</span><span class="p">(</span><span class="nx">sprintf</span><span class="p">(</span><span class="s1">&#39;influxdb://user:pass@%s:%s/%s&#39;</span><span class="p">,</span> <span class="nv">$host</span><span class="p">,</span> <span class="nv">$port</span><span class="p">,</span> <span class="nv">$dbname</span><span class="p">));</span>
+
+<span class="c1">// Fetch the database using a 5 second time out
+</span><span class="c1"></span><span class="nv">$database</span> <span class="o">=</span> <span class="nx">InfluxDB\Client</span><span class="o">::</span><span class="na">fromDSN</span><span class="p">(</span><span class="nx">sprintf</span><span class="p">(</span><span class="s1">&#39;influxdb://user:pass@%s:%s/%s&#39;</span><span class="p">,</span> <span class="nv">$host</span><span class="p">,</span> <span class="nv">$port</span><span class="p">,</span> <span class="nv">$dbname</span><span class="p">),</span> <span class="mi">5</span><span class="p">);</span>
+
+<span class="c1">// get the client to retrieve other databases
+</span><span class="c1"></span><span class="nv">$client</span> <span class="o">=</span> <span class="nv">$database</span><span class="o">-&gt;</span><span class="na">getClient</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer">
+        <a href="https://kienngd.github.io/blog/working_with_influxdb_data_using_phpclient/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/tags/influxdb/">InfluxDB</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="https://kienngd.github.io/blog/working_with_influxdb_data_using_api/">Working_with_influxdb_data_using_api</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">KienND</a>
@@ -308,51 +352,6 @@ influxdb:
 <p>Open your browser to access this link: <a href="https://api.myip.com/" target="_blank" rel="noopener noreferrer">https://api.myip.com/</a>. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: <strong>115.75.212.27</strong>.</p>
 <p><strong>Bonus</strong>: You can use curl command to get data too.</p></div><div class="post-footer">
         <a href="https://kienngd.github.io/blog/how_to_check_my_ip/">Read more...</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="https://kienngd.github.io/blog/phpdoc_docblock/">Phpdoc docblock</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-15">2020-10-15</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div><div class="content"><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="sd">/** This is a single line DocComment. */</span>
-
-<span class="sd">/**
-</span><span class="sd"> * This is a multi-line DocComment.
-</span><span class="sd"> */</span>
-
-<span class="sd">/**
-</span><span class="sd"> * This is a summary
-</span><span class="sd"> *
-</span><span class="sd"> * This is a description
-</span><span class="sd"> */</span>
-
-<span class="sd">/**
-</span><span class="sd"> * This is a summary.
-</span><span class="sd"> * This is a description
-</span><span class="sd"> */</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>Tags</strong> example: @api, @author, @param, @return&hellip;</p></div><div class="post-footer">
-        <a href="https://kienngd.github.io/blog/phpdoc_docblock/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/tags/php/">PHP</a>,&nbsp;<a href="https://kienngd.github.io/blog/tags/phpdocs/">PHPDocs</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="https://kienngd.github.io/blog/">1</a>
@@ -374,6 +373,10 @@ influxdb:
                 </li><li class="page-item ">
                     <span class="page-link">
                         <a href="https://kienngd.github.io/blog/page/6/">6</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="https://kienngd.github.io/blog/page/7/">7</a>
                     </span>
                 </li></ul></div></div>
         </main><footer class="footer">

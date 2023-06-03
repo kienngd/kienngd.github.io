@@ -4,9 +4,16 @@
         <link>https://kienngd.github.io/blog/</link>
         <description>The official documentation for the Hugo DoIt theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 May 2023 01:00:00 &#43;0000</lastBuildDate>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 03 Jun 2023 01:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Some open-sources to try</title>
+    <link>https://kienngd.github.io/blog/20230603-open-source-to-try/</link>
+    <pubDate>Sat, 03 Jun 2023 01:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230603-open-source-to-try/</guid>
+    <description><![CDATA[Some open-sources to try]]></description>
+</item><item>
     <title>How to Connect to a Server via SSH Without Password Authentication</title>
     <link>https://kienngd.github.io/blog/20230530-ssh-key/</link>
     <pubDate>Tue, 30 May 2023 01:00:00 &#43;0000</pubDate><author>
@@ -77,14 +84,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/snapcraft_green-red_hex.png" referrerpolicy="no-referrer">
             </div>Manage Software with Snap on Ubuntu 22.04]]></description>
-</item><item>
-    <title>Add new guard to an Apiato11 project</title>
-    <link>https://kienngd.github.io/blog/apiato11_add_new_guard/</link>
-    <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/apiato11_add_new_guard/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/tutorial/laravel_guard.png" referrerpolicy="no-referrer">
-            </div>Add new guard to an Apiato11 project]]></description>
 </item></channel>
 </rss>
