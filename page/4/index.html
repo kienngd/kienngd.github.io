@@ -101,6 +101,47 @@
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="https://kienngd.github.io/blog/how_to_use_php8_with_laradock/">How to use PHP8 with Laradock</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-18">2021-04-18</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/categories/howto/"><i class="far fa-folder fa-fw"></i>Howto</a></span></div><div class="content"><p>Hello, it is me again. I use laradock to host all my test projects. And today I want some projects to use PHP 7.4 and some projects will use 8.0. I use Ubuntu 20.04 to test. Have fun.</p>
+<p>First of all please remember that it is very important to <strong>backup</strong> your configuration file: <strong>docker-compose.yml</strong>.</p>
+<p>Now, edit your files: <strong>docker-compose.yml</strong> and <strong>.env</strong></p>
+<p><strong>.env</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">…
+<span class="c1">#PHP 8 version</span>
+<span class="nv">PHP8_VERSION</span><span class="o">=</span>8.0
+…
+<span class="c1">#Define some new ports to difference from original workspace</span>
+<span class="nv">WORKSPACE_PHP8_SSH_PORT</span><span class="o">=</span><span class="m">2223</span>
+<span class="nv">WORKSPACE_PHP8_BROWSERSYNC_HOST_PORT</span><span class="o">=</span><span class="m">4000</span>
+<span class="nv">WORKSPACE_PHP8_BROWSERSYNC_UI_HOST_PORT</span><span class="o">=</span><span class="m">4001</span>
+<span class="nv">WORKSPACE_PHP8_VUE_CLI_SERVE_HOST_PORT</span><span class="o">=</span><span class="m">9080</span>
+<span class="nv">WORKSPACE_PHP8_VUE_CLI_UI_HOST_PORT</span><span class="o">=</span><span class="m">9001</span>
+<span class="nv">WORKSPACE_PHP8_ANGULAR_CLI_SERVE_HOST_PORT</span><span class="o">=</span><span class="m">5200</span>
+
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer">
+        <a href="https://kienngd.github.io/blog/how_to_use_php8_with_laradock/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/tags/linux/">Linux</a>,&nbsp;<a href="https://kienngd.github.io/blog/tags/docker/">Docker</a>,&nbsp;<a href="https://kienngd.github.io/blog/tags/laradock/">Laradock</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="https://kienngd.github.io/blog/php_pass_by_value_pass_by_reference/">PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
@@ -376,65 +417,6 @@
 </div></div><div class="post-footer">
         <a href="https://kienngd.github.io/blog/how_to_use_uuid_as_id_laravel/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/tags/laravel/">Laravel</a>,&nbsp;<a href="https://kienngd.github.io/blog/tags/uuid/">UUID</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="https://kienngd.github.io/blog/working_with_openstack_api_using_curl/">Working with openstack api using curl</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-29">2020-10-29</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div><div class="content"><h5 id="get-token" class="headerLink">
-    <a href="#get-token" class="header-mark"></a>0.0.0.1 Get token</h5><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -i -H <span class="s2">&#34;Content-Type: application/json&#34;</span>   -d <span class="s1">&#39;
-</span><span class="s1">{
-</span><span class="s1">    &#34;auth&#34;: {
-</span><span class="s1">        &#34;identity&#34;: {
-</span><span class="s1">            &#34;methods&#34;: [
-</span><span class="s1">                &#34;password&#34;
-</span><span class="s1">            ],
-</span><span class="s1">            &#34;password&#34;: {
-</span><span class="s1">                &#34;user&#34;: {
-</span><span class="s1">                    &#34;name&#34;: &#34;{USERNAME}&#34;,
-</span><span class="s1">                    &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; },
-</span><span class="s1">                    &#34;password&#34;: &#34;{PASSWORD}&#34;
-</span><span class="s1">                }
-</span><span class="s1">            }
-</span><span class="s1">        },
-</span><span class="s1">        &#34;scope&#34;: {
-</span><span class="s1">            &#34;project&#34;: {
-</span><span class="s1">                &#34;id&#34;: &#34;{PROJECT_ID}&#34;
-</span><span class="s1">            }
-</span><span class="s1">        }
-</span><span class="s1">    }
-</span><span class="s1">}&#39;</span>   <span class="s2">&#34;https://{BASE URL}:5000/v3/auth/tokens&#34;</span> <span class="p">|</span> grep <span class="s2">&#34;X-Subject-Token:&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Default keystone port is <strong>5000</strong></p>
-<p>By default, this token will be expired after 6 hours.</p></div><div class="post-footer">
-        <a href="https://kienngd.github.io/blog/working_with_openstack_api_using_curl/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/tags/php/">PHP</a>,&nbsp;<a href="https://kienngd.github.io/blog/tags/openstack/">OpenStack</a>,&nbsp;<a href="https://kienngd.github.io/blog/tags/api/">API</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="https://kienngd.github.io/blog/">1</a>

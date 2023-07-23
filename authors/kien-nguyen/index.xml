@@ -4,7 +4,14 @@
         <link>https://kienngd.github.io/blog/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
-            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 03 Jun 2023 01:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+    <title>Snip tips</title>
+    <link>https://kienngd.github.io/blog/20230703-snip-tips/</link>
+    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/20230703-snip-tips/</guid>
+    <description><![CDATA[Some snip-tips]]></description>
+</item><item>
     <title>Some open-sources to try</title>
     <link>https://kienngd.github.io/blog/20230603-open-source-to-try/</link>
     <pubDate>Sat, 03 Jun 2023 01:00:00 &#43;0000</pubDate><author>
@@ -73,14 +80,5 @@
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/blog/20230509-ten-coder-bad-habits/</guid>
     <description><![CDATA[Ten coder bad habits]]></description>
-</item><item>
-    <title>How to Manage Software with Snap on Ubuntu 22.04</title>
-    <link>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</link>
-    <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/20230507-how-to-manage-sofware-using-snap-on-ubuntu-22.04/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/snapcraft_green-red_hex.png" referrerpolicy="no-referrer">
-            </div>Manage Software with Snap on Ubuntu 22.04]]></description>
 </item></channel>
 </rss>
