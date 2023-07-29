@@ -37,7 +37,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kienngd.github.io\/blog\/20230703-snip-tips\/"
-        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, Snip-Tips","wordcount":  108 ,
+        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, Snip-Tips","wordcount":  75 ,
         "url": "https:\/\/kienngd.github.io\/blog\/20230703-snip-tips\/","datePublished": "2023-07-04T01:00:00+00:00","dateModified": "2023-07-04T01:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -113,15 +113,13 @@
     <li><a href="#postgresql">PostgreSQL</a></li>
     <li><a href="#sqlite3">Sqlite3</a></li>
     <li><a href="#laravel">Laravel</a></li>
-    <li><a href="#ubuntu">Ubuntu</a></li>
-    <li><a href="#openbox">Openbox</a></li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single single-post"><h1 class="single-title animate__animated animate__flipInX">Snip tips</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="https://kienngd.github.io/blog/categories/miscellaneous/"><i class="far fa-folder fa-fw"></i>Miscellaneous</a>&nbsp;<a href="https://kienngd.github.io/blog/categories/snip-tips/"><i class="far fa-folder fa-fw"></i>Snip-Tips</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;108 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;75 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -133,8 +131,6 @@
     <li><a href="#postgresql">PostgreSQL</a></li>
     <li><a href="#sqlite3">Sqlite3</a></li>
     <li><a href="#laravel">Laravel</a></li>
-    <li><a href="#ubuntu">Ubuntu</a></li>
-    <li><a href="#openbox">Openbox</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="some-snip-tips" class="headerLink">
@@ -150,20 +146,6 @@
 <pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">pid</span><span class="p">,</span><span class="w"> </span><span class="k">state</span><span class="p">,</span><span class="w"> </span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">(</span><span class="n">clock_timestamp</span><span class="p">(),</span><span class="w"> </span><span class="n">query_start</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">query_age</span><span class="p">,</span><span class="w"> </span><span class="n">psa</span><span class="p">.</span><span class="o">*</span><span class="w">
 </span><span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="w"> </span><span class="n">psa</span><span class="w">
 </span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>Miscellaneous
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">  pg_lsclusters
-  sudo pg_dropcluster <span class="m">14</span> main --stop
-  sudo pg_upgradecluster <span class="m">12</span> main    
-</code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -198,24 +180,6 @@
 <li>config(&lsquo;app.key&rsquo;) is default secret_key</li>
 </ul>
 </li>
-</ul>
-<h2 id="ubuntu" class="headerLink">
-    <a href="#ubuntu" class="header-mark"></a>4 Ubuntu</h2><ul>
-<li>Show OS version-information
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">  lsb_release -a
-</code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-<h2 id="openbox" class="headerLink">
-    <a href="#openbox" class="header-mark"></a>5 Openbox</h2><ul>
-<li>Openbox configuration-file: <code>~/.config/openbox/rc.xml</code></li>
-<li>Reload configuration-file (after edit): <code>openbox --reconfigure</code></li>
 </ul></div>
 
         
