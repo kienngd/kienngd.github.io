@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://kienngd.github.io/blog/20230703-snip-tips/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://kienngd.github.io/blog/20230703-snip-tips/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/20230603-open-source-to-try/</loc><lastmod>2023-06-03T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/20230530-ssh-key/</loc><lastmod>2023-05-30T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/20230530-vscode-extensions/</loc><lastmod>2023-05-30T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -20,16 +20,16 @@
             <loc>https://kienngd.github.io/blog/202304211000_strategy_pattern/</loc><lastmod>2023-04-21T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/202211030810_markdown_basic/</loc><lastmod>2022-11-03T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/some_softwares_i_use/</loc><lastmod>2022-11-03T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://kienngd.github.io/blog/authors/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/categories/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/authors/kien-nguyen/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/tags/miscellaneous/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/categories/miscellaneous/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/posts/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/tags/snip-tips/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/categories/snip-tips/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://kienngd.github.io/blog/tags/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://kienngd.github.io/blog/authors/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/categories/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/authors/kien-nguyen/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/tags/miscellaneous/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/categories/miscellaneous/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/posts/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/tags/snip-tips/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/categories/snip-tips/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/tags/</loc><lastmod>2023-07-04T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/tags/opensource/</loc><lastmod>2023-06-03T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/categories/opensource/</loc><lastmod>2023-06-03T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/tags/linux/</loc><lastmod>2023-05-30T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
