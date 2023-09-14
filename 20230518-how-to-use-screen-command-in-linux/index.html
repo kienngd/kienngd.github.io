@@ -37,7 +37,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kienngd.github.io\/blog\/20230518-how-to-use-screen-command-in-linux\/"
-        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, Linux","wordcount":  399 ,
+        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, Linux","wordcount":  567 ,
         "url": "https:\/\/kienngd.github.io\/blog\/20230518-how-to-use-screen-command-in-linux\/","datePublished": "2023-05-18T00:00:00+00:00","dateModified": "2023-05-18T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -110,8 +110,8 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="https://kienngd.github.io/blog/categories/miscellaneous/"><i class="far fa-folder fa-fw"></i>Miscellaneous</a>&nbsp;<a href="https://kienngd.github.io/blog/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-18">2023-05-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-05-18">2023-05-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;399 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-18">2023-05-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-05-18">2023-05-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;567 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         data-src="https://kienngd.github.io/blog/images/LinuxCommands.png"
@@ -140,6 +140,32 @@
 <p><strong>Tips</strong></p>
 <ul>
 <li>By default, the shortcut key to detach from a <strong>screen session</strong>  is <strong>CTRL + A followed by D</strong>. However, if you want to customize this shortcut key, you can create a file called <strong>./.screenrc</strong> with the contents <code>escape ^Bb</code>. Then you run command: <code>screen -S My-Screen -c .screenrc</code>. With this setup, you can now detach from a <strong>screen session</strong> by pressing <strong>CTRL + B followed by D</strong>.</li>
+</ul>
+<p><strong>CheatSheet</strong></p>
+<ul>
+<li><code>screen -S &lt;session_name&gt;</code>	Start a new session with session name.</li>
+<li><code>screen -ls</code>	List running sessions / screens.</li>
+<li><code>screen -x</code>	Attach to a running session.</li>
+<li><code>screen -r &lt;session_name&gt;</code>	Attach to a running session with name.</li>
+<li><code>screen -d &lt;session_name&gt;</code>	Detach a running session.</li>
+<li><code>Ctrl-a c</code>	Create new window.</li>
+<li><code>Ctrl-a Ctrl-a</code>	Change to last-visited active window.</li>
+<li><code>Ctrl-a &lt;number&gt;</code>	Change to window by number.</li>
+<li><code>Ctrl-a ' &lt;number or title&gt;</code>	Change to window by number or name.</li>
+<li><code>Ctrl-a n</code> or <code>Ctrl-a &lt;space&gt;</code>	Change to next window in list.</li>
+<li><code>Ctrl-a p</code> or <code>Ctrl-a &lt;backspace&gt;</code>	Change to previous window in list.</li>
+<li><code>Ctrl-a &quot;</code>	See window list.</li>
+<li><code>Ctrl-a w</code>	Show window bar.</li>
+<li><code>Ctrl-a k</code>	Kill current window.</li>
+<li><code>Ctrl-a \</code>	Kill all windows.</li>
+<li><code>Ctrl-a A</code>	Rename current window.</li>
+<li><code>Ctrl-a S</code>	Split display horizontally.</li>
+<li><code>Ctrl-a |</code> or <code>Ctrl-a V</code>	Split display vertically.</li>
+<li><code>Ctrl-a tab</code>	Jump to next display region.</li>
+<li><code>Ctrl-a X</code>	Remove current region.</li>
+<li><code>Ctrl-a Q</code>	Remove all regions but the current one.</li>
+<li><code>Ctrl-a H</code>	Enable logging in the screen session.</li>
+<li><code>Ctrl-a x</code>	Lock (password protect) display.</li>
 </ul></div>
 
         

@@ -27,3 +27,28 @@ Screen is a powerful tool that can help you manage multiple processes and sessio
 
 **Tips**
 - By default, the shortcut key to detach from a **screen session**  is **CTRL + A followed by D**. However, if you want to customize this shortcut key, you can create a file called **./.screenrc** with the contents `escape ^Bb`. Then you run command: `screen -S My-Screen -c .screenrc`. With this setup, you can now detach from a **screen session** by pressing **CTRL + B followed by D**.
+
+**CheatSheet**
+- `screen -S <session_name>`	Start a new session with session name.
+- `screen -ls`	List running sessions / screens.
+- `screen -x`	Attach to a running session.
+- `screen -r <session_name>`	Attach to a running session with name.
+- `screen -d <session_name>`	Detach a running session.
+- `Ctrl-a c`	Create new window.
+- `Ctrl-a Ctrl-a`	Change to last-visited active window.
+- `Ctrl-a <number>`	Change to window by number.
+- `Ctrl-a ' <number or title>`	Change to window by number or name.
+- `Ctrl-a n` or `Ctrl-a <space>`	Change to next window in list.
+- `Ctrl-a p` or `Ctrl-a <backspace>`	Change to previous window in list.
+- `Ctrl-a "`	See window list.
+- `Ctrl-a w`	Show window bar.
+- `Ctrl-a k`	Kill current window.
+- `Ctrl-a \`	Kill all windows.
+- `Ctrl-a A`	Rename current window.
+- `Ctrl-a S`	Split display horizontally.
+- `Ctrl-a |` or `Ctrl-a V`	Split display vertically.
+- `Ctrl-a tab`	Jump to next display region.
+- `Ctrl-a X`	Remove current region.
+- `Ctrl-a Q`	Remove all regions but the current one.
+- `Ctrl-a H`	Enable logging in the screen session.
+- `Ctrl-a x`	Lock (password protect) display.

@@ -7,7 +7,7 @@
     <meta name="robots" content="noodp" />
     <title class="pjax-title">Working with openstack api using curl - K5D</title><meta name="Description" content="The official documentation for the Hugo DoIt theme"><meta property="og:title" content="Working with openstack api using curl" />
 <meta property="og:description" content="
-    0.0.0.1 Get token
+    1 Get token
 
  1
  2
@@ -69,7 +69,7 @@ By default, this token will be expired after 6 hours." />
 
 <meta name="twitter:title" content="Working with openstack api using curl"/>
 <meta name="twitter:description" content="
-    0.0.0.1 Get token
+    1 Get token
 
  1
  2
@@ -141,7 +141,7 @@ By default, this token will be expired after 6 hours."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kienngd.github.io\/blog\/working_with_openstack_api_using_curl\/"
-        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "PHP, OpenStack, API","wordcount":  248 ,
+        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "PHP, OpenStack, API","wordcount":  266 ,
         "url": "https:\/\/kienngd.github.io\/blog\/working_with_openstack_api_using_curl\/","datePublished": "2020-10-29T09:26:59+07:00","dateModified": "2020-10-29T09:26:59+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -214,35 +214,24 @@ By default, this token will be expired after 6 hours."/>
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li>
-          <ul>
-            <li>
-              <ul>
-                <li><a href="#get-token">Get token</a></li>
-                <li><a href="#export-token">Export token</a></li>
-                <li><a href="#get-domains">Get domains</a></li>
-                <li><a href="#get-projects">Get projects</a></li>
-                <li><a href="#set-storage-policy-quota-for-one-project">Set storage policy quota for one project</a></li>
-                <li><a href="#get-all-projects-vms-with-detail">Get all project&rsquo;s vms with detail</a></li>
-                <li><a href="#get-all-flavors-with-detail">Get all flavors with detail</a></li>
-                <li><a href="#grant-one-role-on-all-domains-projects-to-one-user">Grant one role on all domain&rsquo;s projects to one user</a></li>
-                <li><a href="#grant-one-system-role-to-one-user">Grant one system role to one user</a></li>
-                <li><a href="#set-micro-version-for-api">Set micro version for API</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#get-token">Get token</a></li>
+    <li><a href="#export-token">Export token</a></li>
+    <li><a href="#set-micro-version-for-api-via-header">Set micro version for API via header</a></li>
+    <li><a href="#list-all-service-with-ports">List all service with ports</a></li>
+    <li><a href="#get-domains">Get domains</a></li>
+    <li><a href="#get-projects">Get projects</a></li>
+    <li><a href="#set-storage-policy-quota-for-one-project">Set storage policy quota for one project</a></li>
+    <li><a href="#get-all-projects-vms-with-detail">Get all project&rsquo;s vms with detail</a></li>
+    <li><a href="#get-all-flavors-with-detail">Get all flavors with detail</a></li>
+    <li><a href="#grant-one-role-on-all-domains-projects-to-one-user">Grant one role on all domain&rsquo;s projects to one user</a></li>
+    <li><a href="#grant-one-system-role-to-one-user">Grant one system role to one user</a></li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single single-post"><h1 class="single-title animate__animated animate__flipInX">Working with openstack api using curl</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;248 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;266 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -251,32 +240,21 @@ By default, this token will be expired after 6 hours."/>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li>
-          <ul>
-            <li>
-              <ul>
-                <li><a href="#get-token">Get token</a></li>
-                <li><a href="#export-token">Export token</a></li>
-                <li><a href="#get-domains">Get domains</a></li>
-                <li><a href="#get-projects">Get projects</a></li>
-                <li><a href="#set-storage-policy-quota-for-one-project">Set storage policy quota for one project</a></li>
-                <li><a href="#get-all-projects-vms-with-detail">Get all project&rsquo;s vms with detail</a></li>
-                <li><a href="#get-all-flavors-with-detail">Get all flavors with detail</a></li>
-                <li><a href="#grant-one-role-on-all-domains-projects-to-one-user">Grant one role on all domain&rsquo;s projects to one user</a></li>
-                <li><a href="#grant-one-system-role-to-one-user">Grant one system role to one user</a></li>
-                <li><a href="#set-micro-version-for-api">Set micro version for API</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#get-token">Get token</a></li>
+    <li><a href="#export-token">Export token</a></li>
+    <li><a href="#set-micro-version-for-api-via-header">Set micro version for API via header</a></li>
+    <li><a href="#list-all-service-with-ports">List all service with ports</a></li>
+    <li><a href="#get-domains">Get domains</a></li>
+    <li><a href="#get-projects">Get projects</a></li>
+    <li><a href="#set-storage-policy-quota-for-one-project">Set storage policy quota for one project</a></li>
+    <li><a href="#get-all-projects-vms-with-detail">Get all project&rsquo;s vms with detail</a></li>
+    <li><a href="#get-all-flavors-with-detail">Get all flavors with detail</a></li>
+    <li><a href="#grant-one-role-on-all-domains-projects-to-one-user">Grant one role on all domain&rsquo;s projects to one user</a></li>
+    <li><a href="#grant-one-system-role-to-one-user">Grant one system role to one user</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h5 id="get-token" class="headerLink">
-    <a href="#get-token" class="header-mark"></a>0.0.0.1 Get token</h5><div class="highlight"><div class="chroma">
+            </div><div class="content" id="content"><h2 id="get-token" class="headerLink">
+    <a href="#get-token" class="header-mark"></a>1 Get token</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -328,10 +306,21 @@ By default, this token will be expired after 6 hours."/>
 </div>
 </div><p>Default keystone port is <strong>5000</strong></p>
 <p>By default, this token will be expired after 6 hours.</p>
-<h5 id="export-token" class="headerLink">
-    <a href="#export-token" class="header-mark"></a>0.0.0.2 Export token</h5><p>API_TOKEN=&quot;{TOKEN}&quot;</p>
-<h5 id="get-domains" class="headerLink">
-    <a href="#get-domains" class="header-mark"></a>0.0.0.3 Get domains</h5><div class="highlight"><div class="chroma">
+<h2 id="export-token" class="headerLink">
+    <a href="#export-token" class="header-mark"></a>2 Export token</h2><p>API_TOKEN=&quot;{TOKEN}&quot;</p>
+<h2 id="set-micro-version-for-api-via-header" class="headerLink">
+    <a href="#set-micro-version-for-api-via-header" class="header-mark"></a>3 Set micro version for API via header</h2><p>Using HTTP header: <strong>X-OpenStack-Nova-API-Version: 2.4</strong> Or <strong>OpenStack-API-Version: compute 2.27</strong> (valid from version 2.27).</p>
+<h2 id="list-all-service-with-ports" class="headerLink">
+    <a href="#list-all-service-with-ports" class="header-mark"></a>4 List all service with ports</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -H <span class="s2">&#34;X-Auth-Token: </span><span class="nv">$API_TOKEN</span><span class="s2">&#34;</span> <span class="s2">&#34;https://{BASE URL}:5000/v3/auth/catalog&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="get-domains" class="headerLink">
+    <a href="#get-domains" class="header-mark"></a>5 Get domains</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -340,8 +329,8 @@ By default, this token will be expired after 6 hours."/>
 </code></pre></td></tr></table>
 </div>
 </div><p>Use <strong>jq</strong> command to format return JSON data.</p>
-<h5 id="get-projects" class="headerLink">
-    <a href="#get-projects" class="header-mark"></a>0.0.0.4 Get projects</h5><div class="highlight"><div class="chroma">
+<h2 id="get-projects" class="headerLink">
+    <a href="#get-projects" class="header-mark"></a>6 Get projects</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -349,8 +338,8 @@ By default, this token will be expired after 6 hours."/>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -H <span class="s2">&#34;X-Auth-Token: </span><span class="nv">$API_TOKEN</span><span class="s2">&#34;</span> <span class="s2">&#34;https://{BASE URL}:5000/v3/projects&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="set-storage-policy-quota-for-one-project" class="headerLink">
-    <a href="#set-storage-policy-quota-for-one-project" class="header-mark"></a>0.0.0.5 Set storage policy quota for one project</h5><div class="highlight"><div class="chroma">
+</div><h2 id="set-storage-policy-quota-for-one-project" class="headerLink">
+    <a href="#set-storage-policy-quota-for-one-project" class="header-mark"></a>7 Set storage policy quota for one project</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -368,8 +357,8 @@ By default, this token will be expired after 6 hours."/>
 </span><span class="s1">}&#39;</span>   <span class="s2">&#34;https://{BASE_URL}:8776/v3/{ADMIN_PROJECT_ID}/os-quota-sets/{PROJECT_ID}&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="get-all-projects-vms-with-detail" class="headerLink">
-    <a href="#get-all-projects-vms-with-detail" class="header-mark"></a>0.0.0.6 Get all project&rsquo;s vms with detail</h5><div class="highlight"><div class="chroma">
+</div><h2 id="get-all-projects-vms-with-detail" class="headerLink">
+    <a href="#get-all-projects-vms-with-detail" class="header-mark"></a>8 Get all project&rsquo;s vms with detail</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -377,8 +366,8 @@ By default, this token will be expired after 6 hours."/>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -H <span class="s2">&#34;X-Auth-Token: </span><span class="nv">$API_TOKEN</span><span class="s2">&#34;</span> <span class="s2">&#34;https://{BASE_URL}:8774/v2.1/servers/detail&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="get-all-flavors-with-detail" class="headerLink">
-    <a href="#get-all-flavors-with-detail" class="header-mark"></a>0.0.0.7 Get all flavors with detail</h5><div class="highlight"><div class="chroma">
+</div><h2 id="get-all-flavors-with-detail" class="headerLink">
+    <a href="#get-all-flavors-with-detail" class="header-mark"></a>9 Get all flavors with detail</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -386,8 +375,8 @@ By default, this token will be expired after 6 hours."/>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -H <span class="s2">&#34;X-Auth-Token: </span><span class="nv">$API_TOKEN</span><span class="s2">&#34;</span> <span class="s2">&#34;https://{BASE_URL}:8774/v2.1/flavors/detail&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="grant-one-role-on-all-domains-projects-to-one-user" class="headerLink">
-    <a href="#grant-one-role-on-all-domains-projects-to-one-user" class="header-mark"></a>0.0.0.8 Grant one role on all domain&rsquo;s projects to one user</h5><div class="highlight"><div class="chroma">
+</div><h2 id="grant-one-role-on-all-domains-projects-to-one-user" class="headerLink">
+    <a href="#grant-one-role-on-all-domains-projects-to-one-user" class="header-mark"></a>10 Grant one role on all domain&rsquo;s projects to one user</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -395,8 +384,8 @@ By default, this token will be expired after 6 hours."/>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -X PUT -H <span class="s2">&#34;X-Auth-Token: </span><span class="nv">$API_TOKEN</span><span class="s2">&#34;</span> <span class="s2">&#34;https://{BASE_URL}:5000/v3/OS-INHERIT/domains/{DOMAIN_ID}/users/{USER_ID}/roles/{ROLE_ID}/inherited_to_projects&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="grant-one-system-role-to-one-user" class="headerLink">
-    <a href="#grant-one-system-role-to-one-user" class="header-mark"></a>0.0.0.9 Grant one system role to one user</h5><div class="highlight"><div class="chroma">
+</div><h2 id="grant-one-system-role-to-one-user" class="headerLink">
+    <a href="#grant-one-system-role-to-one-user" class="header-mark"></a>11 Grant one system role to one user</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -404,8 +393,7 @@ By default, this token will be expired after 6 hours."/>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -s -X PUT -H <span class="s2">&#34;X-Auth-Token: </span><span class="nv">$API_TOKEN</span><span class="s2">&#34;</span> <span class="s2">&#34;https://{BASE_URL}:5000/v3/system/users/{USER_ID}/roles/{SYSTEM_ROLE_ID}&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="set-micro-version-for-api" class="headerLink">
-    <a href="#set-micro-version-for-api" class="header-mark"></a>0.0.0.10 Set micro version for API</h5><p>Using HTTP header: <strong>X-OpenStack-Nova-API-Version: 2.4</strong> Or <strong>OpenStack-API-Version: compute 2.27</strong> (valid from version 2.27).</p></div>
+</div></div>
 
         
 

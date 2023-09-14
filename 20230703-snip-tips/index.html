@@ -37,7 +37,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kienngd.github.io\/blog\/20230703-snip-tips\/"
-        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, Snip-Tips","wordcount":  204 ,
+        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, Snip-Tips","wordcount":  692 ,
         "url": "https:\/\/kienngd.github.io\/blog\/20230703-snip-tips\/","datePublished": "2023-07-04T01:00:00+00:00","dateModified": "2023-07-04T01:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -116,14 +116,18 @@
     <li><a href="#install-awscli">Install awscli</a></li>
     <li><a href="#ubuntu">Ubuntu</a></li>
     <li><a href="#openbox">Openbox</a></li>
+    <li><a href="#linux-commands">Linux commands</a></li>
+    <li><a href="#install-stancltenancy">Install StanclTenancy</a></li>
+    <li><a href="#laravel-backpack-6">Laravel backpack 6</a></li>
+    <li><a href="#git-commands">GIT commands</a></li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single single-post"><h1 class="single-title animate__animated animate__flipInX">Snip tips</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="https://kienngd.github.io/blog/categories/miscellaneous/"><i class="far fa-folder fa-fw"></i>Miscellaneous</a>&nbsp;<a href="https://kienngd.github.io/blog/categories/snip-tips/"><i class="far fa-folder fa-fw"></i>Snip-Tips</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;204 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;692 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -137,6 +141,10 @@
     <li><a href="#install-awscli">Install awscli</a></li>
     <li><a href="#ubuntu">Ubuntu</a></li>
     <li><a href="#openbox">Openbox</a></li>
+    <li><a href="#linux-commands">Linux commands</a></li>
+    <li><a href="#install-stancltenancy">Install StanclTenancy</a></li>
+    <li><a href="#laravel-backpack-6">Laravel backpack 6</a></li>
+    <li><a href="#git-commands">GIT commands</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="some-snip-tips" class="headerLink">
@@ -234,18 +242,32 @@
   aws --endpoint-url<span class="o">=</span>https://s3south.storage.com.vn --profile citigo2 s3 rm --recursive s3://kiotvietimages
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>aws params</strong>
-`
-&ndash;endpoint-url
-&ndash;no-verify-ssl
-&ndash;no-paginate
-&ndash;output : json / text / table
-&ndash;profile :
-&ndash;color : on / off / auto
-&ndash;cli-read-timeout
-&ndash;cli-connect-timeout</p>
-<p>`</p>
-<h2 id="ubuntu" class="headerLink">
+</div><p><strong>aws params</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">  --endpoint-url
+  --no-verify-ssl
+  --no-paginate
+  --output : json / text / table
+  --profile : 
+  --color : on / off / auto
+  --cli-read-timeout
+  --cli-connect-timeout
+
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ubuntu" class="headerLink">
     <a href="#ubuntu" class="header-mark"></a>5 Ubuntu</h2><ul>
 <li>Show OS version-information
 <div class="highlight"><div class="chroma">
@@ -257,11 +279,259 @@
 </code></pre></td></tr></table>
 </div>
 </div></li>
+<li>Add self-signed CA
+<ul>
+<li>copy file rootCA.crt to <code>/usr/local/share/ca-certificates</code></li>
+<li>Update: <code>sudo update-ca-certificates</code></li>
+<li>Convert pem to crt in <strong>der-format</strong> <code>openssl x509 -outform der -in yourfile.pem -out yourfile.crt</code></li>
+<li>Convert perm to crt in <strong>ASCII-PEM-format</strong> just rename.</li>
+</ul>
+</li>
+<li>&hellip;.</li>
 </ul>
 <h2 id="openbox" class="headerLink">
     <a href="#openbox" class="header-mark"></a>6 Openbox</h2><ul>
 <li>Openbox configuration-file: <code>~/.config/openbox/rc.xml</code></li>
 <li>Reload configuration-file (after edit): <code>openbox --reconfigure</code></li>
+</ul>
+<h2 id="linux-commands" class="headerLink">
+    <a href="#linux-commands" class="header-mark"></a>7 Linux commands</h2><ul>
+<li>List folder, short desc by size: du -sh database/backup/* | sort -hr</li>
+</ul>
+<h2 id="install-stancltenancy" class="headerLink">
+    <a href="#install-stancltenancy" class="header-mark"></a>8 Install StanclTenancy</h2><ul>
+<li>
+<p>Document: <a href="https://tenancyforlaravel.com/docs/v3/quickstart" target="_blank" rel="noopener noreferrer">https://tenancyforlaravel.com/docs/v3/quickstart</a></p>
+</li>
+<li>
+<p>Quick start:</p>
+<ul>
+<li>Create a laravel project: <code>composer create-project laravel/laravel stancltenancy.localserver.test</code></li>
+<li>Config nginx, edit hosts file.</li>
+<li>Install package:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">composer require stancl/tenancy
+php artisan tenancy:install
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Edit database config in .env and config/database.php</li>
+<li>Check migration-files</li>
+<li>Run migrate: <code>php artisan migrate</code></li>
+<li>Register service provider: <code>config/app.php</code>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">....</span>
+<span class="nx">App\Providers\EventServiceProvider</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+<span class="nx">App\Providers\RouteServiceProvider</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+<span class="nx">App\Providers\TenancyServiceProvider</span><span class="o">::</span><span class="na">class</span><span class="p">,</span> <span class="c1">// &lt;-- Add this provider
+</span><span class="c1"></span><span class="o">....</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Create a tenant model extends from <code>Stancl\Tenancy\Database\Models\Tenant</code> implements <code>Stancl\Tenancy\Contracts\TenantWithDatabase</code> uses traits <code>Stancl\Tenancy\Database\Concerns\HasDatabase</code> and <code>Stancl\Tenancy\Database\Concerns\HasDomains</code>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php">  <span class="o">&lt;?</span><span class="nx">php</span>
+    <span class="k">namespace</span> <span class="nx">App\Models</span><span class="p">;</span>
+
+    <span class="k">use</span> <span class="nx">Stancl\Tenancy\Database\Models\Tenant</span> <span class="k">as</span> <span class="nx">BaseTenant</span><span class="p">;</span>
+    <span class="k">use</span> <span class="nx">Stancl\Tenancy\Contracts\TenantWithDatabase</span><span class="p">;</span>
+    <span class="k">use</span> <span class="nx">Stancl\Tenancy\Database\Concerns\HasDatabase</span><span class="p">;</span>
+    <span class="k">use</span> <span class="nx">Stancl\Tenancy\Database\Concerns\HasDomains</span><span class="p">;</span>
+
+    <span class="k">class</span> <span class="nc">Tenant</span> <span class="k">extends</span> <span class="nx">BaseTenant</span> <span class="k">implements</span> <span class="nx">TenantWithDatabase</span>
+    <span class="p">{</span>
+        <span class="k">use</span> <span class="nx">HasDatabase</span><span class="p">,</span> <span class="nx">HasDomains</span><span class="p">;</span>
+    <span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Edit <code>config/tenancy.php</code>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php">  <span class="s1">&#39;tenant_model&#39;</span> <span class="o">=&gt;</span> <span class="nx">\App\Models\Tenant</span><span class="o">::</span><span class="na">class</span><span class="p">,</span> <span class="c1">// &lt;-- Your class here
+</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>When you create a new tenant, it will run <code>CreateDatabase</code>, <code>MigrateDatabase</code> and optional <code>SeedDatabase</code></li>
+<li>Set central-routes <code>app/Providers/RouteServiceProvider.php</code>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php">  <span class="k">public</span> <span class="k">function</span> <span class="nf">boot</span><span class="p">()</span>
+  <span class="p">{</span>
+      <span class="c1">// ...
+</span><span class="c1"></span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">routes</span><span class="p">(</span><span class="k">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// &lt;-- Change these lines
+</span><span class="c1"></span>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">mapApiRoutes</span><span class="p">();</span>
+          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">mapWebRoutes</span><span class="p">();</span>
+      <span class="p">});</span>
+  <span class="p">}</span>
+  <span class="c1">// &lt;-- Add these lines
+</span><span class="c1"></span>  <span class="k">protected</span> <span class="k">function</span> <span class="nf">mapWebRoutes</span><span class="p">()</span>
+  <span class="p">{</span>
+      <span class="k">foreach</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">centralDomains</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$domain</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">Route</span><span class="o">::</span><span class="na">middleware</span><span class="p">(</span><span class="s1">&#39;web&#39;</span><span class="p">)</span>
+              <span class="o">-&gt;</span><span class="na">domain</span><span class="p">(</span><span class="nv">$domain</span><span class="p">)</span>
+              <span class="o">-&gt;</span><span class="na">namespace</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">namespace</span><span class="p">)</span>
+              <span class="o">-&gt;</span><span class="na">group</span><span class="p">(</span><span class="nx">base_path</span><span class="p">(</span><span class="s1">&#39;routes/web.php&#39;</span><span class="p">));</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">protected</span> <span class="k">function</span> <span class="nf">mapApiRoutes</span><span class="p">()</span>
+  <span class="p">{</span>
+      <span class="k">foreach</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">centralDomains</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$domain</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">Route</span><span class="o">::</span><span class="na">prefix</span><span class="p">(</span><span class="s1">&#39;api&#39;</span><span class="p">)</span>
+              <span class="o">-&gt;</span><span class="na">domain</span><span class="p">(</span><span class="nv">$domain</span><span class="p">)</span>
+              <span class="o">-&gt;</span><span class="na">middleware</span><span class="p">(</span><span class="s1">&#39;api&#39;</span><span class="p">)</span>
+              <span class="o">-&gt;</span><span class="na">namespace</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">namespace</span><span class="p">)</span>
+              <span class="o">-&gt;</span><span class="na">group</span><span class="p">(</span><span class="nx">base_path</span><span class="p">(</span><span class="s1">&#39;routes/api.php&#39;</span><span class="p">));</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">protected</span> <span class="k">function</span> <span class="nf">centralDomains</span><span class="p">()</span><span class="o">:</span> <span class="k">array</span>
+  <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">config</span><span class="p">(</span><span class="s1">&#39;tenancy.central_domains&#39;</span><span class="p">);</span>
+  <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Tenant routes in file: <code>routes/tenant.php</code></li>
+<li>Migrations: Copy migration-files to: <code>database/migrations/tenant</code>. When a tenant is created, it will run these migration-files</li>
+<li>Creating tenants
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php">  <span class="nv">$tenant1</span> <span class="o">=</span> <span class="nx">App\Models\Tenant</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tenant1&#39;</span><span class="p">]);</span>
+  <span class="nv">$tenant1</span><span class="o">-&gt;</span><span class="na">domains</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;domain&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tenant1.localhost&#39;</span><span class="p">]);</span>
+
+  <span class="nv">$tenant2</span> <span class="o">=</span> <span class="nx">App\Models\Tenant</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tenant2&#39;</span><span class="p">]);</span>
+  <span class="nv">$tenant2</span><span class="o">-&gt;</span><span class="na">domains</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;domain&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tenant2.localhost&#39;</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div>Database will be created automatically when you create tenant</li>
+<li>Create a user inside each tenant&rsquo;s database:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php">  <span class="nx">App\Models\Tenant</span><span class="o">::</span><span class="na">all</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">runForEach</span><span class="p">(</span><span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">App\Models\User</span><span class="o">::</span><span class="na">factory</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">();</span>
+  <span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Trying it out: Access each central-domain, you will see the laravel default homepage. Access your each tenant-domain, you will see default tenant&rsquo;s homepage</li>
+</ul>
+</li>
+<li>
+<p>Need to do:</p>
+<ul>
+<li>APIATO with StanclTenancy
+<ul>
+<li>Migration path.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="laravel-backpack-6" class="headerLink">
+    <a href="#laravel-backpack-6" class="header-mark"></a>9 Laravel backpack 6</h2><ul>
+<li>Document: <a href="https://backpackforlaravel.com/docs/6.x/installation" target="_blank" rel="noopener noreferrer">https://backpackforlaravel.com/docs/6.x/installation</a></li>
+<li>Install laravel 10: <code>composer create-project laravel/laravel backpack6.localserver.test</code></li>
+<li>Edit file <code>.env</code></li>
+<li>Install backpack: <code>composer require backpack/crud</code>. You need to curl your site to finish install.</li>
+<li>Install some backpack add-ons</li>
+<li>Create a CRUD for each model: <code>php artisan backpack:crud {model}</code></li>
+<li>Or create CRUD for all model: <code>php artisan backpack:build</code></li>
+<li>Need to do:
+<ul>
+<li>APIATO, StanclTenancy, BackPack work together.</li>
+</ul>
+</li>
+</ul>
+<h2 id="git-commands" class="headerLink">
+    <a href="#git-commands" class="header-mark"></a>10 GIT commands</h2><ul>
+<li>Update branches-list (and other information): <code>git fetch --prune origin</code></li>
+<li>Delete remote branches: <code>git push origin --delete branch_1 branch_2</code> or <code>git push origin :branch_1 :branch_2</code></li>
+<li>List all remote branches: <code>git branch -r</code></li>
 </ul></div>
 
         
