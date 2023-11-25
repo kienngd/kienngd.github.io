@@ -1,0 +1,222 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>PHP - Tag - K5D</title>
+        <link>https://kienngd.github.io/blog/en/tags/php/</link>
+        <description>PHP - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/en/tags/php/" rel="self" type="application/rss+xml" /><item>
+    <title>Add new guard to an Apiato11 project</title>
+    <link>https://kienngd.github.io/blog/en/apiato11_add_new_guard/</link>
+    <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/en/apiato11_add_new_guard/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/tutorial/laravel_guard.png" referrerpolicy="no-referrer">
+            </div>Add new guard to an Apiato11 project]]></description>
+</item><item>
+    <title>Strategy Pattern in PHP with examples</title>
+    <link>https://kienngd.github.io/blog/en/202304211000_strategy_pattern/</link>
+    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/en/202304211000_strategy_pattern/</guid>
+    <description><![CDATA[1 Example 1: SortWe need to implement a sorting system that sorts an array of numbers in ascending or descending order
+1.1 Without pattern 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 class Sorter { public function bubbleSort(array $arr) { // Implementation of Bubble Sort } public function quickSort(array $arr) { // Implementation of Quick Sort } public function mergeSort(array $arr) { // Implementation of Merge Sort } } $sorter = new Sorter(); $sortedArr = $sorter-&gt;bubbleSort($arr); // or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr) 1.]]></description>
+</item><item>
+    <title>PHP &#34;pass by value&#34; VS &#34;pass by reference&#34;</title>
+    <link>https://kienngd.github.io/blog/en/php_pass_by_value_pass_by_reference/</link>
+    <pubDate>Fri, 16 Apr 2021 10:55:04 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/php_pass_by_value_pass_by_reference/</guid>
+    <description><![CDATA[<p>Hello, it is me again. Today, we will talk about &ldquo;<strong>pass by value</strong>&rdquo; or &ldquo;<strong>pass by reference</strong>&rdquo;. I use PHP 7.4 and Ubuntu 20.04 to test. Happy coding!</p>
+<p>We have an example class:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">public</span> <span class="nv">$x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">public</span> <span class="nv">$y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">   <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$x</span><span class="p">,</span> <span class="nv">$y</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">x</span> <span class="o">=</span> <span class="nv">$x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">y</span> <span class="o">=</span> <span class="nv">$y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">   <span class="k">public</span> <span class="k">function</span> <span class="nf">setX</span><span class="p">(</span><span class="nv">$x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">x</span> <span class="o">=</span> <span class="nv">$x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">   <span class="k">public</span> <span class="k">function</span> <span class="nf">setY</span><span class="p">(</span><span class="nv">$y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">y</span> <span class="o">=</span> <span class="nv">$y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>Working with openstack api using curl</title>
+    <link>https://kienngd.github.io/blog/en/working_with_openstack_api_using_curl/</link>
+    <pubDate>Thu, 29 Oct 2020 09:26:59 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/working_with_openstack_api_using_curl/</guid>
+    <description><![CDATA[<h2 id="get-token" class="headerLink">
+    <a href="#get-token" class="header-mark"></a>1 Get token</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -s -i -H <span class="s2">&#34;Content-Type: application/json&#34;</span>   -d <span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">{
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;auth&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;identity&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">            &#34;methods&#34;: [
+</span></span></span><span class="line"><span class="cl"><span class="s1">                &#34;password&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">            ],
+</span></span></span><span class="line"><span class="cl"><span class="s1">            &#34;password&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">                &#34;user&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">                    &#34;name&#34;: &#34;{USERNAME}&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s1">                    &#34;domain&#34;: { &#34;id&#34;: &#34;{DOMAIN_ID}&#34; },
+</span></span></span><span class="line"><span class="cl"><span class="s1">                    &#34;password&#34;: &#34;{PASSWORD}&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">                }
+</span></span></span><span class="line"><span class="cl"><span class="s1">            }
+</span></span></span><span class="line"><span class="cl"><span class="s1">        },
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;scope&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">            &#34;project&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">                &#34;id&#34;: &#34;{PROJECT_ID}&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">            }
+</span></span></span><span class="line"><span class="cl"><span class="s1">        }
+</span></span></span><span class="line"><span class="cl"><span class="s1">    }
+</span></span></span><span class="line"><span class="cl"><span class="s1">}&#39;</span>   <span class="s2">&#34;https://{BASE URL}:5000/v3/auth/tokens&#34;</span> <span class="p">|</span> grep <span class="s2">&#34;X-Subject-Token:&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Default keystone port is <strong>5000</strong></p>
+<p>By default, this token will be expired after 6 hours.</p>]]></description>
+</item><item>
+    <title>Phpdoc docblock</title>
+    <link>https://kienngd.github.io/blog/en/phpdoc_docblock/</link>
+    <pubDate>Thu, 15 Oct 2020 11:08:52 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/phpdoc_docblock/</guid>
+    <description><![CDATA[<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="sd">/** This is a single line DocComment. */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * This is a multi-line DocComment.
+</span></span></span><span class="line"><span class="cl"><span class="sd"> */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * This is a summary
+</span></span></span><span class="line"><span class="cl"><span class="sd"> *
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * This is a description
+</span></span></span><span class="line"><span class="cl"><span class="sd"> */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * This is a summary.
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * This is a description
+</span></span></span><span class="line"><span class="cl"><span class="sd"> */</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Tags</strong> example: @api, @author, @param, @return&hellip;</p>]]></description>
+</item><item>
+    <title>Create document using phpdoc</title>
+    <link>https://kienngd.github.io/blog/en/create_document_using_phpdoc/</link>
+    <pubDate>Thu, 15 Oct 2020 10:49:07 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/create_document_using_phpdoc/</guid>
+    <description><![CDATA[<p>Hello. In this post, we will learn how to build document using phpdoc. Have fun!</p>
+<ol>
+<li>
+<p>Install phpdoc</p>
+<p><strong>Using composer</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">composer require <span class="s2">&#34;phpdocumentor/phpdocumentor:2.*&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then run command</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vendor/bin/phpdoc ...
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Manual</strong>: Download file phar from: <a href="https://github.com/phpDocumentor/phpDocumentor/releases" target="_blank" rel="noopener noreferrer">Github releases</a></p>
+<p>Then run command</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php phpDocumentor.phar ...
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>]]></description>
+</item></channel>
+</rss>

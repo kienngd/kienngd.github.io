@@ -1,0 +1,63 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GitHub - Tag - K5D</title>
+        <link>https://kienngd.github.io/blog/en/tags/github/</link>
+        <description>GitHub - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 10:34:44 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/en/tags/github/" rel="self" type="application/rss+xml" /><item>
+    <title>How to build a free blog</title>
+    <link>https://kienngd.github.io/blog/en/how_to_build_free_blog/</link>
+    <pubDate>Thu, 08 Oct 2020 10:34:44 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/how_to_build_free_blog/</guid>
+    <description><![CDATA[<p>Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
+<p><strong>Step 1</strong>: Install hugo.</p>
+<ul>
+<li>Download hugo from: <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreferrer">https://github.com/gohugoio/hugo/releases</a></li>
+<li>Install in your PC.</li>
+</ul>
+<p><strong>Step 2</strong>: Create a new site.</p>
+<ul>
+<li>Quick start document: <a href="https://gohugo.io/getting-started/" target="_blank" rel="noopener noreferrer">https://gohugo.io/getting-started/</a></li>
+<li>Command:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site myblog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Step 3</strong>: Setup your hugo theme.</p>
+<ul>
+<li>Find a theme from: <a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreferrer">https://themes.gohugo.io/</a>.</li>
+<li>Download theme and put into site&rsquo;s themes directory.
+Example we want to use Ananke theme:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> myblog
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Inside file config.toml.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">theme = &#34;ananke&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item></channel>
+</rss>

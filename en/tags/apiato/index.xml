@@ -1,0 +1,205 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Apiato - Tag - K5D</title>
+        <link>https://kienngd.github.io/blog/en/tags/apiato/</link>
+        <description>Apiato - Tag - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/en/tags/apiato/" rel="self" type="application/rss+xml" /><item>
+    <title>Add new guard to an Apiato11 project</title>
+    <link>https://kienngd.github.io/blog/en/apiato11_add_new_guard/</link>
+    <pubDate>Wed, 14 Dec 2022 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/en/apiato11_add_new_guard/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/tutorial/laravel_guard.png" referrerpolicy="no-referrer">
+            </div>Add new guard to an Apiato11 project]]></description>
+</item><item>
+    <title>Apiato select language</title>
+    <link>https://kienngd.github.io/blog/en/apiato_select_language/</link>
+    <pubDate>Thu, 25 Mar 2021 15:36:54 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/apiato_select_language/</guid>
+    <description><![CDATA[<p>Hello, today we will learn how to add select language to an ApiAto web app. Have fun!</p>
+<p>Document: <a href="https://docs.apiato.io/features/localization/" target="_blank" rel="noopener noreferrer">https://docs.apiato.io/features/localization/</a></p>
+<p><u>Step 1</u>: Add new language to supported language:</p>
+<p>Edit <strong>supported_languages</strong> inside file <strong>app/Containers/Localization/Configs/localization.php</strong></p>]]></description>
+</item><item>
+    <title>Laravel logout other devices</title>
+    <link>https://kienngd.github.io/blog/en/laravel_logout_other_devices/</link>
+    <pubDate>Fri, 27 Nov 2020 14:42:16 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/laravel_logout_other_devices/</guid>
+    <description><![CDATA[<p>Check file: <strong>app/Http/Kernel.php</strong> (or file <strong>app/Ship/Kernels/HttpKernel.php</strong> if you use Apiato) and uncomment this line:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="s1">&#39;web&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">\Illuminate\Session\Middleware\AuthenticateSession</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">],</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Logout all other devices:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Illuminate\Support\Facades\Auth</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Auth</span><span class="o">::</span><span class="na">logoutOtherDevices</span><span class="p">(</span><span class="nv">$password</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>Laravel Roles Permissions</title>
+    <link>https://kienngd.github.io/blog/en/laravel_roles_permissions/</link>
+    <pubDate>Fri, 27 Nov 2020 09:44:04 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/laravel_roles_permissions/</guid>
+    <description><![CDATA[<p><strong>Create role, permission</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Spatie\Permission\Models\Role</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Spatie\Permission\Models\Permission</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$role</span> <span class="o">=</span> <span class="nx">Role</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;admin&#39;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$permission</span> <span class="o">=</span> <span class="nx">Permission</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;create-articles&#39;</span><span class="p">]);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Assign / Sync / Revoke permission to role</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// Assign
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">givePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span> <span class="c1">// $permission can be string / object / array of strings / array of objects
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">assignRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Sync
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">syncPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">syncRoles</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Revoke
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">revokePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">removeRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Check roles permissons</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasPermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAnyPermission</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAllPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>Apiato laravel based framework</title>
+    <link>https://kienngd.github.io/blog/en/apiato/</link>
+    <pubDate>Thu, 26 Nov 2020 08:36:20 &#43;0700</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/en/apiato/</guid>
+    <description><![CDATA[<p>Home page: <a href="http://docs.apiato.io/" target="_blank" rel="noopener noreferrer">http://docs.apiato.io/</a></p>
+<p><strong>Create project using composer from latest stable</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">composer create-project apiato/apiato apiato9
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then edit the .env file.</p>
+<p><strong>Migrate database</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan migrate
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Create admin user, some permissions, roles</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan db:seed
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Default account is: <a href="mailto:admin@admin.com" rel="">admin@admin.com</a> / admin.</p>
+<p><strong>Add all current permissions to admin role.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan apiato:permissions:toRole admin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Install OAuth 2.0</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan passport:install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then edit file <strong>.env</strong> update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.</p>
+<p><strong>Install ApiDocJs</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yarn install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Create api doc</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan apiato:apidoc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Your default document url is: http://<Your domain>/api/documentation and http://<Your domain>/api/private/documentation</p>
+<p>Default result is saved in: <strong>public/api/documentation/</strong></p>]]></description>
+</item></channel>
+</rss>

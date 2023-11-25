@@ -1,0 +1,78 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - K5D</title>
+        <link>https://kienngd.github.io/blog/en/categories/</link>
+        <description>Categories - Category - K5D</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
+            <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/en/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux</title>
+    <link>https://kienngd.github.io/blog/en/categories/linux/</link>
+    <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Miscellaneous</title>
+    <link>https://kienngd.github.io/blog/en/categories/miscellaneous/</link>
+    <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/miscellaneous/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Quick-Notes</title>
+    <link>https://kienngd.github.io/blog/en/categories/quick-notes/</link>
+    <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/quick-notes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Snip-Tips</title>
+    <link>https://kienngd.github.io/blog/en/categories/snip-tips/</link>
+    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/snip-tips/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>OpenSource</title>
+    <link>https://kienngd.github.io/blog/en/categories/opensource/</link>
+    <pubDate>Sat, 03 Jun 2023 01:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/opensource/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>SSH</title>
+    <link>https://kienngd.github.io/blog/en/categories/ssh/</link>
+    <pubDate>Tue, 30 May 2023 01:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/ssh/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>VS-Code</title>
+    <link>https://kienngd.github.io/blog/en/categories/vs-code/</link>
+    <pubDate>Tue, 30 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/vs-code/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Notes</title>
+    <link>https://kienngd.github.io/blog/en/categories/notes/</link>
+    <pubDate>Thu, 25 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/notes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Convention</title>
+    <link>https://kienngd.github.io/blog/en/categories/convention/</link>
+    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/convention/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>GIT</title>
+    <link>https://kienngd.github.io/blog/en/categories/git/</link>
+    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/categories/git/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
