@@ -14,12 +14,26 @@
                 </author><guid>https://kienngd.github.io/blog/en/working-with-postgresql/</guid>
     <description><![CDATA[Quick-notes: Working with postgresql on ubuntu]]></description>
 </item><item>
+    <title>Quick-notes: Working with postgresql-timescaledb on ubuntu</title>
+    <link>https://kienngd.github.io/blog/en/working-with-postgresql-timescaledb/</link>
+    <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/en/working-with-postgresql-timescaledb/</guid>
+    <description><![CDATA[Quick-notes: Working with postgresql-timescaledb on ubuntu]]></description>
+</item><item>
     <title>Quick-notes</title>
-    <link>https://kienngd.github.io/blog/en/20230703-quick-notes/</link>
+    <link>https://kienngd.github.io/blog/en/quick-notes/</link>
     <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/en/20230703-quick-notes/</guid>
-    <description><![CDATA[Some snip-tips]]></description>
+                </author><guid>https://kienngd.github.io/blog/en/quick-notes/</guid>
+    <description><![CDATA[Some Quick-Notes]]></description>
+</item><item>
+    <title>Quick-notes: working with Laravel</title>
+    <link>https://kienngd.github.io/blog/en/working-with-laravel/</link>
+    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/en/working-with-laravel/</guid>
+    <description><![CDATA[Some Quick-Notes for working with laravel]]></description>
 </item><item>
     <title>Some open-sources to try</title>
     <link>https://kienngd.github.io/blog/en/20230603-open-source-to-try/</link>
@@ -68,19 +82,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/LinuxCommands.png" referrerpolicy="no-referrer">
             </div>How To Use Screen Command In Linux: A Beginner’s Guide]]></description>
-</item><item>
-    <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/blog/en/20230512-best-practices-for-coder/</link>
-    <pubDate>Fri, 12 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/en/20230512-best-practices-for-coder/</guid>
-    <description><![CDATA[Best practices for coder]]></description>
-</item><item>
-    <title>Some websites to draw online</title>
-    <link>https://kienngd.github.io/blog/en/20230509-some-websites-to-draw-online/</link>
-    <pubDate>Tue, 09 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/en/20230509-some-websites-to-draw-online/</guid>
-    <description><![CDATA[<p><strong>Some website to draw online</strong></p>]]></description>
 </item></channel>
 </rss>

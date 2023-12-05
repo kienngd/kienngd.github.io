@@ -14,15 +14,20 @@ Ref-Url: https://www.conventionalcommits.org/en/v1.0.0/
 ```
 
 ## Types list
-- feat: add new feature
-- fix: fix bug
-- refactor: 
-- docs: documents
+- ✨ feat: add new feature
+- 🐛 fix: fix bug
+- 🚧 work-in-progress: 
+- 🚑️ hotfix: 
+- ✏️ fix-typos: 
+- ♻️ refactor: 
+- 📝 docs: documents
 - chore: small bugs not-relevant to code
-- style
-- perf: performance
+- 🎨 style
+- ⚡️ perf: performance
 - vendor: Update dependencies', packages' ... version
 ...
+
+Gitemoji link: https://gitmoji.dev/
 
 ## Notes:
 - BREAKING CHANGE in body.

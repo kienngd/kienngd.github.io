@@ -5,18 +5,18 @@
         <description>Tags - Tag - K5D</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor># (KienND)</managingEditor>
             <webMaster># (KienND)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/en/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Linux</title>
-    <link>https://kienngd.github.io/blog/en/tags/linux/</link>
-    <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/en/tags/linux/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
     <title>Miscellaneous</title>
     <link>https://kienngd.github.io/blog/en/tags/miscellaneous/</link>
     <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>KienND</name>
     </author><guid>https://kienngd.github.io/blog/en/tags/miscellaneous/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>PostgreSQL</title>
+    <link>https://kienngd.github.io/blog/en/tags/postgresql/</link>
+    <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/tags/postgresql/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Quick-Notes</title>
@@ -26,11 +26,11 @@
     </author><guid>https://kienngd.github.io/blog/en/tags/quick-notes/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Snip-Tips</title>
-    <link>https://kienngd.github.io/blog/en/tags/snip-tips/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
+    <title>TimeScaleDB</title>
+    <link>https://kienngd.github.io/blog/en/tags/timescaledb/</link>
+    <pubDate>Thu, 05 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/en/tags/snip-tips/</guid>
+    </author><guid>https://kienngd.github.io/blog/en/tags/timescaledb/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>OpenSource</title>
@@ -38,6 +38,13 @@
     <pubDate>Sat, 03 Jun 2023 01:00:00 &#43;0000</pubDate><author>
         <name>KienND</name>
     </author><guid>https://kienngd.github.io/blog/en/tags/opensource/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Linux</title>
+    <link>https://kienngd.github.io/blog/en/tags/linux/</link>
+    <pubDate>Tue, 30 May 2023 01:00:00 &#43;0000</pubDate><author>
+        <name>KienND</name>
+    </author><guid>https://kienngd.github.io/blog/en/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>SSH</title>
@@ -61,18 +68,11 @@
     </author><guid>https://kienngd.github.io/blog/en/tags/notes/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>PostgreSQL</title>
-    <link>https://kienngd.github.io/blog/en/tags/postgresql/</link>
-    <pubDate>Thu, 25 May 2023 00:00:00 &#43;0000</pubDate><author>
+    <title>Convention</title>
+    <link>https://kienngd.github.io/blog/en/tags/convention/</link>
+    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
         <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/en/tags/postgresql/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>TimeScaleDB</title>
-    <link>https://kienngd.github.io/blog/en/tags/timescaledb/</link>
-    <pubDate>Thu, 25 May 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/en/tags/timescaledb/</guid>
+    </author><guid>https://kienngd.github.io/blog/en/tags/convention/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

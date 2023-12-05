@@ -100,6 +100,147 @@
         alt="/images/avatar.webp"
         title="/images/avatar.webp" height="6rem" width="6rem"></a></div><h2 class="home-subtitle">A blog site using Hugo &amp; Theme DoIt</h2><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="https://kienngd.github.io/blog/en/laravel_roles_permissions/">Laravel Roles Permissions</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-11-27">2020-11-27</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/en/categories/tutorials/"><i class="far fa-folder fa-fw"></i>Tutorials</a></span></div><div class="content"><p><strong>Create role, permission</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Spatie\Permission\Models\Role</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Spatie\Permission\Models\Permission</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$role</span> <span class="o">=</span> <span class="nx">Role</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;admin&#39;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$permission</span> <span class="o">=</span> <span class="nx">Permission</span><span class="o">::</span><span class="na">create</span><span class="p">([</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;create-articles&#39;</span><span class="p">]);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Assign / Sync / Revoke permission to role</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// Assign
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">givePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span> <span class="c1">// $permission can be string / object / array of strings / array of objects
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">assignRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Sync
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">syncPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">syncRoles</span><span class="p">(</span><span class="nv">$roles</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Revoke
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">revokePermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$permission</span><span class="o">-&gt;</span><span class="na">removeRole</span><span class="p">(</span><span class="nv">$role</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Check roles permissons</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasPermissionTo</span><span class="p">(</span><span class="nv">$permission</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAnyPermission</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$role</span><span class="o">-&gt;</span><span class="na">hasAllPermissions</span><span class="p">(</span><span class="nv">$permissions</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer">
+        <a href="https://kienngd.github.io/blog/en/laravel_roles_permissions/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/en/tags/laravel/">Laravel</a>,&nbsp;<a href="https://kienngd.github.io/blog/en/tags/apiato/">Apiato</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="https://kienngd.github.io/blog/en/apiato/">Apiato laravel based framework</a>
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-11-26">2020-11-26</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/en/categories/tutorials/"><i class="far fa-folder fa-fw"></i>Tutorials</a></span></div><div class="content"><p>Home page: <a href="http://docs.apiato.io/" target="_blank" rel="noopener noreferrer">http://docs.apiato.io/</a></p>
+<p><strong>Create project using composer from latest stable</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">composer create-project apiato/apiato apiato9
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then edit the .env file.</p>
+<p><strong>Migrate database</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan migrate
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Create admin user, some permissions, roles</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan db:seed
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Default account is: <a href="mailto:admin@admin.com" rel="">admin@admin.com</a> / admin.</p>
+<p><strong>Add all current permissions to admin role.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan apiato:permissions:toRole admin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Install OAuth 2.0</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan passport:install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then edit file <strong>.env</strong> update CLIENT_WEB_ADMIN_ID, CLIENT_WEB_ADMIN_SECRET with the new created value.</p>
+<p><strong>Install ApiDocJs</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yarn install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Create api doc</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php artisan apiato:apidoc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Your default document url is: http://<Your domain>/api/documentation and http://<Your domain>/api/private/documentation</p>
+<p>Default result is saved in: <strong>public/api/documentation/</strong></p></div><div class="post-footer">
+        <a href="https://kienngd.github.io/blog/en/apiato/">Read more...</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/en/tags/laravel/">Laravel</a>,&nbsp;<a href="https://kienngd.github.io/blog/en/tags/apiato/">Apiato</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="https://kienngd.github.io/blog/en/how_to_use_uuid_as_id_laravel/">Use UUID as primary key of Laravel Eloquent ORM</a>
     </h1><div class="post-meta">
         <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
@@ -247,130 +388,6 @@
         </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-20">2020-10-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/en/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div><div class="content"></div><div class="post-footer">
         <a href="https://kienngd.github.io/blog/en/working_with_influxdb_data_using_influx/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/en/tags/influxdb/">InfluxDB</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="https://kienngd.github.io/blog/en/influxdb_docker_with_laradock/">Influxdb Docker With Laradock</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-20">2020-10-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/en/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div><div class="content"><p>In this post we will see how to run influxdb docker container using laradock. Have fun.</p>
-<p>InfluxDB docker document: <a href="https://hub.docker.com/_/influxdb" target="_blank" rel="noopener noreferrer">https://hub.docker.com/_/influxdb</a></p>
-<p>Edit laradock <strong>.env</strong> file:</p>
-<p><strong>Add these lines</strong> at the end of file</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">### INFLUXDB ##################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># influxdb version, accept values: 1.7, 1.7.10, 1.8, 1.8.3, latest</span>
-</span></span><span class="line"><span class="cl"><span class="nv">INFLUXDB_VERSION</span><span class="o">=</span>1.8
-</span></span><span class="line"><span class="cl"><span class="nv">INFLUXDB_HTTP_PORT</span><span class="o">=</span><span class="m">8086</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Edit <strong>docker-composer.yml</strong> file. Please remember to backup it first :).</p>
-<p><strong>Add these lines</strong> at the end of file</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">### influxdb ####################################################</span>
-</span></span><span class="line"><span class="cl">influxdb:
-</span></span><span class="line"><span class="cl">  container_name: influxdb
-</span></span><span class="line"><span class="cl">  hostname: influxdb
-</span></span><span class="line"><span class="cl">  image: influxdb:<span class="si">${</span><span class="nv">INFLUXDB_VERSION</span><span class="si">}</span>
-</span></span><span class="line"><span class="cl">  ports:
-</span></span><span class="line"><span class="cl">    - <span class="s2">&#34;</span><span class="si">${</span><span class="nv">INFLUXDB_HTTP_PORT</span><span class="si">}</span><span class="s2">:8086&#34;</span>
-</span></span><span class="line"><span class="cl">  networks:
-</span></span><span class="line"><span class="cl">    - backend
-</span></span><span class="line"><span class="cl">  volumes:
-</span></span><span class="line"><span class="cl">    - <span class="si">${</span><span class="nv">DATA_PATH_HOST</span><span class="si">}</span>/influxdb/var/lib/influxdb:/var/lib/influxdb
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Start influxdb container</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker-composer up -d influxdb
-</span></span></code></pre></td></tr></table>
-</div>
-</div></div><div class="post-footer">
-        <a href="https://kienngd.github.io/blog/en/influxdb_docker_with_laradock/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/en/tags/docker/">Docker</a>,&nbsp;<a href="https://kienngd.github.io/blog/en/tags/laradock/">Laradock</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="https://kienngd.github.io/blog/en/react-admin-p1/">React Admin P1</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-17">2020-10-17</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/en/categories/tutorials/"><i class="far fa-folder fa-fw"></i>Tutorials</a></span></div><div class="content"><h5 id="react-admin-tutorial-notes" class="headerLink">
-    <a href="#react-admin-tutorial-notes" class="header-mark"></a>0.0.0.1 React-Admin tutorial notes</h5><p>Create new project and install packages</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">create</span> <span class="nx">react</span><span class="o">-</span><span class="nx">app</span> <span class="nx">test</span><span class="o">-</span><span class="nx">admin</span>
-</span></span><span class="line"><span class="cl"><span class="nx">cd</span> <span class="nx">test</span><span class="o">-</span><span class="nx">admin</span><span class="o">/</span>
-</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="nx">admin</span> <span class="nx">ra</span><span class="o">-</span><span class="nx">data</span><span class="o">-</span><span class="nx">json</span><span class="o">-</span><span class="nx">server</span> <span class="nx">prop</span><span class="o">-</span><span class="nx">types</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Edit file src/App.js</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Admin</span><span class="p">,</span> <span class="nx">Resource</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-admin&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">jsonServerProvider</span> <span class="nx">from</span> <span class="s1">&#39;ra-data-json-server&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">ListGuesser</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-admin&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">dataProvider</span> <span class="o">=</span> <span class="nx">jsonServerProvider</span><span class="p">(</span><span class="s1">&#39;https://jsonplaceholder.typicode.com&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">Admin</span> <span class="nx">dataProvider</span><span class="o">=</span><span class="p">{</span><span class="nx">dataProvider</span><span class="p">}</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">Resource</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;users&#34;</span> <span class="nx">list</span><span class="o">=</span><span class="p">{</span><span class="nx">ListGuesser</span><span class="p">}</span> <span class="o">/&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/Admin&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></div><div class="post-footer">
-        <a href="https://kienngd.github.io/blog/en/react-admin-p1/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="https://kienngd.github.io/blog/en/tags/react-admin/">React-Admin</a>,&nbsp;<a href="https://kienngd.github.io/blog/en/tags/reactjs/">ReactJS</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="https://kienngd.github.io/blog/en/">1</a>
