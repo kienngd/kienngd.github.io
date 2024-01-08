@@ -1,6 +1,17 @@
 # Working with openstack api using curl
 
 
+## Openstack document link
+- https://docs.openstack.org/2023.2/api/ (Version 2023.2)
+
+## Service list
+- Identity service (keystone): Mange user, password, token, authorized .....
+- Block Storage service (cinder)
+- Compute service (nova)
+- Container Infrastructure Management service (magnum)
+
+
+
 ## Get token
 ```bash
 curl -s -i -H "Content-Type: application/json"   -d '

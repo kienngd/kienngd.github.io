@@ -11,8 +11,8 @@
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/blog/en/working_with_influxdb_data_using_phpclient/</guid>
     <description><![CDATA[<p>document: <a href="https://github.com/influxdata/influxdb-php" target="_blank" rel="noopener noreferrer">https://github.com/influxdata/influxdb-php</a></p>
-<h5 id="install-via-composer" class="headerLink">
-    <a href="#install-via-composer" class="header-mark"></a>0.0.0.1 Install via composer</h5><div class="highlight"><div class="chroma">
+<h2 id="install-via-composer" class="headerLink">
+    <a href="#install-via-composer" class="header-mark"></a>1 Install via composer</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -20,8 +20,8 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">composer require influxdb/influxdb-php
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="create-client-object" class="headerLink">
-    <a href="#create-client-object" class="header-mark"></a>0.0.0.2 Create client object</h5><div class="highlight"><div class="chroma">
+</div><h2 id="create-client-object" class="headerLink">
+    <a href="#create-client-object" class="header-mark"></a>2 Create client object</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -54,13 +54,6 @@
     <pubDate>Tue, 20 Oct 2020 10:02:45 &#43;0700</pubDate><author>
         <name>KienND</name>
     </author><guid>https://kienngd.github.io/blog/en/working_with_influxdb_data_using_api/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Working_with_influxdb_data_using_influx</title>
-    <link>https://kienngd.github.io/blog/en/working_with_influxdb_data_using_influx/</link>
-    <pubDate>Tue, 20 Oct 2020 10:02:33 &#43;0700</pubDate><author>
-        <name>KienND</name>
-    </author><guid>https://kienngd.github.io/blog/en/working_with_influxdb_data_using_influx/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

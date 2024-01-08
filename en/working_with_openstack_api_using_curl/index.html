@@ -7,7 +7,18 @@
     <meta name="robots" content="noodp" />
     <title class="pjax-title">Working with openstack api using curl - K5D</title><meta name="Description" content="The official documentation for the Hugo DoIt theme"><meta property="og:title" content="Working with openstack api using curl" />
 <meta property="og:description" content="
-    1 Get token
+    1 Openstack document link
+https://docs.openstack.org/2023.2/api/ (Version 2023.2)
+
+
+    2 Service list
+Identity service (keystone): Mange user, password, token, authorized &hellip;..
+Block Storage service (cinder)
+Compute service (nova)
+Container Infrastructure Management service (magnum)
+
+
+    3 Get token
 
  1
  2
@@ -68,7 +79,18 @@ By default, this token will be expired after 6 hours." />
 
 <meta name="twitter:title" content="Working with openstack api using curl"/>
 <meta name="twitter:description" content="
-    1 Get token
+    1 Openstack document link
+https://docs.openstack.org/2023.2/api/ (Version 2023.2)
+
+
+    2 Service list
+Identity service (keystone): Mange user, password, token, authorized &hellip;..
+Block Storage service (cinder)
+Compute service (nova)
+Container Infrastructure Management service (magnum)
+
+
+    3 Get token
 
  1
  2
@@ -140,7 +162,7 @@ By default, this token will be expired after 6 hours."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kienngd.github.io\/blog\/en\/working_with_openstack_api_using_curl\/"
-        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "PHP, OpenStack, API","wordcount":  275 ,
+        },"image": ["https:\/\/kienngd.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "PHP, OpenStack, API","wordcount":  306 ,
         "url": "https:\/\/kienngd.github.io\/blog\/en\/working_with_openstack_api_using_curl\/","datePublished": "2020-10-29T09:26:59+07:00","dateModified": "2020-10-29T09:26:59+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -213,6 +235,8 @@ By default, this token will be expired after 6 hours."/>
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
+    <li><a href="#openstack-document-link">Openstack document link</a></li>
+    <li><a href="#service-list">Service list</a></li>
     <li><a href="#get-token">Get token</a></li>
     <li><a href="#export-token">Export token</a></li>
     <li><a href="#set-micro-version-for-api-via-header">Set micro version for API via header</a></li>
@@ -230,7 +254,7 @@ By default, this token will be expired after 6 hours."/>
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="#" title="Author" rel=" author" class="author">Kien Nguyen</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="https://kienngd.github.io/blog/en/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;275 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2020-10-29">2020-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;306 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -239,6 +263,8 @@ By default, this token will be expired after 6 hours."/>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#openstack-document-link">Openstack document link</a></li>
+    <li><a href="#service-list">Service list</a></li>
     <li><a href="#get-token">Get token</a></li>
     <li><a href="#export-token">Export token</a></li>
     <li><a href="#set-micro-version-for-api-via-header">Set micro version for API via header</a></li>
@@ -252,8 +278,19 @@ By default, this token will be expired after 6 hours."/>
     <li><a href="#grant-one-system-role-to-one-user">Grant one system role to one user</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="get-token" class="headerLink">
-    <a href="#get-token" class="header-mark"></a>1 Get token</h2><div class="highlight"><div class="chroma">
+            </div><div class="content" id="content"><h2 id="openstack-document-link" class="headerLink">
+    <a href="#openstack-document-link" class="header-mark"></a>1 Openstack document link</h2><ul>
+<li><a href="https://docs.openstack.org/2023.2/api/" target="_blank" rel="noopener noreferrer">https://docs.openstack.org/2023.2/api/</a> (Version 2023.2)</li>
+</ul>
+<h2 id="service-list" class="headerLink">
+    <a href="#service-list" class="header-mark"></a>2 Service list</h2><ul>
+<li>Identity service (keystone): Mange user, password, token, authorized &hellip;..</li>
+<li>Block Storage service (cinder)</li>
+<li>Compute service (nova)</li>
+<li>Container Infrastructure Management service (magnum)</li>
+</ul>
+<h2 id="get-token" class="headerLink">
+    <a href="#get-token" class="header-mark"></a>3 Get token</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -306,11 +343,11 @@ By default, this token will be expired after 6 hours."/>
 </div><p>Default keystone port is <strong>5000</strong></p>
 <p>By default, this token will be expired after 6 hours.</p>
 <h2 id="export-token" class="headerLink">
-    <a href="#export-token" class="header-mark"></a>2 Export token</h2><p>API_TOKEN=&quot;{TOKEN}&quot;</p>
+    <a href="#export-token" class="header-mark"></a>4 Export token</h2><p>API_TOKEN=&quot;{TOKEN}&quot;</p>
 <h2 id="set-micro-version-for-api-via-header" class="headerLink">
-    <a href="#set-micro-version-for-api-via-header" class="header-mark"></a>3 Set micro version for API via header</h2><p>Using HTTP header: <strong>X-OpenStack-Nova-API-Version: 2.4</strong> Or <strong>OpenStack-API-Version: compute 2.27</strong> (valid from version 2.27).</p>
+    <a href="#set-micro-version-for-api-via-header" class="header-mark"></a>5 Set micro version for API via header</h2><p>Using HTTP header: <strong>X-OpenStack-Nova-API-Version: 2.4</strong> Or <strong>OpenStack-API-Version: compute 2.27</strong> (valid from version 2.27).</p>
 <h2 id="list-all-service-with-ports" class="headerLink">
-    <a href="#list-all-service-with-ports" class="header-mark"></a>4 List all service with ports</h2><div class="highlight"><div class="chroma">
+    <a href="#list-all-service-with-ports" class="header-mark"></a>6 List all service with ports</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -319,7 +356,7 @@ By default, this token will be expired after 6 hours."/>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="get-domains" class="headerLink">
-    <a href="#get-domains" class="header-mark"></a>5 Get domains</h2><div class="highlight"><div class="chroma">
+    <a href="#get-domains" class="header-mark"></a>7 Get domains</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -329,7 +366,7 @@ By default, this token will be expired after 6 hours."/>
 </div>
 </div><p>Use <strong>jq</strong> command to format return JSON data.</p>
 <h2 id="get-projects" class="headerLink">
-    <a href="#get-projects" class="header-mark"></a>6 Get projects</h2><div class="highlight"><div class="chroma">
+    <a href="#get-projects" class="header-mark"></a>8 Get projects</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -338,7 +375,7 @@ By default, this token will be expired after 6 hours."/>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="set-storage-policy-quota-for-one-project" class="headerLink">
-    <a href="#set-storage-policy-quota-for-one-project" class="header-mark"></a>7 Set storage policy quota for one project</h2><div class="highlight"><div class="chroma">
+    <a href="#set-storage-policy-quota-for-one-project" class="header-mark"></a>9 Set storage policy quota for one project</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -357,7 +394,7 @@ By default, this token will be expired after 6 hours."/>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="get-all-projects-vms-with-detail" class="headerLink">
-    <a href="#get-all-projects-vms-with-detail" class="header-mark"></a>8 Get all project&rsquo;s vms with detail</h2><div class="highlight"><div class="chroma">
+    <a href="#get-all-projects-vms-with-detail" class="header-mark"></a>10 Get all project&rsquo;s vms with detail</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -366,7 +403,7 @@ By default, this token will be expired after 6 hours."/>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="get-all-flavors-with-detail" class="headerLink">
-    <a href="#get-all-flavors-with-detail" class="header-mark"></a>9 Get all flavors with detail</h2><div class="highlight"><div class="chroma">
+    <a href="#get-all-flavors-with-detail" class="header-mark"></a>11 Get all flavors with detail</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -375,7 +412,7 @@ By default, this token will be expired after 6 hours."/>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="grant-one-role-on-all-domains-projects-to-one-user" class="headerLink">
-    <a href="#grant-one-role-on-all-domains-projects-to-one-user" class="header-mark"></a>10 Grant one role on all domain&rsquo;s projects to one user</h2><div class="highlight"><div class="chroma">
+    <a href="#grant-one-role-on-all-domains-projects-to-one-user" class="header-mark"></a>12 Grant one role on all domain&rsquo;s projects to one user</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -384,7 +421,7 @@ By default, this token will be expired after 6 hours."/>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="grant-one-system-role-to-one-user" class="headerLink">
-    <a href="#grant-one-system-role-to-one-user" class="header-mark"></a>11 Grant one system role to one user</h2><div class="highlight"><div class="chroma">
+    <a href="#grant-one-system-role-to-one-user" class="header-mark"></a>13 Grant one system role to one user</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -466,7 +503,7 @@ By default, this token will be expired after 6 hours."/>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
                     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.119.0">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">KienND</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">KienND</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
             </div>

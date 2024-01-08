@@ -68,3 +68,12 @@
 - Copy file to `~/.docker/cli-plugins/`, rename to `docker-compose`, set excute permission `chmod u+x docker-compose`
 - Run `~/.docker/cli-plugins/docker-compose version` to check if it is new version
 
+## Tilix - shortcut keys
+- How to install tilix?
+- Shortcut-Keys
+  - CTRL + ALT + T: New session
+  - CTRL + PageDown / PageUp: Move to next / previous session
+  - CTRL + ALT + R / D / A: New window right / down / auto
+  - Super + ALT + Arrow: Change window size
+  - CTRL + TAB: change window
+- ...

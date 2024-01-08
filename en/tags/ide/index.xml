@@ -12,7 +12,7 @@
     </author><guid>https://kienngd.github.io/blog/en/code_server_code_in_your_browser/</guid>
     <description><![CDATA[<p>Hello, it is me again. Today, we will talk about <strong>Code-Server</strong> an &ldquo;in browser vs code IDE&rdquo;. I use Ubuntu 20.04 to test. Have fun!</p>
 <ol>
-<li>Download <strong>Code-Server</strong> from github page: <a href="https://github.com/cdr/code-server/releases/" target="_blank" rel="noopener noreferrer">https://github.com/cdr/code-server/releases/</a>
+<li>Download <strong>Code-Server</strong> from github page: <a href="https://github.com/coder/code-server/releases" target="_blank" rel="noopener noreferrer">https://github.com/coder/code-server/releases</a> <del><a href="https://github.com/cdr/code-server/releases/" target="_blank" rel="noopener noreferrer">https://github.com/cdr/code-server/releases/</a></del>
 <ul>
 <li>You can download <strong>rpm</strong> or <strong>deb</strong> file or <strong>tar.gz</strong> file :).</li>
 </ul>

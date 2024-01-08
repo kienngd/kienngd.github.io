@@ -2,7 +2,7 @@
 
 Hello, it is me again. Today, we will talk about **Code-Server** an "in browser vs code IDE". I use Ubuntu 20.04 to test. Have fun!
 
-1. Download **Code-Server** from github page: https://github.com/cdr/code-server/releases/
+1. Download **Code-Server** from github page: https://github.com/coder/code-server/releases ~~https://github.com/cdr/code-server/releases/~~
     - You can download **rpm** or **deb** file or **tar.gz** file :).
 2. If you download rpm or deb, use PMS of your OS to install it. I download file **tar.gz** so I just **untar** it to an folder.
 <!--more-->

@@ -80,8 +80,19 @@
     <pubDate>Thu, 29 Oct 2020 09:26:59 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/blog/en/working_with_openstack_api_using_curl/</guid>
-    <description><![CDATA[<h2 id="get-token" class="headerLink">
-    <a href="#get-token" class="header-mark"></a>1 Get token</h2><div class="highlight"><div class="chroma">
+    <description><![CDATA[<h2 id="openstack-document-link" class="headerLink">
+    <a href="#openstack-document-link" class="header-mark"></a>1 Openstack document link</h2><ul>
+<li><a href="https://docs.openstack.org/2023.2/api/" target="_blank" rel="noopener noreferrer">https://docs.openstack.org/2023.2/api/</a> (Version 2023.2)</li>
+</ul>
+<h2 id="service-list" class="headerLink">
+    <a href="#service-list" class="header-mark"></a>2 Service list</h2><ul>
+<li>Identity service (keystone): Mange user, password, token, authorized &hellip;..</li>
+<li>Block Storage service (cinder)</li>
+<li>Compute service (nova)</li>
+<li>Container Infrastructure Management service (magnum)</li>
+</ul>
+<h2 id="get-token" class="headerLink">
+    <a href="#get-token" class="header-mark"></a>3 Get token</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2

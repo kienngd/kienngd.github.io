@@ -2,12 +2,12 @@
 
 document: [https://github.com/influxdata/influxdb-php](https://github.com/influxdata/influxdb-php)
 
-##### Install via composer
+## Install via composer
 ```bash
 composer require influxdb/influxdb-php
 ```
 
-##### Create client object
+## Create client object
 ```php
 $client = new InfluxDB\Client($host, $port);
 
@@ -21,7 +21,7 @@ $database = InfluxDB\Client::fromDSN(sprintf('influxdb://user:pass@%s:%s/%s', $h
 $client = $database->getClient();
 ```
 <!--more-->
-##### Reading data
+## Reading data
 
 ```php
 // fetch the database
@@ -34,7 +34,7 @@ $result = $database->query('select * from test_metric LIMIT 5');
 $points = $result->getPoints();
 ```
 
-##### Use the queryBuilder object
+## Use the queryBuilder object
 ```php
 // retrieve points with the query builder
 $result = $database->getQueryBuilder()
@@ -53,7 +53,7 @@ $query = $database->getQueryBuilder()
 	->getQuery();
 ```
 
-##### Get the last executed query from the client
+## Get the last executed query from the client
 ```php
 // use the getLastQuery() method
 $lastQuery = $client->getLastQuery();
@@ -62,7 +62,7 @@ $lastQuery = $client->getLastQuery();
 $lastQuery = Client::lastQuery;
 ```
 
-##### Writting data
+## Writting data
 ```php
 // create an array of points
 $points = array(

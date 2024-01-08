@@ -8,7 +8,7 @@
     <title class="pjax-title">Working With Influxdb Data Using PhpClient - K5D</title><meta name="Description" content="The official documentation for the Hugo DoIt theme"><meta property="og:title" content="Working With Influxdb Data Using PhpClient" />
 <meta property="og:description" content="document: https://github.com/influxdata/influxdb-php
 
-    0.0.0.1 Install via composer
+    1 Install via composer
 
 1
 
@@ -17,7 +17,7 @@ composer require influxdb/influxdb-php
 
 
 
-    0.0.0.2 Create client object
+    2 Create client object
 
  1
  2
@@ -54,7 +54,7 @@ $client = $database-&gt;getClient();
 <meta name="twitter:title" content="Working With Influxdb Data Using PhpClient"/>
 <meta name="twitter:description" content="document: https://github.com/influxdata/influxdb-php
 
-    0.0.0.1 Install via composer
+    1 Install via composer
 
 1
 
@@ -63,7 +63,7 @@ composer require influxdb/influxdb-php
 
 
 
-    0.0.0.2 Create client object
+    2 Create client object
 
  1
  2
@@ -183,24 +183,12 @@ $client = $database-&gt;getClient();
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li>
-          <ul>
-            <li>
-              <ul>
-                <li><a href="#install-via-composer">Install via composer</a></li>
-                <li><a href="#create-client-object">Create client object</a></li>
-                <li><a href="#reading-data">Reading data</a></li>
-                <li><a href="#use-the-querybuilder-object">Use the queryBuilder object</a></li>
-                <li><a href="#get-the-last-executed-query-from-the-client">Get the last executed query from the client</a></li>
-                <li><a href="#writting-data">Writting data</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#install-via-composer">Install via composer</a></li>
+    <li><a href="#create-client-object">Create client object</a></li>
+    <li><a href="#reading-data">Reading data</a></li>
+    <li><a href="#use-the-querybuilder-object">Use the queryBuilder object</a></li>
+    <li><a href="#get-the-last-executed-query-from-the-client">Get the last executed query from the client</a></li>
+    <li><a href="#writting-data">Writting data</a></li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single single-post"><h1 class="single-title animate__animated animate__flipInX">Working With Influxdb Data Using PhpClient</h1><div class="post-meta">
@@ -216,29 +204,17 @@ $client = $database-&gt;getClient();
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li>
-          <ul>
-            <li>
-              <ul>
-                <li><a href="#install-via-composer">Install via composer</a></li>
-                <li><a href="#create-client-object">Create client object</a></li>
-                <li><a href="#reading-data">Reading data</a></li>
-                <li><a href="#use-the-querybuilder-object">Use the queryBuilder object</a></li>
-                <li><a href="#get-the-last-executed-query-from-the-client">Get the last executed query from the client</a></li>
-                <li><a href="#writting-data">Writting data</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#install-via-composer">Install via composer</a></li>
+    <li><a href="#create-client-object">Create client object</a></li>
+    <li><a href="#reading-data">Reading data</a></li>
+    <li><a href="#use-the-querybuilder-object">Use the queryBuilder object</a></li>
+    <li><a href="#get-the-last-executed-query-from-the-client">Get the last executed query from the client</a></li>
+    <li><a href="#writting-data">Writting data</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>document: <a href="https://github.com/influxdata/influxdb-php" target="_blank" rel="noopener noreferrer">https://github.com/influxdata/influxdb-php</a></p>
-<h5 id="install-via-composer" class="headerLink">
-    <a href="#install-via-composer" class="header-mark"></a>0.0.0.1 Install via composer</h5><div class="highlight"><div class="chroma">
+<h2 id="install-via-composer" class="headerLink">
+    <a href="#install-via-composer" class="header-mark"></a>1 Install via composer</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -246,8 +222,8 @@ $client = $database-&gt;getClient();
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">composer require influxdb/influxdb-php
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="create-client-object" class="headerLink">
-    <a href="#create-client-object" class="header-mark"></a>0.0.0.2 Create client object</h5><div class="highlight"><div class="chroma">
+</div><h2 id="create-client-object" class="headerLink">
+    <a href="#create-client-object" class="header-mark"></a>2 Create client object</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -273,8 +249,8 @@ $client = $database-&gt;getClient();
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$client</span> <span class="o">=</span> <span class="nv">$database</span><span class="o">-&gt;</span><span class="na">getClient</span><span class="p">();</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="reading-data" class="headerLink">
-    <a href="#reading-data" class="header-mark"></a>0.0.0.3 Reading data</h5><div class="highlight"><div class="chroma">
+</div><h2 id="reading-data" class="headerLink">
+    <a href="#reading-data" class="header-mark"></a>3 Reading data</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -296,8 +272,8 @@ $client = $database-&gt;getClient();
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$points</span> <span class="o">=</span> <span class="nv">$result</span><span class="o">-&gt;</span><span class="na">getPoints</span><span class="p">();</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="use-the-querybuilder-object" class="headerLink">
-    <a href="#use-the-querybuilder-object" class="header-mark"></a>0.0.0.4 Use the queryBuilder object</h5><div class="highlight"><div class="chroma">
+</div><h2 id="use-the-querybuilder-object" class="headerLink">
+    <a href="#use-the-querybuilder-object" class="header-mark"></a>4 Use the queryBuilder object</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -333,8 +309,8 @@ $client = $database-&gt;getClient();
 </span></span><span class="line"><span class="cl">	<span class="o">-&gt;</span><span class="na">getQuery</span><span class="p">();</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="get-the-last-executed-query-from-the-client" class="headerLink">
-    <a href="#get-the-last-executed-query-from-the-client" class="header-mark"></a>0.0.0.5 Get the last executed query from the client</h5><div class="highlight"><div class="chroma">
+</div><h2 id="get-the-last-executed-query-from-the-client" class="headerLink">
+    <a href="#get-the-last-executed-query-from-the-client" class="header-mark"></a>5 Get the last executed query from the client</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -350,8 +326,8 @@ $client = $database-&gt;getClient();
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$lastQuery</span> <span class="o">=</span> <span class="nx">Client</span><span class="o">::</span><span class="na">lastQuery</span><span class="p">;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="writting-data" class="headerLink">
-    <a href="#writting-data" class="header-mark"></a>0.0.0.6 Writting data</h5><div class="highlight"><div class="chroma">
+</div><h2 id="writting-data" class="headerLink">
+    <a href="#writting-data" class="header-mark"></a>6 Writting data</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -427,11 +403,6 @@ $client = $database-&gt;getClient();
                 <a href="https://kienngd.github.io/blog/en/working_with_influxdb_data_using_api/">Working_with_influxdb_data_using_api</a>
             </h2>
         </div>
-    <div class="related-item-container">
-            <h2 class="related-title">
-                <a href="https://kienngd.github.io/blog/en/working_with_influxdb_data_using_influx/">Working_with_influxdb_data_using_influx</a>
-            </h2>
-        </div>
     
 
 </div>
@@ -466,7 +437,7 @@ $client = $database-&gt;getClient();
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
                     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.119.0">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">KienND</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">KienND</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
             </div>
