@@ -1,54 +1,66 @@
-# How to build a free blog
+# 🚧 How to build a free blog
 
-Hello, in this post will learn how to build a free personal blog using Hugo + Github page. Have fun!
 
-**Step 1**: Install hugo.
+<!--more-->
+Hello. In this post we will learn how to build a free personal blog using Hugo + Github page. Have fun!
+
+## Install hugo.
 
 - Download hugo from: https://github.com/gohugoio/hugo/releases
 - Install in your PC.
+- Check hugo version: `hugo version`
 
+## Manage your site
 **Step 2**: Create a new site.
-
-- Quick start document: https://gohugo.io/getting-started/
 - Command: 
-```bash
-hugo new site myblog
-```
+    ```bash
+        hugo new site myblog
+    ```
+- Then move to folder `myblog`
+- Quick start document: https://gohugo.io/getting-started/
 
 **Step 3**: Setup your hugo theme.
 
 - Find a theme from: https://themes.gohugo.io/.
-- Download theme and put into site's themes directory.
-Example we want to use Ananke theme:
-```bash
-cd myblog
-git init
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-```
-- Inside file config.toml.
-```text
-theme = "ananke"
-```
-<!--more-->
-**Step 4**: Create new post.
-```bash
-hugo new <POST TYPE>/<POST_TITLE.md>
-```
+- Download theme and put into site's themes directory. Example we want to use theme Ananke:
+    ```bash
+        cd myblog
+        git init
+        git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+    ```
+- Inside file `hugo.toml` (or `config.toml` if you use old version).
+    ```text
+        ...
+        theme = "ananke"
+        ...
+    ```
+- Hugo site configuration document: https://gohugo.io/getting-started/configuration/
+
+## Manage your content
+- Command to create new post: `hugo new <POST TYPE>/<POST_TITLE.md>`\
 Then edit the new file.
+- 🚧 Basic markdown document: https://...
+- 🚧 Post header document: https://...
+- 🚧 About resource folders struct: https://...
 
-**Step 5**: Test your site in your PC and build site.
+## Run local server to test and build 
+- **Start hugo server**
+    ```bash
+        hugo server
+    ```
+    Default port is **1313** so you can access **http://localhost:1313**\
+    `hugo help serve` to see all command options
 
-**Start hugo server**
-```bash
-hugo server
-```
-Default port is **1313** so you can access **http://localhost:1313** or **http://[YOUR IP]:1313**
+- **Build site**
+    ```bash
+        hugo
+    ```
+    Result is saved in folder **public**.\
+    `hugo help` to see all command options
 
-**Build site**
-```bash
-hugo
-```
-Result is saved in folder **public**.
+<hr/>
+
+🚧 **Next article**: Publish this blog using github page
 
 **Step 6**: Register a new Git Hub Account.
 
