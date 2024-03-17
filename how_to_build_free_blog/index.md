@@ -1,7 +1,6 @@
 # 🚧 How to build a free blog
 
 
-<!--more-->
 Hello. In this post we will learn how to build a free personal blog using Hugo + Github page. Have fun!
 
 ## Install hugo.
@@ -9,6 +8,8 @@ Hello. In this post we will learn how to build a free personal blog using Hugo +
 - Download hugo from: https://github.com/gohugoio/hugo/releases
 - Install in your PC.
 - Check hugo version: `hugo version`
+
+<!--more-->
 
 ## Manage your site
 **Step 2**: Create a new site.

@@ -12,6 +12,12 @@
                 </author><guid>https://kienngd.github.io/blog/how_to_build_free_blog/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/how_to_build_free_blog/creating-a-hugo-theme-from-scratch.jpg" referrerpolicy="no-referrer">
-            </div>How to build a free blog]]></description>
+            </div><p>Hello. In this post we will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
+<h2 id="install-hugo" class="headerLink">
+    <a href="#install-hugo" class="header-mark"></a>1 Install hugo.</h2><ul>
+<li>Download hugo from: <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreferrer">https://github.com/gohugoio/hugo/releases</a></li>
+<li>Install in your PC.</li>
+<li>Check hugo version: <code>hugo version</code></li>
+</ul>]]></description>
 </item></channel>
 </rss>

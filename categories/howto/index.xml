@@ -4,7 +4,16 @@
         <link>https://kienngd.github.io/blog/categories/howto/</link>
         <description>Howto - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/howto/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/howto/" rel="self" type="application/rss+xml" /><item>
+    <title>How to create a linux service</title>
+    <link>https://kienngd.github.io/blog/how_to_create_linux_service/</link>
+    <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/how_to_create_linux_service/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/how_to_create_linux_service/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
+            </div>How to create a linux service]]></description>
+</item><item>
     <title>🚧 How to build a free blog</title>
     <link>https://kienngd.github.io/blog/how_to_build_free_blog/</link>
     <pubDate>Thu, 08 Oct 2020 00:00:00 &#43;0000</pubDate><author>
@@ -12,6 +21,12 @@
                 </author><guid>https://kienngd.github.io/blog/how_to_build_free_blog/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/how_to_build_free_blog/creating-a-hugo-theme-from-scratch.jpg" referrerpolicy="no-referrer">
-            </div>How to build a free blog]]></description>
+            </div><p>Hello. In this post we will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
+<h2 id="install-hugo" class="headerLink">
+    <a href="#install-hugo" class="header-mark"></a>1 Install hugo.</h2><ul>
+<li>Download hugo from: <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreferrer">https://github.com/gohugoio/hugo/releases</a></li>
+<li>Install in your PC.</li>
+<li>Check hugo version: <code>hugo version</code></li>
+</ul>]]></description>
 </item></channel>
 </rss>
