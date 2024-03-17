@@ -1,0 +1,115 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Code - Category - K5D::Blog</title>
+        <link>https://kienngd.github.io/blog/categories/code/</link>
+        <description>Code - Category - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/code/" rel="self" type="application/rss+xml" /><item>
+    <title>Strategy Pattern in PHP with examples</title>
+    <link>https://kienngd.github.io/blog/strategy_pattern_in_php/</link>
+    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/strategy_pattern_in_php/</guid>
+    <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
+    <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
+<h3 id="without-pattern" class="headerLink">
+    <a href="#without-pattern" class="header-mark"></a>1.1 Without pattern</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Sorter</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">bubbleSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Bubble Sort
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">quickSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Quick Sort
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">mergeSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Merge Sort
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$sorter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sorter</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$sortedArr</span> <span class="o">=</span> <span class="nv">$sorter</span><span class="o">-&gt;</span><span class="na">bubbleSort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
+    <title>How to working with JSON in GoLang</title>
+    <link>https://kienngd.github.io/blog/working_with_json_in_golang/</link>
+    <pubDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/working_with_json_in_golang/</guid>
+    <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
+<p><strong>Working with structed data</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// Import package
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="s">&#34;encoding/json&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Bird</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Species</span>     <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Description</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">jsonString</span> <span class="o">:=</span> <span class="s">`{	
+</span></span></span><span class="line"><span class="cl"><span class="s">		&#34;species&#34;: &#34;pigeon&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s">		&#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">	}`</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">bird</span> <span class="nx">Bird</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">err</span> <span class="o">:=</span> <span class="nx">json</span><span class="p">.</span><span class="nf">Unmarshal</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">jsonString</span><span class="p">),</span> <span class="o">&amp;</span><span class="nx">bird</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="nx">nill</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// json string is invalid.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item></channel>
+</rss>

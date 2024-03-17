@@ -23,7 +23,7 @@
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/blog/quick-notes-ubuntu/" /><link rel="prev" href="https://kienngd.github.io/blog/how-to-use-screen-command-in-linux/" /><link rel="next" href="https://kienngd.github.io/blog/quick-notes-laravel/" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/blog/quick-notes-ubuntu/" /><link rel="prev" href="https://kienngd.github.io/blog/use_screen_command_in_linux/" /><link rel="next" href="https://kienngd.github.io/blog/quick-notes-laravel/" />
 <link rel="stylesheet" href="/blog/css/main.css"><link rel="stylesheet" href="/blog/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/blog/css/color.css"><link rel="stylesheet" href="/blog/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/blog/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/blog/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/blog/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/blog/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kienngd.github.io/blog/quick-notes-ubuntu/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  10 ,
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  67 ,
         "url": "https://kienngd.github.io/blog/quick-notes-ubuntu/","datePublished": "2023-07-04T01:00:00+00:00","dateModified": "2023-12-05T01:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -117,12 +117,16 @@
 <main class="main">
             <div class="container"><div class="toc" id="toc-auto">
         <h2 class="toc-title">Contents</h2>
-        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents"></nav></div>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
+  </ul>
+</nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🚧 Quick-notes working with Ubuntu</h1><h2 class="single-subtitle">Quick-notes working with Ubuntu</h2><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/blog/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/blog/categories/quick-notes/"><i class="far fa-folder fa-fw"></i>Quick-Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;10 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;67 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -135,9 +139,44 @@
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><h1 id="some-quick-notes" class="headerLink">
-    <a href="#some-quick-notes" class="header-mark"></a>Some Quick-notes</h1><p><font color="#0000FF">These notes will be moved to another place soon</font></p></div>
+    <a href="#some-quick-notes" class="header-mark"></a>Some Quick-notes</h1><p><font color="#0000FF">These notes will be moved to another place soon</font></p>
+<h2 id="using-sshfs-to-mount-remote-folder-to-local" class="headerLink">
+    <a href="#using-sshfs-to-mount-remote-folder-to-local" class="header-mark"></a>1 Using sshfs to mount remote-folder to local</h2><p>Test with ubuntu 22.04</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Install</span>
+</span></span><span class="line"><span class="cl">sudo apt install sshfs
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Show help message</span>
+</span></span><span class="line"><span class="cl">sshfs --help
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Mount from folder /data from remote-server to folder /mnt/data at local-server</span>
+</span></span><span class="line"><span class="cl">sshfs USER@SERVER:/data /mnt/data -o reconnect,ServerAliveInterval<span class="o">=</span>15,ServerAliveCountMax<span class="o">=</span><span class="m">3</span> ...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Unmount</span>
+</span></span><span class="line"><span class="cl">fusermount -u /mnt/data
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
 
         
 
@@ -193,7 +232,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/blog/how-to-use-screen-command-in-linux/" class="prev" rel="prev" title="How To Use Screen Command In Linux: A Beginner’s Guide"><i class="fas fa-angle-left fa-fw"></i>How To Use Screen Command In Linux: A Beginner’s Guide</a>
+    <div class="post-nav"><a href="/blog/use_screen_command_in_linux/" class="prev" rel="prev" title="How To Use Screen Command In Linux: A Beginner’s Guide"><i class="fas fa-angle-left fa-fw"></i>How To Use Screen Command In Linux: A Beginner’s Guide</a>
             <a href="/blog/quick-notes-laravel/" class="next" rel="next" title="🚧 Quick-notes working with Laravel">🚧 Quick-notes working with Laravel<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
