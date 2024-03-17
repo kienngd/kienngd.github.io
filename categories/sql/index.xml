@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SQL - Category - K5D::Blog</title>
+        <link>https://kienngd.github.io/blog/categories/sql/</link>
+        <description>SQL - Category - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 May 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/sql/" rel="self" type="application/rss+xml" /><item>
+    <title>TimescaleDB working with continuous aggregate</title>
+    <link>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</link>
+    <pubDate>Thu, 25 May 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</guid>
+    <description><![CDATA[TimescaleDB working with continuous aggregate]]></description>
+</item></channel>
+</rss>

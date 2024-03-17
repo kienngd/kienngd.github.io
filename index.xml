@@ -34,6 +34,13 @@
                 <img src="/blog/quick-notes-ubuntu/ubuntu-banner.png" referrerpolicy="no-referrer">
             </div>Some Quick-Notes working with Ubuntu]]></description>
 </item><item>
+    <title>TimescaleDB working with continuous aggregate</title>
+    <link>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</link>
+    <pubDate>Thu, 25 May 2023 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</guid>
+    <description><![CDATA[TimescaleDB working with continuous aggregate]]></description>
+</item><item>
     <title>How To Use Screen Command In Linux: A Beginner’s Guide</title>
     <link>https://kienngd.github.io/blog/use_screen_command_in_linux/</link>
     <pubDate>Thu, 18 May 2023 00:00:00 &#43;0000</pubDate><author>
@@ -44,15 +51,6 @@
             </div><p><strong>How To Use Screen Command In Linux: A Beginner’s Guide</strong></p>
 <p>Have you ever been frustrated when your <strong>SSH connection drops</strong> and your <strong>command gets terminated</strong>? If so, you need to learn about screen.</p>
 <p>Screen is a tool that lets you create multiple sessions on a single terminal. You can detach from a screen session and re-attach to it later, even from a different computer. This way, you can keep your commands running in the background without interruption.</p>]]></description>
-</item><item>
-    <title>How to disable wifi power save Ubuntu 20.04</title>
-    <link>https://kienngd.github.io/blog/disable_wifi_power_save_ubuntu_20.04/</link>
-    <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/disable_wifi_power_save_ubuntu_20.04/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/blog/disable_wifi_power_save_ubuntu_20.04/sleeping-tux-wireless.jpeg" referrerpolicy="no-referrer">
-            </div><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>]]></description>
 </item><item>
     <title>Strategy Pattern in PHP with examples</title>
     <link>https://kienngd.github.io/blog/strategy_pattern_in_php/</link>
@@ -101,6 +99,15 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
+</item><item>
+    <title>How to disable wifi power save Ubuntu 20.04</title>
+    <link>https://kienngd.github.io/blog/disable_wifi_power_save_ubuntu_20.04/</link>
+    <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/disable_wifi_power_save_ubuntu_20.04/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/disable_wifi_power_save_ubuntu_20.04/sleeping-tux-wireless.jpeg" referrerpolicy="no-referrer">
+            </div><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>]]></description>
 </item><item>
     <title>How to working with JSON in GoLang</title>
     <link>https://kienngd.github.io/blog/working_with_json_in_golang/</link>

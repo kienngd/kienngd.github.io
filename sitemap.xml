@@ -5,9 +5,10 @@
             <loc>https://kienngd.github.io/blog/quick-notes/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/quick-notes-laravel/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/quick-notes-ubuntu/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</loc><lastmod>2023-05-25T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/use_screen_command_in_linux/</loc><lastmod>2023-05-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://kienngd.github.io/blog/disable_wifi_power_save_ubuntu_20.04/</loc><lastmod>2020-10-11T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/strategy_pattern_in_php/</loc><lastmod>2023-04-21T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/disable_wifi_power_save_ubuntu_20.04/</loc><lastmod>2020-10-11T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/working_with_json_in_golang/</loc><lastmod>2020-10-08T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/authors/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/categories/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -17,6 +18,10 @@
             <loc>https://kienngd.github.io/blog/tags/quick-notes/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/categories/quick-notes/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/tags/</loc><lastmod>2023-12-05T01:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/tags/postgresql/</loc><lastmod>2023-05-25T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/tags/sql/</loc><lastmod>2023-05-25T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/categories/sql/</loc><lastmod>2023-05-25T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/blog/tags/timescaledb/</loc><lastmod>2023-05-25T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/tags/command-screen/</loc><lastmod>2023-05-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/tags/linux/</loc><lastmod>2023-05-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/blog/categories/linux/</loc><lastmod>2023-05-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
