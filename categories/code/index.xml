@@ -4,7 +4,7 @@
         <link>https://kienngd.github.io/blog/categories/code/</link>
         <description>Code - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/code/" rel="self" type="application/rss+xml" /><item>
     <title>Strategy Pattern in PHP with examples</title>
     <link>https://kienngd.github.io/blog/strategy_pattern_in_php/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
@@ -111,5 +111,12 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
+</item><item>
+    <title>Naming: Every Developer&#39;s Nightmare</title>
+    <link>https://kienngd.github.io/blog/naming/</link>
+    <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/naming/</guid>
+    <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item></channel>
 </rss>

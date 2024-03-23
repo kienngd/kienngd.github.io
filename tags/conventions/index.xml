@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Conventions - Tag - K5D::Blog</title>
+        <link>https://kienngd.github.io/blog/tags/conventions/</link>
+        <description>Conventions - Tag - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/conventions/" rel="self" type="application/rss+xml" /><item>
+    <title>GIT Commit message conventions</title>
+    <link>https://kienngd.github.io/blog/git_commit_message/</link>
+    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/git_commit_message/</guid>
+    <description><![CDATA[GIT Commit message conventions]]></description>
+</item><item>
+    <title>Naming: Every Developer&#39;s Nightmare</title>
+    <link>https://kienngd.github.io/blog/naming/</link>
+    <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/naming/</guid>
+    <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
+</item></channel>
+</rss>

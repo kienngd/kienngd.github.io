@@ -14,6 +14,16 @@
                 <img src="/blog/disable_wifi_power_save_ubuntu_20.04/sleeping-tux-wireless.jpeg" referrerpolicy="no-referrer">
             </div><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>]]></description>
 </item><item>
+    <title>How to check my ip</title>
+    <link>https://kienngd.github.io/blog/check_my_ip_address/</link>
+    <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/check_my_ip_address/</guid>
+    <description><![CDATA[<p>Hello, sometimes you need to know &ldquo;what is my IP address?&rdquo;. In this post we will learn some ways to check public IP. Have fun!</p>
+<h2 id="httpsapimyipcom" class="headerLink">
+    <a href="#httpsapimyipcom" class="header-mark"></a>1 <a href="https://api.myip.com" target="_blank" rel="noopener noreferrer">https://api.myip.com</a></h2><p>Open your browser to access this link: <a href="https://api.myip.com/" target="_blank" rel="noopener noreferrer">https://api.myip.com/</a>. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: <strong>115.75.212.27</strong>.</p>
+<p><strong>Bonus</strong>: You can use curl command to get data too.</p>]]></description>
+</item><item>
     <title>How to create a linux service</title>
     <link>https://kienngd.github.io/blog/create_linux_service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>

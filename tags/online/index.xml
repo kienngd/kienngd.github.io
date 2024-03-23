@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Online - Tag - K5D::Blog</title>
+        <link>https://kienngd.github.io/blog/tags/online/</link>
+        <description>Online - Tag - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/online/" rel="self" type="application/rss+xml" /><item>
+    <title>How to check my ip</title>
+    <link>https://kienngd.github.io/blog/check_my_ip_address/</link>
+    <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/check_my_ip_address/</guid>
+    <description><![CDATA[<p>Hello, sometimes you need to know &ldquo;what is my IP address?&rdquo;. In this post we will learn some ways to check public IP. Have fun!</p>
+<h2 id="httpsapimyipcom" class="headerLink">
+    <a href="#httpsapimyipcom" class="header-mark"></a>1 <a href="https://api.myip.com" target="_blank" rel="noopener noreferrer">https://api.myip.com</a></h2><p>Open your browser to access this link: <a href="https://api.myip.com/" target="_blank" rel="noopener noreferrer">https://api.myip.com/</a>. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: <strong>115.75.212.27</strong>.</p>
+<p><strong>Bonus</strong>: You can use curl command to get data too.</p>]]></description>
+</item></channel>
+</rss>

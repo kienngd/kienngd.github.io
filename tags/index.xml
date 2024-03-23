@@ -33,6 +33,27 @@
     </author><guid>https://kienngd.github.io/blog/tags/timescaledb/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+    <title>Code</title>
+    <link>https://kienngd.github.io/blog/tags/code/</link>
+    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/tags/code/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Conventions</title>
+    <link>https://kienngd.github.io/blog/tags/conventions/</link>
+    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/tags/conventions/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>GIT</title>
+    <link>https://kienngd.github.io/blog/tags/git/</link>
+    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/tags/git/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Command-Screen</title>
     <link>https://kienngd.github.io/blog/tags/command-screen/</link>
     <pubDate>Thu, 18 May 2023 00:00:00 &#43;0000</pubDate><author>
@@ -47,32 +68,11 @@
     </author><guid>https://kienngd.github.io/blog/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Design-Pattern</title>
-    <link>https://kienngd.github.io/blog/tags/design-pattern/</link>
-    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/design-pattern/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>PHP</title>
-    <link>https://kienngd.github.io/blog/tags/php/</link>
-    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/php/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
     <title>Ubuntu</title>
     <link>https://kienngd.github.io/blog/tags/ubuntu/</link>
-    <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>
+    <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/blog/tags/ubuntu/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Wifi</title>
-    <link>https://kienngd.github.io/blog/tags/wifi/</link>
-    <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/wifi/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
