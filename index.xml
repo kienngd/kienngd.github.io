@@ -7,6 +7,15 @@
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
+    <link>https://kienngd.github.io/blog/install_openvpn_ubuntu/</link>
+    <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/install_openvpn_ubuntu/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/install_openvpn_ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
+            </div><p><strong>Do you want to protect your data online?</strong> OpenVPN is the solution for you! Today, we will install OpenVPN on your Ubuntu 22.04 server and set up a secure VPN connection.</p>]]></description>
+</item><item>
     <title>🚧 Quick-notes</title>
     <link>https://kienngd.github.io/blog/quick-notes/</link>
     <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
@@ -33,15 +42,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/quick-notes-ubuntu/ubuntu-banner.png" referrerpolicy="no-referrer">
             </div>Some Quick-Notes working with Ubuntu]]></description>
-</item><item>
-    <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
-    <link>https://kienngd.github.io/blog/install_openvpn_ubuntu/</link>
-    <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/install_openvpn_ubuntu/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/blog/install_openvpn_ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
-            </div><p><strong>Do you want to protect your data online?</strong> OpenVPN is the solution for you! Today, we will install OpenVPN on your Ubuntu 22.04 server and set up a secure VPN connection.</p>]]></description>
 </item><item>
     <title>TimescaleDB working with continuous aggregate</title>
     <link>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</link>
