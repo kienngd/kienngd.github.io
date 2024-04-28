@@ -4,7 +4,28 @@
         <link>https://kienngd.github.io/blog/categories/</link>
         <description>Categories - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Code</title>
+    <link>https://kienngd.github.io/blog/categories/code/</link>
+    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/categories/code/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Miscellaneous</title>
+    <link>https://kienngd.github.io/blog/categories/miscellaneous/</link>
+    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/categories/miscellaneous/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Notes</title>
+    <link>https://kienngd.github.io/blog/categories/notes/</link>
+    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/categories/notes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Linux</title>
     <link>https://kienngd.github.io/blog/categories/linux/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
@@ -31,13 +52,6 @@
     <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/blog/categories/git/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Code</title>
-    <link>https://kienngd.github.io/blog/categories/code/</link>
-    <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/categories/code/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Howto</title>

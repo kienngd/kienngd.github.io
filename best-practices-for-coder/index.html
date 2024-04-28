@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Best practices for coder - K5D::Blog</title><meta name="Description" content="Best practices for coder"><meta property="og:url" content="https://kienngd.github.io/blog/best-practices-for-coder/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="Best practices for coder">
+  <meta property="og:description" content="Best practices for coder">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-04-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-28T00:00:00+00:00">
+    <meta property="article:tag" content="Miscellaneous">
+    <meta property="article:tag" content="Code">
+    <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="Best practices for coder">
+<meta name="twitter:description" content="Best practices for coder">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/blog/best-practices-for-coder/" /><link rel="prev" href="https://kienngd.github.io/blog/ten-coder-bad-habits/" /><link rel="next" href="https://kienngd.github.io/blog/markdown_basic/" />
+<link rel="stylesheet" href="/blog/css/main.css"><link rel="stylesheet" href="/blog/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/blog/css/color.css"><link rel="stylesheet" href="/blog/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/blog/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/blog/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/blog/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/blog/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Best practices for coder",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kienngd.github.io/blog/best-practices-for-coder/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Miscellaneous, Code","wordcount":  101 ,
+        "url": "https://kienngd.github.io/blog/best-practices-for-coder/","datePublished": "2024-04-28T00:00:00+00:00","dateModified": "2024-04-28T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kienngd.github.io/blog/images/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"authors": [{
+                        "@type": "Person",
+                        "name": "Kien Nguyen"                    
+                    }],"description": "Best practices for coder"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/blog/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/blog/posts/"> Blogs </a><a class="menu-item" href="/blog/tags/"> Tags </a><a class="menu-item" href="/blog/categories/"> Categories </a><a class="menu-item" href="/blog/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/blog/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/blog/posts/" title="">Blogs</a><a class="menu-item" href="/blog/tags/" title="">Tags</a><a class="menu-item" href="/blog/categories/" title="">Categories</a><a class="menu-item" href="/blog/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Best practices for coder</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/blog/authors/kien-nguyen'>Kien Nguyen</a></span>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/blog/categories/miscellaneous/"><i class="far fa-folder fa-fw"></i>Miscellaneous</a>&nbsp;<a href="/blog/categories/code/"><i class="far fa-folder fa-fw"></i>Code</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-28">2024-04-28</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-28">2024-04-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;101 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="content" id="content"><p><strong>Best practices for coder</strong>
+<figure><img
+        
+        loading="lazy"
+        src="/blog/best-practices-for-coder/Best-Practices-For-Coder_hub66a4cdc24b71fee131f2fbd1f5032ff_1674522_1200x0_resize_q75_h2_lanczos.webp"
+        srcset="/blog/best-practices-for-coder/Best-Practices-For-Coder_hub66a4cdc24b71fee131f2fbd1f5032ff_1674522_700x0_resize_q75_h2_lanczos.webp 700w,
+            /blog/best-practices-for-coder/Best-Practices-For-Coder_hub66a4cdc24b71fee131f2fbd1f5032ff_1674522_1200x0_resize_q75_h2_lanczos.webp 1200w,
+            /blog/best-practices-for-coder/Best-Practices-For-Coder_hub66a4cdc24b71fee131f2fbd1f5032ff_1674522_2000x0_resize_q75_h2_lanczos.webp 2000w"
+        title="Best practices for coder" height="293"   width="1200" ><figcaption class="image-caption">Best practices for coder</figcaption>
+    </figure></p>
+<ol>
+<li>
+<p>Use <strong>descriptive names</strong> for everything to make code</p>
+<ol>
+<li><strong>Readable</strong></li>
+<li><strong>Understandable</strong></li>
+</ol>
+</li>
+<li>
+<p>Keep functions and classes <strong>small</strong> and <strong>focused</strong> on a <strong>single task</strong></p>
+</li>
+<li>
+<p>Use comments to <strong>explain complex logic</strong></p>
+</li>
+<li>
+<p>Write <strong>self-documenting</strong> code</p>
+</li>
+<li>
+<p>Use consistent indentation and formatting to make the code <strong>easy to read and navigate</strong></p>
+</li>
+<li>
+<p>Avoid <strong>duplication</strong> of code</p>
+<ol>
+<li>Extracting common functionality into <strong>reusable</strong> functions or classes</li>
+</ol>
+</li>
+<li>
+<p>Follow the <strong>SOLID principles</strong></p>
+<ol>
+<li>The Single Responsibility Principle</li>
+<li>The Open/Closed Principle</li>
+<li>The Liskov Substitution Principle</li>
+<li>The Interface Segregation Principle</li>
+<li>The Dependency Inversion Principle</li>
+</ol>
+</li>
+<li>
+<p>Write <strong>unit tests</strong></p>
+</li>
+<li>
+<p>Use <strong>version control</strong></p>
+</li>
+<li>
+<p><strong>Continuously refactor</strong> the code to improve</p>
+<ol>
+<li>Clean</li>
+<li>Maintainable</li>
+</ol>
+</li>
+</ol></div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/blog/ten-coder-bad-habits/">Ten coder bad habits</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/blog/git_commit_message/">GIT Commit message conventions</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/blog/naming/">Naming: Every Developer&#39;s Nightmare</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/blog/tags/miscellaneous/">Miscellaneous</a>,&nbsp;<a href="/blog/tags/code/">Code</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/blog/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/blog/ten-coder-bad-habits/" class="prev" rel="prev" title="Ten coder bad habits"><i class="fas fa-angle-left fa-fw"></i>Ten coder bad habits</a>
+            <a href="/blog/markdown_basic/" class="next" rel="next" title="Basic Markdown Syntax">Basic Markdown Syntax<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.125.4">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io/blog/" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"table":{"sort":true}};</script><script type="text/javascript" src="/blog/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/blog/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/blog/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

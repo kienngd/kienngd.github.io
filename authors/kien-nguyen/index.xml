@@ -4,7 +4,30 @@
         <link>https://kienngd.github.io/blog/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+    <title>Basic Markdown Syntax</title>
+    <link>https://kienngd.github.io/blog/markdown_basic/</link>
+    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/markdown_basic/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/markdown_basic/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
+</item><item>
+    <title>Best practices for coder</title>
+    <link>https://kienngd.github.io/blog/best-practices-for-coder/</link>
+    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/best-practices-for-coder/</guid>
+    <description><![CDATA[Best practices for coder]]></description>
+</item><item>
+    <title>Ten coder bad habits</title>
+    <link>https://kienngd.github.io/blog/ten-coder-bad-habits/</link>
+    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/ten-coder-bad-habits/</guid>
+    <description><![CDATA[Ten coder bad habits]]></description>
+</item><item>
     <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
     <link>https://kienngd.github.io/blog/install_openvpn_ubuntu/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
@@ -22,6 +45,13 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/quick-notes/quick-notes-banner.jpg" referrerpolicy="no-referrer">
             </div>Some Quick-Notes]]></description>
+</item><item>
+    <title>🚧 Quick-notes working with APIATO</title>
+    <link>https://kienngd.github.io/blog/quick-notes-apiato/</link>
+    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/quick-notes-apiato/</guid>
+    <description><![CDATA[Some Quick-Notes working with APIATO]]></description>
 </item><item>
     <title>🚧 Quick-notes working with Laravel</title>
     <link>https://kienngd.github.io/blog/quick-notes-laravel/</link>
@@ -54,78 +84,5 @@
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/blog/git_commit_message/</guid>
     <description><![CDATA[GIT Commit message conventions]]></description>
-</item><item>
-    <title>How To Use Screen Command In Linux: A Beginner’s Guide</title>
-    <link>https://kienngd.github.io/blog/use_screen_command_in_linux/</link>
-    <pubDate>Thu, 18 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/use_screen_command_in_linux/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/blog/use_screen_command_in_linux/LinuxCommands.png" referrerpolicy="no-referrer">
-            </div><p><strong>How To Use Screen Command In Linux: A Beginner’s Guide</strong></p>
-<p>Have you ever been frustrated when your <strong>SSH connection drops</strong> and your <strong>command gets terminated</strong>? If so, you need to learn about screen.</p>
-<p>Screen is a tool that lets you create multiple sessions on a single terminal. You can detach from a screen session and re-attach to it later, even from a different computer. This way, you can keep your commands running in the background without interruption.</p>]]></description>
-</item><item>
-    <title>How to Manage Software with Snap on Ubuntu 22.04</title>
-    <link>https://kienngd.github.io/blog/manage_sofware_using_snap/</link>
-    <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/manage_sofware_using_snap/</guid>
-    <description><![CDATA[How to Manage Software with Snap on Ubuntu 22.04]]></description>
-</item><item>
-    <title>Naming: Every Developer&#39;s Nightmare</title>
-    <link>https://kienngd.github.io/blog/naming/</link>
-    <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/naming/</guid>
-    <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
-</item><item>
-    <title>Strategy Pattern in PHP with examples</title>
-    <link>https://kienngd.github.io/blog/strategy_pattern_in_php/</link>
-    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/strategy_pattern_in_php/</guid>
-    <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
-    <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
-<h3 id="without-pattern" class="headerLink">
-    <a href="#without-pattern" class="header-mark"></a>1.1 Without pattern</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Sorter</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">bubbleSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Bubble Sort
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">quickSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Quick Sort
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">mergeSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Merge Sort
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$sorter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sorter</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$sortedArr</span> <span class="o">=</span> <span class="nv">$sorter</span><span class="o">-&gt;</span><span class="na">bubbleSort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description>
 </item></channel>
 </rss>

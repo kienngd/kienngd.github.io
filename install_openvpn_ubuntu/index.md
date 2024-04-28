@@ -13,7 +13,7 @@ This will be done in minutes.
     - Check and install requiremented-libs
     - Install on Ubuntu, Debian, AlmaLinux, Rocky Linux, CentOS and Fedora
     - Download and install `easy-rsa`
-    - Incase you want to use the newer easy-rsa, find and edit `easy_rsa_url=...` inside file `openvpn-install.sh`
+    - In case you want to use the newer version of easy-rsa, find and edit `easy_rsa_url=...` inside file `openvpn-install.sh`
     - Install OpenVPN-Server
     - Create some **firewall rules** (Create service **openvpn-iptables**)
     - Create the **first client**
