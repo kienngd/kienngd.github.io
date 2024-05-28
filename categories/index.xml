@@ -4,7 +4,14 @@
         <link>https://kienngd.github.io/blog/categories/</link>
         <description>Categories - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 May 2024 01:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Quick-Notes</title>
+    <link>https://kienngd.github.io/blog/categories/quick-notes/</link>
+    <pubDate>Tue, 28 May 2024 01:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/categories/quick-notes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Code</title>
     <link>https://kienngd.github.io/blog/categories/code/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
@@ -31,13 +38,6 @@
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/blog/categories/linux/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Quick-Notes</title>
-    <link>https://kienngd.github.io/blog/categories/quick-notes/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/categories/quick-notes/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>SQL</title>

@@ -38,7 +38,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kienngd.github.io/blog/quick-notes-ubuntu/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  67 ,
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  150 ,
         "url": "https://kienngd.github.io/blog/quick-notes-ubuntu/","datePublished": "2023-07-04T01:00:00+00:00","dateModified": "2023-12-05T01:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -123,13 +123,20 @@
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
     <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
+    <li><a href="#run-swagger-editor-docker">Run Swagger Editor docker</a></li>
+    <li><a href="#install-lubuntu-2404-notes">Install LUbuntu 24.04 notes</a>
+      <ul>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#after-install">After install</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🚧 Quick-notes working with Ubuntu</h1><h2 class="single-subtitle">Quick-notes working with Ubuntu</h2><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/blog/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/blog/categories/quick-notes/"><i class="far fa-folder fa-fw"></i>Quick-Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;67 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;150 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -145,6 +152,13 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
+    <li><a href="#run-swagger-editor-docker">Run Swagger Editor docker</a></li>
+    <li><a href="#install-lubuntu-2404-notes">Install LUbuntu 24.04 notes</a>
+      <ul>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#after-install">After install</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="some-quick-notes" class="headerLink">
@@ -179,13 +193,72 @@
 </span></span><span class="line"><span class="cl">fusermount -u /mnt/data
 </span></span></code></pre></td></tr></table>
 </div>
-</div></div>
+</div><hr>
+<h2 id="run-swagger-editor-docker" class="headerLink">
+    <a href="#run-swagger-editor-docker" class="header-mark"></a>2 Run Swagger Editor docker</h2><ul>
+<li>Document link: <a href="https://github.com/swagger-api/swagger-editor" target="_blank" rel="noopener noreferrer">https://github.com/swagger-api/swagger-editor</a></li>
+<li>Command</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker pull swaggerapi/swagger-editor
+</span></span><span class="line"><span class="cl">docker run -d -p 80:8080 swaggerapi/swagger-editor
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="install-lubuntu-2404-notes" class="headerLink">
+    <a href="#install-lubuntu-2404-notes" class="header-mark"></a>3 Install LUbuntu 24.04 notes</h2><h3 id="install" class="headerLink">
+    <a href="#install" class="header-mark"></a>3.1 Install</h3><ul>
+<li>Download LUbuntu ISO from offical site.</li>
+<li>Use tool <code>Start Disk Creator</code> to make bootable-usb</li>
+<li>Start PC from USB, then follow the instructions.</li>
+</ul>
+<h3 id="after-install" class="headerLink">
+    <a href="#after-install" class="header-mark"></a>3.2 After install</h3><ul>
+<li><strong>Auto-mount 2nd hdd</strong>
+<ul>
+<li>Run <code>sudo blkid</code> to get <code>UUID</code> of partitions</li>
+<li>Edit <code>/etc/fstab</code><br>
+Add:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">UUID=... /mount-point              ext4    discard    0 0    
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Reload:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">systemctl</span> <span class="n">daemon</span><span class="o">-</span><span class="n">reload</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>Install net-tools
+<code>sudo apt install net-tools</code></li>
+</ul></div>
 
         
 
 
 <h2>Related Content</h2>
 <div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/blog/track_daily_activities/">How to Use Google Clock and Habits to Track Daily Activities</a>
+            </h2>
+        </div>
     <div class="related-item-container">
             <div class="related-image">
                 <a href="/blog/quick-notes/"><img
