@@ -18,9 +18,11 @@
     <meta property="article:modified_time" content="2023-12-05T01:00:00+00:00">
     <meta property="article:tag" content="Quick-Notes">
     <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="🚧 Quick-notes working with Ubuntu">
-<meta name="twitter:description" content="Some Quick-Notes working with Ubuntu">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp">
+  <meta name="twitter:title" content="🚧 Quick-notes working with Ubuntu">
+  <meta name="twitter:description" content="Some Quick-Notes working with Ubuntu">
 <meta name="application-name" content="K5D::Blog">
 <meta name="apple-mobile-web-app-title" content="K5D::Blog">
 
@@ -38,7 +40,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kienngd.github.io/blog/quick-notes-ubuntu/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  150 ,
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  442 ,
         "url": "https://kienngd.github.io/blog/quick-notes-ubuntu/","datePublished": "2023-07-04T01:00:00+00:00","dateModified": "2023-12-05T01:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -130,13 +132,19 @@
         <li><a href="#after-install">After install</a></li>
       </ul>
     </li>
+    <li><a href="#install-ubuntu-2404-notes">Install Ubuntu 24.04 notes</a>
+      <ul>
+        <li><a href="#install-1">Install</a></li>
+        <li><a href="#after-install-1">After Install</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🚧 Quick-notes working with Ubuntu</h1><h2 class="single-subtitle">Quick-notes working with Ubuntu</h2><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/blog/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/blog/categories/quick-notes/"><i class="far fa-folder fa-fw"></i>Quick-Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;150 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;442 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -157,6 +165,12 @@
       <ul>
         <li><a href="#install">Install</a></li>
         <li><a href="#after-install">After install</a></li>
+      </ul>
+    </li>
+    <li><a href="#install-ubuntu-2404-notes">Install Ubuntu 24.04 notes</a>
+      <ul>
+        <li><a href="#install-1">Install</a></li>
+        <li><a href="#after-install-1">After Install</a></li>
       </ul>
     </li>
   </ul>
@@ -247,6 +261,173 @@ Add:
 </li>
 <li>Install net-tools
 <code>sudo apt install net-tools</code></li>
+</ul>
+<h2 id="install-ubuntu-2404-notes" class="headerLink">
+    <a href="#install-ubuntu-2404-notes" class="header-mark"></a>4 Install Ubuntu 24.04 notes</h2><h3 id="install-1" class="headerLink">
+    <a href="#install-1" class="header-mark"></a>4.1 Install</h3><ul>
+<li>Download Ubuntu ISO from offical site.</li>
+<li>Use tool <code>Start Disk Creator</code> to make bootable-usb</li>
+<li>Start PC from USB, then follow the instructions.</li>
+</ul>
+<h3 id="after-install-1" class="headerLink">
+    <a href="#after-install-1" class="header-mark"></a>4.2 After Install</h3><ul>
+<li>Install driver for usbwifi</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">	<span class="nb">cd</span> /hdd/data/softs/rtl8812au/
+</span></span><span class="line"><span class="cl">	git pull origin v5.6.4.2
+</span></span><span class="line"><span class="cl">	sudo apt install build-essential dkms
+</span></span><span class="line"><span class="cl">	sudo make dkms_install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>Install VPN</p>
+<ul>
+<li>Get file ovpn from vpn server.</li>
+<li>Import ovpn file.</li>
+<li>Connect.</li>
+</ul>
+</li>
+<li>
+<p>Install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  sudo apt install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>Change geany default font</p>
+</li>
+<li>
+<p>Set Shortcut key for main menu is: Meta (super, window, Microsoft)</p>
+</li>
+<li>
+<p>Vietnamese keyboard: <code>gnome-control-center --&gt; keyboard --&gt; input sources --&gt; add input sources</code></p>
+</li>
+<li>
+<p>Install docker</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  <span class="c1">## Add Docker&#39;s official GPG key:</span>
+</span></span><span class="line"><span class="cl">  sudo apt update
+</span></span><span class="line"><span class="cl">  sudo apt install ca-certificates curl
+</span></span><span class="line"><span class="cl">  sudo install -m <span class="m">0755</span> -d /etc/apt/keyrings
+</span></span><span class="line"><span class="cl">  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+</span></span><span class="line"><span class="cl">  sudo chmod a+r /etc/apt/keyrings/docker.asc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">## Add the repository to Apt sources:</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2"> signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu </span><span class="k">$(</span>. /etc/os-release <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$VERSION_CODENAME</span><span class="s2">&#34;</span><span class="k">)</span><span class="s2"> stable&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  sudo apt-get update
+</span></span><span class="line"><span class="cl">  sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  sudo usermod -aG docker kiennd <span class="c1">## Change kiennd to your real username</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>Install vscode</p>
+<ul>
+<li>Download file .deb from microsoft site</li>
+<li>sudo dpkg -i &hellip;.</li>
+</ul>
+</li>
+<li>
+<p>Set git parrams</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">	git config --global user.email <span class="s2">&#34;kienngd@gmail.com&#34;</span>
+</span></span><span class="line"><span class="cl">	git config --global user.name <span class="s2">&#34;Kien Nguyen&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>Install drawio</p>
+<ul>
+<li>wget <a href="https://github.com/jgraph/drawio-desktop/releases/download/v24.2.5/drawio-amd64-24.2.5.deb" target="_blank" rel="noopener noreferrer">https://github.com/jgraph/drawio-desktop/releases/download/v24.2.5/drawio-amd64-24.2.5.deb</a></li>
+<li>sudo dpkg -i drawio-amd64-24.2.5.deb</li>
+</ul>
+</li>
+<li>
+<p>Install Github-Desktop</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  wget https://github.com/shiftkey/desktop/releases/download/release-3.3.12-linux2/GitHubDesktop-linux-amd64-3.3.12-linux2.deb  <span class="c1">## Remember to check the newest version</span>
+</span></span><span class="line"><span class="cl">  sudo dpkg -i GitHubDesktop-linux-amd64-3.3.12-linux2.deb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>Install Google chrome</p>
+<ul>
+<li>Download file deb from google</li>
+<li><code>sudo dpkg -i google-chrome-stable_current_amd64.deb</code></li>
+</ul>
+</li>
+<li>
+<p>Set alias: <code>~/.bash_aliases</code></p>
+</li>
+<li>
+<p>Config ssl:</p>
+</li>
+<li>
+<p>Auto-mount 2nd ddd</p>
+<ul>
+<li>
+<p>Edit file <code>/etc/fstab</code></p>
+<p><code>UUID=... /mount-point              ext4    discard    0 0</code></p>
+</li>
+<li>
+<p><code>systemctl daemon-reload</code></p>
+</li>
+</ul>
+</li>
 </ul></div>
 
         
@@ -319,7 +500,7 @@ Add:
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.125.4">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.127.0">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io/blog/" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">

@@ -7,41 +7,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title>How to create ssl certificate for local test environment - K5D::Blog</title><meta name="Description" content="How to create ssl certificate for local test environment"><meta property="og:url" content="https://kienngd.github.io/blog/create_ssl_cert_for_local_test/">
+    <title>Simplifying Version Control with Git Stash - K5D::Blog</title><meta name="Description" content="Simplifying Version Control with Git Stash"><meta property="og:url" content="https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/">
   <meta property="og:site_name" content="K5D::Blog">
-  <meta property="og:title" content="How to create ssl certificate for local test environment">
-  <meta property="og:description" content="How to create ssl certificate for local test environment">
+  <meta property="og:title" content="Simplifying Version Control with Git Stash">
+  <meta property="og:description" content="Simplifying Version Control with Git Stash">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2021-12-20T00:00:00+00:00">
-    <meta property="article:modified_time" content="2021-12-20T00:00:00+00:00">
-    <meta property="article:tag" content="SSL">
+    <meta property="article:published_time" content="2024-06-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-17T00:00:00+00:00">
+    <meta property="article:tag" content="GIT">
     <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp">
-  <meta name="twitter:title" content="How to create ssl certificate for local test environment">
-  <meta name="twitter:description" content="How to create ssl certificate for local test environment">
+  <meta name="twitter:title" content="Simplifying Version Control with Git Stash">
+  <meta name="twitter:description" content="Simplifying Version Control with Git Stash">
 <meta name="application-name" content="K5D::Blog">
 <meta name="apple-mobile-web-app-title" content="K5D::Blog">
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/blog/create_ssl_cert_for_local_test/" /><link rel="prev" href="https://kienngd.github.io/blog/disable_wifi_power_save_ubuntu_20.04/" /><link rel="next" href="https://kienngd.github.io/blog/strategy_pattern_in_php/" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/" /><link rel="prev" href="https://kienngd.github.io/blog/track_daily_activities/" />
 <link rel="stylesheet" href="/blog/css/main.css"><link rel="stylesheet" href="/blog/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/blog/css/color.css"><link rel="stylesheet" href="/blog/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/blog/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/blog/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/blog/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/blog/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "How to create ssl certificate for local test environment",
+        "headline": "Simplifying Version Control with Git Stash",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://kienngd.github.io/blog/create_ssl_cert_for_local_test/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "SSL","wordcount":  270 ,
-        "url": "https://kienngd.github.io/blog/create_ssl_cert_for_local_test/","datePublished": "2021-12-20T00:00:00+00:00","dateModified": "2021-12-20T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "GIT","wordcount":  453 ,
+        "url": "https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/","datePublished": "2024-06-17T00:00:00+00:00","dateModified": "2024-06-17T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -51,7 +51,7 @@
                 }},"authors": [{
                         "@type": "Person",
                         "name": "Kien Nguyen"                    
-                    }],"description": "How to create ssl certificate for local test environment"
+                    }],"description": "Simplifying Version Control with Git Stash"
     }
     </script></head>
 
@@ -124,136 +124,174 @@
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li><a href="#create-certificate-authority">Create Certificate Authority</a></li>
-    <li><a href="#generate-rsa-for-domain">Generate rsa for domain</a>
-      <ul>
-        <li><a href="#create-private-key">Create private key</a></li>
-        <li><a href="#create-csr">Create csr</a></li>
-        <li><a href="#create-file-san-file">Create file SAN file</a></li>
-      </ul>
-    </li>
-    <li><a href="#create-domain-certificate">Create domain certificate</a></li>
+    <li><a href="#what-is-git-stash">What is <code>git stash</code>?</a></li>
+    <li><a href="#how-to-use-git-stash">How to Use <code>git stash</code>?</a></li>
+    <li><a href="#when-to-use-git-stash">When to Use <code>git stash</code>?</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to create ssl certificate for local test environment</h1><div class="post-meta">
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Simplifying Version Control with Git Stash</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/blog/authors/kien-nguyen'>Kien Nguyen</a></span>
-                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/blog/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-12-20">2021-12-20</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2021-12-20">2021-12-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;270 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/blog/categories/git/"><i class="far fa-folder fa-fw"></i>GIT</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-06-17">2024-06-17</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-06-17">2024-06-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;453 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
-        src="/blog/create_ssl_cert_for_local_test/ssl-secured-ssl-certificate-banner_hu3f1c99c8356ce85b0d4fc665f00a3c15_68124_1200x0_resize_q75_h2_lanczos_3.webp"
-        srcset="/blog/create_ssl_cert_for_local_test/ssl-secured-ssl-certificate-banner_hu3f1c99c8356ce85b0d4fc665f00a3c15_68124_700x0_resize_q75_h2_lanczos_3.webp 700w,
-            /blog/create_ssl_cert_for_local_test/ssl-secured-ssl-certificate-banner_hu3f1c99c8356ce85b0d4fc665f00a3c15_68124_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
-            /blog/create_ssl_cert_for_local_test/ssl-secured-ssl-certificate-banner_hu3f1c99c8356ce85b0d4fc665f00a3c15_68124_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
-        title="How to create ssl certificate for local test environment" height="363"   width="1200" ></div><div class="details toc" id="toc-static"  kept="">
+        src="/blog/simplifying_version_control_with_git_stash/git_stash_command_hueffe57a4da2a8f88fcd58667b21d062d_9947_1200x0_resize_q75_h2_lanczos_3.webp"
+        srcset="/blog/simplifying_version_control_with_git_stash/git_stash_command_hueffe57a4da2a8f88fcd58667b21d062d_9947_700x0_resize_q75_h2_lanczos_3.webp 700w,
+            /blog/simplifying_version_control_with_git_stash/git_stash_command_hueffe57a4da2a8f88fcd58667b21d062d_9947_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
+            /blog/simplifying_version_control_with_git_stash/git_stash_command_hueffe57a4da2a8f88fcd58667b21d062d_9947_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
+        title="Simplifying Version Control with Git Stash" height="742"   width="1200" ></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#create-certificate-authority">Create Certificate Authority</a></li>
-    <li><a href="#generate-rsa-for-domain">Generate rsa for domain</a>
-      <ul>
-        <li><a href="#create-private-key">Create private key</a></li>
-        <li><a href="#create-csr">Create csr</a></li>
-        <li><a href="#create-file-san-file">Create file SAN file</a></li>
-      </ul>
-    </li>
-    <li><a href="#create-domain-certificate">Create domain certificate</a></li>
+    <li><a href="#what-is-git-stash">What is <code>git stash</code>?</a></li>
+    <li><a href="#how-to-use-git-stash">How to Use <code>git stash</code>?</a></li>
+    <li><a href="#when-to-use-git-stash">When to Use <code>git stash</code>?</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>Hi there, it&rsquo;s me again! Today, I&rsquo;ll guide you through the process of creating an SSL certificate for your local test environment on Ubuntu 20.04. It&rsquo;s going to be a fun ride, so let&rsquo;s get started!</p>
-<p>In bash shell, run these commands:</p>
-<h2 id="create-certificate-authority" class="headerLink">
-    <a href="#create-certificate-authority" class="header-mark"></a>1 Create Certificate Authority</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl genrsa -des3 -out rootCA.key <span class="m">2048</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Input some information as required. Please notice to save <strong>pass phrase for rootCA.key</strong> in a safe place. You will use this many times later.</p>
+            </div><div class="content" id="content"><h1 id="simplifying-version-control-with-git-stash" class="headerLink">
+    <a href="#simplifying-version-control-with-git-stash" class="header-mark"></a>Simplifying Version Control with Git Stash</h1><p>In the world of software development, managing changes efficiently is crucial. Git, a powerful version control system, offers various commands to help streamline this process. One such command that comes in handy when you need to temporarily store your current changes without committing them is <code>git stash</code>.</p>
+<h2 id="what-is-git-stash" class="headerLink">
+    <a href="#what-is-git-stash" class="header-mark"></a>1 What is <code>git stash</code>?</h2><p><code>git stash</code> is a Git command that allows you to save your local modifications to a &ldquo;stash&rdquo; without committing them to your repository. This is useful when you need to switch branches or work on something else briefly without losing your current state.</p>
+<h2 id="how-to-use-git-stash" class="headerLink">
+    <a href="#how-to-use-git-stash" class="header-mark"></a>2 How to Use <code>git stash</code>?</h2><ol>
+<li>
+<p><strong>Stashing Your Changes:</strong>
+To stash your current changes, simply run</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl req -x509 -new -nodes -key rootCA.key -sha256 -days <span class="m">3650</span> -out rootCA.pem
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>Change days as you want. 3650 days mean 10 years. :).</p>
-<p>Now we will have two files: <strong>rootCA.key</strong> and <strong>rootCA.pem</strong>. Now you ara a certificate provider.</p>
-<p>In your client PC, open browser (chrome, firefox&hellip;) and import file <strong>rootCA.pem</strong> to tell browser &ldquo;I am a valid certificate provider&rdquo; :).</p>
-<!--more-->
-<h2 id="generate-rsa-for-domain" class="headerLink">
-    <a href="#generate-rsa-for-domain" class="header-mark"></a>2 Generate rsa for domain</h2><h3 id="create-private-key" class="headerLink">
-    <a href="#create-private-key" class="header-mark"></a>2.1 Create private key</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl genrsa -out YOUR_DOMAIN_NAME.key <span class="m">2048</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="create-csr" class="headerLink">
-    <a href="#create-csr" class="header-mark"></a>2.2 Create csr</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl req -new -key YOUR_DOMAIN_NAME.key -out YOUR_DOMAIN_NAME.csr
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="create-file-san-file" class="headerLink">
-    <a href="#create-file-san-file" class="header-mark"></a>2.3 Create file SAN file</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vi YOUR_DOMAIN_NAME.ext
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Content:</p>
+</div><p>This will stash both staged and unstaged changes.</p>
+</li>
+<li>
+<p><strong>Saving a Stash with a Message:</strong>
+You can save your current changes to a stash with a descriptive message using</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">authorityKeyIdentifier</span><span class="o">=</span>keyid,issuer
-</span></span><span class="line"><span class="cl"><span class="nv">basicConstraints</span><span class="o">=</span>CA:FALSE
-</span></span><span class="line"><span class="cl"><span class="nv">keyUsage</span> <span class="o">=</span> digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
-</span></span><span class="line"><span class="cl"><span class="nv">subjectAltName</span> <span class="o">=</span> @alt_names
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>alt_names<span class="o">]</span>
-</span></span><span class="line"><span class="cl">DNS.1 <span class="o">=</span> &lt;YOUR DOMAIN <span class="m">2</span> HERE&gt;
-</span></span><span class="line"><span class="cl">DNS.2 <span class="o">=</span> &lt;YOUR DOMAIN <span class="m">2</span> HERE&gt;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash save &#34;Your stash message here&#34;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>Please notice that you can add as <strong>much DNS.x</strong> as you want.</p>
-<h2 id="create-domain-certificate" class="headerLink">
-    <a href="#create-domain-certificate" class="header-mark"></a>3 Create domain certificate</h2><div class="highlight"><div class="chroma">
+</div><p>This is equivalent to <code>git stash push</code> in newer versions of Git.</p>
+</li>
+<li>
+<p><strong>Pushing Changes to Stash:</strong>
+In newer versions of Git, you can also push your changes to a stash using</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl x509 -req -in YOUR_DOMAIN_NAME.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out YOUR_DOMAIN_NAME.crt -days <span class="m">3650</span> -sha256 -extfile YOUR_DOMAIN_NAME.ext
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash push -m &#34;Your stash message here&#34;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>Change the days as you want. 3650 days mean about 10 years.</p>
-<p>Now you have <strong>crt, csr, key</strong> files for domain. Copy these files to web server (example nginx) and config.</p></div>
+</div></li>
+<li>
+<p><strong>Listing Stashes:</strong>
+You can view a list of your stashes using</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Each stash is assigned a unique identifier.</p>
+</li>
+<li>
+<p><strong>Applying a Stash:</strong>
+To apply the most recent stash (stash@{0}), use</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash apply
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If you have multiple stashes, you can specify which one to apply using its identifier</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash apply stash@{2}
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Popping a Stash:</strong>
+If you want to apply and remove the most recent stash from the stack, use</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash pop
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Clearing Stashes:</strong>
+To remove a specific stash from the stack, you can use</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash drop stash@{1}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>To clear all stashes, use</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash clear
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="when-to-use-git-stash" class="headerLink">
+    <a href="#when-to-use-git-stash" class="header-mark"></a>3 When to Use <code>git stash</code>?</h2><ul>
+<li><strong>Switching Branches:</strong> Stash your changes before switching branches to avoid conflicts.</li>
+<li><strong>Temporary Fixes:</strong> Stash changes temporarily to work on critical fixes or features.</li>
+<li><strong>Interrupted Workflows:</strong> Use stash to save your progress when interrupted by urgent tasks.</li>
+</ul>
+<h2 id="conclusion" class="headerLink">
+    <a href="#conclusion" class="header-mark"></a>4 Conclusion</h2><p><code>git stash</code> is a valuable tool in Git&rsquo;s arsenal that helps developers manage their workflow more efficiently by allowing them to temporarily store changes. Whether you&rsquo;re switching contexts or handling unexpected interruptions, mastering <code>git stash</code> can make your version control tasks smoother and more organized.</p>
+<p>Start using <code>git stash</code> today to simplify your development process and keep your repository history clean and manageable. Happy coding!</p>
+<hr>
+<p>This Markdown-formatted blog post provides a comprehensive overview of <code>git stash</code>, covering its basic usage as well as advanced features like saving stashes with messages (<code>git stash save</code> or <code>git stash push</code>). It is designed to be informative and accessible to beginners in software development.</p></div>
 
         
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/blog/git_commit_message/">GIT Commit message conventions</a>
+            </h2>
+        </div>
+    
+
+</div>
 
 <div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -270,14 +308,13 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/blog/tags/ssl/">SSL</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/blog/tags/git/">GIT</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/blog/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/blog/disable_wifi_power_save_ubuntu_20.04/" class="prev" rel="prev" title="How to disable wifi power save Ubuntu 20.04"><i class="fas fa-angle-left fa-fw"></i>How to disable wifi power save Ubuntu 20.04</a>
-            <a href="/blog/strategy_pattern_in_php/" class="next" rel="next" title="Strategy Pattern in PHP with examples">Strategy Pattern in PHP with examples<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/blog/track_daily_activities/" class="prev" rel="prev" title="How to Use Google Clock and Habits to Track Daily Activities"><i class="fas fa-angle-left fa-fw"></i>How to Use Google Clock and Habits to Track Daily Activities</a></div>
 </div>
 </article></div>
         </main><footer class="footer">

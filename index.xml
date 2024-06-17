@@ -4,9 +4,19 @@
         <link>https://kienngd.github.io/blog/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 May 2024 01:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Simplifying Version Control with Git Stash</title>
+    <link>https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/</link>
+    <pubDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/simplifying_version_control_with_git_stash/git_stash_command.png" referrerpolicy="no-referrer">
+            </div><h1 id="simplifying-version-control-with-git-stash" class="headerLink">
+    <a href="#simplifying-version-control-with-git-stash" class="header-mark"></a>Simplifying Version Control with Git Stash</h1><p>In the world of software development, managing changes efficiently is crucial. Git, a powerful version control system, offers various commands to help streamline this process. One such command that comes in handy when you need to temporarily store your current changes without committing them is <code>git stash</code>.</p>]]></description>
+</item><item>
     <title>How to Use Google Clock and Habits to Track Daily Activities</title>
     <link>https://kienngd.github.io/blog/track_daily_activities/</link>
     <pubDate>Tue, 28 May 2024 01:00:00 &#43;0000</pubDate><author>
@@ -79,12 +89,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/quick-notes-ubuntu/ubuntu-banner.png" referrerpolicy="no-referrer">
             </div>Some Quick-Notes working with Ubuntu]]></description>
-</item><item>
-    <title>TimescaleDB working with continuous aggregate</title>
-    <link>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</link>
-    <pubDate>Thu, 25 May 2023 01:10:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/timescaledb_working_with_continuous_aggregate/</guid>
-    <description><![CDATA[TimescaleDB working with continuous aggregate]]></description>
 </item></channel>
 </rss>

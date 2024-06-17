@@ -54,3 +54,88 @@ docker run -d -p 80:8080 swaggerapi/swagger-editor
         ```
   - Install net-tools
       `sudo apt install net-tools`
+
+## Install Ubuntu 24.04 notes
+### Install
+  - Download Ubuntu ISO from offical site.
+  - Use tool `Start Disk Creator` to make bootable-usb
+  - Start PC from USB, then follow the instructions.
+### After Install
+- Install driver for usbwifi
+```bash
+	cd /hdd/data/softs/rtl8812au/
+	git pull origin v5.6.4.2
+	sudo apt install build-essential dkms
+	sudo make dkms_install
+```
+
+- Install VPN
+  - Get file ovpn from vpn server.
+  - Import ovpn file.
+  - Connect.
+
+- Install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras
+```bash
+  sudo apt install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras
+```
+
+- Change geany default font
+
+- Set Shortcut key for main menu is: Meta (super, window, Microsoft)
+
+- Vietnamese keyboard: `gnome-control-center --> keyboard --> input sources --> add input sources`
+
+- Install docker
+```bash
+  ## Add Docker's official GPG key:
+  sudo apt update
+  sudo apt install ca-certificates curl
+  sudo install -m 0755 -d /etc/apt/keyrings
+  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+  ## Add the repository to Apt sources:
+  echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+  sudo apt-get update
+  sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+  sudo usermod -aG docker kiennd ## Change kiennd to your real username
+```
+
+- Install vscode
+  - Download file .deb from microsoft site
+  - sudo dpkg -i ....
+
+- Set git parrams
+```bash
+	git config --global user.email "kienngd@gmail.com"
+	git config --global user.name "Kien Nguyen"
+```
+
+- Install drawio
+	- wget https://github.com/jgraph/drawio-desktop/releases/download/v24.2.5/drawio-amd64-24.2.5.deb
+	- sudo dpkg -i drawio-amd64-24.2.5.deb
+
+- Install Github-Desktop
+```bash
+  wget https://github.com/shiftkey/desktop/releases/download/release-3.3.12-linux2/GitHubDesktop-linux-amd64-3.3.12-linux2.deb  ## Remember to check the newest version
+  sudo dpkg -i GitHubDesktop-linux-amd64-3.3.12-linux2.deb
+```
+
+- Install Google chrome
+	- Download file deb from google
+	- `sudo dpkg -i google-chrome-stable_current_amd64.deb`
+
+- Set alias: `~/.bash_aliases`
+
+- Config ssl: 
+
+
+- Auto-mount 2nd ddd
+	- Edit file `/etc/fstab`
+
+	  `UUID=... /mount-point              ext4    discard    0 0`
+
+	- `systemctl daemon-reload`

@@ -79,3 +79,11 @@
   - Super + ALT + Arrow: Change window size
   - CTRL + TAB: change window
 - ...
+
+## Git commands
+```bash
+  git stash list
+  git stash save
+  git stash push -m "My Point Name"
+  git pop  
+```
