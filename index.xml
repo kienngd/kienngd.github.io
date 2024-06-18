@@ -4,9 +4,20 @@
         <link>https://kienngd.github.io/blog/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>How to Use Swagger with Docker</title>
+    <link>https://kienngd.github.io/blog/using_swagger_with_docker/</link>
+    <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/using_swagger_with_docker/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/using_swagger_with_docker/swagger-editor.png" referrerpolicy="no-referrer">
+            </div>How to Use Swagger with Docker 1 PrerequisitesTo follow this guide, you need:
+Docker installed on your machine. Docker Compose installed on your machine. 2 Docker Compose FileThis is an example of a Docker Compose file for Swagger Editor, Swagger UI, and Swagger Codegen. Copy this file and save it as docker-compose.yml:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 services: swagger-editor: image: swaggerapi/swagger-editor ports: - &#34;8080:8080&#34; environment: SWAGGER_FILE: /data/swagger.]]></description>
+</item><item>
     <title>Simplifying Version Control with Git Stash</title>
     <link>https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/</link>
     <pubDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</pubDate><author>
@@ -80,14 +91,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/quick-notes-laravel/laravel-banner.webp" referrerpolicy="no-referrer">
             </div>Some Quick-Notes working with Laravel]]></description>
-</item><item>
-    <title>🚧 Quick-notes working with Ubuntu</title>
-    <link>https://kienngd.github.io/blog/quick-notes-ubuntu/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/quick-notes-ubuntu/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/blog/quick-notes-ubuntu/ubuntu-banner.png" referrerpolicy="no-referrer">
-            </div>Some Quick-Notes working with Ubuntu]]></description>
 </item></channel>
 </rss>
