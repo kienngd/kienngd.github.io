@@ -60,7 +60,14 @@ docker run -d -p 80:8080 swaggerapi/swagger-editor
   - Download Ubuntu ISO from offical site.
   - Use tool `Start Disk Creator` to make bootable-usb
   - Start PC from USB, then follow the instructions.
+  
 ### After Install
+
+- Install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras imagemagick
+```bash
+  sudo apt install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras imagemagick
+```
+
 - Install driver for usbwifi
 ```bash
 	cd /hdd/data/softs/rtl8812au/
@@ -74,10 +81,6 @@ docker run -d -p 80:8080 swaggerapi/swagger-editor
   - Import ovpn file.
   - Connect.
 
-- Install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras
-```bash
-  sudo apt install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras
-```
 
 - Change geany default font
 
