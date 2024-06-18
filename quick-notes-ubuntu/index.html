@@ -40,7 +40,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kienngd.github.io/blog/quick-notes-ubuntu/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  444 ,
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  419 ,
         "url": "https://kienngd.github.io/blog/quick-notes-ubuntu/","datePublished": "2023-07-04T01:00:00+00:00","dateModified": "2023-12-05T01:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -125,17 +125,12 @@
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
     <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
-    <li><a href="#run-swagger-editor-docker">Run Swagger Editor docker</a></li>
-    <li><a href="#install-lubuntu-2404-notes">Install LUbuntu 24.04 notes</a>
-      <ul>
-        <li><a href="#install">Install</a></li>
-        <li><a href="#after-install">After install</a></li>
-      </ul>
-    </li>
+    <li><a href="#change-route-metric">Change route metric</a></li>
+    <li><a href="#change-network-metric-of-docker-network-and-disable-log">Change network metric of docker network and disable log</a></li>
     <li><a href="#install-ubuntu-2404-notes">Install Ubuntu 24.04 notes</a>
       <ul>
-        <li><a href="#install-1">Install</a></li>
-        <li><a href="#after-install-1">After Install</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#after-install">After Install</a></li>
       </ul>
     </li>
   </ul>
@@ -144,7 +139,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/blog/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/blog/categories/quick-notes/"><i class="far fa-folder fa-fw"></i>Quick-Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;444 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;419 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -160,17 +155,12 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
-    <li><a href="#run-swagger-editor-docker">Run Swagger Editor docker</a></li>
-    <li><a href="#install-lubuntu-2404-notes">Install LUbuntu 24.04 notes</a>
-      <ul>
-        <li><a href="#install">Install</a></li>
-        <li><a href="#after-install">After install</a></li>
-      </ul>
-    </li>
+    <li><a href="#change-route-metric">Change route metric</a></li>
+    <li><a href="#change-network-metric-of-docker-network-and-disable-log">Change network metric of docker network and disable log</a></li>
     <li><a href="#install-ubuntu-2404-notes">Install Ubuntu 24.04 notes</a>
       <ul>
-        <li><a href="#install-1">Install</a></li>
-        <li><a href="#after-install-1">After Install</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#after-install">After Install</a></li>
       </ul>
     </li>
   </ul>
@@ -194,85 +184,99 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Install</span>
-</span></span><span class="line"><span class="cl">sudo apt install sshfs
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  <span class="c1"># Install</span>
+</span></span><span class="line"><span class="cl">  sudo apt install sshfs
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Show help message</span>
-</span></span><span class="line"><span class="cl">sshfs --help
+</span></span><span class="line"><span class="cl">  <span class="c1"># Show help message</span>
+</span></span><span class="line"><span class="cl">  sshfs --help
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Mount from folder /data from remote-server to folder /mnt/data at local-server</span>
-</span></span><span class="line"><span class="cl">sshfs USER@SERVER:/data /mnt/data -o reconnect,ServerAliveInterval<span class="o">=</span>15,ServerAliveCountMax<span class="o">=</span><span class="m">3</span> ...
+</span></span><span class="line"><span class="cl">  <span class="c1"># Mount from folder /data from remote-server to folder /mnt/data at local-server</span>
+</span></span><span class="line"><span class="cl">  sshfs USER@SERVER:/data /mnt/data -o reconnect,ServerAliveInterval<span class="o">=</span>15,ServerAliveCountMax<span class="o">=</span><span class="m">3</span> ...
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Unmount</span>
-</span></span><span class="line"><span class="cl">fusermount -u /mnt/data
+</span></span><span class="line"><span class="cl">  <span class="c1"># Unmount</span>
+</span></span><span class="line"><span class="cl">  fusermount -u /mnt/data
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h2 id="run-swagger-editor-docker" class="headerLink">
-    <a href="#run-swagger-editor-docker" class="header-mark"></a>2 Run Swagger Editor docker</h2><ul>
-<li>Document link: <a href="https://github.com/swagger-api/swagger-editor" target="_blank" rel="noopener noreferrer">https://github.com/swagger-api/swagger-editor</a></li>
-<li>Command</li>
-</ul>
+<h2 id="change-route-metric" class="headerLink">
+    <a href="#change-route-metric" class="header-mark"></a>2 Change route metric</h2><ul>
+<li>Problem: ???</li>
+<li>Edit file <code>vi /etc/netplan/50-cloud-init.yaml</code></li>
+<li>Find your interface. Example <code>ens3</code>. Add these lines
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker pull swaggerapi/swagger-editor
-</span></span><span class="line"><span class="cl">docker run -d -p 80:8080 swaggerapi/swagger-editor
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h2 id="install-lubuntu-2404-notes" class="headerLink">
-    <a href="#install-lubuntu-2404-notes" class="header-mark"></a>3 Install LUbuntu 24.04 notes</h2><h3 id="install" class="headerLink">
-    <a href="#install" class="header-mark"></a>3.1 Install</h3><ul>
-<li>Download LUbuntu ISO from offical site.</li>
-<li>Use tool <code>Start Disk Creator</code> to make bootable-usb</li>
-<li>Start PC from USB, then follow the instructions.</li>
-</ul>
-<h3 id="after-install" class="headerLink">
-    <a href="#after-install" class="header-mark"></a>3.2 After install</h3><ul>
-<li><strong>Auto-mount 2nd hdd</strong>
-<ul>
-<li>Run <code>sudo blkid</code> to get <code>UUID</code> of partitions</li>
-<li>Edit <code>/etc/fstab</code><br>
-Add:
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">UUID=... /mount-point              ext4    discard    0 0    
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="w">  </span><span class="nt">dhcp4-overrides</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">route-metric</span><span class="p">:</span><span class="w"> </span><span class="m">150</span><span class="w"> </span><span class="c"># This will change metric to 150.</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
-<li>Reload:
+<li>Apply change: <code>sudo netplan apply</code></li>
+</ul>
+<hr>
+<h2 id="change-network-metric-of-docker-network-and-disable-log" class="headerLink">
+    <a href="#change-network-metric-of-docker-network-and-disable-log" class="header-mark"></a>3 Change network metric of docker network and disable log</h2><ul>
+<li>Problem: ???</li>
+<li>Edit file: <code>/etc/docker/daemon.json</code></li>
+<li>Add these lines:
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">systemctl</span> <span class="n">daemon</span><span class="o">-</span><span class="n">reload</span>
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">  <span class="s2">&#34;mtu&#34;</span><span class="err">:</span><span class="mi">1450</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;log-driver&#34;</span><span class="err">:</span> <span class="s2">&#34;none&#34;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
-</li>
-<li>Install net-tools
-<code>sudo apt install net-tools</code></li>
-</ul>
+<hr>
+<!-- ## Run Swagger Editor docker
+- Document link: https://github.com/swagger-api/swagger-editor
+- Command
+```bash
+docker pull swaggerapi/swagger-editor
+docker run -d -p 80:8080 swaggerapi/swagger-editor
+```
+
+--- -->
+<!-- ## Install LUbuntu 24.04 notes
+### Install
+  - Download LUbuntu ISO from offical site.
+  - Use tool `Start Disk Creator` to make bootable-usb
+  - Start PC from USB, then follow the instructions.
+  
+### After install
+  - **Auto-mount 2nd hdd**
+    - Run `sudo blkid` to get `UUID` of partitions
+    - Edit `/etc/fstab`\
+    Add:
+      ```
+      UUID=... /mount-point              ext4    discard    0 0    
+      ```
+    -  Reload: 
+        ```
+        systemctl daemon-reload
+        ```
+  - Install net-tools
+      `sudo apt install net-tools`
+
+--- -->
 <h2 id="install-ubuntu-2404-notes" class="headerLink">
-    <a href="#install-ubuntu-2404-notes" class="header-mark"></a>4 Install Ubuntu 24.04 notes</h2><h3 id="install-1" class="headerLink">
-    <a href="#install-1" class="header-mark"></a>4.1 Install</h3><ul>
+    <a href="#install-ubuntu-2404-notes" class="header-mark"></a>4 Install Ubuntu 24.04 notes</h2><h3 id="install" class="headerLink">
+    <a href="#install" class="header-mark"></a>4.1 Install</h3><ul>
 <li>Download Ubuntu ISO from offical site.</li>
 <li>Use tool <code>Start Disk Creator</code> to make bootable-usb</li>
 <li>Start PC from USB, then follow the instructions.</li>
 </ul>
-<h3 id="after-install-1" class="headerLink">
-    <a href="#after-install-1" class="header-mark"></a>4.2 After Install</h3><ul>
-<li>Install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras imagemagick</li>
-</ul>
+<h3 id="after-install" class="headerLink">
+    <a href="#after-install" class="header-mark"></a>4.2 After Install</h3><ul>
+<li>
+<p>Install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras imagemagick</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -281,9 +285,9 @@ Add:
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  sudo apt install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras imagemagick
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>Install driver for usbwifi</li>
-</ul>
+</div></li>
+<li>
+<p>Install driver for usbwifi</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -292,13 +296,13 @@ Add:
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">	<span class="nb">cd</span> /hdd/data/softs/rtl8812au/
-</span></span><span class="line"><span class="cl">	git pull origin v5.6.4.2
-</span></span><span class="line"><span class="cl">	sudo apt install build-essential dkms
-</span></span><span class="line"><span class="cl">	sudo make dkms_install
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  <span class="nb">cd</span> /hdd/data/softs/rtl8812au/
+</span></span><span class="line"><span class="cl">  git pull origin v5.6.4.2
+</span></span><span class="line"><span class="cl">  sudo apt install build-essential dkms
+</span></span><span class="line"><span class="cl">  sudo make dkms_install
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
+</div></li>
 <li>
 <p>Install VPN</p>
 <ul>
@@ -318,8 +322,6 @@ Add:
 </li>
 <li>
 <p>Install docker</p>
-</li>
-</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -356,7 +358,7 @@ Add:
 </span></span><span class="line"><span class="cl">  sudo usermod -aG docker kiennd <span class="c1">## Change kiennd to your real username</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
+</div></li>
 <li>
 <p>Install vscode</p>
 <ul>
@@ -366,19 +368,17 @@ Add:
 </li>
 <li>
 <p>Set git parrams</p>
-</li>
-</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">	git config --global user.email <span class="s2">&#34;kienngd@gmail.com&#34;</span>
-</span></span><span class="line"><span class="cl">	git config --global user.name <span class="s2">&#34;Kien Nguyen&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  git config --global user.email <span class="s2">&#34;kienngd@gmail.com&#34;</span>
+</span></span><span class="line"><span class="cl">  git config --global user.name <span class="s2">&#34;Kien Nguyen&#34;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
+</div></li>
 <li>
 <p>Install drawio</p>
 <ul>
@@ -388,8 +388,6 @@ Add:
 </li>
 <li>
 <p>Install Github-Desktop</p>
-</li>
-</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -400,7 +398,7 @@ Add:
 </span></span><span class="line"><span class="cl">  sudo dpkg -i GitHubDesktop-linux-amd64-3.3.12-linux2.deb
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
+</div></li>
 <li>
 <p>Install Google chrome</p>
 <ul>
@@ -426,7 +424,8 @@ Add:
 </li>
 </ul>
 </li>
-</ul></div>
+</ul>
+<hr></div>
 
         
 
