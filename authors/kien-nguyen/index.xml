@@ -4,7 +4,17 @@
         <link>https://kienngd.github.io/blog/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+    <title>Functional options pattern with example</title>
+    <link>https://kienngd.github.io/blog/functional_options_pattern/</link>
+    <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/functional_options_pattern/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/functional_options_pattern/functional-options-social.png" referrerpolicy="no-referrer">
+            </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
+    <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
+</item><item>
     <title>How to Use ZRAM on Ubuntu 24.04</title>
     <link>https://kienngd.github.io/blog/how_to_use_zram_on_ubuntu_24_04/</link>
     <pubDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</pubDate><author>
@@ -84,12 +94,5 @@ Docker installed on your machine. Docker Compose installed on your machine. 2 Do
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/quick-notes/quick-notes-banner.jpg" referrerpolicy="no-referrer">
             </div>Some Quick-Notes]]></description>
-</item><item>
-    <title>🚧 Quick-notes working with APIATO</title>
-    <link>https://kienngd.github.io/blog/quick-notes-apiato/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/quick-notes-apiato/</guid>
-    <description><![CDATA[Some Quick-Notes working with APIATO]]></description>
 </item></channel>
 </rss>
