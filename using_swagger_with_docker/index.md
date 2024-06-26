@@ -9,6 +9,8 @@ To follow this guide, you need:
 - Docker installed on your machine.
 - Docker Compose installed on your machine.
 
+<!--more-->
+
 ## Docker Compose File
 
 This is an example of a Docker Compose file for Swagger Editor, Swagger UI, and Swagger Codegen. Copy this file and save it as `docker-compose.yml`:
