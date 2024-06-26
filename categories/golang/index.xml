@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GoLang - Category - K5D::Blog</title>
+        <link>https://kienngd.github.io/blog/categories/golang/</link>
+        <description>GoLang - Category - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/golang/" rel="self" type="application/rss+xml" /><item>
+    <title>Inheritance in GoLang</title>
+    <link>https://kienngd.github.io/blog/inheritance_in_golang.md/</link>
+    <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/inheritance_in_golang.md/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
+            </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
+</item></channel>
+</rss>

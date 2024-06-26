@@ -4,12 +4,26 @@
         <link>https://kienngd.github.io/blog/categories/</link>
         <description>Categories - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Code</title>
     <link>https://kienngd.github.io/blog/categories/code/</link>
-    <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/blog/categories/code/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>GoLang</title>
+    <link>https://kienngd.github.io/blog/categories/golang/</link>
+    <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/categories/golang/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>OOP</title>
+    <link>https://kienngd.github.io/blog/categories/oop/</link>
+    <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/blog/categories/oop/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Design-Pattern</title>
@@ -59,20 +73,6 @@
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/blog/categories/linux/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>SQL</title>
-    <link>https://kienngd.github.io/blog/categories/sql/</link>
-    <pubDate>Thu, 25 May 2023 01:10:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/categories/sql/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Howto</title>
-    <link>https://kienngd.github.io/blog/categories/howto/</link>
-    <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/categories/howto/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
