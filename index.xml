@@ -4,9 +4,19 @@
         <link>https://kienngd.github.io/blog/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>The Pomodoro Technique: Enhancing Productivity</title>
+    <link>https://kienngd.github.io/blog/pomodoro/</link>
+    <pubDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/blog/pomodoro/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/pomodoro/pomodoro-technique-banner.jpg" referrerpolicy="no-referrer">
+            </div><p><strong>The Pomodoro Technique: Enhancing Productivity</strong></p>
+<p>The Pomodoro Technique, developed by Francesco Cirillo in the late 1980s, has become a popular method for improving productivity and managing time effectively. Here’s a deeper look into its origins and notable users:</p>]]></description>
+</item><item>
     <title>Inheritance in GoLang</title>
     <link>https://kienngd.github.io/blog/inheritance_in_golang.md/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
@@ -91,14 +101,5 @@ Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></des
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/blog/ten-coder-bad-habits/</guid>
     <description><![CDATA[Ten coder bad habits]]></description>
-</item><item>
-    <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
-    <link>https://kienngd.github.io/blog/install_openvpn_ubuntu/</link>
-    <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/install_openvpn_ubuntu/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/blog/install_openvpn_ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
-            </div><p><strong>Do you want to protect your data online?</strong> OpenVPN is the solution for you! Today, we will install OpenVPN on your Ubuntu 22.04 server and set up a secure VPN connection.</p>]]></description>
 </item></channel>
 </rss>

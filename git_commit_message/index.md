@@ -13,6 +13,8 @@ Ref-Url: https://www.conventionalcommits.org/en/v1.0.0/
 [optional footer]
 ```
 
+<!--more-->
+
 ## Types list
 - ✨ feat: add new feature
 - 🐛 fix: fix bug
