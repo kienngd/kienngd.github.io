@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>SSL - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/blog/tags/ssl/</link>
+        <link>https://kienngd.github.io/tags/ssl/</link>
         <description>SSL - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 20 Dec 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/ssl/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 20 Dec 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/ssl/" rel="self" type="application/rss+xml" /><item>
     <title>How to create ssl certificate for local test environment</title>
-    <link>https://kienngd.github.io/blog/create_ssl_cert_for_local_test/</link>
+    <link>https://kienngd.github.io/create_ssl_cert_for_local_test/</link>
     <pubDate>Mon, 20 Dec 2021 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/create_ssl_cert_for_local_test/</guid>
+                </author><guid>https://kienngd.github.io/create_ssl_cert_for_local_test/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/create_ssl_cert_for_local_test/ssl-secured-ssl-certificate-banner.png" referrerpolicy="no-referrer">
+                <img src="/create_ssl_cert_for_local_test/ssl-secured-ssl-certificate-banner.png" referrerpolicy="no-referrer">
             </div><p>Hi there, it&rsquo;s me again! Today, I&rsquo;ll guide you through the process of creating an SSL certificate for your local test environment on Ubuntu 20.04. It&rsquo;s going to be a fun ride, so let&rsquo;s get started!</p>
 <p>In bash shell, run these commands:</p>]]></description>
 </item></channel>

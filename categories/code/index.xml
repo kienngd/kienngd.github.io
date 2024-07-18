@@ -1,55 +1,55 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Code - Category - K5D::Blog</title>
-        <link>https://kienngd.github.io/blog/categories/code/</link>
+        <link>https://kienngd.github.io/categories/code/</link>
         <description>Code - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/categories/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/code/" rel="self" type="application/rss+xml" /><item>
     <title>Inheritance in GoLang</title>
-    <link>https://kienngd.github.io/blog/inheritance_in_golang.md/</link>
+    <link>https://kienngd.github.io/inheritance_in_golang.md/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/inheritance_in_golang.md/</guid>
+                </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
+                <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
             </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
 </item><item>
     <title>Functional options pattern with example</title>
-    <link>https://kienngd.github.io/blog/functional_options_pattern/</link>
+    <link>https://kienngd.github.io/functional_options_pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/functional_options_pattern/</guid>
+                </author><guid>https://kienngd.github.io/functional_options_pattern/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/functional_options_pattern/functional-options-social.png" referrerpolicy="no-referrer">
+                <img src="/functional_options_pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
     <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
 </item><item>
     <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/blog/best-practices-for-coder/</link>
+    <link>https://kienngd.github.io/best-practices-for-coder/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/best-practices-for-coder/</guid>
+                </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
     <description><![CDATA[Best practices for coder]]></description>
 </item><item>
     <title>Ten coder bad habits</title>
-    <link>https://kienngd.github.io/blog/ten-coder-bad-habits/</link>
+    <link>https://kienngd.github.io/ten-coder-bad-habits/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/ten-coder-bad-habits/</guid>
+                </author><guid>https://kienngd.github.io/ten-coder-bad-habits/</guid>
     <description><![CDATA[Ten coder bad habits]]></description>
 </item><item>
     <title>Naming: Every Developer&#39;s Nightmare</title>
-    <link>https://kienngd.github.io/blog/naming/</link>
+    <link>https://kienngd.github.io/naming/</link>
     <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/naming/</guid>
+                </author><guid>https://kienngd.github.io/naming/</guid>
     <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item><item>
     <title>Strategy Pattern in PHP with examples</title>
-    <link>https://kienngd.github.io/blog/strategy_pattern_in_php/</link>
+    <link>https://kienngd.github.io/strategy_pattern_in_php/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/strategy_pattern_in_php/</guid>
+                </author><guid>https://kienngd.github.io/strategy_pattern_in_php/</guid>
     <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
     <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
 <h3 id="without-pattern" class="headerLink">
@@ -94,10 +94,10 @@
 </div>]]></description>
 </item><item>
     <title>How to working with JSON in GoLang</title>
-    <link>https://kienngd.github.io/blog/working_with_json_in_golang/</link>
+    <link>https://kienngd.github.io/working_with_json_in_golang/</link>
     <pubDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/working_with_json_in_golang/</guid>
+                </author><guid>https://kienngd.github.io/working_with_json_in_golang/</guid>
     <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
 <p><strong>Working with structed data</strong></p>
 <div class="highlight"><div class="chroma">

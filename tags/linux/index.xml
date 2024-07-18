@@ -1,28 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Linux - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/blog/tags/linux/</link>
+        <link>https://kienngd.github.io/tags/linux/</link>
         <description>Linux - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
     <title>How To Use Screen Command In Linux: A Beginner’s Guide</title>
-    <link>https://kienngd.github.io/blog/use_screen_command_in_linux/</link>
+    <link>https://kienngd.github.io/use_screen_command_in_linux/</link>
     <pubDate>Thu, 18 May 2023 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/use_screen_command_in_linux/</guid>
+                </author><guid>https://kienngd.github.io/use_screen_command_in_linux/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/use_screen_command_in_linux/LinuxCommands.png" referrerpolicy="no-referrer">
+                <img src="/use_screen_command_in_linux/LinuxCommands.png" referrerpolicy="no-referrer">
             </div><p><strong>How To Use Screen Command In Linux: A Beginner’s Guide</strong></p>
 <p>Have you ever been frustrated when your <strong>SSH connection drops</strong> and your <strong>command gets terminated</strong>? If so, you need to learn about screen.</p>
 <p>Screen is a tool that lets you create multiple sessions on a single terminal. You can detach from a screen session and re-attach to it later, even from a different computer. This way, you can keep your commands running in the background without interruption.</p>]]></description>
 </item><item>
     <title>How to create a linux service</title>
-    <link>https://kienngd.github.io/blog/create_linux_service/</link>
+    <link>https://kienngd.github.io/create_linux_service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/create_linux_service/</guid>
+                </author><guid>https://kienngd.github.io/create_linux_service/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/create_linux_service/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
+                <img src="/create_linux_service/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
             </div>How to create a linux service]]></description>
 </item></channel>
 </rss>

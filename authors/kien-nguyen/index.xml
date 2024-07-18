@@ -1,57 +1,57 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Kien Nguyen - Author - K5D::Blog</title>
-        <link>https://kienngd.github.io/blog/authors/kien-nguyen/</link>
+        <link>https://kienngd.github.io/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
     <title>The Pomodoro Technique: Enhancing Productivity</title>
-    <link>https://kienngd.github.io/blog/pomodoro/</link>
+    <link>https://kienngd.github.io/pomodoro/</link>
     <pubDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/pomodoro/</guid>
+                </author><guid>https://kienngd.github.io/pomodoro/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/pomodoro/pomodoro-technique-banner.jpg" referrerpolicy="no-referrer">
+                <img src="/pomodoro/pomodoro-technique-banner.jpg" referrerpolicy="no-referrer">
             </div><p><strong>The Pomodoro Technique: Enhancing Productivity</strong></p>
 <p>The Pomodoro Technique, developed by Francesco Cirillo in the late 1980s, has become a popular method for improving productivity and managing time effectively. Here’s a deeper look into its origins and notable users:</p>]]></description>
 </item><item>
     <title>Inheritance in GoLang</title>
-    <link>https://kienngd.github.io/blog/inheritance_in_golang.md/</link>
+    <link>https://kienngd.github.io/inheritance_in_golang.md/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/inheritance_in_golang.md/</guid>
+                </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
+                <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
             </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
 </item><item>
     <title>Functional options pattern with example</title>
-    <link>https://kienngd.github.io/blog/functional_options_pattern/</link>
+    <link>https://kienngd.github.io/functional_options_pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/functional_options_pattern/</guid>
+                </author><guid>https://kienngd.github.io/functional_options_pattern/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/functional_options_pattern/functional-options-social.png" referrerpolicy="no-referrer">
+                <img src="/functional_options_pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
     <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
 </item><item>
     <title>How to Use ZRAM on Ubuntu 24.04</title>
-    <link>https://kienngd.github.io/blog/how_to_use_zram_on_ubuntu_24_04/</link>
+    <link>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</link>
     <pubDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/how_to_use_zram_on_ubuntu_24_04/</guid>
+                </author><guid>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/how_to_use_zram_on_ubuntu_24_04/swap-zram.png" referrerpolicy="no-referrer">
+                <img src="/how_to_use_zram_on_ubuntu_24_04/swap-zram.png" referrerpolicy="no-referrer">
             </div>How to Use ZRAM on Ubuntu 24.04 1 What is ZRAM?ZRAM is a Linux kernel module. It creates a compressed block device in RAM. This block device can be used for swap space or as a temporary filesystem. Because it is compressed, it saves memory and can make your system faster.
 2 Pros and Cons of Using ZRAMPros:
 Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></description>
 </item><item>
     <title>How to Use Swagger with Docker</title>
-    <link>https://kienngd.github.io/blog/using_swagger_with_docker/</link>
+    <link>https://kienngd.github.io/using_swagger_with_docker/</link>
     <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/using_swagger_with_docker/</guid>
+                </author><guid>https://kienngd.github.io/using_swagger_with_docker/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/using_swagger_with_docker/swagger-editor.png" referrerpolicy="no-referrer">
+                <img src="/using_swagger_with_docker/swagger-editor.png" referrerpolicy="no-referrer">
             </div><h1 id="how-to-use-swagger-with-docker" class="headerLink">
     <a href="#how-to-use-swagger-with-docker" class="header-mark"></a>How to Use Swagger with Docker</h1><h2 id="prerequisites" class="headerLink">
     <a href="#prerequisites" class="header-mark"></a>1 Prerequisites</h2><p>To follow this guide, you need:</p>
@@ -61,43 +61,43 @@ Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></des
 </ul>]]></description>
 </item><item>
     <title>Simplifying Version Control with Git Stash</title>
-    <link>https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/</link>
+    <link>https://kienngd.github.io/simplifying_version_control_with_git_stash/</link>
     <pubDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/simplifying_version_control_with_git_stash/</guid>
+                </author><guid>https://kienngd.github.io/simplifying_version_control_with_git_stash/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/simplifying_version_control_with_git_stash/git_stash_command.png" referrerpolicy="no-referrer">
+                <img src="/simplifying_version_control_with_git_stash/git_stash_command.png" referrerpolicy="no-referrer">
             </div><h1 id="simplifying-version-control-with-git-stash" class="headerLink">
     <a href="#simplifying-version-control-with-git-stash" class="header-mark"></a>Simplifying Version Control with Git Stash</h1><p>In the world of software development, managing changes efficiently is crucial. Git, a powerful version control system, offers various commands to help streamline this process. One such command that comes in handy when you need to temporarily store your current changes without committing them is <code>git stash</code>.</p>]]></description>
 </item><item>
     <title>How to Use Google Clock and Habits to Track Daily Activities</title>
-    <link>https://kienngd.github.io/blog/track_daily_activities/</link>
+    <link>https://kienngd.github.io/track_daily_activities/</link>
     <pubDate>Tue, 28 May 2024 01:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/track_daily_activities/</guid>
+                </author><guid>https://kienngd.github.io/track_daily_activities/</guid>
     <description><![CDATA[How to Use Google Clock and Habits to Track Daily Activities]]></description>
 </item><item>
     <title>Basic Markdown Syntax</title>
-    <link>https://kienngd.github.io/blog/markdown_basic/</link>
+    <link>https://kienngd.github.io/markdown_basic/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/markdown_basic/</guid>
+                </author><guid>https://kienngd.github.io/markdown_basic/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/blog/markdown_basic/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
+                <img src="/markdown_basic/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
             </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
 </item><item>
     <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/blog/best-practices-for-coder/</link>
+    <link>https://kienngd.github.io/best-practices-for-coder/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/best-practices-for-coder/</guid>
+                </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
     <description><![CDATA[Best practices for coder]]></description>
 </item><item>
     <title>Ten coder bad habits</title>
-    <link>https://kienngd.github.io/blog/ten-coder-bad-habits/</link>
+    <link>https://kienngd.github.io/ten-coder-bad-habits/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/ten-coder-bad-habits/</guid>
+                </author><guid>https://kienngd.github.io/ten-coder-bad-habits/</guid>
     <description><![CDATA[Ten coder bad habits]]></description>
 </item></channel>
 </rss>

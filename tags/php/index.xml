@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>PHP - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/blog/tags/php/</link>
+        <link>https://kienngd.github.io/tags/php/</link>
         <description>PHP - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/php/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/php/" rel="self" type="application/rss+xml" /><item>
     <title>Strategy Pattern in PHP with examples</title>
-    <link>https://kienngd.github.io/blog/strategy_pattern_in_php/</link>
+    <link>https://kienngd.github.io/strategy_pattern_in_php/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/strategy_pattern_in_php/</guid>
+                </author><guid>https://kienngd.github.io/strategy_pattern_in_php/</guid>
     <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
     <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
 <h3 id="without-pattern" class="headerLink">

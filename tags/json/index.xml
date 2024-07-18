@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>JSON - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/blog/tags/json/</link>
+        <link>https://kienngd.github.io/tags/json/</link>
         <description>JSON - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/json/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/json/" rel="self" type="application/rss+xml" /><item>
     <title>How to working with JSON in GoLang</title>
-    <link>https://kienngd.github.io/blog/working_with_json_in_golang/</link>
+    <link>https://kienngd.github.io/working_with_json_in_golang/</link>
     <pubDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/blog/working_with_json_in_golang/</guid>
+                </author><guid>https://kienngd.github.io/working_with_json_in_golang/</guid>
     <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
 <p><strong>Working with structed data</strong></p>
 <div class="highlight"><div class="chroma">

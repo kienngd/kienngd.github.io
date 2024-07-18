@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/blog/tags/</link>
+        <link>https://kienngd.github.io/tags/</link>
         <description>Tags - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/blog/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Time-Management</title>
-    <link>https://kienngd.github.io/blog/tags/time-management/</link>
+    <link>https://kienngd.github.io/tags/time-management/</link>
     <pubDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/time-management/</guid>
+    </author><guid>https://kienngd.github.io/tags/time-management/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>GoLang</title>
-    <link>https://kienngd.github.io/blog/tags/golang/</link>
+    <link>https://kienngd.github.io/tags/golang/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/golang/</guid>
+    </author><guid>https://kienngd.github.io/tags/golang/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>OOP</title>
-    <link>https://kienngd.github.io/blog/tags/oop/</link>
+    <link>https://kienngd.github.io/tags/oop/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/oop/</guid>
+    </author><guid>https://kienngd.github.io/tags/oop/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Design-Pattern</title>
-    <link>https://kienngd.github.io/blog/tags/design-pattern/</link>
+    <link>https://kienngd.github.io/tags/design-pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/design-pattern/</guid>
+    </author><guid>https://kienngd.github.io/tags/design-pattern/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Markdown</title>
-    <link>https://kienngd.github.io/blog/tags/markdown/</link>
+    <link>https://kienngd.github.io/tags/markdown/</link>
     <pubDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/markdown/</guid>
+    </author><guid>https://kienngd.github.io/tags/markdown/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>API</title>
-    <link>https://kienngd.github.io/blog/tags/api/</link>
+    <link>https://kienngd.github.io/tags/api/</link>
     <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/api/</guid>
+    </author><guid>https://kienngd.github.io/tags/api/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>API-Design</title>
-    <link>https://kienngd.github.io/blog/tags/api-design/</link>
+    <link>https://kienngd.github.io/tags/api-design/</link>
     <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/api-design/</guid>
+    </author><guid>https://kienngd.github.io/tags/api-design/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>OpenAPI</title>
-    <link>https://kienngd.github.io/blog/tags/openapi/</link>
+    <link>https://kienngd.github.io/tags/openapi/</link>
     <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/openapi/</guid>
+    </author><guid>https://kienngd.github.io/tags/openapi/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>GIT</title>
-    <link>https://kienngd.github.io/blog/tags/git/</link>
+    <link>https://kienngd.github.io/tags/git/</link>
     <pubDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/git/</guid>
+    </author><guid>https://kienngd.github.io/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Quick-Notes</title>
-    <link>https://kienngd.github.io/blog/tags/quick-notes/</link>
+    <link>https://kienngd.github.io/tags/quick-notes/</link>
     <pubDate>Tue, 28 May 2024 01:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/blog/tags/quick-notes/</guid>
+    </author><guid>https://kienngd.github.io/tags/quick-notes/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
