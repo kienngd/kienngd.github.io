@@ -4,7 +4,15 @@
         <link>https://kienngd.github.io/categories/howto/</link>
         <description>Howto - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/howto/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/howto/" rel="self" type="application/rss+xml" /><item>
+    <title>Using the at Command in Ubuntu 24.04 to Schedule Tasks</title>
+    <link>https://kienngd.github.io/using_at_command/</link>
+    <pubDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/using_at_command/</guid>
+    <description><![CDATA[<p><strong>Using the <code>at</code> Command in Ubuntu 24.04 to Schedule Tasks</strong></p>
+<p>The <code>at</code> command allows users to execute specific actions at any future time without needing continuous supervision. In this example, I use Ubuntu 24.04 to test.</p>]]></description>
+</item><item>
     <title>How to disable wifi power save Ubuntu 20.04</title>
     <link>https://kienngd.github.io/disable_wifi_power_save_ubuntu_20.04/</link>
     <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>

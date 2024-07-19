@@ -2,13 +2,17 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://kienngd.github.io/authors/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/categories/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/authors/kien-nguyen/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/authors/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/command/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/howto/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/authors/kien-nguyen/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/posts/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/ubunttu/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/using_at_command/</loc><lastmod>2024-07-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/categories/notes/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/posts/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/pomodoro/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/tags/time-management/</loc><lastmod>2024-07-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/categories/code/</loc><lastmod>2024-06-26T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
@@ -65,7 +69,6 @@
             <loc>https://kienngd.github.io/create_ssl_cert_for_local_test/</loc><lastmod>2021-12-20T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/tags/ssl/</loc><lastmod>2021-12-20T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/disable_wifi_power_save_ubuntu_20.04/</loc><lastmod>2020-10-11T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://kienngd.github.io/categories/howto/</loc><lastmod>2020-10-11T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/tags/wifi/</loc><lastmod>2020-10-11T01:10:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/check_my_ip_address/</loc><lastmod>2020-10-10T08:56:09&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/create_linux_service/</loc><lastmod>2020-10-10T08:56:09&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
