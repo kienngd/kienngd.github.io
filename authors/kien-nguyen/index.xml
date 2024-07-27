@@ -4,7 +4,14 @@
         <link>https://kienngd.github.io/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+    <title>Sending emails through Gmail in Laravel</title>
+    <link>https://kienngd.github.io/send_email_with_laravel_using_gmail/</link>
+    <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/send_email_with_laravel_using_gmail/</guid>
+    <description><![CDATA[<p>Sending emails through Gmail in Laravel is straightforward and requires a few setup steps to integrate Gmail&rsquo;s SMTP server with your Laravel application.</p>]]></description>
+</item><item>
     <title>Using the at Command in Ubuntu 24.04 to Schedule Tasks</title>
     <link>https://kienngd.github.io/using_at_command/</link>
     <pubDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</pubDate><author>
@@ -93,12 +100,5 @@ Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></des
     <description><![CDATA[<div class="featured-image">
                 <img src="/markdown_basic/basic-markdown-featured-image.webp" referrerpolicy="no-referrer">
             </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
-</item><item>
-    <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/best-practices-for-coder/</link>
-    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
-    <description><![CDATA[Best practices for coder]]></description>
 </item></channel>
 </rss>

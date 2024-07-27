@@ -4,7 +4,28 @@
         <link>https://kienngd.github.io/tags/</link>
         <description>Tags - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Code</title>
+    <link>https://kienngd.github.io/tags/code/</link>
+    <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/tags/code/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Laravel</title>
+    <link>https://kienngd.github.io/tags/laravel/</link>
+    <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/tags/laravel/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Notes</title>
+    <link>https://kienngd.github.io/tags/notes/</link>
+    <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/tags/notes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Command</title>
     <link>https://kienngd.github.io/tags/command/</link>
     <pubDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</pubDate><author>
@@ -52,27 +73,6 @@
     <pubDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/tags/markdown/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>API</title>
-    <link>https://kienngd.github.io/tags/api/</link>
-    <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/api/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>API-Design</title>
-    <link>https://kienngd.github.io/tags/api-design/</link>
-    <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/api-design/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>OpenAPI</title>
-    <link>https://kienngd.github.io/tags/openapi/</link>
-    <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/openapi/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
