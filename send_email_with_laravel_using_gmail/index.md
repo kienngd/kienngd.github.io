@@ -35,7 +35,5 @@ Mail::raw('Test email message from Laravel.', function ($message) {
     $message->to('recipient@gmail.com')->subject('Test email message from Laravel');
 });
 ```
-Replace `'recipient@gmail.com'` with the recipient's email address. This code sends a simple email message using Laravel's Mail facade.
+Replace `'recipient@gmail.com'` with the right email address.
 
-**Conclusion:**
-By following these steps, you've successfully configured Laravel to send emails via Gmail. This setup ensures reliable email delivery from your Laravel application using Gmail's SMTP server.
