@@ -24,6 +24,16 @@ Test with ubuntu 22.04
 
 ---
 
+## Supervisor commands
+```bash
+  # After change your config file, run these commands
+  supervisorctl reread
+  supervisorctl update
+
+  # Restart some process
+  supervisorctl restart SUPERVISOR-PROGRAM-NAME
+```
+
 ## Change route metric
 - Problem: ???
 - Edit file `vi /etc/netplan/50-cloud-init.yaml`

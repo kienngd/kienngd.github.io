@@ -4,18 +4,7 @@
         <link>https://kienngd.github.io/tags/markdown/</link>
         <description>Markdown - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/markdown/" rel="self" type="application/rss+xml" /><item>
-    <title>How to Use ZRAM on Ubuntu 24.04</title>
-    <link>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</link>
-    <pubDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/how_to_use_zram_on_ubuntu_24_04/swap-zram.png" referrerpolicy="no-referrer">
-            </div>How to Use ZRAM on Ubuntu 24.04 1 What is ZRAM?ZRAM is a Linux kernel module. It creates a compressed block device in RAM. This block device can be used for swap space or as a temporary filesystem. Because it is compressed, it saves memory and can make your system faster.
-2 Pros and Cons of Using ZRAMPros:
-Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></description>
-</item><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/markdown/" rel="self" type="application/rss+xml" /><item>
     <title>Basic Markdown Syntax</title>
     <link>https://kienngd.github.io/markdown_basic/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>

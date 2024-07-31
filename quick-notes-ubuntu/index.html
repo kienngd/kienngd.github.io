@@ -6,7 +6,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noodp" />
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
     <title>🚧 Quick-notes working with Ubuntu - K5D::Blog</title><meta name="Description" content="Some Quick-Notes working with Ubuntu"><meta property="og:url" content="https://kienngd.github.io/quick-notes-ubuntu/">
   <meta property="og:site_name" content="K5D::Blog">
   <meta property="og:title" content="🚧 Quick-notes working with Ubuntu">
@@ -18,9 +19,11 @@
     <meta property="article:modified_time" content="2023-12-05T01:00:00+00:00">
     <meta property="article:tag" content="Quick-Notes">
     <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="🚧 Quick-notes working with Ubuntu">
-<meta name="twitter:description" content="Some Quick-Notes working with Ubuntu">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp">
+  <meta name="twitter:title" content="🚧 Quick-notes working with Ubuntu">
+  <meta name="twitter:description" content="Some Quick-Notes working with Ubuntu">
 <meta name="application-name" content="K5D::Blog">
 <meta name="apple-mobile-web-app-title" content="K5D::Blog">
 
@@ -38,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kienngd.github.io/quick-notes-ubuntu/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  419 ,
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Quick-Notes","wordcount":  448 ,
         "url": "https://kienngd.github.io/quick-notes-ubuntu/","datePublished": "2023-07-04T01:00:00+00:00","dateModified": "2023-12-05T01:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -123,6 +126,7 @@
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
     <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
+    <li><a href="#supervisor-commands">Supervisor commands</a></li>
     <li><a href="#change-route-metric">Change route metric</a></li>
     <li><a href="#change-network-metric-of-docker-network-and-disable-log">Change network metric of docker network and disable log</a></li>
     <li><a href="#install-ubuntu-2404-notes">Install Ubuntu 24.04 notes</a>
@@ -137,7 +141,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/quick-notes/"><i class="far fa-folder fa-fw"></i>Quick-Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;419 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-05">2023-12-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;448 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -153,6 +157,7 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#using-sshfs-to-mount-remote-folder-to-local">Using sshfs to mount remote-folder to local</a></li>
+    <li><a href="#supervisor-commands">Supervisor commands</a></li>
     <li><a href="#change-route-metric">Change route metric</a></li>
     <li><a href="#change-network-metric-of-docker-network-and-disable-log">Change network metric of docker network and disable log</a></li>
     <li><a href="#install-ubuntu-2404-notes">Install Ubuntu 24.04 notes</a>
@@ -196,8 +201,27 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h2 id="change-route-metric" class="headerLink">
-    <a href="#change-route-metric" class="header-mark"></a>2 Change route metric</h2><ul>
+<h2 id="supervisor-commands" class="headerLink">
+    <a href="#supervisor-commands" class="header-mark"></a>2 Supervisor commands</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  <span class="c1"># After change your config file, run these commands</span>
+</span></span><span class="line"><span class="cl">  supervisorctl reread
+</span></span><span class="line"><span class="cl">  supervisorctl update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># Restart some process</span>
+</span></span><span class="line"><span class="cl">  supervisorctl restart SUPERVISOR-PROGRAM-NAME
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="change-route-metric" class="headerLink">
+    <a href="#change-route-metric" class="header-mark"></a>3 Change route metric</h2><ul>
 <li>Problem: ???</li>
 <li>Edit file <code>vi /etc/netplan/50-cloud-init.yaml</code></li>
 <li>Find your interface. Example <code>ens3</code>. Add these lines
@@ -216,7 +240,7 @@
 </ul>
 <hr>
 <h2 id="change-network-metric-of-docker-network-and-disable-log" class="headerLink">
-    <a href="#change-network-metric-of-docker-network-and-disable-log" class="header-mark"></a>3 Change network metric of docker network and disable log</h2><ul>
+    <a href="#change-network-metric-of-docker-network-and-disable-log" class="header-mark"></a>4 Change network metric of docker network and disable log</h2><ul>
 <li>Problem: ???</li>
 <li>Edit file: <code>/etc/docker/daemon.json</code></li>
 <li>Add these lines:
@@ -265,14 +289,14 @@ docker run -d -p 80:8080 swaggerapi/swagger-editor
 
 --- -->
 <h2 id="install-ubuntu-2404-notes" class="headerLink">
-    <a href="#install-ubuntu-2404-notes" class="header-mark"></a>4 Install Ubuntu 24.04 notes</h2><h3 id="install" class="headerLink">
-    <a href="#install" class="header-mark"></a>4.1 Install</h3><ul>
+    <a href="#install-ubuntu-2404-notes" class="header-mark"></a>5 Install Ubuntu 24.04 notes</h2><h3 id="install" class="headerLink">
+    <a href="#install" class="header-mark"></a>5.1 Install</h3><ul>
 <li>Download Ubuntu ISO from offical site.</li>
 <li>Use tool <code>Start Disk Creator</code> to make bootable-usb</li>
 <li>Start PC from USB, then follow the instructions.</li>
 </ul>
 <h3 id="after-install" class="headerLink">
-    <a href="#after-install" class="header-mark"></a>4.2 After Install</h3><ul>
+    <a href="#after-install" class="header-mark"></a>5.2 After Install</h3><ul>
 <li>
 <p>Install keepass2 mate-terminal net-tools ibus-unikey gimp ttf-mscorefonts-installer ubuntu-restricted-extras imagemagick</p>
 <div class="highlight"><div class="chroma">
@@ -500,7 +524,7 @@ docker run -d -p 80:8080 swaggerapi/swagger-editor
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.125.4">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.127.0">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io/blog/" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
