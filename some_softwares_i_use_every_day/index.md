@@ -39,10 +39,13 @@ These are some softwares I use everyday and I think they are helpful for you.
 - Dropbox
 - Project management Trello - Jira: https://www.atlassian.com/
 - Mindmap: https://gitmind.com/
-- AI Chat:
+- AI Tools:
     - ChatGPT: https://chatgpt.com/
     - Google gemini: https://gemini.google.com/
     - Claude AI: https://claude.ai/
+    - Create short video from text: https://klingai.com/ (**Didn't test yet!**)
+    - Create image from text: https://www.craiyon.com/ (**Didn't test yet!**)
+- Visual explain mysql result: https://mysqlexplain.com/
 
 ## Others
 - Laradock

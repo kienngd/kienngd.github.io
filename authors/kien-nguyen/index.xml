@@ -4,7 +4,15 @@
         <link>https://kienngd.github.io/authors/kien-nguyen/</link>
         <description>Kien Nguyen - Author - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 31 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/authors/kien-nguyen/" rel="self" type="application/rss+xml" /><item>
+    <title>Boost Your Work Productivity: A Simple Guide</title>
+    <link>https://kienngd.github.io/boost_your_work_productivity/</link>
+    <pubDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/boost_your_work_productivity/</guid>
+    <description><![CDATA[<h1 id="boost-your-work-productivity-a-simple-guide" class="headerLink">
+    <a href="#boost-your-work-productivity-a-simple-guide" class="header-mark"></a>Boost Your Work Productivity: A Simple Guide</h1><p>In today&rsquo;s fast-paced world, improving your productivity is crucial for achieving success and maintaining a healthy work-life balance. By working more efficiently, you can get more done in less time, reduce stress, and you have more time for activities you enjoy. Here’s a simple guide to help you boost your work productivity.</p>]]></description>
+</item><item>
     <title>Git log quickly and easily</title>
     <link>https://kienngd.github.io/git_log_quickly_and_easily/</link>
     <pubDate>Wed, 31 Jul 2024 00:00:00 &#43;0000</pubDate><author>
@@ -91,12 +99,5 @@ Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></des
                 <img src="/simplifying_version_control_with_git_stash/git_stash_command.png" referrerpolicy="no-referrer">
             </div><h1 id="simplifying-version-control-with-git-stash" class="headerLink">
     <a href="#simplifying-version-control-with-git-stash" class="header-mark"></a>Simplifying Version Control with Git Stash</h1><p>In the world of software development, managing changes efficiently is crucial. Git, a powerful version control system, offers various commands to help streamline this process. One such command that comes in handy when you need to temporarily store your current changes without committing them is <code>git stash</code>.</p>]]></description>
-</item><item>
-    <title>How to Use Google Clock and Habits to Track Daily Activities</title>
-    <link>https://kienngd.github.io/track_daily_activities/</link>
-    <pubDate>Tue, 28 May 2024 01:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/track_daily_activities/</guid>
-    <description><![CDATA[How to Use Google Clock and Habits to Track Daily Activities]]></description>
 </item></channel>
 </rss>

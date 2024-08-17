@@ -69,6 +69,7 @@ You can also format the log messages by using the `--pretty` option.
 - `--graph`: Display a commit graph.
 - `--reverse`: Show commits in chronological order (oldest first).
 - `--no-merges`: Exclude merge commits.
+- `--oneline`: Show commit in one-line
 \
 \
 **And the last thing**: You can combine multiple options
