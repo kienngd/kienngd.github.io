@@ -6,6 +6,8 @@
 In today's fast-paced world, improving your productivity is crucial for achieving success and maintaining a healthy work-life balance. By working more efficiently, you can get more done in less time, reduce stress, and you have more time for activities you enjoy. Here’s a simple guide to help you boost your work productivity.
 
 <!--more-->
+![Boost-Productivity.jpg](Boost-Productivity.jpg)
+
 ## Set Deadlines
 - Deadlines help keep you focused. They give you a clear end date for your tasks. Make sure every task has one.
 - Parkinson’s Law says work expands to fill the time available. Set **tight deadlines** to **avoid procrastination**. Finish your tasks before the deadline to stay ahead.
