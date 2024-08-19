@@ -4,7 +4,15 @@
         <link>https://kienngd.github.io/tags/notes/</link>
         <description>Notes - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Create an Entity Relationship Diagram with draw.io V24.7.5</title>
+    <link>https://kienngd.github.io/drawio_create_an_entity_relationship_diagram/</link>
+    <pubDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/drawio_create_an_entity_relationship_diagram/</guid>
+    <description><![CDATA[<h1 id="introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="headerLink">
+    <a href="#introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="header-mark"></a>Introducing the New &ldquo;Create an Entity Relationship Diagram&rdquo; Feature in Draw.io Version 24.7.5</h1><p><strong>Draw.io</strong> has just added a new feature: creating an Entity Relationship Diagram (ERD). This update makes it easier to design and visualize database structures.</p>]]></description>
+</item><item>
     <title>Boost Your Work Productivity: A Simple Guide</title>
     <link>https://kienngd.github.io/boost_your_work_productivity/</link>
     <pubDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</pubDate><author>
