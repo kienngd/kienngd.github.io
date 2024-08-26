@@ -4,7 +4,17 @@
         <link>https://kienngd.github.io/tags/design-pattern/</link>
         <description>Design-Pattern - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/design-pattern/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/design-pattern/" rel="self" type="application/rss+xml" /><item>
+    <title>Pipeline-partten in Laravel</title>
+    <link>https://kienngd.github.io/pipeline_partern_in_laravel/</link>
+    <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/pipeline_partern_in_laravel/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/pipeline_partern_in_laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
+            </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
+<p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>]]></description>
+</item><item>
     <title>Functional options pattern with example</title>
     <link>https://kienngd.github.io/functional_options_pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>

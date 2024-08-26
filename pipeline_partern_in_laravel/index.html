@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Pipeline-partten in Laravel - K5D::Blog</title><meta name="Description" content="Pipeline-partten in Laravel"><meta property="og:url" content="https://kienngd.github.io/pipeline_partern_in_laravel/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="Pipeline-partten in Laravel">
+  <meta property="og:description" content="Pipeline-partten in Laravel">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-26T00:00:00+00:00">
+    <meta property="article:tag" content="Design-Pattern">
+    <meta property="article:tag" content="PHP">
+    <meta property="article:tag" content="Laravel">
+    <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="Pipeline-partten in Laravel">
+<meta name="twitter:description" content="Pipeline-partten in Laravel">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/pipeline_partern_in_laravel/" /><link rel="prev" href="https://kienngd.github.io/drawio_create_an_entity_relationship_diagram/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Pipeline-partten in Laravel",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kienngd.github.io/pipeline_partern_in_laravel/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Design-Pattern, PHP, Laravel","wordcount":  386 ,
+        "url": "https://kienngd.github.io/pipeline_partern_in_laravel/","datePublished": "2024-08-26T00:00:00+00:00","dateModified": "2024-08-26T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kienngd.github.io/images/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"authors": [{
+                        "@type": "Person",
+                        "name": "Kien Nguyen"                    
+                    }],"description": "Pipeline-partten in Laravel"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blogs </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Blogs</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1-define-pipeline-steps">Step 1: Define Pipeline Steps</a></li>
+    <li><a href="#step-2-use-the-pipeline">Step 2: Use the Pipeline</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Pipeline-partten in Laravel</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/code/"><i class="far fa-folder fa-fw"></i>Code</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-08-26">2024-08-26</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-08-26">2024-08-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;386 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/pipeline_partern_in_laravel/pipeline-diagram_hu3d5026c86cc7ee7b973909a0aef0f7e8_539326_1200x0_resize_q75_h2_lanczos_2.webp"
+        srcset="/pipeline_partern_in_laravel/pipeline-diagram_hu3d5026c86cc7ee7b973909a0aef0f7e8_539326_700x0_resize_q75_h2_lanczos_2.webp 700w,
+            /pipeline_partern_in_laravel/pipeline-diagram_hu3d5026c86cc7ee7b973909a0aef0f7e8_539326_1200x0_resize_q75_h2_lanczos_2.webp 1200w,
+            /pipeline_partern_in_laravel/pipeline-diagram_hu3d5026c86cc7ee7b973909a0aef0f7e8_539326_2000x0_resize_q75_h2_lanczos_2.webp 2000w"
+        title="Pipeline-partten in Laravel" height="686"   width="1200" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1-define-pipeline-steps">Step 1: Define Pipeline Steps</a></li>
+    <li><a href="#step-2-use-the-pipeline">Step 2: Use the Pipeline</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
+<p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>
+<p>To use the pipeline in Laravel, you need a class or function that can take and return data. You also define the steps to apply and the order. Laravel provides the <code>Pipeline</code> class to help with this.</p>
+<p>Here is a basic example of using the pipeline in Laravel:
+<strong>Scenario</strong>: You need to apply multiple processing steps to an order: apply a discount, calculate shipping costs, and finalize the order.</p>
+<h2 id="step-1-define-pipeline-steps" class="headerLink">
+    <a href="#step-1-define-pipeline-steps" class="header-mark"></a>1 Step 1: Define Pipeline Steps</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// ApplyDiscount.php
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">namespace</span> <span class="nx">App\Pipeline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">ApplyDiscount</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle</span><span class="p">(</span><span class="nv">$order</span><span class="p">,</span> <span class="nv">$next</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nv">$order</span><span class="p">[</span><span class="s1">&#39;discount_code&#39;</span><span class="p">]</span> <span class="o">===</span> <span class="s1">&#39;SUMMER21&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$order</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// Apply a $10 discount
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nv">$next</span><span class="p">(</span><span class="nv">$order</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// CalculateShipping.php
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">namespace</span> <span class="nx">App\Pipeline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CalculateShipping</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle</span><span class="p">(</span><span class="nv">$order</span><span class="p">,</span> <span class="nv">$next</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$order</span><span class="p">[</span><span class="s1">&#39;shipping&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// Flat $5 shipping cost
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nv">$order</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="nv">$order</span><span class="p">[</span><span class="s1">&#39;shipping&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nv">$next</span><span class="p">(</span><span class="nv">$order</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// FinalizeOrder.php
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">namespace</span> <span class="nx">App\Pipeline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FinalizeOrder</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle</span><span class="p">(</span><span class="nv">$order</span><span class="p">,</span> <span class="nv">$next</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Save the order to the database
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// Order::create($order); // Uncomment to save to DB
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">return</span> <span class="nv">$order</span><span class="p">;</span> <span class="c1">// Return the final order
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="step-2-use-the-pipeline" class="headerLink">
+    <a href="#step-2-use-the-pipeline" class="header-mark"></a>2 Step 2: Use the Pipeline</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Illuminate\Pipeline\Pipeline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">App\Pipeline\ApplyDiscount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">App\Pipeline\CalculateShipping</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">App\Pipeline\FinalizeOrder</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$order</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;item&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Laptop&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;total&#39;</span> <span class="o">=&gt;</span> <span class="mi">1000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;discount_code&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;SUMMER21&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$processedOrder</span> <span class="o">=</span> <span class="nx">app</span><span class="p">(</span><span class="nx">Pipeline</span><span class="o">::</span><span class="na">class</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="nv">$order</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="o">-&gt;</span><span class="na">through</span><span class="p">([</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">ApplyDiscount</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">CalculateShipping</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">FinalizeOrder</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="o">-&gt;</span><span class="na">thenReturn</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">print_r</span><span class="p">(</span><span class="nv">$processedOrder</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Explanation</strong>:</p>
+<ul>
+<li>ApplyDiscount applies a discount if the code matches.</li>
+<li>CalculateShipping adds shipping costs.</li>
+<li>FinalizeOrder prepares the order for saving.</li>
+</ul>
+<p>The pipeline pattern makes your code cleaner and easier to manage. Each step is separate, so it’s easier to understand and update.</p></div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/send_email_with_laravel_using_gmail/">Sending emails through Gmail in Laravel</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/functional_options_pattern/"><img
+        
+        loading="lazy"
+        src="/functional_options_pattern/functional-options-social.png"
+        srcset="/functional_options_pattern/functional-options-social.png, /functional_options_pattern/functional-options-social.png 1.5x, /functional_options_pattern/functional-options-social.png 2x"
+        title="Pipeline-partten in Laravel" height="200"   width="400" ></a>
+            </div><h2 class="related-title">
+                <a href="/functional_options_pattern/">Functional options pattern with example</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/strategy_pattern_in_php/">Strategy Pattern in PHP with examples</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/design-pattern/">Design-Pattern</a>,&nbsp;<a href="/tags/php/">PHP</a>,&nbsp;<a href="/tags/laravel/">Laravel</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/drawio_create_an_entity_relationship_diagram/" class="prev" rel="prev" title="Create an Entity Relationship Diagram with draw.io V24.7.5"><i class="fas fa-angle-left fa-fw"></i>Create an Entity Relationship Diagram with draw.io V24.7.5</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.125.4">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io/blog/" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-ERR05TP1T5', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-ERR05TP1T5" async></script></div>
+</body>
+
+</html>

@@ -4,9 +4,19 @@
         <link>https://kienngd.github.io/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Pipeline-partten in Laravel</title>
+    <link>https://kienngd.github.io/pipeline_partern_in_laravel/</link>
+    <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/pipeline_partern_in_laravel/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/pipeline_partern_in_laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
+            </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
+<p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>]]></description>
+</item><item>
     <title>Create an Entity Relationship Diagram with draw.io V24.7.5</title>
     <link>https://kienngd.github.io/drawio_create_an_entity_relationship_diagram/</link>
     <pubDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</pubDate><author>
@@ -84,20 +94,5 @@
             </div>How to Use ZRAM on Ubuntu 24.04 1 What is ZRAM?ZRAM is a Linux kernel module. It creates a compressed block device in RAM. This block device can be used for swap space or as a temporary filesystem. Because it is compressed, it saves memory and can make your system faster.
 2 Pros and Cons of Using ZRAMPros:
 Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></description>
-</item><item>
-    <title>How to Use Swagger with Docker</title>
-    <link>https://kienngd.github.io/using_swagger_with_docker/</link>
-    <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/using_swagger_with_docker/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/using_swagger_with_docker/swagger-editor.png" referrerpolicy="no-referrer">
-            </div><h1 id="how-to-use-swagger-with-docker" class="headerLink">
-    <a href="#how-to-use-swagger-with-docker" class="header-mark"></a>How to Use Swagger with Docker</h1><h2 id="prerequisites" class="headerLink">
-    <a href="#prerequisites" class="header-mark"></a>1 Prerequisites</h2><p>To follow this guide, you need:</p>
-<ul>
-<li>Docker installed on your machine.</li>
-<li>Docker Compose installed on your machine.</li>
-</ul>]]></description>
 </item></channel>
 </rss>
