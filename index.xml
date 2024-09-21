@@ -4,9 +4,17 @@
         <link>https://kienngd.github.io/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 04 Sep 2024 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 21 Sep 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Understanding UUID: A Unique Identifier</title>
+    <link>https://kienngd.github.io/understanding_uuid/</link>
+    <pubDate>Sat, 21 Sep 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/understanding_uuid/</guid>
+    <description><![CDATA[<h1 id="understanding-uuid-a-unique-identifier" class="headerLink">
+    <a href="#understanding-uuid-a-unique-identifier" class="header-mark"></a>Understanding UUID: A Unique Identifier</h1><p>UUID stands for <code>Universally Unique Identifier</code>. It is a 128-bit number used to identify information uniquely across different systems and applications. UUIDs are often represented as a string of hexadecimal digits, divided into five groups, such as <code>123e4567-e89b-12d3-a456-426614174000</code>.</p>]]></description>
+</item><item>
     <title>Quick Guide to Using Whimsical Diagrams with ChatGPT</title>
     <link>https://kienngd.github.io/quick_guide_to_use_whimsical_diagrams_with_chatgpt/</link>
     <pubDate>Wed, 04 Sep 2024 00:00:00 &#43;0000</pubDate><author>
@@ -81,15 +89,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
             </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
-</item><item>
-    <title>Functional options pattern with example</title>
-    <link>https://kienngd.github.io/functional_options_pattern/</link>
-    <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/functional_options_pattern/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/functional_options_pattern/functional-options-social.png" referrerpolicy="no-referrer">
-            </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
-    <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
 </item></channel>
 </rss>
