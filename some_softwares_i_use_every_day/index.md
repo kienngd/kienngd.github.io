@@ -45,6 +45,7 @@ These are some softwares I use everyday and I think they are helpful for you.
     - Claude AI: https://claude.ai/
     - Create short video from text: https://klingai.com/ (**Didn't test yet!**)
     - Create image from text: https://www.craiyon.com/ (**Didn't test yet!**)
+    - Chat bot with multiple LM: https://lmarena.ai/
 - Visual explain mysql result: https://mysqlexplain.com/
 
 ## Others
