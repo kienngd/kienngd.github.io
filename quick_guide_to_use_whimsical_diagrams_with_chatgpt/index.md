@@ -3,8 +3,7 @@
 \
 Making **mind-maps** and **diagrams** helps organize your ideas and projects. This guide will show you how to use **Whimsical Diagrams** with **ChatGPT**. We will cover everything from setting it up, saving your work, export to picture to share with other people. Just follow these easy steps to use these helpful tools.
 
-
-<!-- more -->
+<!--more-->
 
 ## Introduction to ChatGPT's Explore GPTs Feature
 
