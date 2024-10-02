@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Git - Category - K5D::Blog</title>
-        <link>https://kienngd.github.io/categories/git/</link>
-        <description>Git - Category - K5D::Blog</description>
+        <title>Git Tag - Tag - K5D::Blog</title>
+        <link>https://kienngd.github.io/tags/git-tag/</link>
+        <description>Git Tag - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/git/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/git-tag/" rel="self" type="application/rss+xml" /><item>
     <title>Git Tags: A Quick Guide</title>
     <link>https://kienngd.github.io/git_tags_a_quick_guide/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
@@ -37,22 +37,5 @@
 </div>
 </div></li>
 </ol>]]></description>
-</item><item>
-    <title>Simplifying Version Control with Git Stash</title>
-    <link>https://kienngd.github.io/simplifying_version_control_with_git_stash/</link>
-    <pubDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/simplifying_version_control_with_git_stash/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/simplifying_version_control_with_git_stash/git_stash_command.png" referrerpolicy="no-referrer">
-            </div><h1 id="simplifying-version-control-with-git-stash" class="headerLink">
-    <a href="#simplifying-version-control-with-git-stash" class="header-mark"></a>Simplifying Version Control with Git Stash</h1><p>In the world of software development, managing changes efficiently is crucial. Git, a powerful version control system, offers various commands to help streamline this process. One such command that comes in handy when you need to temporarily store your current changes without committing them is <code>git stash</code>.</p>]]></description>
-</item><item>
-    <title>GIT Commit message conventions</title>
-    <link>https://kienngd.github.io/git_commit_message/</link>
-    <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git_commit_message/</guid>
-    <description><![CDATA[GIT Commit message conventions]]></description>
 </item></channel>
 </rss>

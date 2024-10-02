@@ -4,7 +4,40 @@
         <link>https://kienngd.github.io/tags/notes/</link>
         <description>Notes - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Git Tags: A Quick Guide</title>
+    <link>https://kienngd.github.io/git_tags_a_quick_guide/</link>
+    <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/git_tags_a_quick_guide/</guid>
+    <description><![CDATA[<p><figure><img
+        
+        loading="lazy"
+        src="/git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp"
+        srcset="/git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_700x0_resize_q75_h2_lanczos_2.webp 700w,
+            /git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp 1200w,
+            /git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_2000x0_resize_q75_h2_lanczos_2.webp 2000w"
+        title="Git Tag a quick guide" height="504"   width="1200" ><figcaption class="image-caption">Git Tag a quick guide</figcaption>
+    </figure>
+<code>Git</code> is a popular version control system. It helps developers <code>track changes</code> in their code. <code>Git tags</code> are like <code>bookmarks</code> for important points in your project&rsquo;s history.</p>
+<h2 id="here-are-some-common-git-tag-commands" class="headerLink">
+    <a href="#here-are-some-common-git-tag-commands" class="header-mark"></a>1 Here are some common Git tag commands:</h2><ol>
+<li>List all tags:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git tag # List all tags
+</span></span><span class="line"><span class="cl">git tag -l &#34;v1.8.5*&#34; # List tags matching a pattern
+</span></span><span class="line"><span class="cl">git tag -n # List all tags with commit message
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>]]></description>
+</item><item>
     <title>Introduction to PHPDocumentor</title>
     <link>https://kienngd.github.io/introduction_to_phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
