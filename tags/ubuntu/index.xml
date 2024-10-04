@@ -6,39 +6,39 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/ubuntu/" rel="self" type="application/rss+xml" /><item>
     <title>How to Use ZRAM on Ubuntu 24.04</title>
-    <link>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</link>
+    <link>https://kienngd.github.io/how-to-use-zram-on-ubuntu-2404/</link>
     <pubDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</guid>
+                </author><guid>https://kienngd.github.io/how-to-use-zram-on-ubuntu-2404/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/how_to_use_zram_on_ubuntu_24_04/swap-zram.png" referrerpolicy="no-referrer">
+                <img src="/how-to-use-zram-on-ubuntu-2404/swap-zram.png" referrerpolicy="no-referrer">
             </div>How to Use ZRAM on Ubuntu 24.04 1 What is ZRAM?ZRAM is a Linux kernel module. It creates a compressed block device in RAM. This block device can be used for swap space or as a temporary filesystem. Because it is compressed, it saves memory and can make your system faster.
 2 Pros and Cons of Using ZRAMPros:
 Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></description>
 </item><item>
     <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
-    <link>https://kienngd.github.io/install_openvpn_ubuntu/</link>
+    <link>https://kienngd.github.io/install-openvpn-ubuntu/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/install_openvpn_ubuntu/</guid>
+                </author><guid>https://kienngd.github.io/install-openvpn-ubuntu/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/install_openvpn_ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
+                <img src="/install-openvpn-ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
             </div><p><strong>Do you want to protect your data online?</strong> OpenVPN is the solution for you! Today, we will install OpenVPN on your Ubuntu 22.04 server and set up a secure VPN connection.</p>]]></description>
 </item><item>
     <title>How to Manage Software with Snap on Ubuntu 22.04</title>
-    <link>https://kienngd.github.io/manage_sofware_using_snap/</link>
+    <link>https://kienngd.github.io/manage-sofware-using-snap/</link>
     <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/manage_sofware_using_snap/</guid>
+                </author><guid>https://kienngd.github.io/manage-sofware-using-snap/</guid>
     <description><![CDATA[How to Manage Software with Snap on Ubuntu 22.04]]></description>
 </item><item>
     <title>How to disable wifi power save Ubuntu 20.04</title>
-    <link>https://kienngd.github.io/disable_wifi_power_save_ubuntu_20.04/</link>
+    <link>https://kienngd.github.io/disable-wifi-power-save-ubuntu-2004/</link>
     <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/disable_wifi_power_save_ubuntu_20.04/</guid>
+                </author><guid>https://kienngd.github.io/disable-wifi-power-save-ubuntu-2004/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/disable_wifi_power_save_ubuntu_20.04/sleeping-tux-wireless.jpeg" referrerpolicy="no-referrer">
+                <img src="/disable-wifi-power-save-ubuntu-2004/sleeping-tux-wireless.jpeg" referrerpolicy="no-referrer">
             </div><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>]]></description>
 </item></channel>
 </rss>

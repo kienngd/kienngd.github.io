@@ -6,48 +6,48 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/howto/" rel="self" type="application/rss+xml" /><item>
     <title>Using the at Command in Ubuntu 24.04 to Schedule Tasks</title>
-    <link>https://kienngd.github.io/using_at_command/</link>
+    <link>https://kienngd.github.io/using-at-command-to-schedule-a-task/</link>
     <pubDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/using_at_command/</guid>
+                </author><guid>https://kienngd.github.io/using-at-command-to-schedule-a-task/</guid>
     <description><![CDATA[<p><strong>Using the <code>at</code> Command in Ubuntu 24.04 to Schedule Tasks</strong></p>
 <p>The <code>at</code> command allows users to execute specific actions at any future time without needing continuous supervision. In this example, I use Ubuntu 24.04 to test.</p>]]></description>
 </item><item>
     <title>How to disable wifi power save Ubuntu 20.04</title>
-    <link>https://kienngd.github.io/disable_wifi_power_save_ubuntu_20.04/</link>
+    <link>https://kienngd.github.io/disable-wifi-power-save-ubuntu-2004/</link>
     <pubDate>Sun, 11 Oct 2020 01:10:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/disable_wifi_power_save_ubuntu_20.04/</guid>
+                </author><guid>https://kienngd.github.io/disable-wifi-power-save-ubuntu-2004/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/disable_wifi_power_save_ubuntu_20.04/sleeping-tux-wireless.jpeg" referrerpolicy="no-referrer">
+                <img src="/disable-wifi-power-save-ubuntu-2004/sleeping-tux-wireless.jpeg" referrerpolicy="no-referrer">
             </div><p>Hello, today I&rsquo;ve installed new Ubuntu 20.04. Then I get the wifi problem. When system start, the wifi works fine. But a few moment later, it was dropped so I cannot connect to the internet. I disable wifi, then enable wifi, it works fine for some minutes and fall into problem again.</p>]]></description>
 </item><item>
     <title>How to check my ip</title>
-    <link>https://kienngd.github.io/check_my_ip_address/</link>
+    <link>https://kienngd.github.io/check-my-ip-address/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/check_my_ip_address/</guid>
+                </author><guid>https://kienngd.github.io/check-my-ip-address/</guid>
     <description><![CDATA[<p>Hello, sometimes you need to know &ldquo;what is my IP address?&rdquo;. In this post we will learn some ways to check public IP. Have fun!</p>
 <h2 id="httpsapimyipcom" class="headerLink">
     <a href="#httpsapimyipcom" class="header-mark"></a>1 <a href="https://api.myip.com" target="_blank" rel="noopener noreferrer">https://api.myip.com</a></h2><p>Open your browser to access this link: <a href="https://api.myip.com/" target="_blank" rel="noopener noreferrer">https://api.myip.com/</a>. You can see something like this: {&ldquo;ip&rdquo;:&ldquo;115.75.212.27&rdquo;,&ldquo;country&rdquo;:&ldquo;Viet Nam&rdquo;,&ldquo;cc&rdquo;:&ldquo;VN&rdquo;} so your IP is: <strong>115.75.212.27</strong>.</p>
 <p><strong>Bonus</strong>: You can use curl command to get data too.</p>]]></description>
 </item><item>
     <title>How to create a linux service</title>
-    <link>https://kienngd.github.io/create_linux_service/</link>
+    <link>https://kienngd.github.io/create-linux-service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/create_linux_service/</guid>
+                </author><guid>https://kienngd.github.io/create-linux-service/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/create_linux_service/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
+                <img src="/create-linux-service/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
             </div>How to create a linux service]]></description>
 </item><item>
-    <title>🚧 How to build a free blog</title>
-    <link>https://kienngd.github.io/build_free_blog/</link>
+    <title>🚧 How to build a free blog using Hugo</title>
+    <link>https://kienngd.github.io/build-a-free-blog-using-hugo/</link>
     <pubDate>Thu, 08 Oct 2020 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/build_free_blog/</guid>
+                </author><guid>https://kienngd.github.io/build-a-free-blog-using-hugo/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/build_free_blog/creating-a-hugo-theme-from-scratch.jpg" referrerpolicy="no-referrer">
+                <img src="/build-a-free-blog-using-hugo/creating-a-hugo-theme-from-scratch.jpg" referrerpolicy="no-referrer">
             </div><p>Hello. In this post we will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>
 <h2 id="install-hugo" class="headerLink">
     <a href="#install-hugo" class="header-mark"></a>1 Install hugo.</h2><ul>

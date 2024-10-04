@@ -6,12 +6,12 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/api/" rel="self" type="application/rss+xml" /><item>
     <title>How to Use Swagger with Docker</title>
-    <link>https://kienngd.github.io/using_swagger_with_docker/</link>
+    <link>https://kienngd.github.io/using-swagger-with-docker/</link>
     <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/using_swagger_with_docker/</guid>
+                </author><guid>https://kienngd.github.io/using-swagger-with-docker/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/using_swagger_with_docker/swagger-editor.png" referrerpolicy="no-referrer">
+                <img src="/using-swagger-with-docker/swagger-editor.png" referrerpolicy="no-referrer">
             </div><h1 id="how-to-use-swagger-with-docker" class="headerLink">
     <a href="#how-to-use-swagger-with-docker" class="header-mark"></a>How to Use Swagger with Docker</h1><h2 id="prerequisites" class="headerLink">
     <a href="#prerequisites" class="header-mark"></a>1 Prerequisites</h2><p>To follow this guide, you need:</p>

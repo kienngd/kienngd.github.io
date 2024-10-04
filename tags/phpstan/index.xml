@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>PHPStan - Tag - K5D::Blog</title>
+        <link>https://kienngd.github.io/tags/phpstan/</link>
+        <description>PHPStan - Tag - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/phpstan/" rel="self" type="application/rss+xml" /><item>
+    <title>Use PHPStan to Ensure Code Quality in Your Project</title>
+    <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
+    <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
+    <description><![CDATA[<p><figure><img
+        
+        loading="lazy"
+        src="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp"
+        srcset="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_700x0_resize_q75_h2_lanczos_3.webp 700w,
+            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
+            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
+        title="PHPStan A Testing Tool" height="413"   width="1200" ><figcaption class="image-caption">PHPStan A Testing Tool</figcaption>
+    </figure></p>
+<h2 id="introduction" class="headerLink">
+    <a href="#introduction" class="header-mark"></a>1 <strong>Introduction</strong></h2><p><strong>PHPStan</strong> is a powerful static analysis tool for PHP that checks your code for potential errors without executing it. By using <strong>PHPStan</strong>, you can catch bugs early in the development process, improve the overall <strong>quality</strong> of your code, and ensure your project is more <strong>stable</strong> and <strong>maintainable</strong>.</p>]]></description>
+</item></channel>
+</rss>

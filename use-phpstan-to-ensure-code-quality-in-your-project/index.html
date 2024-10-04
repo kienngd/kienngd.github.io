@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <title>Use PHPStan to Ensure Code Quality in Your Project - K5D::Blog</title><meta name="Description" content="Use PHPStan to Ensure Code Quality in Your Project"><meta property="og:url" content="https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="Use PHPStan to Ensure Code Quality in Your Project">
+  <meta property="og:description" content="Use PHPStan to Ensure Code Quality in Your Project">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-04T00:00:00+00:00">
+    <meta property="article:tag" content="Code">
+    <meta property="article:tag" content="PHP">
+    <meta property="article:tag" content="PHPStan">
+    <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp">
+  <meta name="twitter:title" content="Use PHPStan to Ensure Code Quality in Your Project">
+  <meta name="twitter:description" content="Use PHPStan to Ensure Code Quality in Your Project">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/" /><link rel="prev" href="https://kienngd.github.io/git-tags-a-quick-guide/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Use PHPStan to Ensure Code Quality in Your Project",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Code, PHP, PHPStan","wordcount":  453 ,
+        "url": "https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/","datePublished": "2024-10-04T00:00:00+00:00","dateModified": "2024-10-04T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kienngd.github.io/images/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"authors": [{
+                        "@type": "Person",
+                        "name": "Kien Nguyen"                    
+                    }],"description": "Use PHPStan to Ensure Code Quality in Your Project"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blogs </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Blogs</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction"><strong>Introduction</strong></a></li>
+    <li><a href="#installation"><strong>Installation</strong></a></li>
+    <li><a href="#basic-usage"><strong>Basic Usage</strong></a></li>
+    <li><a href="#configuration"><strong>Configuration</strong></a></li>
+    <li><a href="#advanced-features"><strong>Advanced Features</strong></a></li>
+    <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Use PHPStan to Ensure Code Quality in Your Project</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/code/"><i class="far fa-folder fa-fw"></i>Code</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-10-04">2024-10-04</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-10-04">2024-10-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;453 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction"><strong>Introduction</strong></a></li>
+    <li><a href="#installation"><strong>Installation</strong></a></li>
+    <li><a href="#basic-usage"><strong>Basic Usage</strong></a></li>
+    <li><a href="#configuration"><strong>Configuration</strong></a></li>
+    <li><a href="#advanced-features"><strong>Advanced Features</strong></a></li>
+    <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><figure><img
+        
+        loading="lazy"
+        src="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp"
+        srcset="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_700x0_resize_q75_h2_lanczos_3.webp 700w,
+            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
+            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
+        title="PHPStan A Testing Tool" height="413"   width="1200" ><figcaption class="image-caption">PHPStan A Testing Tool</figcaption>
+    </figure></p>
+<h2 id="introduction" class="headerLink">
+    <a href="#introduction" class="header-mark"></a>1 <strong>Introduction</strong></h2><p><strong>PHPStan</strong> is a powerful static analysis tool for PHP that checks your code for potential errors without executing it. By using <strong>PHPStan</strong>, you can catch bugs early in the development process, improve the overall <strong>quality</strong> of your code, and ensure your project is more <strong>stable</strong> and <strong>maintainable</strong>.</p>
+<h2 id="installation" class="headerLink">
+    <a href="#installation" class="header-mark"></a>2 <strong>Installation</strong></h2><p>You can install <strong>PHPStan</strong> via <strong>Composer</strong> by run the following command in your project’s root directory:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">composer require --dev phpstan/phpstan
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Alternatively, if you prefer not to use composer, you can download the <strong>phar file</strong> directly from <a href="https://github.com/phpstan/phpstan/releases" target="_blank" rel="noopener noreferrer">PHPStan’s official github</a> and use that to run the tool.</p>
+<h2 id="basic-usage" class="headerLink">
+    <a href="#basic-usage" class="header-mark"></a>3 <strong>Basic Usage</strong></h2><p>Once <strong>PHPStan</strong> is installed, you can start analyzing your codebase with a simple command. Assuming your code is located in a folder called <code>src-folder</code>, use the following command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vendor/bin/phpstan analyse src-folder
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This will trigger <strong>PHPStan</strong> to scan the directory for potential issues and report any problems it finds. If there are errors or warnings, <strong>PHPStan</strong> will display them in the console, helping you identify where the issues are.</p>
+<p>You can find more options from <a href="https://phpstan.org/user-guide/command-line-usage" target="_blank" rel="noopener noreferrer">PHPStan document site</a></p>
+<h2 id="configuration" class="headerLink">
+    <a href="#configuration" class="header-mark"></a>4 <strong>Configuration</strong></h2><p>To customize how <strong>PHPStan</strong> analyzes your project, you can create a configuration file called <strong><code>phpstan.neon</code></strong>. This file allows you to adjust various settings, such as the strictness of the analysis or which directories to scan.</p>
+<p>Here’s a simple example of a <code>phpstan.neon</code> file:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">parameters:
+</span></span><span class="line"><span class="cl">    level: 5
+</span></span><span class="line"><span class="cl">    paths:
+</span></span><span class="line"><span class="cl">        - src
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>level</code>: Specifies the analysis level from 0 (basic checks) to 9 (the strictest). You can start at a lower level and gradually increase it as your project evolves.</li>
+<li><code>paths</code>: Defines the directory or directories <strong>PHPStan</strong> should analyze. In this example, it checks the <code>src</code> folder.</li>
+</ul>
+<p>You can find more options from <a href="https://phpstan.org/config-reference" target="_blank" rel="noopener noreferrer">PHPStan document site</a></p>
+<h2 id="advanced-features" class="headerLink">
+    <a href="#advanced-features" class="header-mark"></a>5 <strong>Advanced Features</strong></h2><p><strong>PHPStan</strong> offers a range of advanced features to help you get the most out of your static analysis.</p>
+<ol>
+<li>
+<p><strong>Increasing Analysis Levels</strong>: As your project grows and your code becomes more complex, you can increase the analysis level to catch more subtle issues. For example, to run <strong>PHPStan</strong> at the highest level, use:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vendor/bin/phpstan analyse --level max src
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>CI/CD Integration</strong>: <strong>PHPStan</strong> can be integrated into your Continuous Integration/Continuous Deployment (CI/CD) pipeline. By adding <strong>PHPStan</strong> checks to your CI/CD process, you can ensure that code quality is maintained before any new code is merged or deployed. This helps catch potential issues early and reduces the risk of introducing bugs into production.</p>
+</li>
+</ol>
+<h2 id="conclusion" class="headerLink">
+    <a href="#conclusion" class="header-mark"></a>6 <strong>Conclusion</strong></h2><p><strong>PHPStan</strong> is a valuable tool for any PHP developer looking to improve code quality and reduce bugs. By integrating <strong>PHPStan</strong> into your development workflow, you can catch issues early, maintain high-quality code, and ultimately create more reliable and maintainable applications.</p>
+<p>Start using <strong>PHPStan</strong> today and experience the benefits of static analysis firsthand!</p></div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/introduction-to-phpdocumentor/">Introduction to PHPDocumentor</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/pipeline-partern-in-laravel/"><img
+        
+        loading="lazy"
+        src="/pipeline-partern-in-laravel/pipeline-diagram.webp"
+        srcset="/pipeline-partern-in-laravel/pipeline-diagram.webp, /pipeline-partern-in-laravel/pipeline-diagram.webp 1.5x, /pipeline-partern-in-laravel/pipeline-diagram.webp 2x"
+        title="Use PHPStan to Ensure Code Quality in Your Project" height="200"   width="400" ></a>
+            </div><h2 class="related-title">
+                <a href="/pipeline-partern-in-laravel/">Pipeline-partten in Laravel</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/send-email-with-laravel-using-gmail/">Sending emails through Gmail in Laravel</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/best-practices-for-coder/">Best practices for coder</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/ten-coder-bad-habits/">Ten coder bad habits</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/code/">Code</a>,&nbsp;<a href="/tags/php/">PHP</a>,&nbsp;<a href="/tags/phpstan/">PHPStan</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/git-tags-a-quick-guide/" class="prev" rel="prev" title="Git Tags: A Quick Guide"><i class="fas fa-angle-left fa-fw"></i>Git Tags: A Quick Guide</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.127.0">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-ERR05TP1T5', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-ERR05TP1T5" async></script></div>
+</body>
+
+</html>

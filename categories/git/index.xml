@@ -6,17 +6,17 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/git/" rel="self" type="application/rss+xml" /><item>
     <title>Git Tags: A Quick Guide</title>
-    <link>https://kienngd.github.io/git_tags_a_quick_guide/</link>
+    <link>https://kienngd.github.io/git-tags-a-quick-guide/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git_tags_a_quick_guide/</guid>
+                </author><guid>https://kienngd.github.io/git-tags-a-quick-guide/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
-        src="/git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp"
-        srcset="/git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_700x0_resize_q75_h2_lanczos_2.webp 700w,
-            /git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp 1200w,
-            /git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_2000x0_resize_q75_h2_lanczos_2.webp 2000w"
+        src="/git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp"
+        srcset="/git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_700x0_resize_q75_h2_lanczos_2.webp 700w,
+            /git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp 1200w,
+            /git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_2000x0_resize_q75_h2_lanczos_2.webp 2000w"
         title="Git Tag a quick guide" height="504"   width="1200" ><figcaption class="image-caption">Git Tag a quick guide</figcaption>
     </figure>
 <code>Git</code> is a popular version control system. It helps developers <code>track changes</code> in their code. <code>Git tags</code> are like <code>bookmarks</code> for important points in your project&rsquo;s history.</p>
@@ -39,20 +39,38 @@
 </ol>]]></description>
 </item><item>
     <title>Simplifying Version Control with Git Stash</title>
-    <link>https://kienngd.github.io/simplifying_version_control_with_git_stash/</link>
+    <link>https://kienngd.github.io/simplifying-version-control-with-git-stash/</link>
     <pubDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/simplifying_version_control_with_git_stash/</guid>
+                </author><guid>https://kienngd.github.io/simplifying-version-control-with-git-stash/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/simplifying_version_control_with_git_stash/git_stash_command.png" referrerpolicy="no-referrer">
+                <img src="/simplifying-version-control-with-git-stash/git_stash_command.png" referrerpolicy="no-referrer">
             </div><h1 id="simplifying-version-control-with-git-stash" class="headerLink">
     <a href="#simplifying-version-control-with-git-stash" class="header-mark"></a>Simplifying Version Control with Git Stash</h1><p>In the world of software development, managing changes efficiently is crucial. Git, a powerful version control system, offers various commands to help streamline this process. One such command that comes in handy when you need to temporarily store your current changes without committing them is <code>git stash</code>.</p>]]></description>
 </item><item>
     <title>GIT Commit message conventions</title>
-    <link>https://kienngd.github.io/git_commit_message/</link>
+    <link>https://kienngd.github.io/git-commit-message/</link>
     <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git_commit_message/</guid>
-    <description><![CDATA[GIT Commit message conventions]]></description>
+                </author><guid>https://kienngd.github.io/git-commit-message/</guid>
+    <description><![CDATA[<h2 id="commit-message-conventions" class="headerLink">
+    <a href="#commit-message-conventions" class="header-mark"></a>1 Commit message conventions</h2><p>Ref-Url: <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener noreferrer">https://www.conventionalcommits.org/en/v1.0.0/</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;type&gt;[optional scope]: &lt;description&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[optional body]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[optional footer]
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item></channel>
 </rss>

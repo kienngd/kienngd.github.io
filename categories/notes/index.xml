@@ -6,17 +6,17 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
     <title>Git Tags: A Quick Guide</title>
-    <link>https://kienngd.github.io/git_tags_a_quick_guide/</link>
+    <link>https://kienngd.github.io/git-tags-a-quick-guide/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git_tags_a_quick_guide/</guid>
+                </author><guid>https://kienngd.github.io/git-tags-a-quick-guide/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
-        src="/git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp"
-        srcset="/git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_700x0_resize_q75_h2_lanczos_2.webp 700w,
-            /git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp 1200w,
-            /git_tags_a_quick_guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_2000x0_resize_q75_h2_lanczos_2.webp 2000w"
+        src="/git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp"
+        srcset="/git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_700x0_resize_q75_h2_lanczos_2.webp 700w,
+            /git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp 1200w,
+            /git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_2000x0_resize_q75_h2_lanczos_2.webp 2000w"
         title="Git Tag a quick guide" height="504"   width="1200" ><figcaption class="image-caption">Git Tag a quick guide</figcaption>
     </figure>
 <code>Git</code> is a popular version control system. It helps developers <code>track changes</code> in their code. <code>Git tags</code> are like <code>bookmarks</code> for important points in your project&rsquo;s history.</p>
@@ -39,17 +39,17 @@
 </ol>]]></description>
 </item><item>
     <title>Introduction to PHPDocumentor</title>
-    <link>https://kienngd.github.io/introduction_to_phpdocumentor/</link>
+    <link>https://kienngd.github.io/introduction-to-phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/introduction_to_phpdocumentor/</guid>
+                </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
-        src="/introduction_to_phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp"
-        srcset="/introduction_to_phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_700x0_resize_q75_h2_lanczos_3.webp 700w,
-            /introduction_to_phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
-            /introduction_to_phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
+        src="/introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp"
+        srcset="/introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_700x0_resize_q75_h2_lanczos_3.webp 700w,
+            /introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
+            /introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
         title="PHPDocumentor" height="304"   width="1200" ><figcaption class="image-caption">PHPDocumentor</figcaption>
     </figure></p>
 <p><code>PHPDocumentor</code> is a tool that helps generate <code>technical documentation</code> for <code>PHP projects</code>. It reads your PHP code and creates detailed documentation for <code>functions</code>, <code>classes</code>, and <code>methods</code>&hellip; This is useful for both new developers and teams working together.</p>
@@ -57,49 +57,49 @@
     <a href="#why-use-phpdocumentor" class="header-mark"></a>1 Why Use PHPDocumentor?</h2><p>Using PHPDocumentor makes it easier to understand and maintain your code. It helps others quickly see how to use your functions and classes. Good documentation can save time and reduce mistakes. Also, it improves the quality of your project by keeping everything organized.</p>]]></description>
 </item><item>
     <title>Understanding UUID: A Unique Identifier</title>
-    <link>https://kienngd.github.io/understanding_uuid/</link>
+    <link>https://kienngd.github.io/understanding-uuid/</link>
     <pubDate>Sat, 21 Sep 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/understanding_uuid/</guid>
+                </author><guid>https://kienngd.github.io/understanding-uuid/</guid>
     <description><![CDATA[<h1 id="understanding-uuid-a-unique-identifier" class="headerLink">
     <a href="#understanding-uuid-a-unique-identifier" class="header-mark"></a>Understanding UUID: A Unique Identifier</h1><p>UUID stands for <code>Universally Unique Identifier</code>. It is a 128-bit number used to identify information uniquely across different systems and applications. UUIDs are often represented as a string of hexadecimal digits, divided into five groups, such as <code>123e4567-e89b-12d3-a456-426614174000</code>.</p>]]></description>
 </item><item>
     <title>Quick Guide to Using Whimsical Diagrams with ChatGPT</title>
-    <link>https://kienngd.github.io/quick_guide_to_use_whimsical_diagrams_with_chatgpt/</link>
+    <link>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</link>
     <pubDate>Wed, 04 Sep 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/quick_guide_to_use_whimsical_diagrams_with_chatgpt/</guid>
+                </author><guid>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</guid>
     <description><![CDATA[<p><br>
 Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize your ideas and projects. This guide will show you how to use <strong>Whimsical Diagrams</strong> with <strong>ChatGPT</strong>. We will cover everything from setting it up, saving your work, export to picture to share with other people. Just follow these easy steps to use these helpful tools.</p>]]></description>
 </item><item>
     <title>Create an Entity Relationship Diagram with draw.io V24.7.5</title>
-    <link>https://kienngd.github.io/drawio_create_an_entity_relationship_diagram/</link>
+    <link>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</link>
     <pubDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/drawio_create_an_entity_relationship_diagram/</guid>
+                </author><guid>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</guid>
     <description><![CDATA[<h1 id="introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="headerLink">
     <a href="#introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="header-mark"></a>Introducing the New &ldquo;Create an Entity Relationship Diagram&rdquo; Feature in Draw.io Version 24.7.5</h1><p><strong>Draw.io</strong> has just added a new feature: creating an Entity Relationship Diagram (ERD). This update makes it easier to design and visualize database structures.</p>]]></description>
 </item><item>
     <title>Boost Your Work Productivity: A Simple Guide</title>
-    <link>https://kienngd.github.io/boost_your_work_productivity/</link>
+    <link>https://kienngd.github.io/boost-your-work-productivity/</link>
     <pubDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/boost_your_work_productivity/</guid>
+                </author><guid>https://kienngd.github.io/boost-your-work-productivity/</guid>
     <description><![CDATA[<h1 id="boost-your-work-productivity-a-simple-guide" class="headerLink">
     <a href="#boost-your-work-productivity-a-simple-guide" class="header-mark"></a>Boost Your Work Productivity: A Simple Guide</h1><p>In today&rsquo;s fast-paced world, improving your productivity is crucial for achieving success and maintaining a healthy work-life balance. By working more efficiently, you can get more done in less time, reduce stress, and you have more time for activities you enjoy. Here’s a simple guide to help you boost your work productivity.</p>]]></description>
 </item><item>
     <title>Git log quickly and easily</title>
-    <link>https://kienngd.github.io/git_log_quickly_and_easily/</link>
+    <link>https://kienngd.github.io/git-log-quickly-and-easily/</link>
     <pubDate>Wed, 31 Jul 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git_log_quickly_and_easily/</guid>
+                </author><guid>https://kienngd.github.io/git-log-quickly-and-easily/</guid>
     <description><![CDATA[<p>These are some <code>git log commands</code> I use everyday and I think they are helpful for you.</p>]]></description>
 </item><item>
     <title>Sending emails through Gmail in Laravel</title>
-    <link>https://kienngd.github.io/send_email_with_laravel_using_gmail/</link>
+    <link>https://kienngd.github.io/send-email-with-laravel-using-gmail/</link>
     <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/send_email_with_laravel_using_gmail/</guid>
+                </author><guid>https://kienngd.github.io/send-email-with-laravel-using-gmail/</guid>
     <description><![CDATA[<p>Sending emails through Gmail in Laravel is straightforward and requires a few setup steps to integrate Gmail&rsquo;s SMTP server with your Laravel application.</p>]]></description>
 </item><item>
     <title>The Pomodoro Technique: Enhancing Productivity</title>
@@ -113,12 +113,12 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
 <p>The Pomodoro Technique, developed by Francesco Cirillo in the late 1980s, has become a popular method for improving productivity and managing time effectively. Here’s a deeper look into its origins and notable users:</p>]]></description>
 </item><item>
     <title>How to Use ZRAM on Ubuntu 24.04</title>
-    <link>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</link>
+    <link>https://kienngd.github.io/how-to-use-zram-on-ubuntu-2404/</link>
     <pubDate>Thu, 20 Jun 2024 00:00:00 &#43;0000</pubDate><author>
                     <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/how_to_use_zram_on_ubuntu_24_04/</guid>
+                </author><guid>https://kienngd.github.io/how-to-use-zram-on-ubuntu-2404/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/how_to_use_zram_on_ubuntu_24_04/swap-zram.png" referrerpolicy="no-referrer">
+                <img src="/how-to-use-zram-on-ubuntu-2404/swap-zram.png" referrerpolicy="no-referrer">
             </div>How to Use ZRAM on Ubuntu 24.04 1 What is ZRAM?ZRAM is a Linux kernel module. It creates a compressed block device in RAM. This block device can be used for swap space or as a temporary filesystem. Because it is compressed, it saves memory and can make your system faster.
 2 Pros and Cons of Using ZRAMPros:
 Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></description>

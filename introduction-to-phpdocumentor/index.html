@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <title>Introduction to PHPDocumentor - K5D::Blog</title><meta name="Description" content="Introduction to PHPDocumentor"><meta property="og:url" content="https://kienngd.github.io/introduction-to-phpdocumentor/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="Introduction to PHPDocumentor">
+  <meta property="og:description" content="Introduction to PHPDocumentor">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-25T00:00:00+00:00">
+    <meta property="article:tag" content="Notes">
+    <meta property="article:tag" content="Code">
+    <meta property="article:tag" content="PHPDocumentor">
+    <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp">
+  <meta name="twitter:title" content="Introduction to PHPDocumentor">
+  <meta name="twitter:description" content="Introduction to PHPDocumentor">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/introduction-to-phpdocumentor/" /><link rel="prev" href="https://kienngd.github.io/understanding-uuid/" /><link rel="next" href="https://kienngd.github.io/git-tags-a-quick-guide/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Introduction to PHPDocumentor",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kienngd.github.io/introduction-to-phpdocumentor/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Notes, Code, PHPDocumentor","wordcount":  428 ,
+        "url": "https://kienngd.github.io/introduction-to-phpdocumentor/","datePublished": "2024-09-25T00:00:00+00:00","dateModified": "2024-09-25T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kienngd.github.io/images/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"authors": [{
+                        "@type": "Person",
+                        "name": "Kien Nguyen"                    
+                    }],"description": "Introduction to PHPDocumentor"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blogs </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        title="https://hugodoit.pages.dev/images/avatar.webp" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Blogs</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-use-phpdocumentor">Why Use PHPDocumentor?</a></li>
+    <li><a href="#how-to-install-and-run-phpdocumentor">How to Install and Run PHPDocumentor</a>
+      <ul>
+        <li><a href="#why-not-use-composer">Why Not Use Composer?</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-command-options">Basic Command Options</a></li>
+    <li><a href="#writing-php-doc-blocks">Writing PHP Doc Blocks</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Introduction to PHPDocumentor</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a>&nbsp;<a href="/categories/code/"><i class="far fa-folder fa-fw"></i>Code</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-09-25">2024-09-25</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-09-25">2024-09-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;428 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-use-phpdocumentor">Why Use PHPDocumentor?</a></li>
+    <li><a href="#how-to-install-and-run-phpdocumentor">How to Install and Run PHPDocumentor</a>
+      <ul>
+        <li><a href="#why-not-use-composer">Why Not Use Composer?</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-command-options">Basic Command Options</a></li>
+    <li><a href="#writing-php-doc-blocks">Writing PHP Doc Blocks</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><figure><img
+        
+        loading="lazy"
+        src="/introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp"
+        srcset="/introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_700x0_resize_q75_h2_lanczos_3.webp 700w,
+            /introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
+            /introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
+        title="PHPDocumentor" height="304"   width="1200" ><figcaption class="image-caption">PHPDocumentor</figcaption>
+    </figure></p>
+<p><code>PHPDocumentor</code> is a tool that helps generate <code>technical documentation</code> for <code>PHP projects</code>. It reads your PHP code and creates detailed documentation for <code>functions</code>, <code>classes</code>, and <code>methods</code>&hellip; This is useful for both new developers and teams working together.</p>
+<h2 id="why-use-phpdocumentor" class="headerLink">
+    <a href="#why-use-phpdocumentor" class="header-mark"></a>1 Why Use PHPDocumentor?</h2><p>Using PHPDocumentor makes it easier to understand and maintain your code. It helps others quickly see how to use your functions and classes. Good documentation can save time and reduce mistakes. Also, it improves the quality of your project by keeping everything organized.</p>
+<h2 id="how-to-install-and-run-phpdocumentor" class="headerLink">
+    <a href="#how-to-install-and-run-phpdocumentor" class="header-mark"></a>2 How to Install and Run PHPDocumentor</h2><p>One easy way to install PHPDocumentor is by downloading the <code>.phar</code> file. This is a standalone file that contains everything you need.</p>
+<ol>
+<li>Download the <code>.phar</code> file from the <a href="https://github.com/phpDocumentor/phpDocumentor/releases" target="_blank" rel="noopener noreferrer">phpDocumentor github website</a>.</li>
+<li>Run the file using the command line to generate the documentation for your project:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php phpDocumentor.phar -d SOURCE-FOLDER -t TARGET-FOLDER
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>phpDocumentor needs at least a <code>SOURCE-FOLDER</code> to scan, (via argument or have this information in a configuration file). If you omit the <code>TARGET-FOLDER</code> then your documentation will be generated in a subfolder, of your current working directory, called <code>.phpdoc/build/</code>.</p>
+<h3 id="why-not-use-composer" class="headerLink">
+    <a href="#why-not-use-composer" class="header-mark"></a>2.1 Why Not Use Composer?</h3><p>You can install <code>phpDocumentor</code> with Composer, but it&rsquo;s not the best option. PHPDocumentor has many libraries that are also used by other tools. This can cause conflicts with your project&rsquo;s dependencies. Using the <code>.phar</code> file is a simpler and safer choice.</p>
+<h2 id="basic-command-options" class="headerLink">
+    <a href="#basic-command-options" class="header-mark"></a>3 Basic Command Options</h2><p>When running PHPDocumentor, there are several options you can use:</p>
+<ul>
+<li><code>-d, --directory</code>: Specifies the directory where your source code is located.</li>
+<li><code>-t, --target</code>: Defines the directory where the documentation will be saved.</li>
+<li><code>--template</code>: Selects a template for the documentation format.</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php phpDocumentor.phar -d src/ -t docs/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This command will generate documentation from the <code>src/</code> folder and save it in the <code>docs/</code> folder.</p>
+<h2 id="writing-php-doc-blocks" class="headerLink">
+    <a href="#writing-php-doc-blocks" class="header-mark"></a>4 Writing PHP Doc Blocks</h2><p>To get the best out of PHPDocumentor, add php-doc-blocks to your code. These are special comments that describe each class, function, or method. They help PHPDocumentor create detailed documentation. Here’s an example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * Adds two numbers together.
+</span></span></span><span class="line"><span class="cl"><span class="sd"> *
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * @param int $a The first number.
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * @param int $b The second number.
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * @return int The sum of the two numbers.
+</span></span></span><span class="line"><span class="cl"><span class="sd"> */</span>
+</span></span><span class="line"><span class="cl"><span class="k">function</span> <span class="nf">add</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nv">$a</span> <span class="o">+</span> <span class="nv">$b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You can see more details at <a href="https://docs.phpdoc.org/guide/guides/docblocks.html#more-on-docblocks" target="_blank" rel="noopener noreferrer">PHP-DOC-BLOCK</a>.</p>
+<h2 id="conclusion" class="headerLink">
+    <a href="#conclusion" class="header-mark"></a>5 Conclusion</h2><p>Using PHPDocumentor is a great way to create clear and useful documentation for your PHP project. By using the <code>.phar</code> file, you can avoid adding extra dependencies. Make sure to use good php-doc-blocks to get the best results. Happy coding!</p></div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/use-phpstan-to-ensure-code-quality-in-your-project/">Use PHPStan to Ensure Code Quality in Your Project</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/git-tags-a-quick-guide/">Git Tags: A Quick Guide</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/understanding-uuid/">Understanding UUID: A Unique Identifier</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/quick-guide-to-use-whimsical-diagrams-with-chatgpt/">Quick Guide to Using Whimsical Diagrams with ChatGPT</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/create-an-entity-relationship-diagram-with-drawio/">Create an Entity Relationship Diagram with draw.io V24.7.5</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/notes/">Notes</a>,&nbsp;<a href="/tags/code/">Code</a>,&nbsp;<a href="/tags/phpdocumentor/">PHPDocumentor</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/understanding-uuid/" class="prev" rel="prev" title="Understanding UUID: A Unique Identifier"><i class="fas fa-angle-left fa-fw"></i>Understanding UUID: A Unique Identifier</a>
+            <a href="/git-tags-a-quick-guide/" class="next" rel="next" title="Git Tags: A Quick Guide">Git Tags: A Quick Guide<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.127.0">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-ERR05TP1T5', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-ERR05TP1T5" async></script></div>
+</body>
+
+</html>
