@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <title>Exploring the split Command - K5D::Blog</title><meta name="Description" content="Exploring the split Command"><meta property="og:url" content="https://kienngd.github.io/exploring-the-split-command/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="Exploring the split Command">
+  <meta property="og:description" content="Exploring the split Command">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-15T00:00:00+00:00">
+    <meta property="article:tag" content="Notes">
+    <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp">
+  <meta name="twitter:title" content="Exploring the split Command">
+  <meta name="twitter:description" content="Exploring the split Command">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/exploring-the-split-command/" /><link rel="prev" href="https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Exploring the split Command",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kienngd.github.io/exploring-the-split-command/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Notes","wordcount":  407 ,
+        "url": "https://kienngd.github.io/exploring-the-split-command/","datePublished": "2024-10-15T00:00:00+00:00","dateModified": "2024-10-15T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "K5D Blog","logo": "https://kienngd.github.io/images/logo-48x48.png"},"authors": [{
+                        "@type": "Person",
+                        "name": "Kien Nguyen"                    
+                    }],"description": "Exploring the split Command"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blogs </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Blogs</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-syntax-and-example">Basic Syntax and Example</a></li>
+    <li><a href="#common-options-for-split">Common Options for <code>split</code></a></li>
+    <li><a href="#joining-split-files">Joining Split Files</a></li>
+    <li><a href="#advanced-usage-with-pipes-">Advanced Usage with Pipes (<code>|</code>)</a></li>
+    <li><a href="#using-7-zip-on-windows">Using 7-Zip on Windows</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Exploring the split Command</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://kienngd.github.io/authors/kien-nguyen'>Kien Nguyen</a></span>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a>&nbsp;<a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a>&nbsp;<a href="/categories/command/"><i class="far fa-folder fa-fw"></i>Command</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-10-15">2024-10-15</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-10-15">2024-10-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;407 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-syntax-and-example">Basic Syntax and Example</a></li>
+    <li><a href="#common-options-for-split">Common Options for <code>split</code></a></li>
+    <li><a href="#joining-split-files">Joining Split Files</a></li>
+    <li><a href="#advanced-usage-with-pipes-">Advanced Usage with Pipes (<code>|</code>)</a></li>
+    <li><a href="#using-7-zip-on-windows">Using 7-Zip on Windows</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>The <code>split</code> command is a useful tool for breaking down large files into smaller, more manageable pieces. It is especially helpful when dealing with file size limitations or when you need to transfer files over networks.</p>
+<h2 id="basic-syntax-and-example" class="headerLink">
+    <a href="#basic-syntax-and-example" class="header-mark"></a>1 Basic Syntax and Example</h2><p>The basic syntax of the <code>split</code> command is:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">split <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>INPUT <span class="o">[</span>PREFIX<span class="o">]]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>For example, to split a large file named <code>largefile.txt</code> into 10MB pieces, you can use:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">split -b 10M largefile.txt part_
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This command will create files named <code>part_aa</code>, <code>part_ab</code>, <code>part_ac</code>, and so on. Each file will be 10MB except for the last one, which might be smaller depending on the size of <code>largefile.txt</code>.</p>
+<h2 id="common-options-for-split" class="headerLink">
+    <a href="#common-options-for-split" class="header-mark"></a>2 Common Options for <code>split</code></h2><p>Some common options for the <code>split</code> command include:</p>
+<ul>
+<li><code>-b SIZE</code>: Splits the file into parts of the specified size, such as <code>10M</code> for 10 megabytes.</li>
+<li><code>-l NUMBER</code>: Splits the file into parts with a specific number of lines.</li>
+<li><code>-d</code>: Uses numerical suffixes instead of alphabetical ones, making it easier to sort and manage.</li>
+</ul>
+<h2 id="joining-split-files" class="headerLink">
+    <a href="#joining-split-files" class="header-mark"></a>3 Joining Split Files</h2><p>After splitting files, you might want to join them back together. You can use the <code>cat</code> command for this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat part_* &gt; combinedfile
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Note:</strong> To ensure the correct order, make sure that the filenames are sorted correctly. If the order is incorrect, you can manually <code>cat</code> each file in sequence:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat part_aa part_ab part_ac &gt; combinedfile
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This ensures the pieces are concatenated in the correct order.</p>
+<h2 id="advanced-usage-with-pipes-" class="headerLink">
+    <a href="#advanced-usage-with-pipes-" class="header-mark"></a>4 Advanced Usage with Pipes (<code>|</code>)</h2><p>The <code>split</code> command can be combined with other commands using the pipe operator (<code>|</code>). This allows you to pass the output of one command directly into <code>split</code>. For example, you can use <code>tar</code> to compress and then split a directory:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar -czvf - /path/to/directory <span class="p">|</span> split -b 50M - archive_part_
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>In this example, <code>tar</code> compresses the directory, and <code>split</code> divides the compressed output into 50MB parts.</p>
+<h2 id="using-7-zip-on-windows" class="headerLink">
+    <a href="#using-7-zip-on-windows" class="header-mark"></a>5 Using 7-Zip on Windows</h2><p>If you are on Windows and need to join split files, you can use software like 7-Zip. With 7-Zip, you can select all split parts, right-click, and choose &ldquo;Combine&rdquo; to merge them back into one file.</p>
+<h2 id="conclusion" class="headerLink">
+    <a href="#conclusion" class="header-mark"></a>6 Conclusion</h2><p>The <code>split</code> command is versatile and integrates well with other tools using pipes. This makes it a powerful option for managing large files. Whether you are transferring files or need to work around size limits, <code>split</code> can help you efficiently handle your data. Using tools like 7-Zip on Windows further extends its usefulness, allowing seamless file management across different platforms.</p></div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/git-tags-a-quick-guide/">Git Tags: A Quick Guide</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/introduction-to-phpdocumentor/">Introduction to PHPDocumentor</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/understanding-uuid/">Understanding UUID: A Unique Identifier</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/quick-guide-to-use-whimsical-diagrams-with-chatgpt/">Quick Guide to Using Whimsical Diagrams with ChatGPT</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/create-an-entity-relationship-diagram-with-drawio/">Create an Entity Relationship Diagram with draw.io V24.7.5</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.github.io/exploring-the-split-command/" data-title="Exploring the split Command" data-hashtags="Notes"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.github.io/exploring-the-split-command/" data-hashtag="Notes"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://kienngd.github.io/exploring-the-split-command/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.github.io/exploring-the-split-command/" data-title="Exploring the split Command" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/notes/">Notes</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/use-phpstan-to-ensure-code-quality-in-your-project/" class="prev" rel="prev" title="Use PHPStan to Ensure Code Quality in Your Project"><i class="fas fa-angle-left fa-fw"></i>Use PHPStan to Ensure Code Quality in Your Project</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.127.0">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-ERR05TP1T5', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-ERR05TP1T5" async></script></div>
+</body>
+
+</html>

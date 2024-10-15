@@ -4,7 +4,25 @@
         <link>https://kienngd.github.io/tags/notes/</link>
         <description>Notes - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Exploring the split Command</title>
+    <link>https://kienngd.github.io/exploring-the-split-command/</link>
+    <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/exploring-the-split-command/</guid>
+    <description><![CDATA[<p>The <code>split</code> command is a useful tool for breaking down large files into smaller, more manageable pieces. It is especially helpful when dealing with file size limitations or when you need to transfer files over networks.</p>
+<h2 id="basic-syntax-and-example" class="headerLink">
+    <a href="#basic-syntax-and-example" class="header-mark"></a>1 Basic Syntax and Example</h2><p>The basic syntax of the <code>split</code> command is:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">split <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>INPUT <span class="o">[</span>PREFIX<span class="o">]]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>Git Tags: A Quick Guide</title>
     <link>https://kienngd.github.io/git-tags-a-quick-guide/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
@@ -112,12 +130,5 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
             </div>How to Use ZRAM on Ubuntu 24.04 1 What is ZRAM?ZRAM is a Linux kernel module. It creates a compressed block device in RAM. This block device can be used for swap space or as a temporary filesystem. Because it is compressed, it saves memory and can make your system faster.
 2 Pros and Cons of Using ZRAMPros:
 Faster Swap: ZRAM is much faster than a traditional swap on a hard disk.]]></description>
-</item><item>
-    <title>Some softwares I use everyday</title>
-    <link>https://kienngd.github.io/some-softwares-i-use-every-day/</link>
-    <pubDate>Mon, 31 Jul 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/some-softwares-i-use-every-day/</guid>
-    <description><![CDATA[<p>These are some softwares I use everyday and I think they are helpful for you.</p>]]></description>
 </item></channel>
 </rss>

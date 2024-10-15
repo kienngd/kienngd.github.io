@@ -4,7 +4,28 @@
         <link>https://kienngd.github.io/categories/</link>
         <description>Categories - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Command</title>
+    <link>https://kienngd.github.io/categories/command/</link>
+    <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/categories/command/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Linux</title>
+    <link>https://kienngd.github.io/categories/linux/</link>
+    <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/categories/linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Notes</title>
+    <link>https://kienngd.github.io/categories/notes/</link>
+    <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/categories/notes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Code</title>
     <link>https://kienngd.github.io/categories/code/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
@@ -17,13 +38,6 @@
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/categories/git/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Notes</title>
-    <link>https://kienngd.github.io/categories/notes/</link>
-    <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/categories/notes/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AI-Tools</title>
@@ -59,20 +73,6 @@
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/categories/design-pattern/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>API</title>
-    <link>https://kienngd.github.io/categories/api/</link>
-    <pubDate>Tue, 18 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/categories/api/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Quick-Notes</title>
-    <link>https://kienngd.github.io/categories/quick-notes/</link>
-    <pubDate>Tue, 28 May 2024 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/categories/quick-notes/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
