@@ -713,9 +713,9 @@ This is a footnote with "label"[^label]
 Local images in assets folder
 
 ```
-![Local image](/static/images/basic-markdown-featured-image.webp)
+![Local image](basic-markdown-featured-image.webp)
 ```
-![Local image](/static/images/basic-markdown-featured-image.webp)
+![Local image](basic-markdown-featured-image.webp)
 
 Images have a similar syntax to links but include a preceding exclamation point.
 
