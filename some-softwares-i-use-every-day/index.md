@@ -47,6 +47,7 @@ These are some softwares I use everyday and I think they are helpful for you.
     - Create image from text: https://www.craiyon.com/ (**Didn't test yet!**)
     - Chat bot with multiple LM: https://lmarena.ai/
 - Visual explain mysql result: https://mysqlexplain.com/
+- Edit photo online: https://www.photopea.com/
 
 ## Others
 - Laradock
@@ -61,7 +62,7 @@ These are some softwares I use everyday and I think they are helpful for you.
 - Image processor: `GIMP`
 - Email client: `Thunderbird` 
 - OpenVPN
-- mindmap editor: `FreePlane`
+- mindmap editor: ~~`FreePlane`~~
 - `DrawIO` offline
 - `Postman`
 - Small-and-Light Edit photo: `ksnip`
