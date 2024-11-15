@@ -4,7 +4,18 @@
         <link>https://kienngd.github.io/categories/notes/</link>
         <description>Notes - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>A Late Night Database Recovery Story</title>
+    <link>https://kienngd.github.io/database-recovery-story/</link>
+    <pubDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</pubDate><author>
+                    <name>Kien Nguyen</name>
+                </author><guid>https://kienngd.github.io/database-recovery-story/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/database-recovery-story/securing-mysql-banner.png" referrerpolicy="no-referrer">
+            </div><h2 id="the-story" class="headerLink">
+    <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. He was panicked because his database was lost.</p>
+<p>He sent me information , then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>]]></description>
+</item><item>
     <title>Exploring the split Command</title>
     <link>https://kienngd.github.io/exploring-the-split-command/</link>
     <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
@@ -119,15 +130,5 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
                     <name>Kien Nguyen</name>
                 </author><guid>https://kienngd.github.io/send-email-with-laravel-using-gmail/</guid>
     <description><![CDATA[<p>Sending emails through Gmail in Laravel is straightforward and requires a few setup steps to integrate Gmail&rsquo;s SMTP server with your Laravel application.</p>]]></description>
-</item><item>
-    <title>The Pomodoro Technique: Enhancing Productivity</title>
-    <link>https://kienngd.github.io/pomodoro/</link>
-    <pubDate>Thu, 18 Jul 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/pomodoro/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/pomodoro/pomodoro-technique-banner.jpg" referrerpolicy="no-referrer">
-            </div><p><strong>The Pomodoro Technique: Enhancing Productivity</strong></p>
-<p>The Pomodoro Technique, developed by Francesco Cirillo in the late 1980s, has become a popular method for improving productivity and managing time effectively. Here’s a deeper look into its origins and notable users:</p>]]></description>
 </item></channel>
 </rss>
