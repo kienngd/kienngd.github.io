@@ -8,8 +8,8 @@
     <title>How to create ssl certificate for local test environment</title>
     <link>https://kienngd.github.io/create-ssl-cert-for-local-test/</link>
     <pubDate>Mon, 20 Dec 2021 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/create-ssl-cert-for-local-test/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/create-ssl-cert-for-local-test/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/create-ssl-cert-for-local-test/ssl-secured-ssl-certificate-banner.png" referrerpolicy="no-referrer">
             </div><p>Hi there, it&rsquo;s me again! Today, I&rsquo;ll guide you through the process of creating an SSL certificate for your local test environment on Ubuntu 20.04. It&rsquo;s going to be a fun ride, so let&rsquo;s get started!</p>

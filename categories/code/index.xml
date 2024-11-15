@@ -8,8 +8,8 @@
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
     <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -25,8 +25,8 @@
     <title>Introduction to PHPDocumentor</title>
     <link>https://kienngd.github.io/introduction-to-phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -43,8 +43,8 @@
     <title>Pipeline-partten in Laravel</title>
     <link>https://kienngd.github.io/pipeline-partern-in-laravel/</link>
     <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
@@ -53,8 +53,8 @@
     <title>Inheritance in GoLang</title>
     <link>https://kienngd.github.io/inheritance_in_golang.md/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
             </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
@@ -62,8 +62,8 @@
     <title>Functional options pattern with example</title>
     <link>https://kienngd.github.io/functional-options-pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/functional-options-pattern/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/functional-options-pattern/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/functional-options-pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
@@ -72,29 +72,29 @@
     <title>Best practices for coder</title>
     <link>https://kienngd.github.io/best-practices-for-coder/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
     <description><![CDATA[Best practices for coder]]></description>
 </item><item>
     <title>Ten coder bad habits</title>
     <link>https://kienngd.github.io/ten-coder-bad-habits/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/ten-coder-bad-habits/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/ten-coder-bad-habits/</guid>
     <description><![CDATA[Ten coder bad habits]]></description>
 </item><item>
     <title>Naming: Every Developer&#39;s Nightmare</title>
     <link>https://kienngd.github.io/naming/</link>
     <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/naming/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/naming/</guid>
     <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item><item>
     <title>Strategy Pattern in PHP with examples</title>
     <link>https://kienngd.github.io/strategy-pattern-in-php/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/strategy-pattern-in-php/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/strategy-pattern-in-php/</guid>
     <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
     <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
 <h3 id="without-pattern" class="headerLink">
@@ -141,8 +141,8 @@
     <title>How to working with JSON in GoLang</title>
     <link>https://kienngd.github.io/working-with-json-in-golang/</link>
     <pubDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/working-with-json-in-golang/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/working-with-json-in-golang/</guid>
     <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
 <p><strong>Working with structed data</strong></p>
 <div class="highlight"><div class="chroma">

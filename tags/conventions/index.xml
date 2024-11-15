@@ -8,8 +8,8 @@
     <title>GIT Commit message conventions</title>
     <link>https://kienngd.github.io/git-commit-message/</link>
     <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git-commit-message/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/git-commit-message/</guid>
     <description><![CDATA[<h2 id="commit-message-conventions" class="headerLink">
     <a href="#commit-message-conventions" class="header-mark"></a>1 Commit message conventions</h2><p>Ref-Url: <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener noreferrer">https://www.conventionalcommits.org/en/v1.0.0/</a></p>
 <div class="highlight"><div class="chroma">
@@ -33,8 +33,8 @@
     <title>Naming: Every Developer&#39;s Nightmare</title>
     <link>https://kienngd.github.io/naming/</link>
     <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/naming/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/naming/</guid>
     <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item></channel>
 </rss>

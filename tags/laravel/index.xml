@@ -8,8 +8,8 @@
     <title>Pipeline-partten in Laravel</title>
     <link>https://kienngd.github.io/pipeline-partern-in-laravel/</link>
     <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
@@ -18,8 +18,8 @@
     <title>Sending emails through Gmail in Laravel</title>
     <link>https://kienngd.github.io/send-email-with-laravel-using-gmail/</link>
     <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/send-email-with-laravel-using-gmail/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/send-email-with-laravel-using-gmail/</guid>
     <description><![CDATA[<p>Sending emails through Gmail in Laravel is straightforward and requires a few setup steps to integrate Gmail&rsquo;s SMTP server with your Laravel application.</p>]]></description>
 </item></channel>
 </rss>

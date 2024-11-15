@@ -8,8 +8,8 @@
     <title>Using the at Command in Ubuntu 24.04 to Schedule Tasks</title>
     <link>https://kienngd.github.io/using-at-command-to-schedule-a-task/</link>
     <pubDate>Fri, 19 Jul 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/using-at-command-to-schedule-a-task/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/using-at-command-to-schedule-a-task/</guid>
     <description><![CDATA[<p><strong>Using the <code>at</code> Command in Ubuntu 24.04 to Schedule Tasks</strong></p>
 <p>The <code>at</code> command allows users to execute specific actions at any future time without needing continuous supervision. In this example, I use Ubuntu 24.04 to test.</p>]]></description>
 </item></channel>

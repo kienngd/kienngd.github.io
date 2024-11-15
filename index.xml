@@ -10,8 +10,8 @@
     <title>A Late Night Database Recovery Story</title>
     <link>https://kienngd.github.io/database-recovery-story/</link>
     <pubDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/database-recovery-story/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/database-recovery-story/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/database-recovery-story/securing-mysql-banner.png" referrerpolicy="no-referrer">
             </div><h2 id="the-story" class="headerLink">
@@ -21,8 +21,8 @@
     <title>Exploring the split Command</title>
     <link>https://kienngd.github.io/exploring-the-split-command/</link>
     <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/exploring-the-split-command/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/exploring-the-split-command/</guid>
     <description><![CDATA[<p>The <code>split</code> command is a useful tool for breaking down large files into smaller, more manageable pieces. It is especially helpful when dealing with file size limitations or when you need to transfer files over networks.</p>
 <h2 id="basic-syntax-and-example" class="headerLink">
     <a href="#basic-syntax-and-example" class="header-mark"></a>1 Basic Syntax and Example</h2><p>The basic syntax of the <code>split</code> command is:</p>
@@ -39,8 +39,8 @@
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
     <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -56,8 +56,8 @@
     <title>Git Tags: A Quick Guide</title>
     <link>https://kienngd.github.io/git-tags-a-quick-guide/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git-tags-a-quick-guide/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/git-tags-a-quick-guide/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -89,8 +89,8 @@
     <title>Introduction to PHPDocumentor</title>
     <link>https://kienngd.github.io/introduction-to-phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -107,24 +107,24 @@
     <title>Understanding UUID: A Unique Identifier</title>
     <link>https://kienngd.github.io/understanding-uuid/</link>
     <pubDate>Sat, 21 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/understanding-uuid/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/understanding-uuid/</guid>
     <description><![CDATA[<h1 id="understanding-uuid-a-unique-identifier" class="headerLink">
     <a href="#understanding-uuid-a-unique-identifier" class="header-mark"></a>Understanding UUID: A Unique Identifier</h1><p>UUID stands for <code>Universally Unique Identifier</code>. It is a 128-bit number used to identify information uniquely across different systems and applications. UUIDs are often represented as a string of hexadecimal digits, divided into five groups, such as <code>123e4567-e89b-12d3-a456-426614174000</code>.</p>]]></description>
 </item><item>
     <title>Quick Guide to Using Whimsical Diagrams with ChatGPT</title>
     <link>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</link>
     <pubDate>Wed, 04 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</guid>
     <description><![CDATA[<p><br>
 Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize your ideas and projects. This guide will show you how to use <strong>Whimsical Diagrams</strong> with <strong>ChatGPT</strong>. We will cover everything from setting it up, saving your work, export to picture to share with other people. Just follow these easy steps to use these helpful tools.</p>]]></description>
 </item><item>
     <title>Pipeline-partten in Laravel</title>
     <link>https://kienngd.github.io/pipeline-partern-in-laravel/</link>
     <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
@@ -133,16 +133,16 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
     <title>Create an Entity Relationship Diagram with draw.io V24.7.5</title>
     <link>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</link>
     <pubDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</guid>
     <description><![CDATA[<h1 id="introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="headerLink">
     <a href="#introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="header-mark"></a>Introducing the New &ldquo;Create an Entity Relationship Diagram&rdquo; Feature in Draw.io Version 24.7.5</h1><p><strong>Draw.io</strong> has just added a new feature: creating an Entity Relationship Diagram (ERD). This update makes it easier to design and visualize database structures.</p>]]></description>
 </item><item>
     <title>Boost Your Work Productivity: A Simple Guide</title>
     <link>https://kienngd.github.io/boost-your-work-productivity/</link>
     <pubDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/boost-your-work-productivity/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/boost-your-work-productivity/</guid>
     <description><![CDATA[<h1 id="boost-your-work-productivity-a-simple-guide" class="headerLink">
     <a href="#boost-your-work-productivity-a-simple-guide" class="header-mark"></a>Boost Your Work Productivity: A Simple Guide</h1><p>In today&rsquo;s fast-paced world, improving your productivity is crucial for achieving success and maintaining a healthy work-life balance. By working more efficiently, you can get more done in less time, reduce stress, and you have more time for activities you enjoy. Here’s a simple guide to help you boost your work productivity.</p>]]></description>
 </item></channel>

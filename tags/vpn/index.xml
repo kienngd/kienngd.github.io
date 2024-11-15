@@ -8,8 +8,8 @@
     <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
     <link>https://kienngd.github.io/install-openvpn-ubuntu/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/install-openvpn-ubuntu/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/install-openvpn-ubuntu/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/install-openvpn-ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
             </div><p><strong>Do you want to protect your data online?</strong> OpenVPN is the solution for you! Today, we will install OpenVPN on your Ubuntu 22.04 server and set up a secure VPN connection.</p>]]></description>

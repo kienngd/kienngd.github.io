@@ -8,8 +8,8 @@
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
     <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -25,8 +25,8 @@
     <title>Pipeline-partten in Laravel</title>
     <link>https://kienngd.github.io/pipeline-partern-in-laravel/</link>
     <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
@@ -35,8 +35,8 @@
     <title>Strategy Pattern in PHP with examples</title>
     <link>https://kienngd.github.io/strategy-pattern-in-php/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/strategy-pattern-in-php/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/strategy-pattern-in-php/</guid>
     <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
     <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
 <h3 id="without-pattern" class="headerLink">

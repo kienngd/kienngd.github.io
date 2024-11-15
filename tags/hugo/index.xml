@@ -8,8 +8,8 @@
     <title>🚧 How to build a free blog using Hugo</title>
     <link>https://kienngd.github.io/build-a-free-blog-using-hugo/</link>
     <pubDate>Thu, 08 Oct 2020 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/build-a-free-blog-using-hugo/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/build-a-free-blog-using-hugo/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/build-a-free-blog-using-hugo/creating-a-hugo-theme-from-scratch.jpg" referrerpolicy="no-referrer">
             </div><p>Hello. In this post we will learn how to build a free personal blog using Hugo + Github page. Have fun!</p>

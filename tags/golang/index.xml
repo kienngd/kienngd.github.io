@@ -8,8 +8,8 @@
     <title>Inheritance in GoLang</title>
     <link>https://kienngd.github.io/inheritance_in_golang.md/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
             </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
@@ -17,8 +17,8 @@
     <title>Functional options pattern with example</title>
     <link>https://kienngd.github.io/functional-options-pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/functional-options-pattern/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/functional-options-pattern/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/functional-options-pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
@@ -27,8 +27,8 @@
     <title>How to working with JSON in GoLang</title>
     <link>https://kienngd.github.io/working-with-json-in-golang/</link>
     <pubDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/working-with-json-in-golang/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/working-with-json-in-golang/</guid>
     <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
 <p><strong>Working with structed data</strong></p>
 <div class="highlight"><div class="chroma">

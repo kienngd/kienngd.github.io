@@ -8,8 +8,8 @@
     <title>Git Tags: A Quick Guide</title>
     <link>https://kienngd.github.io/git-tags-a-quick-guide/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git-tags-a-quick-guide/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/git-tags-a-quick-guide/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -41,15 +41,15 @@
     <title>Git log quickly and easily</title>
     <link>https://kienngd.github.io/git-log-quickly-and-easily/</link>
     <pubDate>Wed, 31 Jul 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git-log-quickly-and-easily/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/git-log-quickly-and-easily/</guid>
     <description><![CDATA[<p>These are some <code>git log commands</code> I use everyday and I think they are helpful for you.</p>]]></description>
 </item><item>
     <title>Simplifying Version Control with Git Stash</title>
     <link>https://kienngd.github.io/simplifying-version-control-with-git-stash/</link>
     <pubDate>Mon, 17 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/simplifying-version-control-with-git-stash/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/simplifying-version-control-with-git-stash/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/simplifying-version-control-with-git-stash/git_stash_command.png" referrerpolicy="no-referrer">
             </div><h1 id="simplifying-version-control-with-git-stash" class="headerLink">
@@ -58,8 +58,8 @@
     <title>GIT Commit message conventions</title>
     <link>https://kienngd.github.io/git-commit-message/</link>
     <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>https://kienngd.github.io/git-commit-message/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/git-commit-message/</guid>
     <description><![CDATA[<h2 id="commit-message-conventions" class="headerLink">
     <a href="#commit-message-conventions" class="header-mark"></a>1 Commit message conventions</h2><p>Ref-Url: <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener noreferrer">https://www.conventionalcommits.org/en/v1.0.0/</a></p>
 <div class="highlight"><div class="chroma">
