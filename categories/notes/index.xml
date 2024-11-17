@@ -4,7 +4,18 @@
         <link>https://kienngd.github.io/categories/notes/</link>
         <description>Notes - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Update Your Docker Image Without Starting From Scratch</title>
+    <link>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</link>
+    <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/update-docker-image-without-starting-from-scratch/banner-docker.jpg" referrerpolicy="no-referrer">
+            </div><p>Hi, it&rsquo;s me here again! 👋</p>
+<p>Ever been in this situation? You have a <code>Docker image</code> that you&rsquo;ve been using for a while, and suddenly you <code>need to add some new softwares</code>. Building everything from scratch again? Ain&rsquo;t nobody got time for that! 😅</p>
+<p>Let me share a neat trick I use to save time.</p>]]></description>
+</item><item>
     <title>A Late Night Database Recovery Story</title>
     <link>https://kienngd.github.io/database-recovery-story/</link>
     <pubDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</pubDate><author>
@@ -123,12 +134,5 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/git-log-quickly-and-easily/</guid>
     <description><![CDATA[<p>These are some <code>git log commands</code> I use everyday and I think they are helpful for you.</p>]]></description>
-</item><item>
-    <title>Sending emails through Gmail in Laravel</title>
-    <link>https://kienngd.github.io/send-email-with-laravel-using-gmail/</link>
-    <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/send-email-with-laravel-using-gmail/</guid>
-    <description><![CDATA[<p>Sending emails through Gmail in Laravel is straightforward and requires a few setup steps to integrate Gmail&rsquo;s SMTP server with your Laravel application.</p>]]></description>
 </item></channel>
 </rss>

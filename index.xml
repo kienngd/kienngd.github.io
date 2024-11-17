@@ -4,9 +4,20 @@
         <link>https://kienngd.github.io/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>How to Update Your Docker Image Without Starting From Scratch</title>
+    <link>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</link>
+    <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/update-docker-image-without-starting-from-scratch/banner-docker.jpg" referrerpolicy="no-referrer">
+            </div><p>Hi, it&rsquo;s me here again! 👋</p>
+<p>Ever been in this situation? You have a <code>Docker image</code> that you&rsquo;ve been using for a while, and suddenly you <code>need to add some new softwares</code>. Building everything from scratch again? Ain&rsquo;t nobody got time for that! 😅</p>
+<p>Let me share a neat trick I use to save time.</p>]]></description>
+</item><item>
     <title>A Late Night Database Recovery Story</title>
     <link>https://kienngd.github.io/database-recovery-story/</link>
     <pubDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</pubDate><author>
@@ -137,13 +148,5 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
     </author><guid>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</guid>
     <description><![CDATA[<h1 id="introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="headerLink">
     <a href="#introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="header-mark"></a>Introducing the New &ldquo;Create an Entity Relationship Diagram&rdquo; Feature in Draw.io Version 24.7.5</h1><p><strong>Draw.io</strong> has just added a new feature: creating an Entity Relationship Diagram (ERD). This update makes it easier to design and visualize database structures.</p>]]></description>
-</item><item>
-    <title>Boost Your Work Productivity: A Simple Guide</title>
-    <link>https://kienngd.github.io/boost-your-work-productivity/</link>
-    <pubDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/boost-your-work-productivity/</guid>
-    <description><![CDATA[<h1 id="boost-your-work-productivity-a-simple-guide" class="headerLink">
-    <a href="#boost-your-work-productivity-a-simple-guide" class="header-mark"></a>Boost Your Work Productivity: A Simple Guide</h1><p>In today&rsquo;s fast-paced world, improving your productivity is crucial for achieving success and maintaining a healthy work-life balance. By working more efficiently, you can get more done in less time, reduce stress, and you have more time for activities you enjoy. Here’s a simple guide to help you boost your work productivity.</p>]]></description>
 </item></channel>
 </rss>

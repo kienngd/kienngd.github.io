@@ -8,45 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
-    <title>Git log quickly and easily - K5D::Blog</title><meta name="Description" content="Git log quickly and easily"><meta property="og:url" content="https://kienngd.github.io/git-log-quickly-and-easily/">
+    <title>How to Update Your Docker Image Without Starting From Scratch - K5D::Blog</title><meta name="Description" content="Quick Docker Tip: How to Update Your Docker Image Without Starting From Scratch"><meta property="og:url" content="https://kienngd.github.io/update-docker-image-without-starting-from-scratch/">
   <meta property="og:site_name" content="K5D::Blog">
-  <meta property="og:title" content="Git log quickly and easily">
-  <meta property="og:description" content="Git log quickly and easily">
+  <meta property="og:title" content="How to Update Your Docker Image Without Starting From Scratch">
+  <meta property="og:description" content="Quick Docker Tip: How to Update Your Docker Image Without Starting From Scratch">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-07-31T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-07-31T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-11-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-17T00:00:00+00:00">
     <meta property="article:tag" content="Notes">
-    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Tips">
     <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="Git log quickly and easily">
-<meta name="twitter:description" content="Git log quickly and easily">
+<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="How to Update Your Docker Image Without Starting From Scratch">
+<meta name="twitter:description" content="Quick Docker Tip: How to Update Your Docker Image Without Starting From Scratch">
 <meta name="application-name" content="K5D::Blog">
 <meta name="apple-mobile-web-app-title" content="K5D::Blog">
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/git-log-quickly-and-easily/" /><link rel="prev" href="https://kienngd.github.io/send-email-with-laravel-using-gmail/" /><link rel="next" href="https://kienngd.github.io/boost-your-work-productivity/" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/update-docker-image-without-starting-from-scratch/" /><link rel="prev" href="https://kienngd.github.io/database-recovery-story/" />
 <link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Git log quickly and easily",
+        "headline": "How to Update Your Docker Image Without Starting From Scratch",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://kienngd.github.io/git-log-quickly-and-easily/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Notes, Git","wordcount":  301 ,
-        "url": "https://kienngd.github.io/git-log-quickly-and-easily/","datePublished": "2024-07-31T00:00:00+00:00","dateModified": "2024-07-31T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https://kienngd.github.io/update-docker-image-without-starting-from-scratch/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Notes, Docker, Tips","wordcount":  255 ,
+        "url": "https://kienngd.github.io/update-docker-image-without-starting-from-scratch/","datePublished": "2024-11-17T00:00:00+00:00","dateModified": "2024-11-17T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "K5D Blog","logo": "https://kienngd.github.io/images/logo-48x48.png"},"author": {
                 "@type": "Person",
                 "name": "Kien Nguyen"
-            },"description": "Git log quickly and easily"
+            },"description": "Quick Docker Tip: How to Update Your Docker Image Without Starting From Scratch"
     }
     </script></head>
 
@@ -119,22 +120,16 @@
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li><a href="#log-all">Log all</a></li>
-    <li><a href="#filter-the-commits">Filter the commits</a></li>
-    <li><a href="#formatting-output">Formatting output</a>
-      <ul>
-        <li><a href="#predefing-format">Predefing format</a></li>
-        <li><a href="#specifiers">Specifiers</a></li>
-      </ul>
-    </li>
-    <li><a href="#other-options">Other options</a></li>
+    <li><a href="#the-situation">The Situation</a></li>
+    <li><a href="#the-quick-solution">The Quick Solution</a></li>
+    <li><a href="#why-this-is-cool">Why This is Cool</a></li>
   </ul>
 </nav></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git log quickly and easily</h1><div class="post-meta">
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to Update Your Docker Image Without Starting From Scratch</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://kienngd.github.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Kien Nguyen</a>&nbsp;<a href='mailto: kienngd@gmail.com'>kienngd@gmail.com</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-31">2024-07-31</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-07-31">2024-07-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;301 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-11-17">2024-11-17</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-11-17">2024-11-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;255 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -142,82 +137,58 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#log-all">Log all</a></li>
-    <li><a href="#filter-the-commits">Filter the commits</a></li>
-    <li><a href="#formatting-output">Formatting output</a>
-      <ul>
-        <li><a href="#predefing-format">Predefing format</a></li>
-        <li><a href="#specifiers">Specifiers</a></li>
-      </ul>
-    </li>
-    <li><a href="#other-options">Other options</a></li>
+    <li><a href="#the-situation">The Situation</a></li>
+    <li><a href="#the-quick-solution">The Quick Solution</a></li>
+    <li><a href="#why-this-is-cool">Why This is Cool</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>These are some <code>git log commands</code> I use everyday and I think they are helpful for you.</p>
-<h2 id="log-all" class="headerLink">
-    <a href="#log-all" class="header-mark"></a>1 Log all</h2><div class="highlight"><div class="chroma">
+            </div><div class="content" id="content"><p>Hi, it&rsquo;s me here again! 👋</p>
+<p>Ever been in this situation? You have a <code>Docker image</code> that you&rsquo;ve been using for a while, and suddenly you <code>need to add some new softwares</code>. Building everything from scratch again? Ain&rsquo;t nobody got time for that! 😅</p>
+<p>Let me share a neat trick I use to save time.</p>
+<p><figure><img
+        
+        loading="lazy"
+        src="/update-docker-image-without-starting-from-scratch/banner-docker_huc9e9e777a67594b838bd355a2c4c3fa2_50252_1200x0_resize_q75_h2_lanczos.webp"
+        srcset="/update-docker-image-without-starting-from-scratch/banner-docker_huc9e9e777a67594b838bd355a2c4c3fa2_50252_700x0_resize_q75_h2_lanczos.webp 700w,
+            /update-docker-image-without-starting-from-scratch/banner-docker_huc9e9e777a67594b838bd355a2c4c3fa2_50252_1200x0_resize_q75_h2_lanczos.webp 1200w,
+            /update-docker-image-without-starting-from-scratch/banner-docker_huc9e9e777a67594b838bd355a2c4c3fa2_50252_2000x0_resize_q75_h2_lanczos.webp 2000w"
+        title="Docker" height="414"   width="1200" ><figcaption class="image-caption">Docker</figcaption>
+    </figure></p>
+<h2 id="the-situation" class="headerLink">
+    <a href="#the-situation" class="header-mark"></a>1 The Situation</h2><p>Let&rsquo;s say I have an image called <code>my-image</code> (based on Ubuntu). After using it for a while, I realize I need to install some extra packages. Sure, I could modify the original Dockerfile and rebuild everything, but that would take forever! 🐌</p>
+<h2 id="the-quick-solution" class="headerLink">
+    <a href="#the-quick-solution" class="header-mark"></a>2 The Quick Solution</h2><p>Here&rsquo;s a faster way to do it:</p>
+<ol>
+<li>
+<p>Create a new Dockerfile (let&rsquo;s call it <code>Dockerfile.update</code>):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> my-image</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">USER</span><span class="s"> root</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> apt update <span class="o">&amp;&amp;</span> apt install -y your-new-package<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c"># Add more commands as needed</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Build a new image:</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">    git log
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker build -t my-image-new -f Dockerfile.update .
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="filter-the-commits" class="headerLink">
-    <a href="#filter-the-commits" class="header-mark"></a>2 Filter the commits</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">    <span class="c1"># Get last n commits</span>
-</span></span><span class="line"><span class="cl">    git log -n <span class="m">5</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">## Filter by dates</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># show commits from the past two weeks</span>
-</span></span><span class="line"><span class="cl">    git log --since<span class="o">=</span><span class="s2">&#34;2 weeks ago&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># or by using --after</span>
-</span></span><span class="line"><span class="cl">    git log --after<span class="o">=</span><span class="s2">&#34;2 weeks ago&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1"># show commits until January 1, 2024</span>
-</span></span><span class="line"><span class="cl">    git log --until<span class="o">=</span><span class="s2">&#34;2024-01-01&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># or by using --before</span>
-</span></span><span class="line"><span class="cl">    git log --before<span class="o">=</span><span class="s2">&#34;2024-01-01&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1"># get commits from a specific author</span>
-</span></span><span class="line"><span class="cl">    git log --author<span class="o">=</span><span class="s2">&#34;Author Name&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1"># show commits with &#34;fix&#34; in the message</span>
-</span></span><span class="line"><span class="cl">    git log --grep<span class="o">=</span><span class="s2">&#34;fix&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="formatting-output" class="headerLink">
-    <a href="#formatting-output" class="header-mark"></a>3 Formatting output</h2><p>You can also format the log messages by using the <code>--pretty</code> option.</p>
-<h3 id="predefing-format" class="headerLink">
-    <a href="#predefing-format" class="header-mark"></a>3.1 Predefing format</h3><ul>
-<li><code>oneline</code>: Displays each commit on a single line.</li>
-<li><code>short</code>: Includes commit hash, author, date, and subject.</li>
-<li><code>medium</code>: Adds commit message and file changes.</li>
-<li><code>full</code>: Includes full commit information.</li>
-<li><code>format</code>: Allows custom formatting using placeholders (e.g., %H for commit hash, %an for author name, %s for subject).</li>
-</ul>
+</div></li>
+<li>
+<p>Play the name-swapping game:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -227,41 +198,46 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">    <span class="c1"># show concise logs</span>
-</span></span><span class="line"><span class="cl">    git log --pretty<span class="o">=</span>oneline
-</span></span><span class="line"><span class="cl">    <span class="c1"># custom format</span>
-</span></span><span class="line"><span class="cl">    git log --pretty<span class="o">=</span>format:<span class="s2">&#34;%h - %s&#34;</span>
-</span></span><span class="line"><span class="cl">    git log --pretty<span class="o">=</span>format:<span class="s2">&#34;Commit: %H\nAuthor: %an\nDate: %ad\nSubject: %s\n\n%b&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Backup old image</span>
+</span></span><span class="line"><span class="cl">docker tag my-image my-image-backup
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Make new image the main one</span>
+</span></span><span class="line"><span class="cl">docker tag my-image-new my-image
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="specifiers" class="headerLink">
-    <a href="#specifiers" class="header-mark"></a>3.2 Specifiers</h3><ul>
-<li><code>%H</code> Commit hash</li>
-<li><code>%h</code> Abbreviated commit hash</li>
-<li><code>%T</code> Tree hash</li>
-<li><code>%t</code> Abbreviated tree hash</li>
-<li><code>%P</code> Parent hashes</li>
-<li><code>%p</code> Abbreviated parent hashes</li>
-<li><code>%an</code> Author name</li>
-<li><code>%ae</code> Author email</li>
-<li><code>%ad</code> Author date (format respects the &ndash;date=option)</li>
-<li><code>%ar</code> Author date, relative</li>
-<li><code>%cn</code> Committer name</li>
-<li><code>%ce</code> Committer email</li>
-<li><code>%cd</code> Committer date</li>
-<li><code>%cr</code> Committer date, relative</li>
-<li><code>%s</code> Subject</li>
+</div></li>
+<li>
+<p>Test it out:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run my-image some-command
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>If everything works, clean up:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker rmi my-image-backup my-image-new
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>And that&rsquo;s it! Your image is updated, and your disk space is clean. 🎉</p>
+<h2 id="why-this-is-cool" class="headerLink">
+    <a href="#why-this-is-cool" class="header-mark"></a>3 Why This is Cool</h2><ul>
+<li>Much <code>faster</code> than rebuilding from scratch</li>
+<li><code>Safe</code> (you have a backup if something goes wrong)</li>
+<li>Saves disk space after cleanup</li>
 </ul>
-<h2 id="other-options" class="headerLink">
-    <a href="#other-options" class="header-mark"></a>4 Other options</h2><ul>
-<li><code>--graph</code>: Display a commit graph.</li>
-<li><code>--reverse</code>: Show commits in chronological order (oldest first).</li>
-<li><code>--no-merges</code>: Exclude merge commits.</li>
-<li><code>--oneline</code>: Show commit in one-line
-<br>
-<br>
-<strong>And the last thing</strong>: You can combine multiple options</li>
-</ul></div>
+<p><strong>Remember</strong>: Always <strong>test</strong> your updated image <strong>before removing</strong> the backup! Better safe than sorry! 😉</p>
+<p>Happy Dockering! 🐳</p></div>
 
         
 
@@ -270,24 +246,12 @@
 <div class="related-container">
     <div class="related-item-container">
             <div class="related-image">
-                <a href="/update-docker-image-without-starting-from-scratch/"><img
-        
-        loading="lazy"
-        src="/update-docker-image-without-starting-from-scratch/banner-docker.jpg"
-        srcset="/update-docker-image-without-starting-from-scratch/banner-docker.jpg, /update-docker-image-without-starting-from-scratch/banner-docker.jpg 1.5x, /update-docker-image-without-starting-from-scratch/banner-docker.jpg 2x"
-        title="Git log quickly and easily" height="200"   width="400" ></a>
-            </div><h2 class="related-title">
-                <a href="/update-docker-image-without-starting-from-scratch/">How to Update Your Docker Image Without Starting From Scratch</a>
-            </h2>
-        </div>
-    <div class="related-item-container">
-            <div class="related-image">
                 <a href="/database-recovery-story/"><img
         
         loading="lazy"
         src="/database-recovery-story/securing-mysql-banner.png"
         srcset="/database-recovery-story/securing-mysql-banner.png, /database-recovery-story/securing-mysql-banner.png 1.5x, /database-recovery-story/securing-mysql-banner.png 2x"
-        title="Git log quickly and easily" height="200"   width="400" ></a>
+        title="Quick Docker Tip: How to Update Your Docker Image Without Starting From Scratch" height="200"   width="400" ></a>
             </div><h2 class="related-title">
                 <a href="/database-recovery-story/">A Late Night Database Recovery Story</a>
             </h2>
@@ -307,6 +271,11 @@
                 <a href="/introduction-to-phpdocumentor/">Introduction to PHPDocumentor</a>
             </h2>
         </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/understanding-uuid/">Understanding UUID: A Unique Identifier</a>
+            </h2>
+        </div>
     
 
 </div>
@@ -321,19 +290,18 @@
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
-            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.github.io/git-log-quickly-and-easily/" data-title="Git log quickly and easily" data-hashtags="Notes,Git"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.github.io/git-log-quickly-and-easily/" data-hashtag="Notes"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://kienngd.github.io/git-log-quickly-and-easily/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.github.io/git-log-quickly-and-easily/" data-title="Git log quickly and easily" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.github.io/update-docker-image-without-starting-from-scratch/" data-title="How to Update Your Docker Image Without Starting From Scratch" data-hashtags="Notes,Docker,Tips"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.github.io/update-docker-image-without-starting-from-scratch/" data-hashtag="Notes"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://kienngd.github.io/update-docker-image-without-starting-from-scratch/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.github.io/update-docker-image-without-starting-from-scratch/" data-title="How to Update Your Docker Image Without Starting From Scratch" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/notes/">Notes</a>,&nbsp;<a href="/tags/git/">Git</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/notes/">Notes</a>,&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/tips/">Tips</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/send-email-with-laravel-using-gmail/" class="prev" rel="prev" title="Sending emails through Gmail in Laravel"><i class="fas fa-angle-left fa-fw"></i>Sending emails through Gmail in Laravel</a>
-            <a href="/boost-your-work-productivity/" class="next" rel="next" title="Boost Your Work Productivity: A Simple Guide">Boost Your Work Productivity: A Simple Guide<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/database-recovery-story/" class="prev" rel="prev" title="A Late Night Database Recovery Story"><i class="fas fa-angle-left fa-fw"></i>A Late Night Database Recovery Story</a></div>
 </div>
 </article></div>
         </main><footer class="footer">
