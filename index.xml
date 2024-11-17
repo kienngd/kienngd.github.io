@@ -15,8 +15,8 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/database-recovery-story/securing-mysql-banner.png" referrerpolicy="no-referrer">
             </div><h2 id="the-story" class="headerLink">
-    <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. He was panicked because his database was lost.</p>
-<p>He sent me information , then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>]]></description>
+    <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. She was panicked because his database was lost.</p>
+<p>She sent me information, then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>]]></description>
 </item><item>
     <title>Exploring the split Command</title>
     <link>https://kienngd.github.io/exploring-the-split-command/</link>

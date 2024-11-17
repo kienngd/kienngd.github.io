@@ -39,7 +39,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kienngd.github.io/database-recovery-story/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Notes","wordcount":  265 ,
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Notes","wordcount":  263 ,
         "url": "https://kienngd.github.io/database-recovery-story/","datePublished": "2024-11-14T00:00:00+00:00","dateModified": "2024-11-14T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "K5D Blog","logo": "https://kienngd.github.io/images/logo-48x48.png"},"author": {
@@ -118,10 +118,10 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://kienngd.github.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Kien Nguyen</a>&nbsp;<a href='mailto: kienngd@gmail.com'>kienngd@gmail.com</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>Notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-11-14">2024-11-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-11-14">2024-11-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;265 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-11-14">2024-11-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-11-14">2024-11-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;263 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="content" id="content"><h2 id="the-story" class="headerLink">
-    <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. He was panicked because his database was lost.</p>
-<p>He sent me information , then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>
+    <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. She was panicked because his database was lost.</p>
+<p>She sent me information, then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>
 <p><figure><img
         
         loading="lazy"
@@ -131,14 +131,14 @@
             /database-recovery-story/securing-mysql-banner_huc38a353782d317d65ea2487c34518230_316009_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
         title="Security MySQL" height="675"   width="1200" ><figcaption class="image-caption">Security MySQL</figcaption>
     </figure></p>
-<p>When I checked the <code>general log</code>, I saw a <code>delete command</code> at 8 PM. It came from IP 192.x.x.x using <code>MySQL Workbench</code>. After investigation, he told me this was an old, un-used <code>test server</code>. Someone had saved MySQL credentials in MySQL Workbench.</p>
+<p>When I checked the <code>general log</code>, I saw a <code>delete command</code> at 8 PM. It came from IP 192.x.x.x using <code>MySQL Workbench</code>. After investigation, she told me this was an old, un-used <code>test server</code>. Someone had saved MySQL credentials in MySQL Workbench.</p>
 <p>The binary logs were partially deleted. Only logs from recent days remained. The system had <code>no regular backup schedule</code>.</p>
-<p>Luckily, a developer had dumped all database for testing about a week ago. I restored this dump to a new server and checked its master status. It showed we could possibly recover data from binary logs.</p>
+<p>Luckily, a developer had cloned database-folder for testing about a week ago. I restored this backup to a new server and checked its master status. It showed we could possibly recover data from binary logs.</p>
 <p>I looked through binary log files. I found the exact file and position of the delete command.</p>
 <p>Here&rsquo;s what I did to recover the data:</p>
 <ol>
 <li>Backed up current data (though not much was left)</li>
-<li>Restored data from the dump file</li>
+<li>Restored some data from the clone-files</li>
 <li>Replayed binary logs from the master position to just before the delete command</li>
 </ol>
 <p>After these steps, the data was back to normal. It was a relief!</p>
