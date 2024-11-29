@@ -13,7 +13,7 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/update-docker-image-without-starting-from-scratch/banner-docker.jpg" referrerpolicy="no-referrer">
             </div><p>Hi, it&rsquo;s me here again! 👋</p>
-<p>Ever been in this situation? You have a <code>Docker image</code> that you&rsquo;ve been using for a while, and suddenly you <code>need to add some new softwares</code>. Building everything from scratch again? Ain&rsquo;t nobody got time for that! 😅</p>
+<p>Ever been in this situation? You have a <code>Docker image</code> that you&rsquo;ve been using for a while, and suddenly you <code>need to add some new softwares</code>. Building everything from scratch again? Nobody has time for that! 😅</p>
 <p>Let me share a neat trick I use to save time.</p>]]></description>
 </item></channel>
 </rss>

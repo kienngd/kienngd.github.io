@@ -3,7 +3,7 @@
 
 Hi, it's me here again! 👋
 
-Ever been in this situation? You have a `Docker image` that you've been using for a while, and suddenly you `need to add some new softwares`. Building everything from scratch again? Ain't nobody got time for that! 😅
+Ever been in this situation? You have a `Docker image` that you've been using for a while, and suddenly you `need to add some new softwares`. Building everything from scratch again? Nobody has time for that! 😅
 
 Let me share a neat trick I use to save time.
 

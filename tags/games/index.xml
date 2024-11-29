@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Miscellaneous - Category - K5D::Blog</title>
-        <link>https://kienngd.github.io/categories/miscellaneous/</link>
-        <description>Miscellaneous - Category - K5D::Blog</description>
+        <title>Games - Tag - K5D::Blog</title>
+        <link>https://kienngd.github.io/tags/games/</link>
+        <description>Games - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/miscellaneous/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/games/" rel="self" type="application/rss+xml" /><item>
     <title>Introducing the Goblin Game on Telegram: A Guide for Investors</title>
     <link>https://kienngd.github.io/goblin-game/</link>
     <pubDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</pubDate><author>
@@ -23,19 +23,5 @@
             alt="images/goblin-001.png" height="768px"  width="464px" >
     </a><figcaption class="image-caption">Goblin Economic Game</figcaption>
     </figure></p>]]></description>
-</item><item>
-    <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/best-practices-for-coder/</link>
-    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
-    <description><![CDATA[Best practices for coder]]></description>
-</item><item>
-    <title>Ten coder bad habits</title>
-    <link>https://kienngd.github.io/ten-coder-bad-habits/</link>
-    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/ten-coder-bad-habits/</guid>
-    <description><![CDATA[Ten coder bad habits]]></description>
 </item></channel>
 </rss>
