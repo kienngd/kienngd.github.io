@@ -7,25 +7,6 @@
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Introducing the Goblin Game on Telegram: A Guide for Investors</title>
-    <link>https://kienngd.github.io/goblin-game/</link>
-    <pubDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/goblin-game/</guid>
-    <description><![CDATA[<p>The <strong>Goblin</strong> game is an exciting experience available on the Telegram app. As an investor, you need to wisely invest your coins to <strong>open mines</strong>, <strong>hire workers</strong>, and <strong>upgrade tools</strong> to earn more coins.</p>
-<p>One important thing to remember is that the cart has a limited capacity. You must claim your coins before the cart fills up. To avoid claiming too often, consider investing coins to upgrade your carts for more space.
-<figure><a class="lightgallery" href="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_2000x0_resize_q75_h2_lanczos_3.webp" title="images/goblin-001.png" data-thumbnail="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_700x0_resize_q75_h2_lanczos_3.webp" data-sub-html="<h2>Goblin Economic Game</h2>">
-        <img
-            
-            loading="lazy"
-            src="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_1200x0_resize_q75_h2_lanczos_3.webp"
-            srcset="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_700x0_resize_q75_h2_lanczos_3.webp 700w,
-                /goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
-                /goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
-            alt="images/goblin-001.png" height="768px"  width="464px" >
-    </a><figcaption class="image-caption">Goblin Economic Game</figcaption>
-    </figure></p>]]></description>
-</item><item>
     <title>How to Update Your Docker Image Without Starting From Scratch</title>
     <link>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
@@ -159,5 +140,13 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
 <p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>]]></description>
+</item><item>
+    <title>Create an Entity Relationship Diagram with draw.io V24.7.5</title>
+    <link>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</link>
+    <pubDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</guid>
+    <description><![CDATA[<h1 id="introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="headerLink">
+    <a href="#introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="header-mark"></a>Introducing the New &ldquo;Create an Entity Relationship Diagram&rdquo; Feature in Draw.io Version 24.7.5</h1><p><strong>Draw.io</strong> has just added a new feature: creating an Entity Relationship Diagram (ERD). This update makes it easier to design and visualize database structures.</p>]]></description>
 </item></channel>
 </rss>
