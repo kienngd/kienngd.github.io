@@ -1,23 +1,31 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Code - Category - K5D::Blog</title>
-        <link>https://kienngd.github.io/categories/code/</link>
+        <link>http://localhost:1313/categories/code/</link>
         <description>Code - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/code/" rel="self" type="application/rss+xml" /><item>
-    <title>Virtual environment in Python 3</title>
-    <link>https://kienngd.github.io/virtual-environment-in-python-3/</link>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/code/" rel="self" type="application/rss+xml" /><item>
+    <title>Python&#39;s **kwargs: What is it?</title>
+    <link>http://localhost:1313/python-kwargs-what-is-it/</link>
     <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/virtual-environment-in-python-3/</guid>
+    </author><guid>http://localhost:1313/python-kwargs-what-is-it/</guid>
+    <description><![CDATA[<h2 id="pythons-kwargs-what-is-it" class="headerLink">
+    <a href="#pythons-kwargs-what-is-it" class="header-mark"></a>1 Python&rsquo;s **kwargs: What is it?</h2><p>In Python, **kwargs is a special syntax that allows you to pass a variable number of keyword arguments to a function.</p>]]></description>
+</item><item>
+    <title>Virtual environment in Python 3</title>
+    <link>http://localhost:1313/virtual-environment-in-python-3/</link>
+    <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/virtual-environment-in-python-3/</guid>
     <description><![CDATA[<h2 id="what-is-a-virtual-environment" class="headerLink">
     <a href="#what-is-a-virtual-environment" class="header-mark"></a>1 What is a virtual environment?</h2><p>A virtual environment is a separate Python environment. It is isolated from your system&rsquo;s Python environment. It lets you install Python packages and libraries. These packages don&rsquo;t affect other projects or your system&rsquo;s Python.</p>]]></description>
 </item><item>
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
-    <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
+    <link>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
+    </author><guid>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -31,10 +39,10 @@
     <a href="#introduction" class="header-mark"></a>1 <strong>Introduction</strong></h2><p><strong>PHPStan</strong> is a powerful static analysis tool for PHP that checks your code for potential errors without executing it. By using <strong>PHPStan</strong>, you can catch bugs early in the development process, improve the overall <strong>quality</strong> of your code, and ensure your project is more <strong>stable</strong> and <strong>maintainable</strong>.</p>]]></description>
 </item><item>
     <title>Introduction to PHPDocumentor</title>
-    <link>https://kienngd.github.io/introduction-to-phpdocumentor/</link>
+    <link>http://localhost:1313/introduction-to-phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
+    </author><guid>http://localhost:1313/introduction-to-phpdocumentor/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -49,101 +57,53 @@
     <a href="#why-use-phpdocumentor" class="header-mark"></a>1 Why Use PHPDocumentor?</h2><p>Using PHPDocumentor makes it easier to understand and maintain your code. It helps others quickly see how to use your functions and classes. Good documentation can save time and reduce mistakes. Also, it improves the quality of your project by keeping everything organized.</p>]]></description>
 </item><item>
     <title>Pipeline-partten in Laravel</title>
-    <link>https://kienngd.github.io/pipeline-partern-in-laravel/</link>
+    <link>http://localhost:1313/pipeline-partern-in-laravel/</link>
     <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
+    </author><guid>http://localhost:1313/pipeline-partern-in-laravel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
 <p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>]]></description>
 </item><item>
     <title>Inheritance in GoLang</title>
-    <link>https://kienngd.github.io/inheritance_in_golang.md/</link>
+    <link>http://localhost:1313/inheritance_in_golang.md/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
+    </author><guid>http://localhost:1313/inheritance_in_golang.md/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
             </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
 </item><item>
     <title>Functional options pattern with example</title>
-    <link>https://kienngd.github.io/functional-options-pattern/</link>
+    <link>http://localhost:1313/functional-options-pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/functional-options-pattern/</guid>
+    </author><guid>http://localhost:1313/functional-options-pattern/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/functional-options-pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
     <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
 </item><item>
     <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/best-practices-for-coder/</link>
+    <link>http://localhost:1313/best-practices-for-coder/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
+    </author><guid>http://localhost:1313/best-practices-for-coder/</guid>
     <description><![CDATA[Best practices for coder]]></description>
 </item><item>
     <title>Ten coder bad habits</title>
-    <link>https://kienngd.github.io/ten-coder-bad-habits/</link>
+    <link>http://localhost:1313/ten-coder-bad-habits/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/ten-coder-bad-habits/</guid>
+    </author><guid>http://localhost:1313/ten-coder-bad-habits/</guid>
     <description><![CDATA[Ten coder bad habits]]></description>
 </item><item>
     <title>Naming: Every Developer&#39;s Nightmare</title>
-    <link>https://kienngd.github.io/naming/</link>
+    <link>http://localhost:1313/naming/</link>
     <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/naming/</guid>
+    </author><guid>http://localhost:1313/naming/</guid>
     <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
-</item><item>
-    <title>Strategy Pattern in PHP with examples</title>
-    <link>https://kienngd.github.io/strategy-pattern-in-php/</link>
-    <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/strategy-pattern-in-php/</guid>
-    <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
-    <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
-<h3 id="without-pattern" class="headerLink">
-    <a href="#without-pattern" class="header-mark"></a>1.1 Without pattern</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Sorter</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">bubbleSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Bubble Sort
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">quickSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Quick Sort
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">mergeSort</span><span class="p">(</span><span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation of Merge Sort
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$sorter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sorter</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$sortedArr</span> <span class="o">=</span> <span class="nv">$sorter</span><span class="o">-&gt;</span><span class="na">bubbleSort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description>
 </item></channel>
 </rss>

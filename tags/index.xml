@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Python</title>
-    <link>https://kienngd.github.io/tags/python/</link>
+    <link>http://localhost:1313/tags/python/</link>
     <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/python/</guid>
+    </author><guid>http://localhost:1313/tags/python/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Docker</title>
-    <link>https://kienngd.github.io/tags/docker/</link>
+    <link>http://localhost:1313/tags/docker/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/docker/</guid>
+    </author><guid>http://localhost:1313/tags/docker/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Notes</title>
-    <link>https://kienngd.github.io/tags/notes/</link>
+    <link>http://localhost:1313/tags/notes/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/notes/</guid>
+    </author><guid>http://localhost:1313/tags/notes/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Tips</title>
-    <link>https://kienngd.github.io/tags/tips/</link>
+    <link>http://localhost:1313/tags/tips/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/tips/</guid>
+    </author><guid>http://localhost:1313/tags/tips/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Code</title>
-    <link>https://kienngd.github.io/tags/code/</link>
+    <link>http://localhost:1313/tags/code/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/code/</guid>
+    </author><guid>http://localhost:1313/tags/code/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>PHP</title>
-    <link>https://kienngd.github.io/tags/php/</link>
+    <link>http://localhost:1313/tags/php/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/php/</guid>
+    </author><guid>http://localhost:1313/tags/php/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>PHPStan</title>
-    <link>https://kienngd.github.io/tags/phpstan/</link>
+    <link>http://localhost:1313/tags/phpstan/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/phpstan/</guid>
+    </author><guid>http://localhost:1313/tags/phpstan/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Git</title>
-    <link>https://kienngd.github.io/tags/git/</link>
+    <link>http://localhost:1313/tags/git/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/git/</guid>
+    </author><guid>http://localhost:1313/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Git Tag</title>
-    <link>https://kienngd.github.io/tags/git-tag/</link>
+    <link>http://localhost:1313/tags/git-tag/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/git-tag/</guid>
+    </author><guid>http://localhost:1313/tags/git-tag/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>PHPDocumentor</title>
-    <link>https://kienngd.github.io/tags/phpdocumentor/</link>
+    <link>http://localhost:1313/tags/phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/phpdocumentor/</guid>
+    </author><guid>http://localhost:1313/tags/phpdocumentor/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Code - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/tags/code/</link>
+        <link>http://localhost:1313/tags/code/</link>
         <description>Code - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/code/" rel="self" type="application/rss+xml" /><item>
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
-    <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
+    <link>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
+    </author><guid>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -23,10 +23,10 @@
     <a href="#introduction" class="header-mark"></a>1 <strong>Introduction</strong></h2><p><strong>PHPStan</strong> is a powerful static analysis tool for PHP that checks your code for potential errors without executing it. By using <strong>PHPStan</strong>, you can catch bugs early in the development process, improve the overall <strong>quality</strong> of your code, and ensure your project is more <strong>stable</strong> and <strong>maintainable</strong>.</p>]]></description>
 </item><item>
     <title>Introduction to PHPDocumentor</title>
-    <link>https://kienngd.github.io/introduction-to-phpdocumentor/</link>
+    <link>http://localhost:1313/introduction-to-phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
+    </author><guid>http://localhost:1313/introduction-to-phpdocumentor/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -41,31 +41,31 @@
     <a href="#why-use-phpdocumentor" class="header-mark"></a>1 Why Use PHPDocumentor?</h2><p>Using PHPDocumentor makes it easier to understand and maintain your code. It helps others quickly see how to use your functions and classes. Good documentation can save time and reduce mistakes. Also, it improves the quality of your project by keeping everything organized.</p>]]></description>
 </item><item>
     <title>Sending emails through Gmail in Laravel</title>
-    <link>https://kienngd.github.io/send-email-with-laravel-using-gmail/</link>
+    <link>http://localhost:1313/send-email-with-laravel-using-gmail/</link>
     <pubDate>Sat, 27 Jul 2024 01:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/send-email-with-laravel-using-gmail/</guid>
+    </author><guid>http://localhost:1313/send-email-with-laravel-using-gmail/</guid>
     <description><![CDATA[<p>Sending emails through Gmail in Laravel is straightforward and requires a few setup steps to integrate Gmail&rsquo;s SMTP server with your Laravel application.</p>]]></description>
 </item><item>
     <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/best-practices-for-coder/</link>
+    <link>http://localhost:1313/best-practices-for-coder/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
+    </author><guid>http://localhost:1313/best-practices-for-coder/</guid>
     <description><![CDATA[Best practices for coder]]></description>
 </item><item>
     <title>Ten coder bad habits</title>
-    <link>https://kienngd.github.io/ten-coder-bad-habits/</link>
+    <link>http://localhost:1313/ten-coder-bad-habits/</link>
     <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/ten-coder-bad-habits/</guid>
+    </author><guid>http://localhost:1313/ten-coder-bad-habits/</guid>
     <description><![CDATA[Ten coder bad habits]]></description>
 </item><item>
     <title>GIT Commit message conventions</title>
-    <link>https://kienngd.github.io/git-commit-message/</link>
+    <link>http://localhost:1313/git-commit-message/</link>
     <pubDate>Fri, 19 May 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/git-commit-message/</guid>
+    </author><guid>http://localhost:1313/git-commit-message/</guid>
     <description><![CDATA[<h2 id="commit-message-conventions" class="headerLink">
     <a href="#commit-message-conventions" class="header-mark"></a>1 Commit message conventions</h2><p>Ref-Url: <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener noreferrer">https://www.conventionalcommits.org/en/v1.0.0/</a></p>
 <div class="highlight"><div class="chroma">
@@ -87,10 +87,10 @@
 </div>]]></description>
 </item><item>
     <title>Naming: Every Developer&#39;s Nightmare</title>
-    <link>https://kienngd.github.io/naming/</link>
+    <link>http://localhost:1313/naming/</link>
     <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/naming/</guid>
+    </author><guid>http://localhost:1313/naming/</guid>
     <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item></channel>
 </rss>

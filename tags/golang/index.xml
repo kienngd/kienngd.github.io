@@ -1,34 +1,34 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>GoLang - Tag - K5D::Blog</title>
-        <link>https://kienngd.github.io/tags/golang/</link>
+        <link>http://localhost:1313/tags/golang/</link>
         <description>GoLang - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/golang/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/golang/" rel="self" type="application/rss+xml" /><item>
     <title>Inheritance in GoLang</title>
-    <link>https://kienngd.github.io/inheritance_in_golang.md/</link>
+    <link>http://localhost:1313/inheritance_in_golang.md/</link>
     <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/inheritance_in_golang.md/</guid>
+    </author><guid>http://localhost:1313/inheritance_in_golang.md/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
             </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
 </item><item>
     <title>Functional options pattern with example</title>
-    <link>https://kienngd.github.io/functional-options-pattern/</link>
+    <link>http://localhost:1313/functional-options-pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/functional-options-pattern/</guid>
+    </author><guid>http://localhost:1313/functional-options-pattern/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/functional-options-pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
     <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
 </item><item>
     <title>How to working with JSON in GoLang</title>
-    <link>https://kienngd.github.io/working-with-json-in-golang/</link>
+    <link>http://localhost:1313/working-with-json-in-golang/</link>
     <pubDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/working-with-json-in-golang/</guid>
+    </author><guid>http://localhost:1313/working-with-json-in-golang/</guid>
     <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
 <p><strong>Working with structed data</strong></p>
 <div class="highlight"><div class="chroma">
