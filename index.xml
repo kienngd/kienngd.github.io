@@ -4,9 +4,17 @@
         <link>https://kienngd.github.io/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Virtual environment in Python 3</title>
+    <link>https://kienngd.github.io/virtual-environment-in-python-3/</link>
+    <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/virtual-environment-in-python-3/</guid>
+    <description><![CDATA[<h2 id="what-is-a-virtual-environment" class="headerLink">
+    <a href="#what-is-a-virtual-environment" class="header-mark"></a>1 What is a virtual environment?</h2><p>A virtual environment is a separate Python environment. It is isolated from your system&rsquo;s Python environment. It lets you install Python packages and libraries. These packages don&rsquo;t affect other projects or your system&rsquo;s Python.</p>]]></description>
+</item><item>
     <title>How to Update Your Docker Image Without Starting From Scratch</title>
     <link>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
@@ -140,13 +148,5 @@ Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize y
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
 <p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>]]></description>
-</item><item>
-    <title>Create an Entity Relationship Diagram with draw.io V24.7.5</title>
-    <link>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</link>
-    <pubDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</guid>
-    <description><![CDATA[<h1 id="introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="headerLink">
-    <a href="#introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="header-mark"></a>Introducing the New &ldquo;Create an Entity Relationship Diagram&rdquo; Feature in Draw.io Version 24.7.5</h1><p><strong>Draw.io</strong> has just added a new feature: creating an Entity Relationship Diagram (ERD). This update makes it easier to design and visualize database structures.</p>]]></description>
 </item></channel>
 </rss>

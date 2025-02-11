@@ -4,7 +4,15 @@
         <link>https://kienngd.github.io/categories/code/</link>
         <description>Code - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/code/" rel="self" type="application/rss+xml" /><item>
+    <title>Virtual environment in Python 3</title>
+    <link>https://kienngd.github.io/virtual-environment-in-python-3/</link>
+    <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/virtual-environment-in-python-3/</guid>
+    <description><![CDATA[<h2 id="what-is-a-virtual-environment" class="headerLink">
+    <a href="#what-is-a-virtual-environment" class="header-mark"></a>1 What is a virtual environment?</h2><p>A virtual environment is a separate Python environment. It is isolated from your system&rsquo;s Python environment. It lets you install Python packages and libraries. These packages don&rsquo;t affect other projects or your system&rsquo;s Python.</p>]]></description>
+</item><item>
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
     <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
@@ -135,65 +143,6 @@
 </span></span><span class="line"><span class="cl"><span class="nv">$sorter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sorter</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$sortedArr</span> <span class="o">=</span> <span class="nv">$sorter</span><span class="o">-&gt;</span><span class="na">bubbleSort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// or $sorter-&gt;quickSort($arr) or $sorter-&gt;mergeSort($arr)
 </span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>How to working with JSON in GoLang</title>
-    <link>https://kienngd.github.io/working-with-json-in-golang/</link>
-    <pubDate>Thu, 08 Oct 2020 01:10:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/working-with-json-in-golang/</guid>
-    <description><![CDATA[<p>In this post, we will learn how to parse json data in GoLang. Have fun!</p>
-<p><strong>Working with structed data</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// Import package
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kn">import</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">	<span class="s">&#34;encoding/json&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Bird</span> <span class="kd">struct</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">Species</span>     <span class="kt">string</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">Description</span> <span class="kt">string</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">jsonString</span> <span class="o">:=</span> <span class="s">`{	
-</span></span></span><span class="line"><span class="cl"><span class="s">		&#34;species&#34;: &#34;pigeon&#34;,
-</span></span></span><span class="line"><span class="cl"><span class="s">		&#34;description&#34;: &#34;likes to perch on rocks likes to perch on rocks likes to perch on rocks&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s">	}`</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">bird</span> <span class="nx">Bird</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">err</span> <span class="o">:=</span> <span class="nx">json</span><span class="p">.</span><span class="nf">Unmarshal</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">jsonString</span><span class="p">),</span> <span class="o">&amp;</span><span class="nx">bird</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="nx">nill</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// json string is invalid.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">...</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
 </item></channel>
