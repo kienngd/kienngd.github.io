@@ -1,50 +1,51 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Code - Category - K5D::Blog</title>
-        <link>http://localhost:1313/categories/code/</link>
+        <link>https://kienngd.github.io/categories/code/</link>
         <description>Code - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/code/" rel="self" type="application/rss+xml" /><item>
     <title>Condition statments and loops</title>
-    <link>http://localhost:1313/022-condition-statments-and-loops/</link>
+    <link>https://kienngd.github.io/022-condition-statments-and-loops/</link>
     <pubDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/022-condition-statments-and-loops/</guid>
+    </author><guid>https://kienngd.github.io/022-condition-statments-and-loops/</guid>
     <description><![CDATA[<p>Condition statments and loops</p>]]></description>
 </item><item>
     <title>Basic data types</title>
-    <link>http://localhost:1313/021-basic-data-types/</link>
+    <link>https://kienngd.github.io/021-basic-data-types/</link>
     <pubDate>Sun, 16 Feb 2025 00:02:01 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/021-basic-data-types/</guid>
+    </author><guid>https://kienngd.github.io/021-basic-data-types/</guid>
     <description><![CDATA[<p>Basic data types</p>]]></description>
 </item><item>
     <title>Working with pip and introduct to virtual environment</title>
-    <link>http://localhost:1313/013-working-with-pip-and-virtual-environment/</link>
+    <link>https://kienngd.github.io/013-working-with-pip-and-virtual-environment/</link>
     <pubDate>Sun, 16 Feb 2025 00:00:03 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/013-working-with-pip-and-virtual-environment/</guid>
+    </author><guid>https://kienngd.github.io/013-working-with-pip-and-virtual-environment/</guid>
     <description><![CDATA[<p>Working with pip and introduct to virtual environment?</p>]]></description>
 </item><item>
     <title>Install and setup VSCode and extensions</title>
-    <link>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</link>
+    <link>https://kienngd.github.io/012-install-and-setup-vscode-and-extensions/</link>
     <pubDate>Sun, 16 Feb 2025 00:00:02 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</guid>
+    </author><guid>https://kienngd.github.io/012-install-and-setup-vscode-and-extensions/</guid>
     <description><![CDATA[<p>How to install and setup VSCode and extensions on Ubuntu?</p>]]></description>
 </item><item>
     <title>Install python on Ubuntu</title>
-    <link>http://localhost:1313/011-install-python-on-ubuntu/</link>
+    <link>https://kienngd.github.io/011-install-python-on-ubuntu/</link>
     <pubDate>Sun, 16 Feb 2025 00:00:01 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/011-install-python-on-ubuntu/</guid>
-    <description><![CDATA[<p>How to install python on Ubuntu?</p>]]></description>
+    </author><guid>https://kienngd.github.io/011-install-python-on-ubuntu/</guid>
+    <description><![CDATA[<p><br>
+<strong>How to install python on Ubuntu?</strong></p>]]></description>
 </item><item>
     <title>Learning python basic roadmap by ChatGPT</title>
-    <link>http://localhost:1313/learning-python-roadmap-by-openai/</link>
+    <link>https://kienngd.github.io/learning-python-roadmap-by-openai/</link>
     <pubDate>Sun, 16 Feb 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/learning-python-roadmap-by-openai/</guid>
+    </author><guid>https://kienngd.github.io/learning-python-roadmap-by-openai/</guid>
     <description><![CDATA[<p>Below is the basic Python learning roadmap tailored to your needs:</p>
 <h2 id="getting-started-with-python-and-setting-up-the-environment" class="headerLink">
     <a href="#getting-started-with-python-and-setting-up-the-environment" class="header-mark"></a>1 Getting Started with Python and Setting Up the Environment:</h2><ul>
@@ -54,26 +55,26 @@
 </ul>]]></description>
 </item><item>
     <title>Python&#39;s **kwargs: What is it?</title>
-    <link>http://localhost:1313/python-kwargs-what-is-it/</link>
+    <link>https://kienngd.github.io/python-kwargs-what-is-it/</link>
     <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/python-kwargs-what-is-it/</guid>
+    </author><guid>https://kienngd.github.io/python-kwargs-what-is-it/</guid>
     <description><![CDATA[<h2 id="pythons-kwargs-what-is-it" class="headerLink">
     <a href="#pythons-kwargs-what-is-it" class="header-mark"></a>1 Python&rsquo;s <code>**kwargs</code>: What is it?</h2><p>In Python, <code>**kwargs</code> is a special syntax that allows you to pass a variable number of keyword arguments to a function.</p>]]></description>
 </item><item>
     <title>Virtual environment in Python 3</title>
-    <link>http://localhost:1313/virtual-environment-in-python-3/</link>
+    <link>https://kienngd.github.io/virtual-environment-in-python-3/</link>
     <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/virtual-environment-in-python-3/</guid>
+    </author><guid>https://kienngd.github.io/virtual-environment-in-python-3/</guid>
     <description><![CDATA[<h2 id="what-is-a-virtual-environment" class="headerLink">
     <a href="#what-is-a-virtual-environment" class="header-mark"></a>1 What is a virtual environment?</h2><p>A virtual environment is a separate Python environment. It is isolated from your system&rsquo;s Python environment. It lets you install Python packages and libraries. These packages don&rsquo;t affect other projects or your system&rsquo;s Python.</p>]]></description>
 </item><item>
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
-    <link>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</link>
+    <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
+    </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -87,10 +88,10 @@
     <a href="#introduction" class="header-mark"></a>1 <strong>Introduction</strong></h2><p><strong>PHPStan</strong> is a powerful static analysis tool for PHP that checks your code for potential errors without executing it. By using <strong>PHPStan</strong>, you can catch bugs early in the development process, improve the overall <strong>quality</strong> of your code, and ensure your project is more <strong>stable</strong> and <strong>maintainable</strong>.</p>]]></description>
 </item><item>
     <title>Introduction to PHPDocumentor</title>
-    <link>http://localhost:1313/introduction-to-phpdocumentor/</link>
+    <link>https://kienngd.github.io/introduction-to-phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/introduction-to-phpdocumentor/</guid>
+    </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"

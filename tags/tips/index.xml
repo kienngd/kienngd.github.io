@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tips - Tag - K5D::Blog</title>
-        <link>http://localhost:1313/tags/tips/</link>
+        <link>https://kienngd.github.io/tags/tips/</link>
         <description>Tips - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tips/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/tips/" rel="self" type="application/rss+xml" /><item>
     <title>How to Update Your Docker Image Without Starting From Scratch</title>
-    <link>http://localhost:1313/update-docker-image-without-starting-from-scratch/</link>
+    <link>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/update-docker-image-without-starting-from-scratch/</guid>
+    </author><guid>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/update-docker-image-without-starting-from-scratch/banner-docker.jpg" referrerpolicy="no-referrer">
             </div><p>Hi, it&rsquo;s me here again! 👋</p>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Service - Tag - K5D::Blog</title>
-        <link>http://localhost:1313/tags/service/</link>
+        <link>https://kienngd.github.io/tags/service/</link>
         <description>Service - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</lastBuildDate><atom:link href="http://localhost:1313/tags/service/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</lastBuildDate><atom:link href="https://kienngd.github.io/tags/service/" rel="self" type="application/rss+xml" /><item>
     <title>How to create a linux service</title>
-    <link>http://localhost:1313/create-linux-service/</link>
+    <link>https://kienngd.github.io/create-linux-service/</link>
     <pubDate>Sat, 10 Oct 2020 08:56:09 &#43;0700</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/create-linux-service/</guid>
+    </author><guid>https://kienngd.github.io/create-linux-service/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/create-linux-service/create-new-services-units-in-systemd.png" referrerpolicy="no-referrer">
             </div>How to create a linux service]]></description>

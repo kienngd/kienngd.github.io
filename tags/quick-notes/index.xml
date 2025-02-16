@@ -1,64 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Quick-Notes - Tag - K5D::Blog</title>
-        <link>http://localhost:1313/tags/quick-notes/</link>
+        <link>https://kienngd.github.io/tags/quick-notes/</link>
         <description>Quick-Notes - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 May 2024 01:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/quick-notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 May 2024 01:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/quick-notes/" rel="self" type="application/rss+xml" /><item>
     <title>How to Use Google Clock and Habits to Track Daily Activities</title>
-    <link>http://localhost:1313/track-your-daily-activities/</link>
+    <link>https://kienngd.github.io/track-your-daily-activities/</link>
     <pubDate>Tue, 28 May 2024 01:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/track-your-daily-activities/</guid>
+    </author><guid>https://kienngd.github.io/track-your-daily-activities/</guid>
     <description><![CDATA[How to Use Google Clock and Habits to Track Daily Activities]]></description>
-</item><item>
-    <title>🚧 Quick-notes</title>
-    <link>http://localhost:1313/quick-notes/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/quick-notes/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/quick-notes/quick-notes-banner.jpg" referrerpolicy="no-referrer">
-            </div>Some Quick-Notes]]></description>
-</item><item>
-    <title>🚧 Quick-notes working with APIATO</title>
-    <link>http://localhost:1313/quick-notes-apiato/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/quick-notes-apiato/</guid>
-    <description><![CDATA[Some Quick-Notes working with APIATO]]></description>
-</item><item>
-    <title>🚧 Quick-notes working with Laravel</title>
-    <link>http://localhost:1313/quick-notes-laravel/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/quick-notes-laravel/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/quick-notes-laravel/laravel-banner.webp" referrerpolicy="no-referrer">
-            </div>Some Quick-Notes working with Laravel]]></description>
-</item><item>
-    <title>🚧 Quick-notes working with Ubuntu</title>
-    <link>http://localhost:1313/quick-notes-ubuntu/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/quick-notes-ubuntu/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/quick-notes-ubuntu/ubuntu-banner.png" referrerpolicy="no-referrer">
-            </div>Some Quick-Notes working with Ubuntu]]></description>
-</item><item>
-    <title>🗒 Quick-notes working with GIT</title>
-    <link>http://localhost:1313/quick-notes-git/</link>
-    <pubDate>Tue, 04 Jul 2023 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/quick-notes-git/</guid>
-    <description><![CDATA[<h1 id="some-quick-notes-working-with-git" class="headerLink">
-    <a href="#some-quick-notes-working-with-git" class="header-mark"></a>Some Quick-notes working with GIT</h1><p><font color="#0000FF">These notes will be moved to another place soon</font></p>]]></description>
-</item><item>
-    <title>🚧 Waitting list</title>
-    <link>http://localhost:1313/waiting-list/</link>
-    <pubDate>Sat, 04 Jul 2020 01:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/waiting-list/</guid>
-    <description><![CDATA[Waitting list]]></description>
 </item></channel>
 </rss>

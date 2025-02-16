@@ -1,35 +1,35 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Design-Pattern - Tag - K5D::Blog</title>
-        <link>http://localhost:1313/tags/design-pattern/</link>
+        <link>https://kienngd.github.io/tags/design-pattern/</link>
         <description>Design-Pattern - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/design-pattern/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/design-pattern/" rel="self" type="application/rss+xml" /><item>
     <title>Pipeline-partten in Laravel</title>
-    <link>http://localhost:1313/pipeline-partern-in-laravel/</link>
+    <link>https://kienngd.github.io/pipeline-partern-in-laravel/</link>
     <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/pipeline-partern-in-laravel/</guid>
+    </author><guid>https://kienngd.github.io/pipeline-partern-in-laravel/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
             </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
 <p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>]]></description>
 </item><item>
     <title>Functional options pattern with example</title>
-    <link>http://localhost:1313/functional-options-pattern/</link>
+    <link>https://kienngd.github.io/functional-options-pattern/</link>
     <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/functional-options-pattern/</guid>
+    </author><guid>https://kienngd.github.io/functional-options-pattern/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/functional-options-pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
     <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
 </item><item>
     <title>Strategy Pattern in PHP with examples</title>
-    <link>http://localhost:1313/strategy-pattern-in-php/</link>
+    <link>https://kienngd.github.io/strategy-pattern-in-php/</link>
     <pubDate>Fri, 21 Apr 2023 01:10:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/strategy-pattern-in-php/</guid>
+    </author><guid>https://kienngd.github.io/strategy-pattern-in-php/</guid>
     <description><![CDATA[<h2 id="example-1-sort" class="headerLink">
     <a href="#example-1-sort" class="header-mark"></a>1 Example 1: Sort</h2><p>We need to implement a sorting system that sorts an array of numbers in ascending or descending order</p>
 <h3 id="without-pattern" class="headerLink">

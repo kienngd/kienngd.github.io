@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>VPN - Tag - K5D::Blog</title>
-        <link>http://localhost:1313/tags/vpn/</link>
+        <link>https://kienngd.github.io/tags/vpn/</link>
         <description>VPN - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vpn/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/vpn/" rel="self" type="application/rss+xml" /><item>
     <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
-    <link>http://localhost:1313/install-openvpn-ubuntu/</link>
+    <link>https://kienngd.github.io/install-openvpn-ubuntu/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/install-openvpn-ubuntu/</guid>
+    </author><guid>https://kienngd.github.io/install-openvpn-ubuntu/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/install-openvpn-ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
             </div><p><strong>Do you want to protect your data online?</strong> OpenVPN is the solution for you! Today, we will install OpenVPN on your Ubuntu 22.04 server and set up a secure VPN connection.</p>]]></description>

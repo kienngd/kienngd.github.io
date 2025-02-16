@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Linux - Category - K5D::Blog</title>
-        <link>http://localhost:1313/categories/linux/</link>
+        <link>https://kienngd.github.io/categories/linux/</link>
         <description>Linux - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
     <title>Exploring the split Command</title>
-    <link>http://localhost:1313/exploring-the-split-command/</link>
+    <link>https://kienngd.github.io/exploring-the-split-command/</link>
     <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/exploring-the-split-command/</guid>
+    </author><guid>https://kienngd.github.io/exploring-the-split-command/</guid>
     <description><![CDATA[<p>The <code>split</code> command is a useful tool for breaking down large files into smaller, more manageable pieces. It is especially helpful when dealing with file size limitations or when you need to transfer files over networks.</p>
 <h2 id="basic-syntax-and-example" class="headerLink">
     <a href="#basic-syntax-and-example" class="header-mark"></a>1 Basic Syntax and Example</h2><p>The basic syntax of the <code>split</code> command is:</p>
@@ -24,19 +24,19 @@
 </div>]]></description>
 </item><item>
     <title>OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</title>
-    <link>http://localhost:1313/install-openvpn-ubuntu/</link>
+    <link>https://kienngd.github.io/install-openvpn-ubuntu/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/install-openvpn-ubuntu/</guid>
+    </author><guid>https://kienngd.github.io/install-openvpn-ubuntu/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/install-openvpn-ubuntu/openvpn_banner.jpeg" referrerpolicy="no-referrer">
             </div><p><strong>Do you want to protect your data online?</strong> OpenVPN is the solution for you! Today, we will install OpenVPN on your Ubuntu 22.04 server and set up a secure VPN connection.</p>]]></description>
 </item><item>
     <title>How To Use Screen Command In Linux: A Beginner’s Guide</title>
-    <link>http://localhost:1313/use-screen-command-in-linux/</link>
+    <link>https://kienngd.github.io/use-screen-command-in-linux/</link>
     <pubDate>Thu, 18 May 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/use-screen-command-in-linux/</guid>
+    </author><guid>https://kienngd.github.io/use-screen-command-in-linux/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/use-screen-command-in-linux/LinuxCommands.png" referrerpolicy="no-referrer">
             </div><p><strong>How To Use Screen Command In Linux: A Beginner’s Guide</strong></p>
@@ -44,17 +44,17 @@
 <p>Screen is a tool that lets you create multiple sessions on a single terminal. You can detach from a screen session and re-attach to it later, even from a different computer. This way, you can keep your commands running in the background without interruption.</p>]]></description>
 </item><item>
     <title>How to Manage Software with Snap on Ubuntu 22.04</title>
-    <link>http://localhost:1313/manage-sofware-using-snap/</link>
+    <link>https://kienngd.github.io/manage-sofware-using-snap/</link>
     <pubDate>Sun, 07 May 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/manage-sofware-using-snap/</guid>
+    </author><guid>https://kienngd.github.io/manage-sofware-using-snap/</guid>
     <description><![CDATA[How to Manage Software with Snap on Ubuntu 22.04]]></description>
 </item><item>
     <title>How to create ssl certificate for local test environment</title>
-    <link>http://localhost:1313/create-ssl-cert-for-local-test/</link>
+    <link>https://kienngd.github.io/create-ssl-cert-for-local-test/</link>
     <pubDate>Mon, 20 Dec 2021 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/create-ssl-cert-for-local-test/</guid>
+    </author><guid>https://kienngd.github.io/create-ssl-cert-for-local-test/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/create-ssl-cert-for-local-test/ssl-secured-ssl-certificate-banner.png" referrerpolicy="no-referrer">
             </div><p>Hi there, it&rsquo;s me again! Today, I&rsquo;ll guide you through the process of creating an SSL certificate for your local test environment on Ubuntu 20.04. It&rsquo;s going to be a fun ride, so let&rsquo;s get started!</p>

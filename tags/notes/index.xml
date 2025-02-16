@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Notes - Tag - K5D::Blog</title>
-        <link>http://localhost:1313/tags/notes/</link>
+        <link>https://kienngd.github.io/tags/notes/</link>
         <description>Notes - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
     <title>How to Update Your Docker Image Without Starting From Scratch</title>
-    <link>http://localhost:1313/update-docker-image-without-starting-from-scratch/</link>
+    <link>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/update-docker-image-without-starting-from-scratch/</guid>
+    </author><guid>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/update-docker-image-without-starting-from-scratch/banner-docker.jpg" referrerpolicy="no-referrer">
             </div><p>Hi, it&rsquo;s me here again! 👋</p>
@@ -17,10 +17,10 @@
 <p>Let me share a neat trick I use to save time.</p>]]></description>
 </item><item>
     <title>A Late Night Database Recovery Story</title>
-    <link>http://localhost:1313/database-recovery-story/</link>
+    <link>https://kienngd.github.io/database-recovery-story/</link>
     <pubDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/database-recovery-story/</guid>
+    </author><guid>https://kienngd.github.io/database-recovery-story/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/database-recovery-story/securing-mysql-banner.png" referrerpolicy="no-referrer">
             </div><h2 id="the-story" class="headerLink">
@@ -28,10 +28,10 @@
 <p>She sent me information, then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>]]></description>
 </item><item>
     <title>Exploring the split Command</title>
-    <link>http://localhost:1313/exploring-the-split-command/</link>
+    <link>https://kienngd.github.io/exploring-the-split-command/</link>
     <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/exploring-the-split-command/</guid>
+    </author><guid>https://kienngd.github.io/exploring-the-split-command/</guid>
     <description><![CDATA[<p>The <code>split</code> command is a useful tool for breaking down large files into smaller, more manageable pieces. It is especially helpful when dealing with file size limitations or when you need to transfer files over networks.</p>
 <h2 id="basic-syntax-and-example" class="headerLink">
     <a href="#basic-syntax-and-example" class="header-mark"></a>1 Basic Syntax and Example</h2><p>The basic syntax of the <code>split</code> command is:</p>
@@ -46,10 +46,10 @@
 </div>]]></description>
 </item><item>
     <title>Git Tags: A Quick Guide</title>
-    <link>http://localhost:1313/git-tags-a-quick-guide/</link>
+    <link>https://kienngd.github.io/git-tags-a-quick-guide/</link>
     <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/git-tags-a-quick-guide/</guid>
+    </author><guid>https://kienngd.github.io/git-tags-a-quick-guide/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -79,10 +79,10 @@
 </ol>]]></description>
 </item><item>
     <title>Introduction to PHPDocumentor</title>
-    <link>http://localhost:1313/introduction-to-phpdocumentor/</link>
+    <link>https://kienngd.github.io/introduction-to-phpdocumentor/</link>
     <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/introduction-to-phpdocumentor/</guid>
+    </author><guid>https://kienngd.github.io/introduction-to-phpdocumentor/</guid>
     <description><![CDATA[<p><figure><img
         
         loading="lazy"
@@ -97,42 +97,42 @@
     <a href="#why-use-phpdocumentor" class="header-mark"></a>1 Why Use PHPDocumentor?</h2><p>Using PHPDocumentor makes it easier to understand and maintain your code. It helps others quickly see how to use your functions and classes. Good documentation can save time and reduce mistakes. Also, it improves the quality of your project by keeping everything organized.</p>]]></description>
 </item><item>
     <title>Understanding UUID: A Unique Identifier</title>
-    <link>http://localhost:1313/understanding-uuid/</link>
+    <link>https://kienngd.github.io/understanding-uuid/</link>
     <pubDate>Sat, 21 Sep 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/understanding-uuid/</guid>
+    </author><guid>https://kienngd.github.io/understanding-uuid/</guid>
     <description><![CDATA[<h1 id="understanding-uuid-a-unique-identifier" class="headerLink">
     <a href="#understanding-uuid-a-unique-identifier" class="header-mark"></a>Understanding UUID: A Unique Identifier</h1><p>UUID stands for <code>Universally Unique Identifier</code>. It is a 128-bit number used to identify information uniquely across different systems and applications. UUIDs are often represented as a string of hexadecimal digits, divided into five groups, such as <code>123e4567-e89b-12d3-a456-426614174000</code>.</p>]]></description>
 </item><item>
     <title>Quick Guide to Using Whimsical Diagrams with ChatGPT</title>
-    <link>http://localhost:1313/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</link>
+    <link>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</link>
     <pubDate>Wed, 04 Sep 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</guid>
+    </author><guid>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</guid>
     <description><![CDATA[<p><br>
 Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize your ideas and projects. This guide will show you how to use <strong>Whimsical Diagrams</strong> with <strong>ChatGPT</strong>. We will cover everything from setting it up, saving your work, export to picture to share with other people. Just follow these easy steps to use these helpful tools.</p>]]></description>
 </item><item>
     <title>Create an Entity Relationship Diagram with draw.io V24.7.5</title>
-    <link>http://localhost:1313/create-an-entity-relationship-diagram-with-drawio/</link>
+    <link>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</link>
     <pubDate>Mon, 19 Aug 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/create-an-entity-relationship-diagram-with-drawio/</guid>
+    </author><guid>https://kienngd.github.io/create-an-entity-relationship-diagram-with-drawio/</guid>
     <description><![CDATA[<h1 id="introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="headerLink">
     <a href="#introducing-the-new-create-an-entity-relationship-diagram-feature-in-drawio-version-2475" class="header-mark"></a>Introducing the New &ldquo;Create an Entity Relationship Diagram&rdquo; Feature in Draw.io Version 24.7.5</h1><p><strong>Draw.io</strong> has just added a new feature: creating an Entity Relationship Diagram (ERD). This update makes it easier to design and visualize database structures.</p>]]></description>
 </item><item>
     <title>Boost Your Work Productivity: A Simple Guide</title>
-    <link>http://localhost:1313/boost-your-work-productivity/</link>
+    <link>https://kienngd.github.io/boost-your-work-productivity/</link>
     <pubDate>Sat, 17 Aug 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/boost-your-work-productivity/</guid>
+    </author><guid>https://kienngd.github.io/boost-your-work-productivity/</guid>
     <description><![CDATA[<h1 id="boost-your-work-productivity-a-simple-guide" class="headerLink">
     <a href="#boost-your-work-productivity-a-simple-guide" class="header-mark"></a>Boost Your Work Productivity: A Simple Guide</h1><p>In today&rsquo;s fast-paced world, improving your productivity is crucial for achieving success and maintaining a healthy work-life balance. By working more efficiently, you can get more done in less time, reduce stress, and you have more time for activities you enjoy. Here’s a simple guide to help you boost your work productivity.</p>]]></description>
 </item><item>
     <title>Git log quickly and easily</title>
-    <link>http://localhost:1313/git-log-quickly-and-easily/</link>
+    <link>https://kienngd.github.io/git-log-quickly-and-easily/</link>
     <pubDate>Wed, 31 Jul 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/git-log-quickly-and-easily/</guid>
+    </author><guid>https://kienngd.github.io/git-log-quickly-and-easily/</guid>
     <description><![CDATA[<p>These are some <code>git log commands</code> I use everyday and I think they are helpful for you.</p>]]></description>
 </item></channel>
 </rss>
