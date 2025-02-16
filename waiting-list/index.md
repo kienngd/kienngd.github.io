@@ -3,6 +3,8 @@
 
 <!--more-->
 # Waitting list
+- **Series**: Học python theo lộ trình OpenAI đề xuất
+- Python: `*args` và `**kwargs`
 - How to connect to a service on the remote server via SSH tunnel
 - How to Connect to a Server via SSH Without Password Authentication
 - How to build a free blog using hugo and github-page: add publish to github-page section

@@ -4,9 +4,57 @@
         <link>http://localhost:1313/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Condition statments and loops</title>
+    <link>http://localhost:1313/022-condition-statments-and-loops/</link>
+    <pubDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/022-condition-statments-and-loops/</guid>
+    <description><![CDATA[<p>Condition statments and loops</p>]]></description>
+</item><item>
+    <title>Basic data types</title>
+    <link>http://localhost:1313/021-basic-data-types/</link>
+    <pubDate>Sun, 16 Feb 2025 00:02:01 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/021-basic-data-types/</guid>
+    <description><![CDATA[<p>Basic data types</p>]]></description>
+</item><item>
+    <title>Working with pip and introduct to virtual environment</title>
+    <link>http://localhost:1313/013-working-with-pip-and-virtual-environment/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:03 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/013-working-with-pip-and-virtual-environment/</guid>
+    <description><![CDATA[<p>Working with pip and introduct to virtual environment?</p>]]></description>
+</item><item>
+    <title>Install and setup VSCode and extensions</title>
+    <link>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:02 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</guid>
+    <description><![CDATA[<p>How to install and setup VSCode and extensions on Ubuntu?</p>]]></description>
+</item><item>
+    <title>Install python on Ubuntu</title>
+    <link>http://localhost:1313/011-install-python-on-ubuntu/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:01 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/011-install-python-on-ubuntu/</guid>
+    <description><![CDATA[<p>How to install python on Ubuntu?</p>]]></description>
+</item><item>
+    <title>Learning python basic roadmap by ChatGPT</title>
+    <link>http://localhost:1313/learning-python-roadmap-by-openai/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/learning-python-roadmap-by-openai/</guid>
+    <description><![CDATA[<p>Below is the basic Python learning roadmap tailored to your needs:</p>
+<h2 id="getting-started-with-python-and-setting-up-the-environment" class="headerLink">
+    <a href="#getting-started-with-python-and-setting-up-the-environment" class="header-mark"></a>1 Getting Started with Python and Setting Up the Environment:</h2><ul>
+<li>Install Python (use the latest version) on Ubuntu.</li>
+<li>Install and set up an IDE or text editor (VSCode, PyCharm, …).</li>
+<li>Get familiar with pip and create a virtual environment (virtualenv or venv).</li>
+</ul>]]></description>
+</item><item>
     <title>Python&#39;s **kwargs: What is it?</title>
     <link>http://localhost:1313/python-kwargs-what-is-it/</link>
     <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
@@ -23,6 +71,25 @@
     <description><![CDATA[<h2 id="what-is-a-virtual-environment" class="headerLink">
     <a href="#what-is-a-virtual-environment" class="header-mark"></a>1 What is a virtual environment?</h2><p>A virtual environment is a separate Python environment. It is isolated from your system&rsquo;s Python environment. It lets you install Python packages and libraries. These packages don&rsquo;t affect other projects or your system&rsquo;s Python.</p>]]></description>
 </item><item>
+    <title>Introducing the Goblin Game on Telegram: A Guide for Investors</title>
+    <link>http://localhost:1313/goblin-game/</link>
+    <pubDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/goblin-game/</guid>
+    <description><![CDATA[<p>The <strong>Goblin</strong> game is an exciting experience available on the Telegram app. As an investor, you need to wisely invest your coins to <strong>open mines</strong>, <strong>hire workers</strong>, and <strong>upgrade tools</strong> to earn more coins.</p>
+<p>One important thing to remember is that the cart has a limited capacity. You must claim your coins before the cart fills up. To avoid claiming too often, consider investing coins to upgrade your carts for more space.
+<figure><a class="lightgallery" href="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_2000x0_resize_q75_h2_lanczos_3.webp" title="images/goblin-001.png" data-thumbnail="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_700x0_resize_q75_h2_lanczos_3.webp" data-sub-html="<h2>Goblin Economic Game</h2>">
+        <img
+            
+            loading="lazy"
+            src="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_1200x0_resize_q75_h2_lanczos_3.webp"
+            srcset="/goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_700x0_resize_q75_h2_lanczos_3.webp 700w,
+                /goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
+                /goblin-game/images/goblin-001_hu462b519dfdbe7f3227de2442117a1d26_353375_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
+            alt="images/goblin-001.png" height="768px"  width="464px" >
+    </a><figcaption class="image-caption">Goblin Economic Game</figcaption>
+    </figure></p>]]></description>
+</item><item>
     <title>How to Update Your Docker Image Without Starting From Scratch</title>
     <link>http://localhost:1313/update-docker-image-without-starting-from-scratch/</link>
     <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
@@ -33,118 +100,5 @@
             </div><p>Hi, it&rsquo;s me here again! 👋</p>
 <p>Ever been in this situation? You have a <code>Docker image</code> that you&rsquo;ve been using for a while, and suddenly you <code>need to add some new softwares</code>. Building everything from scratch again? Nobody has time for that! 😅</p>
 <p>Let me share a neat trick I use to save time.</p>]]></description>
-</item><item>
-    <title>A Late Night Database Recovery Story</title>
-    <link>http://localhost:1313/database-recovery-story/</link>
-    <pubDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/database-recovery-story/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/database-recovery-story/securing-mysql-banner.png" referrerpolicy="no-referrer">
-            </div><h2 id="the-story" class="headerLink">
-    <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. She was panicked because his database was lost.</p>
-<p>She sent me information, then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>]]></description>
-</item><item>
-    <title>Exploring the split Command</title>
-    <link>http://localhost:1313/exploring-the-split-command/</link>
-    <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/exploring-the-split-command/</guid>
-    <description><![CDATA[<p>The <code>split</code> command is a useful tool for breaking down large files into smaller, more manageable pieces. It is especially helpful when dealing with file size limitations or when you need to transfer files over networks.</p>
-<h2 id="basic-syntax-and-example" class="headerLink">
-    <a href="#basic-syntax-and-example" class="header-mark"></a>1 Basic Syntax and Example</h2><p>The basic syntax of the <code>split</code> command is:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">split <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>INPUT <span class="o">[</span>PREFIX<span class="o">]]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>Use PHPStan to Ensure Code Quality in Your Project</title>
-    <link>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</link>
-    <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
-    <description><![CDATA[<p><figure><img
-        
-        loading="lazy"
-        src="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp"
-        srcset="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_700x0_resize_q75_h2_lanczos_3.webp 700w,
-            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
-            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
-        title="PHPStan A Testing Tool" height="413"   width="1200" ><figcaption class="image-caption">PHPStan A Testing Tool</figcaption>
-    </figure></p>
-<h2 id="introduction" class="headerLink">
-    <a href="#introduction" class="header-mark"></a>1 <strong>Introduction</strong></h2><p><strong>PHPStan</strong> is a powerful static analysis tool for PHP that checks your code for potential errors without executing it. By using <strong>PHPStan</strong>, you can catch bugs early in the development process, improve the overall <strong>quality</strong> of your code, and ensure your project is more <strong>stable</strong> and <strong>maintainable</strong>.</p>]]></description>
-</item><item>
-    <title>Git Tags: A Quick Guide</title>
-    <link>http://localhost:1313/git-tags-a-quick-guide/</link>
-    <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/git-tags-a-quick-guide/</guid>
-    <description><![CDATA[<p><figure><img
-        
-        loading="lazy"
-        src="/git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp"
-        srcset="/git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_700x0_resize_q75_h2_lanczos_2.webp 700w,
-            /git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_1200x0_resize_q75_h2_lanczos_2.webp 1200w,
-            /git-tags-a-quick-guide/git-tag-banner_hu1658105ce549973b08e6e132ee941243_8284_2000x0_resize_q75_h2_lanczos_2.webp 2000w"
-        title="Git Tag a quick guide" height="504"   width="1200" ><figcaption class="image-caption">Git Tag a quick guide</figcaption>
-    </figure>
-<code>Git</code> is a popular version control system. It helps developers <code>track changes</code> in their code. <code>Git tags</code> are like <code>bookmarks</code> for important points in your project&rsquo;s history.</p>
-<h2 id="here-are-some-common-git-tag-commands" class="headerLink">
-    <a href="#here-are-some-common-git-tag-commands" class="header-mark"></a>1 Here are some common Git tag commands:</h2><ol>
-<li>List all tags:
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git tag # List all tags
-</span></span><span class="line"><span class="cl">git tag -l &#34;v1.8.5*&#34; # List tags matching a pattern
-</span></span><span class="line"><span class="cl">git tag -n # List all tags with commit message
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-</ol>]]></description>
-</item><item>
-    <title>Introduction to PHPDocumentor</title>
-    <link>http://localhost:1313/introduction-to-phpdocumentor/</link>
-    <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/introduction-to-phpdocumentor/</guid>
-    <description><![CDATA[<p><figure><img
-        
-        loading="lazy"
-        src="/introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp"
-        srcset="/introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_700x0_resize_q75_h2_lanczos_3.webp 700w,
-            /introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
-            /introduction-to-phpdocumentor/phpdocumentor_huc2fa6143d84be30945f5f94583653544_82428_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
-        title="PHPDocumentor" height="304"   width="1200" ><figcaption class="image-caption">PHPDocumentor</figcaption>
-    </figure></p>
-<p><code>PHPDocumentor</code> is a tool that helps generate <code>technical documentation</code> for <code>PHP projects</code>. It reads your PHP code and creates detailed documentation for <code>functions</code>, <code>classes</code>, and <code>methods</code>&hellip; This is useful for both new developers and teams working together.</p>
-<h2 id="why-use-phpdocumentor" class="headerLink">
-    <a href="#why-use-phpdocumentor" class="header-mark"></a>1 Why Use PHPDocumentor?</h2><p>Using PHPDocumentor makes it easier to understand and maintain your code. It helps others quickly see how to use your functions and classes. Good documentation can save time and reduce mistakes. Also, it improves the quality of your project by keeping everything organized.</p>]]></description>
-</item><item>
-    <title>Understanding UUID: A Unique Identifier</title>
-    <link>http://localhost:1313/understanding-uuid/</link>
-    <pubDate>Sat, 21 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/understanding-uuid/</guid>
-    <description><![CDATA[<h1 id="understanding-uuid-a-unique-identifier" class="headerLink">
-    <a href="#understanding-uuid-a-unique-identifier" class="header-mark"></a>Understanding UUID: A Unique Identifier</h1><p>UUID stands for <code>Universally Unique Identifier</code>. It is a 128-bit number used to identify information uniquely across different systems and applications. UUIDs are often represented as a string of hexadecimal digits, divided into five groups, such as <code>123e4567-e89b-12d3-a456-426614174000</code>.</p>]]></description>
-</item><item>
-    <title>Quick Guide to Using Whimsical Diagrams with ChatGPT</title>
-    <link>http://localhost:1313/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</link>
-    <pubDate>Wed, 04 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</guid>
-    <description><![CDATA[<p><br>
-Making <strong>mind-maps</strong> and <strong>diagrams</strong> helps organize your ideas and projects. This guide will show you how to use <strong>Whimsical Diagrams</strong> with <strong>ChatGPT</strong>. We will cover everything from setting it up, saving your work, export to picture to share with other people. Just follow these easy steps to use these helpful tools.</p>]]></description>
 </item></channel>
 </rss>

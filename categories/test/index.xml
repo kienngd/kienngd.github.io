@@ -6,17 +6,17 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
             <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/test/" rel="self" type="application/rss+xml" /><item>
     <title>Test MermaidJS</title>
-    <link>http://localhost:1313/mermaid_1/</link>
+    <link>http://localhost:1313/mermaid-1/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>http://localhost:1313/mermaid_1/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/mermaid-1/</guid>
     <description><![CDATA[sequenceDiagram participant web as Web Browser participant blog as Blog Service participant account as Account Service participant mail as Mail Service participant db as Storage Note over web,db: The user must be logged in to submit blog posts web->>+account: Logs in using credentials account->>db: Query stored accounts db->>account: Respond with query result alt Credentials not found account->>web: Invalid credentials else Credentials found account->>-web: Successfully logged in Note over web,db: When the user is authenticated, they can now submit new posts web->>+blog: Submit new post blog->>db: Store post data par Notifications blog--)mail: Send mail to blog subscribers blog--)db: Store in-site notifications and Response blog-->>-web: Successfully posted end end ]]></description>
 </item><item>
     <title>User register</title>
-    <link>http://localhost:1313/user_register/</link>
+    <link>http://localhost:1313/user-register/</link>
     <pubDate>Sun, 24 Mar 2024 00:00:00 &#43;0000</pubDate><author>
-                    <name>Kien Nguyen</name>
-                </author><guid>http://localhost:1313/user_register/</guid>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/user-register/</guid>
     <description><![CDATA[sequenceDiagram actor W as Web Browser participant C as Controller participant A as Action participant T as Task participant Q as Queue W->>+C: Send Register Information C->>+A: Call Register Action A->>+T: Call Create User Task alt Create User Success rect rgba(0, 0, 255, .6) T->>A: Create User Success A->>Q: Dispatch Create Subscription Action A->>C: Create User Success C->>W: Create User Success end else Create User Error rect rgba(255, 0, 0, .]]></description>
 </item></channel>
 </rss>

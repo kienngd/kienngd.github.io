@@ -4,14 +4,62 @@
         <link>http://localhost:1313/categories/code/</link>
         <description>Code - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/code/" rel="self" type="application/rss+xml" /><item>
+    <title>Condition statments and loops</title>
+    <link>http://localhost:1313/022-condition-statments-and-loops/</link>
+    <pubDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/022-condition-statments-and-loops/</guid>
+    <description><![CDATA[<p>Condition statments and loops</p>]]></description>
+</item><item>
+    <title>Basic data types</title>
+    <link>http://localhost:1313/021-basic-data-types/</link>
+    <pubDate>Sun, 16 Feb 2025 00:02:01 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/021-basic-data-types/</guid>
+    <description><![CDATA[<p>Basic data types</p>]]></description>
+</item><item>
+    <title>Working with pip and introduct to virtual environment</title>
+    <link>http://localhost:1313/013-working-with-pip-and-virtual-environment/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:03 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/013-working-with-pip-and-virtual-environment/</guid>
+    <description><![CDATA[<p>Working with pip and introduct to virtual environment?</p>]]></description>
+</item><item>
+    <title>Install and setup VSCode and extensions</title>
+    <link>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:02 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</guid>
+    <description><![CDATA[<p>How to install and setup VSCode and extensions on Ubuntu?</p>]]></description>
+</item><item>
+    <title>Install python on Ubuntu</title>
+    <link>http://localhost:1313/011-install-python-on-ubuntu/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:01 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/011-install-python-on-ubuntu/</guid>
+    <description><![CDATA[<p>How to install python on Ubuntu?</p>]]></description>
+</item><item>
+    <title>Learning python basic roadmap by ChatGPT</title>
+    <link>http://localhost:1313/learning-python-roadmap-by-openai/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/learning-python-roadmap-by-openai/</guid>
+    <description><![CDATA[<p>Below is the basic Python learning roadmap tailored to your needs:</p>
+<h2 id="getting-started-with-python-and-setting-up-the-environment" class="headerLink">
+    <a href="#getting-started-with-python-and-setting-up-the-environment" class="header-mark"></a>1 Getting Started with Python and Setting Up the Environment:</h2><ul>
+<li>Install Python (use the latest version) on Ubuntu.</li>
+<li>Install and set up an IDE or text editor (VSCode, PyCharm, …).</li>
+<li>Get familiar with pip and create a virtual environment (virtualenv or venv).</li>
+</ul>]]></description>
+</item><item>
     <title>Python&#39;s **kwargs: What is it?</title>
     <link>http://localhost:1313/python-kwargs-what-is-it/</link>
     <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>http://localhost:1313/python-kwargs-what-is-it/</guid>
     <description><![CDATA[<h2 id="pythons-kwargs-what-is-it" class="headerLink">
-    <a href="#pythons-kwargs-what-is-it" class="header-mark"></a>1 Python&rsquo;s **kwargs: What is it?</h2><p>In Python, **kwargs is a special syntax that allows you to pass a variable number of keyword arguments to a function.</p>]]></description>
+    <a href="#pythons-kwargs-what-is-it" class="header-mark"></a>1 Python&rsquo;s <code>**kwargs</code>: What is it?</h2><p>In Python, <code>**kwargs</code> is a special syntax that allows you to pass a variable number of keyword arguments to a function.</p>]]></description>
 </item><item>
     <title>Virtual environment in Python 3</title>
     <link>http://localhost:1313/virtual-environment-in-python-3/</link>
@@ -55,55 +103,5 @@
 <p><code>PHPDocumentor</code> is a tool that helps generate <code>technical documentation</code> for <code>PHP projects</code>. It reads your PHP code and creates detailed documentation for <code>functions</code>, <code>classes</code>, and <code>methods</code>&hellip; This is useful for both new developers and teams working together.</p>
 <h2 id="why-use-phpdocumentor" class="headerLink">
     <a href="#why-use-phpdocumentor" class="header-mark"></a>1 Why Use PHPDocumentor?</h2><p>Using PHPDocumentor makes it easier to understand and maintain your code. It helps others quickly see how to use your functions and classes. Good documentation can save time and reduce mistakes. Also, it improves the quality of your project by keeping everything organized.</p>]]></description>
-</item><item>
-    <title>Pipeline-partten in Laravel</title>
-    <link>http://localhost:1313/pipeline-partern-in-laravel/</link>
-    <pubDate>Mon, 26 Aug 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/pipeline-partern-in-laravel/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/pipeline-partern-in-laravel/pipeline-diagram.webp" referrerpolicy="no-referrer">
-            </div><p>In Laravel, the <strong>pipeline pattern</strong> helps you process a series of tasks in a clear and organized way. Instead of handling each step separately, you can use a pipeline to apply multiple actions in sequence.</p>
-<p>This pattern is useful when you need to apply several steps to data or an object. For example, you can use a pipeline to handle an order request with steps like validation, and adding data to the order and finally save it to database.</p>]]></description>
-</item><item>
-    <title>Inheritance in GoLang</title>
-    <link>http://localhost:1313/inheritance_in_golang.md/</link>
-    <pubDate>Wed, 26 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/inheritance_in_golang.md/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/inheritance_in_golang.md/inheritance.png" referrerpolicy="no-referrer">
-            </div><p><strong>Inheritance</strong> is an important concept in OOP (Object-Oriented Programming). Since Golang does not support classes, there is <strong>no inheritance concept in GoLang</strong>. However, you can implement inheritance through <strong>struct embedding</strong>.</p>]]></description>
-</item><item>
-    <title>Functional options pattern with example</title>
-    <link>http://localhost:1313/functional-options-pattern/</link>
-    <pubDate>Tue, 25 Jun 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/functional-options-pattern/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/functional-options-pattern/functional-options-social.png" referrerpolicy="no-referrer">
-            </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
-    <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
-</item><item>
-    <title>Best practices for coder</title>
-    <link>http://localhost:1313/best-practices-for-coder/</link>
-    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/best-practices-for-coder/</guid>
-    <description><![CDATA[Best practices for coder]]></description>
-</item><item>
-    <title>Ten coder bad habits</title>
-    <link>http://localhost:1313/ten-coder-bad-habits/</link>
-    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/ten-coder-bad-habits/</guid>
-    <description><![CDATA[Ten coder bad habits]]></description>
-</item><item>
-    <title>Naming: Every Developer&#39;s Nightmare</title>
-    <link>http://localhost:1313/naming/</link>
-    <pubDate>Mon, 24 Apr 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/naming/</guid>
-    <description><![CDATA[Naming: Every Developer's Nightmare]]></description>
 </item></channel>
 </rss>

@@ -1,0 +1,56 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python-Basic - Series - K5D::Blog</title>
+        <link>http://localhost:1313/series/python-basic/</link>
+        <description>Python-Basic - Series - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/series/python-basic/" rel="self" type="application/rss+xml" /><item>
+    <title>Condition statments and loops</title>
+    <link>http://localhost:1313/022-condition-statments-and-loops/</link>
+    <pubDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/022-condition-statments-and-loops/</guid>
+    <description><![CDATA[<p>Condition statments and loops</p>]]></description>
+</item><item>
+    <title>Basic data types</title>
+    <link>http://localhost:1313/021-basic-data-types/</link>
+    <pubDate>Sun, 16 Feb 2025 00:02:01 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/021-basic-data-types/</guid>
+    <description><![CDATA[<p>Basic data types</p>]]></description>
+</item><item>
+    <title>Working with pip and introduct to virtual environment</title>
+    <link>http://localhost:1313/013-working-with-pip-and-virtual-environment/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:03 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/013-working-with-pip-and-virtual-environment/</guid>
+    <description><![CDATA[<p>Working with pip and introduct to virtual environment?</p>]]></description>
+</item><item>
+    <title>Install and setup VSCode and extensions</title>
+    <link>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:02 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/012-install-and-setup-vscode-and-extensions/</guid>
+    <description><![CDATA[<p>How to install and setup VSCode and extensions on Ubuntu?</p>]]></description>
+</item><item>
+    <title>Install python on Ubuntu</title>
+    <link>http://localhost:1313/011-install-python-on-ubuntu/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:01 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/011-install-python-on-ubuntu/</guid>
+    <description><![CDATA[<p>How to install python on Ubuntu?</p>]]></description>
+</item><item>
+    <title>Learning python basic roadmap by ChatGPT</title>
+    <link>http://localhost:1313/learning-python-roadmap-by-openai/</link>
+    <pubDate>Sun, 16 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/learning-python-roadmap-by-openai/</guid>
+    <description><![CDATA[<p>Below is the basic Python learning roadmap tailored to your needs:</p>
+<h2 id="getting-started-with-python-and-setting-up-the-environment" class="headerLink">
+    <a href="#getting-started-with-python-and-setting-up-the-environment" class="header-mark"></a>1 Getting Started with Python and Setting Up the Environment:</h2><ul>
+<li>Install Python (use the latest version) on Ubuntu.</li>
+<li>Install and set up an IDE or text editor (VSCode, PyCharm, …).</li>
+<li>Get familiar with pip and create a virtual environment (virtualenv or venv).</li>
+</ul>]]></description>
+</item></channel>
+</rss>

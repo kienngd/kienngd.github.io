@@ -4,12 +4,33 @@
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Python</title>
     <link>http://localhost:1313/tags/python/</link>
-    <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Sun, 16 Feb 2025 00:02:02 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>http://localhost:1313/tags/python/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Cryptor</title>
+    <link>http://localhost:1313/tags/cryptor/</link>
+    <pubDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/tags/cryptor/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Games</title>
+    <link>http://localhost:1313/tags/games/</link>
+    <pubDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/tags/games/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Miscellaneous</title>
+    <link>http://localhost:1313/tags/miscellaneous/</link>
+    <pubDate>Fri, 29 Nov 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/tags/miscellaneous/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Docker</title>
@@ -52,27 +73,6 @@
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>http://localhost:1313/tags/phpstan/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Git</title>
-    <link>http://localhost:1313/tags/git/</link>
-    <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/tags/git/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Git Tag</title>
-    <link>http://localhost:1313/tags/git-tag/</link>
-    <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/tags/git-tag/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>PHPDocumentor</title>
-    <link>http://localhost:1313/tags/phpdocumentor/</link>
-    <pubDate>Wed, 25 Sep 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>http://localhost:1313/tags/phpdocumentor/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
