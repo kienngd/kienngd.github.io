@@ -2,21 +2,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://kienngd.github.io/categories/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/categories/code/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/022-condition-statments-and-loops/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/posts/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/python/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/series/python-basic/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/series/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/</loc><lastmod>2025-02-16T00:02:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/021-basic-data-types/</loc><lastmod>2025-02-16T00:02:01&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/013-working-with-pip-and-virtual-environment/</loc><lastmod>2025-02-16T00:00:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/012-install-and-setup-vscode-and-extensions/</loc><lastmod>2025-02-16T00:00:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/011-install-python-on-ubuntu/</loc><lastmod>2025-02-16T00:00:01&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/learning-python-roadmap-by-openai/</loc><lastmod>2025-02-16T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/</loc><lastmod>2025-02-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/code/</loc><lastmod>2025-02-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/python/</loc><lastmod>2025-02-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/python-kwargs-what-is-it/</loc><lastmod>2025-02-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/</loc><lastmod>2025-02-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/virtual-environment-in-python-3/</loc><lastmod>2025-02-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/tags/docker/</loc><lastmod>2024-11-17T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</loc><lastmod>2024-11-17T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -108,4 +100,5 @@
             <loc>https://kienngd.github.io/build-a-free-blog-using-hugo/</loc><lastmod>2020-10-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/tags/hugo/</loc><lastmod>2020-10-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://kienngd.github.io/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>https://kienngd.github.io/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://kienngd.github.io/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
