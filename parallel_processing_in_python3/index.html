@@ -8,44 +8,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
-    <title>Python&#39;s **kwargs: What is it? - K5D::Blog</title><meta name="Description" content="Python&#39;s **kwargs: What is it?"><meta property="og:url" content="https://kienngd.github.io/python-kwargs-what-is-it/">
+    <title>Parallel Processing In Python3 - K5D::Blog</title><meta name="Description" content="Parallel Processing In Python3"><meta property="og:url" content="https://kienngd.github.io/parallel_processing_in_python3/">
   <meta property="og:site_name" content="K5D::Blog">
-  <meta property="og:title" content="Python&#39;s **kwargs: What is it?">
-  <meta property="og:description" content="Python&#39;s **kwargs: What is it?">
+  <meta property="og:title" content="Parallel Processing In Python3">
+  <meta property="og:description" content="Parallel Processing In Python3">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-02-11T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-02-11T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-02-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-28T00:00:00+00:00">
     <meta property="article:tag" content="Python">
     <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="Python&#39;s **kwargs: What is it?">
-<meta name="twitter:description" content="Python&#39;s **kwargs: What is it?">
+<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="Parallel Processing In Python3">
+<meta name="twitter:description" content="Parallel Processing In Python3">
 <meta name="application-name" content="K5D::Blog">
 <meta name="apple-mobile-web-app-title" content="K5D::Blog">
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/python-kwargs-what-is-it/" /><link rel="prev" href="https://kienngd.github.io/virtual-environment-in-python-3/" /><link rel="next" href="https://kienngd.github.io/parallel_processing_in_python3/" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/parallel_processing_in_python3/" /><link rel="prev" href="https://kienngd.github.io/python-kwargs-what-is-it/" />
 <link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Python's **kwargs: What is it?",
+        "headline": "Parallel Processing In Python3",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://kienngd.github.io/python-kwargs-what-is-it/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python","wordcount":  255 ,
-        "url": "https://kienngd.github.io/python-kwargs-what-is-it/","datePublished": "2025-02-11T00:00:00+00:00","dateModified": "2025-02-11T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https://kienngd.github.io/parallel_processing_in_python3/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python","wordcount":  320 ,
+        "url": "https://kienngd.github.io/parallel_processing_in_python3/","datePublished": "2025-02-28T00:00:00+00:00","dateModified": "2025-02-28T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "K5D Blog","logo": "https://kienngd.github.io/images/logo-48x48.png"},"author": {
                 "@type": "Person",
                 "name": "Kien Nguyen"
-            },"description": "Python's **kwargs: What is it?"
+            },"description": "Parallel Processing In Python3"
     }
     </script></head>
 
@@ -118,19 +118,22 @@
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li><a href="#pythons-kwargs-what-is-it">Python&rsquo;s <code>**kwargs</code>: What is it?</a></li>
-    <li><a href="#how-does-it-work">How does it work?</a></li>
-    <li><a href="#how-to-use-it">How to use it?</a></li>
-    <li><a href="#using-dictionary-functions">Using Dictionary Functions</a></li>
-    <li><a href="#what-are-the-benefits-of-using-kwargs">What are the benefits of using <code>**kwargs</code>?</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#-why-use-parallel-processing">🤔 Why Use Parallel Processing?</a></li>
+    <li><a href="#-introduction-to-concurrentfutures">🚀 Introduction to <code>concurrent.futures</code></a>
+      <ul>
+        <li><a href="#-example-running-api-calls-in-parallel">🔥 Example: Running API Calls in Parallel</a></li>
+        <li><a href="#-explanation">🧐 Explanation</a></li>
+      </ul>
+    </li>
+    <li><a href="#-other-parallel-processing-methods-in-python">🔄 Other Parallel Processing Methods in Python</a></li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
   </ul>
 </nav></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Python&#39;s **kwargs: What is it?</h1><div class="post-meta">
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Parallel Processing In Python3</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://kienngd.github.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Kien Nguyen</a>&nbsp;<a href='mailto: kienngd@gmail.com'>kienngd@gmail.com</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/code/"><i class="far fa-folder fa-fw"></i>Code</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-11">2025-02-11</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2025-02-11">2025-02-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;255 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-28">2025-02-28</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2025-02-28">2025-02-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;320 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -138,67 +141,85 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#pythons-kwargs-what-is-it">Python&rsquo;s <code>**kwargs</code>: What is it?</a></li>
-    <li><a href="#how-does-it-work">How does it work?</a></li>
-    <li><a href="#how-to-use-it">How to use it?</a></li>
-    <li><a href="#using-dictionary-functions">Using Dictionary Functions</a></li>
-    <li><a href="#what-are-the-benefits-of-using-kwargs">What are the benefits of using <code>**kwargs</code>?</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#-why-use-parallel-processing">🤔 Why Use Parallel Processing?</a></li>
+    <li><a href="#-introduction-to-concurrentfutures">🚀 Introduction to <code>concurrent.futures</code></a>
+      <ul>
+        <li><a href="#-example-running-api-calls-in-parallel">🔥 Example: Running API Calls in Parallel</a></li>
+        <li><a href="#-explanation">🧐 Explanation</a></li>
+      </ul>
+    </li>
+    <li><a href="#-other-parallel-processing-methods-in-python">🔄 Other Parallel Processing Methods in Python</a></li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="pythons-kwargs-what-is-it" class="headerLink">
-    <a href="#pythons-kwargs-what-is-it" class="header-mark"></a>1 Python&rsquo;s <code>**kwargs</code>: What is it?</h2><p>In Python, <code>**kwargs</code> is a special syntax that allows you to pass a variable number of keyword arguments to a function.</p>
-<h2 id="how-does-it-work" class="headerLink">
-    <a href="#how-does-it-work" class="header-mark"></a>2 How does it work?</h2><p><code>**kwargs</code> is a <strong>dictionary</strong> where the keys are the names of the keyword arguments and the values are the values of the keyword arguments.</p>
-<h2 id="how-to-use-it" class="headerLink">
-    <a href="#how-to-use-it" class="header-mark"></a>3 How to use it?</h2><p>To use <code>**kwargs</code>, you simply need to add ** to the end of the parameter name in the function definition. For example:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s2">&#34;: &#34;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>This function can be called with any number of keyword arguments. For example:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">my_function</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s2">&#34;New York&#34;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>This will print:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">name: John
-</span></span><span class="line"><span class="cl">age: 30
-</span></span><span class="line"><span class="cl">city: New York
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="using-dictionary-functions" class="headerLink">
-    <a href="#using-dictionary-functions" class="header-mark"></a>4 Using Dictionary Functions</h2><p>Since <code>**kwargs</code> is a dictionary, you can use familiar dictionary functions like:</p>
+            </div><div class="content" id="content"><h2 id="-why-use-parallel-processing" class="headerLink">
+    <a href="#-why-use-parallel-processing" class="header-mark"></a>1 🤔 Why Use Parallel Processing?</h2><p>When running 🐍 Python programs, some tasks take a long ⏳ time to complete. For example, calling an external 🌐 API or reading large 📂 files. If we run these tasks one by one, it can be 🐌 slow. Instead, we can run them in parallel to save ⏱️ time.</p>
+<h2 id="-introduction-to-concurrentfutures" class="headerLink">
+    <a href="#-introduction-to-concurrentfutures" class="header-mark"></a>2 🚀 Introduction to <code>concurrent.futures</code></h2><p>🐍 Python provides the <code>concurrent.futures</code> module to run tasks in parallel. It has two main classes:</p>
 <ul>
-<li><strong><code>kwargs.get(key, default):</code></strong> Retrieves the value of a key, or returns a default value if the key doesn&rsquo;t exist.</li>
-<li><strong><code>kwargs.keys():</code></strong> Returns a view object containing all the keys.</li>
-<li><strong><code>kwargs.values():</code></strong> Returns a view object containing all the values.</li>
-<li><strong><code>kwargs.items():</code></strong> Returns a view object containing all key-value pairs.</li>
+<li><code>ThreadPoolExecutor</code>: Uses 🧵 threads, good for I/O-bound tasks (e.g., API calls, file 📁 I/O).</li>
+<li><code>ProcessPoolExecutor</code>: Uses 🖥️ processes, better for CPU-bound tasks (e.g., 🧮 calculations, data 📊 processing).</li>
 </ul>
-<h2 id="what-are-the-benefits-of-using-kwargs" class="headerLink">
-    <a href="#what-are-the-benefits-of-using-kwargs" class="header-mark"></a>5 What are the benefits of using <code>**kwargs</code>?</h2><p><code>**kwargs</code> can be useful when you want to create a function that can accept a variable number of keyword arguments. This can be helpful when you are designing a function that needs to be flexible enough to handle different types of input.</p>
-<h2 id="conclusion" class="headerLink">
-    <a href="#conclusion" class="header-mark"></a>6 Conclusion</h2><p><code>**kwargs</code> is a powerful tool that can be used to create more flexible and reusable functions.</p>
-<p>&ndash; Happy Coding &ndash;</p></div>
+<h3 id="-example-running-api-calls-in-parallel" class="headerLink">
+    <a href="#-example-running-api-calls-in-parallel" class="header-mark"></a>2.1 🔥 Example: Running API Calls in Parallel</h3><p>Here is a simple example using <code>ThreadPoolExecutor</code> to make multiple 🌍 API requests faster.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">concurrent.futures</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fetch_url</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">urls</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;https://jsonplaceholder.typicode.com/posts/1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;https://jsonplaceholder.typicode.com/posts/2&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;https://jsonplaceholder.typicode.com/posts/3&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">()</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">results</span> <span class="o">=</span> <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">fetch_url</span><span class="p">,</span> <span class="n">urls</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">url</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;URL: </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">, Status Code: </span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="-explanation" class="headerLink">
+    <a href="#-explanation" class="header-mark"></a>2.2 🧐 Explanation</h3><ul>
+<li>We define a function <code>fetch_url</code> to get data 📡 from a URL.</li>
+<li>We use <code>ThreadPoolExecutor</code> to run <code>fetch_url</code> for multiple URLs in parallel.</li>
+<li>The <code>executor.map</code> method applies the function to all URLs and returns results.</li>
+</ul>
+<h2 id="-other-parallel-processing-methods-in-python" class="headerLink">
+    <a href="#-other-parallel-processing-methods-in-python" class="header-mark"></a>3 🔄 Other Parallel Processing Methods in Python</h2><p>Besides <code>concurrent.futures</code>, 🐍 Python has other ways to run tasks in parallel:</p>
+<ul>
+<li><code>multiprocessing</code> module: Runs tasks in separate 🖥️ processes.</li>
+<li><code>asyncio</code> module: Handles asynchronous tasks efficiently ⚡.</li>
+<li><code>joblib</code> library: Useful for parallel computing in 🧠 machine learning.</li>
+</ul>
+<p>Each method has its own use case. <code>concurrent.futures</code> is a simple and effective choice for many parallel tasks.</p>
+<h2 id="-conclusion" class="headerLink">
+    <a href="#-conclusion" class="header-mark"></a>4 🎯 Conclusion</h2><p>Using <code>concurrent.futures</code>, we can speed up ⏩ tasks that involve I/O operations like API calls. It is easy 🤓 to use and improves performance significantly 🚀. If you need parallel processing in 🐍 Python, give it a try! 💡</p></div>
 
         
 
@@ -207,7 +228,7 @@
 <div class="related-container">
     <div class="related-item-container">
             <h2 class="related-title">
-                <a href="/parallel_processing_in_python3/">Parallel Processing In Python3</a>
+                <a href="/python-kwargs-what-is-it/">Python&#39;s **kwargs: What is it?</a>
             </h2>
         </div>
     <div class="related-item-container">
@@ -229,7 +250,7 @@
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
-            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.github.io/python-kwargs-what-is-it/" data-title="Python&#39;s **kwargs: What is it?" data-hashtags="Python"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.github.io/python-kwargs-what-is-it/" data-hashtag="Python"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://kienngd.github.io/python-kwargs-what-is-it/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.github.io/python-kwargs-what-is-it/" data-title="Python&#39;s **kwargs: What is it?" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.github.io/parallel_processing_in_python3/" data-title="Parallel Processing In Python3" data-hashtags="Python"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.github.io/parallel_processing_in_python3/" data-hashtag="Python"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://kienngd.github.io/parallel_processing_in_python3/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.github.io/parallel_processing_in_python3/" data-title="Parallel Processing In Python3" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
         </div>
     </div>
 
@@ -240,8 +261,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/virtual-environment-in-python-3/" class="prev" rel="prev" title="Virtual environment in Python 3"><i class="fas fa-angle-left fa-fw"></i>Virtual environment in Python 3</a>
-            <a href="/parallel_processing_in_python3/" class="next" rel="next" title="Parallel Processing In Python3">Parallel Processing In Python3<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/python-kwargs-what-is-it/" class="prev" rel="prev" title="Python&#39;s **kwargs: What is it?"><i class="fas fa-angle-left fa-fw"></i>Python&#39;s **kwargs: What is it?</a></div>
 </div>
 </article></div>
         </main><footer class="footer">

@@ -4,7 +4,15 @@
         <link>https://kienngd.github.io/tags/python/</link>
         <description>Python - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>Parallel Processing In Python3</title>
+    <link>https://kienngd.github.io/parallel_processing_in_python3/</link>
+    <pubDate>Fri, 28 Feb 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/parallel_processing_in_python3/</guid>
+    <description><![CDATA[<h2 id="-why-use-parallel-processing" class="headerLink">
+    <a href="#-why-use-parallel-processing" class="header-mark"></a>1 🤔 Why Use Parallel Processing?</h2><p>When running 🐍 Python programs, some tasks take a long ⏳ time to complete. For example, calling an external 🌐 API or reading large 📂 files. If we run these tasks one by one, it can be 🐌 slow. Instead, we can run them in parallel to save ⏱️ time.</p>]]></description>
+</item><item>
     <title>Python&#39;s **kwargs: What is it?</title>
     <link>https://kienngd.github.io/python-kwargs-what-is-it/</link>
     <pubDate>Tue, 11 Feb 2025 00:00:00 &#43;0000</pubDate><author>
