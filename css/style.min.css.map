@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/hdd/data/working/documents_new/blog",
+	"sourceRoot": "/data/working/documents_new/blog",
 	"sources": [
 		"themes/DoIt/assets/css/style.scss",
 		"themes/DoIt/assets/css/_variables.scss",
