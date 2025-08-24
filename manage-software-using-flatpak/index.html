@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <title>How to Manage Software with Flatpak on Ubuntu 22.04 - K5D::Blog</title><meta name="Description" content="How to Manage Software with Flatpak on Ubuntu 22.04"><meta property="og:url" content="https://kienngd.github.io/manage-software-using-flatpak/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="How to Manage Software with Flatpak on Ubuntu 22.04">
+  <meta property="og:description" content="How to Manage Software with Flatpak on Ubuntu 22.04">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-11T00:00:00+00:00">
+    <meta property="article:tag" content="Ubuntu">
+    <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="How to Manage Software with Flatpak on Ubuntu 22.04">
+<meta name="twitter:description" content="How to Manage Software with Flatpak on Ubuntu 22.04">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/manage-software-using-flatpak/" /><link rel="prev" href="https://kienngd.github.io/parallel_processing_in_python3/" /><link rel="next" href="https://kienngd.github.io/process-exceptions/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to Manage Software with Flatpak on Ubuntu 22.04",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kienngd.github.io/manage-software-using-flatpak/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Ubuntu","wordcount":  571 ,
+        "url": "https://kienngd.github.io/manage-software-using-flatpak/","datePublished": "2025-03-11T00:00:00+00:00","dateModified": "2025-03-11T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "K5D Blog","logo": "https://kienngd.github.io/images/logo-48x48.png"},"author": {
+                "@type": "Person",
+                "name": "Kien Nguyen"
+            },"description": "How to Manage Software with Flatpak on Ubuntu 22.04"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blogs </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Blogs</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#benefits-of-using-flatpak">Benefits of Using Flatpak</a></li>
+    <li><a href="#how-to-install-flatpak-on-ubuntu-2404">How to Install Flatpak on Ubuntu 24.04</a></li>
+    <li><a href="#adding-a-remote">Adding a Remote</a></li>
+    <li><a href="#searching-for-software-on-a-remote">Searching for Software on a Remote</a></li>
+    <li><a href="#installing-software-using-flatpak">Installing Software Using Flatpak</a></li>
+    <li><a href="#listing-installed-flatpak-applications">Listing Installed Flatpak Applications</a></li>
+    <li><a href="#updating-and-removing-installed-software">Updating and Removing Installed Software</a></li>
+    <li><a href="#other-systems-similar-to-flatpak">Other Systems Similar to Flatpak</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to Manage Software with Flatpak on Ubuntu 22.04</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://kienngd.github.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Kien Nguyen</a>&nbsp;<a href='mailto: kienngd@gmail.com'>kienngd@gmail.com</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-03-11">2025-03-11</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2025-03-11">2025-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;571 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#benefits-of-using-flatpak">Benefits of Using Flatpak</a></li>
+    <li><a href="#how-to-install-flatpak-on-ubuntu-2404">How to Install Flatpak on Ubuntu 24.04</a></li>
+    <li><a href="#adding-a-remote">Adding a Remote</a></li>
+    <li><a href="#searching-for-software-on-a-remote">Searching for Software on a Remote</a></li>
+    <li><a href="#installing-software-using-flatpak">Installing Software Using Flatpak</a></li>
+    <li><a href="#listing-installed-flatpak-applications">Listing Installed Flatpak Applications</a></li>
+    <li><a href="#updating-and-removing-installed-software">Updating and Removing Installed Software</a></li>
+    <li><a href="#other-systems-similar-to-flatpak">Other Systems Similar to Flatpak</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>Introduction to Flatpak on Ubuntu 24.04</strong></p>
+<p><strong>Flatpak</strong> is a system for running applications on Linux in a secure and isolated way. It works on many Linux distributions, including Ubuntu 24.04. Flatpak makes it easy to install apps without worrying about missing dependencies. It also allows apps to be updated easily.</p>
+<h2 id="benefits-of-using-flatpak" class="headerLink">
+    <a href="#benefits-of-using-flatpak" class="header-mark"></a>1 Benefits of Using Flatpak</h2><ol>
+<li><strong>Cross-Distribution Compatibility</strong>: Flatpak works on various Linux distributions, meaning that software packaged as Flatpak can be installed on Ubuntu, Fedora, Debian, and more without worrying about compatibility issues.</li>
+<li><strong>Sandboxing</strong>: Applications installed through Flatpak run in a sandbox, limiting their access to your system. This enhances security by preventing harmful software from affecting your system.</li>
+<li><strong>Easier Updates</strong>: Flatpak applications can be easily updated with just one command, ensuring that you always have the latest versions.</li>
+<li><strong>All-in-one Environment</strong>: Flatpak packages include all dependencies, so you don&rsquo;t have to worry about missing libraries or broken installations.</li>
+</ol>
+<h2 id="how-to-install-flatpak-on-ubuntu-2404" class="headerLink">
+    <a href="#how-to-install-flatpak-on-ubuntu-2404" class="header-mark"></a>2 How to Install Flatpak on Ubuntu 24.04</h2><p>To install Flatpak on Ubuntu 24.04, follow these simple steps:</p>
+<ol>
+<li>
+<p><strong>Open Terminal</strong>.</p>
+</li>
+<li>
+<p><strong>Run the following command</strong> to install Flatpak:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install flatpak
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Install gnome-software-plugin-flatpak</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install gnome-software-plugin-flatpak
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Restart your system</strong> to complete the installation.</p>
+</li>
+</ol>
+<h2 id="adding-a-remote" class="headerLink">
+    <a href="#adding-a-remote" class="header-mark"></a>3 Adding a Remote</h2><p>A &ldquo;remote&rdquo; in Flatpak is a source where you can download and install Flatpak packages. To add a remote, use the following command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak remote-add --if-not-exists &lt;remote-name&gt; &lt;remote-url&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Some well-known and trusted remotes include:</p>
+<ol>
+<li>
+<p><strong>Flathub</strong>: The most popular and widely used Flatpak repository. It contains a large collection of applications for various purposes. To add Flathub:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>???</strong></p>
+</li>
+<li>
+<p><strong>???</strong></p>
+</li>
+</ol>
+<h2 id="searching-for-software-on-a-remote" class="headerLink">
+    <a href="#searching-for-software-on-a-remote" class="header-mark"></a>4 Searching for Software on a Remote</h2><p>To search for software in a remote repository, use the following command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak search &lt;application-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>For example, if you are looking for the VLC media player, you can search it like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak search vlc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This will show a list of available versions of VLC from different remotes.</p>
+<h2 id="installing-software-using-flatpak" class="headerLink">
+    <a href="#installing-software-using-flatpak" class="header-mark"></a>5 Installing Software Using Flatpak</h2><p>To install an application, use the following command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak install &lt;remote-name&gt; &lt;application-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>For example, to install VLC from Flathub:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak install flathub org.videolan.VLC
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You will be prompted to confirm the installation, and Flatpak will take care of the rest.</p>
+<h2 id="listing-installed-flatpak-applications" class="headerLink">
+    <a href="#listing-installed-flatpak-applications" class="header-mark"></a>6 Listing Installed Flatpak Applications</h2><p>To list all installed Flatpak applications on your system, use:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This will show you all the software you&rsquo;ve installed via Flatpak, along with their details.</p>
+<h2 id="updating-and-removing-installed-software" class="headerLink">
+    <a href="#updating-and-removing-installed-software" class="header-mark"></a>7 Updating and Removing Installed Software</h2><p>To update all your installed Flatpak applications, simply run:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak update
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>To remove a specific application, use:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak uninstall &lt;application-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>For example, to uninstall VLC:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak uninstall org.videolan.VLC
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You can also remove unused runtimes and dependencies with:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flatpak uninstall --unused
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="other-systems-similar-to-flatpak" class="headerLink">
+    <a href="#other-systems-similar-to-flatpak" class="header-mark"></a>8 Other Systems Similar to Flatpak</h2><p>Flatpak isn&rsquo;t the only system for managing software on Linux. Here are a few other similar systems:</p>
+<ol>
+<li><strong>Snap</strong>: A package management system developed by Canonical (the makers of Ubuntu). Snap also provides sandboxing and cross-distribution compatibility.</li>
+<li><strong>AppImage</strong>: A distribution-independent package format that bundles software along with all its dependencies, allowing it to run on any Linux distribution without installation.</li>
+<li><strong>Docker</strong>: Primarily used for containerization, Docker allows you to package and run applications in isolated environments, though it&rsquo;s typically used for server-side applications.</li>
+</ol>
+<h2 id="conclusion" class="headerLink">
+    <a href="#conclusion" class="header-mark"></a>9 Conclusion</h2><p>Flatpak is a powerful tool that simplifies software installation and management on Ubuntu 24.04. With its cross-platform compatibility, sandboxing, and easy updates, it&rsquo;s a great choice for users who want a more secure and streamlined experience.</p></div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/how-to-use-zram-on-ubuntu-2404/"><img
+        
+        loading="lazy"
+        src="/how-to-use-zram-on-ubuntu-2404/swap-zram.png"
+        srcset="/how-to-use-zram-on-ubuntu-2404/swap-zram.png, /how-to-use-zram-on-ubuntu-2404/swap-zram.png 1.5x, /how-to-use-zram-on-ubuntu-2404/swap-zram.png 2x"
+        title="How to Manage Software with Flatpak on Ubuntu 22.04" height="200"   width="400" ></a>
+            </div><h2 class="related-title">
+                <a href="/how-to-use-zram-on-ubuntu-2404/">How to Use ZRAM on Ubuntu 24.04</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/install-openvpn-ubuntu/"><img
+        
+        loading="lazy"
+        src="/install-openvpn-ubuntu/openvpn_banner.jpeg"
+        srcset="/install-openvpn-ubuntu/openvpn_banner.jpeg, /install-openvpn-ubuntu/openvpn_banner.jpeg 1.5x, /install-openvpn-ubuntu/openvpn_banner.jpeg 2x"
+        title="How to Manage Software with Flatpak on Ubuntu 22.04" height="200"   width="400" ></a>
+            </div><h2 class="related-title">
+                <a href="/install-openvpn-ubuntu/">OpenVPN magic on Ubuntu 22.04: A beginner&#39;s guide</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/manage-sofware-using-snap/">How to Manage Software with Snap on Ubuntu 22.04</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/disable-wifi-power-save-ubuntu-2004/"><img
+        
+        loading="lazy"
+        src="/disable-wifi-power-save-ubuntu-2004/sleeping-tux-wireless.jpeg"
+        srcset="/disable-wifi-power-save-ubuntu-2004/sleeping-tux-wireless.jpeg, /disable-wifi-power-save-ubuntu-2004/sleeping-tux-wireless.jpeg 1.5x, /disable-wifi-power-save-ubuntu-2004/sleeping-tux-wireless.jpeg 2x"
+        title="How to Manage Software with Flatpak on Ubuntu 22.04" height="200"   width="400" ></a>
+            </div><h2 class="related-title">
+                <a href="/disable-wifi-power-save-ubuntu-2004/">How to disable wifi power save Ubuntu 20.04</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.github.io/manage-software-using-flatpak/" data-title="How to Manage Software with Flatpak on Ubuntu 22.04" data-hashtags="Ubuntu"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.github.io/manage-software-using-flatpak/" data-hashtag="Ubuntu"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://kienngd.github.io/manage-software-using-flatpak/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.github.io/manage-software-using-flatpak/" data-title="How to Manage Software with Flatpak on Ubuntu 22.04" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ubuntu/">Ubuntu</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/parallel_processing_in_python3/" class="prev" rel="prev" title="Parallel Processing In Python3"><i class="fas fa-angle-left fa-fw"></i>Parallel Processing In Python3</a>
+            <a href="/process-exceptions/" class="next" rel="next" title="How to Properly Catch and Raise Exceptions">How to Properly Catch and Raise Exceptions<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.125.7">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>
+                    &nbsp;<span class="author" itemprop="copyrightHolder"><a href="mailto:kienngd@gmail.com">kienngd@gmail.com</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-ERR05TP1T5', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-ERR05TP1T5" async></script></div>
+</body>
+
+</html>

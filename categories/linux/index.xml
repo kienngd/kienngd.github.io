@@ -4,7 +4,15 @@
         <link>https://kienngd.github.io/categories/linux/</link>
         <description>Linux - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Mar 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Manage Software with Flatpak on Ubuntu 22.04</title>
+    <link>https://kienngd.github.io/manage-software-using-flatpak/</link>
+    <pubDate>Tue, 11 Mar 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/manage-software-using-flatpak/</guid>
+    <description><![CDATA[<p><strong>Introduction to Flatpak on Ubuntu 24.04</strong></p>
+<p><strong>Flatpak</strong> is a system for running applications on Linux in a secure and isolated way. It works on many Linux distributions, including Ubuntu 24.04. Flatpak makes it easy to install apps without worrying about missing dependencies. It also allows apps to be updated easily.</p>]]></description>
+</item><item>
     <title>Exploring the split Command</title>
     <link>https://kienngd.github.io/exploring-the-split-command/</link>
     <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>

@@ -4,7 +4,16 @@
         <link>https://kienngd.github.io/tags/code/</link>
         <description>Code - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Aug 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/code/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Properly Catch and Raise Exceptions</title>
+    <link>https://kienngd.github.io/process-exceptions/</link>
+    <pubDate>Sun, 24 Aug 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/process-exceptions/</guid>
+    <description><![CDATA[1 🐍 How to Properly Catch and Raise Exceptions – A Guide for Junior Developers(This article was created by Qwen AI)
+Handling exceptions correctly isn&rsquo;t just about preventing crashes — it makes your code more stable, easier to debug, and simpler to maintain. Here are simple, practical rules every junior developer should follow.
+1.1 ✅ Only catch an exception when you know what to do ❌ Don&rsquo;t catch an exception just &ldquo;because you can&rdquo;.]]></description>
+</item><item>
     <title>Use PHPStan to Ensure Code Quality in Your Project</title>
     <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
