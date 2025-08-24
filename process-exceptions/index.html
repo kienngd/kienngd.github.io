@@ -39,7 +39,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kienngd.github.io/process-exceptions/"
-        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Code","wordcount":  452 ,
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Code","wordcount":  451 ,
         "url": "https://kienngd.github.io/process-exceptions/","datePublished": "2025-08-24T00:00:00+00:00","dateModified": "2025-08-24T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "K5D Blog","logo": "https://kienngd.github.io/images/logo-48x48.png"},"author": {
@@ -114,17 +114,44 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to Properly Catch and Raise Exceptions</h1><div class="post-meta">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-only-catch-an-exception-when-you-know-what-to-do">✅ Only catch an exception when you know what to do</a></li>
+    <li><a href="#-if-you-only-log-then-re-raise-the-exception">✅ If you only log, then re-raise the exception</a></li>
+    <li><a href="#-handle-errors-where-you-have-enough-context">✅ Handle errors where you have enough context</a></li>
+    <li><a href="#-when-should-you-not-re-raise">✅ When should you NOT re-raise?</a></li>
+    <li><a href="#-what-you-should-not-do">🚫 What you should NOT do</a></li>
+    <li><a href="#-the-3-golden-rules">💡 The 3 Golden Rules</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to Properly Catch and Raise Exceptions</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://kienngd.github.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Kien Nguyen</a>&nbsp;<a href='mailto: kienngd@gmail.com'>kienngd@gmail.com</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/code/"><i class="far fa-folder fa-fw"></i>Code</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-08-24">2025-08-24</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2025-08-24">2025-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;452 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
-        </div><div class="content" id="content"><h2 id="-how-to-properly-catch-and-raise-exceptions--a-guide-for-junior-developers" class="headerLink">
-    <a href="#-how-to-properly-catch-and-raise-exceptions--a-guide-for-junior-developers" class="header-mark"></a>1 🐍 How to Properly Catch and Raise Exceptions – A Guide for Junior Developers</h2><p>(This article was created by Qwen AI)</p>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-08-24">2025-08-24</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2025-08-24">2025-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;451 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-only-catch-an-exception-when-you-know-what-to-do">✅ Only catch an exception when you know what to do</a></li>
+    <li><a href="#-if-you-only-log-then-re-raise-the-exception">✅ If you only log, then re-raise the exception</a></li>
+    <li><a href="#-handle-errors-where-you-have-enough-context">✅ Handle errors where you have enough context</a></li>
+    <li><a href="#-when-should-you-not-re-raise">✅ When should you NOT re-raise?</a></li>
+    <li><a href="#-what-you-should-not-do">🚫 What you should NOT do</a></li>
+    <li><a href="#-the-3-golden-rules">💡 The 3 Golden Rules</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="-how-to-properly-catch-and-raise-exceptions--a-guide-for-junior-developers" class="headerLink">
+    <a href="#-how-to-properly-catch-and-raise-exceptions--a-guide-for-junior-developers" class="header-mark"></a>🐍 How to Properly Catch and Raise Exceptions – A Guide for Junior Developers</h1><p>(This article was created by Qwen AI)</p>
 <p>Handling exceptions correctly isn&rsquo;t just about preventing crashes — it makes your code <strong>more stable</strong>, <strong>easier to debug</strong>, and <strong>simpler to maintain</strong>. Here are simple, practical rules every junior developer should follow.</p>
 <hr>
-<h3 id="-only-catch-an-exception-when-you-know-what-to-do" class="headerLink">
-    <a href="#-only-catch-an-exception-when-you-know-what-to-do" class="header-mark"></a>1.1 ✅ Only catch an exception when you know what to do</h3><blockquote>
+<h2 id="-only-catch-an-exception-when-you-know-what-to-do" class="headerLink">
+    <a href="#-only-catch-an-exception-when-you-know-what-to-do" class="header-mark"></a>1 ✅ Only catch an exception when you know what to do</h2><blockquote>
 <p>❌ Don&rsquo;t catch an exception just &ldquo;because you can&rdquo;.</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -161,8 +188,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h3 id="-if-you-only-log-then-re-raise-the-exception" class="headerLink">
-    <a href="#-if-you-only-log-then-re-raise-the-exception" class="header-mark"></a>1.2 ✅ If you only log, then re-raise the exception</h3><p>When you&rsquo;re in a <strong>low-level function</strong> (e.g., writing to a file, calling an API), you might want to <strong>log the error for debugging</strong>, but if you <strong>can&rsquo;t fully handle it</strong>, you <strong>must re-raise</strong>.</p>
+<h2 id="-if-you-only-log-then-re-raise-the-exception" class="headerLink">
+    <a href="#-if-you-only-log-then-re-raise-the-exception" class="header-mark"></a>2 ✅ If you only log, then re-raise the exception</h2><p>When you&rsquo;re in a <strong>low-level function</strong> (e.g., writing to a file, calling an API), you might want to <strong>log the error for debugging</strong>, but if you <strong>can&rsquo;t fully handle it</strong>, you <strong>must re-raise</strong>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -185,8 +212,8 @@
 <p>🔹 Using <code>raise</code> (without arguments) preserves the <strong>original traceback</strong> — very helpful for debugging later.</p>
 </blockquote>
 <hr>
-<h3 id="-handle-errors-where-you-have-enough-context" class="headerLink">
-    <a href="#-handle-errors-where-you-have-enough-context" class="header-mark"></a>1.3 ✅ Handle errors where you have enough context</h3><blockquote>
+<h2 id="-handle-errors-where-you-have-enough-context" class="headerLink">
+    <a href="#-handle-errors-where-you-have-enough-context" class="header-mark"></a>3 ✅ Handle errors where you have enough context</h2><blockquote>
 <p>✅ Higher-level functions (like <code>a()</code>) are usually closest to the user, so they&rsquo;re the <strong>best place</strong> to:</p>
 </blockquote>
 <ul>
@@ -211,8 +238,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h3 id="-when-should-you-not-re-raise" class="headerLink">
-    <a href="#-when-should-you-not-re-raise" class="header-mark"></a>1.4 ✅ When should you NOT re-raise?</h3><p>Only when you’ve <strong>fully resolved</strong> the issue and the program can <strong>safely continue</strong>:</p>
+<h2 id="-when-should-you-not-re-raise" class="headerLink">
+    <a href="#-when-should-you-not-re-raise" class="header-mark"></a>4 ✅ When should you NOT re-raise?</h2><p>Only when you’ve <strong>fully resolved</strong> the issue and the program can <strong>safely continue</strong>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -231,15 +258,15 @@
 </div>
 </div><p>→ In this case, the error is not a failure — it&rsquo;s part of a <strong>valid execution path</strong>.</p>
 <hr>
-<h3 id="-what-you-should-not-do" class="headerLink">
-    <a href="#-what-you-should-not-do" class="header-mark"></a>1.5 🚫 What you should NOT do</h3><ul>
+<h2 id="-what-you-should-not-do" class="headerLink">
+    <a href="#-what-you-should-not-do" class="header-mark"></a>5 🚫 What you should NOT do</h2><ul>
 <li>❌ Catch an exception and just <code>pass</code> or use <code>raise Exception(&quot;...&quot;)</code> (this loses the traceback).</li>
 <li>❌ Catch the same error at multiple levels without adding value.</li>
 <li>❌ Log and then stay silent — if you can&rsquo;t handle it, don’t hide it.</li>
 </ul>
 <hr>
-<h3 id="-the-3-golden-rules" class="headerLink">
-    <a href="#-the-3-golden-rules" class="header-mark"></a>1.6 💡 The 3 Golden Rules</h3><ol>
+<h2 id="-the-3-golden-rules" class="headerLink">
+    <a href="#-the-3-golden-rules" class="header-mark"></a>6 💡 The 3 Golden Rules</h2><ol>
 <li><strong>Don’t catch if you don’t know what to do.</strong></li>
 <li><strong>Logged the error? Still <code>raise</code> if it’s not fully handled.</strong></li>
 <li><strong>Handle the error where you have user or system context.</strong></li>

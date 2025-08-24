@@ -10,9 +10,9 @@
     <pubDate>Sun, 24 Aug 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/process-exceptions/</guid>
-    <description><![CDATA[1 🐍 How to Properly Catch and Raise Exceptions – A Guide for Junior Developers(This article was created by Qwen AI)
+    <description><![CDATA[🐍 How to Properly Catch and Raise Exceptions – A Guide for Junior Developers(This article was created by Qwen AI)
 Handling exceptions correctly isn&rsquo;t just about preventing crashes — it makes your code more stable, easier to debug, and simpler to maintain. Here are simple, practical rules every junior developer should follow.
-1.1 ✅ Only catch an exception when you know what to do ❌ Don&rsquo;t catch an exception just &ldquo;because you can&rdquo;.]]></description>
+1 ✅ Only catch an exception when you know what to do ❌ Don&rsquo;t catch an exception just &ldquo;because you can&rdquo;.]]></description>
 </item><item>
     <title>Parallel Processing In Python3</title>
     <link>https://kienngd.github.io/parallel_processing_in_python3/</link>

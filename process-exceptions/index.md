@@ -1,14 +1,14 @@
 # How to Properly Catch and Raise Exceptions
 
 
-## 🐍 How to Properly Catch and Raise Exceptions – A Guide for Junior Developers
+# 🐍 How to Properly Catch and Raise Exceptions – A Guide for Junior Developers
 (This article was created by Qwen AI)
 
 Handling exceptions correctly isn't just about preventing crashes — it makes your code **more stable**, **easier to debug**, and **simpler to maintain**. Here are simple, practical rules every junior developer should follow.
 
 ---
 
-### ✅ Only catch an exception when you know what to do
+## ✅ Only catch an exception when you know what to do
 
 > ❌ Don't catch an exception just "because you can".
 
@@ -31,7 +31,7 @@ except FileNotFoundError:
 
 ---
 
-### ✅ If you only log, then re-raise the exception
+## ✅ If you only log, then re-raise the exception
 
 When you're in a **low-level function** (e.g., writing to a file, calling an API), you might want to **log the error for debugging**, but if you **can't fully handle it**, you **must re-raise**.
 
@@ -48,7 +48,7 @@ def c():
 
 ---
 
-### ✅ Handle errors where you have enough context
+## ✅ Handle errors where you have enough context
 
 > ✅ Higher-level functions (like `a()`) are usually closest to the user, so they're the **best place** to:
 - Show user-friendly error messages.
@@ -65,7 +65,7 @@ def a():
 
 ---
 
-### ✅ When should you NOT re-raise?
+## ✅ When should you NOT re-raise?
 
 Only when you’ve **fully resolved** the issue and the program can **safely continue**:
 
@@ -81,7 +81,7 @@ def get_user_setting():
 
 ---
 
-### 🚫 What you should NOT do
+## 🚫 What you should NOT do
 
 - ❌ Catch an exception and just `pass` or use `raise Exception("...")` (this loses the traceback).
 - ❌ Catch the same error at multiple levels without adding value.
@@ -89,7 +89,7 @@ def get_user_setting():
 
 ---
 
-### 💡 The 3 Golden Rules
+## 💡 The 3 Golden Rules
 
 1. **Don’t catch if you don’t know what to do.**
 2. **Logged the error? Still `raise` if it’s not fully handled.**
