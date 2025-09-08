@@ -4,7 +4,16 @@
         <link>https://kienngd.github.io/categories/code/</link>
         <description>Code - Category - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Aug 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Sep 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/categories/code/" rel="self" type="application/rss+xml" /><item>
+    <title>Python Decorators: A Simple Guide</title>
+    <link>https://kienngd.github.io/python_decorators_a_simple_guide/</link>
+    <pubDate>Mon, 08 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/python_decorators_a_simple_guide/</guid>
+    <description><![CDATA[Python Decorators: A Simple Guide 1 What is a Decorator?A decorator in Python is a function that modifies the behavior of another function. It adds extra functionality without changing the original function code.
+2 Why Use Decorators?Decorators help you:
+Reuse code Keep functions clean Add logging, timing, or access control Make your code more readable 3 Basic Example 1 2 3 4 5 6 7 8 9 10 11 12 13 def my_decorator(func): def wrapper(*args, **kwargs): print(&#34;Before function&#34;) result = func(*args, **kwargs) # Call original function print(&#34;After function&#34;) return result return wrapper @my_decorator def greet(name): print(f&#34;Hello {name}!]]></description>
+</item><item>
     <title>How to Properly Catch and Raise Exceptions</title>
     <link>https://kienngd.github.io/process-exceptions/</link>
     <pubDate>Sun, 24 Aug 2025 00:00:00 &#43;0000</pubDate><author>
@@ -101,12 +110,5 @@ Handling exceptions correctly isn&rsquo;t just about preventing crashes — it m
                 <img src="/functional-options-pattern/functional-options-social.png" referrerpolicy="no-referrer">
             </div><h2 id="what-is-the-functional-options-pattern" class="headerLink">
     <a href="#what-is-the-functional-options-pattern" class="header-mark"></a>1 What is the Functional Options Pattern?</h2><p>The Functional Options Pattern is a design pattern used in programming. It helps to set up options for a function or object in a flexible and clear way. Instead of having many parameters in a function, you use options to configure it.</p>]]></description>
-</item><item>
-    <title>Best practices for coder</title>
-    <link>https://kienngd.github.io/best-practices-for-coder/</link>
-    <pubDate>Sun, 28 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/best-practices-for-coder/</guid>
-    <description><![CDATA[Best practices for coder]]></description>
 </item></channel>
 </rss>
