@@ -15,6 +15,8 @@ Decorators help you:
 - Add logging, timing, or access control
 - Make your code more readable
 
+<!--more-->
+
 ## Basic Example
 
 ```python
@@ -99,4 +101,5 @@ slow_function took 1.00 seconds
 - The decorator wraps the original function
 - Decorators make code reusable and clean
 - They are widely used in web frameworks, logging, and testing
-
+\
+(This article was created by Qwen AI)

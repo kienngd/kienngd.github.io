@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>PackageManager - Tag - K5D::Blog</title>
+        <link>https://kienngd.github.io/tags/packagemanager/</link>
+        <description>PackageManager - Tag - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/packagemanager/" rel="self" type="application/rss+xml" /><item>
+    <title>How to use pnpm: a simple guide</title>
+    <link>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</link>
+    <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</guid>
+    <description><![CDATA[<h2 id="what-is-pnpm" class="headerLink">
+    <a href="#what-is-pnpm" class="header-mark"></a>1 What is pnpm?</h2><p><strong>pnpm</strong> is a package manager for JavaScript.
+It is like <strong>npm</strong> or <strong>yarn</strong>, but it is <strong>faster</strong> and uses <strong>less disk space</strong>.</p>
+<p>Why?</p>
+<ul>
+<li>pnpm saves only <strong>one copy</strong> of each version of a package.</li>
+<li>Many projects can share the same files.</li>
+<li>This makes your computer cleaner and faster.</li>
+</ul>]]></description>
+</item></channel>
+</rss>

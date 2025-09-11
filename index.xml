@@ -4,17 +4,40 @@
         <link>https://kienngd.github.io/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Sep 2025 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>How to use pnpm: a simple guide</title>
+    <link>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</link>
+    <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</guid>
+    <description><![CDATA[<h2 id="what-is-pnpm" class="headerLink">
+    <a href="#what-is-pnpm" class="header-mark"></a>1 What is pnpm?</h2><p><strong>pnpm</strong> is a package manager for JavaScript.
+It is like <strong>npm</strong> or <strong>yarn</strong>, but it is <strong>faster</strong> and uses <strong>less disk space</strong>.</p>
+<p>Why?</p>
+<ul>
+<li>pnpm saves only <strong>one copy</strong> of each version of a package.</li>
+<li>Many projects can share the same files.</li>
+<li>This makes your computer cleaner and faster.</li>
+</ul>]]></description>
+</item><item>
     <title>Python Decorators: A Simple Guide</title>
     <link>https://kienngd.github.io/python_decorators_a_simple_guide/</link>
     <pubDate>Mon, 08 Sep 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/python_decorators_a_simple_guide/</guid>
-    <description><![CDATA[Python Decorators: A Simple Guide 1 What is a Decorator?A decorator in Python is a function that modifies the behavior of another function. It adds extra functionality without changing the original function code.
-2 Why Use Decorators?Decorators help you:
-Reuse code Keep functions clean Add logging, timing, or access control Make your code more readable 3 Basic Example 1 2 3 4 5 6 7 8 9 10 11 12 13 def my_decorator(func): def wrapper(*args, **kwargs): print(&#34;Before function&#34;) result = func(*args, **kwargs) # Call original function print(&#34;After function&#34;) return result return wrapper @my_decorator def greet(name): print(f&#34;Hello {name}!]]></description>
+    <description><![CDATA[<h1 id="python-decorators-a-simple-guide" class="headerLink">
+    <a href="#python-decorators-a-simple-guide" class="header-mark"></a>Python Decorators: A Simple Guide</h1><h2 id="what-is-a-decorator" class="headerLink">
+    <a href="#what-is-a-decorator" class="header-mark"></a>1 What is a Decorator?</h2><p>A decorator in Python is a function that modifies the behavior of another function. It adds extra functionality without changing the original function code.</p>
+<h2 id="why-use-decorators" class="headerLink">
+    <a href="#why-use-decorators" class="header-mark"></a>2 Why Use Decorators?</h2><p>Decorators help you:</p>
+<ul>
+<li>Reuse code</li>
+<li>Keep functions clean</li>
+<li>Add logging, timing, or access control</li>
+<li>Make your code more readable</li>
+</ul>]]></description>
 </item><item>
     <title>How to Properly Catch and Raise Exceptions</title>
     <link>https://kienngd.github.io/process-exceptions/</link>
@@ -96,22 +119,5 @@ Handling exceptions correctly isn&rsquo;t just about preventing crashes — it m
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
-</item><item>
-    <title>Use PHPStan to Ensure Code Quality in Your Project</title>
-    <link>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</link>
-    <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/use-phpstan-to-ensure-code-quality-in-your-project/</guid>
-    <description><![CDATA[<p><figure><img
-        
-        loading="lazy"
-        src="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp"
-        srcset="/use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_700x0_resize_q75_h2_lanczos_3.webp 700w,
-            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_1200x0_resize_q75_h2_lanczos_3.webp 1200w,
-            /use-phpstan-to-ensure-code-quality-in-your-project/phpstan-banner_hu3be14738fab87c5f9e16196a9383de75_8018_2000x0_resize_q75_h2_lanczos_3.webp 2000w"
-        title="PHPStan A Testing Tool" height="413"   width="1200" ><figcaption class="image-caption">PHPStan A Testing Tool</figcaption>
-    </figure></p>
-<h2 id="introduction" class="headerLink">
-    <a href="#introduction" class="header-mark"></a>1 <strong>Introduction</strong></h2><p><strong>PHPStan</strong> is a powerful static analysis tool for PHP that checks your code for potential errors without executing it. By using <strong>PHPStan</strong>, you can catch bugs early in the development process, improve the overall <strong>quality</strong> of your code, and ensure your project is more <strong>stable</strong> and <strong>maintainable</strong>.</p>]]></description>
 </item></channel>
 </rss>

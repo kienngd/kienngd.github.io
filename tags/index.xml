@@ -4,7 +4,28 @@
         <link>https://kienngd.github.io/tags/</link>
         <description>Tags - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Sep 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>NodeJS</title>
+    <link>https://kienngd.github.io/tags/nodejs/</link>
+    <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/tags/nodejs/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>PackageManager</title>
+    <link>https://kienngd.github.io/tags/packagemanager/</link>
+    <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/tags/packagemanager/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Tools</title>
+    <link>https://kienngd.github.io/tags/tools/</link>
+    <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/tags/tools/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Code</title>
     <link>https://kienngd.github.io/tags/code/</link>
     <pubDate>Mon, 08 Sep 2025 00:00:00 &#43;0000</pubDate><author>
@@ -52,27 +73,6 @@
     <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Kien Nguyen</name>
     </author><guid>https://kienngd.github.io/tags/php/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>PHPStan</title>
-    <link>https://kienngd.github.io/tags/phpstan/</link>
-    <pubDate>Fri, 04 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/phpstan/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Git</title>
-    <link>https://kienngd.github.io/tags/git/</link>
-    <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/git/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Git Tag</title>
-    <link>https://kienngd.github.io/tags/git-tag/</link>
-    <pubDate>Wed, 02 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/tags/git-tag/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
