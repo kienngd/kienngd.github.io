@@ -110,5 +110,5 @@ The following is a more complete list of tools exposed by mcp-chrome (v0.0.6)
 
 This set covers most of the common browser automation needs—navigation, content reading, network capture, user interactions, bookmarks, history, and more.
 
-⚠️ **Note**: Because mcp-chrome is under active development, new tools might be added, or some may evolve. Always check the latest TOOLS documentation in the repo.
+⚠️ **Note**: Because mcp-chrome is under active development, new tools might be added, or some may evolve. Always check the latest TOOLS documentation in [the repo](https://github.com/hangwin/mcp-chrome/).
 
