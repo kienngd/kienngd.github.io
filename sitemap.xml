@@ -2,21 +2,24 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://kienngd.github.io/categories/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/nodejs/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/categories/nodejs/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/packagemanager/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/categories/packagemanager/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/posts/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/tools/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/categories/tools/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/code/</loc><lastmod>2025-09-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/categories/code/</loc><lastmod>2025-09-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/python_decorators_a_simple_guide/</loc><lastmod>2025-09-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/process-exceptions/</loc><lastmod>2025-08-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/categories/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/how-to-use-chrome-mcp-server/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/mcp/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/mcp/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/posts/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/tools/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/tools/</loc><lastmod>2025-09-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/tags/nodejs/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/categories/nodejs/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/tags/packagemanager/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/categories/packagemanager/</loc><lastmod>2025-09-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/tags/code/</loc><lastmod>2025-09-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/categories/code/</loc><lastmod>2025-09-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/python_decorators_a_simple_guide/</loc><lastmod>2025-09-08T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://kienngd.github.io/process-exceptions/</loc><lastmod>2025-08-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/manage-software-using-flatpak/</loc><lastmod>2025-03-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/categories/linux/</loc><lastmod>2025-03-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/tags/ubuntu/</loc><lastmod>2025-03-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

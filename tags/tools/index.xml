@@ -4,7 +4,16 @@
         <link>https://kienngd.github.io/tags/tools/</link>
         <description>Tools - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/tools/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Sep 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/tools/" rel="self" type="application/rss+xml" /><item>
+    <title>How to use Chrome MCP: a simple guide</title>
+    <link>https://kienngd.github.io/how-to-use-chrome-mcp-server/</link>
+    <pubDate>Sun, 28 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/how-to-use-chrome-mcp-server/</guid>
+    <description><![CDATA[1 Introductionmcp-chrome (also called Chrome MCP Server) is a Chrome extension–based MCP (Model Context Protocol) server. It lets MCP clients (e.g. AI agents, chatbots) connect to your regular Chrome/Chromium browser, use your existing login state, and control or inspect web pages.
+Main GitHub Repo is here
+2 Main Features Works with your real browser (no separate headless instance) Fully local (no remote server) Uses streamable HTTP as connection method (or stdio alternative) Semantic search across tabs (vector index) &amp; content analysis Over 20 “tools” (APIs) to interact with browser: navigation, network, screenshots, DOM, bookmarks, history, etc.]]></description>
+</item><item>
     <title>How to use pnpm: a simple guide</title>
     <link>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</link>
     <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate><author>

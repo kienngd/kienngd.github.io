@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <title>How to use Chrome MCP: a simple guide - K5D::Blog</title><meta name="Description" content="How to use Chrome MCP: a simple guide"><meta property="og:url" content="https://kienngd.github.io/how-to-use-chrome-mcp-server/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="How to use Chrome MCP: a simple guide">
+  <meta property="og:description" content="How to use Chrome MCP: a simple guide">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-28T00:00:00+00:00">
+    <meta property="article:tag" content="Tools">
+    <meta property="article:tag" content="MCP">
+    <meta property="og:image" content="https://kienngd.github.io/images/avatar.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kienngd.github.io/images/avatar.webp"><meta name="twitter:title" content="How to use Chrome MCP: a simple guide">
+<meta name="twitter:description" content="How to use Chrome MCP: a simple guide">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kienngd.github.io/how-to-use-chrome-mcp-server/" /><link rel="prev" href="https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to use Chrome MCP: a simple guide",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kienngd.github.io/how-to-use-chrome-mcp-server/"
+        },"image": ["https://kienngd.github.io/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools, MCP","wordcount":  525 ,
+        "url": "https://kienngd.github.io/how-to-use-chrome-mcp-server/","datePublished": "2025-09-28T00:00:00+00:00","dateModified": "2025-09-28T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "K5D Blog","logo": "https://kienngd.github.io/images/logo-48x48.png"},"author": {
+                "@type": "Person",
+                "name": "Kien Nguyen"
+            },"description": "How to use Chrome MCP: a simple guide"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blogs </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Blogs</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#main-features">Main Features</a></li>
+    <li><a href="#installation--usage-guide">Installation &amp; Usage Guide</a>
+      <ul>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#installation-steps">Installation Steps</a></li>
+        <li><a href="#using-it">Using It</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools-apis-in-mcp-chrome">Tools (APIs) in mcp-chrome</a>
+      <ul>
+        <li><a href="#browser-management">Browser Management</a></li>
+        <li><a href="#screenshots--visual">Screenshots &amp; Visual</a></li>
+        <li><a href="#network-monitoring">Network Monitoring</a></li>
+        <li><a href="#content--analysis">Content &amp; Analysis</a></li>
+        <li><a href="#interaction-user-actions">Interaction (User Actions)</a></li>
+        <li><a href="#data-management">Data Management</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to use Chrome MCP: a simple guide</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://kienngd.github.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Kien Nguyen</a>&nbsp;<a href='mailto: kienngd@gmail.com'>kienngd@gmail.com</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a>&nbsp;<a href="/categories/mcp/"><i class="far fa-folder fa-fw"></i>MCP</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;525 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#main-features">Main Features</a></li>
+    <li><a href="#installation--usage-guide">Installation &amp; Usage Guide</a>
+      <ul>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#installation-steps">Installation Steps</a></li>
+        <li><a href="#using-it">Using It</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools-apis-in-mcp-chrome">Tools (APIs) in mcp-chrome</a>
+      <ul>
+        <li><a href="#browser-management">Browser Management</a></li>
+        <li><a href="#screenshots--visual">Screenshots &amp; Visual</a></li>
+        <li><a href="#network-monitoring">Network Monitoring</a></li>
+        <li><a href="#content--analysis">Content &amp; Analysis</a></li>
+        <li><a href="#interaction-user-actions">Interaction (User Actions)</a></li>
+        <li><a href="#data-management">Data Management</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="introduction" class="headerLink">
+    <a href="#introduction" class="header-mark"></a>1 Introduction</h2><p><strong>mcp-chrome</strong> (also called <em>Chrome MCP Server</em>) is a Chrome extension–based MCP (Model Context Protocol) server.
+It lets MCP clients (e.g. AI agents, chatbots) connect to your regular Chrome/Chromium browser, use your existing login state, and control or inspect web pages.</p>
+<p><a href="https://github.com/hangwin/mcp-chrome/" target="_blank" rel="noopener noreferrer">Main GitHub Repo is here</a></p>
+<h2 id="main-features" class="headerLink">
+    <a href="#main-features" class="header-mark"></a>2 Main Features</h2><ul>
+<li>Works with your real browser (no separate headless instance)</li>
+<li>Fully local (no remote server)</li>
+<li>Uses <em>streamable HTTP</em> as connection method (or stdio alternative)</li>
+<li>Semantic search across tabs (vector index) &amp; content analysis</li>
+<li>Over 20 “tools” (APIs) to interact with browser: navigation, network, screenshots, DOM, bookmarks, history, etc.</li>
+</ul>
+<h2 id="installation--usage-guide" class="headerLink">
+    <a href="#installation--usage-guide" class="header-mark"></a>3 Installation &amp; Usage Guide</h2><h3 id="requirements" class="headerLink">
+    <a href="#requirements" class="header-mark"></a>3.1 Requirements</h3><ul>
+<li>Node.js <strong>= 18.19.0</strong> and <code>npm</code> or <code>pnpm</code></li>
+<li>Chrome or Chromium browser</li>
+</ul>
+<h3 id="installation-steps" class="headerLink">
+    <a href="#installation-steps" class="header-mark"></a>3.2 Installation Steps</h3><ol>
+<li>
+<p>Install the bridge globally:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g mcp-chrome-bridge
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Or with pnpm (enabling pre/post scripts):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pnpm config <span class="nb">set</span> enable-pre-post-scripts <span class="nb">true</span> <span class="o">&amp;&amp;</span> pnpm install -g mcp-chrome-Bridge
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Register the bridge:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mcp-chrome-bridge register
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Download &amp; install the Chrome extension:
+Go to the <a href="https://github.com/hangwin/mcp-chrome/releases" target="_blank" rel="noopener noreferrer">GitHub Releases of mcp-chrome</a> and download the extension.</p>
+</li>
+<li>
+<p>In Chrome, open <code>chrome://extensions/</code>, enable <strong>Developer mode</strong>, “Load unpacked” and select the extension folder, then open the extension’s popup.</p>
+</li>
+</ol>
+<h3 id="using-it" class="headerLink">
+    <a href="#using-it" class="header-mark"></a>3.3 Using It</h3><ul>
+<li>
+<p>In the extension popup, click <strong>Connect</strong> to establish the bridge connection.</p>
+</li>
+<li>
+<p>The extension will show a port (default <strong>12306</strong>) for the MCP server.</p>
+</li>
+<li>
+<p>In your MCP client config, add:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;mcpServers&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;chrome-mcp-server&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;streamableHttp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://127.0.0.1:12306/mcp&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>(Port 12306 is the default shown in extension popup)</p>
+</li>
+<li>
+<p>Alternatively, if your client only supports stdio mode, use the <code>mcp-server-stdio.js</code> shipped in the bridge and configure as a command/args in MCP client config.</p>
+</li>
+</ul>
+<h2 id="tools-apis-in-mcp-chrome" class="headerLink">
+    <a href="#tools-apis-in-mcp-chrome" class="header-mark"></a>4 Tools (APIs) in mcp-chrome</h2><p>The following is a more complete list of tools exposed by mcp-chrome (v0.0.6)</p>
+<h3 id="browser-management" class="headerLink">
+    <a href="#browser-management" class="header-mark"></a>4.1 Browser Management</h3><ul>
+<li><code>get_windows_and_tabs</code> — list all browser windows &amp; tabs</li>
+<li><code>chrome_navigate</code> — navigate to URL, control viewport</li>
+<li><code>chrome_close_tabs</code> — close specific tabs or windows</li>
+<li><code>chrome_go_back_or_forward</code> — browser back / forward navigation</li>
+<li><code>chrome_inject_script</code> — inject content scripts into pages</li>
+<li><code>chrome_send_command_to_inject_script</code> — send commands to scripts you injected</li>
+</ul>
+<h3 id="screenshots--visual" class="headerLink">
+    <a href="#screenshots--visual" class="header-mark"></a>4.2 Screenshots &amp; Visual</h3><ul>
+<li><code>chrome_screenshot</code> — capture screenshot, full page or element-level</li>
+</ul>
+<h3 id="network-monitoring" class="headerLink">
+    <a href="#network-monitoring" class="header-mark"></a>4.3 Network Monitoring</h3><ul>
+<li><code>chrome_network_capture_start</code> / <code>chrome_network_capture_stop</code> — use webRequest API to capture network activity</li>
+<li><code>chrome_network_debugger_start</code> / <code>chrome_network_debugger_stop</code> — use Debugger API to capture deeper request/response data</li>
+<li><code>chrome_network_request</code> — send custom HTTP requests from browser context</li>
+</ul>
+<h3 id="content--analysis" class="headerLink">
+    <a href="#content--analysis" class="header-mark"></a>4.4 Content &amp; Analysis</h3><ul>
+<li><code>search_tabs_content</code> — semantic search across all open tab contents</li>
+<li><code>chrome_get_web_content</code> — extract HTML / text content from a page</li>
+<li><code>chrome_get_interactive_elements</code> — get clickable / interactive elements on page</li>
+<li><code>chrome_console</code> — capture and retrieve console logs from browser tabs</li>
+</ul>
+<h3 id="interaction-user-actions" class="headerLink">
+    <a href="#interaction-user-actions" class="header-mark"></a>4.5 Interaction (User Actions)</h3><ul>
+<li><code>chrome_click_element</code> — click element via CSS selector</li>
+<li><code>chrome_fill_or_select</code> — fill forms, select dropdowns, set values</li>
+<li><code>chrome_keyboard</code> — simulate keyboard events or shortcuts</li>
+</ul>
+<h3 id="data-management" class="headerLink">
+    <a href="#data-management" class="header-mark"></a>4.6 Data Management</h3><ul>
+<li><code>chrome_history</code> — search browser history with time filters</li>
+<li><code>chrome_bookmark_search</code> — search bookmarks by keyword</li>
+<li><code>chrome_bookmark_add</code> — add a bookmark (with folder support)</li>
+<li><code>chrome_bookmark_delete</code> — delete a bookmark</li>
+</ul>
+<p>This set covers most of the common browser automation needs—navigation, content reading, network capture, user interactions, bookmarks, history, and more.</p>
+<p>⚠️ <strong>Note</strong>: Because mcp-chrome is under active development, new tools might be added, or some may evolve. Always check the latest TOOLS documentation in the repo.</p>
+</div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/how-to-use-pnpm-a-simple-guide/">How to use pnpm: a simple guide</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://kienngd.github.io/how-to-use-chrome-mcp-server/" data-title="How to use Chrome MCP: a simple guide" data-hashtags="Tools,MCP"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://kienngd.github.io/how-to-use-chrome-mcp-server/" data-hashtag="Tools"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://kienngd.github.io/how-to-use-chrome-mcp-server/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://kienngd.github.io/how-to-use-chrome-mcp-server/" data-title="How to use Chrome MCP: a simple guide" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/tools/">Tools</a>,&nbsp;<a href="/tags/mcp/">MCP</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/how-to-use-pnpm-a-simple-guide/" class="prev" rel="prev" title="How to use pnpm: a simple guide"><i class="fas fa-angle-left fa-fw"></i>How to use pnpm: a simple guide</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.125.7">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>
+                    &nbsp;<span class="author" itemprop="copyrightHolder"><a href="mailto:kienngd@gmail.com">kienngd@gmail.com</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-ERR05TP1T5', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-ERR05TP1T5" async></script></div>
+</body>
+
+</html>

@@ -4,9 +4,18 @@
         <link>https://kienngd.github.io/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Sep 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>How to use Chrome MCP: a simple guide</title>
+    <link>https://kienngd.github.io/how-to-use-chrome-mcp-server/</link>
+    <pubDate>Sun, 28 Sep 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/how-to-use-chrome-mcp-server/</guid>
+    <description><![CDATA[1 Introductionmcp-chrome (also called Chrome MCP Server) is a Chrome extension–based MCP (Model Context Protocol) server. It lets MCP clients (e.g. AI agents, chatbots) connect to your regular Chrome/Chromium browser, use your existing login state, and control or inspect web pages.
+Main GitHub Repo is here
+2 Main Features Works with your real browser (no separate headless instance) Fully local (no remote server) Uses streamable HTTP as connection method (or stdio alternative) Semantic search across tabs (vector index) &amp; content analysis Over 20 “tools” (APIs) to interact with browser: navigation, network, screenshots, DOM, bookmarks, history, etc.]]></description>
+</item><item>
     <title>How to use pnpm: a simple guide</title>
     <link>https://kienngd.github.io/how-to-use-pnpm-a-simple-guide/</link>
     <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate><author>
@@ -101,23 +110,5 @@ Handling exceptions correctly isn&rsquo;t just about preventing crashes — it m
             </div><h2 id="the-story" class="headerLink">
     <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. She was panicked because his database was lost.</p>
 <p>She sent me information, then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>]]></description>
-</item><item>
-    <title>Exploring the split Command</title>
-    <link>https://kienngd.github.io/exploring-the-split-command/</link>
-    <pubDate>Tue, 15 Oct 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/exploring-the-split-command/</guid>
-    <description><![CDATA[<p>The <code>split</code> command is a useful tool for breaking down large files into smaller, more manageable pieces. It is especially helpful when dealing with file size limitations or when you need to transfer files over networks.</p>
-<h2 id="basic-syntax-and-example" class="headerLink">
-    <a href="#basic-syntax-and-example" class="header-mark"></a>1 Basic Syntax and Example</h2><p>The basic syntax of the <code>split</code> command is:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">split <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>INPUT <span class="o">[</span>PREFIX<span class="o">]]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description>
 </item></channel>
 </rss>
