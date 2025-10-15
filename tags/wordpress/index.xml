@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Wordpress - Tag - K5D::Blog</title>
+        <link>https://kienngd.github.io/tags/wordpress/</link>
+        <description>Wordpress - Tag - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/wordpress/" rel="self" type="application/rss+xml" /><item>
+    <title>WordPress Command Line Interface a quick guide</title>
+    <link>https://kienngd.github.io/wordpress-command-line-interface/</link>
+    <pubDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/wordpress-command-line-interface/</guid>
+    <description><![CDATA[<h2 id="supercharge-your-local-wordpress-a-quick-guide-to-wp-cli-" class="headerLink">
+    <a href="#supercharge-your-local-wordpress-a-quick-guide-to-wp-cli-" class="header-mark"></a>1 Supercharge Your Local WordPress: A Quick Guide to WP-CLI 💻</h2><p>WP-CLI (WordPress Command Line Interface) is a powerful tool that lets you manage your WordPress site directly from your terminal. It&rsquo;s much faster than clicking through the admin dashboard! Here’s how to get it set up and start using it on your local machine.</p>]]></description>
+</item></channel>
+</rss>

@@ -4,9 +4,28 @@
         <link>https://kienngd.github.io/</link>
         <description>K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Sep 2025 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://kienngd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Getting Started with MySQL MCP Server</title>
+    <link>https://kienngd.github.io/mysql-mcp-server/</link>
+    <pubDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/mysql-mcp-server/</guid>
+    <description><![CDATA[<h2 id="getting-started-with-mysql-mcp-server-locally" class="headerLink">
+    <a href="#getting-started-with-mysql-mcp-server-locally" class="header-mark"></a>1 Getting Started with MySQL MCP Server Locally</h2><p>This guide shows you how to set up and use the MySQL Model Context Protocol (MCP) Server on your local machine, focusing on integration with Cursor, an AI-powered code editor.</p>
+<h2 id="what-is-mysql-mcp-server" class="headerLink">
+    <a href="#what-is-mysql-mcp-server" class="header-mark"></a>2 What is MySQL MCP Server?</h2><p>MySQL MCP Server is a tool that lets AI applications, like Cursor, safely interact with your MySQL database. Instead of writing raw SQL, you can ask questions about your data. The server handles the communication, making database access more structured and secure.</p>
+<p><a href="https://github.com/designcomputer/mysql_mcp_server" target="_blank" rel="noopener noreferrer">Main github repository is here</a></p>]]></description>
+</item><item>
+    <title>WordPress Command Line Interface a quick guide</title>
+    <link>https://kienngd.github.io/wordpress-command-line-interface/</link>
+    <pubDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/wordpress-command-line-interface/</guid>
+    <description><![CDATA[<h2 id="supercharge-your-local-wordpress-a-quick-guide-to-wp-cli-" class="headerLink">
+    <a href="#supercharge-your-local-wordpress-a-quick-guide-to-wp-cli-" class="header-mark"></a>1 Supercharge Your Local WordPress: A Quick Guide to WP-CLI 💻</h2><p>WP-CLI (WordPress Command Line Interface) is a powerful tool that lets you manage your WordPress site directly from your terminal. It&rsquo;s much faster than clicking through the admin dashboard! Here’s how to get it set up and start using it on your local machine.</p>]]></description>
+</item><item>
     <title>How to use Chrome MCP: a simple guide</title>
     <link>https://kienngd.github.io/how-to-use-chrome-mcp-server/</link>
     <pubDate>Sun, 28 Sep 2025 00:00:00 &#43;0000</pubDate><author>
@@ -88,27 +107,5 @@ Handling exceptions correctly isn&rsquo;t just about preventing crashes — it m
     </author><guid>https://kienngd.github.io/virtual-environment-in-python-3/</guid>
     <description><![CDATA[<h2 id="what-is-a-virtual-environment" class="headerLink">
     <a href="#what-is-a-virtual-environment" class="header-mark"></a>1 What is a virtual environment?</h2><p>A virtual environment is a separate Python environment. It is isolated from your system&rsquo;s Python environment. It lets you install Python packages and libraries. These packages don&rsquo;t affect other projects or your system&rsquo;s Python.</p>]]></description>
-</item><item>
-    <title>How to Update Your Docker Image Without Starting From Scratch</title>
-    <link>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</link>
-    <pubDate>Sun, 17 Nov 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/update-docker-image-without-starting-from-scratch/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/update-docker-image-without-starting-from-scratch/banner-docker.jpg" referrerpolicy="no-referrer">
-            </div><p>Hi, it&rsquo;s me here again! 👋</p>
-<p>Ever been in this situation? You have a <code>Docker image</code> that you&rsquo;ve been using for a while, and suddenly you <code>need to add some new softwares</code>. Building everything from scratch again? Nobody has time for that! 😅</p>
-<p>Let me share a neat trick I use to save time.</p>]]></description>
-</item><item>
-    <title>A Late Night Database Recovery Story</title>
-    <link>https://kienngd.github.io/database-recovery-story/</link>
-    <pubDate>Thu, 14 Nov 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Kien Nguyen</name>
-    </author><guid>https://kienngd.github.io/database-recovery-story/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/database-recovery-story/securing-mysql-banner.png" referrerpolicy="no-referrer">
-            </div><h2 id="the-story" class="headerLink">
-    <a href="#the-story" class="header-mark"></a>1 The story</h2><p>It was late at night when my close friend called me. She was panicked because his database was lost.</p>
-<p>She sent me information, then I logged into the server to check. The MySQL service was still running. I found that both <code>general log</code> and <code>binary log</code> were enabled on the server.</p>]]></description>
 </item></channel>
 </rss>

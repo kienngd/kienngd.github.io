@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>MCP-Server - Tag - K5D::Blog</title>
+        <link>http://localhost:1313/tags/mcp-server/</link>
+        <description>MCP-Server - Tag - K5D::Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mcp-server/" rel="self" type="application/rss+xml" /><item>
+    <title>Getting Started with MySQL MCP Server</title>
+    <link>http://localhost:1313/mysql-mcp-server/</link>
+    <pubDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>http://localhost:1313/mysql-mcp-server/</guid>
+    <description><![CDATA[<h2 id="getting-started-with-mysql-mcp-server-locally" class="headerLink">
+    <a href="#getting-started-with-mysql-mcp-server-locally" class="header-mark"></a>1 Getting Started with MySQL MCP Server Locally</h2><p>This guide shows you how to set up and use the MySQL Model Context Protocol (MCP) Server on your local machine, focusing on integration with Cursor, an AI-powered code editor.</p>
+<h2 id="what-is-mysql-mcp-server" class="headerLink">
+    <a href="#what-is-mysql-mcp-server" class="header-mark"></a>2 What is MySQL MCP Server?</h2><p>MySQL MCP Server is a tool that lets AI applications, like Cursor, safely interact with your MySQL database. Instead of writing raw SQL, you can ask questions about your data. The server handles the communication, making database access more structured and secure.</p>]]></description>
+</item></channel>
+</rss>
