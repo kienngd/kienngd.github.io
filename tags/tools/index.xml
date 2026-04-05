@@ -4,7 +4,26 @@
         <link>https://kienngd.github.io/tags/tools/</link>
         <description>Tools - Tag - K5D::Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kienngd@gmail.com (Kien Nguyen)</managingEditor>
-            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/tools/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>kienngd@gmail.com (Kien Nguyen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 05 Apr 2026 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://kienngd.github.io/tags/tools/" rel="self" type="application/rss+xml" /><item>
+    <title>Manage Your PDF Files Easily with pdfcpu</title>
+    <link>https://kienngd.github.io/manage-pdf-files-with-pdfcpu/</link>
+    <pubDate>Sun, 05 Apr 2026 00:00:00 &#43;0000</pubDate><author>
+        <name>Kien Nguyen</name>
+    </author><guid>https://kienngd.github.io/manage-pdf-files-with-pdfcpu/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/manage-pdf-files-with-pdfcpu/banner.png" referrerpolicy="no-referrer">
+            </div><p>If you are looking for a powerful tool to handle PDF files, <strong>pdfcpu</strong> is one of the best choices. It is a fast, open-source PDF processor written in Go. You can use it as a command-line tool or as a library in your Go projects.</p>
+<hr>
+<h2 id="key-features" class="headerLink">
+    <a href="#key-features" class="header-mark"></a>1 Key Features</h2><ul>
+<li><strong>Extract/Trim:</strong> Select and save specific pages.</li>
+<li><strong>Merge:</strong> Join multiple PDF files into one.</li>
+<li><strong>Split:</strong> Divide a large PDF into smaller files.</li>
+<li><strong>Optimize:</strong> Reduce PDF file size.</li>
+<li><strong>Security:</strong> Add or remove passwords and watermarks.</li>
+<li><strong>and mores</strong>&hellip;</li>
+</ul>]]></description>
+</item><item>
     <title>Getting Started with MySQL MCP Server</title>
     <link>https://kienngd.github.io/mysql-mcp-server/</link>
     <pubDate>Wed, 15 Oct 2025 00:00:00 &#43;0000</pubDate><author>
