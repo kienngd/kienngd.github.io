@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <title>Introduce To NotebookLM: Your Personal AI Research Assistant - K5D::Blog</title><meta name="Description" content="Introduce To NotebookLM: Your Personal AI Research Assistant"><meta property="og:url" content="http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/">
+  <meta property="og:site_name" content="K5D::Blog">
+  <meta property="og:title" content="Introduce To NotebookLM: Your Personal AI Research Assistant">
+  <meta property="og:description" content="Introduce To NotebookLM: Your Personal AI Research Assistant">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-11T00:00:00+00:00">
+    <meta property="article:tag" content="Tools">
+    <meta property="article:tag" content="CLI">
+    <meta property="article:tag" content="Utilities">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/avatar.webp"><meta name="twitter:title" content="Introduce To NotebookLM: Your Personal AI Research Assistant">
+<meta name="twitter:description" content="Introduce To NotebookLM: Your Personal AI Research Assistant">
+<meta name="application-name" content="K5D::Blog">
+<meta name="apple-mobile-web-app-title" content="K5D::Blog">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/" /><link rel="prev" href="http://localhost:1313/manage-pdf-files-with-pdfcpu/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Introduce To NotebookLM: Your Personal AI Research Assistant",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/"
+        },"image": ["http://localhost:1313/images/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools, CLI, Utilities","wordcount":  331 ,
+        "url": "http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/","datePublished": "2026-04-11T00:00:00+00:00","dateModified": "2026-04-11T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "K5D Blog","logo": "http://localhost:1313/images/logo-48x48.png"},"author": {
+                "@type": "Person",
+                "name": "Kien Nguyen"
+            },"description": "Introduce To NotebookLM: Your Personal AI Research Assistant"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blogs </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="K5D::Blog"><img
+        class="logo"
+        loading="lazy"
+        src="/images/logo-48x48.png"
+        srcset="/images/logo-48x48.png, /images/logo-48x48.png 1.5x, /images/logo-48x48.png 2x"
+        title="/images/logo-48x48.png" >K5D</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Blogs</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduce-to-notebooklm-your-personal-ai-research-assistant">Introduce To NotebookLM: Your Personal AI Research Assistant</a>
+      <ul>
+        <li><a href="#key-features-of-notebooklm">Key Features of NotebookLM</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-use-notebooklm">How to Use NotebookLM</a>
+      <ul>
+        <li><a href="#1-login">1. Login</a></li>
+        <li><a href="#2-the-interface">2. The Interface</a></li>
+        <li><a href="#3-how-to-work-with-notebooklm">3. How to Work with NotebookLM</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Introduce To NotebookLM: Your Personal AI Research Assistant</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://kienngd.github.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Kien Nguyen</a>&nbsp;<a href='mailto: kienngd@gmail.com'>kienngd@gmail.com</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a>&nbsp;<a href="/categories/utilities/"><i class="far fa-folder fa-fw"></i>Utilities</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2026-04-11">2026-04-11</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2026-04-11">2026-04-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;331 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduce-to-notebooklm-your-personal-ai-research-assistant">Introduce To NotebookLM: Your Personal AI Research Assistant</a>
+      <ul>
+        <li><a href="#key-features-of-notebooklm">Key Features of NotebookLM</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-use-notebooklm">How to Use NotebookLM</a>
+      <ul>
+        <li><a href="#1-login">1. Login</a></li>
+        <li><a href="#2-the-interface">2. The Interface</a></li>
+        <li><a href="#3-how-to-work-with-notebooklm">3. How to Work with NotebookLM</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="introduce-to-notebooklm-your-personal-ai-research-assistant" class="headerLink">
+    <a href="#introduce-to-notebooklm-your-personal-ai-research-assistant" class="header-mark"></a>1 Introduce To NotebookLM: Your Personal AI Research Assistant</h2><p>NotebookLM is a powerful AI tool from Google designed to help you understand your documents better. Unlike general AI chatbots that use the whole internet, NotebookLM focuses only on the files you upload. This means its answers are more accurate and relevant to your specific work or study materials.</p>
+<h3 id="key-features-of-notebooklm" class="headerLink">
+    <a href="#key-features-of-notebooklm" class="header-mark"></a>1.1 Key Features of NotebookLM</h3><ul>
+<li><strong>Source-Grounded AI:</strong> It only answers based on the documents you provide.</li>
+<li><strong>Automatic Summaries:</strong> It creates quick overviews of long files instantly.</li>
+<li><strong>Citations:</strong> It shows you exactly where it found the information in your source.</li>
+<li><strong>Audio Overview:</strong> It can turn your notes into a realistic podcast-style conversation.</li>
+<li><strong>Notebook Organization:</strong> You can group multiple files (PDFs, Docs, websites) into one project.</li>
+</ul>
+<hr>
+<h2 id="how-to-use-notebooklm" class="headerLink">
+    <a href="#how-to-use-notebooklm" class="header-mark"></a>2 How to Use NotebookLM</h2><h3 id="1-login" class="headerLink">
+    <a href="#1-login" class="header-mark"></a>2.1 1. Login</h3><p>Go to the <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM website</a> and sign in with your <strong>Google Account</strong>. It is free to use and works directly in your web browser.</p>
+<h3 id="2-the-interface" class="headerLink">
+    <a href="#2-the-interface" class="header-mark"></a>2.2 2. The Interface</h3><p>Once you open a notebook, you will see three main parts:</p>
+<ul>
+<li><strong>Left Panel (Sources):</strong> This lists all the documents you have added.</li>
+<li><strong>Middle Area (Chat):</strong> This is where you ask questions and see AI answers.</li>
+<li><strong>Notebook Guide:</strong> A special section that helps you create summaries and study guides.</li>
+</ul>
+<h3 id="3-how-to-work-with-notebooklm" class="headerLink">
+    <a href="#3-how-to-work-with-notebooklm" class="header-mark"></a>2.3 3. How to Work with NotebookLM</h3><p><strong>Step 1: Upload Sources</strong>
+Click the <strong>&quot;+&quot; (plus)</strong> icon in the Sources panel. You can upload PDFs, select files from your Google Drive, or paste text from a website.</p>
+<p><strong>Step 2: Create a Summary</strong>
+After uploading, click on the <strong>Notebook Guide</strong> button. NotebookLM will automatically generate a summary and suggest &ldquo;Key Topics&rdquo; to help you start learning.</p>
+<p><strong>Step 3: Ask Questions (Q&amp;A)</strong>
+Type your question in the chat box at the bottom. For example: &ldquo;What is the main goal of this document?&rdquo; or &ldquo;List the key dates mentioned.&rdquo;</p>
+<p><strong>Step 4: Check Citations</strong>
+When the AI answers, look for small numbers. Click on them to see the exact paragraph in your original file. This helps you verify that the information is 100% correct.</p>
+</div>
+
+        
+
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/manage-pdf-files-with-pdfcpu/"><img
+        
+        loading="lazy"
+        src="/manage-pdf-files-with-pdfcpu/banner.png"
+        srcset="/manage-pdf-files-with-pdfcpu/banner.png, /manage-pdf-files-with-pdfcpu/banner.png 1.5x, /manage-pdf-files-with-pdfcpu/banner.png 2x"
+        title="Introduce To NotebookLM: Your Personal AI Research Assistant" height="200"   width="400" ></a>
+            </div><h2 class="related-title">
+                <a href="/manage-pdf-files-with-pdfcpu/">Manage Your PDF Files Easily with pdfcpu</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/mysql-mcp-server/">Getting Started with MySQL MCP Server</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/wordpress-command-line-interface/">WordPress Command Line Interface a quick guide</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/how-to-use-chrome-mcp-server/">How to use Chrome MCP: a simple guide</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/how-to-use-pnpm-a-simple-guide/">How to use pnpm: a simple guide</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/" data-title="Introduce To NotebookLM: Your Personal AI Research Assistant" data-hashtags="Tools,CLI,Utilities"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/" data-hashtag="Tools"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="http://localhost:1313/introduce-notebooklm-your-personal-ai-research-assistant/" data-title="Introduce To NotebookLM: Your Personal AI Research Assistant" data-web><span class="fab fa-telegram-plane fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/tools/">Tools</a>,&nbsp;<a href="/tags/cli/">CLI</a>,&nbsp;<a href="/tags/utilities/">Utilities</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/manage-pdf-files-with-pdfcpu/" class="prev" rel="prev" title="Manage Your PDF Files Easily with pdfcpu"><i class="fas fa-angle-left fa-fw"></i>Manage Your PDF Files Easily with pdfcpu</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.125.7">Hugo</a>&nbsp;|&nbsp;Hosted on Github Pages&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://kienngd.github.io" target="_blank" rel="noopener noreferrer">Kien Nguyen</a></span>
+                    &nbsp;<span class="author" itemprop="copyrightHolder"><a href="mailto:kienngd@gmail.com">kienngd@gmail.com</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

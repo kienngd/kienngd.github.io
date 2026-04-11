@@ -2,12 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://kienngd.github.io/categories/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/ai-tools/</loc><lastmod>2026-04-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/ai-tools/</loc><lastmod>2026-04-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/categories/</loc><lastmod>2026-04-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/introduce-to-notebooklm-your-personal-ai-research-assistant/</loc><lastmod>2026-04-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/</loc><lastmod>2026-04-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/posts/</loc><lastmod>2026-04-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://kienngd.github.io/tags/</loc><lastmod>2026-04-11T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/tags/cli/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/manage-pdf-files-with-pdfcpu/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/posts/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://kienngd.github.io/tags/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/tags/tools/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/categories/tools/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://kienngd.github.io/tags/utilities/</loc><lastmod>2026-04-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -53,8 +56,6 @@
             <loc>https://kienngd.github.io/introduction-to-phpdocumentor/</loc><lastmod>2024-09-25T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/tags/phpdocumentor/</loc><lastmod>2024-09-25T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/understanding-uuid/</loc><lastmod>2024-09-21T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://kienngd.github.io/tags/ai-tools/</loc><lastmod>2024-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://kienngd.github.io/categories/ai-tools/</loc><lastmod>2024-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/quick-guide-to-use-whimsical-diagrams-with-chatgpt/</loc><lastmod>2024-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/tags/design-pattern/</loc><lastmod>2024-08-26T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://kienngd.github.io/tags/laravel/</loc><lastmod>2024-08-26T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
